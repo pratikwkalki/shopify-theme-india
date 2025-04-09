@@ -1,0 +1,145 @@
+{{ 'component-cart.css' | asset_url | stylesheet_tag }}
+{{ 'component-totals.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{% assign total_discount = 0 %}
+{%- for item in cart.items -%}
+  {% assign item_discount = 0 %}
+  {% if item.variant.compare_at_price > item.variant.price %}
+    {% assign item_discount = item.variant.compare_at_price | minus: item.variant.price %}
+    {% assign item_discount = item_discount | times: item.quantity %}
+  {% endif %}
+  {% assign total_discount = total_discount | plus: item_discount %}
+{% endfor %}
+
+<div
+  class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
+  id="main-cart-footer"
+  data-id="{{ section.id }}"
+>
+  <div class="page-width">
+    <div class="cart__footer isolate section-{{ section.id }}-padding">
+      <div class="cart__blocks">
+        {% for block in section.blocks %}
+          {%- case block.type -%}
+            {%- when 'subtotal' -%}
+              <div class="js-contents" {{ block.shopify_attributes }}>
+                <div class="totals">
+                  <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
+                  <p class="totals__total-value"><span id='revy-cart-subtotal-price'>{{ cart.total_price | money_with_currency }}</span></p>
+                </div>
+              </div>
+            {%- else -%}
+              <div class="cart__ctas" {{ block.shopify_attributes }}>
+                <noscript>
+                  <button type="submit" class="cart__update-button button button--secondary" form="cart">
+                    {{ 'sections.cart.update' | t }}
+                  </button>
+                </noscript>
+                <button
+                  type="submit"
+                  id="checkout"
+                  class="cart__checkout-button button cart__checkout-button-mobile"
+                  name="checkout"
+                  {% if cart == empty %}
+                    disabled
+                  {% endif %}
+                  form="cart"
+                >
+                  <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9.50039 4.9V3.5C9.50039 1.54 7.96039 0 6.00039 0C4.04039 0 2.50039 1.54 2.50039 3.5V4.9C1.31039 4.9 0.400391 5.81 0.400391 7V11.9C0.400391 13.09 1.31039 14 2.50039 14H9.50039C10.6904 14 11.6004 13.09 11.6004 11.9V7C11.6004 5.81 10.6904 4.9 9.50039 4.9ZM3.90039 3.5C3.90039 2.31 4.81039 1.4 6.00039 1.4C7.19039 1.4 8.10039 2.31 8.10039 3.5V4.9H3.90039V3.5ZM6.70039 10.5C6.70039 10.92 6.42039 11.2 6.00039 11.2C5.58039 11.2 5.30039 10.92 5.30039 10.5V8.4C5.30039 7.98 5.58039 7.7 6.00039 7.7C6.42039 7.7 6.70039 7.98 6.70039 8.4V10.5Z" fill="white"></path> </svg>
+                  Secure Checkout
+                </button>
+              </div>
+          {%- endcase -%}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+            
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function isIE() {
+      const ua = window.navigator.userAgent;
+      const msie = ua.indexOf('MSIE ');
+      const trident = ua.indexOf('Trident/');
+
+      return msie > 0 || trident > 0;
+    }
+
+    if (!isIE()) return;
+    const cartSubmitInput = document.createElement('input');
+    cartSubmitInput.setAttribute('name', 'checkout');
+    cartSubmitInput.setAttribute('type', 'hidden');
+    document.querySelector('#cart').appendChild(cartSubmitInput);
+    document.querySelector('#checkout').addEventListener('click', function (event) {
+      document.querySelector('#cart').submit();
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.main-cart-footer.name",
+  "class": "cart__footer-wrapper cart__footer-wrapper_mobile",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 40
+    },
+  ],
+  "blocks": [
+    {
+      "type": "subtotal",
+      "name": "t:sections.main-cart-footer.blocks.subtotal.name",
+      "limit": 1
+    },
+    {
+      "type": "buttons",
+      "name": "t:sections.main-cart-footer.blocks.buttons.name",
+      "limit": 1
+    },
+    {
+      "type": "@app"
+    }
+  ]
+}
+{% endschema %}
+{% comment %}<!-- ymq option done -->{% endcomment %}

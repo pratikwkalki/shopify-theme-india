@@ -1,0 +1,49 @@
+{{ 'component-show-more.css' | asset_url | stylesheet_tag }}
+{{ 'component-visual-display.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign sort_by = results.sort_by | default: results.default_sort_by
+  assign total_active_values = 0
+  if results.url
+    assign results_url = results.url
+  else
+    assign terms = results.terms | escape
+    assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
+  endif
+-%}
+
+<div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+  
+  {% render 'desktop-filter'
+  filter_type: filter_type 
+  results: results 
+  enable_filtering: enable_filtering 
+  enable_sorting: enable_sorting 
+  sort_by: sort_by 
+  results_url: results_url 
+  total_active_values: total_active_values 
+  %}
+
+  {% if template.suffix == 'luxe-collection-new' %}
+    {% render 'custom-filter' collection_type: 'luxe' %}
+  {% endif %}
+
+  {% render 'filter-drawer' 
+  results: results 
+  enable_filtering: enable_filtering 
+  enable_sorting: enable_sorting 
+  filter_type: filter_type 
+  sort_by: sort_by 
+  results_url: results_url 
+  %}
+
+  {% comment %} Sort, product count and filter pills at the end when filter is type of Drawer for the correct tabbing order {% endcomment %}
+  {%- if enable_sorting and filter_type == 'drawer' -%}
+    {% render 'sort-filter' 
+    results: results 
+    %}
+  {%- endif -%}
+
+  {% render 'products-count' results: results %}
+  
+</div>

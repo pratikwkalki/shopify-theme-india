@@ -1,0 +1,39 @@
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="page-width">
+{% if collection.metafields.custom.html_category_highlighted_banners != blank %}
+  {{ collection.metafields.custom.html_category_highlighted_banners.value }}
+{% endif %}
+ 
+</div>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "HTML Highlighted banners",
+    
+    "presets": [
+      {
+        "name": "HTML Highlighted banners"
+      }
+    ]
+  }
+{% endschema %}
+
+ 

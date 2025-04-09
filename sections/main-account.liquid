@@ -1,0 +1,43 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+
+{%- capture contentForQuerystring -%}{{ content_for_header }}{%- endcapture -%}
+{% comment %} Use string splitting to pull the value from content_for_header and apply some string clean up {% endcomment %}
+{%- assign pageUrl = contentForQuerystring | split:'"pageurl":"' | last | split:'"' | first | split:'.myshopify.com' | last |
+   replace:'\/','/' | 
+   replace:'%20',' ' | 
+   replace:'\u0026','&'
+-%}
+{%- assign pageQuerystring = pageUrl | split:'?' | last -%}
+
+<div class="customer_account_page_new">
+  <div class="customer account page-width">
+    <div class="customer_account_page_details_new">
+      <div class="customer_account_page_details_left_new">
+        <div class="customer_account_page_details_left_inner_new">
+          {% render 'customer-navigation-links-new' %}
+        </div>
+      </div>
+      <div class="customer_account_page_details_right_new">
+        <div class="customer_account_page_details_right_inner_new">
+          {% if pageQuerystring contains "view=subscriptions" %}
+            <div class="customer_order_history_new subscriptions_new">
+              subscriptions
+            </div>
+          {% elsif pageQuerystring contains "view=orders" %}
+            {% render 'customer-order-history-new' %}
+          {% else %}   
+            {% render 'customer-dashboard-new' %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "t:sections.main-account.name",
+  "settings": [
+    
+  ]
+}
+{% endschema %}

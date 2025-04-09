@@ -1,0 +1,104 @@
+{%- if collection.metafields.custom.collection_column_video_or_image_list != blank or  collection.metafields.custom.collection_column_mobile_image_list != blank or collection.metafields.custom.collection_column_heading_text_list != blank -%}
+  <div class="Collection_meta_columns_main_new" style="background: {{ section.settings.main_background_color }};">
+    <div class="page-width">
+      <div class="Collection_meta_columns_inner_new">
+        <div class="Collection_meta_columns_loops_new">
+          <div class="swiper-container Collection_meta_columns_slider">
+            <div class="swiper-wrapper highlighted-banners-desktop-image">
+              {%- for Images in collection.metafields.custom.collection_column_video_or_image_list.value -%}
+                <div class="swiper-slide Collection_meta_columns_loops_mainbox_new">
+                  <a href="{{ collection.metafields.custom.collection_column_redirect_link_list.value[forloop.index0] }}">
+                    <div class="Collection_meta_columns_loops_innerbox_new">
+                      <div class="Collection_meta_columns_loops_innerbox_1_new">
+                        <div class="Collection_meta_columns_loops_innerbox_1_videoimageboth__new">
+                          {%- if Images.sources[1].url contains '.mp4' or Images.sources[1].url contains '.MP4' -%}
+                            <div class="Collection_meta_columns_loops_1_boxs_videoimage_new">
+                              <video
+                                id="Mp4Video-{{ section.id }}-{{ forloop.index0 }}-main"
+                                class="Collection_column_video_new"
+                                data-type="mp4"
+                                src="{{ Images.sources[1].url }}"
+                                loop muted playsinline autoplay>
+                              </video>
+                            </div>
+                          {%- else -%}
+                            <div class="Collection_meta_columns_loops_1_boxs_videoimage_new">
+                              <picture>
+                                <source srcset="{%- render 'imagekit' image: Images, width: 120 %}" media="(max-width: 380px)" />
+                                <source srcset="{%- render 'imagekit' image: Images, width: 160 %}" media="(max-width: 500px)" />
+                                <source srcset="{%- render 'imagekit' image: Images, width: 240 %}" media="(max-width: 749px)" />
+                                <img class="Collection_column_image_new image_first_slide" src="{%- render 'imagekit' image: Images, width: 455 %}" alt="{{ Images.alt }}" loading="eager" width="346" height="461" />
+                              </picture>
+                            </div>
+                          {%- endif -%}
+                        </div>
+                      </div>
+                      {% if collection.metafields.custom.collection_column_heading_text_list.value[forloop.index0] %}
+                        <div class="Collection_meta_columns_loops_innerbox_2_new">
+                          <div class="Collection_meta_columns_loops_innerbox_2_titletextsboth_new">
+                            {{ collection.metafields.custom.collection_column_heading_text_list.value[forloop.index0] }}
+                          </div>
+                        </div>
+                      {% endif %}
+                    </div>
+                  </a>
+                </div>
+              {%- endfor -%}
+            </div>
+            <div class="swiper-wrapper highlighted-banners-mobile-image">
+              {%- for ImagesMob in collection.metafields.custom.collection_column_mobile_image_list.value -%}
+                <div class="swiper-slide Collection_meta_columns_loops_mainbox_new">
+                  <a href="{{ collection.metafields.custom.collection_column_redirect_link_list.value[forloop.index0] }}">
+                    <div class="Collection_meta_columns_loops_innerbox_new">
+                      <div class="Collection_meta_columns_loops_innerbox_1_new">
+                        <div class="Collection_meta_columns_loops_innerbox_1_videoimageboth__new">
+                          {%- if ImagesMob != blank -%}
+                            <div class="Collection_meta_columns_loops_1_boxs_videoimage_new">
+                              <picture>
+                                <source srcset="{%- render 'imagekit' image: ImagesMob, width: 120 %}" media="(max-width: 380px)" />
+                                <source srcset="{%- render 'imagekit' image: ImagesMob, width: 160 %}" media="(max-width: 500px)" />
+                                <source srcset="{%- render 'imagekit' image: ImagesMob, width: 240 %}" media="(max-width: 749px)" />
+                                <img class="Collection_column_image_new" src="{%- render 'imagekit' image: ImagesMob, width: 455 %}" alt="{{ ImagesMob.alt }}" loading="lazy" width="453" height="389" />
+                              </picture>
+                            </div>
+                          {%- endif -%}
+                        </div>
+                      </div>
+                      {% if collection.metafields.custom.collection_column_heading_text_list.value[forloop.index0] %}
+                        <div class="Collection_meta_columns_loops_innerbox_2_new">
+                          <div class="Collection_meta_columns_loops_innerbox_2_titletextsboth_new">
+                            {{ collection.metafields.custom.collection_column_heading_text_list.value[forloop.index0] }}
+                          </div>
+                        </div>
+                      {% endif %}
+                    </div>
+                  </a>
+                </div>
+              {%- endfor -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}  
+
+{% schema %}
+  {
+    "name": "Collection Meta Columns",
+    "class": "Collection_meta_columns_new",
+    "settings": [
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FFFFFF"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection Meta Columns"
+      }
+    ]
+  }
+{% endschema %}

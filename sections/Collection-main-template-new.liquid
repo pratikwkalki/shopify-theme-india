@@ -1,0 +1,189 @@
+<div class="Collection_main_template_main_new {{ section.settings.customClass }}" style="background: {{ section.settings.main_background_color }};">
+  <div class="page-width">
+    <div class="Collection_main_template_inner_new">
+      <div class="Collection_main_template_breadcrumb_new">
+        <nav class="breadcrumbs Breadcrumb_navigation_main_new" role="navigation" aria-label="breadcrumbs">
+          <ol class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+            {%- assign breadcrumb_position = 1 -%}
+            <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+              <a class="breadcrumbs__link" href="/" itemscope itemtype="https://schema.org/WebPage" itemprop="item" itemid="{{ shop.url }}">
+                <span itemprop="name">Home</span>
+              </a>
+              <meta itemprop="position" content="{{ breadcrumb_position }}">
+            </li>
+            {%- assign breadcrumb_position = breadcrumb_position | plus: 1 -%}
+          
+            {%- assign current_collection = collection.handle -%}
+            {%- assign template_name = template | replace: '.', ' ' | truncatewords: 1, '' | handle -%}
+            {%- assign parent_link = nil -%}
+            {%- assign child_link = nil -%}
+            {%- assign grandchild_link = nil -%}
+            {%- assign matched = false -%}
+          
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'mega-menu' and block.settings.mega_menu != blank and block.settings.main_menu_name == collection.metafields.custom.collection_menu and template_name == "collection" -%}
+                {%- assign bottom_menu = block.settings.mega_menu -%}
+          
+                {%- for link in bottom_menu.links -%}
+                  {%- if link.object.handle == current_collection -%}
+                    {%- assign parent_link = link -%}
+                    {%- assign matched = true -%}
+                  {%- endif -%}
+          
+                  {%- if link.links != blank -%}
+                    {%- for childlink in link.links -%}
+                      {%- if childlink.object.handle == current_collection -%}
+                        {%- assign parent_link = link -%}
+                        {%- assign child_link = childlink -%}
+                        {%- assign matched = true -%}
+                      {%- endif -%}
+          
+                      {%- if childlink.links != blank -%}
+                        {%- for grandchildlink in childlink.links -%}
+                          {%- if grandchildlink.object.handle == current_collection -%}
+                            {%- assign parent_link = link -%}
+                            {%- assign child_link = childlink -%}
+                            {%- assign grandchild_link = grandchildlink -%}
+                            {%- assign matched = true -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                  {%- endif -%}
+                {%- endfor -%}
+          
+                {%- if matched -%}
+                  {%- assign parent_link_upper = parent_link.title | upcase -%}
+                  {%- unless parent_link.url == grandchild_link.url or parent_link_upper contains 'SEE ALL' -%}
+                    {%- if parent_link -%}
+                      <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                        <a href="{{ parent_link.url }}" class="breadcrumbs__link" itemscope itemtype="https://schema.org/WebPage" itemid="{{ parent_link.url }}" itemprop="item">
+                          <span itemprop="name">{{ parent_link.title }}</span>
+                        </a>
+                        <meta itemprop="position" content="{{ breadcrumb_position }}">
+                      </li>
+                      {%- assign breadcrumb_position = breadcrumb_position | plus: 1 -%}
+                    {%- endif -%}
+                  {%- endunless -%}
+          
+                  {%- assign child_title_upper = child_link.title | upcase -%}
+                  {%- unless child_title_upper contains 'STYLE' or child_title_upper contains 'OCCASION' or child_title_upper contains 'COLLECTION' or child_title_upper contains 'QUICK' or child_title_upper contains 'COLOR' or child_title_upper contains 'RELATION' or child_title_upper contains 'SHOPPER' or child_title_upper contains 'DISCOUNT' -%}
+                    {%- if child_link -%}
+                      <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                        <a href="{{ child_link.url }}" class="breadcrumbs__link" itemscope itemtype="https://schema.org/WebPage" itemid="{{ child_link.url }}" itemprop="item">
+                          <span itemprop="name">{{ child_link.title }}</span>
+                        </a>
+                        <meta itemprop="position" content="{{ breadcrumb_position }}">
+                      </li>
+                      {%- assign breadcrumb_position = breadcrumb_position | plus: 1 -%}
+                    {%- endif -%}
+                  {%- endunless -%}
+          
+                  {%- if grandchild_link -%}
+                    <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                      <span class="breadcrumbs__link" aria-current="page" itemprop="name">{{ grandchild_link.title }}</span>
+                      <meta itemprop="position" content="{{ breadcrumb_position }}">
+                    </li>
+                  {%- endif -%}
+                {%- endif -%}
+          
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+          
+            {%- unless matched -%}
+              <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                <span class="breadcrumbs__link" aria-current="page" itemprop="name">{{ collection.title }}</span>
+                <meta itemprop="position" content="{{ breadcrumb_position }}">
+              </li>
+            {%- endunless -%}
+          </ol>
+
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .breadcrumbs {
+    margin: 0 0 2em;
+  }
+
+  .breadcrumbs__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .breadcrumbs__item {
+    display: inline-block;
+  }
+
+  .breadcrumbs__item:not(:last-child):after {
+    content: '/';
+    display: inline-block;
+    margin: 0 .20em;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  .breadcrumbs__link {
+    text-decoration: underline;
+    text-transform: capitalize;
+  }
+
+  .breadcrumbs__link[aria-current="page"] {
+    color: inherit;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  .breadcrumbs__link[aria-current="page"]:hover,
+  .breadcrumbs__link[aria-current="page"]:focus {
+    text-decoration: underline;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Collection Main Template",
+    "class": "Collection_main_template_new",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "customClass",
+        "label": "Add Custom Class",
+        "info": "Bridal_collection_main_template_new, Luxe_collection_main_template_new"
+      },
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FFFFFF"
+      },
+    ],
+    "blocks": [
+      {
+        "type": "mega-menu",
+        "name": "Mega Menu",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "index_page_menu",
+            "label": "Index Page Menu"
+          },
+          {
+            "type": "text",
+            "id": "main_menu_name",
+            "label": "Main Menu Name"
+          },
+          {
+            "type": "link_list",
+            "id": "mega_menu",
+            "label": "Select Menu"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

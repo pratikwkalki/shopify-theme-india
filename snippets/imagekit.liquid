@@ -1,0 +1,104 @@
+{% capture IMAGEKIT %}
+  {% assign originalSrc = image | image_url: width: width, height: height, crop: crop, format: format, pad_color: pad_color %}
+  {% if settings.enableImageKit %}
+    {% for i in (1..1) %}
+      {% assign src = image | image_url %}
+
+      {% unless src or settings.imagekitUrl != blank %}
+        {{ src }}
+        {% break %}
+      {% endunless %}
+
+      {% assign cdnUrls = settings.imagekitShopifyCdnUrl | split: ',' %}
+      {% if cdnUrls.size == 0 %}
+        {{ src }}
+        {% break %}
+      {% endif %}
+
+      {% assign cdnUrl = cdnUrls[0] %}
+      
+      {% for temp in cdnUrls %}
+        {% if src contains temp %}
+          {% assign cdnUrl = temp %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign cdnUrl = cdnUrl | strip %}
+
+      {% unless src contains cdnUrl %}
+        {{ src }}
+        {% break %}
+      {% endunless %}
+
+      {% unless transformation %}
+        {% assign transformation =  "" %}
+        {% if width %}
+          {% assign widthTransformation = "w-" | append: width | append: '|' %}
+          {% assign transformation = transformation | append: widthTransformation %}
+        {% endif %}
+
+        {% if height %}
+          {% assign heightTransformation = "h-" | append: height | append: '|' %}
+          {% assign transformation = transformation | append: heightTransformation %}
+        {% endif %}
+
+
+        {% if format == "jpg" %}
+          {% assign transformation = transformation | append: "f-jpg|" %}
+        {% endif %}
+
+        {% if format == "pjpg" %}
+          {% assign transformation = transformation | append: "f-jpg|pr-true|" %}
+        {% endif %}
+
+        {% if scale %}
+          {% assign scaleTransformation = "dpr-" | append: scale | append: '|' %}
+          {% assign transformation = transformation | append: scaleTransformation %}
+        {% endif %}
+
+        {% if transformation %}
+          {% if crop %}
+            {% assign cropTransformation = "cm-extract|fo-" | append: crop | append: '|' %}
+            {% assign transformation = transformation | append: cropTransformation %}
+          {% else%}
+            {% assign transformation = transformation | append: "c-at_max|" %}
+          {% endif %}
+        {% endif %}
+
+        {% assign transformation = transformation | split: "|" | join: "," %}
+      {% endunless %}
+
+      {% assign imagekitUrl = settings.imagekitUrl | strip %}
+      {% assign lastChar = imagekitUrl | slice: -1 %}
+      {% assign imagekitUrlLength = imagekitUrl | size %}
+      {% assign newImagekitUrl = imagekitUrlLength | minus: 1 %}
+      {% if lastChar == "/" %}
+        {% assign imagekitUrl = imagekitUrl | slice: 0, newImagekitUrl %}
+      {% endif %}
+
+
+      {% unless image.alt == blank %}
+        {% assign alt = image.alt %}
+        {% assign alt = alt | handleize %}
+        {% assign extension = src | split: "?" | first | split: "." | last %}
+        {% assign seo = "/" | append: alt | append: "." | append: extension %}
+        {% assign imagekitUrl = imagekitUrl | append: "/ik-seo" %}
+        {% assign extension = "." | append: extension %}
+        {% assign src = src | replace: extension, seo %}
+
+      {% endunless %}
+      
+      {% if transformation %}
+        {% assign imagekitUrl = imagekitUrl | append: "/tr:" | append: transformation %}
+      {% endif %}
+      
+      
+      {% assign ikSrc = src | strip | replace: cdnUrl, imagekitUrl %}
+
+      {{ ikSrc | default: originalSrc }}
+    {% endfor %}
+  {% else %}
+    {{ originalSrc }}
+  {% endif %}
+{% endcapture %}{{ IMAGEKIT | strip | replace: '  ' | strip_newlines }}
