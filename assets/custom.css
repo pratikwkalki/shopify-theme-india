@@ -325,6 +325,41 @@ summary .icon-caret { position: relative; }
 .Page_Store_Slider_innerloop_mainbox .Page_Store_slider_innerloop_buttonbox a:hover svg path{stroke: #fff;}
 .Page_Store_Slider_innerloop_mainbox .Page_Store_slider_innerloop_buttonbox a span{ padding-left: .75rem;}
 
+.additional-options-wrapper{display:flex;align-items:center;justify-content:space-between;margin:10px 0}
+.additional-options-wrapper label{    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 50%;
+    padding-right: 8px;}
+.aditional-cost {
+    width: 50%;
+    margin-bottom: 0px;
+}
+.aditional-cost select {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+.aditional-cost  select {
+    border: .5px solid rgba(73, 71, 86, .3);
+    width: 100%;
+    height: 34px;
+    border-radius: 20px;
+    padding: 7px 30px 7px 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    background: url(option_down_arrow.svg) no-repeat right 12px center;
+  font-family:Futura, sans-serif;
+}
+
 @media(min-width:0px) and (max-width:989px){
   .page_white_header_transparent_new .search-modal__content_drawer_new{ border-radius: 7px; border-bottom: 1px solid #FFF; background: #2E2E30; }
   .page_white_header_transparent_new .search-modal__content_drawer_new .search__input.field__input{ background: #2E2E30; color: #9B9AA7; height: 36px; }
@@ -7360,4 +7395,5 @@ body.template-customers-activate_account .customer .field{
   .template--mens-detail-new .Collection_category_lists_new .Collection_category_lists_title_new h2 {
     text-align: center;
   }
+  .additional-options-wrapper label {font-size:13px;}
 }

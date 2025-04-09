@@ -49,10 +49,10 @@
                               {% endif %}
                             {% endfor %}
                             {% if stitched == true %}
-                              <span class="button" js-pdp-stick-addToCart-btn-stitched ><span js-sticky-atc-btn-text>add to cart</span> <span class="sticky-atc-dot"></span> <span js-pdp-original-price> {{ product.selected_or_first_available_variant.price | money }} </span></span>
-                              <span class="button" js-pdp-stick-addToCart-btn ><span js-sticky-atc-btn-text>add to cart</span> <span class="sticky-atc-dot"></span> <span js-pdp-original-price> {{ product.selected_or_first_available_variant.price | money }} </span></span> 
+                              <span class="button" js-pdp-stick-addToCart-btn-stitched ><span js-sticky-atc-btn-text>add to cart</span> <span class="sticky-atc-dot"></span> <span id="aditional_costtotal" data-price="{{ product.selected_or_first_available_variant.price | money }}" js-pdp-original-price> {{ product.selected_or_first_available_variant.price | money }} </span></span>
+                              <span class="button" js-pdp-stick-addToCart-btn ><span js-sticky-atc-btn-text>add to cart</span> <span class="sticky-atc-dot"></span> <span id="aditional_costtotal" data-price="{{ product.selected_or_first_available_variant.price | money }}" js-pdp-original-price> {{ product.selected_or_first_available_variant.price | money }} </span></span> 
                             {% else %}
-                              <span class="button" js-pdp-stick-addToCart-btn ><span js-sticky-atc-btn-text>add to cart</span> <span class="sticky-atc-dot"></span> <span js-pdp-original-price> {{ product.selected_or_first_available_variant.price | money }} </span></span>
+                              <span class="button" js-pdp-stick-addToCart-btn ><span js-sticky-atc-btn-text>add to cart</span> <span class="sticky-atc-dot"></span> <span id="aditional_costtotal" data-price="{{ product.selected_or_first_available_variant.price | money }}" js-pdp-original-price> {{ product.selected_or_first_available_variant.price | money }} </span></span>
                             {% endif %}
                         {% endform %}
                     </div>

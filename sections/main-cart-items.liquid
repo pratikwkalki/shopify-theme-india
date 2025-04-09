@@ -145,7 +145,9 @@
                                         MRP <span data-ymq-item-key="{{ item.key }}" class='ymq_item_original_price'>{{ item.original_price | money }}</span>
                                       {% endif %}
                                     </s>
-                                    <div class="saving-percentage">{{ savingPercentage }}% off</div>
+                                  {% if item.properties.saving_price %}
+                                       <div class="saving-percentage append-main-save">{{ item.properties.saving_price }}</div>
+                                     {% endif %}
                                   </div>
                                 {% elsif item.variant.compare_at_price > item.variant.price %}
                                   {% assign savingsAmount = item.variant.compare_at_price | minus: item.original_price %}
@@ -163,7 +165,9 @@
                                     <s class="cart-item__old-price product-option">
                                       MRP {{ item.variant.compare_at_price | money }}
                                     </s>
-                                    <div class="saving-percentage">{{ savingPercentage }}% off</div>
+                                     {% if item.properties.saving_price %}
+                                       <div class="saving-percentage append-main-save">{{ item.properties.saving_price }}</div>
+                                     {% endif %}
                                   </div>
                                   <!-- Calculate and add the discount for each item -->
                                   {% assign item_discount = item.variant.compare_at_price | minus: item.variant.price %}
@@ -382,7 +386,7 @@
                                         {% if  property.first == '_Product category' or property.first == '_Compare at price for the product' or property.first == '_Discount on product' or property.first == '__shopify_send_gift_card_to_recipient' or property.first == '__shopify_offset' or property.first == '_Delivery days' %} 
                                            {% assign hideClass= 'hide' %}
                                         {% endif %}
-                                        <div class="product-option {{ hideClass }} {% if property.first == '_ref_id' %} hide {% endif %}" data-property-first="{{ property.first }}" data-property-last="{{ property.last }}">
+                                        <div class="product-option {{ hideClass }} {% if property.first == '_ref_id' or property.first == 'saving_price' %} hide {% endif %}" data-property-first="{{ property.first }}" data-property-last="{{ property.last }}">
                                           {% if property.first == '_type' %}
                                             <span js-main-product></span>
                                           {% else %}
@@ -452,7 +456,9 @@
                                         MRP <span data-ymq-item-key="{{ item.key }}" class='ymq_item_original_line_price'>{{ item.original_line_price | money }}</span>
                                       {% endif %}
                                     </s>
-                                    <div class="saving-percentage">{{ savingPercentage }}% off</div>
+                                    {% if item.properties.saving_price %}
+                                       <div class="saving-percentage append-main-save">{{ item.properties.saving_price }}</div>
+                                     {% endif %}
                                   </div>
                                 {% elsif item.variant.compare_at_price > item.variant.price %}
                                   <div class="cart-item__discounted-prices">
@@ -468,7 +474,9 @@
                                     <s class="cart-item__old-price price price--end">
                                       MRP {{ item.variant.compare_at_price | times: item.quantity | money }}
                                     </s>
-                                    <div class="saving-percentage">{{ savingPercentage }}% off</div>
+                                  {% if item.properties.saving_price %}
+                                       <div class="saving-percentage append-main-save">{{ item.properties.saving_price }}</div>
+                                     {% endif %}
                                   </div>
                                 {%- else -%}
                                   <span class="price price--end">

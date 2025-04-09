@@ -17,10 +17,11 @@
         </div>
         {%- endif -%}
         {%- if block.settings.text_bottom != blank -%}
-        <div class="bottom_text">{{ block.settings.text_bottom }}</div>
+        <div class="bottom_text {% if forloop.index == 3 %}regular-text{% endif %}">{{ block.settings.text_bottom }}</div>
         {%- endif -%}
         {%- if block.settings.text_bottom_no_return != blank -%}
-          <div class="bottom_text hide">{{ block.settings.text_bottom_no_return }}</div>
+          <div class="bottom_text return-text-none hide" style="display:none;">{{ block.settings.text_bottom_no_return }}</div>
+          <div class="bottom_text return-text-none" style="display:none;">{{ block.settings.text_bottom_no_return }}</div>
         {%- endif -%}
       </a>
     </div>

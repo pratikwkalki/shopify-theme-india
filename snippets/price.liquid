@@ -113,7 +113,9 @@
         </span>
       {%- endunless -%}
       {%- if product.compare_at_price_max > product.price -%}
-        <span class="Product_price_save_new">{{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}% OFF</span>
+         {% assign savingprice = product.compare_at_price | minus: product.price %}
+         {% assign finalsave = savingprice | times: 100.0 | divided_by: product.compare_at_price | round %}
+        <span class="Product_price_save_new"><span class="Product_price_save_couse_new data-saving-pdp" data-saving="{{ finalsave }}% OFF">(</span>{{ finalsave }}% OFF<span class="Product_price_save_couse_new">)</span></span>
       {%- endif -%}
     </div>
     <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">

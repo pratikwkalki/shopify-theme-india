@@ -51,7 +51,11 @@
         {%- if gift_card_recipient_feature_active -%}
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
         {%- endif -%}
-
+            
+              <input type="hidden" id="additional_cost_input">
+              <input type="hidden" id="embroidery_cost_input">
+              <input type="hidden" id="total_cost_input">
+              <input type="hidden" id="savingPrices" name="items[0][properties[saving_price]]" value="">
         <div class="product-form__buttons">
             
           {%- liquid

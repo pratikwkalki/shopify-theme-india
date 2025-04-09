@@ -52,6 +52,11 @@
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
         {%- endif -%}
 
+             <input type="hidden" id="additional_cost_input">
+              <input type="hidden" id="embroidery_cost_input">
+              <input type="hidden" id="total_cost_input">
+              <input type="hidden" id="savingPrices" name="items[0][properties[saving_price]]" value="">
+    
         <div class="product-form__buttons">
           {%- liquid
             assign check_against_inventory = true
@@ -80,7 +85,7 @@
             </span>
             {%- render 'loading-spinner' -%}
             <span class="kalki-atc-dot"></span> 
-            <span js-pdp-original-price> {{ product.selected_or_first_available_variant.price | money }} </span>
+            <span js-pdp-original-price id="aditional_costtotal" data-price="{{ product.selected_or_first_available_variant.price | money }}"> {{ product.selected_or_first_available_variant.price | money }} </span>
           </button>
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}

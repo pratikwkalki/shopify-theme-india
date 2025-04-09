@@ -186,18 +186,19 @@
                               {%- render 'loading-spinner' -%}
                               <div class="cart-item__price-wrapper minicart_price">
                                 {%- if item.original_line_price != item.final_line_price -%}
-  
-                                  {% if item.variant.compare_at_price > item.variant.price %}
-                                    {% assign compareSavingsAmount = item.variant.compare_at_price | minus: item.final_price %}
-                                    {% assign compareSavingsLineAmount = compareSavingsAmount | times: item.quantity %}
-                                    {% assign compareSavingPercentage = compareSavingsAmount | times: 100 | divided_by: item.variant.compare_at_price %}
-  
-                                    {% assign savingPercentage = compareSavingPercentage %}
-                                    {% assign discounTotalPrice = discounTotalPrice | plus: compareSavingsLineAmount %}
-                                  {% else %}
-                                    {% assign savingsAmount = item.original_line_price | minus: item.final_line_price %}
-                                    {% assign savingPercentage = savingsAmount | times: 100 | divided_by: item.original_line_price %}
-                                  {% endif %}
+
+                                {% if item.variant.compare_at_price > item.variant.price %}
+                                  {% assign compareSavingsAmount = item.variant.compare_at_price | minus: item.final_price %}
+                                  {% assign compareSavingsLineAmount = compareSavingsAmount | times: item.quantity %}
+                                  {% assign compareSavingPercentage = compareSavingsAmount | times: 100 | divided_by: item.variant.compare_at_price %}
+
+                                  {% assign savingPercentage = compareSavingPercentage %}
+                                  {% assign discounTotalPrice = discounTotalPrice | plus: compareSavingsLineAmount %}
+                                {% else %}
+                                  {% assign savingsAmount = item.original_line_price | minus: item.final_line_price %}
+                                  {% assign savingPercentage = savingsAmount | times: 100 | divided_by: item.original_line_price %}
+                                {% endif %}
+
   
                                   <div class="cart-item__discounted-prices">
                                     <span class="visually-hidden">
@@ -216,13 +217,15 @@
                                         MRP {{ item.original_line_price | money }}
                                       {% endif %}
                                     </s>
-                                    <div class="saving-percentage">{{ savingPercentage }}% off</div>
+                                  {% if item.properties.saving_price %}
+                                       <div class="saving-percentage append-main-save">{{ item.properties.saving_price }}</div>
+                                     {% endif %}
                                   </div>
                                 {% elsif item.variant.compare_at_price > item.variant.price %}
-                                  {% assign savingsAmount = item.variant.compare_at_price | minus: item.original_price %}
-                                  {% assign savingsLineAmount = savingsAmount | times: item.quantity %}
-                                  {% assign savingPercentage = savingsAmount | times: 100 | divided_by: item.variant.compare_at_price %}
-                                  {% assign discounTotalPrice = discounTotalPrice | plus: savingsLineAmount %}
+                                {% assign savingsAmount = item.variant.compare_at_price | minus: item.variant.price %}
+                                {% assign savingsLineAmount = savingsAmount | times: item.quantity %}
+                                {% assign savingPercentage = savingsAmount | times: 100 | divided_by: item.variant.compare_at_price %}
+                                {% assign discounTotalPrice = discounTotalPrice | plus: savingsLineAmount %}
                                   <div class="cart-item__discounted-prices">
                                     <span class="visually-hidden">
                                       {{ 'products.product.price.sale_price' | t }}
@@ -236,7 +239,9 @@
                                     <s class="cart-item__old-price price price--end">
                                       MRP {{ item.variant.compare_at_price | times: item.quantity | money }}
                                     </s>
-                                    <div class="saving-percentage">{{ savingPercentage }}% off</div>
+                                     {% if item.properties.saving_price %}
+                                       <div class="saving-percentage append-main-save">{{ item.properties.saving_price }}</div>
+                                     {% endif %}
                                   </div>
                                 {%- else -%}
                                   <span class="price price--end ">
@@ -483,7 +488,7 @@
                                       {% if property.first == '_Product category' or property.first == '_Compare at price for the product' or property.first == '_Discount on product' or property.first == '__shopify_send_gift_card_to_recipient' or property.first == '__shopify_offset' or property.first == '_Delivery days' %} 
                                          {% assign hideClass= 'hide' %}
                                       {% endif %}
-                                      <div class="product-option {{ hideClass }} {% if property.first == '_ref_id' %} hide {% endif %}" data-property-first="{{ property.first }}" data-property-last="{{ property.last }}">
+                                    <div class="product-option {{ hideClass }} {% if property.first == '_ref_id' or property.first == 'saving_price' %} hide {% endif %}" data-property-first="{{ property.first }}" data-property-last="{{ property.last }}">
                                         {% if property.first == '_type' %}
                                           <span js-main-product></span>
                                         {% else %}
@@ -589,8 +594,8 @@
               </span>
             </div>
 
-            {% assign subTotal = cart.original_total_price %}
-            {% if discounTotalPrice > 0 %}
+           {% assign subTotal = cart.original_total_price %}
+            {% if discounTotalPrice != 0 %}
               {% assign subTotal = cart.original_total_price | plus: discounTotalPrice %}
               <div class="totals" role="status">
                 <h4 class="totals__total text">Subtotal</h4>
@@ -605,7 +610,11 @@
             {% assign grandTotal = subTotal | minus: discounTotalPrice | minus: cart.total_discount %}
             <div class="grand-total">
               <h4 class="total-text text">
-                Estimated total
+                {% if discounTotalPrice != 0 %}
+                  Estimated total
+                {% else %}
+                  Subtotal
+                {% endif %}
               </h4>
               <p class="total-price price"><span class=" csapps-cart-original-total">{{ grandTotal | money }}</span></p>
             </div>

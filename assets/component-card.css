@@ -528,9 +528,9 @@
 }
 
 @media screen  and (max-width: 988px) {
-  /* .colletion-verticle-banner.grid__item {
+  .colletion-verticle-banner.grid__item {
     padding-top: 80%;
-  } */
+  }
   .template--luxe-collection-new .colletion-verticle-banner {
     margin-bottom: 8px;
   }

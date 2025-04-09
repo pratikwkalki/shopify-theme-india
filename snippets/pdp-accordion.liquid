@@ -201,9 +201,14 @@
                   </div>
                 </div>
                 <div class="details style-detail accordion-content__answer" js-accordion-body>
-                  <div class="metafield-rich_text_field">
+                  <div class="metafield-rich_text_field details_feilds">
                     {%- if block.settings.details != blank -%}
                     {{ block.settings.details }}
+                    {%- endif -%}
+                  </div>
+                    <div class="metafield-rich_text_field additional" style="display:none">
+                    {%- if block.settings.details_no_return != blank -%}
+                      {{ block.settings.details_no_return }}
                     {%- endif -%}
                   </div>
                   <div class="metafield-rich_text_field hide">

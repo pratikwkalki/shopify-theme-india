@@ -87,8 +87,16 @@ if (!customElements.get('product-form')) {
         }
       }
       onSubmitHandler(evt) {
-  evt.preventDefault();
+     evt.preventDefault();
+        
+  //saving % get main product and set cart page
+          let savingValue = document.querySelector(".data-saving-pdp")?.getAttribute("data-saving");
+          let inputField = document.querySelector("#savingPrices"); // Select the input field
 
+          if (savingValue && inputField) {
+              inputField.value = savingValue; // Set the value of the input field
+          }
+        
   if (this.submitButton.getAttribute('aria-disabled') === 'true') return;
 
   this.handleErrorMessage();
