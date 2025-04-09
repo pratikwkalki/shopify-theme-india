@@ -3543,4 +3543,7 @@ details-disclosure > details {
   .ishatesting {
     display: none !important;
   }
+  .ishasorry {
+    display: none !important;
+  }
 }
