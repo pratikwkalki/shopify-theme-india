@@ -5329,7 +5329,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   .Page_video_call_template_main_new { margin: 40px 0; padding: 60px 0; }
   .Page_video_call_template_mainleft_new { width: 100%; padding-top: 0; }
   .Page_video_call_template_mainright_new { width:100%; margin-top: 40px }
-  .Page_video_call_template_innerleft_title_new{ max-width:370px; margin-bottom: 60px; }
+  .Page_video_call_template_innerleft_title_new{ max-width:100%; margin-bottom: 60px; }
   .Page_video_call_template_innerleft_innerloop_new { grid-gap: 30px; }
   .Page_video_call_template_innerleft_innerloop_mainboxs_new { width: calc(33.33% - 20px); }
   .Page_video_call_testimonials_main_new { margin: 50px 0; padding: 40px 0; }
