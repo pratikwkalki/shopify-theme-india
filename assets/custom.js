@@ -227,6 +227,11 @@ $(".sign-up-btn").click(function() {
 })
 
 const customerPopup = $("#customerPopup")
+
+$('.sotp-popup-close-btn').on('click', function() {
+  localStorage.setItem('closedcustomerpopup', 'true');
+});
+
 if(customerPopup.length) {
   const closeBtn = customerPopup.find("[js-close-btn]");
   $("[js-customer-popup-btn]").click(function(evt) {
