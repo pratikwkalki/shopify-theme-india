@@ -1,4 +1,4 @@
-{%- if metaobject.photos_list_tabs.value != blank or metaobject.video_list_tabs.value != blank -%}
+{%- if metaobject.photos_list_tabs.value != blank or metaobject.youtube_video_list.value != blank -%}
   
   <div class="page_store_detail_tabs_main_new test" style="background: {{ section.settings.main_back_color }};">
     <div class="page-width">
@@ -9,7 +9,7 @@
               Photos
             </button>
           {%- endif -%}
-          {%- if metaobject.video_list_tabs.value != blank -%}
+          {%- if metaobject.youtube_video_list.value != blank -%}
             <button class="tablinks tabs_collection_new {%- if metaobject.photos_list_tabs.value == blank -%} active {% endif %}" tab_id="tab_videos">
               Videos
             </button>
@@ -42,17 +42,17 @@
             </div>
           </div>
         {%- endif -%}
-        {%- if metaobject.video_list_tabs.value != blank -%}
+        {%- if metaobject.youtube_video_list.value != blank -%}
           <div class="tabcontent tab_videos_open" style="display:none;">
             <div class="page_store_detail_tabs_maindetail_new">
               <div class="page_store_detail_tabs_innerdetail_new">
-                {%- assign video_list_tabs = metaobject.video_list_tabs.value -%} 
+                {%- assign youtube_video_list = metaobject.youtube_video_list.value -%} 
                 <div class="swiper-container page_store_detail_tabs_slider">
                   <div class="swiper-wrapper">
-                    {%- for video_list_tabs in video_list_tabs -%}
+                    {%- for youtube_video_list in youtube_video_list -%}
                       <div class="swiper-slide page_store_detail_tabs_image_new">
                         <div class="page_store_detail_tabs_image_inner_new">
-                          {{ video_list_tabs | video_tag: controls: false, autoplay: true, loop: true }}
+                          {{ youtube_video_list | video_tag: controls: false, autoplay: true, loop: true }}
                         </div>
                       </div>
                     {%- endfor -%}
