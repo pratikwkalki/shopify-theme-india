@@ -34,14 +34,13 @@
                                     </div>
                                   {% else %}  
                                     <div class="Index_custom_testimonials_allloop_innerboxs_innerleft_videoimage_new">
-                                      {{
-                                        rows.image_or_video.value | 
-                                        image_url: width: img.width | 
-                                        image_tag: widths: '180, 225, 301', 
-                                        fetchpriority: 'auto', 
-                                        class:'',
-                                        alt:rows.name.value
-                                      }}
+                                      {% assign main_video_image = rows.image_or_video.value  | image_url %}
+                                      <picture>
+                                        <source srcset="{%- render 'gumlet', src: main_video_image w: 200 %}" media="(max-width: 380px)" />
+                                        <source srcset="{%- render 'gumlet', src: main_video_image w: 270 %}" media="(max-width: 500px)" />
+                                        <source srcset="{%- render 'gumlet', src: main_video_image w: 410 %}" media="(max-width: 749px)" />
+                                        <img src="{%- render 'gumlet', src: main_video_image w: 230 %}" alt="{{ rows.name.value }}" loading="lazy" width="225" height="299" />
+                                      </picture>
                                     </div>
                                   {%- endif -%}
                                 </div>
