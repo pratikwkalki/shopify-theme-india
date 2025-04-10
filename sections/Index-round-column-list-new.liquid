@@ -35,7 +35,8 @@
                           <a href="{{ block.settings.redirect }}">
                             {%- if block.settings.image != blank -%}
                               <div class="Index_round_column_list_2_allloop_innerboxs_image_new">
-                                <img class="Full_image_new" src="{%- render 'imagekit' image: block.settings.image, width: 60 %}" alt="{{ block.settings.title }}" loading="lazy" width="60" height="60" />
+                                {% assign mainImage = block.settings.image  | image_url %}
+                                <img class="Full_image_new" src="{%- render 'gumlet', src: mainImage w: 60 %}" alt="{{ block.settings.title }}" loading="lazy" width="60" height="60" />
                               </div>
                             {%- endif -%}
                             {%- if block.settings.title != blank -%}
