@@ -24,6 +24,9 @@
 }
 .recent-view-section-container .full-unstyled-link.only-for-desktop {
     display: block;
+    position: absolute;
+    z-index: 1;
+    inset: 0;
 }
 @media screen and (max-width: 749px) {
     .recent-view-section-container .product_grid_item_new.swiper-slide {
