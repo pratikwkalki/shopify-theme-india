@@ -1566,5 +1566,32 @@
             "info":"Do not change this unless you have a proxy in place. Not sure? Leave it as is."
         }
     ]
+  },
+  {
+    "name": "Gumlet",
+    "settings": [
+        {
+            "type": "paragraph",
+            "content": "Check out Gumlet's [Gumlet.com and Shopify integration](https://docs.gumlet.com/update/docs/shopify) to learn more about this."
+        },
+        {
+            "type": "checkbox",
+            "id": "enableGumlet",
+            "label": "Enable Gumlet"
+        },
+        {
+            "type": "text",
+            "id": "gumletUrl",
+            "label": "Gumlet url endpoint",
+            "info":"https://kalki.gumlet.io/"
+        },
+        {
+            "type": "text",
+            "id": "gumletShopifyCdnUrl",
+            "label": "Shopify CDN domain",
+            "info":"Do not change this unless you have a proxy in place. Not sure? Leave it as is."
+        }
+    ]
 }
+  
 ]
