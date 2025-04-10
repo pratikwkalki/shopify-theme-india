@@ -23,11 +23,12 @@
                             </div>
                           {%- else -%}
                             <div class="Collection_meta_columns_loops_1_boxs_videoimage_new">
+                              {% assign main_mobile_full_image = block.settings.main_mobile_full_image  | image_url %}
                               <picture>
-                                <source srcset="{%- render 'imagekit' image: Images, width: 120 %}" media="(max-width: 380px)" />
-                                <source srcset="{%- render 'imagekit' image: Images, width: 160 %}" media="(max-width: 500px)" />
-                                <source srcset="{%- render 'imagekit' image: Images, width: 240 %}" media="(max-width: 749px)" />
-                                <img class="Collection_column_image_new image_first_slide" src="{%- render 'imagekit' image: Images, width: 455 %}" alt="{{ Images.alt }}" loading="eager" width="346" height="461" />
+                                <source srcset="{%- render 'gumlet', src: Images w: 120 %}" media="(max-width: 380px)" />
+                                <source srcset="{%- render 'gumlet', src: Images w: 160 %}" media="(max-width: 500px)" />
+                                <source srcset="{%- render 'gumlet', src: Images w: 240 %}" media="(max-width: 749px)" />
+                                <img class="Collection_column_image_new image_first_slide" src="{%- render 'gumlet', src: Images w: 380 %}" alt="{{ Images.alt }}" loading="eager" width="346" height="461" />
                               </picture>
                             </div>
                           {%- endif -%}
@@ -55,10 +56,10 @@
                           {%- if ImagesMob != blank -%}
                             <div class="Collection_meta_columns_loops_1_boxs_videoimage_new">
                               <picture>
-                                <source srcset="{%- render 'imagekit' image: ImagesMob, width: 120 %}" media="(max-width: 380px)" />
-                                <source srcset="{%- render 'imagekit' image: ImagesMob, width: 160 %}" media="(max-width: 500px)" />
-                                <source srcset="{%- render 'imagekit' image: ImagesMob, width: 240 %}" media="(max-width: 749px)" />
-                                <img class="Collection_column_image_new" src="{%- render 'imagekit' image: ImagesMob, width: 455 %}" alt="{{ ImagesMob.alt }}" loading="lazy" width="453" height="389" />
+                                <source srcset="{%- render 'gumlet', src: ImagesMob w: 120 %}" media="(max-width: 380px)" />
+                                <source srcset="{%- render 'gumlet', src: ImagesMob w: 160 %}" media="(max-width: 500px)" />
+                                <source srcset="{%- render 'gumlet', src: ImagesMob w: 240 %}" media="(max-width: 749px)" />
+                                <img class="Collection_column_image_new" src="{%- render 'gumlet', src: ImagesMob w: 455 %}"" alt="{{ ImagesMob.alt }}" loading="lazy" width="453" height="389" />
                               </picture>
                             </div>
                           {%- endif -%}
