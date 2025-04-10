@@ -1997,6 +1997,22 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
 .page_store_detail_tabs_image_inner_new { position:relative; }
 .page_store_detail_tabs_image_inner_new img{ width:100%; position:relative; object-fit:cover; top:0; right:0; bottom:0; left:0; height:100% !important; }
 .page_store_detail_tabs_image_inner_new video{ width:100%; position:relative; object-fit:cover; top:0; right:0; bottom:0; left:0; height:100% !important; }
+.page_store_detail_tabs_image_inner_new.videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+.page_store_detail_tabs_image_inner_new.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .Page_Store_google_reviews_main_new{margin:40px 0;}
 .Page_Store_google_reviews_main_new .page-width{}
