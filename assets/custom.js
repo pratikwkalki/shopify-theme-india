@@ -235,7 +235,7 @@ $('.sotp-popup-close-btn').on('click', function () {
 if (customerPopup.length) {
   const closeBtn = customerPopup.find("[js-close-btn]");
   const isCartPage = window.location.pathname.includes('/cart');
-  const scrollTriggeredKey = 'scrollTriggeredCustomerPopup';
+  const scrollTriggeredKey = 'closedcustomerpopupcart';
 
   $("[js-customer-popup-btn]").click(function (evt) {
     evt.preventDefault();
