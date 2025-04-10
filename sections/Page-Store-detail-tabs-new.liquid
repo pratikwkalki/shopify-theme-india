@@ -52,7 +52,7 @@
                     {%- for youtube_video_list in youtube_video_list -%}
                       <div class="swiper-slide page_store_detail_tabs_image_new">
                         <div class="page_store_detail_tabs_image_inner_new">
-                          {{ youtube_video_list | video_tag: controls: false, autoplay: true, loop: true }}
+                          {{ youtube_video_list }}
                         </div>
                       </div>
                     {%- endfor -%}
