@@ -245,7 +245,7 @@ if (customerPopup.length) {
   const isCartPage = window.location.pathname.includes('/cart');
   const scrollTriggeredKey = 'scrollTriggeredCustomerPopup';
 
-  if (isCartPage && !localStorage.getItem(scrollTriggeredKey)) {
+  if (!localStorage.getItem(scrollTriggeredKey)) {
     let scrollTriggered = false;
 
     window.addEventListener('scroll', function () {
