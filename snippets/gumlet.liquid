@@ -1,0 +1,58 @@
+{% capture GUMLET %}
+ {% comment %}
+ <!--
+ Convert a Shopify CDN path into an Gumlet path, with parameters.
+
+ * Refer to the Gumlet documentation to learn about all the available parameters: https://docs.gumlet.com/reference/image-transform-size
+ -->
+ {% endcomment %}
+ {% if settings.enableGumlet %}
+ {% for i in (1..1) %}
+ {% comment %}
+ <!-- Check to ensure the src exists and that the Gumlet url theme settings are not blank. If blank, stop! -->
+ {% endcomment %}
+ {% unless src or settings.gumletUrl != blank %}
+ {{ src }}
+ {% break %}
+ {% endunless %}
+
+ {% comment %}
+ <!-- Check to ensure the src has the Shopify CDN url in it. If it doesn't this does not need to run any further -->
+ {% endcomment %}
+ {% assign cdnUrl = settings.gumletShopifyCdnUrl | strip %}
+ {% unless src contains cdnUrl %}
+ {{ src }}
+ {% break %}
+ {% endunless %}
+
+ {% assign gumletUrl = settings.gumletUrl | strip %}
+
+ {% comment %}
+ <!-- Create a list of all the Gumlet filters we want to use -->
+ {% endcomment %}
+ {% assign filters = 'bri,con,cs,exp,gam,high,hue,invert,sat,shad,sharp,usm,usmrad,vib,auto,bg,blend,bm,ba,balph,bp,bw,bh,bf,bc,bs,bx,by,border,pad,faceindex,facepad,faces,ch,chromasub,colorquant,dl,dpi,fm,lossless,q,mask,nr,nrs,colors,palette,prefix,dpr,flip,or,rot,crop,fit,h,rect,w,blur,htn,mono,px,sepia,txt,txtalign,txtclip,txtclr,txtfit,txtfont,txtline,txtlineclr,txtpad,txtshad,txtsize,txtwidth,trim,trimcolor,trimmd,trimpad,trimsd,trimtol,mark,markalign,markalpha,markbase,markfit,markh,markpad,markscale,markw,markx,marky' | split:',' %}
+
+ {% comment %}
+ <!-- Build up the list of filters to add to the url -->
+ {% endcomment %}
+ {% assign imgWithQuerystring = "?" %}
+
+ {% if src contains '?' %}
+ {% assign imgWithQuerystring = '' %}
+ {% endif %}
+
+ {% for _filter in filters %}
+ {% if [_filter] %}
+ {% assign imgWithQuerystring = imgWithQuerystring | append:_filter | append:'=' | append:[_filter] | append:'&' %}
+ {% endif %}
+ {% endfor %}
+
+ {% assign modifySrc = src | split:'?' | first | append: "?" %}
+ {% assign newSrc = modifySrc | strip | replace:cdnUrl,gumletUrl | append:imgWithQuerystring %}
+ {% endfor %}
+
+ {{ newSrc | default:src }}
+ {% else %}
+ {{ src }}
+ {% endif %}
+{% endcapture %}{{ GUMLET | strip | replace:'  ' | strip_newlines }}
