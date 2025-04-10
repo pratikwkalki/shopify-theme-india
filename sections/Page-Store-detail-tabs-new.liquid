@@ -49,10 +49,10 @@
                 {%- assign youtube_video_list = metaobject.youtube_video_list.value -%} 
                 <div class="swiper-container page_store_detail_tabs_slider">
                   <div class="swiper-wrapper">
-                    {%- for youtube_video_list in youtube_video_list -%}
+                    {%- for youtube_video_listn in youtube_video_list -%}
                       <div class="swiper-slide page_store_detail_tabs_image_new">
                         <div class="page_store_detail_tabs_image_inner_new">
-                          {{ youtube_video_list }}
+                          {{ youtube_video_listn }}
                         </div>
                       </div>
                     {%- endfor -%}
