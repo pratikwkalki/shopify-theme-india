@@ -30,11 +30,13 @@
                             {% else %}  
                               {%- if block.settings.main_desktop_full_image != blank and block.settings.main_mobile_full_image != blank -%}
                                 <div class="Index_side_by_side_banner_innerloop_innerboxs_videoimage_new">
+                                  {% assign main_desktop_image = block.settings.main_desktop_full_image  | image_url %}
+                                  {% assign main_mobile_image = block.settings.main_mobile_full_image  | image_url %}
                                   <picture>
-                                    <source srcset="{{ block.settings.main_mobile_full_image | image_url: width: 170, quality: 80 }}" media="(max-width: 380px)" loading="lazy" />
-                                    <source srcset="{{ block.settings.main_mobile_full_image | image_url: width: 230, quality: 80 }}" media="(max-width: 500px)" loading="lazy" />
-                                    <source srcset="{{ block.settings.main_mobile_full_image | image_url: width: 355, quality: 80 }}" media="(max-width: 749px)" loading="lazy" />
-                                    <img src="{{ block.settings.main_desktop_full_image | image_url: width: 710, quality: 80 }}" alt="{{ block.settings.alt_text }}" loading="lazy" width="{{ block.settings.main_desktop_full_image.width }}" height="{{ block.settings.main_desktop_full_image.height }}" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 170 %}" media="(max-width: 380px)" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 230 %}" media="(max-width: 500px)" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 355 %}" media="(max-width: 749px)" />
+                                    <img src="{%- render 'gumlet', src: main_desktop_image w: 710 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="{{ block.settings.main_desktop_full_image.width }}" height="{{ block.settings.main_desktop_full_image.height }}" />
                                   </picture>
                                 </div>
                               {%- endif -%}
