@@ -3773,7 +3773,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
 
   .Collection_meta_columns_main_new{margin:12px 0 30px;}
   .Collection_meta_columns_loops_mainbox_new{ width:33.33%; }
-  .highlighted-banners-mobile-image.Collection_meta_columns_loops_mainbox_new{ width: calc(33.33% - 10px); }
+  .highlighted-banners-mobile-image .Collection_meta_columns_loops_mainbox_new{ width: calc(33.33% - 10px); }
   .Collection_meta_columns_loops_innerbox_1_new{ padding-bottom:162.5%; }
   .Collection_meta_columns_loops_innerbox_new:after{ height:60px; }
   .Collection_meta_columns_loops_innerbox_2_new{ padding:10px 10px; }
