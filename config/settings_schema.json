@@ -1589,6 +1589,7 @@
             "type": "text",
             "id": "gumletShopifyCdnUrl",
             "label": "Shopify CDN domain",
+            "default":"//in.kalkifashion.com",
             "info":"Do not change this unless you have a proxy in place. Not sure? Leave it as is."
         }
     ]
