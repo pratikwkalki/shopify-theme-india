@@ -167,7 +167,7 @@
           {{ active_variant.inventory_quantity }} left
         {% endif %}
       </span>
-      {%- if active_variant.inventory_quantity != 0 or variant.inventory_policy == 'continue' -%}
+      {%- if active_variant.inventory_quantity != 0 -%}
         {%- assign sizeHoverDetail = shop.metaobjects.size_hover_details -%}
         {%- for SizeDetail in sizeHoverDetail.values -%}
           {%- assign ValueHandle = value | handleize -%}
