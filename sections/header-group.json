@@ -143,6 +143,7 @@
     },
     "customer_popup": {
       "type": "customer-popup",
+      "disabled": true,
       "settings": {
         "main_heading_text": "<p>Register & Be A Part Of The KALKI Circle!</p>",
         "main_information_text": "Enjoy exclusive benefits like:\n- Exclusive early collection showcase\n- Access amazing offers, discounts and more\n\nJoin Now!",
