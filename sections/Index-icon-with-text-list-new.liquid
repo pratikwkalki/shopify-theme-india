@@ -9,7 +9,8 @@
                 <div class="Index_icon_with_text_list_allloop_innerboxs_new" popup_id="Index_popup_{{ block.id }}">
                   {%- if block.settings.icon != blank -%}
                     <div class="Index_icon_with_text_list_allloop_innerboxs_icons_new">
-                      <img class="Icon_image_new" src="{%- render 'imagekit' image: block.settings.icon, width: 50 %}" alt="{{ block.settings.title }}" loading="lazy" width="50" height="50" />
+                      {% assign mainImage = block.settings.icon | image_url %}
+                      <img class="Icon_image_new" src="{%- render 'gumlet', src: mainImage w: 50 %}" alt="{{ block.settings.title }}" loading="lazy" width="50" height="50" />
                     </div>
                   {%- endif -%}
                   {%- if block.settings.title != blank -%}
