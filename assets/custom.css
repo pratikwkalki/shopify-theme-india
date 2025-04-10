@@ -1994,9 +1994,9 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
 .page_photo_video_tabs_image_inner_new img,.page_photo_video_tabs_image_inner_new video{ width:100%; object-fit:cover; }
 
 
-.page_store_detail_tabs_image_inner_new { position:relative; padding-bottom:175.24%; }
-.page_store_detail_tabs_image_inner_new img{ width:100%; position:absolute; object-fit:cover; top:0; right:0; bottom:0; left:0; height:100% !important; }
-.page_store_detail_tabs_image_inner_new video{ width:100%; position:absolute; object-fit:cover; top:0; right:0; bottom:0; left:0; height:100% !important; }
+.page_store_detail_tabs_image_inner_new { position:relative; }
+.page_store_detail_tabs_image_inner_new img{ width:100%; position:relative; object-fit:cover; top:0; right:0; bottom:0; left:0; height:100% !important; }
+.page_store_detail_tabs_image_inner_new video{ width:100%; position:relative; object-fit:cover; top:0; right:0; bottom:0; left:0; height:100% !important; }
 
 .Page_Store_google_reviews_main_new{margin:40px 0;}
 .Page_Store_google_reviews_main_new .page-width{}
@@ -4089,7 +4089,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   .page_store_detail_tabs_inner_new .tab{ margin-bottom:20px; }
   .page_store_detail_tabs_image_new { width: 150px; }
   .page_photo_video_tabs_image_new { width: 150px !important; }
-  .page_store_detail_tabs_image_inner_new{ padding-bottom:176%; }
+  /* .page_store_detail_tabs_image_inner_new{ padding-bottom:176%; } */
   .page_store_detail_tabs_slider .swiper-button-prev{ display:none; }
   .page_store_detail_tabs_slider .swiper-button-next{ display:none; }
   .page_store_detail_tabs_innerdetail_new{ margin:0 -16px; }
