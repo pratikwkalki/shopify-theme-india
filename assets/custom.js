@@ -228,38 +228,44 @@ $(".sign-up-btn").click(function() {
 
 const customerPopup = $("#customerPopup");
 
-// Manual close button sets closed flag
 $('.sotp-popup-close-btn').on('click', function () {
   localStorage.setItem('closedcustomerpopup', 'true');
 });
 
 if (customerPopup.length) {
   const closeBtn = customerPopup.find("[js-close-btn]");
+  const isCartPage = window.location.pathname.includes('/cart');
+  const scrollTriggeredKey = 'scrollTriggeredCustomerPopup';
 
-  // Manual open button
   $("[js-customer-popup-btn]").click(function (evt) {
     evt.preventDefault();
     customerPopup.addClass("is-open");
   });
 
-  const isCartPage = window.location.pathname.includes('/cart');
-  const scrollTriggeredKey = 'scrollTriggeredCustomerPopup';
+  const closedCustomerPopup = localStorage.getItem('closedcustomerpopup');
 
-  if (!localStorage.getItem(scrollTriggeredKey)) {
+  if (isCartPage && !localStorage.getItem(scrollTriggeredKey)) {
     let scrollTriggered = false;
-
     window.addEventListener('scroll', function () {
       if (!scrollTriggered) {
         scrollTriggered = true;
         localStorage.setItem(scrollTriggeredKey, 'true');
 
-        // Open popup regardless of closedcustomerpopup state
+        // Trigger popup regardless of closed status
         document.querySelector('.header__icon--account')?.click();
       }
     });
   }
-
-  // Close logic
+  if (!closedCustomerPopup && !isCartPage) {
+    let scrollTriggered = false;
+    window.addEventListener('scroll', function () {
+      if (!scrollTriggered) {
+        scrollTriggered = true;
+        document.querySelector('.header__icon--account')?.click();
+      }
+    });
+  }
+  
   closeBtn.click(function () {
     customerPopup.removeClass("is-open");
     localStorage.setItem('closedcustomerpopup', 'true');
