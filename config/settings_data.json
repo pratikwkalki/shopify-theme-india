@@ -143,6 +143,7 @@
     "imagekitUrl": "https://ik.imagekit.io/4sjmoqtje",
     "imagekitShopifyCdnUrl": "//in.kalkifashion.com",
     "enableGumlet": true,
+    "gumletUrl": "https://kalki.gumlet.io",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
