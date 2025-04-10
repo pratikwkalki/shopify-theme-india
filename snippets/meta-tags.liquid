@@ -39,6 +39,6 @@
 <meta name="twitter:description" content="{{ og_description | escape }}">
 
 {% unless template contains 'cart' %} 
-{{ 'link.js' | asset_url | script_tag }}
+  <script src="{{ 'link.js' | asset_url }}" async></script>
 {% endunless %}
 
