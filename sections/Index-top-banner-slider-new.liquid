@@ -26,23 +26,23 @@
                               <div class="Index_top_banner_slider_allloop_innerboxs_videoimage_new">
                                 {%- if forloop.first %}
                                   <picture>
-                                    <source srcset="{%- render 'imagekit' image: block.settings.main_mobile_full_image, width: 380 %}" media="(max-width: 380px)" />
-                                    <source srcset="{%- render 'imagekit' image: block.settings.main_mobile_full_image, width: 500 %}" media="(max-width: 500px)" />
-                                    <source srcset="{%- render 'imagekit' image: block.settings.main_mobile_full_image, width: 750 %}" media="(max-width: 748px)" />
-                                    <source srcset="{%- render 'imagekit' image: block.settings.main_desktop_full_image, width: 1024 %}" media="(max-width: 1024px)" />
-                                    <source srcset="{%- render 'imagekit' image: block.settings.main_desktop_full_image, width: 1200 %}" media="(max-width: 1200px)" />
-                                    <source srcset="{%- render 'imagekit' image: block.settings.main_desktop_full_image, width: 1350 %}" media="(max-width: 1350px)" />
-                                    <img class="image_first_slide" src="{%- render 'imagekit' image: block.settings.main_desktop_full_image, width: 1480 %}" alt="{{ block.settings.alt_text }}" loading="eager" width="1438" height="539" />
+                                    <source srcset="{%- render 'gumlet' image: block.settings.main_mobile_full_image, width: 380 %}" media="(max-width: 380px)" />
+                                    <source srcset="{%- render 'gumlet' image: block.settings.main_mobile_full_image, width: 500 %}" media="(max-width: 500px)" />
+                                    <source srcset="{%- render 'gumlet' image: block.settings.main_mobile_full_image, width: 750 %}" media="(max-width: 748px)" />
+                                    <source srcset="{%- render 'gumlet' image: block.settings.main_desktop_full_image, width: 1024 %}" media="(max-width: 1024px)" />
+                                    <source srcset="{%- render 'gumlet' image: block.settings.main_desktop_full_image, width: 1200 %}" media="(max-width: 1200px)" />
+                                    <source srcset="{%- render 'gumlet' image: block.settings.main_desktop_full_image, width: 1350 %}" media="(max-width: 1350px)" />
+                                    <img class="image_first_slide" src="{%- render 'gumlet' image: block.settings.main_desktop_full_image, width: 1480 %}" alt="{{ block.settings.alt_text }}" loading="eager" width="1438" height="539" />
                                   </picture>
                                 {%- else -%}
                                   <picture>
-                                    <source srcset="{%- render 'imagekit' image: block.settings.main_mobile_full_image, width: 380 %}" media="(max-width: 380px)" />
-                                    <source srcset="{%- render 'imagekit' image: block.settings.main_mobile_full_image, width: 500 %}" media="(max-width: 500px)" />
-                                    <source srcset="{%- render 'imagekit' image: block.settings.main_mobile_full_image, width: 750 %}" media="(max-width: 748px)" />
-                                    <source srcset="{%- render 'imagekit' image: block.settings.main_desktop_full_image, width: 1024 %}" media="(max-width: 1024px)" />
-                                    <source srcset="{%- render 'imagekit' image: block.settings.main_desktop_full_image, width: 1200 %}" media="(max-width: 1200px)" />
-                                    <source srcset="{%- render 'imagekit' image: block.settings.main_desktop_full_image, width: 1350 %}" media="(max-width: 1350px)" />
-                                    <img src="{%- render 'imagekit' image: block.settings.main_desktop_full_image, width: 1480 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="1438" height="539" />
+                                    <source srcset="{%- render 'gumlet' image: block.settings.main_mobile_full_image, width: 380 %}" media="(max-width: 380px)" />
+                                    <source srcset="{%- render 'gumlet' image: block.settings.main_mobile_full_image, width: 500 %}" media="(max-width: 500px)" />
+                                    <source srcset="{%- render 'gumlet' image: block.settings.main_mobile_full_image, width: 750 %}" media="(max-width: 748px)" />
+                                    <source srcset="{%- render 'gumlet' image: block.settings.main_desktop_full_image, width: 1024 %}" media="(max-width: 1024px)" />
+                                    <source srcset="{%- render 'gumlet' image: block.settings.main_desktop_full_image, width: 1200 %}" media="(max-width: 1200px)" />
+                                    <source srcset="{%- render 'gumlet' image: block.settings.main_desktop_full_image, width: 1350 %}" media="(max-width: 1350px)" />
+                                    <img src="{%- render 'gumlet' image: block.settings.main_desktop_full_image, width: 1480 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="1438" height="539" />
                                   </picture>
                                 {%- endif -%}
                               </div>
