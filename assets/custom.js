@@ -226,7 +226,7 @@ $(".sign-up-btn").click(function() {
   $("#recover").css("display","none");
 })
 
-const customerPopup = $("#customerPopup");
+const customerPopup = $("#sotp");
 
 $('.sotp-popup-close-btn').on('click', function () {
   localStorage.setItem('closedcustomerpopup', 'true');
