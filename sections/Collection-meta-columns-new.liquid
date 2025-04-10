@@ -3,10 +3,10 @@
     <div class="page-width">
       <div class="Collection_meta_columns_inner_new">
         <div class="Collection_meta_columns_loops_new">
-          <div class="swiper-container Collection_meta_columns_slider">
-            <div class="swiper-wrapper highlighted-banners-desktop-image">
+          <div class="Collection_meta_columns_slider">
+            <div class="highlighted-banners-desktop-image">
               {%- for Images in collection.metafields.custom.collection_column_video_or_image_list.value -%}
-                <div class="swiper-slide Collection_meta_columns_loops_mainbox_new">
+                <div class="Collection_meta_columns_loops_mainbox_new">
                   <a href="{{ collection.metafields.custom.collection_column_redirect_link_list.value[forloop.index0] }}">
                     <div class="Collection_meta_columns_loops_innerbox_new">
                       <div class="Collection_meta_columns_loops_innerbox_1_new">
@@ -46,9 +46,9 @@
                 </div>
               {%- endfor -%}
             </div>
-            <div class="swiper-wrapper highlighted-banners-mobile-image">
+            <div class="highlighted-banners-mobile-image">
               {%- for ImagesMob in collection.metafields.custom.collection_column_mobile_image_list.value -%}
-                <div class="swiper-slide Collection_meta_columns_loops_mainbox_new">
+                <div class="Collection_meta_columns_loops_mainbox_new">
                   <a href="{{ collection.metafields.custom.collection_column_redirect_link_list.value[forloop.index0] }}">
                     <div class="Collection_meta_columns_loops_innerbox_new">
                       <div class="Collection_meta_columns_loops_innerbox_1_new">
