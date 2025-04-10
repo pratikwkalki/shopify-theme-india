@@ -82,6 +82,7 @@
                 <img
                   srcset="
                     {%- if card_product.featured_media.width >= 400 -%}{%- render 'imagekit' image: card_product.featured_media, width: 400 %} 610w,{%- endif -%}
+                  {%- if card_product.featured_media.width >= 600 -%}{%- render 'imagekit' image: card_product.featured_media, width: 600 %} 810w,{%- endif -%}
                     {%- if card_product.featured_media.width >= 350 -%}{%- render 'imagekit' image: card_product.featured_media, width: 350 %} 1066w,{%- endif -%}
                     {%- render 'imagekit' image: card_product.featured_media, width: 400 %} {{ card_product.featured_media.width }}w
                   "
@@ -102,6 +103,7 @@
                   <img
                     srcset="
                       {%- if card_product.media[1].width >= 400 -%}{%- render 'imagekit' image: card_product.media[1], width: 400 %} 610w,{%- endif -%}
+                    {%- if card_product.media[1].width >= 600 -%}{%- render 'imagekit' image: card_product.media[1], width: 600 %} 610w,{%- endif -%}
                       {%- if card_product.media[1].width >= 350 -%}{%- render 'imagekit' image: card_product.media[1], width: 350 %} 1066w,{%- endif -%}
                       {%- render 'imagekit' image: card_product.media[1], width: 400 %} {{ card_product.media[1].width }}w
                     "
