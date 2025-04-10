@@ -1,6 +1,6 @@
 .section-header~.shopify-section-group-header-group.Customer_login_template_new {
     position: absolute;
-    inset: 0;
+    top: 0;
 }
 .customer-popup {
     position: fixed;
