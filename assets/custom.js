@@ -226,42 +226,47 @@ $(".sign-up-btn").click(function() {
   $("#recover").css("display","none");
 })
 
-const customerPopup = $("#customerPopup")
+const customerPopup = $("#customerPopup");
 
-$('.sotp-popup-close-btn').on('click', function() {
+$('.sotp-popup-close-btn').on('click', function () {
   localStorage.setItem('closedcustomerpopup', 'true');
 });
 
-if(customerPopup.length) {
+if (customerPopup.length) {
   const closeBtn = customerPopup.find("[js-close-btn]");
-  $("[js-customer-popup-btn]").click(function(evt) {
+  
+  $("[js-customer-popup-btn]").click(function (evt) {
     evt.preventDefault();
     customerPopup.addClass("is-open");
-  })
+  });
+  const isCartPage = window.location.pathname.includes('/cart');
+  const scrollTriggeredKey = 'scrollTriggeredCustomerPopup';
 
-  if (!localStorage.getItem('closedcustomerpopup')) {
+  if (isCartPage && !localStorage.getItem(scrollTriggeredKey)) {
     let scrollTriggered = false;
-    window.addEventListener('scroll', function(evt) {
+
+    window.addEventListener('scroll', function () {
       if (!scrollTriggered) {
         scrollTriggered = true;
-        // customerPopup.addClass("is-open");
-        document.querySelector('.header__icon--account').click();
+        localStorage.setItem(scrollTriggeredKey, 'true');
+        document.querySelector('.header__icon--account')?.click();
       }
     });
   }
 
-  closeBtn.click(function() {
+  closeBtn.click(function () {
     customerPopup.removeClass("is-open");
     localStorage.setItem('closedcustomerpopup', 'true');
   });
 
-  customerPopup.click(function({ target}) {
-    if(target.classList.contains("popup-overlay")) {
+  customerPopup.click(function ({ target }) {
+    if (target.classList.contains("popup-overlay")) {
       customerPopup.removeClass("is-open");
       localStorage.setItem('closedcustomerpopup', 'true');
     }
-  })
+  });
 }
+
 
 $('[js-show-password]').on('click', function() {
   const field = $(this).parents(".field");
