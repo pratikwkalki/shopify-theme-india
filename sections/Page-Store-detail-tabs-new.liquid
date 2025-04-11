@@ -1,4 +1,4 @@
-{%- if metaobject.photos_list_tabs.value != blank or metaobject.youtube_video_list.value != blank or metaobject.youtube_video_section.value != blank  -%}
+{%- if metaobject.photos_list_tabs.value != blank or metaobject.youtube_video_list.value != blank  -%}
   
   <div class="page_store_detail_tabs_main_new test" style="background: {{ section.settings.main_back_color }};">
     <div class="page-width">
@@ -15,7 +15,7 @@
             </button>
           {%- endif -%}
         </div>
-        {%- if metaobject.photos_list_tabs.value != blank or metaobject.youtube_video_section.value != blank -%}
+        {%- if metaobject.photos_list_tabs.value != blank -%}
           <div class="tabcontent tab_photos_open" style="display:block;">
             <div class="page_store_detail_tabs_maindetail_new">
               <div class="page_store_detail_tabs_innerdetail_new">
@@ -40,20 +40,6 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="tabcontent tab_videos_open" style="display:none;">
-                {%- assign youtube_video_section = metaobject.youtube_video_section.value -%}  
-                <div class="page_store_youtube_video"> 
-                  {{ youtube_video_section | json }}
-                    {%- for youtube_video_listn in youtube_video_section.store_page_videos.value -%}
-                      <div class="page_store_detail_tabs_youtube_video">
-                        <div class="videowrapper">
-                          {{ youtube_video_listn.video_1 }}
-                        </div>
-                      </div>
-                    {%- endfor -%}
-                </div>
           </div>
         {%- endif -%}
         {%- if metaobject.youtube_video_section.value != blank -%}
