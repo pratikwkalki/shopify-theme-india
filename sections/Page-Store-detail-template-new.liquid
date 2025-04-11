@@ -8,7 +8,9 @@
   </div>
 </div>
 {%- if metaobject.breadcrumb.value != blank -%}
-    {{ metaobject.breadcrumb.value }}
+    {% for breadcrumb in metaobject.breadcrumb.value %}
+    {{ breadcrumb }}
+    {% endfor %}
 {%- endif -%}
 
 {% schema %}
