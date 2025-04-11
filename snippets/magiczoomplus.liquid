@@ -264,17 +264,18 @@ a[data-slide-id].mz-thumb-selected img {
             <a 
                href="{{ mt_featured_image.preview_image | image_url: crop: false, width: MagicToolboxBigImageSize, height: MagicToolboxBigImageSize }}"
                {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{{ mt_featured_image.preview_image | image_url }}"{% endif %}
-               class="js-no-transition MagicZoomPlus testi" id="zoom{{ product.id }}" 
+               class="js-no-transition MagicZoomPlus" id="zoom{{ product.id }}" 
                title="{{ mt_featured_image.alt | escape }}"
                data-image="{{ mt_featured_image.preview_image | image_url: crop: false, width: MagicToolboxThumbnailImageSize, height: MagicToolboxThumbnailImageSize }}" 
                {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{{ mt_featured_image.preview_image | image_url: crop: false, width: MagicToolboxThumbnailImageSize2x, height: MagicToolboxThumbnailImageSize2x }}" {% endif %}
                >
+                    {% assign gm_featured_image = block.settings.main_desktop_full_image  | image_url %}
                     <img  
                         style="max-width:100%; aspect-ratio:auto {{ mt_featured_image.width }} / {{ mt_featured_image.height }}; height:auto;"
                         width="{{ mt_featured_image.width }}"
                         height="{{ mt_featured_image.height }}"
                         itemprop="image" 
-                        src="{{ mt_featured_image.preview_image | image_url: crop: false, width: MagicToolboxThumbnailImageSize, height: MagicToolboxThumbnailImageSize }}" 
+                        src="{%- render 'gumlet', src: mt_featured_image w: 721 %}" 
                         {% if MagicToolboxRetinaMainImage == 'Yes' %}srcset="{{ mt_featured_image.preview_image | image_url: crop: false, width: MagicToolboxThumbnailImageSize2x, height: MagicToolboxThumbnailImageSize2x }} 2x" {% endif %}
                         alt="{{ mt_featured_image.alt | escape | default: product.title }}" />
             </a>
