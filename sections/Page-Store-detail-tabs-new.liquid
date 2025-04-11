@@ -45,7 +45,7 @@
         {%- if metaobject.youtube_video_section.value != blank -%}
           <div class="tabcontent tab_videos_open" style="display:none;">
             <div class="page_store_detail_tabs_maindetail_new">
-              <div class="page_store_detail_tabs_innerdetail_new">page_store_detail_tabs_slider
+              <div class="page_store_detail_tabs_innerdetail_new">
                 {%- assign youtube_video_section = metaobject.youtube_video_section.value -%}  
                 <div class="page_store_youtube_video">                  
                     {%- for youtube_video_listn in youtube_video_section.store_page_videos.value -%}
