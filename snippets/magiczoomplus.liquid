@@ -276,7 +276,7 @@ a[data-slide-id].mz-thumb-selected img {
                         height="{{ mt_featured_image.height }}"
                         itemprop="image" 
                         src="{%- render 'gumlet', src: mt_featured_image w: 721 %}" 
-                        {% if MagicToolboxRetinaMainImage == 'Yes' %}srcset="{{ mt_featured_image.preview_image | image_url: crop: false, width: MagicToolboxThumbnailImageSize2x, height: MagicToolboxThumbnailImageSize2x }} 2x" {% endif %}
+                        {% if MagicToolboxRetinaMainImage == 'Yes' %}srcset="{%- render 'gumlet', src: mt_featured_image w: 721 %} 2x" {% endif %}
                         alt="{{ mt_featured_image.alt | escape | default: product.title }}" />
             </a>
             
