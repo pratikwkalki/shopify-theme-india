@@ -19,78 +19,86 @@
             {%- assign child_link = nil -%}
             {%- assign grandchild_link = nil -%}
             {%- assign matched = false -%}
-          
-            {%- for block in section.blocks -%}
-              {%- if block.type == 'mega-menu' and block.settings.mega_menu != blank and block.settings.main_menu_name == collection.metafields.custom.collection_menu and template_name == "collection" -%}
-                {%- assign bottom_menu = block.settings.mega_menu -%}
-          
-                {%- for link in bottom_menu.links -%}
-                  {%- if link.object.handle == current_collection -%}
-                    {%- assign parent_link = link -%}
-                    {%- assign matched = true -%}
-                  {%- endif -%}
-          
-                  {%- if link.links != blank -%}
-                    {%- for childlink in link.links -%}
-                      {%- if childlink.object.handle == current_collection -%}
-                        {%- assign parent_link = link -%}
-                        {%- assign child_link = childlink -%}
-                        {%- assign matched = true -%}
+            {% if collection.metafields.custom.breadcrumbs.value.select_collections.value %}
+              {% for relatedCollection in collection.metafields.custom.breadcrumbs.value.select_collections.value %}
+                <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                  <a href="{{  relatedCollection.url }}" class="breadcrumbs__link" aria-current="page" itemscope itemtype="https://schema.org/WebPage" itemid="{{ relatedCollection.url }}" itemprop="item">
+                    <span itemprop="name">{{ relatedCollection.title }}</span>
+                  </a>
+                </li>
+              {% endfor %}
+            {% else %}
+              {%- for block in section.blocks -%}
+                {%- if block.type == 'mega-menu' and block.settings.mega_menu != blank and block.settings.main_menu_name == collection.metafields.custom.collection_menu and template_name == "collection" -%}
+                  {%- assign bottom_menu = block.settings.mega_menu -%}
+            
+                  {%- for link in bottom_menu.links -%}
+                    {%- if link.object.handle == current_collection -%}
+                      {%- assign parent_link = link -%}
+                      {%- assign matched = true -%}
+                    {%- endif -%}
+            
+                    {%- if link.links != blank -%}
+                      {%- for childlink in link.links -%}
+                        {%- if childlink.object.handle == current_collection -%}
+                          {%- assign parent_link = link -%}
+                          {%- assign child_link = childlink -%}
+                          {%- assign matched = true -%}
+                        {%- endif -%}
+            
+                        {%- if childlink.links != blank -%}
+                          {%- for grandchildlink in childlink.links -%}
+                            {%- if grandchildlink.object.handle == current_collection -%}
+                              {%- assign parent_link = link -%}
+                              {%- assign child_link = childlink -%}
+                              {%- assign grandchild_link = grandchildlink -%}
+                              {%- assign matched = true -%}
+                            {%- endif -%}
+                          {%- endfor -%}
+                        {%- endif -%}
+                      {%- endfor -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+            
+                  {%- if matched -%}
+                    {%- assign parent_link_upper = parent_link.title | upcase -%}
+                    {%- unless parent_link.url == grandchild_link.url or parent_link_upper contains 'SEE ALL' -%}
+                      {%- if parent_link -%}
+                        <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                          <a href="{{ parent_link.url }}" class="breadcrumbs__link" itemscope itemtype="https://schema.org/WebPage" itemid="{{ parent_link.url }}" itemprop="item">
+                            <span itemprop="name">{{ parent_link.title }}</span>
+                          </a>
+                          <meta itemprop="position" content="{{ breadcrumb_position }}">
+                        </li>
+                        {%- assign breadcrumb_position = breadcrumb_position | plus: 1 -%}
                       {%- endif -%}
-          
-                      {%- if childlink.links != blank -%}
-                        {%- for grandchildlink in childlink.links -%}
-                          {%- if grandchildlink.object.handle == current_collection -%}
-                            {%- assign parent_link = link -%}
-                            {%- assign child_link = childlink -%}
-                            {%- assign grandchild_link = grandchildlink -%}
-                            {%- assign matched = true -%}
-                          {%- endif -%}
-                        {%- endfor -%}
+                    {%- endunless -%}
+            
+                    {%- assign child_title_upper = child_link.title | upcase -%}
+                    {%- unless child_title_upper contains 'STYLE' or child_title_upper contains 'OCCASION' or child_title_upper contains 'COLLECTION' or child_title_upper contains 'QUICK' or child_title_upper contains 'COLOR' or child_title_upper contains 'RELATION' or child_title_upper contains 'SHOPPER' or child_title_upper contains 'DISCOUNT' -%}
+                      {%- if child_link -%}
+                        <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                          <a href="{{ child_link.url }}" class="breadcrumbs__link" itemscope itemtype="https://schema.org/WebPage" itemid="{{ child_link.url }}" itemprop="item">
+                            <span itemprop="name">{{ child_link.title }}</span>
+                          </a>
+                          <meta itemprop="position" content="{{ breadcrumb_position }}">
+                        </li>
+                        {%- assign breadcrumb_position = breadcrumb_position | plus: 1 -%}
                       {%- endif -%}
-                    {%- endfor -%}
-                  {%- endif -%}
-                {%- endfor -%}
-          
-                {%- if matched -%}
-                  {%- assign parent_link_upper = parent_link.title | upcase -%}
-                  {%- unless parent_link.url == grandchild_link.url or parent_link_upper contains 'SEE ALL' -%}
-                    {%- if parent_link -%}
+                    {%- endunless -%}
+            
+                    {%- if grandchild_link -%}
                       <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
-                        <a href="{{ parent_link.url }}" class="breadcrumbs__link" itemscope itemtype="https://schema.org/WebPage" itemid="{{ parent_link.url }}" itemprop="item">
-                          <span itemprop="name">{{ parent_link.title }}</span>
-                        </a>
+                        <span class="breadcrumbs__link" aria-current="page" itemprop="name">{{ grandchild_link.title }}</span>
                         <meta itemprop="position" content="{{ breadcrumb_position }}">
                       </li>
-                      {%- assign breadcrumb_position = breadcrumb_position | plus: 1 -%}
                     {%- endif -%}
-                  {%- endunless -%}
-          
-                  {%- assign child_title_upper = child_link.title | upcase -%}
-                  {%- unless child_title_upper contains 'STYLE' or child_title_upper contains 'OCCASION' or child_title_upper contains 'COLLECTION' or child_title_upper contains 'QUICK' or child_title_upper contains 'COLOR' or child_title_upper contains 'RELATION' or child_title_upper contains 'SHOPPER' or child_title_upper contains 'DISCOUNT' -%}
-                    {%- if child_link -%}
-                      <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
-                        <a href="{{ child_link.url }}" class="breadcrumbs__link" itemscope itemtype="https://schema.org/WebPage" itemid="{{ child_link.url }}" itemprop="item">
-                          <span itemprop="name">{{ child_link.title }}</span>
-                        </a>
-                        <meta itemprop="position" content="{{ breadcrumb_position }}">
-                      </li>
-                      {%- assign breadcrumb_position = breadcrumb_position | plus: 1 -%}
-                    {%- endif -%}
-                  {%- endunless -%}
-          
-                  {%- if grandchild_link -%}
-                    <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
-                      <span class="breadcrumbs__link" aria-current="page" itemprop="name">{{ grandchild_link.title }}</span>
-                      <meta itemprop="position" content="{{ breadcrumb_position }}">
-                    </li>
                   {%- endif -%}
+            
+                  {%- break -%}
                 {%- endif -%}
-          
-                {%- break -%}
-              {%- endif -%}
-            {%- endfor -%}
-          
+              {%- endfor -%}
+            {% endif %}
             {%- unless matched -%}
               <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
                 <span class="breadcrumbs__link" aria-current="page" itemprop="name">{{ collection.title }}</span>
