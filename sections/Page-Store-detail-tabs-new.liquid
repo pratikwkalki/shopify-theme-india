@@ -49,7 +49,7 @@
                 {%- assign youtube_video_section = metaobject.youtube_video_section.value -%}  
                 <div class="page_store_detail_tabs_slider videowrapper">
                   {{ youtube_video_section.store_page_videos.value }}
-                    {%- for youtube_video_listn in youtube_video_section.store_page_videos -%}
+                    {%- for youtube_video_listn in youtube_video_section.store_page_videos.value -%}
                       {{ youtube_video_listn }}
                       
                       <div class="page_store_detail_tabs_image_new">
