@@ -9,7 +9,7 @@
               Photos
             </button>
           {%- endif -%}
-          {%- if metaobject.youtube_video_list.value != blank -%}
+          {%- if metaobject.youtube_video_section.value != blank -%}
             <button class="tablinks tabs_collection_new active {%- if metaobject.photos_list_tabs.value == blank -%} active{% endif %}" tab_id="tab_videos">
               Videos
             </button>
@@ -64,12 +64,10 @@
             </div>
           </div>
         {%- endif -%}
-        {{ metaobject.youtube_video_section.value }} test
         {%- if metaobject.youtube_video_section.value != blank -%}
           <div class="tabcontent tab_videos_open" style="display:none;">
                 {%- assign youtube_video_section = metaobject.youtube_video_section.value -%}  
                 <div class="page_store_youtube_video"> 
-                  {{ youtube_video_section | json }}
                     {%- for youtube_video_listn in youtube_video_section.store_page_videos.value -%}
                       <div class="page_store_detail_tabs_youtube_video">
                         <div class="videowrapper">
