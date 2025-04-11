@@ -477,64 +477,64 @@
         "information_hxURPn": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/01-mini-banner-250x250-09-10-24-top2.jpg",
-            "main_mobile_image": "shopify://shop_images/01-mini-banner-250x250-09-10-24-top2.jpg",
+            "main_desktop_image": "shopify://shop_images/01-mini2-banner-250x250-11-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/01-mini2-banner-250x250-11-04-25.jpg",
             "title": "<p>Discounted Deals</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/ethnic-mens-wear-on-sale"
+            "main_redirect_link": "https://in.kalkifashion.com/collections/menswear-on-sale"
           }
         },
         "information_Ud6yrw": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/02-mini-banner-250x250-09-10-24-top2.jpg",
-            "main_mobile_image": "shopify://shop_images/02-mini-banner-250x250-09-10-24-top2.jpg",
+            "main_desktop_image": "shopify://shop_images/02-mini2-banner-250x250-11-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/02-mini2-banner-250x250-11-04-25.jpg",
             "title": "<p>Limited Edition</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/ethnic-last-chance-mens-wear"
+            "main_redirect_link": "https://in.kalkifashion.com/collections/last-chance-menswear"
           }
         },
         "information_NQxDrp": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/03-mini-banner-250x250-09-10-24-top2.jpg",
-            "main_mobile_image": "shopify://shop_images/03-mini-banner-250x250-09-10-24-top2.jpg",
+            "main_desktop_image": "shopify://shop_images/03-mini2-banner-250x250-11-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/03-mini2-banner-250x250-11-04-25.jpg",
             "title": "<p>Cute Couture</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/ethnic-collection-for-boy"
+            "main_redirect_link": "https://in.kalkifashion.com/collections/see-all-boys"
           }
         },
         "information_MBGFwT": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/04-mini-banner-250x250-09-10-24-top2.jpg",
-            "main_mobile_image": "shopify://shop_images/04-mini-19-09-24.jpg",
+            "main_desktop_image": "shopify://shop_images/04-mini2-banner-250x250-11-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/04-mini2-banner-250x250-11-04-25.jpg",
             "title": "<p>Midnight Black</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/ethnic-black-kurta"
+            "main_redirect_link": "https://in.kalkifashion.com/collections/black-menswear"
           }
         },
         "information_cixgzh": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/05-mini-banner-250x250-09-10-24-top2.jpg",
-            "main_mobile_image": "shopify://shop_images/05-mini-banner-250x250-09-10-24-top2.jpg",
+            "main_desktop_image": "shopify://shop_images/05-mini2-banner-250x250-11-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/05-mini2-banner-250x250-11-04-25.jpg",
             "title": "<p>Must-Haves</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/ethnic-essential-for-men"
+            "main_redirect_link": "https://in.kalkifashion.com/collections/essential-for-men"
           }
         },
         "information_hTU38k": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/06-mini-banner-250x250-09-10-24-top2.jpg",
-            "main_mobile_image": "shopify://shop_images/06-mini-banner-250x250-09-10-24-top2.jpg",
+            "main_desktop_image": "shopify://shop_images/06-mini2-banner-250x250-11-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/06-mini2-banner-250x250-11-04-25.jpg",
             "title": "<p>Budget Finds</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/ethnic-mens-wear-under-gpb-199"
+            "main_redirect_link": "https://in.kalkifashion.com/collections/menswear-under-inr-8999"
           }
         },
         "information_BUC6E6": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/07-mini-banner-250x250-09-10-24-top2.jpg",
-            "main_mobile_image": "shopify://shop_images/07-mini-banner-250x250-09-10-24-top2.jpg",
+            "main_desktop_image": "shopify://shop_images/07-mini2-banner-250x250-11-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/07-mini2-banner-250x250-11-04-25.jpg",
             "title": "<p>Groomsquad</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/ethnic-groomsman"
+            "main_redirect_link": "https://in.kalkifashion.com/collections/groomsman"
           }
         }
       },
