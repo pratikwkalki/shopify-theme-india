@@ -49,7 +49,7 @@
         {%- when 'page' -%}
           <li class="breadcrumbs__item">
             <span class="breadcrumbs__link" aria-current="page">
-            {%- if metaobject.breadcrumb.value == blank -%} 
+            {%- if metaobject.breadcrumb.value != blank -%} 
                 {{ page.title }}               
             {%- else -%}
                 {% for breadcrumb in metaobject.breadcrumb.value %}
