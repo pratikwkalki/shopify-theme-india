@@ -35,6 +35,9 @@ img{ height: auto !important; }
 .order-8{order:8}
 .order-9{order:9}
 .order-10{order:10}
+.page_store_youtube_video{display: flex; gap: 20px;justify-content: center;align-items: flex-start;}
+  .page_store_youtube_video .page_store_detail_tabs_youtube_video{ width: 50%;}
+
 #app-embed{margin:20px 0;}
 #HeaderMenu-eid span{ background-color:#AA6437; color:#fff;padding: 3.8px 4.8px 5.8px 4.8px; border-radius: 4px; margin: -4.8px;}
 .tab { overflow: hidden; }
@@ -4110,8 +4113,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   .page_store_detail_tabs_slider .swiper-button-next{ display:none; }
   .page_store_detail_tabs_innerdetail_new{ margin:0 -16px; }
   .page_store_detail_tabs_slider{ padding:0 16px; }
-  .page_store_youtube_video{display: flex; gap: 20px;justify-content: center;align-items: flex-start;}
-  .page_store_youtube_video .page_store_detail_tabs_youtube_video{ width: 50%;}
+  
 
   .Page_Store_google_reviews_main_new{margin:12px 0;}
   .Page_Store_google_reviews_main_new .page-width{ padding:0 !important; }
