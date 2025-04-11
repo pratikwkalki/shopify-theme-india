@@ -35,8 +35,8 @@ img{ height: auto !important; }
 .order-8{order:8}
 .order-9{order:9}
 .order-10{order:10}
-.page_store_youtube_video{display: flex; gap: 20px;justify-content: center;align-items: flex-start;}
-  .page_store_youtube_video .page_store_detail_tabs_youtube_video{ width: 50%;}
+.page_store_youtube_video{display: flex; gap: 20px;justify-content: center;align-items: flex-start; flex-wrap: wrap;}
+  .page_store_youtube_video .page_store_detail_tabs_youtube_video{ width: calc(50% - 20px);}
 
 #app-embed{margin:20px 0;}
 #HeaderMenu-eid span{ background-color:#AA6437; color:#fff;padding: 3.8px 4.8px 5.8px 4.8px; border-radius: 4px; margin: -4.8px;}
