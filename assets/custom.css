@@ -1981,7 +1981,6 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
 .page_store_detail_tabs_inner_new .tab{ display:flex; align-items:center; justify-content:center; margin-bottom:40px; gap: 0;flex-wrap: wrap; }
 .page_store_detail_tabs_inner_new .tablinks { padding:8px 40px; border-bottom: 2px solid #E1E1E5; font-size: 20px; font-weight: 500; line-height: 118.75%; color:#0f0d1a; }
 .page_store_detail_tabs_inner_new .tablinks.active{ border-bottom-color:#0F0D1A; }
-.page_store_detail_tabs_inner_new .tablinks:first-child{ border-bottom-color:#0F0D1A; }
 .page_store_detail_tabs_maindetail_new{}
 .page_store_detail_tabs_image_new{ width:20%; }
 
