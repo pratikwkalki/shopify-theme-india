@@ -42,6 +42,29 @@
             </div>
           </div>
         {%- endif -%}
+        {%- if metaobject.video_list_tabs.value != blank -%}
+          <div class="tabcontent tab_videos_open" style="display:none;">
+            <div class="page_store_detail_tabs_maindetail_new">
+              <div class="page_store_detail_tabs_innerdetail_new">
+                {%- assign video_list_tabs = metaobject.video_list_tabs.value -%} 
+                <div class="swiper-container page_store_detail_tabs_slider">
+                  <div class="swiper-wrapper">
+                    {%- for video_list_tabs in video_list_tabs -%}
+                      <div class="swiper-slide page_store_detail_tabs_image_new">
+                        <div class="page_store_detail_tabs_image_inner_new">
+                          {{ video_list_tabs | video_tag: controls: false, autoplay: true, loop: true }}
+                        </div>
+                      </div>
+                    {%- endfor -%}
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {%- endif -%}
+        
         {%- if metaobject.youtube_video_section.value != blank -%}
           <div class="tabcontent tab_videos_open" style="display:none;">
                 {%- assign youtube_video_section = metaobject.youtube_video_section.value -%}  
