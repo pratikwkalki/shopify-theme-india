@@ -111,10 +111,11 @@
             {%- if metaobject.breadcrumb.value != blank -%} 
                 {% for breadcrumb in metaobject.breadcrumb.value %}
                       {{ breadcrumb }}
-                {% endfor %}             
-            {%- else -%}
-                {{ page_title }}
+                {% endfor %} 
             {%- endif -%}
+            </span>
+            <span class="breadcrumbs__link" aria-current="page">
+            {{ page_title }}
             </span>
           </li>
       {%- endcase -%}
