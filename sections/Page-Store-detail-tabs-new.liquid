@@ -48,11 +48,8 @@
               <div class="page_store_detail_tabs_innerdetail_new">
                 {%- assign youtube_video_section = metaobject.youtube_video_section.value -%} 
                 <div class="page_store_detail_tabs_slider videowrapper">
-                  {{ youtube_video_section.store_page_videos_list.videos_for_store_page | json }}
+                  {{ metaobject.store_page_videos_list.videos_for_store_page | json }}
                     {%- for youtube_video_listn in youtube_video_section -%}
-                      {{ youtube_video_section.store_page_videos_list.videos_for_store_page | json }}
-                      {{ youtube_video_listn.store_page_videos_list.videos_for_store_page | json }}
-                    {{ youtube_video_listn.youtube_video_1.value }}
                       <div class="page_store_detail_tabs_image_new">
                           {{ youtube_video_listn.store_page_videos_list.youtube_video_1.value }}
                       </div>
