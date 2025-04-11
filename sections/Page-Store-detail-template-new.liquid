@@ -7,7 +7,14 @@
     </div>
   </div>
 </div>
-
+{%- if metaobject.breadcrumb.value != blank -%} 
+      {% for breadcrumb in metaobject.breadcrumb.value %}
+            {{ breadcrumb }} 
+      {% endfor %}
+                             
+  {%- else -%}
+      {{ page.title }} 
+  {%- endif -%}
 
 {% schema %}
   {
