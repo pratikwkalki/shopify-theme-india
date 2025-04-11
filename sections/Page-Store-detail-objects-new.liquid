@@ -43,29 +43,34 @@
   
           {%- if metaobject.title.value != blank or metaobject.address.value != blank or metaobject.call.value != blank or metaobject.opening_hours.value != blank or metaobject.opening_hours_details.value != blank or metaobject.get_direction_map_url.value != blank or metaobject.book_appointment_url.value != blank or metaobject.map_iframe.value != blank -%}
             <div class="page-width">
-              <div class="Page_store_detail_objects_detail_2_new">
+              <div class="Page_store_detail_objects_detail_2_new" itemscope itemtype="https://schema.org/ClothingStore">
                 <div class="Page_store_detail_objects_detail_2_objectlistsboth_new">
                   {%- if metaobject.title.value != blank or metaobject.address.value != blank or metaobject.call.value != blank or metaobject.opening_hours.value != blank or metaobject.opening_hours_details.value != blank or metaobject.get_direction_map_url.value != blank or metaobject.book_appointment_url.value != blank -%}
                     <div class="Page_store_detail_objects_detail_2_mainleft_new">
                       <div class="Page_store_detail_objects_detail_2_innerleft_new">
                         {%- if metaobject.title.value != blank -%}
                           <div class="Common_title_new Page_store_detail_objects_detail_2_innerleft_title_new">
-                            <h2>KALKI Store in {{ metaobject.title.value }}</h2>
+                            <h2  itemprop="name">KALKI Store in {{ metaobject.title.value }}</h2>
                           </div>
                         {%- endif -%}
                         <div class="Page_store_detail_objects_detail_2_innerleft_details_new">
                           {%- if metaobject.address.value != blank -%}
-                            <div class="Page_store_detail_objects_detail_2_innerleft_details_in_new">
+                            <div class="Page_store_detail_objects_detail_2_innerleft_details_in_new" itemprop="Address">
                               {{ metaobject.address.value }}
                             </div>
                           {%- endif -%}
                           {%- if metaobject.call.value != blank -%}
-                            <div class="Page_store_detail_objects_detail_2_innerleft_details_in_new">
+                            <div class="Page_store_detail_objects_detail_2_innerleft_details_in_new" itemprop="telephone">
                               Phone : {{ metaobject.call.value }}
                             </div>
                           {%- endif -%}
+                          {%- if metaobject.email.value != blank -%}
+                            <div class="Page_store_detail_objects_detail_2_innerleft_details_in_new" itemprop="email">
+                              Email : {{ metaobject.email.value }}
+                            </div>
+                          {%- endif -%}
                           {%- if metaobject.opening_hours.value != blank -%}
-                            <div class="Page_store_detail_objects_detail_2_innerleft_details_in_new">
+                            <div class="Page_store_detail_objects_detail_2_innerleft_details_in_new" itemprop="openingHours">
                               Time : {{ metaobject.opening_hours.value }}
                             </div>
                           {%- endif -%}
