@@ -7,6 +7,9 @@
     </div>
   </div>
 </div>
+{%- if metaobject.breadcrumb.value != blank -%}
+    {{ metaobject.breadcrumb.value }}
+{%- endif -%}
 
 {% schema %}
   {
