@@ -4110,6 +4110,8 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   .page_store_detail_tabs_slider .swiper-button-next{ display:none; }
   .page_store_detail_tabs_innerdetail_new{ margin:0 -16px; }
   .page_store_detail_tabs_slider{ padding:0 16px; }
+  .page_store_youtube_video{display: flex; gap: 20px;justify-content: center;align-items: flex-start;}
+  .page_store_youtube_video .page_store_detail_tabs_image_new{ width: 50%;}
 
   .Page_Store_google_reviews_main_new{margin:12px 0;}
   .Page_Store_google_reviews_main_new .page-width{ padding:0 !important; }
