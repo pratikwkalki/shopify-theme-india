@@ -59,6 +59,9 @@
 .size-chart .size-chart__content {
     display: flex;
 }
+.size-chart .size-chart__content .size-chart__main{
+    width:100%;
+}
 .size-chart .size-chart__beta {
     padding-left: 0px;
     flex: 1;
