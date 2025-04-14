@@ -52,8 +52,8 @@
 function setRecentlyViewedProducts() {
   const productData = {
     productTitle: "{{ product.title }}",
-    {% assign product_sticky_image = product.featured_image | image_url %}
-    productImg: "{%- render 'gumlet', src: product_sticky_image w: 400 %}",
+    {% assign product_featured_image = product.featured_image | image_url %}
+    productImg: "{%- render 'gumlet', src: product_featured_image w: 400 %}",
     productPrice: "{{ product.price | money }}",
     productUrl: "{{ product.url }}",
     productImageAltText: "{{ product.featured_media.alt | escape }}",
