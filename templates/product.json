@@ -369,7 +369,7 @@
           "settings": {
             "title": "",
             "title_color": "rgba(0,0,0,0)",
-            "title_size": 0,
+            "title_size_v2": 0,
             "alignment": "center",
             "margin_top": 0,
             "margin_bottom": 20,
