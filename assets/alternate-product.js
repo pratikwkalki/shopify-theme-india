@@ -445,7 +445,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       function sumTotalPrice() {
         const mainProductPrice = container_.querySelector('[data-pdp-product-price]').dataset.pdpProductPrice
-        const stickyATCPrice = document.querySelector('[js-pdp-sticky-addtocart-wrapper] form [js-pdp-original-price]')
+        const stickyATCPrice = document.querySelectorAll('[js-pdp-sticky-addtocart-wrapper] form [js-pdp-original-price]')
 
         const allCheckedUpsellProducts = container_.querySelectorAll('upsell-product input:checked')
         const preDrapeSelect = container_.querySelectorAll('.options-dropdown-list-pre-drap select')
@@ -488,8 +488,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
             ctaBtn.textContent = displayTotalPrice;
             if(stickyATCPrice) {
-              stickyATCPrice.textContent = displayTotalPrice
-              console.log('stickyATCPrice.textContent', stickyATCPrice.textContent)
+              stickyATCPrice.forEach(item => {
+                item.textContent = displayTotalPrice
+              });
             }
         //});
       }
