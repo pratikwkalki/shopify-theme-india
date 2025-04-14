@@ -279,19 +279,19 @@ a[data-slide-id].mz-thumb-selected img {
           <div {% if forloop.index > 1 %}js-remove-on-mobile{% endif %} data-slide-num="{{ forloop.index0 }}" data-slide-id="zoom" class="MagicToolboxSlide {% if first_image_is_video != true %}active-magic-slide{% endif %}">
               {% assign gm_featured_image = image.preview_image  | image_url %}
               <a 
-               href="{%- render 'gumlet', src: gm_featured_image w: 2048 %}"
-               {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{%- render 'gumlet', src: gm_featured_image w: 2048 %}"{% endif %}
+               href="{%- render 'gumlet', src: gm_featured_image w: 1920 %}"
+               {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{%- render 'gumlet', src: gm_featured_image w: 1920 %}"{% endif %}
                class="js-no-transition MagicZoomPlus" id="zoom{{ product.id }}" 
                title="{{ image.alt | escape }}"
-               data-image="{%- render 'gumlet', src: gm_featured_image w: 2048 %}" 
-               {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'gumlet', src: gm_featured_image w: 2048 %}" {% endif %}
+               data-image="{%- render 'gumlet', src: gm_featured_image w: 1920 %}" 
+               {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'gumlet', src: gm_featured_image w: 1920 %}" {% endif %}
                >
                     <img  
                         style="max-width:100%; aspect-ratio:auto {{ image.width }} / {{ image.height }}; height:auto;"
                         width="{{ image.width }}"
                         height="{{ image.height }}"
                         itemprop="image" 
-                        src="{%- render 'gumlet', src: gm_featured_image w: 2048 %}" 
+                        src="{%- render 'gumlet', src: gm_featured_image w: 1920 %}" 
                         alt="{{ image.alt | escape | default: product.title }}" />
             </a>
               
