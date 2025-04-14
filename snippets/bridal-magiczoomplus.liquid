@@ -283,7 +283,7 @@ a[data-slide-id].mz-thumb-selected img {
                {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{%- render 'gumlet', src: gm_featured_image w: 2048 %}"{% endif %}
                class="js-no-transition MagicZoomPlus" id="zoom{{ product.id }}" 
                title="{{ image.alt | escape }}"
-               data-image="{%- render 'gumlet', src: gm_featured_image w: 1500 %}" 
+               data-image="{%- render 'gumlet', src: gm_featured_image w: 2048 %}" 
                {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'gumlet', src: gm_featured_image w: 2048 %}" {% endif %}
                >
                     <img  
