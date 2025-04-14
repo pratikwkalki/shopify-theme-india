@@ -5549,6 +5549,8 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
       top: 59px;
       position: absolute;
       padding: 9px 10px 8px;
+      width: 44px;
+      height: 41px;
   }
   .header-whatsapp-icon {
     display: none !important;
