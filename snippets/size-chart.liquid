@@ -21,7 +21,7 @@
               </div>
               <div class="size-chart__content">
                 {% assign size_chart = product.metafields.custom.size_guide_new.value %}
-                <div class="size-chart__main" style="width:100%">
+                <div class="size-chart__main">
                   <div class="img-wrap hide-mobile" js-size-chart-image data-parameter="in">
                     {% if size_chart.desktop_inches != blank %}
                       <img src="{{ size_chart.desktop_inches |  image_url: width: '2000x' }}" alt="">
