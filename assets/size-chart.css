@@ -13,7 +13,7 @@
     margin: auto;
 }
 .size-chart.size-chart-old {
-    height: 750px;
+    height: 800px;
 }
 .size_chart_inner_new{
   background-color: #fff;
@@ -23,7 +23,7 @@
 }
 .size-chart_wrapper { padding-right:60px; }
 .size_chart_inner_scroll_new {
-    height: 100%;
+    height: 90%;
     overflow-y: auto;
     overflow-x: hidden;
     padding-right: 10px
