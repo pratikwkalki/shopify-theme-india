@@ -481,10 +481,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const ctaBtn = container_.querySelector('form button[type="submit"] [js-pdp-original-price]')
             let mainProductPriceChange = parseFloat(mainProductPrice.replace(/,/g, ''));
             const sum = mainProductPriceChange + totalUpsellProductPrice;
-           // console.log("mainProductPriceChange",mainProductPriceChange,totalUpsellProductPrice);
             const displayTotalPrice = `${currencySymbol} ${sum}`
-            //console.log('sum+++', displayTotalPrice)
-          //let totalCost = document.getElementById("total_cost_input").value;
     
             ctaBtn.textContent = displayTotalPrice;
             if(stickyATCPrice) {
@@ -492,7 +489,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 item.textContent = displayTotalPrice
               });
             }
-        //});
       }
     })
   })  
