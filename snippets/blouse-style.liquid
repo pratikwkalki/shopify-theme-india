@@ -4,7 +4,7 @@
   {% for attriutes_ in product_attributes_group.select_attributes.value %}
     {% assign attribute_handle =  attriutes_.title | handleize %}
     {% if attribute_handle == 'blouse-design' %} 
-      <div class="blouse-style-popup hide" js-blouse-style-popup data-popup-modal="blouse-style" js-popup-modal {{ attribute_handle }}>
+      <div class="blouse-style-popup hide" js-blouse-style-popup data-popup-modal="blouse-style" js-popup-modal >
         <div class="blouse_style_inner_new">
           <div class="wrapper">
             <div class="main-wrap">
@@ -65,7 +65,7 @@
   {% for attriutes_ in select_single_attributes %}
     {% assign attribute_handle =  attriutes_.title | handleize %}
     {% if attribute_handle == 'blouse-design' %} 
-      <div class="blouse-style-popup hide" js-blouse-style-popup data-popup-modal="blouse-style" js-popup-modal {{ attribute_handle }}>
+      <div class="blouse-style-popup hide" js-blouse-style-popup data-popup-modal="blouse-style" js-popup-modal >
         <div class="blouse_style_inner_new">
           <div class="wrapper">
             <div class="main-wrap">
