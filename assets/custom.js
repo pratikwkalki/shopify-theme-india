@@ -134,6 +134,13 @@ document.addEventListener("DOMContentLoaded", function () {
     inlineClarityScriptObj.id = "clarity-init";
     inlineClarityScriptObj.textContent = inlineClarityScript;
     document.head.appendChild(inlineClarityScriptObj);    
+
+    // visenze
+    const inlineVisenzeScript = '!function(x,e,t,n,r,i,a){var o=localStorage.getItem("va-uid")||function x(){let e=new Date().getTime(),t="xxxxxxxx.xxxx.4xxx.yxxx.xxxxxxxxxxxx".replace(/[xy]/g,x=>{let t=(e+16*Math.random())%16|0;return e=Math.floor(e/16),("x"===x?t:3&t|8).toString(16)});return t}(),c=x.getElementsByTagName(e)[0],d=x.createElement(e),g=new URL(`https://search.visenze.com/v2/widget-init?app_key=${t}&placement_id=${n}&container=${r}&uid=${o}`);i&&(g+=`&contexts=${i}`),d.async=!0,d.src=g,d.onload=function(){a&&a()},c.parentNode.insertBefore(d,c)}(document,"script","6c794e28d7ce49ba80632f510585c74a","7683",".ps-widget-5971");';
+    const inlineVisenzeScriptObj = document.createElement("script");
+    inlineVisenzeScriptObj.id = "visenze-init";
+    inlineVisenzeScriptObj.textContent = inlineVisenzeScript;
+    document.head.appendChild(inlineVisenzeScriptObj);   
     
     // Remove event listeners after execution
     window.removeEventListener("click", handleUserInteraction);
