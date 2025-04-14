@@ -1527,3 +1527,89 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const handleUserInteraction = () => {
+    const freshChatScript = document.createElement("script");
+    freshChatScript.src = `https://snippets.freshchat.com/js/fc-pre-chat-form-v2.js`; // Replace with your GTAG ID
+    freshChatScript.async = true;
+    freshChatScript.id = "fresh-chat-script";
+    document.head.appendChild(freshChatScript);
+    // Fresh Chat
+    const inlineFCscript = `
+      function initFreshChat() {
+        window.fcWidget && window.fcWidget.init({
+            token: "ae1f4225-593d-4a31-96b7-785aa10b503c",
+            host: "https://kalki.freshchat.com",
+            widgetUuid: "acc989a9-53a1-480e-bb6a-d6ec8b9d8cbb"
+        });
+    }
+    function initialize(i, t) {
+        var e;
+        i.getElementById(t) ? initFreshChat() : ((e = i.createElement("script")).id = t, e.async = !0, e.src = "https://kalki.freshchat.com/js/widget.js", e.onload = initFreshChat, i.head.appendChild(e))
+    }
+    function initiateCall() {
+        initialize(document, "Freshchat-js-sdk")
+    }
+    initiateCall()
+    `;
+    const inlineFCscriptObj = document.createElement("script");
+    inlineFCscriptObj.id = "fresh-chat-init";
+    inlineFCscriptObj.textContent = inlineFCscript;
+    document.head.appendChild(inlineFCscriptObj);
+
+    // getelevar
+    const inlineElevarScript = `
+      const execute = async api => {
+        const config = (await import("https://shopify-gtm-suite.getelevar.com/configs/8ce1d25f3fbabd19e1e3154f4f5491047ddbeba1/config.js")).default;
+        const scriptUrl = config.script_src_web_pixel_lax_custom;
+        if (scriptUrl) {
+          const { handler } = await import(scriptUrl);
+          await handler(api, config);
+        }
+      };
+      execute();
+    `;
+    const inlineElevarScriptObj = document.createElement("script");
+    inlineElevarScriptObj.id = "elevar-init";
+    inlineElevarScriptObj.textContent = inlineElevarScript;
+    document.head.appendChild(inlineElevarScriptObj);
+
+    // clarity
+    const inlineClarityScript = `
+      (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "qjx3burd9q");
+    `;
+    const inlineClarityScriptObj = document.createElement("script");
+    inlineClarityScriptObj.id = "clarity-init";
+    inlineClarityScriptObj.textContent = inlineClarityScript;
+    document.head.appendChild(inlineClarityScriptObj);    
+    
+    // Remove event listeners after execution
+    window.removeEventListener("click", handleUserInteraction);
+    window.removeEventListener("scroll", handleUserInteraction);
+    window.removeEventListener("keydown", handleUserInteraction);
+    window.removeEventListener("mousemove", handleUserInteraction);
+    window.removeEventListener("touchstart", handleUserInteraction);
+    window.removeEventListener("touchmove", handleUserInteraction);
+  };
+  // Add event listeners to detect user interaction
+  window.addEventListener("click", handleUserInteraction);
+  window.addEventListener("scroll", handleUserInteraction);
+  window.addEventListener("keydown", handleUserInteraction);
+  window.addEventListener("mousemove", handleUserInteraction);
+  window.addEventListener("touchstart", handleUserInteraction);
+  window.addEventListener("touchmove", handleUserInteraction);
+  // Clean up event listeners when no longer needed
+  window.addEventListener("beforeunload", () => {
+    window.removeEventListener("click", handleUserInteraction);
+    window.removeEventListener("scroll", handleUserInteraction);
+    window.removeEventListener("keydown", handleUserInteraction);
+    window.removeEventListener("mousemove", handleUserInteraction);
+    window.removeEventListener("touchstart", handleUserInteraction);
+    window.removeEventListener("touchmove", handleUserInteraction);
+  });
+});

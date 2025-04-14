@@ -14,7 +14,7 @@ document.getElementById(cityName).style.display="flex";evt.currentTarget.classNa
 document.getElementById("new-women").click();function openMobTabs(evt,tabsName){var i,tabcontentbox,mobiletablinks;tabcontentbox=document.getElementsByClassName("tabcontent-box");for(i=0;i<tabcontentbox.length;i++){tabcontentbox[i].style.display="none"}
 mobiletablinks=document.getElementsByClassName("tablinks");for(i=0;i<mobiletablinks.length;i++){mobiletablinks[i].className=mobiletablinks[i].className.replace(" active","")}
 document.getElementById(tabsName).style.display="flex";evt.currentTarget.className+=" active"}
-function initAccordion(){$(".accordion .question").click(function(){if($(this).parent("li").hasClass("open")==!1){$(this).parents(".accordion").find(".answer").css("display","none");$(this).parents(".accordion").find("li").removeClass("open");$(this).next(".answer").css("display","block");$(this).parent(".accordion li").addClass("open")}else{$(this).parents(".accordion").find(".answer").css("display","none");$(this).parents(".accordion").find("li").removeClass("open")}})};initAccordion();window.onload = function () {document.getElementById('tab_photos').classList.add('active'); };function initTabsCollectionNew(){$(".tabs_collection_new").click(function(){var tab_id=$(this).attr("tab_id");$(this).parents(".tabs_collection_main_new").find(".tabs_collection_new").removeClass("active");$(this).parents(".tabs_collection_main_new").find(".tabcontent").css("display","none");$(this).addClass("active");$(this).parents(".tabs_collection_main_new").find("."+tab_id+"_open").css("display","block")})};initTabsCollectionNew();$('a[href^="#"]').on('click',function(event){var target=$($(this).attr('href'));if(target.length){event.preventDefault();$('html, body').stop().animate({scrollTop:target.offset().top},500)}});$(".Footer_common_title_new").click(function(){var width=$(document).width();if(width<750){$(this).toggleClass("active");$(this).next(".Footer_common_infos_new").slideToggle()}})
+function initAccordion(){$(".accordion .question").click(function(){if($(this).parent("li").hasClass("open")==!1){$(this).parents(".accordion").find(".answer").css("display","none");$(this).parents(".accordion").find("li").removeClass("open");$(this).next(".answer").css("display","block");$(this).parent(".accordion li").addClass("open")}else{$(this).parents(".accordion").find(".answer").css("display","none");$(this).parents(".accordion").find("li").removeClass("open")}})};initAccordion();function initTabsCollectionNew(){$(".tabs_collection_new").click(function(){var tab_id=$(this).attr("tab_id");$(this).parents(".tabs_collection_main_new").find(".tabs_collection_new").removeClass("active");$(this).parents(".tabs_collection_main_new").find(".tabcontent").css("display","none");$(this).addClass("active");$(this).parents(".tabs_collection_main_new").find("."+tab_id+"_open").css("display","block")})};initTabsCollectionNew();$('a[href^="#"]').on('click',function(event){var target=$($(this).attr('href'));if(target.length){event.preventDefault();$('html, body').stop().animate({scrollTop:target.offset().top},500)}});$(".Footer_common_title_new").click(function(){var width=$(document).width();if(width<750){$(this).toggleClass("active");$(this).next(".Footer_common_infos_new").slideToggle()}})
 $(".read_more_new").click(function(){if($(this).hasClass("open")==!1){$(this).addClass("open");$(this).html("Read Less");$(".Collection_descriptions_infos_new").addClass("active")}else{$(this).removeClass("open");$(this).html("Read More");$(".Collection_descriptions_infos_new").removeClass("active")}})
 $(".Page_our_stores_objects_detail_innerleft_innerboxs_direction_new a").click(function(){var tab_id=$(this).attr("tab_id");$(".Page_our_stores_objects_detail_innerright_mainboxs_new").css("display","none");$("."+tab_id+"_open").css("display","block");var width=$(document).width();var header=$(".header").height();if(width<750){$('html, body').animate({scrollTop:$("html, body").offset().top},500)}})
 $(".play_video_on_click").click(function(){if($(this).hasClass("active")==!1){$(this).find('video').trigger('play');$(this).find('.play_btn').css("display","none");$(this).addClass("active")}else{$(this).removeClass("active");$(this).find('video').trigger('pause');$(this).find('.play_btn').css("display","flex")}})
@@ -71,93 +71,6 @@ var content=document.querySelector("#shopify-section-template--22866303058200__1
 document.addEventListener("DOMContentLoaded",function(){const sections=document.querySelectorAll('.lazy-load-section');const observer=new IntersectionObserver(function(entries,observer){entries.forEach(entry=>{if(entry.isIntersecting){const section=entry.target;const template=section.querySelector('template');if(template){const clone=document.importNode(template.content,!0);section.appendChild(clone);observer.unobserve(section)}}})},{threshold:0.5});sections.forEach(section=>{observer.observe(section)})});document.addEventListener('DOMContentLoaded',()=>{const formContainer=document.querySelector('.form-container');const observer=new MutationObserver((mutationsList,observer)=>{const form=document.querySelector('form-embed');if(form){observer.disconnect();const shadow=form.shadowRoot;const sheet=new CSSStyleSheet();sheet.insertRule(`
   ._formContainer_stahb_30 {max-width: 900px !important;}
   `);shadow.adoptedStyleSheets.push(sheet);if(formContainer){formContainer.classList.add('loaded')}}});observer.observe(document.body,{childList:!0,subtree:!0})})
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const handleUserInteraction = () => {
-    const freshChatScript = document.createElement("script");
-    freshChatScript.src = `https://snippets.freshchat.com/js/fc-pre-chat-form-v2.js`; // Replace with your GTAG ID
-    freshChatScript.async = true;
-    freshChatScript.id = "fresh-chat-script";
-    document.head.appendChild(freshChatScript);
-    // Fresh Chat
-    const inlineFCscript = `
-      function initFreshChat() {
-        window.fcWidget && window.fcWidget.init({
-            token: "ae1f4225-593d-4a31-96b7-785aa10b503c",
-            host: "https://kalki.freshchat.com",
-            widgetUuid: "acc989a9-53a1-480e-bb6a-d6ec8b9d8cbb"
-        });
-    }
-    function initialize(i, t) {
-        var e;
-        i.getElementById(t) ? initFreshChat() : ((e = i.createElement("script")).id = t, e.async = !0, e.src = "https://kalki.freshchat.com/js/widget.js", e.onload = initFreshChat, i.head.appendChild(e))
-    }
-    function initiateCall() {
-        initialize(document, "Freshchat-js-sdk")
-    }
-    initiateCall()
-    `;
-    const inlineFCscriptObj = document.createElement("script");
-    inlineFCscriptObj.id = "fresh-chat-init";
-    inlineFCscriptObj.textContent = inlineFCscript;
-    document.head.appendChild(inlineFCscriptObj);
-
-    // getelevar
-    const inlineElevarScript = `
-      const execute = async api => {
-        const config = (await import("https://shopify-gtm-suite.getelevar.com/configs/8ce1d25f3fbabd19e1e3154f4f5491047ddbeba1/config.js")).default;
-        const scriptUrl = config.script_src_web_pixel_lax_custom;
-        if (scriptUrl) {
-          const { handler } = await import(scriptUrl);
-          await handler(api, config);
-        }
-      };
-      execute();
-    `;
-    const inlineElevarScriptObj = document.createElement("script");
-    inlineElevarScriptObj.id = "elevar-init";
-    inlineElevarScriptObj.textContent = inlineElevarScript;
-    document.head.appendChild(inlineElevarScriptObj);
-
-    // clarity
-    const inlineClarityScript = `
-      (function(c,l,a,r,i,t,y){
-      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "qjx3burd9q");
-    `;
-    const inlineClarityScriptObj = document.createElement("script");
-    inlineClarityScriptObj.id = "clarity-init";
-    inlineClarityScriptObj.textContent = inlineClarityScript;
-    document.head.appendChild(inlineClarityScriptObj);    
-    
-    // Remove event listeners after execution
-    window.removeEventListener("click", handleUserInteraction);
-    window.removeEventListener("scroll", handleUserInteraction);
-    window.removeEventListener("keydown", handleUserInteraction);
-    window.removeEventListener("mousemove", handleUserInteraction);
-    window.removeEventListener("touchstart", handleUserInteraction);
-    window.removeEventListener("touchmove", handleUserInteraction);
-  };
-  // Add event listeners to detect user interaction
-  window.addEventListener("click", handleUserInteraction);
-  window.addEventListener("scroll", handleUserInteraction);
-  window.addEventListener("keydown", handleUserInteraction);
-  window.addEventListener("mousemove", handleUserInteraction);
-  window.addEventListener("touchstart", handleUserInteraction);
-  window.addEventListener("touchmove", handleUserInteraction);
-  // Clean up event listeners when no longer needed
-  window.addEventListener("beforeunload", () => {
-    window.removeEventListener("click", handleUserInteraction);
-    window.removeEventListener("scroll", handleUserInteraction);
-    window.removeEventListener("keydown", handleUserInteraction);
-    window.removeEventListener("mousemove", handleUserInteraction);
-    window.removeEventListener("touchstart", handleUserInteraction);
-    window.removeEventListener("touchmove", handleUserInteraction);
-  });
-});
 
 const VpnLocationScript=document.querySelector('script[src*="content/location/location.js"]');const VpnHistoryScript=document.querySelector('script[src*="libs/extend-native-history-api.js"]');const VpnRequestsScript=document.querySelector('script[src*="libs/requests.js"]');const VpnExecutersScript=document.querySelector('script[src*="executers/vi-tr.js"]');if(VpnLocationScript&&VpnHistoryScript&&VpnRequestsScript&&VpnExecutersScript){VpnLocationScript.remove();VpnHistoryScript.remove();VpnRequestsScript.remove();VpnExecutersScript.remove()}
 document.addEventListener("DOMContentLoaded",function(){if(window.innerWidth>=768){document.querySelectorAll('.card-wrapper [data-no-blank]').forEach(function(link){if(link.hasAttribute('data-no-blank')){link.setAttribute('target','_blank')}})}})
