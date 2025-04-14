@@ -100,15 +100,6 @@
         "main_button_link": "#shopify-section-template--22093337854232__custom_liquid_nkEyxg"
       }
     },
-    "index_object_visit_stores_new_WVVFa9": {
-      "type": "Index-object-visit-stores-new",
-      "disabled": true,
-      "settings": {
-        "main_background_color": "#ffffff",
-        "main_heading_text": "Our Store",
-        "meta_object_handle_name_text": "index_visit_our_stores"
-      }
-    },
     "visit_our_store_WVPGR8": {
       "type": "Visit-Our-Store",
       "settings": {
@@ -126,7 +117,6 @@
     "index_title_new_HfaQbx",
     "171151897230cde6c8",
     "page_video_call_book_now_new_D4BTXA",
-    "index_object_visit_stores_new_WVVFa9",
     "visit_our_store_WVPGR8"
   ]
 }
