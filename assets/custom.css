@@ -5208,6 +5208,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   .header__icons .ps-widget-5971 {
       margin-right: -45px;
       padding: 8px 3px;
+      width: 30px;
   }
   .megamenu_leftright_new{ padding: 20px 20px 0!important; }
   .mega-menu__list{ margin:0 -5px; }
