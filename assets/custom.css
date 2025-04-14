@@ -180,7 +180,7 @@ summary .icon-caret { position: relative; }
 .header_second_menu_new details[open]>.header__menu-item:after{ display:block; }
 .header_second_menu_new details[open]>.header__menu-item .header__active-menu-item{ color:#aa6437 !important; }
 .search-modal__content_drawer_new{ display:none; }
-.header__icons .ps-widget-5971 {margin-right: -58px; margin-top: 2px; position: relative; z-index: 1; padding: 8px 7px;}
+.header__icons .ps-widget-5971 {margin-right: -58px; margin-top: 2px; position: relative; z-index: 1; padding: 8px 7px;background: url('https://cdn.shopify.com/s/files/1/0636/0134/4666/files/cam-icon.svg?v=1743485016');background-position: center center;background-repeat: no-repeat;width: 38px;height: 40px;}
 .template-search .template-search__search .field { height: 50px; border: 1px solid #D9D9D9; border-radius: 6px; }
 .template-search__search input { height: 100% !important; border-bottom: 0 !important; }
 .template-search .search__input.field__input{ margin:0 0 0 45px; border-radius: 6px; }
