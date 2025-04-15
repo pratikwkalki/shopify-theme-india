@@ -172,20 +172,15 @@ const VpnLocationScript=document.querySelector('script[src*="content/location/lo
 document.addEventListener("DOMContentLoaded",function(){if(window.innerWidth>=768){document.querySelectorAll('.card-wrapper [data-no-blank]').forEach(function(link){if(link.hasAttribute('data-no-blank')){link.setAttribute('target','_blank')}})}})
 
 
-  const grid = document.querySelector('.grid')
-  const cardTemplate = document.getElementById('card-template')
-  for (let i = 0; i < 10; i++) {
-    grid.append(cardTemplate.content.cloneNode(true))
-  }
-
-  fetch("https://jsonplaceholder.typicode.com/posts")
-    .then(res => res.json())
-    .then(posts => {
-      grid.innerHTML = ''
-      posts.forEach(post => {
-        const div = cardTemplate.content.cloneNode(true)
-        div.querySelector('[data-title]').textContent = post.title
-        div.querySelector('[data-body]').textContent = post.body
-        grid.append(div)
-      })
-  })
+  document.addEventListener('DOMContentLoaded', function () {
+    // Simulate loading delay
+    setTimeout(() => {
+      document.querySelectorAll('.product-card').forEach(card => {
+        card.innerHTML = `
+          <img src="https://via.placeholder.com/300x200" alt="Product" />
+          <h3>Real Product Title</h3>
+          <p>$29.99</p>
+        `;
+      });
+    }, 2000); // 2 second fake loading
+  });
