@@ -461,7 +461,6 @@
     <!-- custom -->
     {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag: preload: false }}
     {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
-    {{ 'wishlist-page.css' | asset_url | stylesheet_tag: preload: false }}
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
 
     {% if template.name == 'product' %}
