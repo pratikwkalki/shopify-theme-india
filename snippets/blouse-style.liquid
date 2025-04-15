@@ -15,7 +15,7 @@
                   </svg>
                 </div>
         
-                <h2 class="main_title">Select Blouse Style</h2>
+                <h2 class="main_title">Select {{ attriutes_.title }}</h2>
                 <div class="blouse-style-popup_items_wrapper_new optiscroll_common_new optiscroll">
                   <div class="blouse-style-popup_items_wrapper">
                     {%- for blouseStyleImg in attriutes_.optional_images.value -%}
@@ -49,6 +49,7 @@
                   </div>
                 </div>
                 <div class="button_blouse-style-popup" js-popup-save-btn data-modal="blouse-style" js-blouse-style-save-btn>
+                  <div class="error_list" js-error-list></div>
                   <button type="button" class="button btn">Save</button>
                 </div>
             </div>
@@ -59,7 +60,7 @@
   {% endfor %}
 {% endif %}
 
-                                                {% liquid assign select_single_attributes = product.metafields.custom.select_single_attributes.value %}
+{% liquid assign select_single_attributes = product.metafields.custom.select_single_attributes.value %}
 
 {% if select_single_attributes %}
   {% for attriutes_ in select_single_attributes %}
@@ -76,7 +77,7 @@
                   </svg>
                 </div>
         
-                <h2 class="main_title">Select Blouse Style</h2>
+                <h2 class="main_title">Select {{ attriutes_.title }}</h2>
                 <div class="blouse-style-popup_items_wrapper_new optiscroll_common_new optiscroll">
                   <div class="blouse-style-popup_items_wrapper">
                     {%- for blouseStyleImg in attriutes_.optional_images.value -%}
@@ -110,6 +111,7 @@
                   </div>
                 </div>
                 <div class="button_blouse-style-popup" js-popup-save-btn data-modal="blouse-style" js-blouse-style-save-btn>
+                  <div class="error_list" js-error-list></div>
                   <button type="button" class="button btn">Save</button>
                 </div>
             </div>
