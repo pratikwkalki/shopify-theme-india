@@ -81,7 +81,7 @@
           "type": "image_logo_text",
           "settings": {
             "image_logo": "shopify://shop_images/Frame-1.svg",
-            "text_bottom": "Easy returns*",
+            "text_bottom": "5 Days easy returns*",
             "text_bottom_no_return": "This product is not returnable",
             "image_logo_url": "shopify://pages/returns",
             "class": "image-logo-no-return"
