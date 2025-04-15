@@ -13,7 +13,20 @@
 {%- endif -%}
 <script src="{{ 'ajax-pagination.js' | asset_url }}" defer></script>
 <script src="{{ 'collection-pagination.js' | asset_url }}" defer></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const isWideScreen = window.innerWidth > 768;
 
+    document.querySelectorAll('a[data-open-in-new-tab="true"]').forEach(link => {
+      if (isWideScreen) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+      } else {
+        link.removeAttribute("target");
+      }
+    });
+  });
+</script>
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
