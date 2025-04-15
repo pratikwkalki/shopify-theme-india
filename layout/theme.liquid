@@ -473,7 +473,7 @@
       <script src="{{ 'recentview.product.min.js' | asset_url }}" defer="defer"></script>
       <script src="{{ 'custom-templates.js' | asset_url }}" defer="defer"></script>
     {% endif %}
-    {{ 'product-delivery-days.css' | asset_url | stylesheet_tag }}
+    {{ 'product-delivery-days.css' | asset_url | stylesheet_tag: preload: false }}
     
     {% render 'collection-faq-schema' %}
 
