@@ -38,20 +38,6 @@ img{ height: auto !important; }
 .page_store_youtube_video{display: flex; gap: 20px;justify-content: center;align-items: flex-start; flex-wrap: wrap;}
   .page_store_youtube_video .page_store_detail_tabs_youtube_video{ width: calc(50% - 20px);}
 
-/* skeleton page css start*/
-.skeleton {background-color:#e0e0e0; border-radius:4px; position:relative; overflow:hidden;}
-.skeleton::after {content:""; position:absolute; top:0; left:-100%; height:100%; width:100%; background:linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); animation:shimmer 1.2s infinite;}
-
-@keyframes shimmer {
-100% {left:100%;}
-}
-
-.skeleton-image {width:100%; height:200px; margin-bottom:1rem;}
-.skeleton-text {height:16px; width:100%; margin-bottom:0.5rem;}
-.skeleton-text.short {width:60%;}
-/* skeleton page css close*/
-
-
 #app-embed{margin:20px 0;}
 #HeaderMenu-eid span{ background-color:#AA6437; color:#fff;padding: 3.8px 4.8px 5.8px 4.8px; border-radius: 4px; margin: -4.8px;}
 .tab { overflow: hidden; }
@@ -4666,7 +4652,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
 
   .Index_arrivals_details_main_new { margin: 40px 0; }
   .Index_arrivals_details_inner_new {  padding: 20px; }
-  .Index_arrivals_details_innerright_infos_new p{ font-size:36px; }
+  .Index_arrivals_details_innerright_infos_new p{ font-size:26px; line-height: 140%;}
   .Index_arrivals_details_innerright_title_new h2{ font-size:28px; }
 
   .Index_collection_lists_main_new{ margin:40px 0; }
