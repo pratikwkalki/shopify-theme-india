@@ -50,7 +50,7 @@
       </div>
       {% render 'progress-threshold' %}
       {%- if cart == empty -%}
-        <div class="drawer__inner-empty" {{ cart }}>
+        <div class="drawer__inner-empty" {{ cart | json }}>
           <div class="cart-drawer__warnings center{% if settings.cart_drawer_collection != blank %} cart-drawer__warnings--has-collection{% endif %}">
             <div class="cart-drawer__empty-content">
               <div class="content_wrap">
