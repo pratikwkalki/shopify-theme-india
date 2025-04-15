@@ -185,14 +185,22 @@ document.addEventListener('DOMContentLoaded', function() {
           const modalName = self.closest(selectors.saveModalBtnSelector)?.dataset.modal || self.querySelector(selectors.saveModalBtnSelector)?.dataset.modal
           
           if(modalName == 'blouse-style') {
-            
             const modalInputField_ = templateContainer.querySelector(`${selectors.popupModal} input:checked`)
-            templateContainer.querySelector(`${selectors.popupModalBtn}[data-modal='${modalName}'] span`).firstChild.textContent = modalInputField_.value
+            const blouseStyleModal = templateContainer.querySelector(`${selectors.popupModal}[data-popup-modal="${modalName}"]`)
+            const blouseStyleRequredInput = templateContainer.querySelector('#blouse-style-input')
+            
+            if (modalInputField_){
+              templateContainer.querySelector(`${selectors.popupModalBtn}[data-modal='${modalName}'] span`).firstChild.textContent = modalInputField_.value
+              blouseStyleRequredInput.value = modalInputField_.value
+              blouseStyleModal.querySelector(selectors.modalErrorList).innerHTML = ''
+              templateContainer.querySelector(selectors.popupOverlay).classList.add('hide')
+              templateContainer.querySelector(`[js-popup-modal][data-popup-modal="${modalName}"]`).classList.remove('hide')
+              document.body.classList.remove('popup-open');
+            } else {
+              blouseStyleModal.querySelector(selectors.modalErrorList).innerHTML = 'Please select any value'
+              return
+            }
            // templateContainer.querySelector(`[js-alternate-custom-pdp] ${selectors.popupOverlay}`).classList.add('hide')
-
-            templateContainer.querySelector(selectors.popupOverlay).classList.add('hide')
-            templateContainer.querySelector(`[js-popup-modal][data-popup-modal="${modalName}"]`).classList.remove('hide')
-            document.body.classList.remove('popup-open');
             
           } else if(modalName == 'whatsapp-measurement') {
             const whatsappModal = templateContainer.querySelector(`${selectors.popupModal}[data-popup-modal="${modalName}"]`)
