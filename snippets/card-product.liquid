@@ -70,13 +70,28 @@
       >
         {%- if card_product.featured_media -%}
           <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-            <a
+            {% if request.headers['user-agent'] contains 'Mobile' %}
+              <!-- Mobile user -->
+              <a
               href="{{ card_product.url | split: "?" | first }}"
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
               class="full-unstyled-link"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
               data-no-blank="true" target="_blank" 
             >
+              <!-- <a href="{{ product.url }}">{{ product.title }}</a> -->
+            {% else %}
+              <!-- Desktop user -->
+              <a
+              href="{{ card_product.url | split: "?" | first }}"
+              id="CardLink-{{ section_id }}-{{ card_product.id }}"
+              class="full-unstyled-link"
+              aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
+              data-no-blank="true" target="_blank" 
+            >
+              <!-- <a href="{{ product.url }}" target="_blank" rel="noopener noreferrer">{{ product.title }}</a> -->
+            {% endif %}
+            
               <div class="media media--transparent media--hover-effect">
                 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
                 {% assign featured_media = card_product.featured_media  | image_url %}
@@ -161,7 +176,14 @@
                 
               </div>
               <span class="custom-Shop-now">Shop Now</span>
-            </a>
+           
+                 {% if request.headers['user-agent'] contains 'Mobile' %}
+              <!-- Mobile user -->
+               </a>
+            {% else %}
+              <!-- Desktop user -->
+               </a>
+            {% endif %}
           </div>
         {%- endif -%}
 
