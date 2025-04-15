@@ -201,8 +201,8 @@
                               <ul class="menu">
                                 {%- for link in block.settings.main_menu_select_list.links -%}
                                   <li class="menu-link">                                    
-                                    <a href="{{ link.url }}" target="_blank" class="desktop_image_new">{{ link.title }}</a>
-                                    <a href="{{ link.url }}" target="_self" class="mobile_image_new">{{ link.title }}</a>
+                                    <a href="{{ link.url }}" target="_blank"  data-open-in-new-tab="true">{{ link.title }}</a>
+                                    <!-- <a href="{{ link.url }}" target="_self" class="mobile_image_new">{{ link.title }}</a> -->
                                   </li>
                                 {%- endfor -%}
                               </ul>
