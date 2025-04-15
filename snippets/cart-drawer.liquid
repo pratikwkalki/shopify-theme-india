@@ -69,8 +69,8 @@
 
                         {% if menuTitle == linkTitle and menu_asset.image != blank %}
                           <div class="img-wrap">
-                            {% assign menu_asset = menu_asset.image  | image_url %}
-                            <img src="{%- render 'gumlet', src: menu_asset w: 49 %}" alt="{{ menu_asset.image.alt | default: link.title }}" loading="lazy" width="49" height="60">
+                            {% assign menu_asset_img = menu_asset.image  | image_url %}
+                            <img src="{%- render 'gumlet', src: menu_asset_img w: 49 %}" alt="{{ menu_asset.image.alt | default: link.title }}" loading="lazy" width="49" height="60">
                           </div>
                         {% endif %}
                       {% endfor %}
