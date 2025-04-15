@@ -70,20 +70,7 @@
       >
         {%- if card_product.featured_media -%}
           <div class="card_media_new card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-            <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const isWideScreen = window.innerWidth > 768;
-
-    document.querySelectorAll('a[data-open-in-new-tab="true"]').forEach(link => {
-      if (isWideScreen) {
-        link.setAttribute("target", "_blank");
-        link.setAttribute("rel", "noopener noreferrer");
-      } else {
-        link.removeAttribute("target");
-      }
-    });
-  });
-</script>
+            
             <a
               href="{{ card_product.url | split: "?" | first }}"
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
@@ -528,3 +515,18 @@
     </div>
   </div>
 {%- endif -%}
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const isWideScreen = window.innerWidth > 768;
+
+    document.querySelectorAll('a[data-open-in-new-tab="true"]').forEach(link => {
+      if (isWideScreen) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener noreferrer");
+      } else {
+        link.removeAttribute("target");
+      }
+    });
+  });
+</script>
