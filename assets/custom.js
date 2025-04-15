@@ -169,5 +169,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const VpnLocationScript=document.querySelector('script[src*="content/location/location.js"]');const VpnHistoryScript=document.querySelector('script[src*="libs/extend-native-history-api.js"]');const VpnRequestsScript=document.querySelector('script[src*="libs/requests.js"]');const VpnExecutersScript=document.querySelector('script[src*="executers/vi-tr.js"]');if(VpnLocationScript&&VpnHistoryScript&&VpnRequestsScript&&VpnExecutersScript){VpnLocationScript.remove();VpnHistoryScript.remove();VpnRequestsScript.remove();VpnExecutersScript.remove()}
-document.addEventListener("DOMContentLoaded",function(){if(window.innerWidth>=768){document.querySelectorAll('.card-wrapper [data-no-blank]').forEach(function(link){if(link.hasAttribute('data-no-blank')){link.setAttribute('target','_blank')}})}})
+document.addEventListener("DOMContentLoaded",function(){if(window.innerWidth>=768){document.querySelectorAll('.full-unstyled-link [data-no-blank]').forEach(function(link){if(link.hasAttribute('data-no-blank')){link.setAttribute('target','_blank')}})}})
 
