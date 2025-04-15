@@ -3580,7 +3580,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   .Index_arrivals_details_innerleft_2_rightside_2_bottompart_new{grid-gap:7px;}
   .Index_arrivals_details_mainright_new{width:100%; padding:8px 0 0 0;}
   .Index_arrivals_details_innerright_new{max-width:100%; padding:18px 0;}
-  .Index_arrivals_details_innerright_infos_new p{font-size:40px; line-height:150%;}
+  .Index_arrivals_details_innerright_infos_new p{font-size:24px; line-height:140%;}
   .Index_arrivals_details_innerright_title_new h2{font-size:24px; line-height:125%;}
   .Index_arrivals_details_innerright_button_new .button_white {
     min-width: 130px !important;
