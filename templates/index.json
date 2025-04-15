@@ -389,7 +389,7 @@
       "type": "fireworks-section",
       "settings": {
         "title": "Trending Looks To Watch",
-        "playlist_id": "vJ8rYo",
+        "playlist_id": "vGn6J9",
         "fireWorks_old": false
       }
     },
@@ -872,7 +872,7 @@
           "settings": {
             "title": "",
             "title_color": "",
-            "title_size": 0,
+            "title_size_v2": 0,
             "alignment": "center",
             "margin_top": 0,
             "margin_bottom": 30,
