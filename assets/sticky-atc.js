@@ -291,6 +291,10 @@ function mobileStickyVar() {
       closePopup.addEventListener('click', () => {
         closeVariablePopup();
         closeVariablePopupBuyNow()
+        const varUnstitched = document.querySelector('.product-form__input input[type=radio][value="Unstitched"]')
+        if (varUnstitched) {
+          console.log('varUnstitched', varUnstitched)
+        }
       });
     }
  }
