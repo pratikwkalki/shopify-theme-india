@@ -293,7 +293,7 @@ function mobileStickyVar() {
         closeVariablePopupBuyNow()
         const varUnstitched = document.querySelector('.product-form__input input[type=radio][value="Unstitched"] + label')
         if (varUnstitched) {
-          varUnstitched.click();
+          // varUnstitched.click();
         }
       });
     }
