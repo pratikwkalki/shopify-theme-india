@@ -75,9 +75,14 @@
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
               class="full-unstyled-link"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
-               data-open-in-new-tab="true"
+              data-open-in-new-tab="true"
             >
-             
+              {% assign user_agent = request.user_agent %}
+              {% if user_agent contains 'iPhone' or user_agent contains 'Android' %}
+                  <!-- Mobile content -->Mobile content
+                {% else %}
+                  <!-- Desktop content -->Desktop content
+                {% endif %}
             
               <div class="media media--transparent media--hover-effect">
                 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
