@@ -294,6 +294,7 @@ function mobileStickyVar() {
         const varUnstitched = document.querySelector('.product-form__input input[type=radio][value="Unstitched"]')
         if (varUnstitched) {
           console.log('varUnstitched', varUnstitched)
+          varUnstitched.checked = true
         }
       });
     }
