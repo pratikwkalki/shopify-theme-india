@@ -459,7 +459,7 @@
     <script defer src="{{ 'alpinejs-cdn.min.js' | asset_url }}"></script>
 
     <!-- custom -->
-    {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag: preload: false }}
     {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'rebuy-widget.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'custom-select-drop.css' | asset_url | stylesheet_tag: preload: true }}
