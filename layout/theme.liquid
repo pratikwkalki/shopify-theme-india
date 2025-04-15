@@ -437,7 +437,7 @@
     {%- endunless -%}
 
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
-      {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
+      {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: false }}
       <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
@@ -447,6 +447,7 @@
         href="{{ 'component-predictive-search.css' | asset_url }}"
         media="print"
         onload="this.media='all'"
+        preload="false"
       >
     {%- endif -%}
 
@@ -461,9 +462,9 @@
     <!-- custom -->
     {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag: preload: false }}
     {{ 'custom.css' | asset_url | stylesheet_tag: preload: true }}
-    {{ 'rebuy-widget.css' | asset_url | stylesheet_tag: preload: true }}
-    {{ 'custom-select-drop.css' | asset_url | stylesheet_tag: preload: true }}
-    {{ 'wishlist-page.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'rebuy-widget.css' | asset_url | stylesheet_tag: preload: false }}
+    {{ 'custom-select-drop.css' | asset_url | stylesheet_tag: preload: false }}
+    {{ 'wishlist-page.css' | asset_url | stylesheet_tag: preload: false }}
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
 
     {% if template.name == 'product' %}
@@ -597,7 +598,7 @@
       </script>
     {% endif %}
     {% if template.name == 'product' %}
-      {{ 'stamped-reviews.css' | asset_url | stylesheet_tag: preload: true }}
+      {{ 'stamped-reviews.css' | asset_url | stylesheet_tag: preload: false }}
     {% endif %}
     <a
       href="https://api.whatsapp.com/send/?phone=919920012474&text=Hi+Kalki+Stylist+%21&type=phone_number&app_absent=0"
