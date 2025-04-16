@@ -89,10 +89,11 @@
             "inner_background_color": "#f1ebf5",
             "select_collection_display": "mushk-wedding-couture-2024",
             "select_product_display": 5,
-            "main_desktop_image": "shopify://shop_images/mushk-couture_24-banner-9-11-24_2_1.jpg",
-            "main_mobile_image": "shopify://shop_images/mushk-couture_24-banner-9-11-24_2_1.jpg",
+            "main_desktop_image": "shopify://shop_images/mushk-couture-24-banner-16-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/mushk-couture-24-banner-16-04-25.jpg",
+            "logo_image": "shopify://shop_images/mushk-couture-24-Logo-16-04-25.png",
             "main_sub_heading_text": "",
-            "main_button_text": ""
+            "main_button_text": "Shop Now"
           }
         },
         "information_gTwLFr": {
