@@ -154,10 +154,11 @@
             "inner_background_color": "#e8f9e8",
             "select_collection_display": "zoha",
             "select_product_display": 5,
-            "main_desktop_image": "shopify://shop_images/Zoha7-8-2023_2_1_2e5fb530-2b42-4ba6-942c-da3b244251d7.jpg",
-            "main_mobile_image": "shopify://shop_images/Zoha7-8-2023_2_1_2e5fb530-2b42-4ba6-942c-da3b244251d7.jpg",
+            "main_desktop_image": "shopify://shop_images/zoha-16-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/zoha-16-04-25.jpg",
+            "logo_image": "shopify://shop_images/zoha-Logo-16-04-25.png",
             "main_sub_heading_text": "",
-            "main_button_text": ""
+            "main_button_text": "Shop Now"
           }
         },
         "information_77EDfL": {
