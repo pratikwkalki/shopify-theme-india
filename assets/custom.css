@@ -1453,6 +1453,7 @@ div.stamped-container[data-widget-style], div[data-widget-style] div.stamped-con
 .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_texts_new p{ margin:0; font-size:16px; line-height:150%; color:#fff; }
 .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new{padding-top:30px; display: flex; align-items: center; flex-direction: column;}
 .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new a{ font-size: 16px;letter-spacing: .64px; line-height: 1; min-width: auto; padding: 12px 30px; }
+.List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new img{ max-width:100%}
 .List_collections_template_innerloop_innerboxs_2_detail_mainright_new{padding-left:28px; width:calc(100% - 280px);}
 .List_collections_template_innerloop_innerboxs_2_detail_innerright_image_new{ width:calc(33.33% - 18px); }
 .List_collections_template_innerloop_innerboxs_2_detail_innerright_image_new a{ position:relative; width:100%; padding-bottom:141.43%; display:block; }
