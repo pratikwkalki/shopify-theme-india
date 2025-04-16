@@ -82,12 +82,12 @@
                                         {%- endif -%}
                                         {%- if  block.settings.logo_image != blank -%}
                                           <div class="">
-                                           
+                                           {% assign main_video_image = block.settings.logo_image  | image_url %}
                                             <picture>
                                               <source srcset="{{ block.settings.logo_image | image_url: width: img.width }}" media="(max-width: 380px)" />
                                               <source srcset="{{ block.settings.logo_image | image_url: width: img.width }}" media="(max-width: 500px)" />
                                               <source srcset="{{ block.settings.logo_image | image_url: width: img.width }}" media="(max-width: 749px)" />
-                                              <img src="{{ block.settings.logo_image | image_url: width: img.width }}" alt="{{ rows.name.value }}" loading="lazy" width="225" height="299" />
+                                              <img src="{%- render 'gumlet', src: main_video_image w: 225 %}" alt="{{ rows.name.value }}" loading="lazy" width="225" height="299" />
                                             </picture>
                                           </div>  
                                         {%- endif -%}
