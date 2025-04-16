@@ -23,7 +23,7 @@
                             </div>
                           {% else %}  
                             {%- if block.settings.main_desktop_full_image != blank and block.settings.main_mobile_full_image != blank -%}
-                              <div class="Index_top_banner_slider_allloop_innerboxs_videoimage_new ">
+                              <div class="Index_top_banner_slider_allloop_innerboxs_videoimage_new skeleton">
                                 {% assign main_desktop_image = block.settings.main_desktop_full_image  | image_url %}
                                 {% assign main_mobile_image = block.settings.main_mobile_full_image  | image_url %}
                                 {%- if forloop.first %}
