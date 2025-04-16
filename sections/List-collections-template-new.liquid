@@ -80,19 +80,16 @@
                                             <h2>{{ collection.title }}</h2>
                                           </div>  
                                         {%- endif -%}
-                                        {%- if  block.settings.logo_image != blank -%}
-                                          <div class="">
-                                           {% assign main_video_image = block.settings.logo_image  | image_url %}
+                                        
+                                        {%- if block.settings.main_sub_heading_text != blank or block.settings.logo_image != blank -%}
+                                          <div class="List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_texts_new">
+                                            {% assign main_video_image = block.settings.logo_image  | image_url %}
                                             <picture>
                                               <source srcset="{%- render 'gumlet', src: main_video_image w: 200 %}" media="(max-width: 380px)" />
                                               <source srcset="{%- render 'gumlet', src: main_video_image w: 270 %}" media="(max-width: 500px)" />
                                               <source srcset="{%- render 'gumlet', src: main_video_image w: 410 %}" media="(max-width: 749px)" />
                                               <img src="{%- render 'gumlet', src: main_video_image w: 225 %}" alt="{{ rows.name.value }}" loading="lazy" width="225" height="299" />
                                             </picture>
-                                          </div>  
-                                        {%- endif -%}
-                                        {%- if block.settings.main_sub_heading_text != blank -%}
-                                          <div class="List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_texts_new">
                                             {{ block.settings.main_sub_heading_text }}
                                           </div>  
                                         {%- endif -%}
