@@ -84,10 +84,10 @@
                                           <div class="">
                                            
                                             <picture>
-                                              <source srcset="{%- render 'gumlet', src: main_video_image w: 200 %}" media="(max-width: 380px)" />
-                                              <source srcset="{%- render 'gumlet', src: main_video_image w: 270 %}" media="(max-width: 500px)" />
-                                              <source srcset="{%- render 'gumlet', src: main_video_image w: 410 %}" media="(max-width: 749px)" />
-                                              <img src="{{ block.settings.logo_image | image_url: width: img.width  }} w: 225" alt="{{ rows.name.value }}" loading="lazy" width="225" height="299" />
+                                              <source srcset="{%- render src: block.settings.logo_image w: 200 %}" media="(max-width: 380px)" />
+                                              <source srcset="{%- render src: block.settings.logo_image w: 270 %}" media="(max-width: 500px)" />
+                                              <source srcset="{%- render src: block.settings.logo_image w: 410 %}" media="(max-width: 749px)" />
+                                              <img src="{%- render src: block.settings.logo_image w: 410 %} " alt="{{ rows.name.value }}" loading="lazy" width="225" height="299" />
                                             </picture>
                                           </div>  
                                         {%- endif -%}
