@@ -16,7 +16,7 @@
           <div class="List_collections_template_mainloop_new">
             <div class="List_collections_template_innerloop_new">
               {%- for block in section.blocks -%}
-                {%- if block.settings.select_collection_display != blank or block.settings.main_mp4_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank or collection.title != blank or block.settings.main_sub_heading_text != blank or block.settings.main_button_text != blank -%}
+                {%- if block.settings.logo_image != blank or block.settings.select_collection_display != blank or block.settings.main_mp4_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank or collection.title != blank or block.settings.main_sub_heading_text != blank or block.settings.main_button_text != blank -%}
                   {%- assign collection = block.settings.select_collection_display -%}
                   <div class="List_collections_template_innerloop_mainboxs_new" style="background: {{ block.settings.inner_background_color }};">
                     <div class="List_collections_template_innerloop_innerboxs_new">
