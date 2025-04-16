@@ -206,10 +206,11 @@
             "inner_background_color": "#f1ebf5",
             "select_collection_display": "zehra-the-bridesmaid-edit",
             "select_product_display": 5,
-            "main_desktop_image": "shopify://shop_images/Zehra7-8-2023_1_1_f422c6d1-8f12-45d4-bab2-411e715bc510.jpg",
-            "main_mobile_image": "shopify://shop_images/Zehra7-8-2023_1_1_f422c6d1-8f12-45d4-bab2-411e715bc510.jpg",
+            "main_desktop_image": "shopify://shop_images/zehra-16-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/zehra-16-04-25.jpg",
+            "logo_image": "shopify://shop_images/zehra-Logo-16-04-25.png",
             "main_sub_heading_text": "",
-            "main_button_text": ""
+            "main_button_text": "Shop Now"
           }
         }
       },
