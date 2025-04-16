@@ -72,12 +72,17 @@
                                       </div>
                                     </div>
                                   {%- endif -%}
-                                  {%- if collection.title != blank or block.settings.main_sub_heading_text != blank or block.settings.main_button_text != blank -%}
+                                  {%- if collection.title != blank or collection.logo_image != blank or block.settings.main_sub_heading_text != blank or block.settings.main_button_text != blank -%}
                                     <div class="List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_new">
                                       <div class="List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_titletextboth_new">
                                         {%- if collection.title != blank -%}
                                           <div class="List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_title_new">
                                             <h2>{{ collection.title }}</h2>
+                                          </div>  
+                                        {%- endif -%}
+                                        {%- if collection.logo_image != blank -%}
+                                          <div class="List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_title_new">
+                                            <h2>{{ collection.logo_image }}</h2>
                                           </div>  
                                         {%- endif -%}
                                         {%- if block.settings.main_sub_heading_text != blank -%}
@@ -197,6 +202,11 @@
             "type": "image_picker",
             "id": "main_mobile_image",
             "label": "Add Main Mobile Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "logo_image",
+            "label": "Add Logo Image"
           },
           {
             "type": "richtext",
