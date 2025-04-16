@@ -102,10 +102,11 @@
             "inner_background_color": "#faebe1",
             "select_collection_display": "the-atelier-couture-2024",
             "select_product_display": 5,
-            "main_desktop_image": "shopify://shop_images/the-atelier_1.jpg",
-            "main_mobile_image": "shopify://shop_images/the-atelier_1.jpg",
+            "main_desktop_image": "shopify://shop_images/the-atelier-16-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/the-atelier-16-04-25.jpg",
+            "logo_image": "shopify://shop_images/the-atelier-Logo-16-04-25.png",
             "main_sub_heading_text": "",
-            "main_button_text": ""
+            "main_button_text": "Shop Now"
           }
         },
         "information_PPCafF": {
