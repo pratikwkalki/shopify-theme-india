@@ -37,10 +37,11 @@
             "inner_background_color": "#e8f9e8",
             "select_collection_display": "engagement-collection",
             "select_product_display": 5,
-            "main_desktop_image": "shopify://shop_images/engagement-collection-banner-12-11-24_1_6fe5f340-ae5d-46f7-98bb-bfc03a115e5c.jpg",
-            "main_mobile_image": "shopify://shop_images/engagement-collection-banner-12-11-24_1.jpg",
+            "main_desktop_image": "shopify://shop_images/engagement-collection-banner-16-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/engagement-collection-banner-16-04-25.jpg",
+            "logo_image": "shopify://shop_images/engagement-collection-Logo-16-04-25.png",
             "main_sub_heading_text": "",
-            "main_button_text": ""
+            "main_button_text": "Shop Now"
           }
         },
         "information_6kqGhi": {
