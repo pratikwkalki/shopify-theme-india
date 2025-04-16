@@ -1,7 +1,6 @@
 {%- if section.blocks.size > 0 -%}
-  <div class="Index_round_column_list_main_new {{ section.settings.customClass }}" style="background: {{ section.settings.main_background_color }}; min-height: 156px;" x-data="{ isMobile: window.innerWidth <= 749 }">
-    <template x-if="isMobile">
-      <div class="Index_round_column_list_inner_new">
+  <div class="Index_round_column_list_main_new {{ section.settings.customClass }}" style="background: {{ section.settings.main_background_color }};">
+    <div class="Index_round_column_list_inner_new">
       {%- if section.blocks.size > 0 -%}
         <div class="page-width">
           <div class="Index_round_column_list_1_new">
@@ -57,7 +56,6 @@
         </div>
       {%- endif -%}
     </div>
-    </template>
   </div>
 {%- endif -%}   
 
