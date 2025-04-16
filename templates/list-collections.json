@@ -115,10 +115,11 @@
             "inner_background_color": "#e8f9e8",
             "select_collection_display": "bride-baraat-viii",
             "select_product_display": 5,
-            "main_desktop_image": "shopify://shop_images/bride-baraat_1.jpg",
-            "main_mobile_image": "shopify://shop_images/bride-baraat_1.jpg",
+            "main_desktop_image": "shopify://shop_images/bride-baraat-16-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/bride-baraat-16-04-25.jpg",
+            "logo_image": "shopify://shop_images/bride-baraat-Logo-16-04-25.png",
             "main_sub_heading_text": "",
-            "main_button_text": ""
+            "main_button_text": "Shop Now"
           }
         },
         "information_Hb7EhJ": {
