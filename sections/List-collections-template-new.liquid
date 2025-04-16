@@ -88,7 +88,7 @@
                                         {%- endif -%}
                                         {%- if block.settings.logo_image != blank or block.settings.main_button_text != blank -%}
                                           <div class="List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new">
-                                            {%- if block.settings.main_button_text != blank -%}
+                                            {%- if block.settings.logo_image != blank -%}
                                             {% assign main_video_image = block.settings.logo_image  | image_url %}
                                             <picture>
                                               <source srcset="{%- render 'gumlet', src: main_video_image w: 200 %}" media="(max-width: 380px)" />
