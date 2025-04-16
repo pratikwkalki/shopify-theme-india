@@ -1443,7 +1443,7 @@ div.stamped-container[data-widget-style], div[data-widget-style] div.stamped-con
 .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_texts_new{ padding:20px 0 0 0; }
 .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_texts_new p{ margin:0; font-size:16px; line-height:150%; color:#fff; }
 .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new{padding-top:30px;}
-.List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new a{ font-size: 16px; letter-spacing: .64px; line-height: 26px; min-width: 190px; }
+.List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new a{ font-size: 16px;letter-spacing: .64px; line-height: 1; min-width: auto; padding: 12px 30px; }
 .List_collections_template_innerloop_innerboxs_2_detail_mainright_new{padding-left:28px; width:calc(100% - 280px);}
 .List_collections_template_innerloop_innerboxs_2_detail_innerright_image_new{ width:calc(33.33% - 18px); }
 .List_collections_template_innerloop_innerboxs_2_detail_innerright_image_new a{ position:relative; width:100%; padding-bottom:141.43%; display:block; }
@@ -3775,7 +3775,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_texts_new { padding: 0; }
   .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_texts_new p { font-size: 14px; line-height: 171.429%; }
   .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new { padding-top: 10px; }
-  .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new a { font-size: 11px; letter-spacing: .44px; line-height: 16px; min-width: 108px; }
+  .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new a { font-size: 11px; letter-spacing: .44px;padding: 10px 30px; }
   .List_collections_template_innerloop_innerboxs_2_detail_innerright_image_new { width: calc(50% - 8px); }
   .List_collections_template_innerloop_innerboxs_2_detail_innerright_image_new a{ /*padding-bottom:196px;*/ }
   .list_collection_slider{ padding-right:0; }
