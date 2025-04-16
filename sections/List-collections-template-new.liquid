@@ -86,7 +86,7 @@
                                             {{ block.settings.main_sub_heading_text }}
                                           </div>  
                                         {%- endif -%}
-                                        {%- if block.settings.main_button_text != blank  or block.settings.logo_image != blank -%}
+                                        {%- if block.settings.logo_image != blank -%}
                                           <div class="List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new">
                                             {% assign main_video_image = block.settings.logo_image  | image_url %}
                                             <picture>
@@ -95,6 +95,10 @@
                                               <source srcset="{%- render 'gumlet', src: main_video_image w: 410 %}" media="(max-width: 749px)" />
                                               <img src="{%- render 'gumlet', src: main_video_image w: 225 %}" alt="{{ rows.name.value }}" loading="lazy" width="225" height="299" />
                                             </picture>
+                                          </div>  
+                                        {%- endif -%}
+                                         {%- if block.settings.main_button_text != blank -%}
+                                          <div class="List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new">
                                             <a href="{{ collection.url }}" class="button button_white">
                                               {{ block.settings.main_button_text }}
                                             </a>
