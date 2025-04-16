@@ -193,10 +193,11 @@
             "inner_background_color": "#e8f9e8",
             "select_collection_display": "rumi-ramp-collection",
             "select_product_display": 5,
-            "main_desktop_image": "shopify://shop_images/Rumi7-8-2023_1_1_39403613-a393-4fe3-b68c-5b113eeedc96.jpg",
-            "main_mobile_image": "shopify://shop_images/Rumi7-8-2023_1_1_39403613-a393-4fe3-b68c-5b113eeedc96.jpg",
+            "main_desktop_image": "shopify://shop_images/rumi-16-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/rumi-16-04-25.jpg",
+            "logo_image": "shopify://shop_images/rumi-Logo-16-04-25.png",
             "main_sub_heading_text": "",
-            "main_button_text": ""
+            "main_button_text": "Shop Now"
           }
         },
         "information_K9Gh4a": {
