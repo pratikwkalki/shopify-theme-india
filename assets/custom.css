@@ -33,7 +33,7 @@ img{ height: auto !important; }
 100% {left:100%;} 
 }*/
 /* skeleton page css close*/
-.saree-edit{background-color:#000!important; color:#fff!important}
+
 .order-1{order:1}
 .order-2{order:2}
 .order-3{order:3}
@@ -673,8 +673,8 @@ summary .icon-caret { position: relative; }
 .Index_arrivals_details_mainright_new{width:40%; padding: 0 28px;}
 .Index_arrivals_details_innerright_infos_new{text-align:center;}
 .Index_arrivals_details_innerright_infos_new p{margin:0; font-family: var(--font-noto-serif-display); font-size:30px; line-height:160%; font-weight:500; color:#661B14;}
-.Index_arrivals_details_innerright_title_new{padding-top:10px; text-align:center;}
-.Index_arrivals_details_innerright_title_new h2{margin:0; font-size:36px; line-height:195%; font-weight:600; color:#661B14; text-transform:capitalize; }
+.Index_arrivals_details_innerright_title_new{padding-top:10px; text-align:center; padding-bottom: 30px;}
+.Index_arrivals_details_innerright_title_new h2{margin:0; font-size:36px; line-height:100%; font-weight:600; color:#661B14; text-transform:capitalize; }
 .Index_arrivals_details_innerright_title_new h2{margin:0; font-family:var(--font-noto-serif-display); }
 .Index_arrivals_details_innerright_button_new{padding-top:22px; text-align:center;}
 .Index_arrivals_details_innerright_title_new h2:after {
@@ -684,6 +684,7 @@ summary .icon-caret { position: relative; }
     vertical-align: super;
     top: -2px;
 }
+.saree-edit{background-color:#000!important; color:#fff!important}
 
 .shopify-section #tagalys-namespace .widget .product .product-name {  text-align: left;  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 12px; font-weight: normal;  font-size: 14px; font-family: var(--font-body-family);  line-height: 18px;}
 .shopify-section #tagalys-namespace.tagalys-namespace .widget .product .product-prices {  text-align: left;}
