@@ -280,6 +280,7 @@ document.addEventListener('DOMContentLoaded', function() {
         templateContainer.querySelectorAll(selectors.stitchedGroupSelector).forEach(elm => {
           elm.classList.add('hide')
         })
+        templateContainer.querySelector('#blouse-style-input').setAttribute('required', 'true');
 
         // select first option
         if(initialSelectedOption && optionValues.length) {
