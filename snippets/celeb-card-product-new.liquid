@@ -81,7 +81,7 @@
                   {%- if celeb_card_product.metafields.custom.celebrity_influencer_image.width >= 1066 -%}{{ celeb_card_product.metafields.custom.celebrity_influencer_image | image_url: width: 1066 }} 1066w,{%- endif -%}
                   {{ celeb_card_product.metafields.custom.celebrity_influencer_image | image_url }} {{ celeb_card_product.metafields.custom.celebrity_influencer_image.width }}w
                 "
-                src="{{ celeb_card_product.metafields.custom.celebrity_influencer_image | image_url: width: 610 }}"
+                src="{{ celeb_card_product.metafields.custom.celebrity_influencer_image.value | image_url: width: 610 }}"
                 sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                 alt="{{ celeb_card_product.metafields.custom.celebrity_influencer_image.alt | escape | default: celeb_card_product.title }}"
                 class="motion-reduce"
