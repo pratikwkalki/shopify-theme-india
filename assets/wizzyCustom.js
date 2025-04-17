@@ -666,6 +666,8 @@ window.wizzyConfig.events.registerEvent(
     if (payload.filters) {
       payload.filters.showOOSProductsInOrder = "true";
     }
+
+    return payload;
   }
 );
   window.wizzyConfig.events.registerEvent(
