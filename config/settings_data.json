@@ -9,6 +9,8 @@
  */
 {
   "current": {
+    "wizzy_is_lazy_init": "true",
+    "wizzy_is_lazy_init_enabled": "true",
     "wizzy_beta_frontend_js": "",
     "logo": "shopify://shop_images/kalki-logo.svg",
     "white_logo": "shopify://shop_images/white_logo.svg",
