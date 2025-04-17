@@ -300,6 +300,16 @@
         "type": "shopify://apps/webengage/blocks/webengage-embed/1d458caf-1d70-4697-a570-55048d495614",
         "disabled": false,
         "settings": {}
+      },
+      "14254450603262595132": {
+        "type": "shopify://apps/wizzy-search-filters/blocks/wizzy-body-assets/ae8fbc14-43c6-4ce2-b5bc-819d4b1052f6",
+        "disabled": false,
+        "settings": {}
+      },
+      "7496264633453945898": {
+        "type": "shopify://apps/wizzy-search-filters/blocks/wizzy-head-assets/ae8fbc14-43c6-4ce2-b5bc-819d4b1052f6",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
