@@ -660,6 +660,13 @@ window.onWizzyScriptLoaded = function () {
       return data;
     }
   );
+  window.wizzyConfig.events.registerEvent(
+  window.wizzyConfig.events.allowedEvents.BEFORE_FILTERS_EXECUTED,
+  function (payload) {
+    if (payload.filters) {
+      payload.filters.showOOSProductsInOrder = "true";
+    }
+  }
 
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.PRODUCTS_CACHED_RESULTS_RENDERED,
@@ -853,13 +860,6 @@ window.onWizzyScriptLoaded = function () {
     }
   );
 };
-window.wizzyConfig.events.registerEvent(
-  window.wizzyConfig.events.allowedEvents.BEFORE_FILTERS_EXECUTED,
-  function (payload) {
-    if (payload.filters) {
-      payload.filters.showOOSProductsInOrder = "true";
-    }
-  }
 );
 
 let searchbtn = document.querySelector(".search_main_new");
