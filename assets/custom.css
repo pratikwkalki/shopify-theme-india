@@ -640,7 +640,7 @@ summary .icon-caret { position: relative; }
 .Index_arrivals_details_inner_new{padding:28px;}
 .Index_arrivals_details_mainleftright_new{}
 .Index_arrivals_details_innerleftright_new{display:flex; align-items:center;margin: 0 -28px;}
-.Index_arrivals_details_mainleft_new{width:60%;padding: 0 28px;}
+.Index_arrivals_details_mainleft_new{width:60%;padding: 0 0px 0 28px;}
 .Index_arrivals_details_innerleft_new{display:flex; grid-gap:15px;}
 .Index_arrivals_details_innerleft_1_new{width:50%;}
 .Index_arrivals_details_innerleft_1_leftside_new{}
