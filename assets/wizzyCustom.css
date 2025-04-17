@@ -10,9 +10,16 @@
   .wizzy-facet-list-item-count {
   display: none;
 }
-.facet-body-sizes li.wizzy-facet-list-item.facet-has-swatch:hover {
+.filters-list-top-values-wrapper
+  .facet-body-sizes
+  li.wizzy-facet-list-item.facet-has-swatch:hover {
   background-color: #223330;
   color: white !important;
+  text-decoration: none;
+}
+
+.filters-list-top-values-wrapper li.wizzy-facet-list-item:hover {
+  text-decoration: underline;
 }
 ul.wizzy-selected-facet-list {
   margin: 0;
