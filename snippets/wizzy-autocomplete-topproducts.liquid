@@ -1,0 +1,81 @@
+<script type="text/template" id="wizzy-autocomplete-topproducts" wizzy-override>
+  <div class="wizzy-autocomplete-top-products">
+      <p class="top-products-title">[[topProductsTitle]]</p>
+      <ul class="autocomplete-top-products">
+          [[#products]]
+
+          <li class="topproduct-item" title="[[& name ]]" data-id="[[id]]"
+              data-groupId="[[#groupId]][[groupId]][[/groupId]][[#singleVarientGroupId]][[singleVarientGroupId]][[/singleVarientGroupId]]">
+          <a href="[[&url]]" class="topproduct-item-link card-wrapper">
+              <div class="topproduct-item-image" >
+                  <img src="[[ mainImage ]]" class="topproduct-image" width="1715"
+                  height="1715"
+                  
+                  />
+              </div><!-- ending of topproduct-item-image -->
+              <div class="topproduct-item-image hover-image ">
+              [[#hoverImage]]
+                <img
+                  srcset="
+                    [[hoverImage]]?v=1742809603&amp;width=610 610w,[[hoverImage]]?v=1742809603&amp;width=1066 1066w,[[hoverImage]]?v=1742809603 1715w
+                  "
+                  src="[[hoverImage]]?v=1742809603&amp;width=610"
+                  sizes="(min-width: 1000px) 217px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                  alt="[[name]]"
+                  class="motion-reduce"
+                  width="1715"
+                  height="1715"
+                >
+             [[/hoverImage]]
+              [[^hoverImage]]
+              <img
+                    srcset="
+                      [[mainImage]]?v=1742809603&amp;width=610 610w,[[mainImage]]?v=1742809603&amp;width=1066 1066w,[[mainImage]]?v=1742809603 1715w
+                    "
+                    src="[[mainImage]]?v=1742809603&amp;width=610"
+                    sizes="(min-width: 1000px) 217px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                    alt="[[name]]"
+                    class="motion-reduce"
+
+                    width="1715"
+                    height="1715"
+                  >
+              [[/hoverImage]]
+              </div><!-- ending of topproduct-item-image -->
+              <div class="topproduct-item-info">
+                  <p class="topproduct-title">[[& name ]]</p>
+                  [[#hasCategories]]
+                  <p class="topproduct-in-category">in [[&category]]</p>
+                  [[/hasCategories]]
+                  <p class="topproduct-price">
+                      [[^price]]MRP[[/price]] [[#priceWithCurrency]][[ sellingPrice ]][[/priceWithCurrency]]
+                      [[#price]]
+                      [[#discountPercentage]]
+                      <span class="topproduct-original-price">
+                         MRP [[#priceWithCurrency]][[ price ]][[/priceWithCurrency]]
+                      </span>
+                       [[/discountPercentage]]
+                      [[/price]]
+
+                      <br>
+                      <span class="topproduct-item-discount">
+                         [[#discountPercentage]]
+
+                             [[discountPercentage]]% off
+                         [[/discountPercentage]]
+                      </span></p>
+              </div><!-- ending of topproduct-item-info -->
+          </a><!-- ending of topproduct-item-link -->
+          </li><!-- ending of topproduct-item -->
+
+          [[/products]]
+      </ul><!-- ending of autocomplete-top-products -->
+      [[^isForDefault]]
+      <div class="autocomplete-top-products-view-more">
+          <button type="button" class="btn btn--small wizzy-autocomplete-top-products-view-more">
+              View More
+          </button>
+      </div>
+      [[/isForDefault]]
+  </div><!-- ending of top-products -->
+</script>
