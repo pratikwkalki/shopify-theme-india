@@ -352,6 +352,7 @@ document.addEventListener('DOMContentLoaded', function() {
         templateContainer.querySelectorAll(selectors.stitchedGroupSelector).forEach(elm => {
           elm.classList.remove('hide')
         })
+        templateContainer.querySelector('#blouse-style-input').removeAttribute('required');
 
         // set all required fields of stitched group
         requiredFieldsToggle(allRequiredFields, false)
