@@ -323,7 +323,9 @@ summary .icon-caret { position: relative; }
 .page_white_header_transparent_new .search__input.field__input:-moz-placeholder{color:#9B9AA7; opacity:1 !important;}
 .page_white_header_transparent_new .search-modal__content_drawer_new .search__button svg path{ fill:#fff; }
 .page_white_header_transparent_new .Header_desktop_left_menu_inner_new .header__menu-item{ color:#fff; }
-
+.mega-menu[open] .mega-menu__content {
+  display: block !important;
+}
 
 /* Page Store slider new */
 .Page_Store_Slider_innerloop_mainbox{width: 406px; padding: 0px; height: auto;}
