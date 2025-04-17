@@ -431,42 +431,8 @@ window.onWizzyScriptLoaded = function () {
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.VIEW_RENDERED,
     function (data) {
-      try {
-        window.wizzyConfig.search.view.templates.facets.rangeListItem =
-          "#wizzy-facet-range-list-item";
-        window.wizzyConfig.search.configs.facets.configs =
-          window.wizzyConfig.search.configs.facets.configs.filter(
-            (facet) => facet.key !== "sellingPrice"
-          );
-        window.wizzyConfig.search.configs.facets.configs.push({
-          label: "Price",
-          buckets: [
-            {
-              from: 0,
-              to: 18419,
-            },
-            {
-              from: 18479,
-              to: 36838,
-            },
-            {
-              from: 36838,
-              to: 55257,
-            },
-            {
-              from: 55257,
-              to: 73676,
-            },
-            {
-              from: 73676,
-              to: 92095,
-            },
-          ],
-          key: "sellingPrice",
-          position: "left",
-          // order: 50
-        });
-      } catch (error) {}
+     
+        
       let selectedPrice = document.querySelectorAll(
         ".wizzy-selected-facet-list-item[data-facetkey='sellingPrice'] .facet-item-label-value"
       );
