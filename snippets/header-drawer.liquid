@@ -134,42 +134,6 @@
                                               <path d="M2 12H24" stroke="#0F0D1A" stroke-width="1.2"/>
                                             </svg>
                                           </button>
-                                          {%- unless bottom_menu_title == 'bridal' -%}
-                                            <div class="inner_menu_open_bottom_title_image_new">
-                                              <div class="inner_menu_open_bottom_title_new">{{ childlink.title | escape }}</div>
-                                              {%- assign megamenu_custom_image_product = shop.metaobjects.megamenu_custom_image_product.values -%}
-                                              {%- paginate shop.metaobjects.megamenu_custom_image_product.values by 1000 -%}
-                                                {%- for megamenu_custom_image_product in megamenu_custom_image_product -%}
-                                                  {%- assign main_menu_name = megamenu_custom_image_product.main_menu_name.value | handleize -%}
-                                                  {%- assign inner_menu_child = childlink.title | handleize -%}
-                                                  {%- assign inner_menu_name = megamenu_custom_image_product.inner_menu_name.value | handleize -%}
-                                                  {%- if main_menu_name == selected_menu_name and inner_menu_name == inner_menu_child and megamenu_custom_image_product.image_or_video_mobile.value != blank -%}
-                                                    <div class="">
-                                                      <div class="inner_menu_open_bottom_image_new">
-                                                        <div class="megamenu_right_top_mainvideoimage_new">
-                                                          {%- if megamenu_custom_image_product.button_redirect_url.value != blank -%}
-                                                            <a href="{{ megamenu_custom_image_product.button_redirect_url.value }}">
-                                                          {%- endif -%}
-                                                          <div class="megamenu_right_top_innervideoimage_new">
-                                                            {%- if megamenu_custom_image_product.image_or_video_mobile.value.sources[1].url contains '.mp4' -%}
-                                                              <div class="megamenu_right_top_video_OR_image_new">
-                                                                <video id="Mp4Video-{{ forloop.index0 }}-inner" class="video-div" data-type="mp4" src="{{ megamenu_custom_image_product.image_or_video_mobile.value.sources[1].url }}" loop muted playsinline autoplay></video>
-                                                              </div>
-                                                            {%- else -%}
-                                                              <div class="megamenu_right_top_video_OR_image_new">
-                                                                {{ megamenu_custom_image_product.image_or_video_mobile.value | image_url: width: img.width | image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', fetchpriority: 'auto', class: 'Hover_image_new' }}
-                                                              </div>
-                                                            {%- endif -%}
-                                                          </div>
-                                                          {%- if megamenu_custom_image_product.button_redirect_url.value != blank -%}</a>{%- endif -%}
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                  {%- endif -%}
-                                                {%- endfor -%}
-                                              {%- endpaginate -%}
-                                            </div>
-                                          {%- endunless -%}
                                           <ul class="menu-drawer__menu list-menu inner_menu_open_bottom_new submenu3" role="list" tabindex="-1">
                                             {%- for grandchildlink in childlink.links -%}
                                               <li>
