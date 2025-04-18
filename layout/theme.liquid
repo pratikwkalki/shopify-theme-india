@@ -6,61 +6,41 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <meta name="google-site-verification" content="gw7hZioXeQvKtEVQTPxlIDImPkTNEfKJSuWxK847lnA">
-     {% if page_description %}
+     {%- if page_description -%}
       <meta name="description" content="{{ page_description | escape }}">
-    {% endif %}
+    {%- endif -%}
     <link rel="canonical" href="{{ canonical_url }}">
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
-    {% render 'critical' %}    
-    {% if template.name == 'collection' %}
-      {% render 'collection-schema', collection: collection %}
-    {% endif %}
-    {% if template.name == 'product' %}
-      {% render 'pdp-schema', product: product %}
-    {% endif %}
+    {%- render 'critical' -%}    
+    {%- if template.name == 'collection' -%}
+      {%- render 'collection-schema', collection: collection -%}
+    {%- endif -%}
+    {%- if template.name == 'product' -%}
+      {%- render 'pdp-schema', product: product -%}
+    {%- endif -%}
     {%- unless template == 'index' or template == 'cart' or template == '404' or template.name == 'collection' -%}
       {%- assign t = template | split: '.' | first -%}
       <script type="application/ld+json">
         {
-            "@context": "https://schema.org/",
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "{{ request.origin }}"
-              }
-              {%- case t -%}
-                {%- when 'page' -%}
-              ,
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "{{ page.title }}",
-                "item": "{{ request.origin }}{{ page.title }}"
-              }
-              {%- when 'product' -%}
-              ,
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "{{ product.title }}",
-                "item": "{{ request.origin }}{{ product.url }}"
-              }
-              {%- when 'collection' -%}
-              ,
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "{{ collection.title }}",
-                "item": "{{ request.origin }}{{ collection.url }}"
-              }
-              {% endcase %}
-            ]
-          }
+          "@context": "https://schema.org/",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type":"ListItem","position":1,"name":"Home","item":"{{ request.origin }}"}
+            {%- case t -%}
+              {%- when 'page' -%}
+            ,
+            {"@type":"ListItem","position":2,"name":"{{ page.title }}","item":"{{ request.origin }}{{ page.title }}"}
+            {%- when 'product' -%}
+            ,
+            {"@type":"ListItem","position":3,"name":"{{ product.title }}","item":"{{ request.origin }}{{ product.url }}"}
+            {%- when 'collection' -%}
+            ,
+            {"@type":"ListItem","position":2,"name":"{{ collection.title }}","item":"{{ request.origin }}{{ collection.url }}"}
+            {% endcase %}
+          ]
+        }
       </script>
     {% endunless %}
     {% if template.name == 'index' %}
