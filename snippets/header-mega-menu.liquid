@@ -11,10 +11,10 @@
   {%- assign dot_colors = shop.metaobjects.menu_3_dot_color.values -%}
 {%- endpaginate -%}
 {%- assign megamenu_custom_image_product = shop.metaobjects.megamenu_custom_image_product.values -%}
-{%- assign menu_2_text_color = shop.metaobjects.menu_2_text_color.values -%}
-{%- assign megamenu_size_position = shop.metaobjects.megamenu_size_position.values -%}
-{%- assign menu_3_text_color = shop.metaobjects.menu_3_text_color.values -%}
-{%- assign menu_3_dot_color = shop.metaobjects.menu_3_dot_color.values -%}
+{%- assign menu_2_text_color = menu_2_styles -%}
+{%- assign megamenu_size_position = size_positions -%}
+{%- assign menu_3_text_color = menu_3_styles -%}
+{%- assign menu_3_dot_color = dot_colors -%}
 <nav class="header__inline-menu {{ selected_menu_name | handleize }}_main_inner_menu_new">
   <ul class="list-menu list-menu--inline {{ selected_menu_name | handleize }}-desk" role="list">
     {%- for link in bottom_menu.links -%}
