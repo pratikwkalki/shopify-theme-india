@@ -76,15 +76,7 @@
       %}
       <script type="application/ld+json">
         {
-          "@context": "http://schema.org",
-          "@type": "WebSite",
-          "name": "KAKLI Fashion",
-          "url":{{ request.origin | append: page.url | json }},
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": {{ potential_action_target | json }},
-            "query-input": "required name=search_term_string"
-          }
+          "@context": "http://schema.org","@type": "WebSite","name": "KAKLI Fashion","url":{{ request.origin | append: page.url | json }}, "potentialAction": {"@type": "SearchAction","target": {{ potential_action_target | json }},"query-input": "required name=search_term_string"}
         }
       </script>
     {%- endif -%}
