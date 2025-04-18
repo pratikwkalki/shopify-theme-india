@@ -1636,7 +1636,9 @@ span.wizzy-facet-list-item-checkbox {
     left: 250px !important;
   }
 }
-
+.wizzy-grid-filters-box .facet-body-colors .wizzy-facet-list li {
+  background-color: #eeeeee;
+}
 .wizzy-grid-filters-box .wizzy-facet-list-item-label {
   padding: unset;
   padding-top: 2px;
