@@ -427,6 +427,17 @@ span.wizzy-autocomplete-label {
   display: none !important;
 }
 @media screen and (max-width: 769px) {
+  .wizzy-resize-grid.desktop {
+    display: none;
+  }
+  .wizzy-resize-grid.mobile {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+  }
+  .wizzy-range-for-grid {
+    width: 180px;
+  }
   .wizzy-scroll-wrapper {
     position: relative;
     display: flex;
