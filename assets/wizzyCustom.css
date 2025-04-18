@@ -1648,3 +1648,8 @@ span.wizzy-facet-list-item-checkbox {
   background-color: #eeeeee !important;
   border-radius: 15px !important;
 }
+.wizzy-grid-filters-box
+  .wizzy-facet-body.facet-body-colors
+  .facet-item-label-value {
+  display: block;
+}
