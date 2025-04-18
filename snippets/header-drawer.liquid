@@ -1,9 +1,9 @@
-{% comment %}
-  Renders a header drawer menu for mobile and desktop.
-
-  Usage:
-  {% render 'header-drawer' %}
-{% endcomment %}
+{%- paginate shop.metaobjects.menu_3_text_color.values by 1000 -%}
+  {%- assign menu_3_styles = shop.metaobjects.menu_3_text_color.values -%}
+{%- endpaginate -%}
+{%- paginate shop.metaobjects.menu_3_dot_color.values by 1000 -%}
+  {%- assign dot_colors = shop.metaobjects.menu_3_dot_color.values -%}
+{%- endpaginate -%}
 <header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
   <details id="Details-menu-drawer-container" class="menu-drawer-container">
     <summary
@@ -149,28 +149,24 @@
                                                         {%- for grandchildlinkgrand in grandchildlink.links -%}
                                                           <li>
                                                             {%- assign menu_3_text_color = shop.metaobjects.menu_3_text_color.values -%}
-                                                            {%- paginate shop.metaobjects.menu_3_text_color.values by 1000 -%}
-                                                              {%- for menu_3_text_color in menu_3_text_color -%}
-                                                                {%- assign menu_title = grandchildlinkgrand.title | handleize -%}
-                                                                {%- assign menu_name_title = menu_3_text_color.menu_name.value | handleize -%}
-                                                                {%- if menu_title == menu_name_title -%}
-                                                                  <style>.{{ grandchildlinkgrand.title | handleize }}_3_new{ color:{{ menu_3_text_color.text_color.value }} !important; }</style>
-                                                                {%- endif -%}
-                                                              {%- endfor -%}
-                                                            {%- endpaginate -%}
+                                                            {%- for menu_3_text_color in menu_3_styles -%}
+                                                              {%- assign menu_title = grandchildlinkgrand.title | handleize -%}
+                                                              {%- assign menu_name_title = menu_3_text_color.menu_name.value | handleize -%}
+                                                              {%- if menu_title == menu_name_title -%}
+                                                                <style>.{{ grandchildlinkgrand.title | handleize }}_3_new{ color:{{ menu_3_text_color.text_color.value }} !important; }</style>
+                                                              {%- endif -%}
+                                                            {%- endfor -%}
                                                             {%- assign grandchildlink_title = grandchildlink.title | handleize -%}
                                                             <a id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}-{{ grandchildlinkgrand.handle }}" href="{{ grandchildlinkgrand.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlinkgrand.current %} menu-drawer__menu-item--active{% endif %} {{ grandchildlinkgrand.title | handleize }}_3_new {% if grandchildlink_title contains 'color' %} color_menu_new {% endif %}" {% if grandchildlinkgrand.current %}aria-current="page"{% endif %}>
                                                               {%- if grandchildlink_title contains 'color' -%}
                                                                 {%- assign menu_3_dot_color = shop.metaobjects.menu_3_dot_color.values -%}
-                                                                {%- paginate shop.metaobjects.menu_3_dot_color.values by 1000 -%}
-                                                                  {%- for menu_3_dot_color in menu_3_dot_color -%}
-                                                                    {%- assign menu_title = grandchildlinkgrand.title -%}
-                                                                    {%- assign menu_name_title = menu_3_dot_color.menu_name.value -%}
-                                                                    {%- if menu_title contains menu_name_title -%}
-                                                                      <div class="color_dot_new {{ menu_name_title | handleize }}_border_new" style="background:{{ menu_3_dot_color.dot_color.value }};"></div>
-                                                                    {%- endif -%}
-                                                                  {%- endfor -%}
-                                                                {%- endpaginate -%}
+                                                                {%- for menu_3_dot_color in dot_colors -%}
+                                                                  {%- assign menu_title = grandchildlinkgrand.title -%}
+                                                                  {%- assign menu_name_title = menu_3_dot_color.menu_name.value -%}
+                                                                  {%- if menu_title contains menu_name_title -%}
+                                                                    <div class="color_dot_new {{ menu_name_title | handleize }}_border_new" style="background:{{ menu_3_dot_color.dot_color.value }};"></div>
+                                                                  {%- endif -%}
+                                                                {%- endfor -%}
                                                               {%- endif -%}
                                                               {{ grandchildlinkgrand.title | escape }}
                                                             </a>
