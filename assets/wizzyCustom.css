@@ -7,7 +7,7 @@
 } */
 
 .wizzy-grid-filters-box .wizzy-facet-list-item:nth-child(n + 7) {
-  display: none;
+  display: none !important;
 }
 .filters-list-top-values-wrapper
   .wizzy-facet-body.facet-body-sizes
