@@ -435,6 +435,9 @@ span.wizzy-autocomplete-label {
     width: 100%;
     justify-content: end;
   }
+  .wizzy-range-for-grid {
+    width: 150px;
+  }
   .wizzy-scroll-wrapper {
     position: relative;
     display: flex;
