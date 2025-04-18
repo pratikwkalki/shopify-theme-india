@@ -106,14 +106,14 @@
                                     {%- assign inner_menu_name_handle = megamenu_custom_image_product.inner_menu_name.value | handleize -%}
                                     {%- assign sub_category_name_handle = megamenu_custom_image_product.sub_category_name.value | handleize -%}
                                     {%- if main_menu_name_handle == selected_menu_name_handle and inner_menu_name_handle == link_handle and sub_category_name_handle == childlink_handle -%}
-                                      <div class="sub-category-img">
-                                        {%- if megamenu_custom_image_product.sub_category_image_desktop.value != blank -%}
+                                      {%- if megamenu_custom_image_product.sub_category_image_desktop.value != blank -%}
+                                        <div class="sub-category-img">
                                           <style>.{{ link.handle }}{{ childlink.title | handleize }}-right-img{ width: 50% !important; }.{{ link.handle }}{{ childlink.title | handleize }}-leftside{display:flex;align-items: flex-start;}.{{ link.handle }}{{ childlink.title | handleize }}-leftside .sub-category-img{width: 235px !important;}</style>
                                           <div class="megamenu_right_top_video_OR_image_new">
                                             <a href="{{ megamenu_custom_image_product.button_redirect_url.value }}">{{ megamenu_custom_image_product.sub_category_image_desktop.value | image_url: width: img.width | image_tag: widths: '235', fetchpriority: 'auto', class: 'Hover_image_new' }}</a>
                                           </div>
-                                        {%- endif -%}
-                                      </div>
+                                        </div>
+                                      {%- endif -%}
                                     {%- endif -%}
                                   {%- endfor -%}
                                 {%- endpaginate -%}
