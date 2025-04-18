@@ -13,13 +13,7 @@
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
-    {% render 'critical' %}
-
-    {% comment %}{% assign amp_base_url = shop.url | append: '/amp' %} {% endcomment %}
-
-    <!-- <link rel="amphtml" href="{{ amp_base_url }}{{ request.path }}"> -->
-
-    
+    {% render 'critical' %}    
     {% if template.name == 'collection' %}
       {% render 'collection-schema', collection: collection %}
     {% endif %}
@@ -28,7 +22,6 @@
     {% endif %}
     {%- unless template == 'index' or template == 'cart' or template == '404' or template.name == 'collection' -%}
       {%- assign t = template | split: '.' | first -%}
-
       <script type="application/ld+json">
         {
             "@context": "https://schema.org/",
