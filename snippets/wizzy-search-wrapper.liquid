@@ -1,0 +1,197 @@
+<script type="text/template" id="wizzy-search-wrapper" wizzy-override>
+  <div class="wizzy-search-wrapper [[#inOnCategoryPage]]wizzy-category-page[[/inOnCategoryPage]] [[#displayTileView]]display-tile-view[[/displayTileView]]
+  [[#hasFacets]]has-facets[[/hasFacets]]
+  [[#hasToDisplayFiltersAtTop]]has-filters-button-at-top[[/hasToDisplayFiltersAtTop]]
+  [[#hasLeftFacets]]has-left-facets[[/hasLeftFacets]]
+  [[#hasTopFacets]]has-top-facets[[/hasTopFacets]]
+  [[#displayFacetsInDrawer]]has-facets-in-drawer facets-drawer-on-[[facetDrawerPosition]][[/displayFacetsInDrawer]]" [[#displayTileView]]wizzy-tile-view-level="[[tileViewLevel]]"[[/displayTileView]]>
+      [[^isOnCategoryPage]]
+      <nav class="breadcrumbs Breadcrumb_navigation_main_new" role="navigation" aria-label="breadcrumbs">
+        <ol class="breadcrumbs__list" style="
+        padding-left: 0px;
+        ">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="/">Home</a>
+          </li><li class="breadcrumbs__item">
+                <span class="breadcrumbs__link" aria-current="page">Search</span>
+              </li></ol>
+      </nav>
+      [[/isOnCategoryPage]]
+      <div class="wizzy-search-summary-wrapper">
+          [[#summary]]
+          [[&summary]]
+          [[/summary]]
+          <div class="wizzy-resize-grid">
+            <span class="wizzy-grid-resize-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="4" height="4" fill="black"></rect>
+                <rect x="6" width="4" height="4" fill="black"></rect>
+                <rect x="12" width="4" height="4" fill="black"></rect>
+                <rect y="6" width="4" height="4" fill="black"></rect>
+                <rect x="6" y="6" width="4" height="4" fill="black"></rect>
+                <rect x="12" y="6" width="4" height="4" fill="black"></rect>
+                <rect y="12" width="4" height="4" fill="black"></rect>
+                <rect x="6" y="12" width="4" height="4" fill="black"></rect>
+                <rect x="12" y="12" width="4" height="4" fill="black"></rect>
+              </svg>
+            </span>
+            <input class="wizzy-range-for-grid" type="range" id="vol" name="vol" min="2" max="4" step="1">
+          </div>
+      </div>
+
+      <div class="wizzy-search-results-wrapper">
+          [[#hasFacets]]
+          [[#hasToDisplayFiltersAtTop]]
+          <div class="wizzy-mobile-filter-button" >
+          [[/hasToDisplayFiltersAtTop]]
+              <a href="#" class="wizzy-filters-mobile-entry [[^sort]]only-filters[[/sort]]" [[#hasToDisplayFiltersAtTop]] style="top:[[filtersButtonOffset]]px"[[/hasToDisplayFiltersAtTop]]>Filter<span class="wz-active-filters-mobile-count"></span> </a>
+          [[#hasToDisplayFiltersAtTop]]
+          </div>
+          [[/hasToDisplayFiltersAtTop]]
+          [[/hasFacets]]
+
+          [[#hasLeftFacets]]
+          <div class="wizzy-search-filters-left [[#layout]]wizzy-[[layout]][[/layout]]">
+
+              <div class="wizzy-filters-bg"></div>
+              <div class="wizzy-filters-close-btn"></div>
+              <div class="wizzy-filters-header">
+              
+                  <p class="header-title">Filters</p>
+                  [[#hasFilters]]
+                  <a href="#" class="wizzy-filters-clear-all">Clear All</a>
+                  [[/hasFilters]]
+  
+              </div>
+              <div class="wizzy-selected-filters">
+                      <p class="applied-filters-header">Applied Filters</p>
+                      [[&selectedFacets]]
+              </div>
+
+              <div class="wizzy-search-filters-left-wrapper">
+                  [[#layout]]
+                      <div class="wizzy-facet-list-block">
+                  [[/layout]]
+
+                  [[#leftFacets]]
+                  [[&html]]
+                  [[/leftFacets]]
+
+                  [[#layout]]
+                      </div>
+                  [[/layout]]
+
+                  <div class="wizzy-search-filters-left-mobile-extra">
+                  </div><!-- ending of wizzy-search-filters-left-mobile-extra -->
+
+                  [[#layout]]
+                      <div class="wizzy-mobile-filter-buttons">
+                          <div class="wizzy-filters-close-button-block">
+                              <div class="wizzy-filters-close-button">CLOSE</div>
+                          </div>
+                          <div class="wizzy-mobile-filter-buttons-divider"></div>
+                          <div class="wizzy-apply-all-button-block">
+                              <div class="wizzy-apply-all-button">APPLY</div>
+                          </div>
+                      </div>
+                  [[/layout]]
+
+              </div>
+              <div class="Collection_product_grid_leftside_1_new">
+              <div class="Collection_product_grid_leftside_1_bottom_new"><div class="Collection_product_grid_leftside_1_bottom_1_new">
+                    <div class="Collection_product_grid_leftside_1_bottom_1_videoimageboth_new"> <div class="Collection_product_grid_leftside_1_bottom_1_videoimage_new"><img src="//in.kalkifashion.com/cdn/shop/files/video_call_c5562c8e-7c27-4e4f-bdce-8b4c6df3e6e9.jpg?v=1717492977" alt="" srcset="//in.kalkifashion.com/cdn/shop/files/video_call_c5562c8e-7c27-4e4f-bdce-8b4c6df3e6e9.jpg?v=1717492977&amp;width=180 180w" width="200" height="217" loading="lazy" fetchpriority="auto" class="desktop_image_new">
+              <img src="//in.kalkifashion.com/cdn/shop/files/video_call_c5562c8e-7c27-4e4f-bdce-8b4c6df3e6e9.jpg?v=1717492977" alt="" srcset="//in.kalkifashion.com/cdn/shop/files/video_call_c5562c8e-7c27-4e4f-bdce-8b4c6df3e6e9.jpg?v=1717492977&amp;width=180 180w" width="200" height="217" loading="lazy" fetchpriority="auto" class="mobile_image_new">
+              </div></div>
+                  </div><div class="Collection_product_grid_leftside_1_bottom_2_new" style="background: #fef6f4;">
+                    <div class="Collection_product_grid_leftside_1_bottom_2_titlebuttonboth_new"><div class="Collection_product_grid_leftside_1_bottom_2_title_new">
+                          <h2><p>Shop via <br>video call</p></h2>
+                        </div><div class="Collection_product_grid_leftside_1_bottom_2_infos_new">
+                          <p>Interact with our fashion consultants, and enjoy personalised shopping experience</p>
+                        </div><div class="Collection_product_grid_leftside_1_bottom_2_icons_new">
+                          <img src="//in.kalkifashion.com/cdn/shop/files/Icons.svg?v=1717482983" alt="" width="105" height="24" loading="lazy" fetchpriority="auto" class="Icon_image_new">
+                        </div><div class="Collection_product_grid_leftside_1_bottom_2_button_new">
+                          <a href="https://uk.kalkifashion.com/pages/video-call-appointment" class="button button_white black_bg_button">
+                            Book Now
+                          </a>
+                        </div></div>
+                  </div></div>
+            </div>
+            <div class="Collection_product_grid_leftside_2_new">
+              <div class="Collection_product_grid_leftside_2_bottom_new"><div class="Collection_product_grid_leftside_2_bottom_icons_new">
+                    <img src="//in.kalkifashion.com/cdn/shop/files/icon1.svg?v=1717492962" alt="" width="50" height="51" loading="lazy" fetchpriority="auto" class="Icon_full_image_new">
+                  </div><div class="Collection_product_grid_leftside_2_bottom_title_new">
+                    <p>Enjoy Free Shipping</p>
+                  </div><div class="Collection_product_grid_leftside_2_bottom_btn">
+                    <a href="/pages/shipping">KNOW MORE</a>
+                  </div></div>
+            </div>
+            <div class="Collection_product_grid_leftside_2_new">
+            <div class="Collection_product_grid_leftside_2_bottom_new"><div class="Collection_product_grid_leftside_2_bottom_icons_new">
+                    <img src="//in.kalkifashion.com/cdn/shop/files/Easy_Returns_5f2af2a6-fffe-4cbf-972a-57cf6a74a58a.svg?v=1717482985" alt="" width="51" height="50" loading="lazy" fetchpriority="auto" class="Icon_full_image_new">
+                  </div><div class="Collection_product_grid_leftside_2_bottom_title_new">
+                    <p>5 Days Easy Returns</p>
+                  </div><div class="Collection_product_grid_leftside_2_bottom_btn">
+                    <a href="/pages/returns">KNOW MORE</a>
+                  </div></div>
+            </div>
+
+          </div><!-- ending of wizzy-search-filters-->
+          [[/hasLeftFacets]]
+
+          <div class="wizzy-search-results-container">
+
+              <div class="wizzy-search-filters-top">
+              [[#displayFacetsInDrawer]]
+                  <div class="wizzy-search-filters-drawer">
+                      <div class="wizzy-search-filters-drawer-button">
+                          <a href="#" class="wizzy-filters-desktop-entry">
+                              <span class="wizzy-filters-button"></span>
+                              <span>Filters</span>
+                          </a>
+                      </div>
+                  </div>
+              [[/displayFacetsInDrawer]]
+                  <div class="search-filters-top-wrapper">
+                      <div class="wizzy-search-filters-list-top">
+                          [[#topFacets]]
+                          [[&html]]
+                          [[/topFacets]]
+
+                      </div><!-- ending of wizzy-search-filters-list-top -->
+
+                      <div class="wizzy-search-sort-wrapper">
+                          [[#sort]]
+                          [[&sort]]
+                          [[/sort]]
+                      </div><!-- ending of wizzy-search-sort-wrapper -->
+                  </div><!-- ending of search-filters-top-wrapper-->
+
+                  <div class="filters-list-top-values-wrapper">
+
+                  </div><!-- ending of filters-list-top-values-wrapper -->
+
+                  
+
+              </div><!-- ending of wizzy-search-filters-->
+
+              <div class="wizzy-search-results">
+                  [[& products ]]
+              </div><!-- ending of wizzy-search-filters-->
+
+              <div class="wizzy-search-pagination">
+                  [[& pagination ]]
+              </div>
+
+          </div><!-- ending of wizzy-search-results-->
+
+      </div><!-- ending of wizzy-search-results-container -->
+  </div><!-- ending of wizzy-search-wrapper-->
+
+  [[#addMoveToTopWidget]]
+  <div class="wizzy-scroll-to-top-wrapper">
+      <div class="wizzy-scroll-to-top-button">
+
+      </div><!-- ending of wizzy-scroll-to-top-button -->
+  </div><!-- ending of wizzy-scroll-to-top-wrapper -->
+  [[/addMoveToTopWidget]]
+</script>

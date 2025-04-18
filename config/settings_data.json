@@ -9,6 +9,9 @@
  */
 {
   "current": {
+    "wizzy_is_lazy_init": "true",
+    "wizzy_is_lazy_init_enabled": "true",
+    "wizzy_beta_frontend_js": "",
     "logo": "shopify://shop_images/kalki-logo.svg",
     "white_logo": "shopify://shop_images/white_logo.svg",
     "logo_width": 180,
@@ -123,7 +126,7 @@
     "social_pinterest_link": "https://www.pinterest.com/kalkifashion",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
-    "predictive_search_enabled": true,
+    "predictive_search_enabled": false,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": false,
@@ -298,6 +301,16 @@
       },
       "12314280791104830742": {
         "type": "shopify://apps/webengage/blocks/webengage-embed/1d458caf-1d70-4697-a570-55048d495614",
+        "disabled": false,
+        "settings": {}
+      },
+      "14254450603262595132": {
+        "type": "shopify://apps/wizzy-search-filters/blocks/wizzy-body-assets/ae8fbc14-43c6-4ce2-b5bc-819d4b1052f6",
+        "disabled": false,
+        "settings": {}
+      },
+      "7496264633453945898": {
+        "type": "shopify://apps/wizzy-search-filters/blocks/wizzy-head-assets/ae8fbc14-43c6-4ce2-b5bc-819d4b1052f6",
         "disabled": false,
         "settings": {}
       }
