@@ -1642,6 +1642,7 @@ span.wizzy-facet-list-item-checkbox {
   padding-top: 2px;
 }
 .wizzy-grid-filters-box {
+  border: none !important;
   background-color: #eeeeeee !important;
   border-radius: 15px !important;
 }
