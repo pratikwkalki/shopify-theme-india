@@ -39,9 +39,5 @@
 <meta name="twitter:description" content="{{ og_description | escape }}">
 
 {% unless template contains 'cart' %} 
-  
-{% comment %}
   {{ 'link.js' | asset_url | script_tag }}
-{% endcomment %}
-
 {% endunless %} 
