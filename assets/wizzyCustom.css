@@ -1665,3 +1665,7 @@ span.wizzy-facet-list-item-checkbox {
   padding: 7px 10px;
   gap: 5px;
 }
+.wizzy-grid-filters-box .facet-body-colors .wizzy-facet-list li {
+  background: #fff;
+  padding: 0 5px;
+}
