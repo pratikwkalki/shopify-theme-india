@@ -9,6 +9,10 @@
   padding: unset;
   padding-top: 2px;
 }
+.wizzy-grid-filters-box {
+  background-color: #e3e3e3 !important;
+  border-radius: 15px !important;
+}
 .filters-list-top-values-wrapper
   .wizzy-facet-body.facet-body-sizes
   .wizzy-facet-list-item-count {
