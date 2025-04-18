@@ -177,6 +177,7 @@ details.menu-opening > .menu-drawer__submenu {
   top: 50%;
   transform: translateY(-50%);
   fill: none;
+  height: 14px !important;
 }
 
 .js .menu-drawer__submenu {
@@ -347,4 +348,3 @@ details.menu-opening > .menu-drawer__submenu {
     }
   }
 }
-
