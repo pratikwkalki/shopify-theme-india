@@ -82,12 +82,7 @@
     {%- endif -%}
 
     <!-- For URL redirects -->
-    <script>
-      if (window.location.pathname.endsWith(".html")) {
-          let newUrl = window.location.pathname.replace(".html", "");
-          window.location.replace(newUrl);
-      }
-    </script>
+    <script>if (window.location.pathname.endsWith(".html")) {let newUrl = window.location.pathname.replace(".html", "");window.location.replace(newUrl);}</script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" media="print" onload="this.media='all'" crossorigin="anonymous" />
 
