@@ -1650,9 +1650,6 @@ span.wizzy-facet-list-item-checkbox {
 }
 .wizzy-grid-filters-box
   .wizzy-facet-body.facet-body-colors
-  .facet-item-label-value,
-.wizzy-grid-filters-box
-  .wizzy-facet-body.facet-body-colors
-  .wizzy-facet-list-item-count {
+  .facet-item-label-value {
   display: block;
 }
