@@ -431,7 +431,9 @@ window.onWizzyScriptLoaded = function () {
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.VIEW_RENDERED,
     function (data) {
-     
+
+
+      
         
       let selectedPrice = document.querySelectorAll(
         ".wizzy-selected-facet-list-item[data-facetkey='sellingPrice'] .facet-item-label-value"
