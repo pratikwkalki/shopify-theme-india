@@ -76,6 +76,20 @@
                                           {%- endif -%}
                                         {%- endfor -%}
                                       {%- assign grandchildlink_handle = grandchildlink.title | handleize -%}
+                                        {%- paginate megamenu_custom_image_product by 1000 -%}
+                                        {%- for megamenu_custom_image_cat in megamenu_custom_image_product -%}
+                                          {%- assign main_menu_name_handle = megamenu_custom_image_cat.main_menu_name.value | handleize -%}
+                                          {%- assign inner_menu_name_handle = megamenu_custom_image_cat.inner_menu_name.value | handleize -%}
+                                          {%- assign sub_category_name_handle = megamenu_custom_image_cat.sub_category_name.value | handleize -%}
+                                          {%- assign category_name_handle = megamenu_custom_image_cat.category_name.value | handleize -%}
+                                          {%- if main_menu_name_handle == selected_menu_name_handle and inner_menu_name_handle == link_handle and sub_category_name_handle == childlink_handle and category_name_handle == grandchildlink_handle -%}
+                                            {%- assign image_url = megamenu_custom_image_cat.category_image_square.value -%}
+                                            {%- if image_url != blank -%}
+                                              <a href="{{ grandchildlink.url }}" class="megamenu_right_top_video_OR_image_new">{{ image_url | image_url: width: img.width | image_tag: widths: '210', fetchpriority: 'auto', class: 'Hover_image_new', loading: 'lazy' }}</a>
+                                            {%- endif -%}
+                                          {%- endif -%}
+                                        {%- endfor -%}
+                                      {%- endpaginate -%}
                                       {%- assign childlink_title_handle = childlink.title | handleize -%}
                                       <a id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}" href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %} {{ grandchildlink.title | handleize }}_3_new {% if childlink_title_handle contains 'color' %} color_menu_new {% endif %}" {% if grandchildlink.current %} aria-current="page" {% endif %}>
                                         {%- if childlink_title_handle contains 'color' -%}
