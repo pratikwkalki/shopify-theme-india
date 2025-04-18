@@ -13,6 +13,9 @@
   background-color: #eeeeeee !important;
   border-radius: 15px !important;
 }
+.wizzy-grid-filters-box .wizzy-facet-list-item:nth-child(n + 7) {
+  display: none;
+}
 .filters-list-top-values-wrapper
   .wizzy-facet-body.facet-body-sizes
   .wizzy-facet-list-item-count {
