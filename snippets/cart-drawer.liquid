@@ -62,18 +62,17 @@
                 {%- for link in linklists[settings.choose_cart_menu].links %}
                   <li class="menu-item">
                     <a href="{{ link.url }}" class="menu-link">
-                      {% assign menuAssets = shop.metaobjects.menu_assets %}
-                      {% for menu_asset in menuAssets.values %}
-                        {% assign menuTitle = menu_asset.title | strip | handleize %}
-                        {% assign linkTitle = link.title | strip | handleize %}
-
-                        {% if menuTitle == linkTitle and menu_asset.image != blank %}
+                      {%- assign menuAssets = shop.metaobjects.menu_assets -%}
+                      {%- for menu_asset in menuAssets.values -%}
+                        {%- assign menuTitle = menu_asset.title | strip | handleize -%}
+                        {%- assign linkTitle = link.title | strip | handleize -%}
+                        {%- if menuTitle == linkTitle and menu_asset.image != blank -%}
                           <div class="img-wrap">
                             {% assign menu_asset_img = menu_asset.image  | image_url %}
                             <img src="{%- render 'gumlet', src: menu_asset_img w: 49 %}" alt="{{ menu_asset.image.alt | default: link.title }}" loading="lazy" width="49" height="60">
                           </div>
-                        {% endif %}
-                      {% endfor %}
+                        {%- endif -%}
+                      {%- endfor -%}
                       <span class="menu-title">{{ link.title }}</span>
                     </a>
                   </li>
