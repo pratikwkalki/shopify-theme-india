@@ -5629,6 +5629,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   }
   .submenu3 .sub-link-menu > summary .icon-arrow,.submenu2bridal .submenu2bridal-inner > summary .icon-arrow{
     right: 10px !important;
+    height: 21px !important;
   }
  .section-header .active{
   border-bottom: 2px solid #000;
