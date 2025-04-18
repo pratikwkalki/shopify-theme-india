@@ -1305,6 +1305,9 @@ span.wizzy-autocomplete-label {
     font-size: 15px;
     font-weight: 600;
   }
+  .wizzy-resize-grid.mobile {
+    display: none;
+  }
 }
 .wizzy-facet-range-list-sep {
   display: inline !important;
