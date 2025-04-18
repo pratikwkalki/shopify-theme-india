@@ -1,3 +1,18 @@
+{%- paginate shop.metaobjects.megamenu_custom_image_product.values by 10000 -%}
+  {%- assign custom_images = shop.metaobjects.megamenu_custom_image_product.values -%}
+{%- endpaginate -%}
+{%- paginate shop.metaobjects.menu_2_text_color.values by 1000 -%}
+  {%- assign menu_2_styles = shop.metaobjects.menu_2_text_color.values -%}
+{%- endpaginate -%}
+{%- paginate shop.metaobjects.megamenu_size_position.values by 1000 -%}
+  {%- assign size_positions = shop.metaobjects.megamenu_size_position.values -%}
+{%- endpaginate -%}
+{%- paginate shop.metaobjects.menu_3_text_color.values by 1000 -%}
+  {%- assign menu_3_styles = shop.metaobjects.menu_3_text_color.values -%}
+{%- endpaginate -%}
+{%- paginate shop.metaobjects.menu_3_dot_color.values by 1000 -%}
+  {%- assign dot_colors = shop.metaobjects.menu_3_dot_color.values -%}
+{%- endpaginate -%}
 {%- assign megamenu_custom_image_product = shop.metaobjects.megamenu_custom_image_product.values -%}
 {%- assign menu_2_text_color = shop.metaobjects.menu_2_text_color.values -%}
 {%- assign megamenu_size_position = shop.metaobjects.megamenu_size_position.values -%}
@@ -10,17 +25,15 @@
         <li class="custom_mega_menu_top_new" x-data="{ openMenu: false }">
           <header-menu @mouseover="openMenu = true" @mouseleave="openMenu = false">
             <div id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
-              {%- paginate shop.metaobjects.menu_2_text_color.values by 1000 -%}
                 {%- assign selected_menu_name = selected_menu_name | handleize -%}
                 {%- assign main_menu_name = menu_2_text_color.menu_name.value | handleize -%}
                 {%- assign inner_menu_child = link.title | handleize -%}
                 {%- assign inner_menu_name = menu_2_text_color.inner_menu_name.value | handleize -%}
-                {%- for menu_2_text_color in menu_2_text_color -%}
+                {%- for menu_2_text_color in menu_2_styles -%}
                   {%- if main_menu_name == selected_menu_name and inner_menu_name == inner_menu_child -%}
                     <style>.{{ link.title | handleize }}_2_new span{ background:{{ menu_2_text_color.text_color.value }}; color:{{ menu_2_text_color.text_color_main.value }} !important; padding: 3.8px 4.8px 5.8px 4.8px; border-radius: 4px; margin: -4.8px; }.{{ link.title | handleize }}_2_new:hover span{ color:{{ menu_2_text_color.hover_text_color.value }} !important; }</style>
                   {%- endif -%}
                 {%- endfor -%}
-              {%- endpaginate -%}
               {%- if link.url -%}
                 <a href="{{ link.url }}" id="HeaderMenu-{{ link.handle }}" class="header__menu-item list-menu__item link focus-inset {{ link.title | handleize }}_2_new">
                   <span class="{%- if link.child_active %}header__active-menu-item{% endif %}">{{- link.title | escape -}}</span>
@@ -32,14 +45,12 @@
               {%- endif -%}
               <template x-if="openMenu">
                 <div id="MegaMenu-Content-{{ forloop.index }}" class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup" tabindex="-1" style="display:none;">
-                  {%- paginate shop.metaobjects.megamenu_size_position.values by 1000 -%}
-                    {%- for megamenu_size_position in megamenu_size_position -%}
+                    {%- for megamenu_size_position in size_positions -%}
                       {%- assign selected_menu_name = selected_menu_name | handleize -%}
                       {%- assign main_menu_name = megamenu_size_position.main_menu_name.value | handleize -%}
                       {%- assign inner_menu_child = link.title | handleize -%}
                       {%- assign inner_menu_name = megamenu_size_position.inner_menu_name.value | handleize -%}
                     {%- endfor -%}
-                  {%- endpaginate -%}
                   <div class="page-width megamenu_leftright_new ">
                     <div class="megamenu_left_new">
                       <ul class="mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}" role="list">
@@ -61,16 +72,14 @@
                                   {%- for grandchildlink in childlink.links -%}
                                     <li class="{{ link.handle }}{{ childlink.title | handleize }}-right-img">
                                       {%- assign menu_title = grandchildlink.title | handleize -%}
-                                      {%- paginate menu_3_text_color by 1000 -%}
-                                        {%- for menu_3_text_color in menu_3_text_color -%}
+                                        {%- for menu_3_text_color in menu_3_styles -%}
                                           {%- assign menu_name_title = menu_3_text_color.menu_name.value | handleize -%}
                                           {%- if menu_title == menu_name_title -%}
                                             <style>.{{ grandchildlink.title | handleize }}_3_new { color: {{ menu_3_text_color.text_color.value }} !important; }.{{ grandchildlink.title | handleize }}_3_new:hover { color: #CC8F67 !important; }</style>
                                           {%- endif -%}
                                         {%- endfor -%}
-                                      {%- endpaginate -%}
                                       {%- assign grandchildlink_handle = grandchildlink.title | handleize -%}
-                                      {%- paginate megamenu_custom_image_product by 1000 -%}
+                                        {%- paginate megamenu_custom_image_product by 1000 -%}
                                         {%- for megamenu_custom_image_cat in megamenu_custom_image_product -%}
                                           {%- assign main_menu_name_handle = megamenu_custom_image_cat.main_menu_name.value | handleize -%}
                                           {%- assign inner_menu_name_handle = megamenu_custom_image_cat.inner_menu_name.value | handleize -%}
@@ -87,13 +96,11 @@
                                       {%- assign childlink_title_handle = childlink.title | handleize -%}
                                       <a id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}" href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %} {{ grandchildlink.title | handleize }}_3_new {% if childlink_title_handle contains 'color' %} color_menu_new {% endif %}" {% if grandchildlink.current %} aria-current="page" {% endif %}>
                                         {%- if childlink_title_handle contains 'color' -%}
-                                          {%- paginate menu_3_dot_color by 1000 -%}
-                                            {%- for menu_3_dot_color in menu_3_dot_color -%}
+                                            {%- for menu_3_dot_color in dot_colors -%}
                                               {%- if grandchildlink.title contains menu_3_dot_color.menu_name.value -%}
                                                 <div class="color_dot_new {{ menu_3_dot_color.menu_name.value | handleize }}_border_new" style="background:{{ menu_3_dot_color.dot_color.value }};"></div>
                                               {%- endif -%}
                                             {%- endfor -%}
-                                          {%- endpaginate -%}
                                         {%- endif -%}
                                         {{ grandchildlink.title | escape }}
                                       </a>
