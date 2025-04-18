@@ -1653,3 +1653,9 @@ span.wizzy-facet-list-item-checkbox {
   .facet-item-label-value {
   display: block;
 }
+.wizzy-grid-filters-box .wizzy-facet-list-item-label {
+  display: flex;
+  background: #fff;
+  border-radius: 40px;
+  padding: 7px 10px;
+}
