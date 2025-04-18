@@ -5,14 +5,7 @@
 /* .wizzy-common-select-options.desktop {
   display: none !important;
 } */
-.wizzy-grid-filters-box .wizzy-facet-list-item-label {
-  padding: unset;
-  padding-top: 2px;
-}
-.wizzy-grid-filters-box {
-  background-color: #eeeeeee !important;
-  border-radius: 15px !important;
-}
+
 .wizzy-grid-filters-box .wizzy-facet-list-item:nth-child(n + 7) {
   display: none;
 }
@@ -1642,4 +1635,13 @@ span.wizzy-facet-list-item-checkbox {
   .wizzy-autocomplete-wrapper.onLeft {
     left: 250px !important;
   }
+}
+
+.wizzy-grid-filters-box .wizzy-facet-list-item-label {
+  padding: unset;
+  padding-top: 2px;
+}
+.wizzy-grid-filters-box {
+  background-color: #eeeeeee !important;
+  border-radius: 15px !important;
 }
