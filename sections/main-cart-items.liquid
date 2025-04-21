@@ -529,6 +529,21 @@
                 </table>
               {%- endif -%}
             </div>
+            {%- if customer and customer.email == "bhavesh.limbani@aureatelabs.com" -%}
+              <button id="clear-cart-btn" class="button" onclick="clearWholeCart()">Clear Cart</button>
+              <script>
+                function clearWholeCart() {
+                  fetch('/cart/clear.js', { method: 'POST' })
+                    .then(() => {
+                      console.log('Your cart has been cleared!');
+                      location.reload();
+                    })
+                    .catch((error) => {
+                      console.error('Error clearing cart:', error);
+                    });
+                  }
+              </script>
+            {% endif %}
           </div>
     
           <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
