@@ -616,27 +616,6 @@
         }
       }
     </style>
-    {% comment %}
-    <!-- Prevent defualt login popup and kwikpass popup -->
-    <script>
-      if (!window.location.href.includes('/account')) {
-        document.addEventListener('click', function(e) {
-          const loginLink = e.target.closest('a[href="/account/login"]');
-          if (loginLink && window.simplyOtp.settings.new_popup_design) {
-            e.stopImmediatePropagation();
-            e.preventDefault();
-             if (typeof simplyOtp !== "undefined" && simplyOtp !== null) {
-              window.simplyOtp?.initializeSimplyOtp();
-              window.simplyOtp.openPopup();
-            } else {
-              console.warn("simplyOtp is not defined. Popup cannot be opened.");
-            }
-          }
-        }, true);
-      }
-    </script>
-    <!-- Lucent OTP Login Code End -->
-    {% endcomment %}
     <script>
 (function(g,e,o,t,a,r,ge,tl,y){
 t=g.getElementsByTagName(e)[0];y=g.createElement(e);y.async=true;
