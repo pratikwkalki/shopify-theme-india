@@ -491,7 +491,7 @@ span.wizzy-autocomplete-label {
   .wizzy-selected-filters {
     position: absolute;
     z-index: 100001;
-    top: 7%;
+    top: 50px;
     background: #fff;
   }
   li.wizzy-selected-facet-list-item {
