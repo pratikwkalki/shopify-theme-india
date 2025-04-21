@@ -313,11 +313,6 @@
         "type": "shopify://apps/wizzy-search-filters/blocks/wizzy-head-assets/ae8fbc14-43c6-4ce2-b5bc-819d4b1052f6",
         "disabled": false,
         "settings": {}
-      },
-      "16429157231024385237": {
-        "type": "shopify://apps/one-click-clear-cart/blocks/popup-box-app-embed-block/ffc204d1-c1bd-4c35-91da-734798d96289",
-        "disabled": false,
-        "settings": {}
       }
     },
     "color_schemes": {
