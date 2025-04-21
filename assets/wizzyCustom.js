@@ -810,3 +810,10 @@ window.addEventListener("click", function () {
     autocomplete.style.setProperty("top", `${navbarTop}px`, "important");
   }
 });
+
+  const navbar = document.querySelector(".search-modal.modal__content.gradient");
+  const autocomplete = document.querySelector(".wizzy-autocomplete-wrapper");
+  const navbarTop = navbar.getBoundingClientRect().bottom;
+  if (autocomplete) {
+    autocomplete.style.setProperty("top", `${navbarTop}px`, "important");
+  }
