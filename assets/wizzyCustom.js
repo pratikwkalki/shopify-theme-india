@@ -381,6 +381,7 @@ window.onWizzyScriptLoaded = function () {
           position: "left",
           order: 12
         });
+         console.log("Inside Price2");
       } catch (error) {}
       return payload;
     }
