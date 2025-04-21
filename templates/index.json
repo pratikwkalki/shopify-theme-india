@@ -506,19 +506,19 @@
         "information_tGVPXe": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/1-editors-picks-in-420x568-desk-03-3-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/1-editors-picks-in-800x586-mobile-12-3-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/1-editors-picks-wedding-collection-all-country-420x568-desk-19-04-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1-editors-picks-wedding-collection-all-country-800x586-mobile-19-04-25.jpg",
             "alt_text": "Styles under Budget",
-            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/styles-under-budget"
+            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/wedding-collection"
           }
         },
         "information_7fNJrm": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/2-editors-picks-india-uk-420x568-desk-3-3-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/2-editors-picks-india-uk-800x586-mobile-12-3-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/2-editors-picks-yellow-calssic-all-country-420x568-desk-19-04-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/2-editors-picks-yellow-calssic-all-country-800x586-mobile-19-04-25.jpg",
             "alt_text": "Mocha Mousse",
-            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/mocha-mousse"
+            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/yellow-classics"
           }
         }
       },
