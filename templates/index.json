@@ -669,17 +669,6 @@
             "main_button_text": "Shop Now",
             "main_button_link": "https://in.kalkifashion.com/collections/embroidered-saree"
           }
-        },
-        "information_FAbMFF": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/4-co-ords-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/4-co-ords-400x533-27-3-25.jpg",
-            "title": "The Co-Ords",
-            "sub_head_text": "You'll Definitely Need",
-            "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/co-ord-sets"
-          }
         }
       },
       "block_order": [
@@ -687,8 +676,7 @@
         "information_fc8yQa",
         "information_XEBcff",
         "information_wtnLpP",
-        "information_YtTy3i",
-        "information_FAbMFF"
+        "information_YtTy3i"
       ],
       "custom_css": [],
       "settings": {
@@ -713,23 +701,23 @@
         "information_rVmqny": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-day-wedding-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-day-wedding-27-3-25.jpg",
-            "title": "Day Wedding",
+            "main_desktop_image": "shopify://shop_images/1-bridal-world-day-haldi-mehendi-19-04-19.jpg",
+            "main_mobile_image": "shopify://shop_images/1-bridal-world-day-haldi-mehendi-19-04-19.jpg",
+            "title": "Haldi | Mehendi",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/day-wedding-lehengas"
+            "main_button_link": "https://in.kalkifashion.com/in/ethnic/bridal-haldi-and-mehendi-collection"
           }
         },
         "information_dBLnzc": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-evening-wedding-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-evening-wedding-27-3-25.jpg",
-            "title": "Evening Dresses",
+            "main_desktop_image": "shopify://shop_images/2-bridal-world-cocoktail-sangeet-19-04-19.jpg",
+            "main_mobile_image": "shopify://shop_images/2-bridal-world-cocoktail-sangeet-19-04-19.jpg",
+            "title": "Cocktail | Sangeet",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/evening-dress-for-wedding"
+            "main_button_link": "https://in.kalkifashion.com/collections/cocktail-and-sangeet-edit"
           }
         },
         "information_E83nqK": {
