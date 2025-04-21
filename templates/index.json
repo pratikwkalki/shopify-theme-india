@@ -618,45 +618,45 @@
         "information_Gq9Tez": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-blouses-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-blouses-400x533-27-3-25.jpg",
+            "main_desktop_image": "shopify://shop_images/01-exclusive-edit-co-ords-400x533-19-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/01-exclusive-edit-co-ords-400x533-19-04-25.jpg",
+            "title": "The Co-Ords",
+            "sub_head_text": "You'll Definitely Need",
+            "main_button_text": "Shop Now",
+            "main_button_link": "https://in.kalkifashion.com/collections/co-ord-sets"
+          }
+        },
+        "information_fc8yQa": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/02-exclusive-edit-organza-saree-400x533-19-04-25-new.jpg",
+            "main_mobile_image": "shopify://shop_images/02-exclusive-edit-organza-saree-400x533-19-04-25-new.jpg",
+            "title": "Organza Sarees",
+            "sub_head_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "https://in.kalkifashion.com/collections/organza-saree"
+          }
+        },
+        "information_XEBcff": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/03-exclusive-edit-blouses-400x533-19-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/03-exclusive-edit-blouses-400x533-19-04-25.jpg",
             "title": "Blouses Bedazzle",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "https://in.kalkifashion.com/collections/blouse"
           }
         },
-        "information_fc8yQa": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/2-jewellery-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-jewellery-400x533-27-3-25.jpg",
-            "title": "Jewellery Joy",
-            "sub_head_text": "",
-            "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/jewellery"
-          }
-        },
-        "information_XEBcff": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/3-palazzo-suits-400x5333-27-25.jpg",
-            "main_mobile_image": "shopify://shop_images/3-palazzo-suits-400x5333-27-25.jpg",
-            "title": "Palazzo Pret",
-            "sub_head_text": "",
-            "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/palazzo-suits"
-          }
-        },
         "information_wtnLpP": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/6-bridesmaid-lehengas-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/6-bridesmaid-lehengas-400x533-27-3-25.jpg",
-            "title": "Bridesmaid Lehengas",
+            "main_desktop_image": "shopify://shop_images/04-exclusive-edit-jewellery-400x533-19-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/04-exclusive-edit-jewellery-400x533-19-04-25.jpg",
+            "title": "Jewellery Edit",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/bridesmaid-lehenga"
+            "main_button_link": "https://inhttps://in.kalkifashion.com/collections/jewellery.kalkifashion.com/collections/bridesmaid-lehenga"
           }
         },
         "information_YtTy3i": {
