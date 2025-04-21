@@ -529,21 +529,23 @@
                 </table>
               {%- endif -%}
             </div>
-            {%- if customer and customer.email == "rekharajshetty@gmail.com" or customer.email == "bhavesh.limbani@aureatelabs.com" or customer.email == "isha@kalkifashion.com" or customer.email == "arkesh@kalkifashion.com" -%}
-              <button id="clear-cart-btn" class="button" onclick="clearWholeCart()" style="min-width: auto;padding: 10px 20px;font-size: 14px;margin: 20px auto;display: block;">Clear Cart</button>
-              <script>
-                function clearWholeCart() {
-                  fetch('/cart/clear.js', { method: 'POST' })
-                    .then(() => {
-                      console.log('Your cart has been cleared!');
-                      location.reload();
-                    })
-                    .catch((error) => {
-                      console.error('Error clearing cart:', error);
-                    });
-                  }
-              </script>
-            {% endif %}
+            {% comment %}
+              {%- if customer and customer.email == "rekharajshetty@gmail.com" or customer.email == "bhavesh.limbani@aureatelabs.com" or customer.email == "isha@kalkifashion.com" or customer.email == "arkesh@kalkifashion.com" -%}
+                <button id="clear-cart-btn" class="button" onclick="clearWholeCart()" style="min-width: auto;padding: 10px 20px;font-size: 14px;margin: 20px auto;display: block;">Clear Cart</button>
+                <script>
+                  function clearWholeCart() {
+                    fetch('/cart/clear.js', { method: 'POST' })
+                      .then(() => {
+                        console.log('Your cart has been cleared!');
+                        location.reload();
+                      })
+                      .catch((error) => {
+                        console.error('Error clearing cart:', error);
+                      });
+                    }
+                </script>
+              {% endif %}
+            {% endcomment %}
           </div>
     
           <p class="visually-hidden" id="cart-live-region-text" aria-live="polite" role="status"></p>
