@@ -211,8 +211,8 @@
         "information_tH6WDF": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/1-slider-banner-summer-house-1640x615-27-3-25_5068796d-578b-4a26-a68a-c5f8aab68b8a.jpg",
-            "main_mobile_full_image": "shopify://shop_images/1-mobile-home-summer-house-500x707-27-03-25_9f05556d-00da-4354-948a-331f305c7a86.jpg",
+            "main_desktop_full_image": "shopify://shop_images/1-slider-banner-classic-summer-affair-all-country-1640x615-19-04-25-new1.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1-mobile-home-classic-summer-affair-all-country-500x707-19-04-25-new1.jpg",
             "alt_text": "Summer House",
             "main_banner_redirect_link": "https://in.kalkifashion.com/collections/classic-summer-affair"
           }
@@ -220,17 +220,17 @@
         "information_QJq4LK": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/2-slider-banner-india-sareel-desktop-2800x1050-27-3-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/2-mobile-banner-india-saree-500x707-27-3-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/2-slider-banner-new-arrivals-all-country-desktop-2800x1050-19-04-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/2-mobile-banner-new-arrivals-all-country-500x707-27-3-25.jpg",
             "alt_text": "Drape Dynasty",
-            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/saree"
+            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/new-arrivals"
           }
         },
         "information_Vw93j8": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/3-slider-banner-india-mens-desktop-2800x1050-27-3-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/3-mobile-banner-india-mens-500x707-27-3-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/3-slider-banner-mens-kurta-set-all-country-desktop-2800x1050-19-04-25-new.jpg",
+            "main_mobile_full_image": "shopify://shop_images/3-mobile-banner-mens-kurta-set-all-country-500x707-19-04-25-new.jpg",
             "alt_text": "Kurta Chronicles",
             "main_banner_redirect_link": "https://in.kalkifashion.com/collections/mens-kurta-set"
           }
@@ -238,10 +238,10 @@
         "information_7ncwjR": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/4-slider-banner-india-mens-desktop-2800x1050-27-3-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/4-mobile-banner-india-mens-500x707-27-3-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/4-slider-banner-bride-and-groom-all-country-desktop-2800x1050-27-3-25-new1.jpg",
+            "main_mobile_full_image": "shopify://shop_images/4-mobile-banner-bride-and-groom-all-country-500x707-27-3-25-new1.jpg",
             "alt_text": "Bridal World",
-            "main_banner_redirect_link": "https://in.kalkifashion.com/pages/bridal-wedding-dresses"
+            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/bride-and-groom-collection"
           }
         }
       },
@@ -874,9 +874,9 @@
             "title_color": "",
             "title_size_v2": 0,
             "alignment": "center",
-            "margin_top": 0,
-            "margin_bottom": 30,
-            "margin_sides": 0,
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
             "show_instagram_link": false,
             "link_alignment": "left",
             "link_color": "#000000",
