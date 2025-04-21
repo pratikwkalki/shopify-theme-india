@@ -328,44 +328,44 @@
         "information_FAEPEb": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-400x533-27-03-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-mobile-250x353-27-03-25.jpg",
-            "title": "24 Hr Dispatch",
-            "sub_head_text": "",
+            "main_desktop_image": "shopify://shop_images/1-mini-desk-bestsellers-all-country-400x533-19-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mini-desk-bestsellers-all-country-400x533-19-04-25.jpg",
+            "title": "Bestsellers",
+            "sub_head_text": "You'll Love",
             "main_tags_detail_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/ready-to-ship"
+            "main_button_link": "https://in.kalkifashion.com/collections/bestsellers"
           }
         },
         "information_hhzzrz": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-mini-desk-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-mini-mobile-250x353-27-3-25.jpg",
-            "title": "Too Hot To Miss",
+            "main_desktop_image": "shopify://shop_images/2-mini-desk-ready-to-ship-all-country-400x533-19-04-25-new.jpg",
+            "main_mobile_image": "shopify://shop_images/2-mini-desk-ready-to-ship-all-country-400x533-19-04-25-new.jpg",
+            "title": "24 Hr Dispatch",
             "sub_head_text": "",
             "main_tags_detail_text": "",
             "main_button_text": "Shop BESTSELLERS",
-            "main_button_link": "https://in.kalkifashion.com/collections/bestsellers"
+            "main_button_link": "https://kalki-india.myshopify.com/collections/ready-to-ship"
           }
         },
         "information_kdHhKc": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/3-mini-desk-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/3-mini-mobile-250x353-27-3-25.jpg",
-            "title": "April Arrivals",
+            "main_desktop_image": "shopify://shop_images/3-mini-desk-see-all-mens-wear-all-country-400x533-19-04-25-new.jpg",
+            "main_mobile_image": "shopify://shop_images/3-mini-desk-see-all-mens-wear-all-country-400x533-19-04-25-new.jpg",
+            "title": "Menswear Edit",
             "sub_head_text": "",
             "main_tags_detail_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/new-arrivals"
+            "main_button_link": "https://in.kalkifashion.com/collections/see-all-menswear"
           }
         },
         "information_txEVLa": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/4-mini-desk-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/4-mini-mobile-250x353-27-3-25.jpg",
+            "main_desktop_image": "shopify://shop_images/4-mini-desk-luxe-all-country-400x533-19-04-25-new.jpg",
+            "main_mobile_image": "shopify://shop_images/4-mini-desk-luxe-all-country-400x533-19-04-25-new.jpg",
             "title": "Celebratory Luxe",
             "sub_head_text": "",
             "main_tags_detail_text": "",
