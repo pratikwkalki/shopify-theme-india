@@ -801,3 +801,12 @@ searchbtn.addEventListener("click", function () {
     searchBar.click();
   }
 });
+
+window.addEventListener("click", function () {
+  const navbar = document.querySelector(".search-modal.modal__content.gradient");
+  const autocomplete = document.querySelector(".wizzy-autocomplete-wrapper");
+  const navbarTop = navbar.getBoundingClientRect().bottom;
+  if (autocomplete) {
+    autocomplete.style.setProperty("top", `${navbarTop}px`, "important");
+  }
+});
