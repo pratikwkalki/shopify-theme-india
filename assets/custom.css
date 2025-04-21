@@ -7157,7 +7157,26 @@ stroke: white;
 .cs-option-drop .select-styled:hover svg path {
 stroke: white;
 }
-
+/* lucent OTp */
+body #sotp .sotp-popup-wrapper .sotp-popup-inner .sotp-popup-content .sotp-popup-close-btn {
+  top: 4px;
+  right: 4px;
+}
+body #sotp .sotp-popup-wrapper .sotp-popup-inner .sotp-popup-content .sotp-popup-close-btn path {
+  fill: black;
+}
+#sotp .sotp-popup-wrapper .sotp-popup-inner .sotp-popup-content .sotp-popup-container .sotp-popup-img-section .img-container img {
+  height: 100% !important;
+}
+body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .checkbox-main-label {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  body #sotp .sotp-popup-wrapper .sotp-popup-inner .sotp-popup-content .sotp-popup-container .sotp-widget #sotp-new-popup.olWrapper {
+      height: 430px;
+  }
+}
 
 @media screen  and (min-width: 990px) and (max-width: 1024px) {
   .template--luxe-collection-new.collection_header_transparent_new .shopify-section-header-sticky {
