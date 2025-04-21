@@ -801,19 +801,17 @@ searchbtn.addEventListener("click", function () {
     searchBar.click();
   }
 });
-
-window.addEventListener("click", function () {
+function positionAutocomplete() {
   const navbar = document.querySelector(".search-modal.modal__content.gradient");
   const autocomplete = document.querySelector(".wizzy-autocomplete-wrapper");
-  const navbarTop = navbar.getBoundingClientRect().bottom;
-  if (autocomplete) {
-    autocomplete.style.setProperty("top", `${navbarTop}px`, "important");
-  }
-});
+  if (!navbar || !autocomplete) return;
 
-  const navbar = document.querySelector(".search-modal.modal__content.gradient");
-  const autocomplete = document.querySelector(".wizzy-autocomplete-wrapper");
   const navbarTop = navbar.getBoundingClientRect().bottom;
-  if (autocomplete) {
-    autocomplete.style.setProperty("top", `${navbarTop}px`, "important");
-  }
+  autocomplete.style.setProperty("top", `${navbarTop}px`, "important");
+}
+
+const searchInput = document.querySelector(".wizzy-search-input");
+window.addEventListener("click", positionAutocomplete);
+if (searchInput) {
+  searchInput.addEventListener("input", positionAutocomplete);
+}
