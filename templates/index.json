@@ -405,67 +405,67 @@
         "information_hxURPn": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/3-ajrakh-print-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/3-ajrakh-print-400x533-27-3-25.jpg",
-            "title": "Ajrakh Edit",
-            "sub_head_text": "",
-            "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/ajrakh-print"
-          }
-        },
-        "information_NQxDrp": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/2-sequin-collection-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-sequin-collection-400x533-27-3-25.jpg",
-            "title": "Sequin Saga",
-            "sub_head_text": "",
-            "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/the-shimmers"
-          }
-        },
-        "information_MBGFwT": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/1-chikankari-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-chikankari-400x533-27-3-25.jpg",
+            "main_desktop_image": "shopify://shop_images/1-curated-collections-chikankari-400x533-19-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-curated-collections-chikankari-400x533-19-04-25.jpg",
             "title": "Chikankari Charm",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "https://in.kalkifashion.com/collections/chikankari-collection"
           }
         },
-        "information_Ud6yrw": {
+        "information_NQxDrp": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/4-pastels-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/4-pastels-400x533-27-3-25.jpg",
-            "title": "Pastel Panache",
+            "main_desktop_image": "shopify://shop_images/2-curated-collections-boho-400x533-19-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2-curated-collections-boho-400x533-19-04-25.jpg",
+            "title": "Boho Beaut",
+            "sub_head_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "https://in.kalkifashion.com/collections/boho-style"
+          }
+        },
+        "information_MBGFwT": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/3-curated-collections-pastels-400x533-19-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-curated-collections-pastels-400x533-19-04-25.jpg",
+            "title": "Pastel Pret",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "https://in.kalkifashion.com/collections/pastels"
           }
         },
+        "information_Ud6yrw": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/4-curated-collections-ombre-400x533-19-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/4-curated-collections-ombre-400x533-19-04-25.jpg",
+            "title": "On-Trend Ombre",
+            "sub_head_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "https://in.kalkifashion.com/collections/ombre-collection"
+          }
+        },
         "information_Bxxdri": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/5-classic-styles-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/5-classic-styles-400x533-27-3-25.jpg",
-            "title": "Timeless Trends",
+            "main_desktop_image": "shopify://shop_images/5-curated-collections-printed-collection-400x533-19-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/5-curated-collections-printed-collection-400x533-19-04-25.jpg",
+            "title": "Printed Paradise",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/classic-styles"
+            "main_button_link": "https://in.kalkifashion.com/collections/printed-collection"
           }
         },
         "information_8nwx8x": {
           "type": "information",
           "settings": {
             "main_desktop_image": "shopify://shop_images/6-color-pop-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/6-color-pop-400x533-27-3-25.jpg",
-            "title": "Colour Pop",
+            "main_mobile_image": "shopify://shop_images/6-curated-collections-essential-suits-400x533-19-04-25.jpg",
+            "title": "All About Essentials",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/color-pop"
+            "main_button_link": "https://in.kalkifashion.com/collections/essential-suits"
           }
         }
       },
