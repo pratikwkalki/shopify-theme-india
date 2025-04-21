@@ -352,6 +352,7 @@ window.onWizzyScriptLoaded = function () {
           payload.response.payload.facets.filter(
             (facet) => facet.key !== "sellingPrice"
           );
+         console.log("Inside Price");
         payload.response.payload.facets.push({
           label: "Price",
           buckets: [
