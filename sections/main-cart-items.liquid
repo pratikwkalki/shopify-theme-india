@@ -530,7 +530,7 @@
               {%- endif -%}
             </div>
             {%- if customer and customer.email == "bhavesh.limbani@aureatelabs.com" -%}
-              <button id="clear-cart-btn" class="button" onclick="clearWholeCart()">Clear Cart</button>
+              <button id="clear-cart-btn" class="button" onclick="clearWholeCart()" style="min-width: auto;padding: 10px 20px;font-size: 14px;margin: 20px auto;display: block;">Clear Cart</button>
               <script>
                 function clearWholeCart() {
                   fetch('/cart/clear.js', { method: 'POST' })
