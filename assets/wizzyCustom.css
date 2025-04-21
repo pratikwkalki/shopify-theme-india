@@ -492,6 +492,7 @@ span.wizzy-autocomplete-label {
     position: absolute;
     z-index: 100001;
     top: 50px;
+    padding-top: 10px;
     background: #fff;
   }
   li.wizzy-selected-facet-list-item {
