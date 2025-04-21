@@ -326,6 +326,7 @@
                 <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
               </div>
             {%- endif -%}
+            {% render "product-delivery-days" current_product: card_product %}
           </div>
         </div>
         {%- if show_quick_add -%}
