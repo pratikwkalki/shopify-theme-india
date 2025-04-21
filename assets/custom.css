@@ -7157,7 +7157,7 @@ stroke: white;
 .cs-option-drop .select-styled:hover svg path {
 stroke: white;
 }
-/* lucent OTp */
+/* lucent OTP */
 body #sotp .sotp-popup-wrapper .sotp-popup-inner .sotp-popup-content .sotp-popup-close-btn {
   top: 4px;
   right: 4px;
@@ -7172,6 +7172,10 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
   display: flex;
   align-items: center;
 }
+.Product_Bridal_meta_product_list_main_new .cs_delivery_inner-wrapper {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
   body #sotp .sotp-popup-wrapper .sotp-popup-inner .sotp-popup-content .sotp-popup-container .sotp-widget #sotp-new-popup.olWrapper {
       height: 430px;
