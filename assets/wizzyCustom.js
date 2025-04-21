@@ -378,7 +378,7 @@ window.onWizzyScriptLoaded = function () {
           ],
           key: "sellingPrice",
           position: "left",
-          // order: 50
+          order: 12
         });
       } catch (error) {}
       return payload;
