@@ -51,14 +51,14 @@
           </span>
         </span>
       {%- endif -%}
-      {% if current_product.metafields.magento.festival_stamp != blank %}
+      {%- if current_product.metafields.magento.festival_stamp != blank -%}
         <div class="card_badge_festival_stamp">
             {{ current_product.metafields.magento.festival_stamp }}
         </div>
-      {% endif %}
+      {%- endif -%}
     </div>
-    {% endif %}
-  {% endif %}
+    {%- endif -%}
+  {%- endif -%}
 
   {% comment %} Product Detials Page Delivery Message {% endcomment %}
   {% if template.name == 'product' and delivery_days != blank %}
