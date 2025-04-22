@@ -232,15 +232,14 @@
                               -%}
                               {% assign filterCounter = 0 %}
                               {%- for value in sorted_values -%}
-                                {% liquid
+                                {%- liquid
                                   assign is_disabled = false
                                   if value.count == 0 and value.active == false
                                     assign is_disabled = true
                                   endif
-                                %}
-
-                                {% unless is_disabled %}
-                                  {% assign filterCounter = filterCounter | plus: 1 %}
+                                -%}
+                                {%- unless is_disabled -%}
+                                  {%- assign filterCounter = filterCounter | plus: 1 -%}
                                   <li class="list-menu__item facets__item{% if filterCounter > show_more_number and filter_type == 'vertical' %} show-more-item hidden{% endif %}">
                                     <label
                                       for="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
@@ -251,14 +250,14 @@
                                         name="{{ value.param_name }}"
                                         value="{{ value.value }}"
                                         id="Filter-{{ filter.param_name | escape }}-{{ forloop.index }}"
-                                        {% if value.active %}
+                                        {%- if value.active -%}
                                           checked
-                                        {% endif %}
-                                        {% if is_disabled %}
+                                        {%- endif -%}
+                                        {%- if is_disabled -%}
                                           disabled
-                                        {% endif %}
+                                        {%- endif -%}
                                       >
-                                      {% if has_visual_display %}
+                                      {%- if has_visual_display -%}
                                         <div class="facets__visual-display-wrapper">
                                           {% render 'visual-display',
                                             type: value.display.type,
@@ -266,16 +265,16 @@
                                             presentation: filter.presentation
                                           %}
                                         </div>
-                                      {% else %}
+                                      {%- else -%}
                                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-checkmark custom_icon_new" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path> </svg>
-                                      {% endif %}
+                                      {%- endif -%}
                                       <span class="facet-checkbox__text" aria-hidden="true">
                                         {{- value.label | escape -}}
                                         <span class="counter_new">{{ value.count }}</span>
                                       </span>
                                     </label>
                                   </li>
-                                {% endunless %}
+                                {%- endunless -%}
                               {%- endfor -%}
                             </ul>
                             {% comment %} No show more for no JS {% endcomment %}
