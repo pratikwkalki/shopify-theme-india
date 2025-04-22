@@ -792,7 +792,16 @@ window.wizzyConfig.events.registerEvent(
     }
   );
 };
+const currentURL = window.location.href;
 
+  const autocompleteMenu = document.querySelector('.autocomplete-menu');
+
+  if (!autocompleteMenu) return; 
+  if (currentURL.includes('/collections')) {
+    autocompleteMenu.style.setProperty("top", "85px", "important"); 
+  } else {
+    autocompleteMenu.style.setProperty("top", "117px", "important"); 
+  }
 
 let searchbtn = document.querySelector(".search_main_new");
 searchbtn.addEventListener("click", function () {
