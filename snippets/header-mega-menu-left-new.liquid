@@ -33,9 +33,10 @@
           {%- assign bridal_menu = product.metafields.custom.navigation_menu_for_product | handleize -%}
         {%- elsif page.metafields.custom.display_bridal_megamenu == true -%}
           {%- assign bridal_menu = "bridal" -%}
+          x-data="{ openMenu: false }"
         {%- endif -%}
         {%- if link.links != blank -%}
-          <header-menu class="{% if bridal_menu == "bridal" %} display_bridal_menu_new {% endif %}">
+          <header-menu class="{% if bridal_menu == "bridal" %} display_bridal_menu_new {% endif %}" @mouseover="openMenu = true" @mouseleave="openMenu = false">
             <div class="mega-menu">
               <a
                 id="HeaderMenu-{{ link.handle }}"
