@@ -59,9 +59,8 @@
     </div>
     {%- endif -%}
   {%- endif -%}
-
   {% comment %} Product Detials Page Delivery Message {% endcomment %}
-  {% if template.name == 'product' and delivery_days != blank %}
+  {%- if template.name == 'product' and delivery_days != blank -%}
     <script src="{{ 'moment.min.js' | asset_url }}" defer></script>
 
     <div class="cs_delivery_wrapper" js-delivery-wrapper>
@@ -346,6 +345,6 @@
         });
       });
     </script>
-  {% endif %}
+  {%- endif -%}
 
-{% endif %}
+{%- endif -%}
