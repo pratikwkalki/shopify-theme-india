@@ -33,7 +33,7 @@ function toHandleComingBackFromProductPage() {
     clearInterval(waitForInputToLoad);
   }, 1e4);
 }
-
+toHandleComingBackFromProductPage();
 window.onWizzyScriptLoaded = function () {
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.PRODUCTS_RESULTS_RENDERED,
@@ -662,7 +662,7 @@ window.wizzyConfig.events.registerEvent(
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.PRODUCTS_CACHED_RESULTS_RENDERED,
     function (data) {
-      toHandleComingBackFromProductPage();
+      
      
       let selectedPrice = document.querySelectorAll(
         ".wizzy-selected-facet-list-item[data-facetkey='sellingPrice'] .facet-item-label-value"
