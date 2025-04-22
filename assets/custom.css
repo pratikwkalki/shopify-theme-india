@@ -3444,6 +3444,9 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   .mobile-facets__wrapper.sort-filter-open facet-remove.active-facets__button-wrapper {
     display: none;
   }
+  .mobile-facets__open:hover .mobile-facets__open-label {
+    text-decoration: none;
+  }
 }
 @media only screen and (max-width:990px){
    .float1{
