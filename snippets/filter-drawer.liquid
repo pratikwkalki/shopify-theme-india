@@ -192,15 +192,7 @@
                           data-index="mobile-{{ forloop.index }}"
                         >
                           <summary class="mobile-facets__summary focus-inset">
-                            <div>
-                              <span>
-                                {% if filter.label contains "Filter - Stores" %}
-                                  Stores
-                                {% else %}
-                                  {{- filter.label | escape }}
-                                {% endif %}
-                              </span>
-                            </div>
+                            <div><span>{%- if filter.label contains "Filter - Stores" -%}Stores{%- else -%}{{- filter.label | escape }}{%- endif -%}</span></div>
                           </summary>
                           <div
                             id="FacetMobile-{{ forloop.index }}-{{ section.id }}"
