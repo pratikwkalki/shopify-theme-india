@@ -283,15 +283,6 @@
                                       <span class="facet-checkbox__text" aria-hidden="true">
                                         {{- value.label | escape }}<span class="counter_new">{{ value.count }}</span>
                                       </span>
-                                      <span class="visually-hidden">
-                                        {{- value.label | escape }} (
-                                        {%- if value.count == '1' -%}
-                                          {{- 'products.facets.product_count_simple.one' | t: count: value.count -}}
-                                        {%- else -%}
-                                          {{- 'products.facets.product_count_simple.other' | t: count: value.count -}}
-                                        {%- endif -%}
-                                        )</span
-                                      >
                                     </label>
                                   </li>
                                 {% endunless %}
