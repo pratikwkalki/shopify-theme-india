@@ -448,6 +448,9 @@ window.onWizzyScriptLoaded = function () {
       if (body.classList.contains("page_white_header_transparent_new")) {
         body.classList.remove("page_white_header_transparent_new");
       }
+      if (body.classList.contains("collection_header_transparent_new")) {
+        body.classList.remove("collection_header_transparent_new");
+      }
       if (
         body.classList.contains("collection_hide_announcement_bar_new") &&
         body.classList.contains("collection_header_transparent_new")
