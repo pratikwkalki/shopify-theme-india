@@ -118,7 +118,7 @@
         <span class="Product_price_save_new"><span class="Product_price_save_couse_new data-saving-pdp" data-saving="{{ finalsave }}% OFF">(</span>{{ finalsave }}% OFF<span class="Product_price_save_couse_new">)</span></span>
       {%- endif -%}
     </div>
-    {% if product.selected_or_first_available_variant.unit_price_measurement == nil %}
+    {% if product.selected_or_first_available_variant.unit_price_measurement != nil %}
       <small class="unit-price caption hidden">
         <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
         <span class="price-item price-item--last">
