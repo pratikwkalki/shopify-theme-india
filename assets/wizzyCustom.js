@@ -1,40 +1,59 @@
-$("body").on("change", ".wizzy-range-for-grid", function (event) {
-  handleRangeInputValueChange(event.target.value);
-});
-function handleRangeInputValueChange(value) {
-  let x = document.querySelector(".wizzy-search-results");
-  typeof x < "u" &&
-    (x.classList.contains("wizzy-2-products-in-a-row") &&
-      x.classList.remove("wizzy-2-products-in-a-row"),
-    x.classList.contains("wizzy-3-products-in-a-row") &&
-      x.classList.remove("wizzy-3-products-in-a-row"),
-    x.classList.contains("wizzy-4-products-in-a-row") &&
-      x.classList.remove("wizzy-4-products-in-a-row"),
-    sessionStorage.setItem("wizzy-2-products-in-a-row", !1),
-    sessionStorage.setItem("wizzy-3-products-in-a-row", !1),
-    sessionStorage.setItem("wizzy-4-products-in-a-row", !1),
-    x.classList.add("wizzy-" + value + "-products-in-a-row"),
-    sessionStorage.setItem("wizzy-" + value + "-products-in-a-row", !0));
-}
-function toHandleComingBackFromProductPage() {
-  let waitForInputToLoad = setInterval(function () {
-    let CBrangeInputForGrid = document.querySelector(".wizzy-range-for-grid");
-    CBrangeInputForGrid != null &&
-      CBrangeInputForGrid != null &&
-      (sessionStorage.getItem("wizzy-2-products-in-a-row") === "true"
-        ? ((CBrangeInputForGrid.value = 2), handleRangeInputValueChange(2))
-        : sessionStorage.getItem("wizzy-3-products-in-a-row") === "true"
-        ? ((CBrangeInputForGrid.value = 3), handleRangeInputValueChange(3))
-        : sessionStorage.getItem("wizzy-4-products-in-a-row") === "true" &&
-          ((CBrangeInputForGrid.value = 4), handleRangeInputValueChange(4)),
-      clearInterval(waitForInputToLoad));
-  }, 1e3);
-  setTimeout(function () {
-    clearInterval(waitForInputToLoad);
-  }, 1e4);
-}
-toHandleComingBackFromProductPage();
+
 window.onWizzyScriptLoaded = function () {
+  $("body").on("change", ".wizzy-range-for-grid", function (event) {
+    handleRangeInputValueChange(event.target.value);
+  });
+
+  function handleRangeInputValueChange(value) {
+    let x = document.querySelector(".wizzy-search-results");
+    if (typeof x != "undefined") {
+      if (x.classList.contains("wizzy-2-products-in-a-row")) {
+        x.classList.remove("wizzy-2-products-in-a-row");
+      }
+
+      if (x.classList.contains("wizzy-3-products-in-a-row")) {
+        x.classList.remove("wizzy-3-products-in-a-row");
+      }
+
+      if (x.classList.contains("wizzy-4-products-in-a-row")) {
+        x.classList.remove("wizzy-4-products-in-a-row");
+      }
+
+      sessionStorage.setItem("wizzy-2-products-in-a-row", false);
+      sessionStorage.setItem("wizzy-3-products-in-a-row", false);
+      sessionStorage.setItem("wizzy-4-products-in-a-row", false);
+      x.classList.add("wizzy-" + value + "-products-in-a-row");
+      sessionStorage.setItem("wizzy-" + value + "-products-in-a-row", true);
+    }
+  }
+   function toHandleComingBackFromProductPage() {
+    let waitForInputToLoad = setInterval(function () {
+      let CBrangeInputForGrid = document.querySelector(".wizzy-range-for-grid");
+      if (CBrangeInputForGrid != null && CBrangeInputForGrid != undefined) {
+        if (sessionStorage.getItem("wizzy-2-products-in-a-row") === "true") {
+          CBrangeInputForGrid.value = 2;
+          handleRangeInputValueChange(2);
+        } else if (
+          sessionStorage.getItem("wizzy-3-products-in-a-row") === "true"
+        ) {
+          CBrangeInputForGrid.value = 3;
+          handleRangeInputValueChange(3);
+        } else if (
+          sessionStorage.getItem("wizzy-4-products-in-a-row") === "true"
+        ) {
+          CBrangeInputForGrid.value = 4;
+          handleRangeInputValueChange(4);
+        }
+        clearInterval(waitForInputToLoad);
+      }
+    }, 1000);
+
+    setTimeout(function () {
+      clearInterval(waitForInputToLoad);
+    }, 10000);
+  }
+
+  toHandleComingBackFromProductPage();
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.PRODUCTS_RESULTS_RENDERED,
     function (payload) {
