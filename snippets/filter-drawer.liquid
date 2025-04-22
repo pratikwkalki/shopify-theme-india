@@ -231,14 +231,14 @@
                               -%}
                               {% assign filterCounter =  0 %}
                               {%- for value in sorted_values -%}
-                                {% liquid
+                                {%- liquid
                                   assign is_disabled = false
                                   if value.count == 0 and value.active == false
                                     assign is_disabled = true
                                   endif
-                                %}
+                                -%}
                                 {%- unless is_disabled -%}
-                                  {% assign filterCounter =  filterCounter | plus: 1 %}
+                                  {%- assign filterCounter =  filterCounter | plus: 1 -%}
                                   <li class="mobile-facets__item list-menu__item">
                                     <label
                                       for="Filter-{{ filter.param_name | escape }}-mobile-{{ forloop.index }}"
