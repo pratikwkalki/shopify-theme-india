@@ -37,7 +37,6 @@
                   {{ 'products.facets.sort_button' | t }}
                 {%- endif -%}
               </h3>
-
               <h3 class="mobile-facets__heading small-hide">
                 {%- if enable_filtering -%}
                   {{ 'products.facets.filter_button' | t }}
@@ -56,13 +55,11 @@
                 {%- endif -%}
               </p>
             </div>
-  
             <!-- added -->
             <div class="active-facets active-facets-mobile active-facets-mobile_new medium-hide large-up-hide">
               <div class="facet-items_wrap">
                 {%- for filter in results.filters -%}
                   {%- for value in filter.active_values -%}
-                    
                     {% if filter.label == 'Color' %}
                       <div class="faced_item active__filter-value">
                         <facet-remove>
@@ -103,12 +100,9 @@
                         </facet-remove>
                       </div>
                     {% endif %}
-                    
                   {%- endfor -%}
-            
                   {%- if filter.type == 'price_range' -%}
                     {%- if filter.min_value.value != null or filter.max_value.value != null -%}
-                      
                         <div class="faced_item active__filter-value">
                           <facet-remove class="facet-remove">
                             <a href="{{ filter.url_to_remove }}" class="active-facets__button active-facets__button--light">
@@ -137,7 +131,6 @@
                             </a>
                           </facet-remove>
                         </div>
-                      
                     {%- endif -%}
                   {%- endif -%}
                 {%- endfor -%}
@@ -167,7 +160,6 @@
                       assign visual_layout_class = 'facets-layout-list'
                   endcase
                 %}
-
                 {% case filter.type %}
                   {% when 'boolean', 'list' %}
                     {% if filter.label == 'Color' %}
@@ -309,7 +301,6 @@
                         </details>
                       {% endif %}
                     {% endif %}
-                    
                   {% when 'price_range' %}
                     {% render 'price-filter' 
                       filter: filter, 
@@ -318,7 +309,6 @@
                       section: section 
                       type: 'mobile' 
                     %}
-
                 {% endcase %}
               {%- endfor -%}
             {%- endif -%}
