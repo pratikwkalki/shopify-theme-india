@@ -237,8 +237,7 @@
                                     assign is_disabled = true
                                   endif
                                 %}
-
-                                {% unless is_disabled %}
+                                {%- unless is_disabled -%}
                                   {% assign filterCounter =  filterCounter | plus: 1 %}
                                   <li class="mobile-facets__item list-menu__item">
                                     <label
@@ -274,10 +273,9 @@
                                       </span>
                                     </label>
                                   </li>
-                                {% endunless %}
+                                {%- endunless -%}
                               {%- endfor -%}
                             </ul>
-
                             <div class="no-js-hidden mobile-facets__footer gradient">
                               <facet-remove class="mobile-facets__clear-wrapper">
                                 <a href="{{ results_url }}" class="button button_border mobile-facets__clear">
