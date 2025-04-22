@@ -80,7 +80,7 @@
                                       {% assign main_menu_image = image_filename | file_url  %}
                                       {%- assign childlink_title_handle = childlink.title | handleize -%}
                                       {%- unless childlink_title_handle contains 'color' or childlink_title_handle contains 'shopper' or childlink_title_handle contains 'exclusive-collections' -%}
-                                        <a {{ childlink_title_handle }} href="{{ grandchildlink.url }}" class="megamenu_right_top_video_OR_image_new">
+                                        <a href="{{ grandchildlink.url }}" class="megamenu_right_top_video_OR_image_new">
                                           {% comment %}<object class="Hover_image_new" data="{{ image_filename | file_url }}" type="image/jpeg"></object>{% endcomment %}
                                           <img src="{{ image_filename | file_url }}" alt="{{ grandchildlink.handle }}" class="Hover_image_new" loading="lazy" fetchpriority="auto"  onerror="this.closest('a').classList.add('hide')">
                                         </a>

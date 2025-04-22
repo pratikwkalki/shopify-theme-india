@@ -82,59 +82,52 @@
                                   {%- for grandchildlink in childlink.links -%}
                                     <li class="{{ link.handle }}{{ childlink.title | handleize }}-right-img">
                                       {%- assign menu_title = grandchildlink.title | handleize -%}
-                                       {%- for menu_3_text_color in menu_3_styles -%}
+                                      {%- for menu_3_text_color in menu_3_styles -%}
                                         {%- assign menu_name_title = menu_3_text_color.menu_name.value | handleize -%}
                                         {%- if menu_title == menu_name_title -%}
                                           <style>.{{ grandchildlink.title | handleize }}_3_new { color: {{ menu_3_text_color.text_color.value }} !important; }.{{ grandchildlink.title | handleize }}_3_new:hover { color: #CC8F67 !important; }</style>
                                         {%- endif -%}
                                       {%- endfor -%}
-                                      {%- assign grandchildlink_handle = grandchildlink.title | handleize -%}
-                                      {%- paginate megamenu_custom_image_product by 160 -%}
-                                        {%- for megamenu_custom_image_product in megamenu_custom_image_product -%}
-                                          {%- assign main_menu_name_handle = megamenu_custom_image_product.main_menu_name.value | handleize -%}
-                                          {%- assign inner_menu_name_handle = megamenu_custom_image_product.inner_menu_name.value | handleize -%}
-                                          {%- assign sub_category_name_handle = megamenu_custom_image_product.sub_category_name.value | handleize -%}
-                                          {%- assign category_name_handle = megamenu_custom_image_product.category_name.value | handleize -%}
-                                          {%- if inner_menu_name_handle == link_handle and sub_category_name_handle == childlink_handle and category_name_handle == grandchildlink_handle -%}
-                                            {%- assign image_url = megamenu_custom_image_product.category_image_square.value -%}
-                                            {%- if image_url != blank -%}
-                                              <div class="category-img">
-                                                <style>
-                                                  .{{ link.handle }}{{ childlink.title | handleize }}-right-img a { text-align: center !important; }
-                                                </style>
-                                                <div class="megamenu_right_top_video_OR_image_new">
-                                                  <a href="{{ grandchildlink.url }}">
-                                                    {{
-                                                      image_url | image_url: width: img.width | 
-                                                      image_tag: widths: '750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                                      fetchpriority: 'auto', 
-                                                      class: 'Hover_image_new',
-                                                      loading: 'lazy'
-                                                    }}
-                                                  </a>
-                                                </div>
-                                              </div>
-                                            {%- else -%}
-                                              <p>No image available for this category</p>
-                                            {%- endif -%}
-                                          {%- endif -%}
-                                        {%- endfor -%}
-                                      {%- endpaginate -%}
-
+                                      {% assign collection_handle =grandchildlink.url | split: '/' | last %}
+                                      {% assign image_filename = collection_handle | append: '-menu.jpg' %}
+                                      {% assign main_menu_image = image_filename | file_url  %}
                                       {%- assign childlink_title_handle = childlink.title | handleize -%}
-                                      <a id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}" href="{{ grandchildlink.url }}" class="mega-menu__link link{%- if grandchildlink.current -%} mega-menu__link--active{%- endif -%} {{ grandchildlink.title | handleize }}_3_new {%- if childlink_title_handle contains 'color' -%} color_menu_new {%- endif -%}" {%- if grandchildlink.current -%} aria-current="page" {%- endif -%}>
+                                      {%- unless childlink_title_handle contains 'color' or childlink_title_handle contains 'shopper' or childlink_title_handle contains 'exclusive-collections' -%}
+                                        <a href="{{ grandchildlink.url }}" class="megamenu_right_top_video_OR_image_new">
+                                          {% comment %}<object class="Hover_image_new" data="{{ image_filename | file_url }}" type="image/jpeg"></object>{% endcomment %}
+                                          <img src="{{ image_filename | file_url }}" alt="{{ grandchildlink.handle }}" class="Hover_image_new" loading="lazy" fetchpriority="auto"  onerror="this.closest('a').classList.add('hide')">
+                                        </a>
+                                      {% endunless %}
+                                        <a id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}" href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %} {{ grandchildlink.title | handleize }}_3_new {% if childlink_title_handle contains 'color' %} color_menu_new {% endif %}" {% if grandchildlink.current %} aria-current="page" {% endif %}>
                                         {%- if childlink_title_handle contains 'color' -%}
-                                          {%- for menu_3_dot_color in dot_colors -%}
-                                            {%- if grandchildlink.title contains menu_3_dot_color.menu_name.value -%}
-                                              <div class="color_dot_new {{ menu_3_dot_color.menu_name.value | handleize }}_border_new" style="background:{{ menu_3_dot_color.dot_color.value }};"></div>
-                                            {%- endif -%}
-                                          {%- endfor -%}
+                                            {%- for menu_3_dot_color in dot_colors -%}
+                                              {%- if grandchildlink.title contains menu_3_dot_color.menu_name.value -%}
+                                                <div class="color_dot_new {{ menu_3_dot_color.menu_name.value | handleize }}_border_new" style="background:{{ menu_3_dot_color.dot_color.value }};"></div>
+                                              {%- endif -%}
+                                            {%- endfor -%}
                                         {%- endif -%}
                                         {{ grandchildlink.title | escape }}
                                       </a>
                                     </li>
                                   {%- endfor -%}
                                 </ul>
+                                {%- paginate megamenu_custom_image_product by 1000 -%}
+                                  {%- for megamenu_custom_image_product in megamenu_custom_image_product -%}
+                                    {%- assign main_menu_name_handle = megamenu_custom_image_product.main_menu_name.value | handleize -%}
+                                    {%- assign inner_menu_name_handle = megamenu_custom_image_product.inner_menu_name.value | handleize -%}
+                                    {%- assign sub_category_name_handle = megamenu_custom_image_product.sub_category_name.value | handleize -%}
+                                    {%- if main_menu_name_handle == selected_menu_name_handle and inner_menu_name_handle == link_handle and sub_category_name_handle == childlink_handle -%}
+                                      {%- if megamenu_custom_image_product.sub_category_image_desktop.value != blank -%}
+                                        <div class="sub-category-img">
+                                          <style>.{{ link.handle }}{{ childlink.title | handleize }}-right-img{ width: 50% !important; }.{{ link.handle }}{{ childlink.title | handleize }}-leftside{display:flex;align-items: flex-start;}.{{ link.handle }}{{ childlink.title | handleize }}-leftside .sub-category-img{width: 235px !important;}</style>
+                                          <div class="megamenu_right_top_video_OR_image_new">
+                                            <a href="{{ megamenu_custom_image_product.button_redirect_url.value }}">{{ megamenu_custom_image_product.sub_category_image_desktop.value | image_url: width: img.width | image_tag: widths: '235', fetchpriority: 'auto', class: 'Hover_image_new' }}</a>
+                                          </div>
+                                        </div>
+                                      {%- endif -%}
+                                    {%- endif -%}
+                                  {%- endfor -%}
+                                {%- endpaginate -%}
                               </div>
                             </div>
                           {%- endif -%}
