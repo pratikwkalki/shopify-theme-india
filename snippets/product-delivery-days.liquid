@@ -1,8 +1,8 @@
-{% assign mto =  current_product.metafields.magento.mto | handleize %} <!-- yes or no condition -->
+{% assign mto =  current_product.metafields.magento.mto | handleize %} {% comment %} yes or no condition {% endcomment %}
 
 {% if mto != blank %}
   
-  {% assign delivery_days =  current_product.metafields.magento.fast_shipping %} <!-- shipping day -->
+  {% assign delivery_days =  current_product.metafields.magento.fast_shipping %} {% comment %} shipping day {% endcomment %}
   {% assign rts_delivery_days =  current_product.metafields.custom.mto_rts_days %}
   {% if mto == 'yes' %}
     {% if current_product.options.size == 1 %}
