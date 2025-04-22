@@ -26,7 +26,9 @@
         {%- if link.title == collection.metafields.custom.collection_menu and template_name == "collection" -%} select_first_element {%- endif -%}
         {%- if forloop.first and template_name == "collection" -%}{%- if collection.metafields.custom.collection_menu == blank -%} select_first_element {%- endif -%}{%- endif -%} 
         {%- if link.title == product.metafields.custom.navigation_menu_for_product and template_name == "product" -%} select_first_element {%- endif -%}
-        {%- if forloop.first and template_name == "product" -%}{%- if product.metafields.custom.navigation_menu_for_product == blank -%} select_first_element {%- endif -%}{%- endif -%}">
+        {%- if forloop.first and template_name == "product" -%}{%- if product.metafields.custom.navigation_menu_for_product == blank -%} select_first_element {%- endif -%}{%- endif -%}"
+        {%- if page.metafields.custom.display_bridal_megamenu == true -%}x-data="{ openMenu: false }"{% endif %}
+        >
         {%- if collection.metafields.custom.collection_menu != blank -%}
           {%- assign bridal_menu = collection.metafields.custom.collection_menu | handleize -%}
         {%- elsif product.metafields.custom.navigation_menu_for_product != blank -%}
