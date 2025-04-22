@@ -184,10 +184,10 @@
                         <details
                           id="Details-Mobile-{{ filter.param_name | escape }}-{{ section.id }}"
                           class="mobile-facets__details js-filter  
-                          {% if template.suffix == "luxe-collection-new"%}
-                          {% if filter.label contains "Delivery" or filter.label contains "Product Category" or filter.label contains "Size" or filter.label contains "Stores" %} medium-hide large-up-hide {% endif %} 
-                          {% endif %}
-                          {% if filter.label contains "Size" %}mobile-facets__details_size{% endif %}
+                          {%- if template.suffix == "luxe-collection-new" -%}
+                            {%- if filter.label contains "Delivery" or filter.label contains "Product Category" or filter.label contains "Size" or filter.label contains "Stores" -%} medium-hide large-up-hide {%- endif -%} 
+                          {%- endif -%}
+                          {%- if filter.label contains "Size" -%} mobile-facets__details_size{%- endif -%}
                           "
                           data-index="mobile-{{ forloop.index }}"
                         >
