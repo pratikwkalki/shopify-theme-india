@@ -800,7 +800,7 @@ if (!autocompleteMenu) return;
 if (currentURL.includes('/collections')) {
   autocompleteMenu.style.setProperty("top", "85px", "important"); 
 } else {
-  autocompleteMenu.style.setProperty("top", "117px", "important"); 
+  autocompleteMenu.style.top = "85px";
 }
 
 let searchbtn = document.querySelector(".search_main_new");
