@@ -249,7 +249,7 @@
                                           disabled
                                         {%- endif -%}
                                       >
-                                      {% if has_visual_display %}
+                                      {%- if has_visual_display -%}
                                         <div class="facets__visual-display-wrapper">
                                           {% render 'visual-display',
                                             type: value.display.type,
@@ -257,9 +257,9 @@
                                             presentation: filter.presentation
                                           %}
                                         </div>
-                                      {% else %}
+                                      {%- else -%}
                                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-checkmark custom_icon_new" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path> </svg>
-                                      {% endif %}
+                                      {%- endif -%}
                                       <span class="facet-checkbox__text" aria-hidden="true">
                                         {{- value.label | escape }}<span class="counter_new">{{ value.count }}</span>
                                       </span>
