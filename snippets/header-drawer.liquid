@@ -148,7 +148,7 @@
                                                       <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                                                         {%- for grandchildlinkgrand in grandchildlink.links -%}
                                                           <li>
-                                                            {%- assign menu_3_text_color = shop.metaobjects.menu_3_text_color.values -%}
+                                                            {%- assign menu_3_text_color = menu_3_styles -%}
                                                             {%- for menu_3_text_color in menu_3_styles -%}
                                                               {%- assign menu_title = grandchildlinkgrand.title | handleize -%}
                                                               {%- assign menu_name_title = menu_3_text_color.menu_name.value | handleize -%}
@@ -159,7 +159,7 @@
                                                             {%- assign grandchildlink_title = grandchildlink.title | handleize -%}
                                                             <a id="HeaderDrawer-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}-{{ grandchildlinkgrand.handle }}" href="{{ grandchildlinkgrand.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlinkgrand.current %} menu-drawer__menu-item--active{% endif %} {{ grandchildlinkgrand.title | handleize }}_3_new {% if grandchildlink_title contains 'color' %} color_menu_new {% endif %}" {% if grandchildlinkgrand.current %}aria-current="page"{% endif %}>
                                                               {%- if grandchildlink_title contains 'color' -%}
-                                                                {%- assign menu_3_dot_color = shop.metaobjects.menu_3_dot_color.values -%}
+                                                                {%- assign menu_3_dot_color = dot_colors -%}
                                                                 {%- for menu_3_dot_color in dot_colors -%}
                                                                   {%- assign menu_title = grandchildlinkgrand.title -%}
                                                                   {%- assign menu_name_title = menu_3_dot_color.menu_name.value -%}
