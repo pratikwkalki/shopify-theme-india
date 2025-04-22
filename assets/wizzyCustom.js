@@ -445,10 +445,10 @@ window.onWizzyScriptLoaded = function () {
       if (body.classList.contains("template--bridal-wedding-dress-new")) {
         body.classList.remove("template--bridal-wedding-dress-new");
       }
-      if (body.classList.contains("page_white_header_transparent_new")) {
+      if (document.body.classList.contains("page_white_header_transparent_new")) {
         body.classList.remove("page_white_header_transparent_new");
       }
-      if (body.classList.contains("collection_header_transparent_new")) {
+      if (document.body.classList.contains("collection_header_transparent_new")) {
         body.classList.remove("collection_header_transparent_new");
       }
       if (
