@@ -794,7 +794,7 @@ window.wizzyConfig.events.registerEvent(
 };
 const currentURL = window.location.href;
 
-const autocompleteMenu = document.querySelector('.autocomplete-menu');
+const autocompleteMenu = document.querySelector('.wizzy-autocomplete-wrapper');
 
 if (!autocompleteMenu) return; 
 if (currentURL.includes('/collections')) {
