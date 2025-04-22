@@ -242,12 +242,12 @@
                                         name="{{ value.param_name }}"
                                         value="{{ value.value }}"
                                         id="Filter-{{ filter.param_name | escape }}-mobile-{{ forloop.index }}"
-                                        {% if value.active %}
+                                        {%- if value.active -%}
                                           checked
-                                        {% endif %}
-                                        {% if is_disabled %}
+                                        {%- endif -%}
+                                        {%- if is_disabled -%}
                                           disabled
-                                        {% endif %}
+                                        {%- endif -%}
                                       >
                                       {% if has_visual_display %}
                                         <div class="facets__visual-display-wrapper">
