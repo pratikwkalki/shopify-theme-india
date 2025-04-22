@@ -14,6 +14,15 @@
   .wizzy-facet-list-item-count {
   display: none;
 }
+.wizzy-search-wrapper
+  .wizzy-search-filters-left
+  .wizzy-facet-body
+  .wizzy-facet-list
+  .wizzy-facet-list-item.facet-range-item
+  .noUi-horizontal
+  .noUi-connect {
+  background: #000;
+}
 .filters-list-top-values-wrapper
   .facet-body-sizes
   li.wizzy-facet-list-item.facet-has-swatch:hover {
