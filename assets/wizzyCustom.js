@@ -433,6 +433,10 @@ window.onWizzyScriptLoaded = function () {
     window.wizzyConfig.events.allowedEvents.BEFORE_SEARCH_EXECUTED,
     function (data) {
       let body = document.body;
+       if (document.body.classList.contains("collection_header_transparent_new")) {
+          document.body.classList.remove("collection_header_transparent_new");
+        }
+      
       if (body.classList.contains("template--bridal-collection-new")) {
         body.classList.remove("template--bridal-collection-new");
       }
@@ -449,10 +453,7 @@ window.onWizzyScriptLoaded = function () {
         body.classList.remove("page_white_header_transparent_new");
       }
       
-        if (document.body.classList.contains("collection_header_transparent_new")) {
-          body.classList.remove("collection_header_transparent_new");
-        }
-      
+       
       
       if (
         body.classList.contains("collection_hide_announcement_bar_new")
