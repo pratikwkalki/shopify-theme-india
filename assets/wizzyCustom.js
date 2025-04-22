@@ -817,14 +817,14 @@ window.wizzyConfig.events.registerEvent(
 };
 const currentURL = window.location.href;
 
-const autocompleteMenu = document.querySelector('.wizzy-autocomplete-wrapper');
+// const autocompleteMenu = document.querySelector('.wizzy-autocomplete-wrapper');
 
-if (!autocompleteMenu) return; 
-if (currentURL.includes('/collections')) {
-  autocompleteMenu.style.top = "85px";
-} else {
-  autocompleteMenu.style.top = "117px";
-}
+// if (!autocompleteMenu) return; 
+// if (currentURL.includes('/collections')) {
+//   autocompleteMenu.style.top = "85px";
+// } else {
+//   autocompleteMenu.style.top = "117px";
+// }
 
 let searchbtn = document.querySelector(".search_main_new");
 searchbtn.addEventListener("click", function () {
