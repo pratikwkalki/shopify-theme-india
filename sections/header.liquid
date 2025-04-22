@@ -194,28 +194,11 @@
                 {%- if settings.logo != blank -%}
                   <div class="header__heading-logo-wrapper">
                     {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-                    {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-                    {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
-                    {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                    {{ settings.logo | image_url: width: 600 | image_tag:
-                      class: 'header__heading-logo motion-reduce',
-                      widths: widths,
-                      height: logo_height,
-                      width: settings.logo_width,
-                      alt: logo_alt,
-                      sizes: sizes,
-                      preload: true
-                    }}
+                    {% assign main_logo = settings.logo  | image_url %}
+                    <img class="header__heading-logo motion-reduce" src="{%- render 'gumlet', src: main_logo w: 180 %}" alt="{{ logo_alt }}" width="180" height="55" preload="preload" />
                     {% if settings.white_logo %}
-                      {{ settings.white_logo | image_url: width: 600 | image_tag:
-                        class: 'header__heading-logo motion-reduce white_logo_new',
-                        widths: widths,
-                        height: logo_height,
-                        width: settings.logo_width,
-                        alt: logo_alt,
-                        sizes: sizes,
-                        preload: true
-                      }}
+                      {% assign white_logo = settings.white_logo  | image_url %}
+                      <img class="header__heading-logo motion-reduce white_logo_new" src="{%- render 'gumlet', src: white_logo w: 180 %}" alt="{{ logo_alt }}" width="180" height="55" preload="preload" />
                     {% endif %}
                   </div>
                 {%- else -%}
@@ -235,28 +218,11 @@
                 {%- if settings.logo != blank -%}
                   <div class="header__heading-logo-wrapper">
                     {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-                    {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-                    {% capture sizes %}(min-width: 750px) 200px, 50vw{% endcapture %}
-                    {% capture widths %}{{ settings.logo_width }}{% endcapture %}
-                    {{ settings.logo | image_url: width: 600 | image_tag:
-                      class: 'header__heading-logo',
-                      widths: widths,
-                      height: logo_height,
-                      width: settings.logo_width,
-                      alt: logo_alt,
-                      sizes: sizes,
-                      preload: true
-                    }}
+                    {% assign main_logo = settings.logo  | image_url %}
+                    <img class="header__heading-logo" src="{%- render 'gumlet', src: main_logo w: 180 %}" alt="{{ logo_alt }}" width="180" height="55" preload="preload" />
                     {% if settings.white_logo %}
-                      {{ settings.white_logo | image_url: width: 600 | image_tag:
-                        class: 'header__heading-logo motion-reduce white_logo_new',
-                        widths: widths,
-                        height: logo_height,
-                        width: settings.logo_width,
-                        alt: logo_alt,
-                        sizes: sizes,
-                        preload: true
-                      }}
+                      {% assign white_logo = settings.white_logo  | image_url %}
+                      <img class="header__heading-logo motion-reduce white_logo_new" src="{%- render 'gumlet', src: white_logo w: 180 %}" alt="{{ logo_alt }}" width="180" height="55" preload="preload" />
                     {% endif %}
                   </div>
                 {%- else -%}
