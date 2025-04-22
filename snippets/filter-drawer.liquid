@@ -229,7 +229,7 @@
                                   assign sorted_values = active_filter_values | concat: inactive_filter_values
                                 endif
                               -%}
-                              {% assign filterCounter =  0 %}
+                              {%- assign filterCounter =  0 -%}
                               {%- for value in sorted_values -%}
                                 {%- liquid
                                   assign is_disabled = false
