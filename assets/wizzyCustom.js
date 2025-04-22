@@ -462,6 +462,25 @@ window.onWizzyScriptLoaded = function () {
       let video = document.querySelector(".Collection_meta_banner_new");
       if (video) video.style.setProperty("display", "none", "important");
 
+      if(window.innerWidth <= 768)
+      {
+         if (body.classList.contains("template-collection")) {
+        body.classList.remove("template-collection");
+      }
+      if (body.classList.contains("template--luxe-collection-new")) {
+        body.classList.remove("template--luxe-collection-new");
+      }
+      if (body.classList.contains("collection_hide_announcement_bar_new")) {
+        body.classList.remove("collection_hide_announcement_bar_new");
+      }
+      if (body.classList.contains("collection_header_transparent_new")) {
+        body.classList.remove("collection_header_transparent_new");
+      }
+      if (body.classList.contains("collection_full_width_new")) {
+        body.classList.remove("collection_full_width_new");
+      }
+      }
+
       return data;
     }
   );
@@ -798,9 +817,9 @@ const autocompleteMenu = document.querySelector('.wizzy-autocomplete-wrapper');
 
 if (!autocompleteMenu) return; 
 if (currentURL.includes('/collections')) {
-  autocompleteMenu.style.setProperty("top", "85px", "important"); 
-} else {
   autocompleteMenu.style.top = "85px";
+} else {
+  autocompleteMenu.style.top = "117px";
 }
 
 let searchbtn = document.querySelector(".search_main_new");
