@@ -162,7 +162,7 @@
                 %}
                 {% case filter.type %}
                   {% when 'boolean', 'list' %}
-                    {% if filter.label == 'Color' %}
+                    {%- if filter.label == 'Color' -%}
                       {% render 'color-filter' 
                       filter: filter, 
                       section: section,  
@@ -170,17 +170,17 @@
                       filterCounter: filterCounter, 
                       filterType: 'filter-drawer'
                       %}
-                    {% else %}
+                    {%- else -%}
                       {%- for value in filter.values -%}
-                        {% liquid
+                        {%- liquid
                           assign has_filter_values = false
                           if value.count != 0
                             assign has_filter_values = true
                             break
                           endif
-                        %}
+                        -%}
                       {%- endfor -%}
-                      {% if filter.values.size > 0 and has_filter_values %}
+                      {%- if filter.values.size > 0 and has_filter_values -%}
                         <details
                           id="Details-Mobile-{{ filter.param_name | escape }}-{{ section.id }}"
                           class="mobile-facets__details js-filter  
@@ -289,8 +289,8 @@
                             </div>
                           </div>
                         </details>
-                      {% endif %}
-                    {% endif %}
+                      {%- endif -%}
+                    {%- endif -%}
                   {% when 'price_range' %}
                     {% render 'price-filter' 
                       filter: filter, 
