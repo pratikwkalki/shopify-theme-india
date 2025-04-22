@@ -284,6 +284,11 @@
         "disabled": false,
         "settings": {}
       },
+      "9717370649079274736": {
+        "type": "shopify://apps/lucent-otp-login-notify/blocks/app-embed-block/c26b7b17-273d-4800-af62-8ec88ba18251",
+        "disabled": false,
+        "settings": {}
+      },
       "9305901301634205573": {
         "type": "shopify://apps/firecart/blocks/firecart/0602273e-dcaf-4351-87e2-9b7ab0328598",
         "disabled": false,
@@ -307,11 +312,6 @@
       "7496264633453945898": {
         "type": "shopify://apps/wizzy-search-filters/blocks/wizzy-head-assets/ae8fbc14-43c6-4ce2-b5bc-819d4b1052f6",
         "disabled": false,
-        "settings": {}
-      },
-      "9717370649079274736": {
-        "type": "shopify://apps/lucent-otp-login-notify/blocks/app-embed-block/c26b7b17-273d-4800-af62-8ec88ba18251",
-        "disabled": true,
         "settings": {}
       }
     },

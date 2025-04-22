@@ -229,10 +229,10 @@
         "information_Vw93j8": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/3-slider-banner-mens-kurta-set-all-country-desktop-2800x1050-19-04-25-new.jpg",
-            "main_mobile_full_image": "shopify://shop_images/3-mobile-banner-mens-kurta-set-all-country-500x707-19-04-25-new.jpg",
+            "main_desktop_full_image": "shopify://shop_images/3_slider_banner_see_all_mens_wear_all_country_desktop_2800x1050_1e0cd686-4afd-47fd-b00c-e2e492474694.jpg",
+            "main_mobile_full_image": "shopify://shop_images/3_mobile_banner_see_all_mens_wear_all_country_500x707_22_04_25.jpg",
             "alt_text": "Kurta Chronicles",
-            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/mens-kurta-set"
+            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/see-all-menswear"
           }
         },
         "information_7ncwjR": {
@@ -352,13 +352,13 @@
         "information_kdHhKc": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/3-mini-desk-see-all-mens-wear-all-country-400x533-19-04-25-new.jpg",
-            "main_mobile_image": "shopify://shop_images/3-mini-desk-see-all-mens-wear-all-country-400x533-19-04-25-new.jpg",
-            "title": "Menswear Edit",
+            "main_desktop_image": "shopify://shop_images/3-mini-desk-khush-by-kalki-all-country-400x533-22-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-mini-desk-khush-by-kalki-all-country-400x533-22-04-25.jpg",
+            "title": "Khush by KALKI",
             "sub_head_text": "",
             "main_tags_detail_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/see-all-menswear"
+            "main_button_link": "https://in.kalkifashion.com/collections/khush-by-kalki"
           }
         },
         "information_txEVLa": {
