@@ -1639,7 +1639,7 @@ span.wizzy-facet-list-item-checkbox {
     margin-left: 40%;
   }
   .wizzy-autocomplete-wrapper.onLeft {
-    /* top: 117px !important; */
+    top: 117px !important;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 991px) {
