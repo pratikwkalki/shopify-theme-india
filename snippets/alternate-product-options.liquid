@@ -181,9 +181,12 @@
                   <span class="value-with-size">{{ sizeOptions }}</span>
                 {%- endfor -%}
               </div>
-              {% if  value contains 'Months' or value contains 'Years' %}
-                <p class="size-detail__text">*units in inches</p> 
-              {% endif  %}
+              {% unless  value contains 'Months' or value contains 'Years' %}
+                
+                  <p class="size-detail__text">*units in inches</p>
+               
+                
+              {% endunless  %}
             </div>
           {%- endif -%}
         {%- endfor -%}
