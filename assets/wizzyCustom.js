@@ -59,21 +59,30 @@ window.onWizzyScriptLoaded = function () {
     function (payload) {
       // $("html").removeClass("filtersOpend");
       const rangeInputForGrid = document.querySelector(".wizzy-range-for-grid");
-      return (
-        sessionStorage.getItem("wizzy-1-products-in-a-row") === "true" &&
+      if (
+        sessionStorage.getItem("wizzy-2-products-in-a-row") === "true" &&
         rangeInputForGrid != null &&
-        typeof rangeInputForGrid < "u"
-          ? ((rangeInputForGrid.value = 1), handleRangeInputValueChange(1))
-          : sessionStorage.getItem("wizzy-2-products-in-a-row") === "true" &&
-            rangeInputForGrid != null &&
-            typeof rangeInputForGrid < "u"
-          ? ((rangeInputForGrid.value = 2), handleRangeInputValueChange(2))
-          : sessionStorage.getItem("wizzy-3-products-in-a-row") === "true" &&
-            rangeInputForGrid != null &&
-            typeof rangeInputForGrid < "u" &&
-            ((rangeInputForGrid.value = 3), handleRangeInputValueChange(3)),
-        payload
-      );
+        typeof rangeInputForGrid != "undefined"
+      ) {
+        rangeInputForGrid.value = 2;
+        handleRangeInputValueChange(2);
+      } else if (
+        sessionStorage.getItem("wizzy-4-products-in-a-row") === "true" &&
+        rangeInputForGrid != null &&
+        typeof rangeInputForGrid != "undefined"
+      ) {
+        rangeInputForGrid.value = 4;
+        handleRangeInputValueChange(4);
+      } else if (
+        sessionStorage.getItem("wizzy-6-products-in-a-row") === "true" &&
+        rangeInputForGrid != null &&
+        typeof rangeInputForGrid != "undefined"
+      ) {
+        rangeInputForGrid.value = 6;
+        handleRangeInputValueChange(6);
+      }
+
+      return payload;
     }
   );
   window.wizzyConfig.events.registerEvent(
