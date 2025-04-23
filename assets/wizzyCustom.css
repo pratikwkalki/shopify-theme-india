@@ -1139,10 +1139,10 @@ span.wizzy-autocomplete-label {
   .wizzy-search-results.wizzy-2-products-in-a-row .wizzy-search-results-list {
     grid-template-columns: repeat(1, 1fr) !important;
   }
-  .wizzy-search-results.wizzy-3-products-in-a-row .wizzy-search-results-list {
+  .wizzy-search-results.wizzy-4-products-in-a-row .wizzy-search-results-list {
     grid-template-columns: repeat(2, 1fr) !important;
   }
-  .wizzy-search-results.wizzy-4-products-in-a-row .wizzy-search-results-list {
+  .wizzy-search-results.wizzy-6-products-in-a-row .wizzy-search-results-list {
     grid-template-columns: repeat(3, 1fr) !important;
   }
 }
@@ -1316,10 +1316,10 @@ span.wizzy-autocomplete-label {
   .wizzy-search-results.wizzy-2-products-in-a-row .wizzy-search-results-list {
     grid-template-columns: repeat(2, 1fr) !important;
   }
-  .wizzy-search-results.wizzy-3-products-in-a-row .wizzy-search-results-list {
+  .wizzy-search-results.wizzy-4-products-in-a-row .wizzy-search-results-list {
     grid-template-columns: repeat(3, 1fr) !important;
   }
-  .wizzy-search-results.wizzy-4-products-in-a-row .wizzy-search-results-list {
+  .wizzy-search-results.wizzy-6-products-in-a-row .wizzy-search-results-list {
     grid-template-columns: repeat(4, 1fr) !important;
   }
   li.wizzy-selected-facet-list-item {
