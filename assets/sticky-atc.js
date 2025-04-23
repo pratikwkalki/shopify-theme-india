@@ -205,7 +205,7 @@ function mobileStickyVar() {
         if (productForm.querySelector("variant-selects")) {
           e.preventDefault();
           if (!popupTriggre && !checkVisibilityButton) {
-            stickBuyNowBtn.click();
+            BuyNowBtn()
             return;
           }
           checkInputs();
