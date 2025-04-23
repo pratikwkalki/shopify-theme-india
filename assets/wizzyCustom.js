@@ -58,12 +58,14 @@ window.onWizzyScriptLoaded = function () {
     window.wizzyConfig.events.allowedEvents.PRODUCTS_RESULTS_RENDERED,
     function (payload) {
       // $("html").removeClass("filtersOpend");
+      console.log("Inside PRODUCTS_RESULTS_RENDERED")
       const rangeInputForGrid = document.querySelector(".wizzy-range-for-grid");
       if (
         sessionStorage.getItem("wizzy-2-products-in-a-row") === "true" &&
         rangeInputForGrid != null &&
         typeof rangeInputForGrid != "undefined"
       ) {
+        console.log("2 products in a row");
         rangeInputForGrid.value = 2;
         handleRangeInputValueChange(2);
       } else if (
@@ -71,6 +73,7 @@ window.onWizzyScriptLoaded = function () {
         rangeInputForGrid != null &&
         typeof rangeInputForGrid != "undefined"
       ) {
+        console.log("3 products in a row");
         rangeInputForGrid.value = 3;
         handleRangeInputValueChange(3);
       } else if (
@@ -78,6 +81,7 @@ window.onWizzyScriptLoaded = function () {
         rangeInputForGrid != null &&
         typeof rangeInputForGrid != "undefined"
       ) {
+        console.log("4 products in a row");
         rangeInputForGrid.value = 4;
         handleRangeInputValueChange(4);
       }
