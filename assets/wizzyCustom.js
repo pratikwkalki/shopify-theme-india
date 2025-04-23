@@ -62,11 +62,11 @@ window.onWizzyScriptLoaded = function () {
       let rangeInputForGrid;
       if(window.innerWidth <= 768)
       {
-        rangeInputForGrid = document.querySelector(".wizzy-range-for-grid")[1];
+        rangeInputForGrid = document.querySelectorAll(".wizzy-range-for-grid")[1];
       }
       else
       {
-        rangeInputForGrid = document.querySelector(".wizzy-range-for-grid")[0];
+        rangeInputForGrid = document.querySelectorAll(".wizzy-range-for-grid")[0];
       }
       if (
         sessionStorage.getItem("wizzy-2-products-in-a-row") === "true" &&
