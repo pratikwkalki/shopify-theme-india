@@ -255,11 +255,11 @@ function mobileStickyVar() {
       });
       
       stickAddToCartBtn.addEventListener('click', () => {
+        checkInputs();
         console.log('ctabtnwrapper cllick main')
         if (!popupTriggre && !checkVisibilityButton) {
           return;
         }
-        checkInputs();
         const Stitched = document.querySelector('.options-header.Stitched')
         const Mod = document.querySelector('.options-header[class*="Conf Size Options"]')
         if (Stitched && !productForm.classList.contains('sticky-variable')) {
