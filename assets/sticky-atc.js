@@ -255,7 +255,6 @@ function mobileStickyVar() {
       });
       
       stickAddToCartBtn.addEventListener('click', () => {
-        console.log('ctabtnwrapper cllick main')
         if (!popupTriggre && !checkVisibilityButton) {
           return;
         }
@@ -271,15 +270,12 @@ function mobileStickyVar() {
         if (Mod && !productForm.classList.contains('sticky-variable')) {
           openVariablePopup();
           addToCart()
-        } else {
-          ctabtnwrapper.click();
         }
         if (inputChecked || ctabtnwrapper.classList.contains('unavailable-variant')) {
           openVariablePopup();
           addToCart()
-        } else {
-          ctabtnwrapper.click();
         }
+        ctabtnwrapper.click();
         if (productForm.classList.contains('sticky-variable')) {
           var errorDiv = document.querySelector('.product-form__error-message-wrapper');
           var checkVisibility = setInterval(function() {
