@@ -182,9 +182,7 @@
                 {%- endfor -%}
               </div>
               {% unless  value contains 'Months' or value contains 'Years' %}
-                {% if product.metafields.custom.filter_product_category.value contains 'Men' %}
-  <p class="size-detail__text">*units in inches1</p>
-{% endif %}
+                
                 <p class="size-detail__text">*units in inches</p>
               {% endunless  %}
             </div>
