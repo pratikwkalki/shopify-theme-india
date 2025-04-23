@@ -183,6 +183,7 @@
               </div>
               {% unless  value contains 'Months' or value contains 'Years' %}                
                   <p class="size-detail__text">*units in inches</p>
+              {{ product.metafields.custom.filter_product_category.value contains 'Men }}
               {% endunless  %}
             
             </div>
