@@ -59,7 +59,7 @@ window.onWizzyScriptLoaded = function () {
     function (payload) {
       // $("html").removeClass("filtersOpend");
       console.log("Inside PRODUCTS_RESULTS_RENDERED")
-      const rangeInputForGrid;
+      let rangeInputForGrid;
       if(window.innerWidth <= 768)
       {
         rangeInputForGrid = document.querySelector(".wizzy-range-for-grid")[1];
