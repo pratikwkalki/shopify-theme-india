@@ -202,7 +202,7 @@ a[data-slide-id].mz-thumb-selected img {
                    data-zoom-id="zoom{{ product.id }}" 
                    href="{%- render 'gumlet', src: gm_vide_preview_image w: 1920 %}"
                    >
-                   <img src="{%- render 'gumlet', src: gm_vide_preview_image w: 1000 %}"
+                   <img src="{%- render 'gumlet', src: gm_vide_preview_image w: 1920 %}"
                      alt="custom video"
                     >
                  </a>
@@ -214,7 +214,7 @@ a[data-slide-id].mz-thumb-selected img {
                    href="{%- render 'gumlet', src: gm_preview_image w: 1920 %}" 
                    {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{%- render 'gumlet', src: gm_preview_image w: 1920 %}"{% endif %}
                    data-zoom-id="zoom{{ product.id }}" 
-                   data-image="{%- render 'gumlet', src: gm_preview_image w: 1000 %}" 
+                   data-image="{%- render 'gumlet', src: gm_preview_image w: 1920 %}" 
               {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'gumlet', src: gm_preview_image w: 1920 %}" {% endif %}
                    title="{{ image.alt | escape }}">
                         <img  
