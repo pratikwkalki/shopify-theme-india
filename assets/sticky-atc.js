@@ -276,6 +276,7 @@ function mobileStickyVar() {
           addToCart()
         }
         if (inputChecked == false) {
+          console.log('ctabtnwrapper cllick')
           ctabtnwrapper.click();
         }
         if (productForm.classList.contains('sticky-variable')) {
