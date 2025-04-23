@@ -255,6 +255,7 @@ function mobileStickyVar() {
       });
       
       stickAddToCartBtn.addEventListener('click', () => {
+        console.log('ctabtnwrapper cllick main')
         if (!popupTriggre && !checkVisibilityButton) {
           return;
         }
