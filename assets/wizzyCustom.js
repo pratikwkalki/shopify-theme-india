@@ -86,11 +86,11 @@ window.onWizzyScriptLoaded = function () {
         handleRangeInputValueChange(4);
       }
 
-      if(window.innerWidth <= 768)
-      {
-        rangeInputForGrid.value = 3;
-         handleRangeInputValueChange(3);
-      }
+      // if(window.innerWidth <= 768)
+      // {
+      //   rangeInputForGrid.value = 3;
+      //    handleRangeInputValueChange(3);
+      // }
 
       return payload;
     }
