@@ -87,7 +87,8 @@ variant-selects {
   z-index: -1;
   border-radius: var(--variant-pills-radius);
   box-shadow: var(--variant-pills-shadow-horizontal-offset) var(--variant-pills-shadow-vertical-offset)
-    var(--variant-pills-shadow-blur-radius) rgba(var(--color-shadow), var(--variant-pills-shadow-opacity));
+  var(--variant-pills-shadow-blur-radius) rgba(var(--color-shadow), var(--variant-pills-shadow-opacity));
+  pointer-events: none;
 }
 
 .product-form__input--pill input[type='radio'] + label:hover {
