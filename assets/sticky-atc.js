@@ -255,11 +255,11 @@ function mobileStickyVar() {
       });
       
       stickAddToCartBtn.addEventListener('click', () => {
-        checkInputs();
         console.log('ctabtnwrapper cllick main')
         if (!popupTriggre && !checkVisibilityButton) {
           return;
         }
+        checkInputs();
         const Stitched = document.querySelector('.options-header.Stitched')
         const Mod = document.querySelector('.options-header[class*="Conf Size Options"]')
         if (Stitched && !productForm.classList.contains('sticky-variable')) {
@@ -271,13 +271,13 @@ function mobileStickyVar() {
         if (Mod && !productForm.classList.contains('sticky-variable')) {
           openVariablePopup();
           addToCart()
+        } else {
+          ctabtnwrapper.click();
         }
         if (inputChecked || ctabtnwrapper.classList.contains('unavailable-variant')) {
           openVariablePopup();
           addToCart()
-        }
-        if (inputChecked == false) {
-          console.log('ctabtnwrapper cllick')
+        } else {
           ctabtnwrapper.click();
         }
         if (productForm.classList.contains('sticky-variable')) {
