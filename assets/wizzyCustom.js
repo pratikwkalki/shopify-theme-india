@@ -11,17 +11,17 @@ window.onWizzyScriptLoaded = function () {
         x.classList.remove("wizzy-2-products-in-a-row");
       }
 
-      if (x.classList.contains("wizzy-3-products-in-a-row")) {
-        x.classList.remove("wizzy-3-products-in-a-row");
-      }
-
       if (x.classList.contains("wizzy-4-products-in-a-row")) {
         x.classList.remove("wizzy-4-products-in-a-row");
       }
 
+      if (x.classList.contains("wizzy-6-products-in-a-row")) {
+        x.classList.remove("wizzy-6-products-in-a-row");
+      }
+
       sessionStorage.setItem("wizzy-2-products-in-a-row", false);
-      sessionStorage.setItem("wizzy-3-products-in-a-row", false);
       sessionStorage.setItem("wizzy-4-products-in-a-row", false);
+      sessionStorage.setItem("wizzy-6-products-in-a-row", false);
       x.classList.add("wizzy-" + value + "-products-in-a-row");
       sessionStorage.setItem("wizzy-" + value + "-products-in-a-row", true);
     }
@@ -69,21 +69,21 @@ window.onWizzyScriptLoaded = function () {
         rangeInputForGrid.value = 2;
         handleRangeInputValueChange(2);
       } else if (
-        sessionStorage.getItem("wizzy-3-products-in-a-row") === "true" &&
-        rangeInputForGrid != null &&
-        typeof rangeInputForGrid != "undefined"
-      ) {
-        console.log("3 products in a row");
-        rangeInputForGrid.value = 3;
-        handleRangeInputValueChange(3);
-      } else if (
         sessionStorage.getItem("wizzy-4-products-in-a-row") === "true" &&
         rangeInputForGrid != null &&
         typeof rangeInputForGrid != "undefined"
       ) {
-        console.log("4 products in a row");
+        console.log("3 products in a row");
         rangeInputForGrid.value = 4;
         handleRangeInputValueChange(4);
+      } else if (
+        sessionStorage.getItem("wizzy-6-products-in-a-row") === "true" &&
+        rangeInputForGrid != null &&
+        typeof rangeInputForGrid != "undefined"
+      ) {
+        console.log("4 products in a row");
+        rangeInputForGrid.value = 6;
+        handleRangeInputValueChange(6);
       }
 
       // if(window.innerWidth <= 768)
