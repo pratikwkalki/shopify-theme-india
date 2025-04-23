@@ -275,10 +275,6 @@ function mobileStickyVar() {
           openVariablePopup();
           addToCart()
         }
-        if (inputChecked == false) {
-          console.log('ctabtnwrapper', ctabtnwrapper)
-          ctabtnwrapper.click();
-        }
         if (productForm.classList.contains('sticky-variable')) {
           var errorDiv = document.querySelector('.product-form__error-message-wrapper');
           var checkVisibility = setInterval(function() {
