@@ -67,19 +67,19 @@ window.onWizzyScriptLoaded = function () {
         rangeInputForGrid.value = 2;
         handleRangeInputValueChange(2);
       } else if (
+        sessionStorage.getItem("wizzy-3-products-in-a-row") === "true" &&
+        rangeInputForGrid != null &&
+        typeof rangeInputForGrid != "undefined"
+      ) {
+        rangeInputForGrid.value = 3;
+        handleRangeInputValueChange(3);
+      } else if (
         sessionStorage.getItem("wizzy-4-products-in-a-row") === "true" &&
         rangeInputForGrid != null &&
         typeof rangeInputForGrid != "undefined"
       ) {
         rangeInputForGrid.value = 4;
         handleRangeInputValueChange(4);
-      } else if (
-        sessionStorage.getItem("wizzy-6-products-in-a-row") === "true" &&
-        rangeInputForGrid != null &&
-        typeof rangeInputForGrid != "undefined"
-      ) {
-        rangeInputForGrid.value = 6;
-        handleRangeInputValueChange(6);
       }
 
       return payload;
