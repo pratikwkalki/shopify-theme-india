@@ -184,9 +184,7 @@
               {% unless  value contains 'Months' or value contains 'Years' %}                
                   <p class="size-detail__text">*units in inches</p>              
               {% endunless  %}
-            {% for link in left_menu.links  %}
-              {%- if forloop.first and request.path contains "/collections/men" -%} wewr {%- endif -%}
-            {%- endfor -%}
+            
             </div>
           {%- endif -%}
         {%- endfor -%}
