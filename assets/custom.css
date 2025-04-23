@@ -6537,6 +6537,9 @@ body.template-product:has(.is-only-wishlist) .sticky-addtocart-button {
 .tagalys-similar-products #tagalys-namespace.tagalys-namespace .widget .products-and-navigation {
     padding-right: 0;
 }
+.tagalys-similar-products #tagalys-namespace.tagalys-namespace .widget .carousel-actions-container .carousel-btn:first-child{
+      transform: rotate(-0deg);
+}
 .tagalys-similar-products #tagalys-namespace.tagalys-namespace .widget .carousel-actions-container {
     position: static;
 }

@@ -209,7 +209,7 @@
               if (variantDeliveryDays) {
                 setDeliveryTime(variantDeliveryDays, form, deliveryTimeWrapper);
                 document.querySelector(".additional_delivery_massage_text").classList.remove("hidden");
-                document.querySelector(".additional_delivery_massage_text").innerHTML = "Est. Delivery by" + deliveryTimeWrapper.innerHTML;
+                document.querySelector(".additional_delivery_massage_text").innerHTML = "Est. Delivery by " + deliveryTimeWrapper.innerHTML;
               } else {
                 const deliveryWrapper = document.querySelector('[js-delivery-wrapper]');
                 const extraDeliveryDays = deliveryWrapper.querySelector('[js-additional-delivery-day]');
@@ -232,7 +232,7 @@
                   } else {
                     setDeliveryTime(additionalMtoDays, form, deliveryTimeWrapper);                    
                     document.querySelector(".additional_delivery_massage_text").classList.remove("hidden");
-                    document.querySelector(".additional_delivery_massage_text").innerHTML = "Est. Delivery by" + deliveryTimeWrapper.innerHTML;
+                    document.querySelector(".additional_delivery_massage_text").innerHTML = "Est. Delivery by " + deliveryTimeWrapper.innerHTML;
                   }
                 } else {
                   if ('{{ mto }}' === 'yes') {
@@ -243,12 +243,12 @@
                     } else {
                       setDeliveryTime(rtsDeliveryDays, form, deliveryTimeWrapper);
                       document.querySelector(".additional_delivery_massage_text").classList.remove("hidden");
-                      document.querySelector(".additional_delivery_massage_text").innerHTML = "Est. Delivery by" + deliveryTimeWrapper.innerHTML;
+                      document.querySelector(".additional_delivery_massage_text").innerHTML = "Est. Delivery by " + deliveryTimeWrapper.innerHTML;
                     }
                   } else {
                     setDeliveryTime(mtoDays, form, deliveryTimeWrapper);
                     document.querySelector(".additional_delivery_massage_text").classList.remove("hidden");
-                    document.querySelector(".additional_delivery_massage_text").innerHTML = "Est. Delivery by" + deliveryTimeWrapper.innerHTML;
+                    document.querySelector(".additional_delivery_massage_text").innerHTML = "Est. Delivery by " + deliveryTimeWrapper.innerHTML;
                   }
                 }
                 let varValue = option.childNodes[0].nodeValue.trim();
@@ -295,7 +295,7 @@
                 currentDays += parseInt(extraDeliveryDays.dataset.value);
                 setDeliveryTime(currentDays, form, deliveryTimeWrapper);
                 document.querySelector(".additional_delivery_massage_text").classList.remove("hidden");
-                document.querySelector(".additional_delivery_massage_text").innerHTML = "Est. Delivery by" + deliveryTimeWrapper.innerHTML;
+                document.querySelector(".additional_delivery_massage_text").innerHTML = "Est. Delivery by " + deliveryTimeWrapper.innerHTML;
                 
                 const options = form.querySelectorAll('[js-variant-delivery-option]');
                 const colletionRrtsDays = parseInt(form.querySelector('[colletion_rts_days]').getAttribute('colletion_rts_days'));
@@ -337,7 +337,7 @@
                   }
                   setDeliveryTime(currentDays, form, deliveryTimeWrapper);
                   document.querySelector(".additional_delivery_massage_text").classList.remove("hidden");
-                  document.querySelector(".additional_delivery_massage_text").innerHTML = "Est. Delivery by" + deliveryTimeWrapper.innerHTML;
+                  document.querySelector(".additional_delivery_massage_text").innerHTML = "Est. Delivery by " + deliveryTimeWrapper.innerHTML;
                 }
               }
             });
