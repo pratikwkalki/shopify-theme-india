@@ -57,7 +57,7 @@ window.onWizzyScriptLoaded = function () {
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.PRODUCTS_RESULTS_RENDERED,
     function (payload) {
-      $("html").removeClass("filtersOpend");
+      // $("html").removeClass("filtersOpend");
       const rangeInputForGrid = document.querySelector(".wizzy-range-for-grid");
       return (
         sessionStorage.getItem("wizzy-1-products-in-a-row") === "true" &&
