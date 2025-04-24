@@ -694,10 +694,12 @@ window.onWizzyScriptLoaded = function () {
 
       document.addEventListener("click", function(e) {
         if (!e.target.closest('.filters-list-top-values-wrapper .wizzy-facet-body')) {
+          console.log("Youn clicked something");
           let facets = document.querySelectorAll('.wizzy-search-filters-list-top .wizzy-filters-facet-block');
           facets.forEach((facet) => {
             let head = facet.querySelector('.wizzy-facet-head');
             if (head && head.hasAttribute('active')) {
+              console.log("There is active attribute");
               head.removeAttribute('active');
             }
           });
