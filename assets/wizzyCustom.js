@@ -693,7 +693,7 @@ window.onWizzyScriptLoaded = function () {
         });
 
       document.addEventListener("click", function(e) {
-        if (!e.target.closest('.filters-list-top-values-wrapper .wizzy-facet-body')) {
+        if (!e.target.closest('.filters-list-top-values-wrapper .wizzy-facet-body') && !(e.target.closest('.wizzy-search-filters-list-top .wizzy-facet-head'))) {
           console.log("Youn clicked something");
           let facets = document.querySelectorAll('.wizzy-search-filters-list-top .wizzy-filters-facet-block');
           facets.forEach((facet) => {
