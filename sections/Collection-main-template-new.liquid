@@ -26,6 +26,7 @@
                     <span itemprop="name">{{ relatedCollection.title }}</span>
                   </a>
                   <meta itemprop="position" content="{{ breadcrumb_position }}">
+                  {%- assign breadcrumb_position = breadcrumb_position | plus: 1 -%}
                 </li>
               {% endfor %}
             {% else %}
