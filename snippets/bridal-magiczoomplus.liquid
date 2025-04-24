@@ -103,7 +103,7 @@ a[data-slide-id].mz-thumb-selected img {
     {% assign mt_featured_image = mt_current_variant.featured_media | default: product.featured_media %}
     {% assign mt_featured_image_ = '' %}
     {% assign first_image_is_video = false %}
-    {% assign addActiveClass = true %}
+    {% assign addActiveClass = false %}
 
     {% assign ScrollOrientation = 'vertical' %}
     {% if MagicToolboxThumbnailsLayout == 'bottom' %}
