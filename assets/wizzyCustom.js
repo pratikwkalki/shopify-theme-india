@@ -837,8 +837,8 @@ window.wizzyConfig.events.registerEvent(
       });
 
       const selectedList = document.querySelector(".wizzy-selected-facet-list");
-      const targetDiv1 = document.querySelector(".wizzy-facet-list-block"); // Replace if needed
-      const targetDiv2 = document.querySelectorAll(".wizzy-facet-body"); // Replace if needed
+      const targetDiv1 = document.querySelector(".wizzy-facet-list-block");
+      const targetDiv2 = document.querySelectorAll(".wizzy-facet-body"); 
       let title = document.querySelector(".applied-filters-header");
       if (selectedList && selectedList.querySelectorAll("li").length > 0) {
         console.log("Inside divs");
