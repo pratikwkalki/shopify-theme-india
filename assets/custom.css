@@ -1952,7 +1952,7 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
 .Page_store_detail_objects_detail_2_mainleft_new{width:calc(100% - 284px); padding-right:20px;}
 .Page_store_detail_objects_detail_2_innerleft_new{max-width:450px;}
 .Page_store_detail_objects_detail_2_innerleft_title_new{ margin-bottom:0; }
-.Page_store_detail_objects_detail_2_innerleft_title_new h2{ color:#000; line-height:133.333%; text-align:left;}
+.Page_store_detail_objects_detail_2_innerleft_title_new h1, .Page_store_detail_objects_detail_2_innerleft_title_new h2{ color:#000; line-height:133.333%; text-align:left;}
 .Page_store_detail_objects_detail_2_innerleft_details_new{ margin-top:20px; }
 .Page_store_detail_objects_detail_2_innerleft_details_in_new{color:#262433; font-size:16px; line-height:138%; margin-top:8px; }
 .Page_store_detail_objects_detail_2_innerleft_details_in_new a{ color:#262433; text-decoration:none; }
@@ -4117,7 +4117,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   .Page_store_detail_objects_detail_2_mainleft_new{width:100%; padding-right:0px;}
   .Page_store_detail_objects_detail_2_innerleft_new{max-width:100%;}
   .Page_store_detail_objects_detail_2_innerleft_title_new{margin-bottom:18px;}
-  .Page_store_detail_objects_detail_2_innerleft_title_new h2{font-size:20px;}
+  .Page_store_detail_objects_detail_2_innerleft_title_new h1, .Page_store_detail_objects_detail_2_innerleft_title_new h2{font-size:20px;}
   .Page_store_detail_objects_detail_2_innerleft_details_new { margin-top: 18px; }
   .Page_store_detail_objects_detail_2_innerleft_details_in_new{font-size:14px; line-height:150%;}
   .Page_store_detail_objects_detail_2_innerleft_bothbutton_new{padding-top:20px; grid-gap:0 12px;}
