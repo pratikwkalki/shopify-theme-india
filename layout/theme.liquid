@@ -68,6 +68,41 @@
             ]
         }
       </script>
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "OnlineBusiness",
+          "@id": "{{ request.origin | append: page.url | json }}",
+          "name": "KALKI FASHION",
+          "areaServed": "IN",
+          "description": "Shop Indian traditional dress for women, men & kids at KALKI Fashion. Find Indian wedding wear & festive styles with KALKI’s custom fitting, free shipping & easy returns across India.",
+          "email": " info@kalkifashion.com",
+          "logo": "https://kalki.gumlet.io/cdn/shop/files/kalki-logo.svg?w=180&",
+          "image": [
+            "Image url",
+            "Image url"
+          ],
+          "telephone": "+91 (22) 4890 0416",
+          "url": "{{ request.origin | append: page.url | json }}",
+          "slogan": "-",
+          "availableLanguage": ["English"],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "-",
+            "addressLocality": "Mumbai",
+            "addressRegion": "MH",
+            "postalCode": "-",
+            "addressCountry": "IN"
+          },
+          "sameAs": [
+            "https://www.facebook.com/kalkifashion",
+            "https://www.instagram.com/kalkifashion",
+            "https://www.youtube.com/kalkifashion"
+            "https://www.pinterest.com/kalkifashion",
+            "https://twitter.com/kalkifashion"
+          ]
+        }
+      </script>
     {% endif %}
     {%- if template.name == 'index' -%}
       {% assign potential_action_target = request.origin
