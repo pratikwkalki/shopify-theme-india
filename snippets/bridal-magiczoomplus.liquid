@@ -103,7 +103,7 @@ a[data-slide-id].mz-thumb-selected img {
     {% assign mt_featured_image = mt_current_variant.featured_media | default: product.featured_media %}
     {% assign mt_featured_image_ = '' %}
     {% assign first_image_is_video = false %}
-    {% assign addActiveClass = false %}
+    {% assign addActiveClass = true %}
 
     {% assign ScrollOrientation = 'vertical' %}
     {% if MagicToolboxThumbnailsLayout == 'bottom' %}
@@ -261,7 +261,7 @@ a[data-slide-id].mz-thumb-selected img {
 
 
            {%- if forloop.index == 3 and product.metafields.custom.gumlet_video_url != blank -%}
-                <div js-remove-on-mobile data-slide-num="2" data-slide-id="zoom" class="MagicToolboxSlide">
+                <div js-remove-on-mobile data-slide-num="2" data-slide-id="zoom" class="MagicToolboxSlide active-magic-slide">
                  <a class="MagicZoomPlus"> 
                    <div class="custom-bridal-video">
                     <iframe 
