@@ -653,12 +653,29 @@
             {% endfor %}
           ]
         }
-        </script>
+      </script>
+    {% endif %}
+    {% if product.handle contains 'jumpsuits' %}
+      <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "ItemList",
+          "itemListElement": [
+        	{% for product in collection.products %}
+        	{
+          	"@type": "ListItem",
+          	"position": {{ forloop.index }},
+          	"name": "{{ product.title | escape }}",
+          	"url": "{{ product.url | within: collection }}"
+        	}{% unless forloop.last %},{% endunless %}
+        	{% endfor %}
+          ]
+        }
+      </script>
     {% endif %}
   </head>
 
   <body 
-    {{ collection.handle }}
     class="
       gradient {{ page.title | handleize }}_page_new template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template--{{ template.suffix }} {% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}
       {% if collection.metafields.custom.hide_announcement_bar == true %} collection_hide_announcement_bar_new {% endif %} {% if collection.metafields.custom.header_transparent == true %}header-init-state-enable collection_header_transparent_new {% endif %} {% if collection.metafields.custom.collection_full_width == true %} collection_full_width_new {% endif %}
