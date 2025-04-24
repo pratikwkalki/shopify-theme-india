@@ -419,9 +419,11 @@
 .size-chart .product-form__input--pill input[type=radio]:disabled+label, .size-chart .product-form__input--pill input[type=radio].disabled+label {
     pointer-events: none;
 }
-.product-custom .product-form .product-form__input .product-form__input_wrap:hover .size-detail-wrap {
-    opacity: 1;
-    visibility: visible;
+@media (hover: hover) and (pointer: fine) {
+  .product-custom .product-form .product-form__input .product-form__input_wrap:hover .size-detail-wrap {
+      opacity: 1;
+      visibility: visible;
+  }
 }
 @media only screen and (min-width: 768px) {
   .size-chart .hide-desktop {
