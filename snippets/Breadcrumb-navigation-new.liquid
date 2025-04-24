@@ -117,7 +117,11 @@
         {%- endif -%}
           <li class="breadcrumbs__item">
             <span class="breadcrumbs__link" aria-current="page">
-            {{ page_title }}
+              {% if template.name contains 'our_stores' and metaobject.title.value != blank %}
+               {{ metaobject.title.value }}
+              {% else %}
+                {{ page_title }}
+              {% endif %}
             </span>
           </li>
       {%- endcase -%}
