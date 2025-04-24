@@ -595,11 +595,6 @@ if (SirvProductSKU == '') {
       }
     }
     {% if MagicToolboxMobileThumbnais == 'bullets' %}
-      document.querySelectorAll('[js-remove-on-mobile]')?.forEach(removeImage => {
-        if(removeImage) {
-          removeImage.remove();
-        }
-      })
       var $c = document.querySelector('.MagicToolboxSelectorsContainer');
       $c.setAttribute('class', $c.getAttribute('class') + ' no-magic-scroll');
       if ($scroll) {
