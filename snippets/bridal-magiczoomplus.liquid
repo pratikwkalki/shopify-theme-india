@@ -608,8 +608,8 @@ if (SirvProductSKU == '') {
     {% endif %}
       // Only keep 'mz-thumb-selected' and 'active-magic-selector' on the first matching element
       const thumbs = $scroll.querySelectorAll('.mz-thumb-selected.active-magic-selector');
+        console.log('test 2', thumbs);
       thumbs.forEach((el, index) => {
-        console.log('test 2');
         if (index > 0) {
           el.classList.remove('mz-thumb-selected', 'active-magic-selector');
         }
