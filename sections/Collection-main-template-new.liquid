@@ -77,7 +77,7 @@
                     {%- assign child_title_upper = child_link.title | upcase -%}
                     {%- unless child_title_upper contains 'STYLE' or child_title_upper contains 'OCCASION' or child_title_upper contains 'COLLECTION' or child_title_upper contains 'QUICK' or child_title_upper contains 'COLOR' or child_title_upper contains 'RELATION' or child_title_upper contains 'SHOPPER' or child_title_upper contains 'DISCOUNT' -%}
                       {%- if child_link -%}
-                        <li class="breadcrumbs__item" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
+                        <li class="breadcrumbs__item testi" itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
                           <a href="{{ child_link.url }}" class="breadcrumbs__link" itemscope itemtype="https://schema.org/WebPage" itemid="{{ child_link.url }}" itemprop="item">
                             <span itemprop="name">{{ child_link.title }}</span>
                           </a>
