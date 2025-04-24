@@ -692,6 +692,18 @@ window.onWizzyScriptLoaded = function () {
           });
         });
 
+      document.addEventListener("click", function(e) {
+        if (!e.target.closest('.filters-list-top-values-wrapper .wizzy-facet-body')) {
+          let facets = document.querySelectorAll('.wizzy-search-filters-list-top .wizzy-filters-facet-block');
+          facets.forEach((facet) => {
+            let head = facet.querySelector('.wizzy-facet-head');
+            if (head && head.hasAttribute('active')) {
+              head.removeAttribute('active');
+            }
+          });
+        }
+      });
+
       return data;
     }
   );
