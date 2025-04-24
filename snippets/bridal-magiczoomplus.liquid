@@ -605,6 +605,7 @@ if (SirvProductSKU == '') {
       if ($scroll) {
         $scroll.setAttribute('class', '');
       }
+    {% endif %}
       // Only keep 'mz-thumb-selected' and 'active-magic-selector' on the first matching element
       const thumbs = document.querySelectorAll('.mz-thumb-selected.active-magic-selector');
       thumbs.forEach((el, index) => {
@@ -613,7 +614,6 @@ if (SirvProductSKU == '') {
           el.classList.remove('mz-thumb-selected', 'active-magic-selector');
         }
       });
-    {% endif %}
   }
 {% endif %}
 
