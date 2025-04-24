@@ -701,6 +701,7 @@ window.onWizzyScriptLoaded = function () {
             console.log(head);
             if (head && head.classList.contains('active')) {
               head.classList.remove('active');
+              console.log('Removed active class from', head);
             }
           });
         }
