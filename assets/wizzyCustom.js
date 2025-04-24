@@ -699,9 +699,8 @@ window.onWizzyScriptLoaded = function () {
           facets.forEach((facet) => {
             let head = facet.querySelector('.wizzy-facet-head');
             console.log(head);
-            if (head && head.hasAttribute('active')) {
-              console.log("There is active attribute");
-              head.removeAttribute('active');
+            if (head && head.classList.contains('active')) {
+              head.classList.remove('active');
             }
           });
         }
