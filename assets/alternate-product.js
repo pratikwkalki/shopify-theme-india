@@ -560,3 +560,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+function isMobileDevice() {
+  const userAgent = navigator.userAgent.toLowerCase();
+  return /iphone|ipad|ipod|android|blackberry|windows phone/i.test(userAgent);
+}
+if (isMobileDevice()) {
+  let clickedLabel = false;
+  const labels = document.querySelectorAll('.product-form__input_wrap label');
+  labels.forEach(label => {
+    label.addEventListener('click', function (e) {
+      e.stopPropagation();
+      clickedLabel = true;
+      const tooltip = label.querySelector('.size-detail-wrap');
+      if (!tooltip) return;
+      document.querySelectorAll('.size-detail-wrap').forEach(t => {
+        t.style.visibility = 'hidden';
+        t.style.opacity = '0';
+      });
+      tooltip.style.visibility = 'visible';
+      tooltip.style.opacity = '1';
+    });
+  });
+  document.addEventListener('click', function () {
+    setTimeout(() => {
+      if (clickedLabel) {
+        clickedLabel = false;
+        return;
+      }
+      document.querySelectorAll('.size-detail-wrap').forEach(t => {
+        t.style.visibility = 'hidden';
+        t.style.opacity = '0';
+      });
+    }, 0);
+  });
+}
