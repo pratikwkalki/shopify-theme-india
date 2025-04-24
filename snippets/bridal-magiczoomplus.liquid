@@ -276,7 +276,7 @@ a[data-slide-id].mz-thumb-selected img {
             {%- endif -%}
           
           {% if image.media_type == 'image' %}
-          <div {% if forloop.index > 1 %}js-remove-on-mobile{% endif %} data-slide-num="{{ forloop.index0 }}" data-slide-id="zoom" class="MagicToolboxSlide">
+          <div {% if forloop.index > 1 %}js-remove-on-mobile{% endif %} data-slide-num="{{ forloop.index0 }}" data-slide-id="zoom" class="MagicToolboxSlide {% if first_image_is_video != true %}active-magic-slide{% endif %}">
               {% assign gm_featured_image = image.preview_image  | image_url %}
               <a 
                href="{%- render 'gumlet', src: gm_featured_image w: 1920 %}"
