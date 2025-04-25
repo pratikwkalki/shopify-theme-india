@@ -470,193 +470,58 @@
         });
       });
     </script>
-    {% if product.handle contains 'red-embroidered-jumpsuit-with-belt' %}
+    {% if template.name == 'product' %}
+      {% assign has_reviews = product.reviews_count > 0 %}
       <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Product",
-          "@id": "{{ product.url | append: '/products/' | append: product.handle }}",
-          "name": "{{ product.title }}",
-          "image": [
-            "{{ product.featured_image | img_url: '500x' }}"
-          ],
-          "description": "{{ product.description | escape }}",
-          "url": "{{ product.url | append: '/products/' | append: product.handle }}",
-          "sku": "{{ product.sku }}", 
-          "mpn": "{{ product.mpn }}", 
-          "brand": {
-            "@type": "Brand",
-            "name": "KALKI FASHION",
-            "logo": "https://kalki.gumlet.io/cdn/shop/files/kalki-logo.svg?w=180&"
-          },
-          "offers": {
-            "@type": "Offer",
-            "url": "{{ product.url | append: '/products/' | append: product.handle }}",
-            "priceCurrency": "INR",
-            "price": "{{ product.price | money_without_currency }}",
-            "priceValidUntil": "2030-12-31",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition",
-            "shippingDetails": {
-              "@type": "OfferShippingDetails",
-              "shippingRate": {
-                "@type": "MonetaryAmount",
-                "value": "0",
-                "currency": "INR"
-              },
-              "shippingDestination": {
-                "@type": "DefinedRegion",
-                "addressCountry": "IN"
-              },
-              "deliveryTime": {
-                "@type": "ShippingDeliveryTime",
-                "businessDays": {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": [
-                    "https://schema.org/Monday",
-                    "https://schema.org/Tuesday",
-                    "https://schema.org/Wednesday",
-                    "https://schema.org/Thursday",
-                    "https://schema.org/Friday",
-                    "https://schema.org/Saturday",
-                    "https://schema.org/Sunday"
-                  ]
-                },
-                "handlingTime": {
-                  "@type": "QuantitativeValue",
-                  "minValue": 0,
-                  "maxValue": 0,
-                  "unitCode": "DAY"
-                },
-                "transitTime": {
-                  "@type": "QuantitativeValue",
-                  "minValue": 1,
-                  "maxValue": 7,
-                  "unitCode": "DAY"
-                }
-              }
-            },
-            "hasMerchantReturnPolicy": {
-              "@type": "MerchantReturnPolicy",
-              "applicableCountry": "IN",
-              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-              "merchantReturnDays": 5,
-              "returnMethod": "https://schema.org/ReturnByMail",
-              "returnFees": "https://schema.org/FreeReturn"
-            }
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-              "ratingValue": "{{ product.rating | default: '4.3' }}",
-        	"bestRating": "5",
-        	"worstRating": "1",
-        	"reviewCount": "{{ product.review_count | default: '616' }}"
-          },
-          "review": []
+      {
+        "@context": https://schema.org/,
+        "@type": "Product",
+        "name": "{{ product.title | escape }}",
+        "image": "{{ product.featured_image | product_img_url: 'large' | escape }}",
+        "description": "{{ product.description | strip_html | escape }}",
+        "sku": "{{ product.sku | escape }}",
+        "brand": {
+      	"@type": "Brand",
+      	"name": "{{ product.vendor | escape }}"
+        },
+        "offers": {
+      	"@type": "Offer",
+      	"url": "{{ product.url | escape }}",
+      	"priceCurrency": "{{ shop.currency }}",
+      	"price": "{{ product.price | money_without_currency }}",
+      	"itemCondition": https://schema.org/NewCondition,
+      	"availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
+      	"seller": {
+        	"@type": "Organization",
+        	"name": "{{ shop.name | escape }}"
+      	}
         }
-        </script>
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Product",
-          "@id": "{{ product.url | append: '/products/' | append: product.handle }}",
-          "name": "{{ product.title }}",
-          "image": [
-            "{{ product.featured_image | img_url: '500x' }}"
-          ],
-          "description": "{{ product.description | escape }}",
-          "url": "{{ product.url | append: '/products/' | append: product.handle }}",
-          "sku": "{{ product.sku }}", 
-          "mpn": "{{ product.mpn }}", 
-          "brand": {
-            "@type": "Brand",
-            "name": "KALKI FASHION",
-            "logo": "https://kalki.gumlet.io/cdn/shop/files/kalki-logo.svg?w=180&"
-          },
-          "offers": {
-            "@type": "Offer",
-            "url": "{{ product.url | append: '/products/' | append: product.handle }}",
-            "priceCurrency": "INR",
-            "price": "{{ product.price | money_without_currency }}",
-            "priceValidUntil": "2030-12-31",
-            "availability": "https://schema.org/InStock",
-            "itemCondition": "https://schema.org/NewCondition",
-            "shippingDetails": {
-              "@type": "OfferShippingDetails",
-              "shippingRate": {
-                "@type": "MonetaryAmount",
-                "value": "0",
-                "currency": "INR"
-              },
-              "shippingDestination": {
-                "@type": "DefinedRegion",
-                "addressCountry": "IN"
-              },
-              "deliveryTime": {
-                "@type": "ShippingDeliveryTime",
-                "businessDays": {
-                  "@type": "OpeningHoursSpecification",
-                  "dayOfWeek": [
-                    "https://schema.org/Monday",
-                    "https://schema.org/Tuesday",
-                    "https://schema.org/Wednesday",
-                    "https://schema.org/Thursday",
-                    "https://schema.org/Friday",
-                    "https://schema.org/Saturday",
-                    "https://schema.org/Sunday"
-                  ]
-                },
-                "handlingTime": {
-                  "@type": "QuantitativeValue",
-                  "minValue": 0,
-                  "maxValue": 0,
-                  "unitCode": "DAY"
-                },
-                "transitTime": {
-                  "@type": "QuantitativeValue",
-                  "minValue": 1,
-                  "maxValue": 7,
-                  "unitCode": "DAY"
-                }
-              }
-            },
-            "hasMerchantReturnPolicy": {
-              "@type": "MerchantReturnPolicy",
-              "applicableCountry": "IN",
-              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-              "merchantReturnDays": 5,
-              "returnMethod": "https://schema.org/ReturnByMail",
-              "returnFees": "https://schema.org/FreeReturn"
-            }
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "{{ product.rating | default: '0' }}",
-            "bestRating": "5",
-            "worstRating": "1",
-            "reviewCount": "{{ product.review_count | default: '0' }}"
-          },
-          "review": [
-            {% for review in product.reviews %}
-            {
-              "@type": "Review",
-              "author": "{{ review.author }}",
-              "datePublished": "{{ review.date }}",
-              "description": "{{ review.description }}",
-              "name": "{{ review.title }}",
-              "reviewRating": {
-                "@type": "Rating",
-                "bestRating": "5",
-                "worstRating": "1",
-                "ratingValue": "{{ review.rating }}"
-              }
-            }{% if forloop.last == false %},{% endif %}
-            {% endfor %}
-          ]
-        }
+        {% if has_reviews %}
+        ,
+        "aggregateRating": {
+      	"@type": "AggregateRating",
+      	"ratingValue": "{{ product.reviews_rating | default: '0' }}",
+      	"reviewCount": "{{ product.reviews_count }}"
+        },
+        "review": [
+      	{% for review in product.reviews %}
+      	{
+        	"@type": "Review",
+        	"author": "{{ review.author }}",
+        	"datePublished": "{{ review.date | date: '%Y-%m-%d' }}",
+        	"reviewBody": "{{ review.body | strip_html | escape }}",
+        	"reviewRating": {
+          	"@type": "Rating",
+          	"ratingValue": "{{ review.rating }}"
+        	}
+      	}{% if forloop.last == false %},{% endif %}
+      	{% endfor %}
+        ]
+        {% endif %}
+      }
       </script>
     {% endif %}
-    {% if collection.handle contains 'jumpsuits' %}
+    {%- if template.name == 'collection' -%}
       <script type="application/ld+json">
         {
           "@context": "http://schema.org",
