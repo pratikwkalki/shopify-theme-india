@@ -23,12 +23,12 @@
   box-sizing: border-box;
 }
 
-.swiper {
+#wizzyFeaturedViewRoot .swiper {
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide {
+#wizzyFeaturedViewRoot .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -37,16 +37,16 @@
   align-items: center;
 }
 
-.swiper-slide img {
+#wizzyFeaturedViewRoot .swiper-slide img {
   display: block;
   width: 100%;
 }
 
-.swiper-pagination {
+#wizzyFeaturedViewRoot .swiper-pagination {
   text-align: left;
 }
 
-.swiper-pagination-fraction {
+#wizzyFeaturedViewRoot .swiper-pagination-fraction {
   top: 15px !important;
   left: 15px !important;
   bottom: unset !important;
@@ -80,22 +80,24 @@
   }
 }
 
-.shake {
+#wizzyFeaturedViewRoot .shake {
   animation: shake 0.2s ease-in-out;
 }
 
-#carouselRoot .swiper {
+#wizzyFeaturedViewRoot #carouselRoot .swiper {
   overflow: unset !important;
 }
 
-#carouselRoot {
+#wizzyFeaturedViewRoot #carouselRoot {
   width: 100vw;
   height: 375px;
   padding: 30px 0px;
   overflow: hidden;
 }
 
-.swiper-slide-active .wizzy__featuredview__carouselProductContainer__vlelk {
+#wizzyFeaturedViewRoot
+  .swiper-slide-active
+  .wizzy__featuredview__carouselProductContainer__vlelk {
   height: 100%;
   -webkit-animation-direction: linear;
   animation-direction: linear;
@@ -103,7 +105,9 @@
   animation-duration: 0.2s;
 }
 
-.swiper-slide-active .wizzy__featuredview__carouselProductContainer__vlelk {
+#wizzyFeaturedViewRoot
+  .swiper-slide-active
+  .wizzy__featuredview__carouselProductContainer__vlelk {
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-name: wizzyEventTileScaleOut;
