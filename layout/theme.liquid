@@ -470,25 +470,6 @@
         });
       });
     </script>
-    
-    {%- if template.name == 'collection' -%}
-      <script type="application/ld+json">
-        {
-          "@context": "http://schema.org",
-          "@type": "ItemList",
-          "itemListElement": [
-        	{% for product in collection.products %}
-        	{
-          	"@type": "ListItem",
-          	"position": {{ forloop.index }},
-          	"name": "{{ product.title | escape }}",
-          	"url": "{{ product.url | within: collection }}"
-        	}{% unless forloop.last %},{% endunless %}
-        	{% endfor %}
-          ]
-        }
-      </script>
-    {% endif %}
   </head>
 
   <body 
