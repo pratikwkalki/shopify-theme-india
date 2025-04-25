@@ -4663,6 +4663,36 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   
 }
 
+@media(max-width: 749px) {
+    .Collection_sides_by_sides_mainright_new{width: 250px;}
+  .Collection_sides_by_sides_innerleft_1_videoimageboth_new,.Collection_sides_by_sides_innerright_1_videoimageboth_new{height: 272px;}
+}
+@media(max-width: 630px) {
+    .Collection_sides_by_sides_mainright_new{width: 180px;}
+  .Collection_sides_by_sides_innerleft_1_videoimageboth_new,.Collection_sides_by_sides_innerright_1_videoimageboth_new{height: 272px;}
+}
+
+@media(max-width: 541px){
+  .Collection_sides_by_sides_mainleft_new{width:100%; padding-right:0px;}           
+  .Collection_sides_by_sides_mainright_new{width: 100%; margin:17px 0 0 0; }
+  .SquareBanner_image_new{ display:none !important; }
+.SquareBanner_mobile_image_new{ display:flex !important; }
+  .Collection_sides_by_sides_leftrightboth_new{display:block;}
+  .Collection_sides_by_sides_innerleft_1_videoimageboth_new, .Collection_sides_by_sides_innerright_1_videoimageboth_new {
+        height: 592px;
+    }
+}
+@media(max-width: 541px){
+  .Collection_sides_by_sides_innerleft_1_videoimageboth_new, .Collection_sides_by_sides_innerright_1_videoimageboth_new {
+        height:500px;
+    }
+}
+@media(max-width: 375px){
+  .Collection_sides_by_sides_innerleft_1_videoimageboth_new, .Collection_sides_by_sides_innerright_1_videoimageboth_new {
+        height:400px;
+    }
+}
+
 @media(min-width:750px) and (max-width:989px){
   .page-width { padding: 0 16px!important; }
   .Common_title_new{margin-bottom:25px;}
