@@ -19,13 +19,13 @@
                               {%- if columns.plp_footer_explore_more_banners.value != blank -%}
                                {% assign ImagesMain = columns  | image_url %}
                                 <div class="Collection_object_banners_innerloop_innerbox_videoimage_new">
-                                  {{
-                                    columns.plp_footer_explore_more_banners.value | 
-                                    image_url: width: img.width | 
-                                    image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                    fetchpriority: 'auto', 
-                                    class:'Hover_image_new'
-                                  }}
+                                  
+                                <picture>
+                                <source srcset="{%- render 'gumlet', src: ImagesMain w: 120 %}" media="(max-width: 380px)" />
+                                <source srcset="{%- render 'gumlet', src: ImagesMain w: 160 %}" media="(max-width: 500px)" />
+                                <source srcset="{%- render 'gumlet', src: ImagesMain w: 240 %}" media="(max-width: 749px)" />
+                                <img class="Hover_image_new" src="{%- render 'gumlet', src: ImagesMain w: 380 %}" alt="{{ Images.alt }}" loading="eager" width="346" height="461" />
+                              </picture>
                                 </div>
                               {%- endif -%}  
                             </div>
