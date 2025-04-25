@@ -390,8 +390,7 @@
                       </div>
                     {%- endif -%} 
                 {%- endif -%}
-                {%- assign first_variant = product.variants.first -%}
-                {%- if product.available or first_variant.inventory_policy == 'continue' -%}
+                {%- if product.available or product.variant.inventory_policy == 'continue' -%}
                   <li
                     class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                     {% if settings.animations_reveal_on_scroll %}
