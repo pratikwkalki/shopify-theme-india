@@ -169,7 +169,9 @@
    {% render 'meta-tags' %}
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    <script src="{{ 'dynamic.js' | asset_url }}" defer="defer"></script>
+    {% if template.name == 'product' %}
+      <script src="{{ 'dynamic.js' | asset_url }}" defer="defer"></script>
+    {% endif %}
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
@@ -444,6 +446,7 @@
       {% unless magic_headers contains 'Liquid error' %}{{ magic_headers }}{% endunless %}
       <script src="{{ 'recentview.product.min.js' | asset_url }}" defer="defer"></script>
       <script src="{{ 'custom-templates.js' | asset_url }}" defer="defer"></script>
+      <script src="{{ 'optiscroll.js' | asset_url }}" defer="defer"></script>
     {% endif %}
     {{ 'product-delivery-days.css' | asset_url | stylesheet_tag: preload: false }}
     
