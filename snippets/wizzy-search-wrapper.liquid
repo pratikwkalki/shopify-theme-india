@@ -1,4 +1,66 @@
 <script type="text/template" id="wizzy-search-wrapper" wizzy-override>
+   <div id="wizzyFeaturedViewRoot"></div>
+     <style>
+       .wizzyFeaturedViewRendered #wizzyFeaturedViewRoot {
+           height: 100%;
+           position: fixed;
+           width: 100vw;
+           top: 0;
+           left: 0;
+           z-index: 999;
+         }
+
+       body.wizzyFeaturedViewRendered section:has(#wizzyFeaturedViewRoot) {
+         position:static !important;
+       }
+
+       #init-wizzy-featured-view-button{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           width: 100%;
+           padding: 15px;
+           border: 1px solid black;
+           border-radius: 20px;
+           margin: 22px 0px 10px 0px;
+           -webkit-tap-highlight-color: transparent;
+       }
+
+       #init-wizzy-featured-view-button img{
+         margin-right:10px;
+       }
+
+
+       .wizzyFeaturedViewRendered #init-wizzy-featured-view-button{
+         pointer-events: none;
+       }
+
+        #{{ init-wizzy-featured-view-button }}.d-none{
+         display:none;
+       }
+
+       .wizzy-featuredview-position-sticky{
+         position:sticky;
+         top: calc(10px +  {{ block.settings.sticky_offset }}px)
+       }
+
+       @media screen and (min-width: 768px) {
+           #init-wizzy-featured-view-button{
+           display:none;
+         }
+       }
+     </style>
+     {% comment %} below button is for Featured view {% endcomment %}
+     <button id="init-wizzy-featured-view-button" class="d-none">
+       <img
+         src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTIyLjE0IDEyMi44OCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTIyLjE0IDEyMi44OCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGc+PHBhdGggZD0iTTM1LjE0LDBIODdjOS42NSwwLDE4LjQzLDMuOTYsMjQuOCwxMC4zMmM2LjM4LDYuMzcsMTAuMzQsMTUuMTYsMTAuMzQsMjQuODJ2NTIuNjFjMCw5LjY0LTMuOTYsMTguNDItMTAuMzIsMjQuNzkgbC0wLjAyLDAuMDJjLTYuMzgsNi4zNy0xNS4xNiwxMC4zMi0yNC43OSwxMC4zMkgzNS4xNGMtOS42NiwwLTE4LjQ1LTMuOTYtMjQuODItMTAuMzJsLTAuMjQtMC4yN0MzLjg2LDEwNS45NSwwLDk3LjI3LDAsODcuNzQgVjM1LjE0YzAtOS42NywzLjk1LTE4LjQ1LDEwLjMyLTI0LjgyUzI1LjQ3LDAsMzUuMTQsMEwzNS4xNCwweiBNOTEuNTEsMzEuMDJsMC4wNywwLjExaDIxLjZjLTAuODctNS42OC0zLjU4LTEwLjc4LTcuNDgtMTQuNjkgQzEwMC45LDExLjY0LDk0LjI4LDguNjYsODcsOC42NmgtOC44N0w5MS41MSwzMS4wMkw5MS41MSwzMS4wMnogTTgxLjUyLDMxLjEzTDY4LjA3LDguNjZIMzguNTdsMTMuNjEsMjIuNDdIODEuNTJMODEuNTIsMzEuMTN6IE00Mi4xMSwzMS4xM0wyOC45NSw5LjM5Yy00LjgxLDEuMTYtOS4xMiwzLjY1LTEyLjUxLDcuMDVjLTMuOSwzLjktNi42LDkuMDEtNy40OCwxNC42OUg0Mi4xMUw0Mi4xMSwzMS4xM3ogTTExMy40OCwzOS43OUg4LjY2IHY0Ny45NmMwLDcuMTcsMi44OSwxMy43LDcuNTYsMTguNDhsMC4yMiwwLjIxYzQuOCw0LjgsMTEuNDMsNy43OSwxOC43LDcuNzlIODdjNy4yOCwwLDEzLjktMi45OCwxOC42OS03Ljc3bDAuMDItMC4wMiBjNC43OS00Ljc5LDcuNzctMTEuNDEsNy43Ny0xOC42OVYzOS43OUwxMTMuNDgsMzkuNzl6IE01MC45NSw1NC45NWwyNi44MywxNy40NWMwLjQzLDAuMjgsMC44MiwwLjY0LDEuMTMsMS4wOCBjMS4yMiwxLjc3LDAuNzcsNC4yLTEsNS40Mkw1MS4xOSw5NC42N2MtMC42NywwLjU1LTEuNTMsMC44OC0yLjQ4LDAuODhjLTIuMTYsMC0zLjkxLTEuNzUtMy45MS0zLjkxVjU4LjE1aDAuMDIgYzAtMC43NywwLjIzLTEuNTUsMC43LTIuMjNDNDYuNzYsNTQuMTUsNDkuMTksNTMuNzIsNTAuOTUsNTQuOTVMNTAuOTUsNTQuOTVMNTAuOTUsNTQuOTV6Ii8+PC9nPjwvc3ZnPg=="
+         width="20"
+         height="20"
+         loading="lazy"
+       >
+
+       <span>Explore Products in Story View</span>
+     </button>
   <div class="wizzy-search-wrapper [[#inOnCategoryPage]]wizzy-category-page[[/inOnCategoryPage]] [[#displayTileView]]display-tile-view[[/displayTileView]]
   [[#hasFacets]]has-facets[[/hasFacets]]
   [[#hasToDisplayFiltersAtTop]]has-filters-button-at-top[[/hasToDisplayFiltersAtTop]]
