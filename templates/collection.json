@@ -181,6 +181,15 @@
         "main_background_color": "#ffffff",
         "main_heading_text": "Explore More"
       }
+    },
+    "plp_footer_explore_more_7r66nN": {
+      "type": "PLP-footer-explore-more",
+      "name": "PLP Footer explore more",
+      "settings": {
+        "customClass": "",
+        "main_background_color": "#FFFFFF",
+        "main_heading_text": "Explore More"
+      }
     }
   },
   "order": [
@@ -196,6 +205,7 @@
     "collection_descriptions_new_4FnEKf",
     "collection_object_faqs_new_pptjry",
     "collection_blogs_list_4FBdha",
-    "collection_object_banners_new_ighfKw"
+    "collection_object_banners_new_ighfKw",
+    "plp_footer_explore_more_7r66nN"
   ]
 }
