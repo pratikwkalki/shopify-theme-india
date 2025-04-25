@@ -314,7 +314,7 @@ window.onWizzyScriptLoaded = function () {
               ],
             });
           }
-
+        });
         
 
       return payload;
