@@ -965,6 +965,7 @@ window.wizzyConfig.events.registerEvent(
     }
   );
 };
+}
 const currentURL = window.location.href;
 
 // const autocompleteMenu = document.querySelector('.wizzy-autocomplete-wrapper');
