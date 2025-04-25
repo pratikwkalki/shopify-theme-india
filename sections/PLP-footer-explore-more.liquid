@@ -12,32 +12,27 @@
             <div class="Collection_object_banners_innerloop_new">
               {%- for columns in collection.metafields.custom.plp_footer_explore_more_banners.value -%}
                 {{ columns | json }}
-                {%- if columns.plp_footer_explore_more_banners.value != blank and columns.plp_footer_explore_more_banners_links.value != blank -%}
                   <div class="Collection_object_banners_innerloop_mainbox_new">
                     <div class="Collection_object_banners_innerloop_innerbox_new">
-                      {%- if columns.plp_footer_explore_more_banners_links.value != blank -%}
-                        <a href="{{ columns.plp_footer_explore_more_banners_links.value }}">
-                      {%- endif -%}
+                        <a href="{{ columns.plp_footer_explore_more_banners_links.value[forloop.index0] }}">                      
                           <div class="Collection_object_banners_innerloop_innerbox_videoimageboth_new">
-                            {%- if columns.plp_footer_explore_more_banners.value != blank -%}
-                             
-                              <div class="Collection_object_banners_innerloop_innerbox_videoimage_new">
-                                {{
-                                  columns.plp_footer_explore_more_banners.value | 
-                                  image_url: width: img.width | 
-                                  image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                  fetchpriority: 'auto', 
-                                  class:'Hover_image_new'
-                                }}
-                              </div>
-                            {%- endif -%}  
-                          </div>
-                      {%- if columns.plp_footer_explore_more_banners_links.value != blank -%}
+                              {%- if columns.plp_footer_explore_more_banners.value != blank -%}
+                               {% assign ImagesMain = Images  | image_url %}
+                                <div class="Collection_object_banners_innerloop_innerbox_videoimage_new">
+                                  {{
+                                    columns.plp_footer_explore_more_banners.value | 
+                                    image_url: width: img.width | 
+                                    image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                    fetchpriority: 'auto', 
+                                    class:'Hover_image_new'
+                                  }}
+                                </div>
+                              {%- endif -%}  
+                            </div>
                         </a>
-                      {%- endif -%}
                     </div>
                   </div>
-                {%- endif -%}
+                
               {%- endfor -%}
             </div>
           </div>
