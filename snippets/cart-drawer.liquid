@@ -5,9 +5,12 @@
   {% render 'cart-drawer' %}
 {% endcomment %}
 
-{{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'cart-drawer.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'quantity-popover.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'quantity-popover.css' | asset_url | stylesheet_tag }}</noscript>
+<link rel="stylesheet" href="{{ 'component-card.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-card.css' | asset_url | stylesheet_tag }}</noscript>
+<link rel="stylesheet" href="{{ 'cart-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'cart-drawer.css' | asset_url | stylesheet_tag }}</noscript>
 
 {% if settings.upsell_collection != blank %}
   {{ 'cart-upsell.css' | asset_url | stylesheet_tag }}
