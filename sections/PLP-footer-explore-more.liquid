@@ -3,12 +3,12 @@
     <div class="page-width">
       
         {%- if section.settings.main_heading_text != blank -%}
-          <div class="Common_title_new Collection_object_banners_title_new">
+          <div class="Common_title_new plp-explore-more-section_title">
             <h2>{{ section.settings.main_heading_text }}</h2>
           </div>
         {%- endif -%}
         {%- if collection.metafields.custom.plp_footer_explore_more_banners != blank -%}          
-            <div class="Collection_object_banners_innerloop_new">
+            <div class="plp-explore-more-section">
               {%- for columns in collection.metafields.custom.plp_footer_explore_more_banners.value -%}
                     <a href="{{ columns.plp_footer_explore_more_banners_links.value[forloop.index0] }}"> 
                        {% assign imagesmain = columns  | image_url %}                                 
