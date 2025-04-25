@@ -99,40 +99,7 @@ window.onWizzyScriptLoaded = function () {
       //   rangeInputForGrid.value = 3;
       //    handleRangeInputValueChange(3);
       // }
-      document
-        .querySelector("#init-wizzy-featured-view-button")
-        .addEventListener("click", function () {
-          if (typeof window.initFeaturedView !== "undefined") {
-            window.initFeaturedView({
-              dom: "wizzyFeaturedViewRoot",
-              filters: window.location.href.includes(
-                window.wizzyConfig.search.configs.general.searchEndpoint
-              )
-                ? JSON.stringify(
-                    window.wizzyConfig.pageStore.searchedResponse.filters
-                  )
-                : window.wizzyConfig.pageStore.lastExecutedFilters,
-              attributeIds: [
-                "product_variant_ids",
-                "product_sku",
-                "product_value_tags_product_type",
-              ],
-              displayImageInSquare: true,
-              // "9:16 Vertical Rectangle" === "1:1 Square" ? true : false,
-              displayStoreName: true,
-              displayDispalyAddToCartNumber: true,
-              storeName: "GARGI BY PNG",
-              currentCartCount: 0,
-              displayAddToCart: true,
-              displayViewMore: true,
-              attributesToShowOnViewMore: [
-                "product_Color",
-                "product_sku",
-                "product_value_tags_product_type",
-              ],
-            });
-          }
-        });
+ 
         
 
       return payload;
