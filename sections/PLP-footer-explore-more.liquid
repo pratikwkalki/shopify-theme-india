@@ -1,4 +1,4 @@
-{%- if collection.metafields.custom.collection_explore_video_or_image != blank -%}
+{%- if collection.metafields.custom.plp_footer_explore_more_banners != blank or  collection.metafields.plp_footer_explore_more_banners_links != blank  -%}
   <div class="Collection_object_banners_main_new {{ section.settings.customClass }}" style="background: {{ section.settings.main_background_color }};">
     <div class="page-width">
       <div class="Collection_object_banners_inner_new">
@@ -7,31 +7,22 @@
             <h2>{{ section.settings.main_heading_text }}</h2>
           </div>
         {%- endif -%}
-        {%- if collection.metafields.custom.collection_explore_video_or_image != blank -%}
+        {%- if collection.metafields.custom.plp_footer_explore_more_banners != blank -%}
           <div class="Collection_object_banners_mainloop_new">
             <div class="Collection_object_banners_innerloop_new">
-              {%- for columns in collection.metafields.custom.collection_explore_video_or_image.value -%}
-                {%- if columns.video_or_image.value != blank and columns.redirect_link.value != blank -%}
+              {%- for columns in collection.metafields.custom.plp_footer_explore_more_banners.value -%}
+                {%- if columns.plp_footer_explore_more_banners.value != blank and columns.plp_footer_explore_more_banners_links.value != blank -%}
                   <div class="Collection_object_banners_innerloop_mainbox_new">
                     <div class="Collection_object_banners_innerloop_innerbox_new">
-                      {%- if columns.redirect_link.value != blank -%}
-                        <a href="{{ columns.redirect_link.value }}">
+                      {%- if columns.plp_footer_explore_more_banners_links.value != blank -%}
+                        <a href="{{ columns.plp_footer_explore_more_banners_links.value }}">
                       {%- endif -%}
                           <div class="Collection_object_banners_innerloop_innerbox_videoimageboth_new">
-                            {%- if columns.video_or_image.value.sources[1].url contains '.mp4' or columns.video_or_image.value.sources[1].url contains '.MP4' -%}
-                              <div class="Collection_object_banners_innerloop_innerbox_videoimage_new">
-                                <video
-                                  id="Mp4Video-{{ section.id }}-{{ forloop.index0 }}-inner"
-                                  class="video-div"
-                                  data-type="mp4"
-                                  src="{{ columns.video_or_image.value.sources[1].url }}"
-                                  loop muted playsinline autoplay>
-                                </video>
-                              </div>
-                            {%- else -%}
+                            {%- if columns.plp_footer_explore_more_banners.value != blank -%}
+                             
                               <div class="Collection_object_banners_innerloop_innerbox_videoimage_new">
                                 {{
-                                  columns.video_or_image.value | 
+                                  columns.plp_footer_explore_more_banners.value | 
                                   image_url: width: img.width | 
                                   image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
                                   fetchpriority: 'auto', 
@@ -40,7 +31,7 @@
                               </div>
                             {%- endif -%}  
                           </div>
-                      {%- if columns.redirect_link.value != blank -%}
+                      {%- if columns.plp_footer_explore_more_banners_links.value != blank -%}
                         </a>
                       {%- endif -%}
                     </div>
