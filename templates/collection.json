@@ -186,8 +186,6 @@
       "type": "PLP-footer-explore-more",
       "name": "PLP Footer explore more",
       "settings": {
-        "customClass": "",
-        "main_background_color": "#FFFFFF",
         "main_heading_text": "Explore More"
       }
     }
