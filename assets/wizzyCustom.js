@@ -583,7 +583,39 @@ window.onWizzyScriptLoaded = function () {
     function (data) {
 
 
-      
+      document
+        .querySelector("#init-wizzy-featured-view-button")
+        .addEventListener("click", function () {
+          if (typeof window.initFeaturedView !== "undefined") {
+            window.initFeaturedView({
+              dom: "wizzyFeaturedViewRoot",
+              filters: window.location.href.includes(
+                window.wizzyConfig.search.configs.general.searchEndpoint
+              )
+                ? JSON.stringify(
+                    window.wizzyConfig.pageStore.searchedResponse.filters
+                  )
+                : window.wizzyConfig.pageStore.lastExecutedFilters,
+              attributeIds: [
+                "product_variant_ids",
+                "product_sku",
+                "product_value_tags_product_type",
+              ],
+              displayImageInSquare: true,
+              // "9:16 Vertical Rectangle" === "1:1 Square" ? true : false,
+              displayStoreName: true,
+              displayDispalyAddToCartNumber: true,
+              storeName: "GARGI BY PNG",
+              currentCartCount: 0,
+              displayAddToCart: true,
+              displayViewMore: true,
+              attributesToShowOnViewMore: [
+                "product_Color",
+                "product_sku",
+                "product_value_tags_product_type",
+              ],
+            });
+          }
         
       let selectedPrice = document.querySelectorAll(
         ".wizzy-selected-facet-list-item[data-facetkey='sellingPrice'] .facet-item-label-value"
