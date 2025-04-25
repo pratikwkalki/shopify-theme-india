@@ -472,54 +472,56 @@
     </script>
     {% if template.name == 'product' %}
       {% assign has_reviews = product.reviews_count > 0 %}
-      <script type="application/ld+json">
-      {
-        "@context": https://schema.org/,
-        "@type": "Product",
-        "name": "{{ product.title | escape }}",
-        "image": "{{ product.featured_image | product_img_url: 'large' | escape }}",
-        "description": "{{ product.description | strip_html | escape }}",
-        "sku": "{{ product.sku | escape }}",
-        "brand": {
-        	"@type": "Brand",
-        	"name": "{{ product.vendor | escape }}"
-        },
-        "offers": {
-      	"@type": "Offer",
-      	"url": "{{ product.url | escape }}",
-      	"priceCurrency": "{{ shop.currency }}",
-      	"price": "{{ product.price | money_without_currency }}",
-      	"itemCondition": https://schema.org/NewCondition,
-      	"availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
-      	"seller": {
-        	"@type": "Organization",
-        	"name": "{{ shop.name | escape }}"
-      	}
-        }
-        {% if has_reviews %}
-        ,
-        "aggregateRating": {
-      	"@type": "AggregateRating",
-      	"ratingValue": "{{ product.reviews_rating | default: '0' }}",
-      	"reviewCount": "{{ product.reviews_count }}"
-        },
-        "review": [
-      	{% for review in product.reviews %}
-      	{
-        	"@type": "Review",
-        	"author": "{{ review.author }}",
-        	"datePublished": "{{ review.date | date: '%Y-%m-%d' }}",
-        	"reviewBody": "{{ review.body | strip_html | escape }}",
-        	"reviewRating": {
-          	"@type": "Rating",
-          	"ratingValue": "{{ review.rating }}"
-        	}
-      	}{% if forloop.last == false %},{% endif %}
-      	{% endfor %}
-        ]
-        {% endif %}
-      }
-      </script>
+ 
+<script type="application/ld+json">
+{
+  "@context": https://schema.org/,
+  "@type": "Product",
+  "name": "{{ product.title | escape }}",
+  "image": "{{ product.featured_image | product_img_url: 'large' | escape }}",
+  "description": "{{ product.description | strip_html | escape }}",
+  "sku": "{{ product.sku | escape }}",
+  "brand": {
+	"@type": "Brand",
+	"name": "{{ product.vendor | escape }}"
+  },
+  "offers": {
+	"@type": "Offer",
+	"url": "{{ product.url | escape }}",
+	"priceCurrency": "{{ shop.currency }}",
+	"price": "{{ product.price | money_without_currency }}",
+	"itemCondition": https://schema.org/NewCondition,
+	"availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
+	"seller": {
+  	"@type": "Organization",
+  	"name": "{{ shop.name | escape }}"
+	}
+  }
+  {% if has_reviews %}
+  ,
+  "aggregateRating": {
+	"@type": "AggregateRating",
+	"ratingValue": "{{ product.reviews_rating | default: '0' }}",
+	"reviewCount": "{{ product.reviews_count }}"
+  },
+  "review": [
+	{% for review in product.reviews %}
+	{
+  	"@type": "Review",
+  	"author": "{{ review.author }}",
+  	"datePublished": "{{ review.date | date: '%Y-%m-%d' }}",
+  	"reviewBody": "{{ review.body | strip_html | escape }}",
+  	"reviewRating": {
+    	"@type": "Rating",
+    	"ratingValue": "{{ review.rating }}"
+  	}
+	}{% if forloop.last == false %},{% endif %}
+	{% endfor %}
+  ]
+  {% endif %}
+}
+</script>
+
     {% endif %}
     {%- if template.name == 'collection' -%}
       <script type="application/ld+json">
