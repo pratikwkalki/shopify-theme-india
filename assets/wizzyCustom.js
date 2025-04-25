@@ -99,6 +99,7 @@ window.onWizzyScriptLoaded = function () {
       //   rangeInputForGrid.value = 3;
       //    handleRangeInputValueChange(3);
       // }
+      console.log("hello world");
       document
         .querySelector("#init-wizzy-featured-view-button")
         .addEventListener("click", function () {
