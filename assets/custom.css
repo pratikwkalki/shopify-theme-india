@@ -4672,7 +4672,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   .Collection_sides_by_sides_innerleft_1_videoimageboth_new,.Collection_sides_by_sides_innerright_1_videoimageboth_new{height: 272px;}
 }
 
-@media(max-width: 541px){
+@media(max-width: 586px){
   .Collection_sides_by_sides_mainleft_new{width:100%; padding-right:0px;}           
   .Collection_sides_by_sides_mainright_new{width: 100%; margin:17px 0 0 0; }
   .SquareBanner_image_new{ display:none !important; }
