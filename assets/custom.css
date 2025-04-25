@@ -4636,13 +4636,13 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
 
   .Collection_sides_by_sides_main_new { margin: 40px 0; }
   .Collection_sides_by_sides_leftrightboth_new{display:block;}
-  .Collection_sides_by_sides_mainleft_new{width:100%; padding-right:0px;}
+  
   .Collection_sides_by_sides_innerleft_1_videoimageboth_new{height:382px;}
   .Collection_sides_by_sides_innerleft_2_new{top:auto; left:50%; bottom:20px; transform: translate(-50%, 0px); text-align:center;}
   .Collection_sides_by_sides_innerleft_2_title_new h2{font-size:22px; letter-spacing:0.44px; color:#fff !important; }
   .Collection_sides_by_sides_innerleft_2_infos_new h4{font-size:16px; letter-spacing:0.8px; line-height:112.5%; color:#fff !important; }
   .Collection_sides_by_sides_innerleft_2_button_new{background:#fff; color:#000; font-size: 14px; min-width:148px; padding: 9px 20px; line-height: 24px; }
-  .Collection_sides_by_sides_mainright_new{width: 100%; margin:17px 0 0 0; }
+ 
   .Collection_sides_by_sides_innerright_1_videoimageboth_new{height:382px;}
   .Collection_sides_by_sides_innerright_2_new{ left:50%; bottom:20px; transform: translate(-50%, 0px);}
   .Collection_sides_by_sides_innerright_2_title_new h2{font-size: 22px; letter-spacing: 0.44px;}
