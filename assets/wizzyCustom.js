@@ -1,145 +1,62 @@
+$("body").on("change", ".wizzy-range-for-grid", function (event) {
+  handleRangeInputValueChange(event.target.value);
+});
+function handleRangeInputValueChange(value) {
+  let x = document.querySelector(".wizzy-search-results");
+  typeof x < "u" &&
+    (x.classList.contains("wizzy-2-products-in-a-row") &&
+      x.classList.remove("wizzy-2-products-in-a-row"),
+    x.classList.contains("wizzy-3-products-in-a-row") &&
+      x.classList.remove("wizzy-3-products-in-a-row"),
+    x.classList.contains("wizzy-4-products-in-a-row") &&
+      x.classList.remove("wizzy-4-products-in-a-row"),
+    sessionStorage.setItem("wizzy-2-products-in-a-row", !1),
+    sessionStorage.setItem("wizzy-3-products-in-a-row", !1),
+    sessionStorage.setItem("wizzy-4-products-in-a-row", !1),
+    x.classList.add("wizzy-" + value + "-products-in-a-row"),
+    sessionStorage.setItem("wizzy-" + value + "-products-in-a-row", !0));
+}
+function toHandleComingBackFromProductPage() {
+  let waitForInputToLoad = setInterval(function () {
+    let CBrangeInputForGrid = document.querySelector(".wizzy-range-for-grid");
+    CBrangeInputForGrid != null &&
+      CBrangeInputForGrid != null &&
+      (sessionStorage.getItem("wizzy-2-products-in-a-row") === "true"
+        ? ((CBrangeInputForGrid.value = 2), handleRangeInputValueChange(2))
+        : sessionStorage.getItem("wizzy-3-products-in-a-row") === "true"
+        ? ((CBrangeInputForGrid.value = 3), handleRangeInputValueChange(3))
+        : sessionStorage.getItem("wizzy-4-products-in-a-row") === "true" &&
+          ((CBrangeInputForGrid.value = 4), handleRangeInputValueChange(4)),
+      clearInterval(waitForInputToLoad));
+  }, 1e3);
+  setTimeout(function () {
+    clearInterval(waitForInputToLoad);
+  }, 1e4);
+}
 
 window.onWizzyScriptLoaded = function () {
-  $("body").on("change", ".wizzy-range-for-grid", function (event) {
-    handleRangeInputValueChange(event.target.value);
-  });
-
-  function handleRangeInputValueChange(value) {
-    let x = document.querySelector(".wizzy-search-results");
-    if (typeof x != "undefined") {
-      if (x.classList.contains("wizzy-2-products-in-a-row")) {
-        x.classList.remove("wizzy-2-products-in-a-row");
-      }
-
-      if (x.classList.contains("wizzy-4-products-in-a-row")) {
-        x.classList.remove("wizzy-4-products-in-a-row");
-      }
-
-      if (x.classList.contains("wizzy-6-products-in-a-row")) {
-        x.classList.remove("wizzy-6-products-in-a-row");
-      }
-
-      sessionStorage.setItem("wizzy-2-products-in-a-row", false);
-      sessionStorage.setItem("wizzy-4-products-in-a-row", false);
-      sessionStorage.setItem("wizzy-6-products-in-a-row", false);
-      x.classList.add("wizzy-" + value + "-products-in-a-row");
-      sessionStorage.setItem("wizzy-" + value + "-products-in-a-row", true);
-    }
-  }
-   function toHandleComingBackFromProductPage() {
-    let waitForInputToLoad = setInterval(function () {
-      let CBrangeInputForGrid = document.querySelector(".wizzy-range-for-grid");
-      if (CBrangeInputForGrid != null && CBrangeInputForGrid != undefined) {
-        if (sessionStorage.getItem("wizzy-2-products-in-a-row") === "true") {
-          CBrangeInputForGrid.value = 2;
-          handleRangeInputValueChange(2);
-        } else if (
-          sessionStorage.getItem("wizzy-3-products-in-a-row") === "true"
-        ) {
-          CBrangeInputForGrid.value = 3;
-          handleRangeInputValueChange(3);
-        } else if (
-          sessionStorage.getItem("wizzy-4-products-in-a-row") === "true"
-        ) {
-          CBrangeInputForGrid.value = 4;
-          handleRangeInputValueChange(4);
-        }
-        clearInterval(waitForInputToLoad);
-      }
-    }, 1000);
-
-    setTimeout(function () {
-      clearInterval(waitForInputToLoad);
-    }, 10000);
-  }
-
-  toHandleComingBackFromProductPage();
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.PRODUCTS_RESULTS_RENDERED,
     function (payload) {
-      // $("html").removeClass("filtersOpend");
-      console.log("Inside PRODUCTS_RESULTS_RENDERED")
-      let rangeInputForGrid;
-      if(window.innerWidth <= 768)
-      {
-        rangeInputForGrid = document.querySelectorAll(".wizzy-range-for-grid")[1];
-      }
-      else
-      {
-        rangeInputForGrid = document.querySelectorAll(".wizzy-range-for-grid")[0];
-      }
-      if (
-        sessionStorage.getItem("wizzy-2-products-in-a-row") === "true" &&
+      $("html").removeClass("filtersOpend");
+      const rangeInputForGrid = document.querySelector(".wizzy-range-for-grid");
+      return (
+        sessionStorage.getItem("wizzy-1-products-in-a-row") === "true" &&
         rangeInputForGrid != null &&
-        typeof rangeInputForGrid != "undefined"
-      ) {
-        console.log("2 products in a row");
-        rangeInputForGrid.value = 2;
-        handleRangeInputValueChange(2);
-      } else if (
-        sessionStorage.getItem("wizzy-4-products-in-a-row") === "true" &&
-        rangeInputForGrid != null &&
-        typeof rangeInputForGrid != "undefined"
-      ) {
-        console.log("3 products in a row");
-        rangeInputForGrid.value = 4;
-        handleRangeInputValueChange(4);
-      } else if (
-        sessionStorage.getItem("wizzy-6-products-in-a-row") === "true" &&
-        rangeInputForGrid != null &&
-        typeof rangeInputForGrid != "undefined"
-      ) {
-        console.log("4 products in a row");
-        rangeInputForGrid.value = 6;
-        handleRangeInputValueChange(6);
-      }
-
-      // if(window.innerWidth <= 768)
-      // {
-      //   rangeInputForGrid.value = 3;
-      //    handleRangeInputValueChange(3);
-      // }
-      console.log("hello world");
-      document
-        .querySelector("#init-wizzy-featured-view-button")
-        .addEventListener("click", function () {
-          if (typeof window.initFeaturedView !== "undefined") {
-            window.initFeaturedView({
-              dom: "wizzyFeaturedViewRoot",
-              filters: window.location.href.includes(
-                window.wizzyConfig.search.configs.general.searchEndpoint
-              )
-                ? JSON.stringify(
-                    window.wizzyConfig.pageStore.searchedResponse.filters
-                  )
-                : window.wizzyConfig.pageStore.lastExecutedFilters,
-              attributeIds: [
-                "product_variant_ids",
-                "product_sku",
-                "product_value_tags_product_type",
-              ],
-              displayImageInSquare: true,
-              // "9:16 Vertical Rectangle" === "1:1 Square" ? true : false,
-              displayStoreName: true,
-              displayDispalyAddToCartNumber: true,
-              storeName: "GARGI BY PNG",
-              currentCartCount: 0,
-              displayAddToCart: true,
-              displayViewMore: true,
-              attributesToShowOnViewMore: [
-                "product_Color",
-                "product_sku",
-                "product_value_tags_product_type",
-              ],
-            });
-          }
-        });
-        
-
-      return payload;
+        typeof rangeInputForGrid < "u"
+          ? ((rangeInputForGrid.value = 1), handleRangeInputValueChange(1))
+          : sessionStorage.getItem("wizzy-2-products-in-a-row") === "true" &&
+            rangeInputForGrid != null &&
+            typeof rangeInputForGrid < "u"
+          ? ((rangeInputForGrid.value = 2), handleRangeInputValueChange(2))
+          : sessionStorage.getItem("wizzy-3-products-in-a-row") === "true" &&
+            rangeInputForGrid != null &&
+            typeof rangeInputForGrid < "u" &&
+            ((rangeInputForGrid.value = 3), handleRangeInputValueChange(3)),
+        payload
+      );
     }
   );
-
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.BEFORE_INIT,
     function (data) {
@@ -428,45 +345,7 @@ window.onWizzyScriptLoaded = function () {
           facets[i].data = newArray;
         }
       }
-      //  try {
-      //   window.wizzyConfig.search.view.templates.facets.rangeListItem =
-      //     "#wizzy-facet-range-list-item";
-      //   payload.response.payload.facets =
-      //     payload.response.payload.facets.filter(
-      //       (facet) => facet.key !== "sellingPrice"
-      //     );
-      //    console.log("Inside Price");
-      //   payload.response.payload.facets.push({
-      //     label: "Price",
-      //     buckets: [
-      //       {
-      //         from: 0,
-      //         to: 18419,
-      //       },
-      //       {
-      //         from: 18479,
-      //         to: 36838,
-      //       },
-      //       {
-      //         from: 36838,
-      //         to: 55257,
-      //       },
-      //       {
-      //         from: 55257,
-      //         to: 73676,
-      //       },
-      //       {
-      //         from: 73676,
-      //         to: 92095,
-      //       },
-      //     ],
-      //     key: "sellingPrice",
-      //     position: "left",
-      //     order: 12
-      //   });
-      //    console.log(payload);
-      //    console.log("Inside Price2");
-      // } catch (error) {}
+
       return payload;
     }
   );
@@ -516,10 +395,6 @@ window.onWizzyScriptLoaded = function () {
     window.wizzyConfig.events.allowedEvents.BEFORE_SEARCH_EXECUTED,
     function (data) {
       let body = document.body;
-       if (body.classList.contains("collection_header_transparent_new")) {
-          body.classList.remove("collection_header_transparent_new");
-        }
-      
       if (body.classList.contains("template--bridal-collection-new")) {
         body.classList.remove("template--bridal-collection-new");
       }
@@ -532,42 +407,22 @@ window.onWizzyScriptLoaded = function () {
       if (body.classList.contains("template--bridal-wedding-dress-new")) {
         body.classList.remove("template--bridal-wedding-dress-new");
       }
-      if (document.body.classList.contains("page_white_header_transparent_new")) {
+      if (body.classList.contains("page_white_header_transparent_new")) {
         body.classList.remove("page_white_header_transparent_new");
       }
-      
-       
-      
       if (
-        body.classList.contains("collection_hide_announcement_bar_new")
+        body.classList.contains("collection_hide_announcement_bar_new") &&
+        body.classList.contains("collection_header_transparent_new")
       ) {
         console.log("inside removing");
         body.classList.remove(
-          "collection_hide_announcement_bar_new"
+          "collection_hide_announcement_bar_new",
+          "collection_header_transparent_new"
         );
       }
 
       let video = document.querySelector(".Collection_meta_banner_new");
       if (video) video.style.setProperty("display", "none", "important");
-
-      if(window.innerWidth <= 768)
-      {
-         if (body.classList.contains("template-collection")) {
-        body.classList.remove("template-collection");
-      }
-      if (body.classList.contains("template--luxe-collection-new")) {
-        body.classList.remove("template--luxe-collection-new");
-      }
-      if (body.classList.contains("collection_hide_announcement_bar_new")) {
-        body.classList.remove("collection_hide_announcement_bar_new");
-      }
-      if (body.classList.contains("collection_header_transparent_new")) {
-        body.classList.remove("collection_header_transparent_new");
-      }
-      if (body.classList.contains("collection_full_width_new")) {
-        body.classList.remove("collection_full_width_new");
-      }
-      }
 
       return data;
     }
@@ -576,41 +431,7 @@ window.onWizzyScriptLoaded = function () {
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.VIEW_RENDERED,
     function (data) {
-
-
-      document
-        .querySelector("#init-wizzy-featured-view-button")
-        .addEventListener("click", function () {
-          if (typeof window.initFeaturedView !== "undefined") {
-            window.initFeaturedView({
-              dom: "wizzyFeaturedViewRoot",
-              filters: window.location.href.includes(
-                window.wizzyConfig.search.configs.general.searchEndpoint
-              )
-                ? JSON.stringify(
-                    window.wizzyConfig.pageStore.searchedResponse.filters
-                  )
-                : window.wizzyConfig.pageStore.lastExecutedFilters,
-              attributeIds: [
-                "product_variant_ids",
-                "product_sku",
-                "product_value_tags_product_type",
-              ],
-              displayImageInSquare: true,
-              // "9:16 Vertical Rectangle" === "1:1 Square" ? true : false,
-              displayStoreName: true,
-              displayDispalyAddToCartNumber: true,
-              storeName: "GARGI BY PNG",
-              currentCartCount: 0,
-              displayAddToCart: true,
-              displayViewMore: true,
-              attributesToShowOnViewMore: [
-                "product_Color",
-                "product_sku",
-                "product_value_tags_product_type",
-              ],
-            });
-          }
+     
         
       let selectedPrice = document.querySelectorAll(
         ".wizzy-selected-facet-list-item[data-facetkey='sellingPrice'] .facet-item-label-value"
@@ -761,23 +582,6 @@ window.onWizzyScriptLoaded = function () {
           });
         });
 
-      document.addEventListener("click", function(e) {
-        if (!e.target.closest('.filters-list-top-values-wrapper .wizzy-facet-body') && !(e.target.closest('.wizzy-search-filters-list-top .wizzy-facet-head'))) {
-          const wrapper = document.querySelector('.filters-list-top-values-wrapper');
-          let facets = document.querySelectorAll('.wizzy-search-filters-list-top .wizzy-filters-facet-block');
-          facets.forEach((facet) => {
-            let head = facet.querySelector('.wizzy-facet-head');
-            if (head && head.classList.contains('active')) {
-              head.classList.remove('active');
-              if (wrapper) {
-                const childDivs = wrapper.querySelectorAll('div');
-                childDivs.forEach(div => div.remove());
-              }
-            }
-          });
-        }
-      });
-
       return data;
     }
   );
@@ -794,8 +598,8 @@ window.wizzyConfig.events.registerEvent(
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.PRODUCTS_CACHED_RESULTS_RENDERED,
     function (data) {
+      toHandleComingBackFromProductPage();
       
-     
       let selectedPrice = document.querySelectorAll(
         ".wizzy-selected-facet-list-item[data-facetkey='sellingPrice'] .facet-item-label-value"
       );
@@ -906,8 +710,8 @@ window.wizzyConfig.events.registerEvent(
       });
 
       const selectedList = document.querySelector(".wizzy-selected-facet-list");
-      const targetDiv1 = document.querySelector(".wizzy-facet-list-block");
-      const targetDiv2 = document.querySelectorAll(".wizzy-facet-body"); 
+      const targetDiv1 = document.querySelector(".wizzy-facet-list-block"); // Replace if needed
+      const targetDiv2 = document.querySelectorAll(".wizzy-facet-body"); // Replace if needed
       let title = document.querySelector(".applied-filters-header");
       if (selectedList && selectedList.querySelectorAll("li").length > 0) {
         console.log("Inside divs");
@@ -944,38 +748,11 @@ window.wizzyConfig.events.registerEvent(
             facetList.scrollBy({ left: 200, behavior: "smooth" });
           });
         });
-
-      document.addEventListener("click", function(e) {
-        if (!e.target.closest('.filters-list-top-values-wrapper .wizzy-facet-body') && !(e.target.closest('.wizzy-search-filters-list-top .wizzy-facet-head'))) {
-          const wrapper = document.querySelector('.filters-list-top-values-wrapper');
-          let facets = document.querySelectorAll('.wizzy-search-filters-list-top .wizzy-filters-facet-block');
-          facets.forEach((facet) => {
-            let head = facet.querySelector('.wizzy-facet-head');
-            if (head && head.classList.contains('active')) {
-              head.classList.remove('active');
-              if (wrapper) {
-                const childDivs = wrapper.querySelectorAll('div');
-                childDivs.forEach(div => div.remove());
-              }
-            }
-          });
-        }
-      });
       return data;
     }
   );
 };
-}
-const currentURL = window.location.href;
 
-// const autocompleteMenu = document.querySelector('.wizzy-autocomplete-wrapper');
-
-// if (!autocompleteMenu) return; 
-// if (currentURL.includes('/collections')) {
-//   autocompleteMenu.style.top = "85px";
-// } else {
-//   autocompleteMenu.style.top = "117px";
-// }
 
 let searchbtn = document.querySelector(".search_main_new");
 searchbtn.addEventListener("click", function () {
@@ -984,7 +761,3 @@ searchbtn.addEventListener("click", function () {
     searchBar.click();
   }
 });
-
-
-
-
