@@ -1,4 +1,4 @@
-{%- if collection.metafields.custom.plp_footer_explore_more_banners != blank or  collection.metafields.plp_footer_explore_more_banners_links != blank  -%}
+{%- if collection.metafields.custom.plp_footer_explore_more_banners != blank   -%}
   <div class="Collection_object_banners_main_new {{ section.settings.customClass }}" style="background: {{ section.settings.main_background_color }};">
     <div class="page-width">
       
@@ -7,18 +7,18 @@
             <h2>{{ section.settings.main_heading_text }}</h2>
           </div>
         {%- endif -%}
-        {%- if collection.metafields.custom.plp_footer_explore_more_banners != blank -%}          
+               
             <div class="plp-explore-more-section">
               {%- for columns in collection.metafields.custom.plp_footer_explore_more_banners.value -%}
                     <a href="{{ columns.plp_footer_explore_more_banners_links.value[forloop.index0] }}"> 
                        {% assign imagesmain = columns  | image_url %}                                 
                         <picture>                                
-                          <img class="Hover_image_new" src=" {{ imagesmain }}" alt="{{ imagesmain.alt }}" loading="eager" width="346" height="461" />
+                          <img class="Hover_image_new" src=" {{ imagesmain }}" alt="{{ imagesmain }}" loading="eager" width="346" height="461" />
                         </picture>
                     </a>
               {%- endfor -%}
             </div>
-        {%- endif -%}
+        
       </div>
     </div>
 {%- endif -%}  
