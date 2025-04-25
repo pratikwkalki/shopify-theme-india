@@ -909,7 +909,7 @@ window.wizzyConfig.events.registerEvent(
           rightButton.addEventListener("click", () => {
             facetList.scrollBy({ left: 200, behavior: "smooth" });
           });
-        });
+        ;
 
       document.addEventListener("click", function(e) {
         if (!e.target.closest('.filters-list-top-values-wrapper .wizzy-facet-body') && !(e.target.closest('.wizzy-search-filters-list-top .wizzy-facet-head'))) {
