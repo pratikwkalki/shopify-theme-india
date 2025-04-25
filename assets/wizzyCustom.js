@@ -99,13 +99,6 @@ window.onWizzyScriptLoaded = function () {
       //   rangeInputForGrid.value = 3;
       //    handleRangeInputValueChange(3);
       // }
-
-      return payload;
-    }
-  );
-  window.wizzyConfig.events.registerEvent(
-    window.wizzyConfig.events.allowedEvents.PRODUCTS_RESULTS_RENDERED,
-    function (payload) {
       document
         .querySelector("#init-wizzy-featured-view-button")
         .addEventListener("click", function () {
@@ -140,11 +133,10 @@ window.onWizzyScriptLoaded = function () {
             });
           }
 
-        
-
       return payload;
     }
   );
+
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.BEFORE_INIT,
     function (data) {
