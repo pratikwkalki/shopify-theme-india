@@ -8,7 +8,8 @@
           </div>
         {%- endif -%}
         {%- if collection.metafields.custom.plp_footer_explore_more_banners != blank -%}
-          
+          <div class="Collection_object_banners_mainloop_new">
+            <div class="Collection_object_banners_innerloop_new">
               {%- for columns in collection.metafields.custom.plp_footer_explore_more_banners.value -%}
                   <div class="Collection_object_banners_innerloop_mainbox_new">
                     <div class="Collection_object_banners_innerloop_innerbox_new">
@@ -27,7 +28,8 @@
                   </div>
                 
               {%- endfor -%}
-            
+            </div>
+          </div>
         {%- endif -%}
       </div>
     </div>
