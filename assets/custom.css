@@ -58,7 +58,9 @@ html{ padding-bottom:0 !important;  }
 input, button, textarea{ font-family: var(--font-body-family) !important; }
 a, button, .button{ -webkit-transition: all 0.3s linear; -moz-transition: all 0.3s linear; -o-transition: all 0.3s linear; -ms-transition: all 0.3s linear; transition: all 0.3s linear; }
 .desktop_image_new{ display:flex !important; }
-.mobile_image_new{ display:none !important; }
+.mobile_image_new{ display:none !important; 
+.SquareBanner_image_new{ display:flex !important; }
+.SquareBanner_mobile_image_new{ display:none !important; }
 
 .highlighted-banners-desktop-image{ display:flex !important;justify-content: space-between; gap:2% }
 .highlighted-banners-mobile-image{ display:none !important; }
