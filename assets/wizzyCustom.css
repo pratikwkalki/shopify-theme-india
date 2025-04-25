@@ -441,6 +441,12 @@ span.wizzy-autocomplete-label {
   display: none !important;
 }
 @media screen and (max-width: 769px) {
+  #init-wizzy-featured-view-button {
+    width: 70%;
+    position: fixed;
+    z-index: 1;
+    margin: 22px 0px 10px 60px;
+  }
   .wizzy-grid-filters-box .with-selected-filters {
     margin-top: 0px !important;
   }
