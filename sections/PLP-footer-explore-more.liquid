@@ -16,7 +16,7 @@
                     <div class="Collection_object_banners_innerloop_innerbox_new">
                         <a href="{{ columns.plp_footer_explore_more_banners_links.value[forloop.index0] }}">                      
                           <div class="Collection_object_banners_innerloop_innerbox_videoimageboth_new">
-                              {%- if columns.plp_footer_explore_more_banners.value != blank -%}
+                             
                                {% assign ImagesMain = columns  | image_url %}
                                 <div class="Collection_object_banners_innerloop_innerbox_videoimage_new">
                                   
@@ -27,7 +27,7 @@
                                 <img class="Hover_image_new" src=" {{ ImagesMain }}" alt="{{ Images.alt }}" loading="eager" width="346" height="461" />
                               </picture>
                                 </div>
-                              {%- endif -%}  
+                             
                             </div>
                         </a>
                     </div>
