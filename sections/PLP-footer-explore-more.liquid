@@ -13,7 +13,7 @@
                     <a href="{{ collection.metafields.custom.plp_footer_explore_more_banners_links.value[forloop.index0] }}"> 
                        {% assign imagesmain = columns  | image_url %}                                 
                         <picture>                                
-                          <img class="Hover_image_new" src=" {{ imagesmain }}" alt="{{ imagesmain }}" loading="eager" width="346" height="461" />
+                          <img class="Hover_image_new" src=" {{ imagesmain }}" alt="{{ collection.value[forloop.index0] }}" loading="eager" width="346" height="461" />
                         </picture>
                     </a>
               {%- endfor -%}
