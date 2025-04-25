@@ -446,7 +446,8 @@
       <script src="{{ 'custom-templates.js' | asset_url }}" defer="defer"></script>
       <script src="{{ 'optiscroll.js' | asset_url }}" defer="defer"></script>
     {% endif %}
-    {{ 'product-delivery-days.css' | asset_url | stylesheet_tag: preload: false }}
+    <link rel="stylesheet" href="{{ 'product-delivery-days.css' | asset_url }}" media="print" onload="this.media='all'">
+    <noscript>{{ 'product-delivery-days.css' | asset_url | stylesheet_tag }}</noscript>
     
     {% render 'collection-faq-schema' %}
 
