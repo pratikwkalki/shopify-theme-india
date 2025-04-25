@@ -1291,12 +1291,13 @@ div.stamped-container[data-widget-style], div[data-widget-style] div.stamped-con
 .collection_pagination_new .facet-filters{ padding-left:0 !important; }
 
 /* PLP footer explore more section */
-.plp-explore-more-section_title{}
 .plp-explore-more-section{display:flex; flex-wrap:Wrap; grid-gap:20px;}
 .plp-explore-more-section a{width:calc(50% - 10px);}
 .plp-explore-more-section a img.Hover_image_new{max-width: 100%;width: 100%;}
 .plp-explore-more-section_title{text-align: left}
-
+@media (max-width: 750px) {
+  .plp-explore-more-section a{width:calc(100%);}
+}
 
 .Collection_object_lists_main_new{margin:50px 0;}
 .Collection_object_lists_title_new{ text-align:left; }
