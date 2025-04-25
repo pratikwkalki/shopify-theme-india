@@ -122,7 +122,7 @@ window.onWizzyScriptLoaded = function () {
                 // "9:16 Vertical Rectangle" === "1:1 Square" ? true : false,
                 displayStoreName: true,
                 displayDispalyAddToCartNumber: true,
-                storeName: "GARGI BY PNG",
+                storeName: "KALKI",
                 currentCartCount: 0,
                 displayAddToCart: true,
                 displayViewMore: true,
