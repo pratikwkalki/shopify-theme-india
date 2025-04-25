@@ -101,25 +101,25 @@
         "image_UjyipC": {
           "type": "image",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mens-highlight-desk-02-04-25-indi-gloabl-usa-uk_1.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mens-highlight-mobile-02-04-25-indi-gloabl-usa-uk_1.jpg",
+            "main_desktop_image": "shopify://shop_images/1-mens-highlight-desk-new-arrivals-all-countries-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mens-highlight-mobile-new-arrivals-all-countries-24-04-25.jpg",
             "main_button_link": "https://in.kalkifashion.com/collections/new-arrival-menswear"
           }
         },
         "image_mQKTgR": {
           "type": "image",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-mens-highlight-desk-28-3-25-indi-gloabl-usa-uk.jpg",
-            "main_mobile_image": "shopify://shop_images/2-mens-highlight-mobile-28-3-25-indi-gloabl-usa-uk.jpg",
-            "main_button_link": "https://in.kalkifashion.com/collections/ready-to-ship-menswear"
+            "main_desktop_image": "shopify://shop_images/2-mens-highlight-desk-printed-collection-all-countries-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2-mens-highlight-mobile-printed-collection-all-countries-24-04-25.jpg",
+            "main_button_link": "https://in.kalkifashion.com/collections/printed-menswear"
           }
         },
         "image_iCR9qQ": {
           "type": "image",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/3-mens-highlight-desk-28-3-25-indi-gloabl-usa-uk.jpg",
-            "main_mobile_image": "shopify://shop_images/3-mens-highlight-mobile-28-3-25-indi-gloabl-usa-uk.jpg",
-            "main_button_link": "https://in.kalkifashion.com/collections/essential-for-men"
+            "main_desktop_image": "shopify://shop_images/3-mens-highlight-desk-ready-to-ship-all-countries-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-mens-highlight-mobile-ready-to-ship-all-countries-24-04-25.jpg",
+            "main_button_link": "https://in.kalkifashion.com/collections/ready-to-ship-menswear"
           }
         }
       },
@@ -262,17 +262,17 @@
         "information_yTG78t": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/1-mens-slider-banner-all-country-desktop-1440x540-29-03-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/1-men-mobile-banner-all-country-500x707-29-03-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/1-mens-slider-banner-see-all-mens-wear-all-country-desktop-1440x540-24-04-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1-men-mobile-banner-see-all-mens-wear-all-country-500x707-24-04-25.jpg",
             "main_banner_redirect_link": "https://in.kalkifashion.com/collections/see-all-menswear"
           }
         },
         "information_PBqbzG": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/2-mens-slider-banner-all-country-desktop-1440x540-29-03-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/2-men-mobile-banner-all-country-500x707-29-03-25.jpg",
-            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/sherwanis"
+            "main_desktop_full_image": "shopify://shop_images/2-mens-slider-banner-summer-styles-all-country-desktop-1440x540-24-04-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/2-men-mobile-banner-summer-styles-all-country-500x707-24-04-25.jpg",
+            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/essential-for-men"
           }
         }
       },
@@ -294,44 +294,44 @@
         "information_hxURPn": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mens-mini-desk-all-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mens-mini-desk-all-250x250-11-04-25.jpg",
-            "title": "<p>Kurta Set</p>",
+            "main_desktop_image": "shopify://shop_images/1-mens-mini-desk-kurta-set-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mens-mini-desk-kurta-set-all-countries-250x250-24-04-25.jpg",
+            "title": "<p>Men's Kurta Set</p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/mens-kurta-set"
           }
         },
         "information_Ud6yrw": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-mens-mini-desk-all-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-mens-mini-desk-all-250x250-11-04-25.jpg",
-            "title": "<p>Kurta Jacket</p>",
+            "main_desktop_image": "shopify://shop_images/2-mens-mini-desk-kurta-jackets-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2-mens-mini-desk-kurta-jackets-all-countries-250x250-24-04-25.jpg",
+            "title": "<p>Kurta Jackets</p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/kurta-jacket-sets"
           }
         },
         "information_MBGFwT": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/3-mens-mini-desk-all-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/3-mens-mini-desk-all-250x250-11-04-25.jpg",
-            "title": "<p>Indo Fusion</p>",
+            "main_desktop_image": "shopify://shop_images/3-mens-mini-desk-indo-fusion-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-mens-mini-desk-indo-fusion-all-countries-250x250-24-04-25.jpg",
+            "title": "<p>Indowestern For Him</p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/indo-westerns-for-men"
           }
         },
         "information_kcW9Af": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/4-mens-mini-desk-all-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/4-mens-mini-desk-all-250x250-11-04-25.jpg",
-            "title": "<p>Tuxedo Affair</p>",
+            "main_desktop_image": "shopify://shop_images/4-mens-mini-desk-tuxedo-affair-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/4-mens-mini-desk-tuxedo-affair-all-countries-250x250-24-04-25.jpg",
+            "title": "<p>Jodhpuri Edit</p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/tuxedo"
           }
         },
         "information_cixgzh": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/5-mens-mini-desk-all-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/5-mens-mini-desk-all-250x250-11-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/5-mens-mini-desk-jodhpuri-jazz-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/5-mens-mini-desk-jodhpuri-jazz-all-countries-250x250-24-04-25.jpg",
             "title": "<p><strong>Jodhpuri Jazz</strong></p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/jodhpuris"
           }
@@ -339,8 +339,8 @@
         "information_hTU38k": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/6-mens-mini-desk-all-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/6-mens-mini-desk-all-250x250-11-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/6-mens-mini-desk-sherwani-saga-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/6-mens-mini-desk-sherwani-saga-all-countries-250x250-24-04-25.jpg",
             "title": "<p>Sherwani Saga</p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/sherwanis"
           }
@@ -348,8 +348,8 @@
         "information_ptb3Tr": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/7-mens-mini-desk-all-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/7-mens-mini-desk-all-250x250-11-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/7-mens-mini-desk-jutti-edit-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/7-mens-mini-desk-jutti-edit-all-countries-250x250-24-04-25.jpg",
             "title": "<p>Jutti Edit</p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/mens-footwear"
           }
@@ -379,20 +379,20 @@
       ],
       "settings": {
         "main_background_color": "#ffffff",
-        "main_desktop_image_1": "shopify://shop_images/1-square-banner-desk-28-3-25-india-us-uk-global.jpg",
-        "main_mobile_image_1": "shopify://shop_images/1-square-banner-mobile-28-3-25-india-us-uk-global.jpg",
+        "main_desktop_image_1": "shopify://shop_images/1-square-banner-desk-styles-under-budget-8999-950-520-24-04-25-india.jpg",
+        "main_mobile_image_1": "shopify://shop_images/1-square-banner-mobile-styles-under-budget-8999-345x400-28-3-25-india.jpg",
         "main_text_color_1": "#0f0d1a",
-        "main_heading_text_1": "Under ₹9,999",
-        "main_sub_heading_text_1": "Budget Wardrobe",
-        "main_button_text_1": "Shop Now",
+        "main_heading_text_1": "",
+        "main_sub_heading_text_1": "",
+        "main_button_text_1": "",
         "main_button_link_1": "https://in.kalkifashion.com/collections/menswear-under-inr-8999",
         "main_button_color": "button_black",
-        "main_desktop_image_2": "shopify://shop_images/2-square-banner-desk28-3-25-india-us-uk-global.jpg",
-        "main_mobile_image_2": "shopify://shop_images/2-square-banner-mobile-1-28-3-25-india-us-uk-global.jpg",
+        "main_desktop_image_2": "shopify://shop_images/2-square-banner-desk-mens-wedding-wear-all-countries-24-04-25.jpg",
+        "main_mobile_image_2": "shopify://shop_images/2-square-banner-mobile-1-mens-wedding-wear-all-countries-24-04-25.jpg",
         "main_text_color_2": "#ffffff",
-        "main_heading_text_2": "Forever Vows",
-        "main_sub_heading_text_2": "Tailored For Weddings",
-        "main_button_text_2": "Shop Now",
+        "main_heading_text_2": "",
+        "main_sub_heading_text_2": "",
+        "main_button_text_2": "",
         "main_button_link_2": "https://in.kalkifashion.com/collections/mens-wedding-wear",
         "main_button_color_2": "button_white"
       }
@@ -409,9 +409,9 @@
         "information_rVmqny": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-shop-by-collection-mehandi-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-shop-by-collection-mehandi-11-04-25.jpg",
-            "title": "Mehendi Mastery",
+            "main_desktop_image": "shopify://shop_images/1-shop-by-collection-mehendi-mastery-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-shop-by-collection-mehendi-mastery-24-04-25.jpg",
+            "title": "Mehendi Magic",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "https://in.kalkifashion.com/collections/mens-mehendi-wear"
@@ -420,8 +420,8 @@
         "information_dBLnzc": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-shop-by-collection-mehandi-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-shop-by-collection-mehandi-11-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/2-shop-by-collection-sangeet-soiree-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2-shop-by-collection-sangeet-soiree-24-04-25.jpg",
             "title": "Sangeet Soirée",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -431,9 +431,9 @@
         "information_E83nqK": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/3-shop-by-collection-mehandi-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/3-shop-by-collection-mehandi-11-04-25.jpg",
-            "title": "Wedding Wonder",
+            "main_desktop_image": "shopify://shop_images/3-shop-by-collection-wedding-wonders-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-shop-by-collection-wedding-wonders-24-04-25.jpg",
+            "title": "Wedding Wonders",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "https://in.kalkifashion.com/collections/mens-wedding-wear"
@@ -442,9 +442,9 @@
         "information_mKbaME": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/4-shop-by-collection-mehandi-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/4-shop-by-collection-mehandi-11-04-25.jpg",
-            "title": "Reception Runway",
+            "main_desktop_image": "shopify://shop_images/4-shop-by-collection-reception-royalty-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/4-shop-by-collection-reception-royalty-24-04-25.jpg",
+            "title": "Reception Royalty",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "https://in.kalkifashion.com/collections/mens-reception-wear"
@@ -477,8 +477,8 @@
         "information_hxURPn": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/01-mini2-banner-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/01-mini2-banner-250x250-11-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/01-shop-by-category-discounted-deals-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/01-shop-by-category-discounted-deals-250x250-24-04-25.jpg",
             "title": "<p>Discounted Deals</p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/menswear-on-sale"
           }
@@ -486,26 +486,26 @@
         "information_Ud6yrw": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/02-mini2-banner-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/02-mini2-banner-250x250-11-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/02-shop-by-category-limited-edition-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/02-shop-by-category-limited-edition-250x250-24-04-25.jpg",
             "title": "<p>Limited Edition</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/last-chance-menswear"
+            "main_redirect_link": "https://in.kalkifashion.com/collections/ethnic-last-chance-mens-wear"
           }
         },
         "information_NQxDrp": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/03-mini2-banner-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/03-mini2-banner-250x250-11-04-25.jpg",
-            "title": "<p>Cute Couture</p>",
+            "main_desktop_image": "shopify://shop_images/03-shop-by-category-cute-couture-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/03-shop-by-category-cute-couture-250x250-24-04-25.jpg",
+            "title": "<p>Boy's Fashion</p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/see-all-boys"
           }
         },
         "information_MBGFwT": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/04-mini2-banner-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/04-mini2-banner-250x250-11-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/04-shop-by-category-midnight-black-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/04-shop-by-category-midnight-black-250x250-24-04-25.jpg",
             "title": "<p>Midnight Black</p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/black-menswear"
           }
@@ -513,8 +513,8 @@
         "information_cixgzh": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/05-mini2-banner-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/05-mini2-banner-250x250-11-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/05-shop-by-category-must-haves-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/05-shop-by-category-must-haves-250x250-24-04-25.jpg",
             "title": "<p>Must-Haves</p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/essential-for-men"
           }
@@ -522,8 +522,8 @@
         "information_hTU38k": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/06-mini2-banner-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/06-mini2-banner-250x250-11-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/06-shop-by-category-budget-finds-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/06-shop-by-category-budget-finds-250x250-24-04-25.jpg",
             "title": "<p>Budget Finds</p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/menswear-under-inr-8999"
           }
@@ -531,8 +531,8 @@
         "information_BUC6E6": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/07-mini2-banner-250x250-11-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/07-mini2-banner-250x250-11-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/07-shop-by-category-groomsquad-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/07-shop-by-category-groomsquad-250x250-24-04-25.jpg",
             "title": "<p>Groomsquad</p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/groomsman"
           }
