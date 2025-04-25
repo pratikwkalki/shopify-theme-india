@@ -1295,6 +1295,7 @@ div.stamped-container[data-widget-style], div[data-widget-style] div.stamped-con
 .plp-explore-more-section{display:flex; flex-wrap:Wrap; grid-gap:20px;}
 .plp-explore-more-section a{width:calc(50% - 10px);}
 .plp-explore-more-section a img.Hover_image_new{max-width: 100%;width: 100%;}
+.plp-explore-more-section_title{text-align: left}
 
 
 .Collection_object_lists_main_new{margin:50px 0;}
