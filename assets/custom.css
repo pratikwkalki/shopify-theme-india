@@ -5806,7 +5806,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
     margin-right: auto;
   }
   .search-modal__content_drawer_new .search__input.field__input {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
   .header__icons .ps-widget-5971 {
     top: 53px;
