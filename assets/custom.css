@@ -509,7 +509,7 @@ summary .icon-caret { position: relative; }
 
 .Index_top_banner_slider_inner_new.swiper-pagination{
     width: 100%;
-    position: absolute;
+    position: absolute !important;
 }
 
 .Index_top_banner_slider_main_new{margin-bottom:30px;}
