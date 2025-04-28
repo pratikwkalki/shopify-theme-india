@@ -2719,3 +2719,7 @@ div.af_tag span.af_coupon_wrapper svg {
   height: 1.2rem;
   margin-right: 0.7rem;
 }
+
+.sotp-popup-wrapper {
+    display: none;
+}
