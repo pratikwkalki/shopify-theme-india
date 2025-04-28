@@ -105,11 +105,7 @@
                   {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
     
                   {%- if card_product.media[1] != null and show_secondary_image -%}
-                    <div class="Collection_meta_columns_loops_innerbox_2_new">
-                          <div class="Collection_meta_columns_loops_innerbox_2_titletextsboth_new">
-                            {{ collection.metafields.custom.collection_column_heading_text_list.value[forloop.index0] }}
-                          </div>
-                        </div>
+                    
                     <img
                       srcset="
                         {%- if card_product.media[1].width >= 400 -%}{%- render 'gumlet', src: featured_media_hover w: 485 %} 610w,{%- endif -%}
@@ -128,6 +124,11 @@
                     >
                 {%- endif -%}
                 {% else %}
+                  <div class="Collection_meta_columns_loops_innerbox_2_new">
+                          <div class="Collection_meta_columns_loops_innerbox_2_titletextsboth_new">
+                            {{ collection.metafields.custom.collection_column_heading_text_list.value[forloop.index0] }}
+                          </div>
+                        </div>
                   <img
                     srcset="
                       {%- if card_product.featured_media.width >= 400 -%}{%- render 'gumlet', src: featured_media w: 370 %} 610w,{%- endif -%}
