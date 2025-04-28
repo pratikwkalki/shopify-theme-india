@@ -370,6 +370,7 @@ window.onWizzyScriptLoaded = function () {
           facet.key === "colors" &&
             facet.data.forEach((item) => {
               let color = findHaxCode(item.key);
+              console.log(color);
               (item.isSwatch = !0),
                 (item.isURLSwatch = color[1]),
                 (item.isVisualSwatch = !0),
