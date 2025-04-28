@@ -264,6 +264,16 @@
         "padding_bottom": 20
       }
     },
+    "custom_liquid_P4iAXw": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\n@media only screen and (max-width: 480px) {\n    .big-text {\n        font-size: 18px;\n    }\n}\n</style>\n\n<div class=\"d-flex carnival-offer-box offer-bg mb-8\" style=\"flex-direction: column; padding:10px\">\n    <div class=\"big-text mar-bottom-0\" style=\"width: 100%;line-height: 1.2;\"> App-Exclusive Edit</div>\n    <div style=\"width: 100%;text-align: center;line-height: 1.2;\">Discover never-seen-before suits, sarees, menswear, and more — only on our App!</div>\n    <div class=\"Footer_details_columns_lists_2_detail_infos_new\" style=\"justify-content: center;padding-top: 10px;\">\n        <div class=\"Footer_details_columns_lists_2_detail_infos_image_new\">\n            <a href=\"https://play.google.com/store/apps/details?id=com.shopgate.android.kalkifash\" target=\"_blank\">\n                <img src=\"//cdn.shopify.com/s/files/1/0636/0134/4666/files/google-play.png?v=1717482983\" alt=\"Google Play\" width=\"138\" height=\"43\" loading=\"lazy\" fetchpriority=\"auto\" class=\"Icon_app_image_new\">\n            </a>\n        </div>\n        <div class=\"Footer_details_columns_lists_2_detail_infos_image_new\" >\n            <a href=\"https://apps.apple.com/in/app/kalki-fashion-online-shopping/id950206786\" target=\"_blank\" >\n                <img src=\"//cdn.shopify.com/s/files/1/0636/0134/4666/files/app-store.png?v=1717482983\" alt=\"App Store\" width=\"138\" height=\"43\" loading=\"lazy\" fetchpriority=\"auto\" class=\"Icon_app_image_new\" >\n            </a>\n        </div>\n    </div>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "index_icon_with_text_list_new_BVGD4G": {
       "type": "Index-icon-with-text-list-new",
       "blocks": {
@@ -924,6 +934,7 @@
     "index_round_column_list_new_HTHR6w",
     "index_top_banner_slider_new_KVqUBp",
     "offer_banner_fqgEXH",
+    "custom_liquid_P4iAXw",
     "index_icon_with_text_list_new_BVGD4G",
     "index_custom_collections_new_Q6pkgL",
     "fireworks_section_D3wrVX",
