@@ -122,7 +122,7 @@ window.onWizzyScriptLoaded = function () {
               // "9:16 Vertical Rectangle" === "1:1 Square" ? true : false,
               displayStoreName: true,
               displayDispalyAddToCartNumber: true,
-              storeName: "<img src='https://in.kalkifashion.com/cdn/shop/files/kalki-logo.svg' alt='Kalki Logo'/>",
+              storeName: <img src='https://in.kalkifashion.com/cdn/shop/files/kalki-logo.svg' alt='Kalki Logo'/>,
               currentCartCount: 0,
               displayAddToCart: true,
               displayViewMore: true,
