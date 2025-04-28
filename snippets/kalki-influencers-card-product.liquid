@@ -123,14 +123,15 @@
                       height="{{ card_product.media[1].height }}"
                     >
                 {%- endif -%}
-                {% else %}
-                  {% if collection.metafields.custom.collection_column_heading_text_list.value[forloop.index0] %}
+
+                {% elsif collection.metafields.custom.collection_column_heading_text_list.value[forloop.index0] %}
                   <div class="Collection_meta_columns_loops_innerbox_2_new">
                           <div class="Collection_meta_columns_loops_innerbox_2_titletextsboth_new">
                             {{ collection.metafields.custom.collection_column_heading_text_list.value[forloop.index0] }}
                           </div>
                         </div>
-                    {% else %}
+                {% else %}
+                 
                   <img
                     srcset="
                       {%- if card_product.featured_media.width >= 400 -%}{%- render 'gumlet', src: featured_media w: 370 %} 610w,{%- endif -%}
@@ -149,7 +150,7 @@
                     height="{{ card_product.featured_media.height }}"
                   >
                   {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
-                    {%- endif -%}
+                   
                   {%- if card_product.media[1] != null and show_secondary_image -%}
                     <img
                       srcset="
