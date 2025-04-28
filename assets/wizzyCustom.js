@@ -509,7 +509,7 @@ window.onWizzyScriptLoaded = function () {
 
           product.attributes.forEach((attr) => {
             if (attr.id === "product_gumlet_video_url_custom") {
-              product.mainVideo = attr.values[0].value[0];
+              product.video = attr.values[0].value[0];
             }
           });
         });
