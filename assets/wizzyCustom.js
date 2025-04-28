@@ -238,7 +238,7 @@ window.onWizzyScriptLoaded = function () {
   const colorMap = new Map([
     ["Rust", ["#b7410e", !1]],
     [
-      "Multicolor",
+      "Multi",
       [
         "https://i.ibb.co/BVjj74X/classic-color-spectrum-rgb-line-gradient-vector-522680-173-copy.png",
         1,
