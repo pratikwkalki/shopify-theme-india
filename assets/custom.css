@@ -4961,6 +4961,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   
   .Page_store_detail_objects_detail_1_new{height:320px;}
   .Page_store_detail_objects_detail_2_objectlistsboth_new{padding:20px;}
+  .Page_store_detail_objects_detail_2_new{margin: -40px auto 0;}
   .Page_store_detail_objects_detail_2_mainleft_new{width:calc(100% - 240px);}
   .Page_store_detail_objects_detail_2_innerleft_title_new { margin-bottom: 0;}
   .Page_store_detail_objects_detail_2_innerleft_details_in_new{ font-size:15px; }
