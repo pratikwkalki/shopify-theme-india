@@ -892,7 +892,7 @@ window.onWizzyScriptLoaded = function () {
                   window.localtion.href = "https://in.kalkifashion.com/apps/wishlist";
                 });
               }
-          }, 500)
+          }, 1000)
         })
       }
      
