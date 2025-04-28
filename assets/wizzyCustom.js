@@ -889,7 +889,7 @@ window.onWizzyScriptLoaded = function () {
               reel_wishlist.addEventListener("click", (e)=>{
                 e.stopImmediatePropagation();
                 window.localtion.href = "https://in.kalkifashion.com/apps/wishlist";
-              }}, true)
+              }, true)
             }
         })
       }
