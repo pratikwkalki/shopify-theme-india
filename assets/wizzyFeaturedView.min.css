@@ -4,6 +4,9 @@
   top: 25%;
   transform: translate(-50%, 25%);
 }
+.wizzy__featuredview__cart__dj89c svg {
+  transform: unset !important;
+}
 .wizzy__featuredview__cartCount__Ttudn {
   display: none !important;
 }
