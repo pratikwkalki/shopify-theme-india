@@ -886,7 +886,7 @@ window.onWizzyScriptLoaded = function () {
           let reel_wishlist = document.querySelector('.wizzy__featuredview__wishlist___e6gQ');
            if(reel_wishlist)
             {
-              reel_wishlist.addEventListener("click", (e)=>{
+              reel_wishlist.addEventListener("click", function(e){
                 e.stopImmediatePropagation();
                 window.localtion.href = "https://in.kalkifashion.com/apps/wishlist";
               }, true)
@@ -985,7 +985,7 @@ searchbtn.addEventListener("click", function () {
   let wishlist = document.querySelector('.wizzy__featuredview__wishlist___e6gQ');
     if(wishlist)
     {
-      wishlist.addEventListener("click", function() {
+      wishlist.addEventListener("click", function(e) {
         e.stopImmediatePropagation();
         window.location.href = 'https://in.kalkifashion.com/apps/wishlist';
       })
