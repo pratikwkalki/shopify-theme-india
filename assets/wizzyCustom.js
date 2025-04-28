@@ -882,6 +882,7 @@ window.onWizzyScriptLoaded = function () {
       let reel_view_button = document.querySelector('#init-wizzy-featured-view-button');
       if(reel_view_button)
       {
+        console.log("clicked on reel button");
         reel_view_button.addEventListener("click", function() {
           setTimeout(()=>{
              let reel_wishlist = document.querySelector('.wizzy__featuredview__wishlist___e6gQ');
