@@ -11,6 +11,9 @@
   border: none !important;
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
+.wizzy__featuredview__storeName__j7_1P img {
+  padding-top: 8px;
+}
 .wizzy__featuredview__carouselProductLoadingSVG__jhEJH {
   align-items: center;
   animation: wizzy__featuredview__ellipsis__lmmXi 2s linear infinite;
