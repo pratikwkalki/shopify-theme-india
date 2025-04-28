@@ -878,13 +878,13 @@ window.onWizzyScriptLoaded = function () {
         }
       });
 
-      // let reel_wishlist = document.querySelector('.wizzy__featuredview__wishlist___e6gQ');
-      // if(reel_wishlist)
-      // {
-      //   reel_wishlist.addEventListener(("click")=> {
-      //     window.localtion.href = "https://in.kalkifashion.com/apps/wishlist";
-      //   })
-      // }
+      let reel_wishlist = document.querySelector('.wizzy__featuredview__wishlist___e6gQ');
+      if(reel_wishlist)
+      {
+        reel_wishlist.addEventListener(("click")=> {
+          window.localtion.href = "https://in.kalkifashion.com/apps/wishlist";
+        })
+      }
 
       const selectedList = document.querySelector(".wizzy-selected-facet-list");
       const targetDiv1 = document.querySelector(".wizzy-facet-list-block");
