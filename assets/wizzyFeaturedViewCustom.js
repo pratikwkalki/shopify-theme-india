@@ -8,10 +8,7 @@ window.featuredViewConfig.events.registerEvent(
           "https://play.gumlet.io/embed/67c941d69f16a95954e33a06.mp4";
       }
     });
-    return data;
-  }
-);
-let wishlist = document.querySelector('.wizzy__featuredview__wishlist___e6gQ');
+    let wishlist = document.querySelector('.wizzy__featuredview__wishlist___e6gQ');
     if(wishlist)
     {
       wishlist.addEventListener("click", ()=> {
@@ -19,3 +16,6 @@ let wishlist = document.querySelector('.wizzy__featuredview__wishlist___e6gQ');
         window.location.href = 'https://in.kalkifashion.com/apps/wishlist';
       })
     }
+    return data;
+  }
+);
