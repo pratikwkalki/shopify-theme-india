@@ -493,7 +493,7 @@ summary .icon-caret { position: relative; }
 
 .Index_round_column_list_main_new{display:none;}
 
-.swiper-pagination-bullet{ width: 10px;  height: 10px; border-radius: 50px; margin: 5px; background: #ffffff; opacity: .2;}
+.swiper-pagination-bullet{ width: 10px;  height: 10px; border-radius: 50px; margin: 5px; background: #ffffff; opacity: .2;cursor: pointer;}
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active{ opacity: 1 !important; background: #ffffff !important;}
 
