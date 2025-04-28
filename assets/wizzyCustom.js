@@ -887,6 +887,7 @@ window.onWizzyScriptLoaded = function () {
           console.log("clicked on reel button");
           setTimeout(()=>{
              let reel_wishlist = document.querySelector('.wizzy__featuredview__wishlist___e6gQ');
+            console.log("inside set Timeout");
              if(reel_wishlist)
               {
                 reel_wishlist.addEventListener("click", function(e){
