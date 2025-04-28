@@ -7,6 +7,10 @@
 .wizzy__featuredview__mute__pmLuV {
   display: none !important;
 }
+.wizzy__featuredview__storeName__j7_1P {
+  border: none;
+  background: #eeeeee;
+}
 .wizzy__featuredview__carouselProductLoadingSVG__jhEJH {
   align-items: center;
   animation: wizzy__featuredview__ellipsis__lmmXi 2s linear infinite;
