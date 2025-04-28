@@ -493,6 +493,25 @@ summary .icon-caret { position: relative; }
 
 .Index_round_column_list_main_new{display:none;}
 
+.swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    margin: 5px;
+    background: #ffffff;
+    opacity: .2;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    opacity: 1 !important;
+    background: #ffffff !important;
+}
+
+.Index_top_banner_slider_inner_new.swiper-pagination{
+    width: 100%;
+    position: absolute;
+}
+
 .Index_top_banner_slider_main_new{margin-bottom:30px;}
 .Index_top_banner_slider_inner_new .swiper-pagination {  position: static;  padding-top: 36px;}
 .Index_top_banner_slider_inner_new .swiper-pagination .swiper-pagination-bullet {  background-color: rgba(0, 0, 0, 1);}
@@ -6835,24 +6854,6 @@ body.template-customers-activate_account .customer .field{
     margin-bottom: 20px;
 }
 
-swiper-pagination-bullet{
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
-    margin: 5px;
-    background: #ffffff;
-    opacity: .2;
-}
-
-.swiper-pagination-bullet.swiper-pagination-bullet-active{
-    opacity: 1 !important;
-    background: #ffffff !important;
-}
-
-.Index_top_banner_slider_inner_new.swiper-pagination{
-    width: 100%;
-    position: absolute;
-}
 .template--mens-detail-new .Index_top_banner_slider_inner_new .swiper-pagination {
     padding-top: 12px;
 }
