@@ -683,7 +683,7 @@ window.onWizzyScriptLoaded = function () {
       );
       ranges.forEach((range) => {
         if (range.textContent.trim() === "(0)") {
-          range.parentElement.remove(); // remove the parent element from the DOM
+          range.parentElement.remove();
         }
       });
 
