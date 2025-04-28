@@ -123,15 +123,6 @@
                             height="{{ card_product.media[1].height }}"
                           >
                       {%- endif -%}
-
-                {% elsif collection.metafields.custom.collection_column_heading_text_list.value[forloop.index0] %}
-                  {%- for Images in collection.metafields.custom.collection_column_video_or_image_list.value -%}
-                        <div class="Collection_meta_columns_loops_innerbox_2_new">
-                          <div class="Collection_meta_columns_loops_innerbox_2_titletextsboth_new">
-                            {{ collection.metafields.custom.collection_column_heading_text_list.value[forloop.index0] }}
-                          </div>
-                        </div>
-                    {%- endfor -%}
                 {% else %}
                  
                   <img
