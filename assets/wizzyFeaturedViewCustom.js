@@ -4,7 +4,8 @@ window.featuredViewConfig.events.registerEvent(
     console.log(data);
     data?.payload?.result.forEach((product) => {
       if (product) {
-        product.video = "https://play.gumlet.io/embed/67c941d69f16a95954e33a06";
+        product.video =
+          "https://play.gumlet.io/embed/67c941d69f16a95954e33a06.mp4";
       }
     });
     return data;
