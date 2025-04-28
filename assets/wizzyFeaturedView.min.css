@@ -5,7 +5,7 @@
   transform: translate(-50%, 25%);
 }
 .wizzy__featuredview__cart__dj89c svg {
-  transform: unset !important;
+  transform: scale(0.8) !important;
 }
 .wizzy__featuredview__cartCount__Ttudn {
   display: none !important;
