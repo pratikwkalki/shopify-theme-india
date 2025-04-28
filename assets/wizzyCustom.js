@@ -383,6 +383,7 @@ window.onWizzyScriptLoaded = function () {
                 });
             });
         });
+        console.log(payload);
       }
 
       facets = payload.response.payload.facets;
