@@ -4,6 +4,9 @@
   top: 25%;
   transform: translate(-50%, 25%);
 }
+.wizzy__featuredview__cartCount__Ttudn {
+  display: none;
+}
 .wizzy__featuredview__mute__pmLuV {
   display: none !important;
 }
