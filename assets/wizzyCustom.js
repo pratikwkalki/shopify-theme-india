@@ -506,6 +506,12 @@ window.onWizzyScriptLoaded = function () {
           if (festivalMeta) {
             product.festivalMeta = festivalMeta.values[0].value[0];
           }
+
+          product.attributes.forEach((attr) => {
+            if (arr.id === "product_gumlet_video_url_custom") {
+              product.mainVideo = attr.values[0].value[0];
+            }
+          });
         });
       } catch (error) {}
 
