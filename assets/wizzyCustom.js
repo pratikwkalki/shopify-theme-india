@@ -882,7 +882,7 @@ window.onWizzyScriptLoaded = function () {
       let reel_view_button = document.querySelector('#init-wizzy-featured-view-button');
       if(reel_view_button)
       {
-        reel_view_button.addEventListener("click", () => {
+        reel_view_button.addEventListener("click", function() {
           let reel_wishlist = document.querySelector('.wizzy__featuredview__wishlist___e6gQ');
            if(reel_wishlist)
             {
