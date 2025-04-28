@@ -881,7 +881,8 @@ window.onWizzyScriptLoaded = function () {
       let reel_wishlist = document.querySelector('.wizzy__featuredview__wishlist___e6gQ');
       if(reel_wishlist)
       {
-        reel_wishlist.addEventListener("click", ()=>{
+        reel_wishlist.addEventListener("click", (e)=>{
+          e.stopImmediatePropagation();
           window.localtion.href = "https://in.kalkifashion.com/apps/wishlist";
         })
       }
