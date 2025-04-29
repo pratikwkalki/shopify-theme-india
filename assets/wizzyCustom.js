@@ -138,6 +138,14 @@ window.onWizzyScriptLoaded = function () {
                 "product_Color",
                 "product_sku",
                 "product_value_tags_product_type",
+                "product_value_tags_product_type",
+                "product_filter_sub_categories_custom",
+                "product_filter_color_custom",
+                "product_filter_occasion_custom",
+                "product_filter_fabric_custom",
+                "product_filter_fabric_custom",
+                "product_filter_work_custom",
+                "product_style_no_custom",
               ],
             });
           }
