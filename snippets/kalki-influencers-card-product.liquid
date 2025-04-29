@@ -85,7 +85,7 @@
                 {% assign featured_media = card_product.featured_media  | image_url %}
                   {% assign featured_influencers = card_product.metafields.custom.celebrity_influencer_image.value  | image_url %}
                 {% assign featured_media_hover = card_product.media[1]  | image_url %}
-                    {%- if card_product.metafields.custom.celebrity_influencer_image.value != blank -%}
+                    {%- if card_product.featured_influencers != blank -%}
                           {{ card_product.metafields.custom.celebrity_influencer_image.value  }}
                       <img
                         srcset="
