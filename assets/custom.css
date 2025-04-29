@@ -3075,7 +3075,7 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
 .customer .field.email,.customer .field.Phonenumber,.customer .field.password{width: 100%}
 .customer input[type="date"]::-webkit-calendar-picker-indicator {
   background: url(https://img.icons8.com/cotton/64/000000/calendar.png) no-repeat;
-  background-size: 21px 21px;
+  background-size: 25px 25px;
 }
 /* Register & Login */
 
