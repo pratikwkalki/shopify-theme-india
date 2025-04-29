@@ -2243,7 +2243,9 @@ div.ymq-option-title {
     height: 0;
     overflow: hidden;
 }
-
+.template--gift-card variant-selects .tooltip {
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
   body.template-product {
