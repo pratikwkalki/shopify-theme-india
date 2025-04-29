@@ -135,29 +135,29 @@
                  
                   <img
                     srcset="
-                      {%- if card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0].width >= 400 -%}{%- render 'gumlet', src:.metafields.custom.collection_column_heading_text_list.value[forloop.index0] w: 370 %} 610w,{%- endif -%}
-                      {%- if card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0].width >= 350 -%}{%- render 'gumlet', src:.metafields.custom.collection_column_heading_text_list.value[forloop.index0] w: 350 %} 1066w,{%- endif -%}
-                      {%- render 'gumlet', src:.metafields.custom.collection_column_heading_text_list.value[forloop.index0] w: 370 %} {{ card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0].width }}w
+                      {%- if card_product.featured_media.width >= 400 -%}{%- render 'gumlet', src: featured_media w: 370 %} 610w,{%- endif -%}
+                      {%- if card_product.featured_media.width >= 350 -%}{%- render 'gumlet', src: featured_media w: 350 %} 1066w,{%- endif -%}
+                      {%- render 'gumlet', src: featured_media w: 370 %} {{ card_product.featured_media.width }}w
                     "
-                    src="{%- render 'gumlet', src:.metafields.custom.collection_column_heading_text_list.value[forloop.index0] w: 370 %}"
+                    src="{%- render 'gumlet', src: featured_media w: 370 %}"
                     sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                    alt="{{ card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0].alt | escape | default: card_product.title }}"
-                    title="{{ card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0].alt | escape | default: card_product.title }}"
+                    alt="{{ card_product.featured_media.alt | escape | default: card_product.title }}"
+                    title="{{ card_product.featured_media.alt | escape | default: card_product.title }}"
                     class="motion-reduce"
                     {% unless lazy_load == false %}
                       loading="lazy"
                     {% endunless %}
-                    width="{{ card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0].width }}"
-                    height="{{ card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0].height }}"
+                    width="{{ card_product.featured_media.width }}"
+                    height="{{ card_product.featured_media.height }}"
                   >
                   {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
                    
-                  {%- if card_product.media[1] != null and show_secondary_image -%}
+                  {%- if card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0] != null and show_secondary_image -%}
                     <img
                       srcset="
-                        {%- if card_product.media[1].width >= 400 -%}{%- render 'gumlet', src: featured_media_hover w: 370 %} 610w,{%- endif -%}
-                        {%- if card_product.media[1].width >= 350 -%}{%- render 'gumlet', src: featured_media_hover w: 350 %} 1066w,{%- endif -%}
-                        {%- render 'gumlet', src: featured_media_hover w: 370 %} {{ card_product.media[1].width }}w
+                        {%- if card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0].width >= 400 -%}{%- render 'gumlet', src: featured_media_hover w: 370 %} 610w,{%- endif -%}
+                        {%- if card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0].width >= 350 -%}{%- render 'gumlet', src: featured_media_hover w: 350 %} 1066w,{%- endif -%}
+                        {%- render 'gumlet', src: featured_media_hover w: 370 %} {{ card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0].width }}w
                       "
                       {% assign old_img_url_hover =  %}
                       src="{%- render 'gumlet', src: featured_media_hover w: 370 %}"
@@ -166,8 +166,8 @@
                       title="{{ card_product.featured_media.alt | escape | default: card_product.title }}"
                       class="motion-reduce"
                       loading="lazy"
-                      width="{{ card_product.media[1].width }}"
-                      height="{{ card_product.media[1].height }}"
+                      width="{{ card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0].width }}"
+                      height="{{ card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0].height }}"
                     >
                   {%- endif -%}
                 {% endif %}
