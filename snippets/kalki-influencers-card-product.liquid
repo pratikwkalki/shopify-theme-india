@@ -103,12 +103,12 @@
                         height="{{ card_product.featured_media.height }}"
                       >
                       {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
-                      {%- elsif card_product.metafields.custom.celebrity_influencer_image.value != blank -%}
+                      {%- if card_product.metafields.custom.celebrity_influencer_image.value != blank -%}
                         
                             {{ card_product.metafields.custom.celebrity_influencer_image.value | json }}
                               
                        
-                        {%- if card_product.media[1] != null and show_secondary_image -%}
+                        {%- elsif card_product.media[1] != null and show_secondary_image -%}
                           
                           <img
                             srcset="
