@@ -83,13 +83,14 @@
               <div class="media media--transparent media--hover-effect">
                 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
                 {% assign featured_media = card_product.featured_media  | image_url %}
+          {% assign featured_media1 = card_product.metafields.custom.celebrity_influencer_image.value  | image_url %}
                 {% assign featured_media_hover = card_product.media[1]  | image_url %}
                 {% if template contains 'bridal-collection-new' %}
                       
                       {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
-                      {%- if card_product.metafields.custom.celebrity_influencer_image.value != blank -%}
+                      {%- if card_product.featured_media1 != blank -%}
                         
-                            {{ card_product.metafields.custom.celebrity_influencer_image.value | json }}
+                            {{ card_product.featured_media1 | json }}
                               
                        
                         {%- elsif card_product.media[1] != null and show_secondary_image -%}
