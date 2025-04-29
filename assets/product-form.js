@@ -280,7 +280,6 @@ addMainProduct(refTimeStamp) {
 
         if (errorMessage) {
           this.errorMessage.textContent = errorMessage;
-          this.hideLoader();
         }
       }
     }
