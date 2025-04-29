@@ -131,8 +131,8 @@
                  
                   <img
                     srcset="
-                      {%- if card_product.metafields.custom.celebrity_influencer_image.value.width >= 400 -%}{%- render 'gumlet', src:.metafields.custom.celebrity_influencer_image.value w: 370 %} 610w,{%- endif -%}
-                      {%- if card_product.metafields.custom.celebrity_influencer_image.value.width >= 350 -%}{%- render 'gumlet', src:.metafields.custom.celebrity_influencer_image.value w: 350 %} 1066w,{%- endif -%}
+                      {%- if card_product.metafields.custom.celebrity_influencer_image.value.width >= 400 -%}{%- render 'gumlet', src:card_product.metafields.custom.celebrity_influencer_image.value w: 370 %} 610w,{%- endif -%}
+                      {%- if card_product.metafields.custom.celebrity_influencer_image.value.width >= 350 -%}{%- render 'gumlet', src:card_product.metafields.custom.celebrity_influencer_image.value w: 350 %} 1066w,{%- endif -%}
                       {%- render 'gumlet', src:card_product.metafields.custom.celebrity_influencer_image.value w: 370 %} {{ card_product.metafields.custom.celebrity_influencer_image.value.width }}w
                     "
                     src="{%- render 'gumlet', src:card_product.metafields.custom.celebrity_influencer_image.value w: 370 %}"
