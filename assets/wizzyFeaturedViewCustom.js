@@ -1,4 +1,4 @@
-document.addEventListener("wizzyFeaturedViewLoaded", function () {
+
   window.featuredViewConfig.events.registerEvent(
     window.featuredViewConfig.events.allowedEvents.AFTER_PRODUCTS_FETCHED,
     function (data) {
@@ -12,7 +12,7 @@ document.addEventListener("wizzyFeaturedViewLoaded", function () {
       );
     }
   );
-});
+
 
 
 
