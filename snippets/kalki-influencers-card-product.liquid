@@ -84,6 +84,10 @@
                 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
                 {% assign featured_media = card_product.featured_media  | image_url %}
                 {% assign featured_media_hover = card_product.media[1]  | image_url %}
+          {%- if card_product.metafields.custom.celebrity_influencer_image.value != blank -%}
+                          {{ card_product.metafields.custom.celebrity_influencer_image.value | json }}
+                             
+                        {%- endif -%}
                 {% if template contains 'bridal-collection-new' %}
                       <img
                         srcset="
@@ -103,10 +107,7 @@
                         height="{{ card_product.featured_media.height }}"
                       >
                       {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
-                      {%- if card_product.metafields.custom.celebrity_influencer_image.value != blank -%}
-                          {{ card_product.metafields.custom.celebrity_influencer_image.value | json }}
-                             
-                        {%- endif -%}
+                      
                         {%- if card_product.media[1] != null and show_secondary_image -%}
                           
                           <img
