@@ -3003,7 +3003,7 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
 /* Event */
 
 /* Register & Login */
-.Customer_register_template_main_new{}
+
 .Customer_register_template_inner_new{display:flex; max-width:1400px; margin: auto}
 .Customer_register_template_mainleft_new{width:40%; display:flex; align-items:center; position:relative; padding:25px; min-height: 900px; }
 .Customer_register_template_innerleft_new{max-width:400px; margin:auto;}
@@ -3069,6 +3069,7 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
 #customer_login {
     display: block !important;
 }
+.customer .field.FirstName,.customer .field.LastName{width: 50%}
 /* Register & Login */
 
 /* Account */

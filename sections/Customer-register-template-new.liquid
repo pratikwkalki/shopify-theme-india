@@ -92,7 +92,7 @@
                     </ul>
                   </div>
                 {%- endif -%}
-              <div class="field">
+              <div class="field FirstName">
                 <input
                   type="text"
                   name="customer[first_name]"
@@ -109,7 +109,7 @@
                   {{ 'customer.register.first_name' | t }}
                 </label>
               </div>
-              <div class="field">
+              <div class="field LastName">
                 <input
                   type="text"
                   name="customer[last_name]"
@@ -126,7 +126,7 @@
                   {{ 'customer.register.last_name' | t }}
                 </label>
               </div>
-              <div class="field">
+              <div class="field email">
                 <input
                   type="email"
                   name="customer[email]"
@@ -151,7 +151,7 @@
               </div>
 
 
-                <div class="field">
+                <div class="field Phonenumber">
                 <input
                   type="tel"
                   name="customer[note][Phone Number]"
@@ -177,7 +177,7 @@
                   {{ form.errors.messages.email }}.
                 </span>
               {%- endif -%}
-              <div class="field">
+              <div class="field password">
                 <input
                   type="password"
                   name="customer[password]"
