@@ -136,8 +136,6 @@ window.onWizzyScriptLoaded = function () {
               displayViewMore: true,
               attributesToShowOnViewMore: [
                 "product_Color",
-                "product_sku",
-                "product_value_tags_product_type",
                 "product_value_tags_product_type",
                 "product_filter_sub_categories_custom",
                 "product_filter_color_custom",
