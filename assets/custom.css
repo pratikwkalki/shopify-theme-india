@@ -3070,6 +3070,7 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
     display: block !important;
 }
 .customer .field.FirstName,.customer .field.LastName{width: 50%}
+.customer .field.email,.customer .field.Phonenumber,.customer .field.password{width: 100%}
 /* Register & Login */
 
 /* Account */
