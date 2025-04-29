@@ -1212,7 +1212,7 @@ div.stamped-container[data-widget-style], div[data-widget-style] div.stamped-con
     visibility: visible;
     opacity: 1;
 }
-.Bridal_collection_desktop_only_new{ justify-content: flex-start !important; padding-top: 12px !important; }
+.Bridal_collection_desktop_only_new{ justify-content: flex-start !important; }
 @media(min-width:750px) and (max-width:9999px)
 {
   .Bridal_collection_desktop_only_new{ display:flex !important; }
