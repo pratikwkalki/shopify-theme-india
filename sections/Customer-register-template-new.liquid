@@ -207,6 +207,16 @@
                   {{ form.errors.messages.password }}.
                 </span>
               {%- endif -%}
+
+                <div class="field Phonenumber">
+                <label for="customMessage" class="form__label">When is your wedding date?:</label>
+                  <input type="text" form="cart" id="customMessage" name="properties[Custom Message]" class="form__input"> 
+                
+                <label for="RegisterForm-number">
+                  Date of Birth*
+                </label>
+              </div>
+                      
               <button class="button submit_btn_new registerbtn">
                 {{ 'customer.register.submit' | t }}
               </button>
