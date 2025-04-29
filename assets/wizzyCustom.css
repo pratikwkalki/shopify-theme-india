@@ -1687,3 +1687,8 @@ span.wizzy-facet-list-item-checkbox {
 menu-drawer .mobile-facets__header-inner {
   padding: 0;
 }
+@media only screen and (min-width: 750px) {
+  menu-drawer .mobile-facets__header-inner {
+    padding-left: 44px;
+  }
+}
