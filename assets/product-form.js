@@ -185,7 +185,7 @@ if (!customElements.get('product-form')) {
       }
       
       // Add main product after upsell products (or directly if no upsell)
-      addMainProduct() {
+      addMainProduct(refTimeStamp) {
         return new Promise((resolve, reject) => {
           const config = fetchConfig('javascript');
           config.headers['X-Requested-With'] = 'XMLHttpRequest';
@@ -193,6 +193,9 @@ if (!customElements.get('product-form')) {
       
           const formData = new FormData(this.form);
           console.log('Adding main product to cart');
+      
+          // Append the same refTimeStamp to the main product
+          formData.append('items[0][properties][_ref_id]', refTimeStamp);
       
           if (this.cart) {
             formData.append(
@@ -211,12 +214,10 @@ if (!customElements.get('product-form')) {
               if (response.status) {
                 publish(PUB_SUB_EVENTS.cartError, {
                   source: 'product-form',
-                  productVariantId: formData.get('items[0][id]'),
+                  productVariantId: formData.get('items[0][id]'), // Handle errors correctly
                   errors: response.errors || response.description,
                   message: response.message,
                 });
-                console.log('response.description', response.description);
-                console.log('response.errors', response.errors);
                 this.handleErrorMessage(response.description);
       
                 const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
@@ -252,20 +253,20 @@ if (!customElements.get('product-form')) {
                   quickAddModal.hide(true);
                 } else {
                   this.cart.renderContents(response);
-                  if (this.cart && this.cart.classList.contains('is-empty')) {
-                    this.cart.classList.remove('is-empty');
-                  }
+                  if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
                 }
       
                 resolve(); // Main product added successfully
               }
             })
             .catch((e) => {
-              console.error(e);
+              console.error(e); // Handle errors
               reject(e);
             });
         });
       }
+
+
 
       handleErrorMessage(errorMessage = false) {
         if (this.hideErrors) return;
