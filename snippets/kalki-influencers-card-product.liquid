@@ -28,10 +28,10 @@
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
-    if card_product.featured_media and media_aspect_ratio == 'portrait'
+    if card_product.metafields.custom.celebrity_influencer_image.value and media_aspect_ratio == 'portrait'
       assign ratio = 0.8
-    elsif card_product.featured_media and media_aspect_ratio == 'adapt'
-      assign ratio = card_product.featured_media.aspect_ratio
+    elsif card_product.metafields.custom.celebrity_influencer_image.value and media_aspect_ratio == 'adapt'
+      assign ratio = card_product.metafields.custom.celebrity_influencer_image.value.aspect_ratio
     endif
     if ratio == 0 or ratio == null
       assign ratio = 1
@@ -131,20 +131,20 @@
                  
                   <img
                     srcset="
-                      {%- if card_product.metafields.custom.celebrity_influencer_image.value.width >= 400 -%}{%- render 'gumlet', src: featured_media w: 370 %} 610w,{%- endif -%}
-                      {%- if card_product.metafields.custom.celebrity_influencer_image.value.width >= 350 -%}{%- render 'gumlet', src: featured_media w: 350 %} 1066w,{%- endif -%}
-                      {%- render 'gumlet', src: featured_media w: 370 %} {{ card_product.metafields.custom.celebrity_influencer_image.value.width }}w
+                      {%- if card_product.featured_media.width >= 400 -%}{%- render 'gumlet', src: featured_media w: 370 %} 610w,{%- endif -%}
+                      {%- if card_product.featured_media.width >= 350 -%}{%- render 'gumlet', src: featured_media w: 350 %} 1066w,{%- endif -%}
+                      {%- render 'gumlet', src: featured_media w: 370 %} {{ card_product.featured_media.width }}w
                     "
                     src="{%- render 'gumlet', src: featured_media w: 370 %}"
                     sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                    alt="{{ card_product.metafields.custom.celebrity_influencer_image.value.alt | escape | default: card_product.title }}"
-                    title="{{ card_product.metafields.custom.celebrity_influencer_image.value.alt | escape | default: card_product.title }}"
+                    alt="{{ card_product.featured_media.alt | escape | default: card_product.title }}"
+                    title="{{ card_product.featured_media.alt | escape | default: card_product.title }}"
                     class="motion-reduce"
                     {% unless lazy_load == false %}
                       loading="lazy"
                     {% endunless %}
-                    width="{{ card_product.metafields.custom.celebrity_influencer_image.value.width }}"
-                    height="{{ card_product.metafields.custom.celebrity_influencer_image.value.height }}"
+                    width="{{ card_product.featured_media.width }}"
+                    height="{{ card_product.featured_media.height }}"
                   >
                   {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
                    
