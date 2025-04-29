@@ -1670,3 +1670,12 @@ span.wizzy-facet-list-item-checkbox {
   background: #fff;
   padding-right: 10px;
 }
+.wizzy-search-results-list .grid__item[title*="Gift Card"] a.card__inner {
+    --ratio-percent: 62.7% !important;
+}
+.wizzy-search-results-list .grid__item[title*="Gift Card"] a.card__inner img:nth-child(2) {
+    display: none;
+}
+.wizzy-search-results-list .grid__item[title*="Gift Card"] a.card__inner img:first-child {
+    opacity: 1 !important;
+}
