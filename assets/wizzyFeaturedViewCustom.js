@@ -4,8 +4,8 @@ window.featuredViewConfig.events.registerEvent(
     console.log(data);
     data?.payload?.result.forEach((product) => {
       if (product) {
-        product.video =
-          "https://play.gumlet.io/embed/67c941d69f16a95954e33a06.mp4";
+        // product.video =
+        //   "https://play.gumlet.io/embed/67c941d69f16a95954e33a06.mp4";
       }
     });
     let wishlist1 = document.querySelector('.wizzy__featuredview__wishlist___e6gQ');
