@@ -131,7 +131,6 @@
                 {% else %}
 
                   {% if influencers_media !=blank %}
-                           {{ influencers_media | json }}
                     <img
                         srcset="
                           {%- if card_product.influencers_media.width >= 400 -%}{%- render 'gumlet', src: influencers_media w: 370 %} 610w,{%- endif -%}
