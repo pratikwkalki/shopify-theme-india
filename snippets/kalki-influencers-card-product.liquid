@@ -111,6 +111,7 @@
                             height="{{ card_product.media[1].height }}"
                           >
                         {%- else -%}
+                        {{ card_product.metafields.custom.celebrity_influencer_image.value | json }}
                         <img
                         srcset="
                           {%- if card_product.featured_media.width >= 400 -%}{%- render 'gumlet', src: featured_media w: 485 %} 610w,{%- endif -%}
