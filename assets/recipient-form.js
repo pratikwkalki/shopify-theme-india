@@ -16,6 +16,18 @@ if (!customElements.get('recipient-form')) {
         this.offsetProperty = this.querySelector(`#Recipient-timezone-offset-${this.dataset.sectionId}`);
         if (this.offsetProperty) this.offsetProperty.value = new Date().getTimezoneOffset().toString();
 
+        if (this.sendonInput) {
+          const today = new Date();
+          const maxDate = new Date();
+          maxDate.setDate(today.getDate() + 90);
+          const formatDate = (date) => {
+            return date.toISOString().split('T')[0];
+          };
+          console.log('this.sendonInput',this.sendonInput)
+          this.sendonInput.min = formatDate(today);
+          this.sendonInput.max = formatDate(maxDate);
+        }
+        
         this.errorMessageWrapper = this.querySelector('.product-form__recipient-error-message-wrapper');
         this.errorMessageList = this.errorMessageWrapper?.querySelector('ul');
         this.errorMessage = this.errorMessageWrapper?.querySelector('.error-message');
