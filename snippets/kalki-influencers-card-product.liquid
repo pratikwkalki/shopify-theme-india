@@ -32,8 +32,6 @@
       assign ratio = 0.8
     elsif card_product.featured_media and media_aspect_ratio == 'adapt'
       assign ratio = card_product.featured_media.aspect_ratio
-    elsif card_product.metafields.custom.celebrity_influencer_image.value and media_aspect_ratio == 'adapt'
-      assign ratio = card_product.metafields.custom.celebrity_influencer_image.value.aspect_ratio
     endif
     if ratio == 0 or ratio == null
       assign ratio = 1
@@ -175,28 +173,7 @@
            
                  </a>
           </div>
-
-        {%- else card_product.metafields.custom.celebrity_influencer_image.value-%}
-                          {{ card_product.metafields.custom.celebrity_influencer_image.value  }}
-                      <img
-                        srcset="
-                          {%- if card_product.featured_influencers.width >= 400 -%}{%- render 'gumlet', src: featured_influencers w: 485 %} 610w,{%- endif -%}
-                          {%- if card_product.featured_influencers.width >= 350 -%}{%- render 'gumlet', src: featured_influencers w: 350 %} 1066w,{%- endif -%}
-                          {%- render 'gumlet', src: featured_influencers w: 485 %} {{ card_product.featured_influencers.width }}w
-                        "
-                        src="{%- render 'gumlet', src: featured_media w: 485 %}"
-                        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                        alt="{{ card_product.featured_influencers.alt | escape | default: card_product.title }}"
-                        title="{{ card_product.featured_influencers.alt | escape | default: card_product.title }}"
-                        class="motion-reduce"
-                        {% unless lazy_load == false %}
-                          loading="lazy"
-                        {% endunless %}
-                        width="{{ card_product.featured_influencers.width }}"
-                        height="{{ card_product.featured_influencers.height }}"
-                      >
-                             
-                        
+              
         
         {%- endif -%}
 
