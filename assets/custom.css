@@ -3073,6 +3073,10 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
 .customer .field.FirstName,.customer .field.LastName{width: calc(50% - 8px);}
 .customer .field.LastName{ margin-top: 0rem; margin-top:0px !important;}
 .customer .field.email,.customer .field.Phonenumber,.customer .field.password{width: 100%}
+.theme--dark input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url(https://img.icons8.com/cotton/64/000000/calendar.png) no-repeat;
+  background-size: 21px 21px;
+}
 /* Register & Login */
 
 /* Account */
