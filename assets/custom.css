@@ -134,7 +134,7 @@ img{ height: auto !important; }
 
 
 /* gift card page */
-.gift-offer-box{ background-color: #F6F6FB; padding:10px;line-height: 1.3;}
+.gift-offer-box{ background-color: #F6F6FB; padding:10px;line-height: 1.3; margin-bottom: 10px}
 .gift-offer-text-head{color: #1F725B; font-weight: bold;font-size:18px}
 .gift-offer-text-sub{color: #1F725B; font-weight: normal;font-size:14px}
 
