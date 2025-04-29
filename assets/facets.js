@@ -155,9 +155,6 @@ class FacetFiltersForm extends HTMLElement {
     if (document.body.classList.contains('template--luxe-collection-new') && window.matchMedia('(min-width: 750px) and (max-width: 1024px)').matches) {
       document.body.classList.remove('overflow-hidden-mobile')
     }
-    if (document.body.classList.contains('overflow-hidden-mobile')) {
-      document.body.classList.remove('overflow-hidden-mobile')
-    }
   }
 
   static renderFilters(html, event) {
@@ -322,6 +319,9 @@ class FacetFiltersForm extends HTMLElement {
     const closestDetails = targetFacets.closest('details');
     if (closestDetails) {
       closestDetails.removeAttribute('open');
+    }
+    if (document.body.classList.contains('overflow-hidden-mobile')) {
+      document.body.classList.remove('overflow-hidden-mobile')
     }
   }
 
