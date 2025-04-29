@@ -130,7 +130,7 @@
                   
                 {% else %}
 
-                  {% if influencers_media !=blank %}
+                  {% if card_product.metafields.custom.celebrity_influencer_image.value !=blank %}
                            {{ influencers_media | json }}
 
                   {%- else -%}  
