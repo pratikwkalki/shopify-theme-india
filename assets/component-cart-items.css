@@ -578,6 +578,11 @@ cart-remove-button .icon-remove {
     border-top: 1px solid #fff;
     margin-top: -1px;
 }
+.cart-wrapper .cart-item__price-wrapper .price.cart-item__old-price {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
 
 @media only screen and (min-width:768px) {
   .cart-wrapper .saving-percentage {
