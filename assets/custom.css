@@ -133,6 +133,13 @@ img{ height: auto !important; }
 }
 
 
+/* gift card page */
+.gift-offer-box{ background-color: #F6F6FB; padding:10px}
+.gift-offer-text-head{color: #1F725B; font-weight: bold;font-size:18px}
+.gift-offer-text-sub{color: #1F725B; font-weight: normal;font-size:14px}
+
+
+/* gift card page close*/
 
  /* bride and barat form header footer hide close  */
 
