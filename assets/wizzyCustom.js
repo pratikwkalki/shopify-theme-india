@@ -140,7 +140,6 @@ window.onWizzyScriptLoaded = function () {
                 "product_filter_color_custom",
                 "product_filter_occasion_custom",
                 "product_filter_fabric_custom",
-                "product_filter_fabric_custom",
                 "product_filter_work_custom",
                 "product_style_no_custom",
               ],
