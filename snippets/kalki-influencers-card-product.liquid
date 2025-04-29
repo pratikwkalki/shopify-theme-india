@@ -124,7 +124,7 @@
                           >
                       {%- endif -%}
 
-               {% elsif template contains 'template--kalki-influencers' %}
+               {% elsif template contains 'kalki-influencers' %}
                  <img
                         srcset="
                           {%- if card_product.metafields.custom.celebrity_influencer_image.value.width >= 400 -%}{%- render 'gumlet', src: featured_media w: 485 %} 610w,{%- endif -%}
