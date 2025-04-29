@@ -129,7 +129,11 @@
                
                   
                 {% else %}
-                 
+
+                  {% if influencers_media !=blank %}
+                           {{ influencers_media | json }}
+
+                  {%- else -%}  
                   <img
                     srcset="
                       {%- if card_product.featured_media.width >= 400 -%}{%- render 'gumlet', src: featured_media w: 370 %} 610w,{%- endif -%}
@@ -148,7 +152,7 @@
                     height="{{ card_product.featured_media.height }}"
                   >
                   {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
-                   
+                   {%- endif -%}
                   {%- if card_product.media[1] != null and show_secondary_image -%}
                     <img
                       srcset="
