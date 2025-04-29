@@ -57,7 +57,7 @@ window.onWizzyScriptLoaded = function () {
     window.wizzyConfig.events.allowedEvents.PRODUCTS_RESULTS_RENDERED,
     function (payload) {
       // $("html").removeClass("filtersOpend");
-      console.log("Inside PRODUCTS_RESULTS_RENDERED");
+      // console.log("Inside PRODUCTS_RESULTS_RENDERED");
       let rangeInputForGrid;
       if (window.innerWidth <= 768) {
         rangeInputForGrid = document.querySelectorAll(
@@ -73,7 +73,7 @@ window.onWizzyScriptLoaded = function () {
         rangeInputForGrid != null &&
         typeof rangeInputForGrid != "undefined"
       ) {
-        console.log("2 products in a row");
+        // console.log("2 products in a row");
         rangeInputForGrid.value = 2;
         handleRangeInputValueChange(2);
       } else if (
@@ -81,7 +81,7 @@ window.onWizzyScriptLoaded = function () {
         rangeInputForGrid != null &&
         typeof rangeInputForGrid != "undefined"
       ) {
-        console.log("3 products in a row");
+        // console.log("3 products in a row");
         rangeInputForGrid.value = 4;
         handleRangeInputValueChange(4);
       } else if (
@@ -89,7 +89,7 @@ window.onWizzyScriptLoaded = function () {
         rangeInputForGrid != null &&
         typeof rangeInputForGrid != "undefined"
       ) {
-        console.log("4 products in a row");
+        // console.log("4 products in a row");
         rangeInputForGrid.value = 6;
         handleRangeInputValueChange(6);
       }
@@ -99,7 +99,7 @@ window.onWizzyScriptLoaded = function () {
       //   rangeInputForGrid.value = 3;
       //    handleRangeInputValueChange(3);
       // }
-      console.log("hello world");
+      // console.log("hello world");
       document
         .querySelector("#init-wizzy-featured-view-button")
         .addEventListener("click", function () {
@@ -374,14 +374,14 @@ window.onWizzyScriptLoaded = function () {
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.BEFORE_RENDER_RESULTS,
     function (payload) {
-      console.log("BEFORE_RENDER_RESULTS", payload);
+      // console.log("BEFORE_RENDER_RESULTS", payload);
       if (payload.api === "search" || payload.api === "filter") {
         var facets = payload.response.payload.facets;
         facets.forEach((facet) => {
           facet.key === "colors" &&
             facet.data.forEach((item) => {
               let color = findHaxCode(item.key);
-              console.log(color);
+              // console.log(color);
               (item.isSwatch = !0),
                 (item.isURLSwatch = color[1]),
                 (item.isVisualSwatch = !0),
@@ -395,7 +395,7 @@ window.onWizzyScriptLoaded = function () {
                 });
             });
         });
-        console.log(payload);
+        // console.log(payload);
       }
 
       facets = payload.response.payload.facets;
@@ -557,7 +557,7 @@ window.onWizzyScriptLoaded = function () {
       }
 
       if (body.classList.contains("collection_hide_announcement_bar_new")) {
-        console.log("inside removing");
+        // console.log("inside removing");
         body.classList.remove("collection_hide_announcement_bar_new");
       }
 
@@ -688,7 +688,7 @@ window.onWizzyScriptLoaded = function () {
           }, 100);
         });
       });
-      console.log("in view rendered");
+      // console.log("in view rendered");
       let ranges = document.querySelectorAll(
         ".wizzy-facet-list-item.facet-rangeList-item .wizzy-facet-list-item-count"
       );
@@ -703,22 +703,22 @@ window.onWizzyScriptLoaded = function () {
       const targetDiv2 = document.querySelectorAll(".wizzy-facet-body"); // Replace if needed
       let title = document.querySelector(".applied-filters-header");
       if (selectedList && selectedList.querySelectorAll("li").length > 0) {
-        console.log("Inside divs");
+        // console.log("Inside divs");
         targetDiv1?.classList.add("with-selected-filters");
         targetDiv2.forEach((d) => {
           d?.classList.add("with-selected-filters");
         });
         title?.classList.remove("remove");
       } else {
-        console.log("inside remove");
-        console.log("No selected filters");
+        // console.log("inside remove");
+        // console.log("No selected filters");
         targetDiv1?.classList.remove("with-selected-filters");
         targetDiv2.forEach((d) => {
           d?.classList.remove("with-selected-filters");
         });
-        console.log(title);
+        // console.log(title);
         title?.classList.add("remove");
-        console.log("Removed title", title);
+        // console.log("Removed title", title);
       }
       document
         .querySelectorAll(".wizzy-grid-filters-box")
@@ -879,7 +879,7 @@ window.onWizzyScriptLoaded = function () {
           }, 100);
         });
       });
-      console.log("in view rendered");
+      // console.log("in view rendered");
       let ranges = document.querySelectorAll(
         ".wizzy-facet-list-item.facet-rangeList-item .wizzy-facet-list-item-count"
       );
@@ -898,22 +898,22 @@ window.onWizzyScriptLoaded = function () {
       const targetDiv2 = document.querySelectorAll(".wizzy-facet-body");
       let title = document.querySelector(".applied-filters-header");
       if (selectedList && selectedList.querySelectorAll("li").length > 0) {
-        console.log("Inside divs");
+        // console.log("Inside divs");
         targetDiv1?.classList.add("with-selected-filters");
         targetDiv2.forEach((d) => {
           d?.classList.add("with-selected-filters");
         });
         title?.classList.remove("remove");
       } else {
-        console.log("inside remove");
-        console.log("No selected filters");
+        // console.log("inside remove");
+        // console.log("No selected filters");
         targetDiv1?.classList.remove("with-selected-filters");
         targetDiv2.forEach((d) => {
           d?.classList.remove("with-selected-filters");
         });
-        console.log(title);
+        // console.log(title);
         title?.classList.add("remove");
-        console.log("Removed title", title);
+        // console.log("Removed title", title);
       }
       document
         .querySelectorAll(".wizzy-grid-filters-box")
