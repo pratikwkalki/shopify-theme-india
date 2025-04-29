@@ -103,26 +103,11 @@
                         height="{{ card_product.featured_media.height }}"
                       >
                       {% comment %}theme-check-enable ImgLazyLoading{% endcomment %}
-                      {%- if card_product.metafields.custom.celebrity_influencer_image.value != blank -%}
-                        {{ card_product.metafields.custom.celebrity_influencer_image.value | json }}
-                              <img
-                              srcset="
-                                {%- if card_product.metafields.custom.celebrity_influencer_image.value.width >= 400 -%}{%- render 'gumlet', src: featured_media w: 485 %} 610w,{%- endif -%}
-                                {%- if card_product.metafields.custom.celebrity_influencer_image.value.width >= 350 -%}{%- render 'gumlet', src: featured_media w: 350 %} 1066w,{%- endif -%}
-                                {%- render 'gumlet', src: featured_media w: 485 %} {{ card_product.metafields.custom.celebrity_influencer_image.value.width }}w
-                              "
-                              src="{%- render 'gumlet', src: featured_media w: 485 %}"
-                              sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                              alt="{{ card_product.metafields.custom.celebrity_influencer_image.value.alt | escape | default: card_product.title }}"
-                              title="{{ card_product.metafields.custom.celebrity_influencer_image.value.alt | escape | default: card_product.title }}"
-                              class="motion-reduce"
-                              {% unless lazy_load == false %}
-                                loading="lazy"
-                              {% endunless %}
-                              width="{{ card_product.metafields.custom.celebrity_influencer_image.value.width }}"
-                              height="{{ card_product.metafields.custom.celebrity_influencer_image.value.height }}"
-                            >
-                        {%- endif -%}
+                      {%- elsif card_product.metafields.custom.celebrity_influencer_image.value != blank -%}
+                        
+                            {{ card_product.metafields.custom.celebrity_influencer_image.value | json }}
+                              
+                       
                         {%- if card_product.media[1] != null and show_secondary_image -%}
                           
                           <img
