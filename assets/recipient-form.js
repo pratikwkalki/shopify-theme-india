@@ -23,7 +23,6 @@ if (!customElements.get('recipient-form')) {
           const formatDate = (date) => {
             return date.toISOString().split('T')[0];
           };
-          console.log('this.sendonInput',this.sendonInput)
           this.sendonInput.min = formatDate(today);
           this.sendonInput.max = formatDate(maxDate);
         }
