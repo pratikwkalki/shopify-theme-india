@@ -160,7 +160,8 @@
         class="header__menu-item list-menu__item link link--text focus-inset find-store"
         {%- if link.current -%} aria-current="page" {%- endif -%}
       >
-        <img src="{{ 'Find-a-store-icon-black.svg' | file_url }}" width="30" height="25" alt="">
+        {% assign store_image = 'Find-a-store-icon-black.svg'  | file_url %}
+        <img src="{%- render 'gumlet', src: store_image w: 30 %}" width="30" height="25" alt="">
         Find Store
       </a>
     </li>

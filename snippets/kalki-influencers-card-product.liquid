@@ -124,7 +124,7 @@
                           >
                       {%- endif -%}
 
-               {% elsif card_product.metafields.custom.collection_column_heading_text_list.value[forloop.index0]  %}
+               {% elsif card_product.metafields.custom.collection_column_heading_text_list != blank  %}
                   <div class="Collection_meta_columns_loops_innerbox_2_new">
                           <div class="Collection_meta_columns_loops_innerbox_2_titletextsboth_new">
                             {{ collection.metafields.custom.collection_column_heading_text_list.value[forloop.index0] }}
