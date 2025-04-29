@@ -213,10 +213,11 @@
                   <!-- <input type="dateofbirth" form="cart" id="dateofbirth" name="dateofbirth"  placeholder="Date of Birth*" >  -->
                   <input
       type="dateofbirth" 
-      id="dateofbirth"
+      id="course-date-{{ section.id }}"
       class="required date_picker__input"
-      name="dateofbirth"
-      
+      name="properties[Kursdatum]"
+      min="{{ block.settings.season_date_start }}"
+      max="{{ block.settings.season_date_end }}"
       form="cart"
       required
     />
