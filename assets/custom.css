@@ -7238,6 +7238,12 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
 .Product_Bridal_meta_product_list_main_new .cs_delivery_inner-wrapper {
     display: none;
 }
+button.Polaris-Button.Polaris-Button--pressable.Polaris-Button--variantPlain.Polaris-Button--sizeMedium.Polaris-Button--textAlignCenter.Polaris-Button--toneCritical{
+	display:none !important;
+}
+Polaris-ActionList__Item Polaris-ActionList--destructive Polaris-ActionList--default{
+	display:none !important;
+}
 
 @media screen and (max-width: 1024px) {
   body #sotp .sotp-popup-wrapper .sotp-popup-inner .sotp-popup-content .sotp-popup-container .sotp-widget #sotp-new-popup.olWrapper {
