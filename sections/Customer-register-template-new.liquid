@@ -210,15 +210,14 @@
 
                 <div class="field Dateofbirth">
                
-                  <input type="dateofbirth" form="cart" id="dateofbirth" name="dateofbirth"  placeholder="Date of Birth*" > 
+                  <!-- <input type="dateofbirth" form="cart" id="dateofbirth" name="dateofbirth"  placeholder="Date of Birth*" >  -->
                   <input
-      type="date" 
-      id="course-date-{{ section.id }}"
+      type="dateofbirth" 
+      id="dateofbirth"
       class="required date_picker__input"
-      name="properties[Kursdatum]"
-      min="{{ block.settings.season_date_start }}"
-      max="{{ block.settings.season_date_end }}"
-      form="{{ product_form_id }}"
+      name="dateofbirth"
+      
+      form="cart"
       required
     />
                 
