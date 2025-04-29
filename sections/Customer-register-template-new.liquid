@@ -209,20 +209,24 @@
               {%- endif -%}
 
                 <div class="field Dateofbirth">
-               
-                  <!-- <input type="dateofbirth" form="cart" id="dateofbirth" name="dateofbirth"  placeholder="Date of Birth*" >  -->
-                  <input
-      type="date" 
-      id="dateofbirth"
-      class="required date_picker__input"
-      name="dateofbirth"
-      required
-    />
-                
-                <label for="dateofbirth">
-                  Date of Birth*
-                </label>
-              </div>
+                    <input type="date" 
+                      id="dateofbirth"
+                      class="required date_picker__input"
+                      name="dateofbirth"
+                      required
+                    />
+                    <label for="dateofbirth">
+                      Date of Birth*
+                    </label>
+                </div>
+                <div class="field Dateofbirth">
+                      <select id="CustomerFormFlavor" name="customer[note][Flavor]">
+                        <option>Chocolate</option>
+                        <option>Vanilla</option>
+                        <option>Strawberry</option>
+                      </select>
+                    
+                  </div>
                       
               <button class="button submit_btn_new registerbtn">
                 {{ 'customer.register.submit' | t }}
