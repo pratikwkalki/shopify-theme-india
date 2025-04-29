@@ -3044,7 +3044,7 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
 .ssw-socialconnect>div>a{ border-radius: 40px !important; border: 1px solid #E1E1E5 !important; width: 50px !important; line-height:48px !important; }
 .ssw-socialconnect>.ssw-gconnect>a{ box-shadow:0 0 0 !important; }
 .Customer_register_template_innerright_bottominfos_new{}
-.Customer_register_template_innerright_bottominfos_infos_1_new{padding-bottom:30px;}
+.Customer_register_template_innerright_bottominfos_infos_1_new{padding-bottom:30px; width: 100%}
 .Customer_register_template_innerright_bottominfos_infos_1_new p{margin:0; color:#000; text-align:center; font-size:12px; font-weight:400; line-height:133.333%;}
 .Customer_register_template_innerright_bottominfos_infos_1_new p a{color:#223330; text-decoration:none; font-size:inherit; }
 .Customer_register_template_innerright_bottominfos_infos_2_new{padding-top:20px; border-top:1px solid #E1E1E5;}
