@@ -131,8 +131,9 @@
                 {% else %}
 
                   {% if card_product.metafields.custom.celebrity_influencer_image.value !=blank %}
-                           {{ influencers_media | json }}
-
+                     {% for influencers in card_product.metafields.custom.celebrity_influencer_image.value %}
+                           {{ influencers | json }}
+                      {% endfor %}
                   {%- else -%}  
                       <img
                         srcset="
