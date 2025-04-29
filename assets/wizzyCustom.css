@@ -1,7 +1,9 @@
 .wizzy-search-wrapper {
   font-family: var(--font-body-family);
 }
-
+wizzy__featuredview__squaredImageBackdrop__lZfX1 {
+  background: none !important;
+}
 /* .wizzy-common-select-options.desktop {
   display: none !important;
 } */
