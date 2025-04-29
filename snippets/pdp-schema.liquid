@@ -33,7 +33,7 @@
 	"@type": "Offer",
 	"url": "{{ product.url | escape }}",
 	"priceCurrency": "{{ shop.currency }}",
-	"price": "{{ product.price | times: 0.01 | round: 2 }}",
+	"price": "{{ product.price | times: 0.01 }}",
 	"itemCondition": "https://schema.org/NewCondition",
 	"availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
 	"seller": {
