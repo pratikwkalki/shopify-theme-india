@@ -1684,3 +1684,6 @@ span.wizzy-facet-list-item-checkbox {
 .wizzy-search-results-list .grid__item[title*="Gift Card"] a.card__inner img:first-child {
     opacity: 1 !important;
 }
+menu-drawer .mobile-facets__header-inner {
+  padding: 0;
+}
