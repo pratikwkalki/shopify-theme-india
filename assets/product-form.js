@@ -185,86 +185,86 @@ if (!customElements.get('product-form')) {
       }
       
       // Add main product after upsell products (or directly if no upsell)
-      addMainProduct() {
-      return new Promise((resolve, reject) => {
-        const config = fetchConfig('javascript');
-        config.headers['X-Requested-With'] = 'XMLHttpRequest';
-        delete config.headers['Content-Type'];
-    
-        const formData = new FormData(this.form);
-        console.log('Adding main product to cart');
-    
-        if (this.cart) {
-          formData.append(
-            'sections',
-            this.cart.getSectionsToRender().map((section) => section.id)
-          );
-          formData.append('sections_url', window.location.pathname);
-          this.cart.setActiveElement(document.activeElement);
-        }
-    
-        config.body = formData;
-    
-        fetch(`${routes.cart_add_url}`, config)
-          .then((response) => response.json())
-          .then((response) => {
-            if (response.status) {
-              publish(PUB_SUB_EVENTS.cartError, {
-                source: 'product-form',
-                productVariantId: formData.get('items[0][id]'),
-                errors: response.errors || response.description,
-                message: response.message,
-              });
-              console.log('response.description', response.description);
-              console.log('response.errors', response.errors);
-              this.handleErrorMessage(response.description);
-    
-              const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
-              if (!soldOutMessage) return;
-              this.submitButton.setAttribute('aria-disabled', true);
-              this.submitButton.querySelector('span').classList.add('hidden');
-              soldOutMessage.classList.remove('hidden');
-              this.error = true;
-              reject('Main product sold out');
-            } else {
-              if (!this.cart) {
-                window.location = window.routes.cart_url;
-                return;
-              }
-    
-              publish(PUB_SUB_EVENTS.cartUpdate, {
-                source: 'product-form',
-                productVariantId: formData.get('id'),
-                cartData: response,
-              });
-    
-              const quickAddModal = this.closest('quick-add-modal');
-              if (quickAddModal) {
-                document.body.addEventListener(
-                  'modalClosed',
-                  () => {
-                    setTimeout(() => {
-                      this.cart.renderContents(response);
-                    });
-                  },
-                  { once: true }
-                );
-                quickAddModal.hide(true);
+      addMainProduct(refTimeStamp) {
+        return new Promise((resolve, reject) => {
+          const config = fetchConfig('javascript');
+          config.headers['X-Requested-With'] = 'XMLHttpRequest';
+          delete config.headers['Content-Type'];
+      
+          const formData = new FormData(this.form);
+          console.log('Adding main product to cart');
+      
+          // Append the same refTimeStamp to the main product
+          formData.append('items[0][properties][_ref_id]', refTimeStamp);
+      
+          if (this.cart) {
+            formData.append(
+              'sections',
+              this.cart.getSectionsToRender().map((section) => section.id)
+            );
+            formData.append('sections_url', window.location.pathname);
+            this.cart.setActiveElement(document.activeElement);
+          }
+      
+          config.body = formData;
+      
+          fetch(`${routes.cart_add_url}`, config)
+            .then((response) => response.json())
+            .then((response) => {
+              if (response.status) {
+                publish(PUB_SUB_EVENTS.cartError, {
+                  source: 'product-form',
+                  productVariantId: formData.get('items[0][id]'), // Handle errors correctly
+                  errors: response.errors || response.description,
+                  message: response.message,
+                });
+                this.handleErrorMessage(response.description);
+      
+                const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
+                if (!soldOutMessage) return;
+                this.submitButton.setAttribute('aria-disabled', true);
+                this.submitButton.querySelector('span').classList.add('hidden');
+                soldOutMessage.classList.remove('hidden');
+                this.error = true;
+                reject('Main product sold out');
               } else {
-                this.cart.renderContents(response);
-                if (this.cart && this.cart.classList.contains('is-empty')) {
-                  this.cart.classList.remove('is-empty');
+                if (!this.cart) {
+                  window.location = window.routes.cart_url;
+                  return;
                 }
+      
+                publish(PUB_SUB_EVENTS.cartUpdate, {
+                  source: 'product-form',
+                  productVariantId: formData.get('id'),
+                  cartData: response,
+                });
+      
+                const quickAddModal = this.closest('quick-add-modal');
+                if (quickAddModal) {
+                  document.body.addEventListener(
+                    'modalClosed',
+                    () => {
+                      setTimeout(() => {
+                        this.cart.renderContents(response);
+                      });
+                    },
+                    { once: true }
+                  );
+                  quickAddModal.hide(true);
+                } else {
+                  this.cart.renderContents(response);
+                  if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
+                }
+      
+                resolve(); // Main product added successfully
               }
-    
-              resolve(); // Main product added successfully
-            }
-          })
-          .catch((e) => {
-            console.error(e);
-            reject(e);
-          });
-      });
+            })
+            .catch((e) => {
+              console.error(e); // Handle errors
+              reject(e);
+            });
+        });
+      }
 
 
 
