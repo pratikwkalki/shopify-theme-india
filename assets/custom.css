@@ -3056,7 +3056,7 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
 .forgot_password{ display: block;text-decoration: underline; cursor: pointer; margin: 12px 0 0 !important; color: #000 !important; text-align: center; font-size: 12px !important; font-style: normal; font-weight: 400; line-height: 133.333%; width: 100% !important; }
 .login_submit_btn_new{ margin-bottom:30px !important; }
 .login_back{display: block;text-decoration: underline; cursor: pointer; margin: 0px 0 0 !important; color: #000 !important; text-align: center; font-size: 16px !important; font-style: normal; font-weight: 400; line-height: 133.333%; width: 100% !important; text-transform: capitalize;}
-.customer form { margin-top: 0 !important; }
+.customer form { margin-top: 0 !important; display: flex;flex-wrap: wrap}
 .guest_login_new{ padding-top:30px; margin-top: 20px; border-top: 1px solid #E1E1E5; }
 .template-customers-login .Index_newsletter_form_new{ display:none; }
 
