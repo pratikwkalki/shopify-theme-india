@@ -130,7 +130,6 @@
       <link rel="alternate" hreflang="en" href="https://www.kalkifashion.com/global/" />
       <link rel="alternate" hreflang="x-default" href="https://www.kalkifashion.com/global/" />
     {%- endif -%}
-
     {%- if template.name == 'collection' -%}
       {%- if collection.metafields.custom.collection_hreflang != blank -%}
         {{ collection.metafields.custom.collection_hreflang }}
@@ -146,14 +145,12 @@
         {{ page.metafields.custom.page_hreflang }}
       {%- endif -%}
     {%- endif -%}
-
     {%- if page.handle contains 'bridal-wedding-dresses' -%}
       <link rel="alternate" hreflang="en-us" href="https://www.kalkifashion.com/bridal-wedding-dresses" />
       <link rel="alternate" hreflang="en-gb" href="https://uk.kalkifashion.com/pages/bridal-wedding-dresses" />
       <link rel="alternate" hreflang="en" href="https://www.kalkifashion.com/global/bridal-wedding-dresses" />
       <link rel="alternate" hreflang="x-default" href="https://www.kalkifashion.com/global/bridal-wedding-dresses" />
     {%- endif -%}
-
     {% if template.name == 'cart' or template.name contains 'customers/' %}
       <meta name="robots" content="noindex, nofollow">
     {% else %}
