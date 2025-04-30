@@ -764,6 +764,11 @@ window.onWizzyScriptLoaded = function () {
         }
       });
 
+      const priceElements = document.querySelectorAll('.price-item--regular');
+      priceElements.forEach((el) => {
+        el.textContent = el.textContent.replace(/\.00\b/, '');
+      });
+
       return data;
     }
   );
