@@ -33,12 +33,12 @@ window.onWizzyScriptLoaded = function () {
           CBrangeInputForGrid.value = 2;
           handleRangeInputValueChange(2);
         } else if (
-          sessionStorage.getItem("wizzy-3-products-in-a-row") === "true"
+          sessionStorage.getItem("wizzy-4-products-in-a-row") === "true"
         ) {
           CBrangeInputForGrid.value = 3;
           handleRangeInputValueChange(3);
         } else if (
-          sessionStorage.getItem("wizzy-4-products-in-a-row") === "true"
+          sessionStorage.getItem("wizzy-6-products-in-a-row") === "true"
         ) {
           CBrangeInputForGrid.value = 4;
           handleRangeInputValueChange(4);
