@@ -1726,3 +1726,9 @@ span.wizzy-facet-list-item-checkbox {
   .wizzy-facet-item-swatch-wrapper {
   display: none;
 }
+@media screen and (min-width: 1025px) {
+  .wizzy-category-page .wizzy-search-summary-container,
+  .wizzy-search-wrapper.has-left-facets .wizzy-search-summary-container {
+    margin-left: 25%;
+  }
+}
