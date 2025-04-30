@@ -35,13 +35,13 @@ window.onWizzyScriptLoaded = function () {
         } else if (
           sessionStorage.getItem("wizzy-4-products-in-a-row") === "true"
         ) {
-          CBrangeInputForGrid.value = 3;
-          handleRangeInputValueChange(3);
+          CBrangeInputForGrid.value = 4;
+          handleRangeInputValueChange(4);
         } else if (
           sessionStorage.getItem("wizzy-6-products-in-a-row") === "true"
         ) {
-          CBrangeInputForGrid.value = 4;
-          handleRangeInputValueChange(4);
+          CBrangeInputForGrid.value = 6;
+          handleRangeInputValueChange(6);
         }
         clearInterval(waitForInputToLoad);
       }
