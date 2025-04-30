@@ -4604,6 +4604,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
   .Bridal_coll_round_column_list_new .Index_round_column_list_1_allloop_innerboxs_new a{ padding:14px; color: #F6F6F9; }
   .Bridal_coll_round_column_list_new .Index_round_column_list_1_allloop_mainboxs_new{ border-bottom:2px solid transparent; }
   .Bridal_coll_round_column_list_new .Index_round_column_list_1_allloop_mainboxs_new.active { border-bottom: 2px solid #fff; background: none; }
+  .template--bridal-wedding-dress-new .Bridal_coll_round_column_list_new {min-height: auto !important;}
 
   .Page_bridal_video_texts_main_new{ margin:24px 0 32px 0; }
   .Page_bridal_video_texts_detail_new{ display:block; }
