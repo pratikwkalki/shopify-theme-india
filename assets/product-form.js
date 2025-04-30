@@ -195,8 +195,9 @@ if (!customElements.get('product-form')) {
           console.log('Adding main product to cart');
       
           // Append the same refTimeStamp to the main product
-          
-          formData.append('items[0][properties][_ref_id]', refTimeStamp);
+          if (this.form.querySelectorAll('[js-upsell-product] input:checked').length > 0) {
+            formData.append('items[0][properties][_ref_id]', refTimeStamp);
+          }
       
           if (this.cart) {
             formData.append(
