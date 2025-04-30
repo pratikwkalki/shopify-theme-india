@@ -180,6 +180,14 @@
             "title_color": "#cc8f66"
           }
         },
+        "image_with_text_column_3PgKWr": {
+          "type": "image_with_text_column",
+          "settings": {
+            "image": "shopify://shop_images/sherwani-182x182-09-03-24_1.jpg",
+            "title": "Sherwani",
+            "redirect": "shopify://collections/ethnic-sherwanis"
+          }
+        },
         "image_with_text_column_7Fti99": {
           "type": "image_with_text_column",
           "settings": {
@@ -196,14 +204,6 @@
             "redirect": "shopify://collections/kurta-set"
           }
         },
-        "image_with_text_column_JWeMgW": {
-          "type": "image_with_text_column",
-          "settings": {
-            "image": "shopify://shop_images/tuxedo-10-11-23_1.jpg",
-            "title": "Tuxedo",
-            "redirect": "shopify://collections/ethnic-tuxedo"
-          }
-        },
         "image_with_text_column_Mc96cd": {
           "type": "image_with_text_column",
           "settings": {
@@ -212,12 +212,12 @@
             "redirect": "shopify://collections/ethnic-indowestern-styles"
           }
         },
-        "image_with_text_column_3PgKWr": {
+        "image_with_text_column_JWeMgW": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/sherwani-182x182-09-03-24_1.jpg",
-            "title": "Sherwani",
-            "redirect": "shopify://collections/ethnic-sherwanis"
+            "image": "shopify://shop_images/tuxedo-10-11-23_1.jpg",
+            "title": "Tuxedo",
+            "redirect": "shopify://collections/ethnic-tuxedo"
           }
         },
         "image_with_text_column_UPgqan": {
@@ -243,11 +243,11 @@
         "texts_with_links_9weCaU",
         "texts_with_links_7JU3hX",
         "texts_with_links_iYxxD4",
+        "image_with_text_column_3PgKWr",
         "image_with_text_column_7Fti99",
         "image_with_text_column_inhDyA",
-        "image_with_text_column_JWeMgW",
         "image_with_text_column_Mc96cd",
-        "image_with_text_column_3PgKWr",
+        "image_with_text_column_JWeMgW",
         "image_with_text_column_UPgqan",
         "image_with_text_column_NwR3hT"
       ],
