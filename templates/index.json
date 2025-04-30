@@ -211,10 +211,10 @@
         "information_tH6WDF": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/1-slider-banner-classic-summer-affair-all-country-1640x615-19-04-25-new1.jpg",
-            "main_mobile_full_image": "shopify://shop_images/1-mobile-home-classic-summer-affair-all-country-500x707-19-04-25-new1.jpg",
-            "alt_text": "Summer House",
-            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/classic-summer-affair"
+            "main_desktop_full_image": "shopify://shop_images/1_slider_banner_classic_summer_affair_all_country_1640x615_30_04.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1_mobile_home_classic_summer_affair_all_country_500x707_30_04_25.jpg",
+            "alt_text": "Classic Summer Affair",
+            "main_banner_redirect_link": "shopify://collections/classic-summer-affair"
           }
         },
         "information_QJq4LK": {
