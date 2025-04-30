@@ -976,7 +976,7 @@ span.wizzy-autocomplete-label {
     .wizzy-mobile-filter-buttons
     .wizzy-filters-close-button-block {
     width: -webkit-fill-available;
-    padding-right: 16px;
+    padding-right: 0px !important;
     padding-bottom: 8px;
     display: block !important;
     padding-top: 15px;
