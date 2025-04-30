@@ -1721,3 +1721,8 @@ span.wizzy-facet-list-item-checkbox {
 
   padding-right: 10px;
 }
+.wizzy-selected-facet-list-item[data-facetkey="sizes"]
+  .wizzy-selected-facet-list-item-label
+  .wizzy-facet-item-swatch-wrapper {
+  display: none;
+}
