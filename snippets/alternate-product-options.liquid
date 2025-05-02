@@ -184,6 +184,7 @@
 
               
               {%- for collection in product.collections -%}
+                {{ collection | json }}
                 {%- if collection.title == 'mens' -%}
                   <!-- Code to execute if product is in 'My Category' -->
               test
