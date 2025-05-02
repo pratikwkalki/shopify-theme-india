@@ -4,6 +4,9 @@
 wizzy__featuredview__squaredImageBackdrop__lZfX1 {
   background: none !important;
 }
+.wizzy__featuredview__wishlist___e6gQ svg {
+  fill: black;
+}
 /* .wizzy-common-select-options.desktop {
   display: none !important;
 } */
