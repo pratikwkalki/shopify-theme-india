@@ -476,7 +476,7 @@ span.wizzy-autocomplete-label {
 }
 @media screen and (max-width: 769px) {
   .wizzy-search-wrapper {
-    padding-top: 90px;
+    padding-top: 0px;
   }
   #init-wizzy-featured-view-button {
     width: 70%;
