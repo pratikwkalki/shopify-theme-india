@@ -1,0 +1,33 @@
+<script type="text/javascript" src="{{ 'wizzyCustom.js' | asset_url  }}" defer></script>
+{% render 'wizzy-search-results-product' %}
+{% render 'wizzy-common-select' %}
+{% render 'wizzy-search-wrapper' %}
+{% render 'wizzy-autocomplete-topproducts' %}
+{% render 'wizzy-autocomplete-suggestions' %}
+{% render 'wizzy-search-summary'%}
+{% render 'wizzy-grid-facet-block' %}
+
+<script>
+  if (typeof window.wizzyLazyAssets != "undefined") {
+    window.wizzyLazyAssets = window.wizzyLazyAssets ? window.wizzyLazyAssets : [];
+        window.wizzyLazyAssets.push("{{ 'wizzyFrontend.min.js' | asset_url  }}",'scripts');
+  }
+</script>
+<script type="text/template" id="wizzy-promotion-banner" wizzy-override>
+      <div class="wz-promotion-banner [[#gridWidth]]wz-grid-type wz-grid-[[gridWidth]][[/gridWidth]] [[^gridWidth]] wz-banner-type [[/gridWidth]] "   [[#gridWidth]]data-grid-width="[[gridWidth]]"[[/gridWidth]]>
+        [[#targetUrl]]<a class="wz-banner-target-link" href="[[targetUrl]]">[[/targetUrl]]
+          <div class="wz-promotion-banner-image">
+            <div class="wz-banner-image" style="background-image: url('[[imageUrl]]');"></div>
+          </div>
+          
+          <div class="wz-promotion-banner-image wz-hover-image">
+            [[#imageHoverUrl]]
+              <div class="wz-banner-image" style="background-image: url('[[imageHoverUrl]]');" loading="lazy"></div>
+            [[/imageHoverUrl]]
+            [[^imageHoverUrl]]
+              <div class="wz-banner-image" style="background-image: url('[[imageUrl]]');"></div>
+            [[/imageHoverUrl]]
+          </div>    
+        [[#targetUrl]]</a>[[/targetUrl]]
+      </div>
+    </script>
