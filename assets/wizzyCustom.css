@@ -479,10 +479,9 @@ span.wizzy-autocomplete-label {
     padding-top: 0px;
   }
   #init-wizzy-featured-view-button {
-    width: 70%;
-    position: fixed;
+    width: 82%;
     z-index: 1;
-    margin: 22px 0px 10px 60px;
+    margin: 22px 0px 10px 35px;
   }
   .wizzy-grid-filters-box .with-selected-filters {
     margin-top: 0px !important;
