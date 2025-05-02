@@ -288,6 +288,88 @@
         "main_background_color": "#ffffff"
       }
     },
+    "mens_collection_category_lists_new_CFTKBk": {
+      "type": "Mens-collection-category-lists-new",
+      "blocks": {
+        "information_zVdnfh": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/1-mens-mini-desk-kurta-set-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mens-mini-desk-kurta-set-all-countries-250x250-24-04-25.jpg",
+            "title": "<p>Men's Kurta Set</p>",
+            "main_redirect_link": "https://in.kalkifashion.com/collections/mens-kurta-set"
+          }
+        },
+        "information_RyDRrF": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/2-mens-mini-desk-kurta-jackets-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2-mens-mini-desk-kurta-jackets-all-countries-250x250-24-04-25.jpg",
+            "title": "<p>Kurta Jackets</p>",
+            "main_redirect_link": "https://in.kalkifashion.com/collections/kurta-jacket-sets"
+          }
+        },
+        "information_n4HaWN": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/3-mens-mini-desk-indo-fusion-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-mens-mini-desk-indo-fusion-all-countries-250x250-24-04-25.jpg",
+            "title": "<p>Indowestern For Him</p>",
+            "main_redirect_link": "https://in.kalkifashion.com/collections/indo-westerns-for-men"
+          }
+        },
+        "information_NNxjiG": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/4-mens-mini-desk-tuxedo-affair-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/4-mens-mini-desk-tuxedo-affair-all-countries-250x250-24-04-25.jpg",
+            "title": "<p>Tuxedo Affair</p>",
+            "main_redirect_link": "https://in.kalkifashion.com/collections/tuxedo"
+          }
+        },
+        "information_6QyphN": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/5-mens-mini-desk-jodhpuri-jazz-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/5-mens-mini-desk-jodhpuri-jazz-all-countries-250x250-24-04-25.jpg",
+            "title": "<p>Jodhpuri Edit</p>",
+            "main_redirect_link": "https://in.kalkifashion.com/collections/jodhpuris"
+          }
+        },
+        "information_jRJNfG": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/6-mens-mini-desk-sherwani-saga-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/6-mens-mini-desk-sherwani-saga-all-countries-250x250-24-04-25.jpg",
+            "title": "<p>Sherwani Saga</p>",
+            "main_redirect_link": "https://in.kalkifashion.com/collections/sherwanis"
+          }
+        },
+        "information_PdA9wn": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/7-mens-mini-desk-jutti-edit-all-countries-250x250-24-04-25.jpg",
+            "main_mobile_image": "shopify://shop_images/7-mens-mini-desk-jutti-edit-all-countries-250x250-24-04-25.jpg",
+            "title": "<p>Jutti Edit</p>",
+            "main_redirect_link": "https://in.kalkifashion.com/collections/mens-footwear"
+          }
+        }
+      },
+      "block_order": [
+        "information_zVdnfh",
+        "information_RyDRrF",
+        "information_n4HaWN",
+        "information_NNxjiG",
+        "information_6QyphN",
+        "information_jRJNfG",
+        "information_PdA9wn"
+      ],
+      "name": "Mens Collection Category",
+      "settings": {
+        "main_background_color": "#FFFFFF",
+        "main_heading_text": "Shop by Category"
+      }
+    },
     "collection_category_lists_new_4aq7Bq": {
       "type": "Collection-category-lists-new",
       "blocks": {
@@ -364,6 +446,7 @@
         "information_hTU38k",
         "information_ptb3Tr"
       ],
+      "disabled": true,
       "custom_css": [
         ".Collection_category_lists_main_new {margin-top: 0;}"
       ],
@@ -612,6 +695,7 @@
     "collection_columns_new_P8WQkh",
     "index_round_column_list_new_wfdJmD",
     "page_weaves_banner_slider_new_WynPPQ",
+    "mens_collection_category_lists_new_CFTKBk",
     "collection_category_lists_new_4aq7Bq",
     "collection_sides_by_sides_new_YDXaAW",
     "tagalys_section_zc3ijY",
