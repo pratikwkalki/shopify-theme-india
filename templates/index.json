@@ -220,8 +220,8 @@
         "information_QJq4LK": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/2-slider-banner-new-arrivals-all-country-desktop-2800x1050-19-04-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/2-mobile-banner-new-arrivals-all-country-500x707-27-3-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/2_slider_banner_new_arrivals_all_country_desktop_2800x1050_30_04.jpg",
+            "main_mobile_full_image": "shopify://shop_images/2-mobile-banner-new-arrivals-all-country-500x707-30-3-25.jpg",
             "alt_text": "Drape Dynasty",
             "main_banner_redirect_link": "https://in.kalkifashion.com/collections/new-arrivals"
           }
