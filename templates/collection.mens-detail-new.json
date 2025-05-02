@@ -119,7 +119,7 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/3-mens-highlight-desk-ready-to-ship-all-countries-24-04-25.jpg",
             "main_mobile_image": "shopify://shop_images/3-mens-highlight-mobile-ready-to-ship-all-countries-24-04-25.jpg",
-            "main_button_link": "https://in.kalkifashion.com/collections/ready-to-ship-menswear"
+            "main_button_link": "shopify://collections/ready-to-ship-menswear"
           }
         }
       },
