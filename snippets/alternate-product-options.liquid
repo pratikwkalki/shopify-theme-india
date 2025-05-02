@@ -181,6 +181,16 @@
                   <span class="value-with-size">{{ sizeOptions }}</span>
                 {%- endfor -%}
               </div>
+
+              
+              {%- for collection in product.collections -%}
+                {%- if collection.title == 'mens' -%}
+                  <!-- Code to execute if product is in 'My Category' -->
+              test
+                {%- endif -%}
+              {%- endfor -%}
+
+              
               {% unless  value contains 'Months' or value contains 'Years' %}                
                   <p class="size-detail__text">*units in inches</p>              
               {% endunless  %}
