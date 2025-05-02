@@ -26,7 +26,7 @@
                                   <div class="Collection_category_lists_innerloop_innerboxs_1_videoimage_new">
                                     {{ block.settings.main_mp4_video | video_tag: controls: false, autoplay: true, loop: true }}
                                   </div>
-                                {% else %}  
+                                {%- else -%}  
                                   {%- if block.settings.main_desktop_image != blank and block.settings.main_mobile_image != blank -%}
                                     <div class="Collection_category_lists_innerloop_innerboxs_1_videoimage_new">
                                       {%- if block.settings.main_desktop_image != blank -%}
@@ -81,7 +81,7 @@
   </div>
 {%- endif -%} 
 
-{% schema %}
+{%- schema -%}
   {
     "name": "Collection Category Lists",
     "class": "Collection_category_lists_new",
@@ -160,4 +160,4 @@
       }
     ]
   }
-{% endschema %}
+{%- endschema -%}
