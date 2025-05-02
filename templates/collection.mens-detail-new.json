@@ -231,9 +231,9 @@
         "image_with_text_column_NwR3hT": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/182x182-mobile-kids-07-03-24_1.jpg",
-            "title": "kids",
-            "redirect": "shopify://collections/kids"
+            "image": "shopify://shop_images/7-mens-mini-desk-jutti-edit-all-countries-250x250-24-04-25.jpg",
+            "title": "Jutti Edit",
+            "redirect": "shopify://collections/mens-footwear"
           }
         }
       },
