@@ -20,6 +20,12 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
     font-family: sans-serif !important;
   }
 }
+@media screen and (max-width: 370px) {
+  .wizzy__featuredview__button__rlA6a {
+    font-size: 12px !important;
+    font-family: sans-serif !important;
+  }
+}
 @media screen and (min-width: 500px) {
   .wizzy__featuredview__button__rlA6a {
     font-size: 18px !important;
