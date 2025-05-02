@@ -487,7 +487,7 @@ window.onWizzyScriptLoaded = function () {
     function (products) {
       try {
         products.forEach((product) => {
-          let attr = product.attributes.forEach((attr) => attr.id === "product_handle");
+          let attr = product.attributes.filter((attr) => attr.id === "product_handle");
           product.productHandle = attr.values[0].value[0];
           let product_sellingprice = product.sellingPrice;
           product_sellingprice = product_sellingprice.replace(".00", "");
