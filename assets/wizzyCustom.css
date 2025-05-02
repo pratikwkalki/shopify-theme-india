@@ -553,6 +553,12 @@ span.wizzy-autocomplete-label {
     position: relative;
     right: -7px;
     border-radius: 50%;
+    background-image: url(https://img.icons8.com/ios-filled/50/000000/chevron-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    width: 15px;
+    height: 15px;
   }
   .with-selected-filters {
     margin-top: 115px !important;
