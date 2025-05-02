@@ -111,7 +111,7 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/2-mens-highlight-desk-printed-collection-all-countries-24-04-25.jpg",
             "main_mobile_image": "shopify://shop_images/2-mens-highlight-mobile-printed-collection-all-countries-24-04-25.jpg",
-            "main_button_link": "https://in.kalkifashion.com/collections/printed-menswear"
+            "main_button_link": "shopify://collections/printed-menswear"
           }
         },
         "image_iCR9qQ": {
