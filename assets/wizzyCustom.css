@@ -543,6 +543,12 @@ span.wizzy-autocomplete-label {
     position: relative;
     left: -7px;
     border-radius: 50%;
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/chevron-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
   }
   .scroll-btn.right {
     border: none;
