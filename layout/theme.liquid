@@ -38,21 +38,21 @@
             {%- when 'collection' -%}
             ,
             {"@type":"ListItem","position":2,"name":"{{ collection.title }}","item":"{{ request.origin }}{{ collection.url }}"}
-            {% endcase %}
+            {%- endcase -%}
           ]
         }
       </script>
-    {% endunless %}
-    {% if template.name == 'index' %}
+    {%- endunless -%}
+    {%- if template.name == 'index' -%}
       <script type="application/ld+json">
         {
           "@context":"https://schema.org",
           "@type":"Organization",
           "url":{{ request.origin | append: page.url | json }},
           "name": "KALKI Fashion",
-          {% if settings.logo %}
+          {%- if settings.logo -%}
             "logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }},
-          {% endif %}
+          {%- endif -%}
           "contactPoint":[{"@type":"ContactPoint","telephone":"+91 22-489-00416","contactType":"customer service","areaServed":"IN","availableLanguage":"en"}],
           "sameAs": [
                {%- if settings.social_twitter_link -%}{{ settings.social_twitter_link | json }},{%- endif -%}
@@ -102,12 +102,12 @@
           ]
         }
       </script>
-    {% endif %}
+    {%- endif -%}
     {%- if template.name == 'index' -%}
-      {% assign potential_action_target = request.origin
+      {%- assign potential_action_target = request.origin
         | append: routes.search_url
         | append: '?q={search_term_string}'
-      %}
+      -%}
       <script type="application/ld+json">
         {
           "@context": "http://schema.org","@type": "WebSite","name": "KAKLI Fashion","url":{{ request.origin | append: page.url | json }}, "potentialAction": {"@type": "SearchAction","target": {{ potential_action_target | json }},"query-input": "required name=search_term_string"}
@@ -151,31 +151,31 @@
       <link rel="alternate" hreflang="en" href="https://www.kalkifashion.com/global/bridal-wedding-dresses" />
       <link rel="alternate" hreflang="x-default" href="https://www.kalkifashion.com/global/bridal-wedding-dresses" />
     {%- endif -%}
-    {% if template.name == 'cart' or template.name contains 'customers/' %}
+    {%- if template.name == 'cart' or template.name contains 'customers/' -%}
       <meta name="robots" content="noindex, nofollow">
-    {% else %}
+    {%- else -%}
       <meta name="robots" class="meta-robots" content="index, follow">
-    {% endif %}
+    {%- endif -%}
 
-    {% if template.name == 'product' %}
+    {%- if template.name == 'product' -%}
       <meta property="al:ios:app_store_id" content="950206786"
       ><meta property="al:ios:app_name" content="Kalki Fashion: Online Shopping">
       <meta property="al:android:package" content="com.shopgate.android.kalkifash">
-    {% endif %}
+    {%- endif -%}
 
     <title>
       {{ page_title }}
-      {%- if current_tags %} | tagged "{{ current_tags | join: ', ' }}" {% endif -%}
-      {%- if current_page != 1 %} | Page {{ current_page }} {% endif -%}
-      {%- unless page_title contains shop.name %} | {{ shop.name }} {% endunless -%}
+      {%- if current_tags -%} | tagged "{{ current_tags | join: ', ' }}" {%- endif -%}
+      {%- if current_page != 1 -%} | Page {{ current_page }} {%- endif -%}
+      {%- unless page_title contains shop.name -%} | {{ shop.name }} {%- endunless -%}
     </title>
 
-   {% render 'meta-tags' %}
+   {%- render 'meta-tags' -%}
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-    {% if template.name == 'product' %}
+    {%- if template.name == 'product' -%}
       <script src="{{ 'dynamic.js' | asset_url }}" defer="defer"></script>
-    {% endif %}
+    {%- endif -%}
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
@@ -184,38 +184,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" as="style" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet';this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap"></noscript>
-    {% comment %}
+    {%- comment -%}
     {{ 'ajaxinate.min.js' | asset_url | script_tag }}
-    {% endcomment %}
+    {%- endcomment -%}
     {{ content_for_header }}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
-    %}
+    -%}
 
-    {% style %}
+    {%- style -%}
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_italic | font_face: font_display: 'swap' }}
       {{ body_font_bold_italic | font_face: font_display: 'swap' }}
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
-      {% for scheme in settings.color_schemes -%}
-        {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
-        {% if forloop.index == 1 -%}
+      {%- for scheme in settings.color_schemes -%}
+        {%- assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id -%}
+        {%- if forloop.index == 1 -%}
           :root,
-        {%- endif %}
+        {%- endif -%}
         .color-{{ scheme.id }} {
           --color-background: {{ scheme.settings.background.red }},{{ scheme.settings.background.green }},{{ scheme.settings.background.blue }};
-        {% if scheme.settings.background_gradient != empty %}
+        {%- if scheme.settings.background_gradient != empty -%}
           --gradient-background: {{ scheme.settings.background_gradient }};
-        {% else %}
+        {%- else -%}
           --gradient-background: {{ scheme.settings.background }};
-        {% endif %}
+        {%- endif -%}
 
-        {% liquid
+        {%- liquid
           assign background_color = scheme.settings.background
           assign background_color_brightness = background_color | color_brightness
           if background_color_brightness <= 26
@@ -225,7 +225,7 @@
           else
             assign background_color_contrast = background_color | color_darken: 25
           endif
-        %}
+        -%}
 
         --color-foreground: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
         --color-background-contrast: {{ background_color_contrast.red }},{{ background_color_contrast.green }},{{ background_color_contrast.blue }};
@@ -240,7 +240,7 @@
         --color-badge-border: {{ scheme.settings.text.red }},{{ scheme.settings.text.green }},{{ scheme.settings.text.blue }};
         --payment-terms-background-color: rgb({{ scheme.settings.background.rgb }});
       }
-      {% endfor %}
+      {%- endfor -%}
 
       {{ scheme_classes | prepend: 'body' }} {
         color: rgba(var(--color-foreground));
@@ -273,10 +273,10 @@
         --media-shadow-horizontal-offset: {{ settings.media_shadow_horizontal_offset }}px;
         --media-shadow-vertical-offset: {{ settings.media_shadow_vertical_offset }}px;
         --media-shadow-blur-radius: {{ settings.media_shadow_blur }}px;
-        --media-shadow-visible: {% if settings.media_shadow_opacity > 0 %}1{% else %}0{% endif %};
+        --media-shadow-visible: {%- if settings.media_shadow_opacity > 0 -%}1{%- else -%}0{%- endif -%};
 
         --page-width: {{ settings.page_width | divided_by: 10 }}rem;
-        --page-width-margin: {% if settings.page_width == '1600' %}2{% else %}0{% endif %}rem;
+        --page-width-margin: {%- if settings.page_width == '1600' -%}2{%- else -%}0{%- endif -%}rem;
 
         --product-card-image-padding: {{ settings.card_image_padding | divided_by: 10.0 }}rem;
         --product-card-corner-radius: {{ settings.card_corner_radius | divided_by: 10.0 }}rem;
@@ -284,7 +284,7 @@
         --product-card-border-width: {{ settings.card_border_thickness | divided_by: 10.0 }}rem;
         --product-card-border-opacity: {{ settings.card_border_opacity | divided_by: 100.0 }};
         --product-card-shadow-opacity: {{ settings.card_shadow_opacity | divided_by: 100.0 }};
-        --product-card-shadow-visible: {% if settings.card_shadow_opacity > 0 %}1{% else %}0{% endif %};
+        --product-card-shadow-visible: {%- if settings.card_shadow_opacity > 0 -%}1{%- else -%}0{%- endif -%};
         --product-card-shadow-horizontal-offset: {{ settings.card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
         --product-card-shadow-vertical-offset: {{ settings.card_shadow_vertical_offset | divided_by: 10.0 }}rem;
         --product-card-shadow-blur-radius: {{ settings.card_shadow_blur | divided_by: 10.0 }}rem;
@@ -295,7 +295,7 @@
         --collection-card-border-width: {{ settings.collection_card_border_thickness | divided_by: 10.0 }}rem;
         --collection-card-border-opacity: {{ settings.collection_card_border_opacity | divided_by: 100.0 }};
         --collection-card-shadow-opacity: {{ settings.collection_card_shadow_opacity | divided_by: 100.0 }};
-        --collection-card-shadow-visible: {% if settings.collection_card_shadow_opacity > 0 %}1{% else %}0{% endif %};
+        --collection-card-shadow-visible: {%- if settings.collection_card_shadow_opacity > 0 -%}1{%- else -%}0{%- endif -%};
         --collection-card-shadow-horizontal-offset: {{ settings.collection_card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
         --collection-card-shadow-vertical-offset: {{ settings.collection_card_shadow_vertical_offset | divided_by: 10.0 }}rem;
         --collection-card-shadow-blur-radius: {{ settings.collection_card_shadow_blur | divided_by: 10.0 }}rem;
@@ -306,7 +306,7 @@
         --blog-card-border-width: {{ settings.blog_card_border_thickness | divided_by: 10.0 }}rem;
         --blog-card-border-opacity: {{ settings.blog_card_border_opacity | divided_by: 100.0 }};
         --blog-card-shadow-opacity: {{ settings.blog_card_shadow_opacity | divided_by: 100.0 }};
-        --blog-card-shadow-visible: {% if settings.blog_card_shadow_opacity > 0 %}1{% else %}0{% endif %};
+        --blog-card-shadow-visible: {%- if settings.blog_card_shadow_opacity > 0 -%}1{%- else -%}0{%- endif -%};
         --blog-card-shadow-horizontal-offset: {{ settings.blog_card_shadow_horizontal_offset | divided_by: 10.0 }}rem;
         --blog-card-shadow-vertical-offset: {{ settings.blog_card_shadow_vertical_offset | divided_by: 10.0 }}rem;
         --blog-card-shadow-blur-radius: {{ settings.blog_card_shadow_blur | divided_by: 10.0 }}rem;
@@ -329,7 +329,7 @@
         --drawer-shadow-blur-radius: {{ settings.drawer_shadow_blur }}px;
 
         --spacing-sections-desktop: {{ settings.spacing_sections }}px;
-        --spacing-sections-mobile: {% if settings.spacing_sections < 24 %}{{ settings.spacing_sections }}{% else %}{{ settings.spacing_sections | times: 0.7 | round | at_least: 20 }}{% endif %}px;
+        --spacing-sections-mobile: {%- if settings.spacing_sections < 24 -%}{{ settings.spacing_sections }}{%- else -%}{{ settings.spacing_sections | times: 0.7 | round | at_least: 20 }}{%- endif -%}px;
 
         --grid-desktop-vertical-spacing: {{ settings.spacing_grid_vertical }}px;
         --grid-desktop-horizontal-spacing: {{ settings.spacing_grid_horizontal }}px;
@@ -340,31 +340,31 @@
         --text-boxes-border-width: {{ settings.text_boxes_border_thickness }}px;
         --text-boxes-radius: {{ settings.text_boxes_radius }}px;
         --text-boxes-shadow-opacity: {{ settings.text_boxes_shadow_opacity | divided_by: 100.0 }};
-        --text-boxes-shadow-visible: {% if settings.text_boxes_shadow_opacity > 0 %}1{% else %}0{% endif %};
+        --text-boxes-shadow-visible: {%- if settings.text_boxes_shadow_opacity > 0 -%}1{%- else -%}0{%- endif -%};
         --text-boxes-shadow-horizontal-offset: {{ settings.text_boxes_shadow_horizontal_offset }}px;
         --text-boxes-shadow-vertical-offset: {{ settings.text_boxes_shadow_vertical_offset }}px;
         --text-boxes-shadow-blur-radius: {{ settings.text_boxes_shadow_blur }}px;
 
         --buttons-radius: {{ settings.buttons_radius }}px;
-        --buttons-radius-outset: {% if settings.buttons_radius > 0 %}{{ settings.buttons_radius | plus: settings.buttons_border_thickness }}{% else %}0{% endif %}px;
-        --buttons-border-width: {% if settings.buttons_border_opacity > 0 %}{{ settings.buttons_border_thickness }}{% else %}0{% endif %}px;
+        --buttons-radius-outset: {%- if settings.buttons_radius > 0 -%}{{ settings.buttons_radius | plus: settings.buttons_border_thickness }}{%- else -%}0{%- endif -%}px;
+        --buttons-border-width: {%- if settings.buttons_border_opacity > 0 -%}{{ settings.buttons_border_thickness }}{%- else -%}0{%- endif -%}px;
         --buttons-border-opacity: {{ settings.buttons_border_opacity | divided_by: 100.0 }};
         --buttons-shadow-opacity: {{ settings.buttons_shadow_opacity | divided_by: 100.0 }};
-        --buttons-shadow-visible: {% if settings.buttons_shadow_opacity > 0 %}1{% else %}0{% endif %};
+        --buttons-shadow-visible: {%- if settings.buttons_shadow_opacity > 0 -%}1{%- else -%}0{%- endif -%};
         --buttons-shadow-horizontal-offset: {{ settings.buttons_shadow_horizontal_offset }}px;
         --buttons-shadow-vertical-offset: {{ settings.buttons_shadow_vertical_offset }}px;
         --buttons-shadow-blur-radius: {{ settings.buttons_shadow_blur }}px;
-        --buttons-border-offset: {% if settings.buttons_radius > 0 or settings.buttons_shadow_opacity > 0 %}0.3{% else %}0{% endif %}px;
+        --buttons-border-offset: {%- if settings.buttons_radius > 0 or settings.buttons_shadow_opacity > 0 -%}0.3{%- else -%}0{%- endif -%}px;
 
         --inputs-radius: {{ settings.inputs_radius }}px;
         --inputs-border-width: {{ settings.inputs_border_thickness }}px;
         --inputs-border-opacity: {{ settings.inputs_border_opacity | divided_by: 100.0 }};
         --inputs-shadow-opacity: {{ settings.inputs_shadow_opacity | divided_by: 100.0 }};
         --inputs-shadow-horizontal-offset: {{ settings.inputs_shadow_horizontal_offset }}px;
-        --inputs-margin-offset: {% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_opacity > 0 %}{{ settings.inputs_shadow_vertical_offset | abs }}{% else %}0{% endif %}px;
+        --inputs-margin-offset: {%- if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_opacity > 0 -%}{{ settings.inputs_shadow_vertical_offset | abs }}{%- else -%}0{%- endif -%}px;
         --inputs-shadow-vertical-offset: {{ settings.inputs_shadow_vertical_offset }}px;
         --inputs-shadow-blur-radius: {{ settings.inputs_shadow_blur }}px;
-        --inputs-radius-outset: {% if settings.inputs_radius > 0 %}{{ settings.inputs_radius | plus: settings.inputs_border_thickness }}{% else %}0{% endif %}px;
+        --inputs-radius-outset: {%- if settings.inputs_radius > 0 -%}{{ settings.inputs_radius | plus: settings.inputs_border_thickness }}{%- else -%}0{%- endif -%}px;
 
         --variant-pills-radius: {{ settings.variant_pills_radius }}px;
         --variant-pills-border-width: {{ settings.variant_pills_border_thickness }}px;
@@ -406,7 +406,7 @@
           font-size: 1.6rem;
         }
       }
-    {% endstyle %}
+    {%- endstyle -%}
 
     <link rel="preload" href="{{ 'base.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ 'base.css' | asset_url }}"></noscript>
@@ -446,24 +446,24 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" defer="defer"></script>
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
 
-    {% if template.name == 'product' %}
-      {% capture magic_headers %}{% include 'magiczoomplus.headers' %}{% endcapture %}
-      {% unless magic_headers contains 'Liquid error' %}{{ magic_headers }}{% endunless %}
+    {%- if template.name == 'product' -%}
+      {%- capture magic_headers -%}{%- include 'magiczoomplus.headers' -%}{%- endcapture -%}
+      {%- unless magic_headers contains 'Liquid error' -%}{{ magic_headers }}{%- endunless -%}
       <script src="{{ 'recentview.product.min.js' | asset_url }}" defer="defer"></script>
       <script src="{{ 'custom-templates.js' | asset_url }}" defer="defer"></script>
       <script src="{{ 'optiscroll.js' | asset_url }}" defer="defer"></script>
-    {% endif %}
+    {%- endif -%}
     <link rel="stylesheet" href="{{ 'product-delivery-days.css' | asset_url }}" media="print" onload="this.media='all'">
     <noscript>{{ 'product-delivery-days.css' | asset_url | stylesheet_tag }}</noscript>
     
-    {% render 'collection-faq-schema' %}
+    {%- render 'collection-faq-schema' -%}
 
     <!-- tagalys start -->
     <script src="{{ 'tagalys-customisations.js' | asset_url }}" defer></script>
    <!-- tagalys close --> 
-  {% if template.name == 'cart' %}
-    {% include 'kart_discount' %}
-  {% endif %}
+  {%- if template.name == 'cart' -%}
+    {%- include 'kart_discount' -%}
+  {%- endif -%}
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const isWideScreen = window.innerWidth > 768;
@@ -482,10 +482,10 @@
 
   <body 
     class="
-      gradient {{ page.title | handleize }}_page_new template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template--{{ template.suffix }} {% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}
-      {% if collection.metafields.custom.hide_announcement_bar == true %} collection_hide_announcement_bar_new {% endif %} {% if collection.metafields.custom.header_transparent == true %}header-init-state-enable collection_header_transparent_new {% endif %} {% if collection.metafields.custom.collection_full_width == true %} collection_full_width_new {% endif %}
-      {% if page.metafields.custom.hide_announcement_bar == true %} collection_hide_announcement_bar_new {% endif %} {% if page.metafields.custom.header_transparent == true %}header-init-state-enable collection_header_transparent_new page_white_header_transparent_new {% endif %} {% if template.suffix == 'bridal' %} collection_header_transparent_new {% endif %} {% if template contains 'product' and template.suffix == 'bridal' %} header-init-state-enable {% endif %}
-      {% if template contains 'bridal-collection-new' %} header-init-state-enable {% endif %}{% if customer != null %} customer-loggedin {% endif %}
+      gradient {{ page.title | handleize }}_page_new template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template--{{ template.suffix }} {%- if settings.animations_hover_elements != 'none' -%} animate--hover-{{ settings.animations_hover_elements }}{%- endif -%}
+      {%- if collection.metafields.custom.hide_announcement_bar == true -%} collection_hide_announcement_bar_new {%- endif -%} {%- if collection.metafields.custom.header_transparent == true -%}header-init-state-enable collection_header_transparent_new {%- endif -%} {%- if collection.metafields.custom.collection_full_width == true -%} collection_full_width_new {%- endif -%}
+      {%- if page.metafields.custom.hide_announcement_bar == true -%} collection_hide_announcement_bar_new {%- endif -%} {%- if page.metafields.custom.header_transparent == true -%}header-init-state-enable collection_header_transparent_new page_white_header_transparent_new {%- endif -%} {%- if template.suffix == 'bridal' -%} collection_header_transparent_new {%- endif -%} {%- if template contains 'product' and template.suffix == 'bridal' -%} header-init-state-enable {%- endif -%}
+      {%- if template contains 'bridal-collection-new' -%} header-init-state-enable {%- endif -%}{%- if customer != null -%} customer-loggedin {%- endif -%}
     "
     js-product-template
   >
@@ -497,19 +497,19 @@
       {%- render 'cart-drawer' -%}
     {%- endif -%}
 
-    {% sections 'header-group' %}
+    {%- sections 'header-group' -%}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
-    {% if template.name == 'product' %}
-      {% render 'sticky-addtocart-button' %}
-    {% endif %}
-    {% sections 'footer-group' %}
+    {%- if template.name == 'product' -%}
+      {%- render 'sticky-addtocart-button' -%}
+    {%- endif -%}
+    {%- sections 'footer-group' -%}
 
-    {% if template.name == 'collection' %}
-      {% render 'sticky-recently-viewed' %}
-    {% endif %}
+    {%- if template.name == 'collection' -%}
+      {%- render 'sticky-recently-viewed' -%}
+    {%- endif -%}
 
     <div class="back_to_top_new" id="gototop">
       <span>
@@ -577,7 +577,7 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    {% if template.name == 'collection' or template.name == 'search' %}
+    {%- if template.name == 'collection' or template.name == 'search' -%}
       <script>
         document.addEventListener('click', (e) => {
           const priceFilterLabels = document.querySelectorAll('[js-price-filter-label]');
@@ -590,21 +590,21 @@
           })
         })
       </script>
-    {% endif %}
-    {% if template.name == 'product' %}
+    {%- endif -%}
+    {%- if template.name == 'product' -%}
       {{ 'stamped-reviews.css' | asset_url | stylesheet_tag: preload: false }}
-    {% endif %}
+    {%- endif -%}
     <a
       href="https://api.whatsapp.com/send/?phone=919920012474&text=Hi+Kalki+Stylist+%21&type=phone_number&app_absent=0"
       class="float1"
       target="_blank"
       aria-label="Whatsapp chat"
     >
-      {% if page.handle contains 'bridal-wedding-dresses' or template.suffix == 'bridal' or template contains 'bridal-collection-new' or template contains 'luxe-collection-new' %}
+      {%- if page.handle contains 'bridal-wedding-dresses' or template.suffix == 'bridal' or template contains 'bridal-collection-new' or template contains 'luxe-collection-new' -%}
         <div>Bridal or bridesmaid shopping? Get personalized outfit recommendations!</div>
-      {% else %}
+      {%- else -%}
         <div>Need help finding the perfect outfit? Our fashion experts are here to assist!</div>
-      {% endif %}
+      {%- endif -%}
       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" style="fill: white;margin-top: 5px;">
         <path d="M 12.011719 2 C 6.5057187 2 2.0234844 6.478375 2.0214844 11.984375 C 2.0204844 13.744375 2.4814687 15.462563 3.3554688 16.976562 L 2 22 L 7.2324219 20.763672 C 8.6914219 21.559672 10.333859 21.977516 12.005859 21.978516 L 12.009766 21.978516 C 17.514766 21.978516 21.995047 17.499141 21.998047 11.994141 C 22.000047 9.3251406 20.962172 6.8157344 19.076172 4.9277344 C 17.190172 3.0407344 14.683719 2.001 12.011719 2 z M 12.009766 4 C 14.145766 4.001 16.153109 4.8337969 17.662109 6.3417969 C 19.171109 7.8517969 20.000047 9.8581875 19.998047 11.992188 C 19.996047 16.396187 16.413812 19.978516 12.007812 19.978516 C 10.674812 19.977516 9.3544062 19.642812 8.1914062 19.007812 L 7.5175781 18.640625 L 6.7734375 18.816406 L 4.8046875 19.28125 L 5.2851562 17.496094 L 5.5019531 16.695312 L 5.0878906 15.976562 C 4.3898906 14.768562 4.0204844 13.387375 4.0214844 11.984375 C 4.0234844 7.582375 7.6067656 4 12.009766 4 z M 8.4765625 7.375 C 8.3095625 7.375 8.0395469 7.4375 7.8105469 7.6875 C 7.5815469 7.9365 6.9355469 8.5395781 6.9355469 9.7675781 C 6.9355469 10.995578 7.8300781 12.182609 7.9550781 12.349609 C 8.0790781 12.515609 9.68175 15.115234 12.21875 16.115234 C 14.32675 16.946234 14.754891 16.782234 15.212891 16.740234 C 15.670891 16.699234 16.690438 16.137687 16.898438 15.554688 C 17.106437 14.971687 17.106922 14.470187 17.044922 14.367188 C 16.982922 14.263188 16.816406 14.201172 16.566406 14.076172 C 16.317406 13.951172 15.090328 13.348625 14.861328 13.265625 C 14.632328 13.182625 14.464828 13.140625 14.298828 13.390625 C 14.132828 13.640625 13.655766 14.201187 13.509766 14.367188 C 13.363766 14.534188 13.21875 14.556641 12.96875 14.431641 C 12.71875 14.305641 11.914938 14.041406 10.960938 13.191406 C 10.218937 12.530406 9.7182656 11.714844 9.5722656 11.464844 C 9.4272656 11.215844 9.5585938 11.079078 9.6835938 10.955078 C 9.7955938 10.843078 9.9316406 10.663578 10.056641 10.517578 C 10.180641 10.371578 10.223641 10.267562 10.306641 10.101562 C 10.389641 9.9355625 10.347156 9.7890625 10.285156 9.6640625 C 10.223156 9.5390625 9.737625 8.3065 9.515625 7.8125 C 9.328625 7.3975 9.131125 7.3878594 8.953125 7.3808594 C 8.808125 7.3748594 8.6425625 7.375 8.4765625 7.375 z"></path>
       </svg>
@@ -625,14 +625,14 @@
       t.parentNode.insertBefore(y,t);
       })(document,'script');
     </script>
-     {% render 'wizzy.search.filters.scripts' %}
-    {% render 'wizzy.search.filters.styles' %}
+     {%- render 'wizzy.search.filters.scripts' -%}
+    {%- render 'wizzy.search.filters.styles' -%}
 
     <!-- Lucent OTP Login -->
-    {% section 'otp-section' %}
+    {%- section 'otp-section' -%}
 
-{% comment %}
-  {% render 'razorpay-magic-sso' %}
-{% endcomment %}
+{%- comment -%}
+  {%- render 'razorpay-magic-sso' -%}
+{%- endcomment -%}
 </body>
 </html>
