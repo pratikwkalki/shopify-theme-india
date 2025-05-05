@@ -6211,34 +6211,34 @@ wishlist-link-floating {
 
 
 @media (min-width: 990px) and (max-width: 9999px) {
-    /* .collection_header_transparent_new .shopify-section-header-sticky {
+    .collection_header_transparent_new .shopify-section-header-sticky {
          transform: translateY(0px) !important;
     }
     .template--bridal sticky-header {
        display: block !important;
           position: relative !important;
          background: var(--gradient-background) !important;
-    } */
-    /* .template--luxe-collection-new sticky-header {
+    }
+    .template--luxe-collection-new sticky-header {
           display: block !important;
           position: relative !important;
        background: var(--gradient-background) !important;
-    } */
-   /* .template--bridal-wedding-dress-new sticky-header {
+    }
+   .template--bridal-wedding-dress-new sticky-header {
        background: var(--gradient-background) !important;
-    } */
+    }
 }
 
 @media screen and (min-width: 990px) {
-    /* .product-custom.bridal-pdp {
+    .product-custom.bridal-pdp {
         margin-top: 0px !important;
-    } */
-   /* .template--luxe-collection-new .Collection_meta_banner_new {
+    }
+   .template--luxe-collection-new .Collection_meta_banner_new {
        margin-top: 95px !important;
-    } */
-   /* .template--bridal-wedding-dress-new .Page_bridal_banner_button_new {
+    }
+   .template--bridal-wedding-dress-new .Page_bridal_banner_button_new {
        margin-top: 95px !important;
-   } */
+   }
 }
 
 @media screen and (min-width: 750px) {
