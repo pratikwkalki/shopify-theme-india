@@ -183,57 +183,89 @@
         "image_with_text_column_3PgKWr": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/1-mens-mini-desk-kurta-set-all-countries-250x250-24-04-25.jpg",
-            "title": "Men's Kurta Set",
-            "redirect": "shopify://collections/mens-kurta-set"
+            "image": "shopify://shop_images/round-banner-1-mens-mobile-see-all-all-countries-182x182-05-05-25.jpg",
+            "title": "Menswear",
+            "redirect": "shopify://collections/see-all-menswear"
           }
         },
         "image_with_text_column_7Fti99": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/2-mens-mini-desk-kurta-jackets-all-countries-250x250-24-04-25.jpg",
-            "title": "Kurta Jackets",
-            "redirect": "shopify://collections/kurta-jacket-sets"
+            "image": "shopify://shop_images/round-banner-2-mens-mobile-sherwani-all-countries-182x182-05-05-25.jpg",
+            "title": "Sherwani",
+            "redirect": "shopify://collections/sherwanis"
           }
         },
         "image_with_text_column_inhDyA": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/3-mens-mini-desk-indo-fusion-all-countries-250x250-24-04-25.jpg",
-            "title": "Indowestern For Him",
-            "redirect": "shopify://collections/indo-westerns-for-men"
+            "image": "shopify://shop_images/round-banner-3-mens-mobile-kurta-jacket-set-all-countries-182x182-05-05-25.jpg",
+            "title": "Kurta Jacket",
+            "redirect": "shopify://collections/kurta-jacket-sets"
           }
         },
         "image_with_text_column_Mc96cd": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/4-mens-mini-desk-tuxedo-affair-all-countries-250x250-24-04-25.jpg",
-            "title": "Tuxedo Affair",
-            "redirect": "shopify://collections/tuxedo"
+            "image": "shopify://shop_images/round-banner-4-mens-mobile-kurta-set-all-countries-182x182-05-05-25.jpg",
+            "title": "Kurta Set",
+            "redirect": "shopify://collections/mens-kurta-set"
           }
         },
         "image_with_text_column_JWeMgW": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/5-mens-mini-desk-jodhpuri-jazz-all-countries-250x250-24-04-25.jpg",
-            "title": "Jodhpuri Edit",
-            "redirect": "shopify://collections/jodhpuris"
+            "image": "shopify://shop_images/round-banner-5-mens-mobile-indo-western-all-countries-182x182-05-05-25.jpg",
+            "title": "Indowestern",
+            "redirect": "shopify://collections/indo-westerns-for-men"
           }
         },
         "image_with_text_column_UPgqan": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/6-mens-mini-desk-sherwani-saga-all-countries-250x250-24-04-25.jpg",
-            "title": "Sherwani Saga",
-            "redirect": "shopify://collections/sherwanis"
+            "image": "shopify://shop_images/round-banner-6-mens-mobile-tuxedos-all-countries-182x182-05-05-25.jpg",
+            "title": "Tuxedo",
+            "redirect": "shopify://collections/tuxedo"
           }
         },
         "image_with_text_column_NwR3hT": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/7-mens-mini-desk-jutti-edit-all-countries-250x250-24-04-25.jpg",
-            "title": "Jutti Edit",
+            "image": "shopify://shop_images/round-banner-7-mens-mobile-jodhpuri-all-countries-182x182-05-05-25.jpg",
+            "title": "Jodhpuri",
+            "redirect": "shopify://collections/jodhpuris"
+          }
+        },
+        "image_with_text_column_7CFzyg": {
+          "type": "image_with_text_column",
+          "settings": {
+            "image": "shopify://shop_images/round-banner-8-mens-mobile-new-arrivals-all-countries-182x182-05-05-25.jpg",
+            "title": "New Arrivals",
+            "redirect": "shopify://collections/new-arrival-menswear"
+          }
+        },
+        "image_with_text_column_jMrdq6": {
+          "type": "image_with_text_column",
+          "settings": {
+            "image": "shopify://shop_images/round-banner-9-mens-mobile-footwear-all-countries-182x182-05-05-25.jpg",
+            "title": "Footwear",
             "redirect": "shopify://collections/mens-footwear"
+          }
+        },
+        "image_with_text_column_mFL7Bj": {
+          "type": "image_with_text_column",
+          "settings": {
+            "image": "shopify://shop_images/round-banner-10-mens-mobile-sale-all-countries-182x182-05-05-25.jpg",
+            "title": "Discounted Deals",
+            "redirect": "shopify://collections/menswear-on-sale"
+          }
+        },
+        "image_with_text_column_7zFycy": {
+          "type": "image_with_text_column",
+          "settings": {
+            "image": "shopify://shop_images/round-banner-11-mens-mobile-kids-all-countries-182x182-05-05-25.jpg",
+            "title": "Kidswear",
+            "redirect": "shopify://collections/kids"
           }
         }
       },
@@ -249,7 +281,11 @@
         "image_with_text_column_Mc96cd",
         "image_with_text_column_JWeMgW",
         "image_with_text_column_UPgqan",
-        "image_with_text_column_NwR3hT"
+        "image_with_text_column_NwR3hT",
+        "image_with_text_column_7CFzyg",
+        "image_with_text_column_jMrdq6",
+        "image_with_text_column_mFL7Bj",
+        "image_with_text_column_7zFycy"
       ],
       "settings": {
         "customClass": "",
