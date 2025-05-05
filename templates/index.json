@@ -60,31 +60,31 @@
         "image_with_text_column_iUrfMf": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/182x182-mobile-bestseller-uk-09-10-24.jpg",
+            "image": "shopify://shop_images/round-banner-1-womens-mobile-bestseller-all-countries-182x182-05-05-25.jpg",
             "title": "Bestsellers",
             "redirect": "shopify://collections/bestsellers"
-          }
-        },
-        "image_with_text_column_7Fti99": {
-          "type": "image_with_text_column",
-          "settings": {
-            "image": "shopify://shop_images/182x182-mobile-suits-uk-09-10-24.jpg",
-            "title": "Salwar Kameez",
-            "redirect": "shopify://collections/salwar-kameez"
           }
         },
         "image_with_text_column_inhDyA": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/182x182-mobile-saree-uk-15-10-24.jpg",
+            "image": "shopify://shop_images/round-banner-2-womens-mobile-kurta-saree-all-countries-182x182-05-05-25.jpg",
             "title": "Saree",
             "redirect": "shopify://collections/saree"
+          }
+        },
+        "image_with_text_column_7Fti99": {
+          "type": "image_with_text_column",
+          "settings": {
+            "image": "shopify://shop_images/round-banner-3-womens-mobile-salwar-kameez-all-countries-182x182-05-05-25.jpg",
+            "title": "Salwar Kameez",
+            "redirect": "shopify://collections/salwar-kameez"
           }
         },
         "image_with_text_column_jxkX8p": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/182x182-mobile-lehenga-uk-15-10-24.jpg",
+            "image": "shopify://shop_images/round-banner-4-womens-mobile-lehengas-all-countries-182x182-05-05-25.jpg",
             "title": "Lehenga",
             "redirect": "shopify://collections/lehenga"
           }
@@ -92,7 +92,7 @@
         "image_with_text_column_Mc96cd": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/182x182-mobile-indo-western-uk-15-10-24.jpg",
+            "image": "shopify://shop_images/round-banner-5-womens-mobile-indo-western-all-countries-182x182-05-05-25.jpg",
             "title": "Indo  Western",
             "redirect": "shopify://collections/indo-western"
           }
@@ -100,80 +100,72 @@
         "image_with_text_column_dWzNDt": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/182x182-mobile-co-ord-uk-09-10-24.jpg",
-            "title": "Co-Ord Set",
-            "redirect": "shopify://collections/co-ord-sets"
+            "image": "shopify://shop_images/round-banner-6-womens-mobile-Blouse-all-countries-182x182-05-05-25.jpg",
+            "title": "Blouses",
+            "redirect": "shopify://collections/blouse"
           }
         },
         "image_with_text_column_3PgKWr": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/182x182-mobile-kurtis-uk-15-10-24.jpg",
-            "title": "Kurtis",
-            "redirect": "shopify://collections/kurti"
+            "image": "shopify://shop_images/round-banner-7-womens-mobile-men-all-countries-182x182-05-05-25.jpg",
+            "title": "Menswear",
+            "redirect": "shopify://collections/see-all-menswear"
           }
         },
         "image_with_text_column_JWeMgW": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/182x182-mobile-blouse-09-10-24.jpg",
-            "title": "Blouse",
-            "redirect": "shopify://collections/blouse"
+            "image": "shopify://shop_images/round-banner-8-womens-mobile-co-ord_set-all-countries-182x182-05-05-25.jpg",
+            "title": "Coord Set",
+            "redirect": "shopify://collections/co-ord-sets"
           }
         },
         "image_with_text_column_fAHTa6": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/182x182-mobile-bridal-uk-10-10-24.jpg",
-            "title": "Bridal",
-            "redirect": "shopify://collections/bridal"
+            "image": "shopify://shop_images/round-banner-9-womens-mobile-bridal-all-countries-182x182-05-05-25.jpg",
+            "title": "Bridal Edit",
+            "redirect": "shopify://pages/bridal-wedding-dresses"
           }
         },
         "image_with_text_column_EbeckA": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/mobile-Weave-banner-09-12-23_1.jpg",
-            "title": "Weaves",
-            "redirect": "shopify://pages/weaves"
+            "image": "shopify://shop_images/round-banner-10-womens-mobile-wedding-all-countries-182x182-05-05-25.jpg",
+            "title": "Wedding Edit",
+            "redirect": "shopify://collections/wedding-collection"
           }
         },
         "image_with_text_column_UPgqan": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/182x182-mobile-accessories-uk-09-10-24.jpg",
-            "title": "Accessories",
-            "redirect": "shopify://collections/accessories"
+            "image": "shopify://shop_images/round-banner-11-womens-mobile-ready-to-ship-all-countries-182x182-05-05-25.jpg",
+            "title": "Ready To Ship",
+            "redirect": "shopify://collections/ready-to-ship"
           }
         },
         "image_with_text_column_EAqWCi": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/182x182-mobile-mens-uk-09-10-24.jpg",
-            "title": "Men's",
-            "redirect": "shopify://collections/mens-instore-exclusive"
+            "image": "shopify://shop_images/round-banner-12-womens-mobile-collection-all-countries-182x182-05-05-25.jpg",
+            "title": "Our Collections",
+            "redirect": "shopify://collections"
           }
         },
         "image_with_text_column_wL6bkV": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/182x182-mobile-kids-09-10-24.jpg",
-            "title": "Kids",
-            "redirect": "shopify://collections/kids"
+            "image": "shopify://shop_images/round-banner-13-womens-mobile-new-all-countries-182x182-05-05-25.jpg",
+            "title": "New This Week",
+            "redirect": "shopify://collections/new-arrivals"
           }
         },
         "image_with_text_column_PJ7fDT": {
           "type": "image_with_text_column",
           "settings": {
-            "image": "shopify://shop_images/182x182-mobile-collection-09-10-24.jpg",
-            "title": "Collection",
-            "redirect": "shopify://collections/exclusive-collections"
-          }
-        },
-        "image_with_text_column_J6G7Va": {
-          "type": "image_with_text_column",
-          "settings": {
-            "image": "shopify://shop_images/182x182-mobile-sale-09-10-24.jpg",
-            "title": "Sale",
+            "image": "shopify://shop_images/round-banner-14-womens-mobile-sale-all-countries-182x182-05-05-25.jpg",
+            "title": "Discounted Deals",
             "redirect": "shopify://collections/sale"
           }
         }
@@ -185,8 +177,8 @@
         "texts_with_links_7JU3hX",
         "texts_with_links_iYxxD4",
         "image_with_text_column_iUrfMf",
-        "image_with_text_column_7Fti99",
         "image_with_text_column_inhDyA",
+        "image_with_text_column_7Fti99",
         "image_with_text_column_jxkX8p",
         "image_with_text_column_Mc96cd",
         "image_with_text_column_dWzNDt",
@@ -197,8 +189,7 @@
         "image_with_text_column_UPgqan",
         "image_with_text_column_EAqWCi",
         "image_with_text_column_wL6bkV",
-        "image_with_text_column_PJ7fDT",
-        "image_with_text_column_J6G7Va"
+        "image_with_text_column_PJ7fDT"
       ],
       "settings": {
         "customClass": "",
