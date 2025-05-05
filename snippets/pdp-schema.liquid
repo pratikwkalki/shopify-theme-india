@@ -17,6 +17,119 @@
 
 {% assign seconds = 366 | times: 24 | times: 60 | times: 60 %}
 {% assign has_reviews = product.reviews_count > 0 %}
+{% assign has_reviews = product.reviews_count > 0 %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "@id": "{{ product.url }}",
+  "name": "{{ product.title | escape }}",
+  "image": [
+    "{{ product.featured_image | img_url: '500x' }}"
+  ],
+  "description": "{{ product.description | strip_html | escape }}",
+  "url": "{{ product.url }}",
+  {% if product.sku != blank %}"sku": "{{ product.sku | escape }}",{% endif %}
+  {% if product.mpn != blank %}"mpn": "{{ product.mpn | escape }}",{% endif %}
+  "brand": {
+    "@type": "Brand",
+    "name": "KALKI FASHION",
+    "logo": "https://kalki.gumlet.io/cdn/shop/files/kalki-logo.svg?w=180&"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "{{ product.url }}",
+    "priceCurrency": "INR",
+    "price": {{ product.price | money_without_currency | remove: ',' }},
+    "priceValidUntil": "2030-12-31",
+    "availability": "{% if product.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {
+      "@type": "Organization",
+      "name": "{{ shop.name | escape }}"
+    },
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": 0,
+        "currency": "INR"
+      },
+      "shippingDestination": {
+        "@type": "DefinedRegion",
+        "addressCountry": "IN"
+      },
+      "deliveryTime": {
+        "@type": "ShippingDeliveryTime",
+        "businessDays": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "https://schema.org/Monday",
+            "https://schema.org/Tuesday",
+            "https://schema.org/Wednesday",
+            "https://schema.org/Thursday",
+            "https://schema.org/Friday",
+            "https://schema.org/Saturday",
+            "https://schema.org/Sunday"
+          ]
+        },
+        "handlingTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 0,
+          "maxValue": 0,
+          "unitCode": "DAY"
+        },
+        "transitTime": {
+          "@type": "QuantitativeValue",
+          "minValue": 1,
+          "maxValue": 7,
+          "unitCode": "DAY"
+        }
+      }
+    },
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "applicableCountry": "IN",
+      "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+      "merchantReturnDays": 5,
+      "returnMethod": "https://schema.org/ReturnByMail",
+      "returnFees": "https://schema.org/FreeReturn"
+    }
+  }{% if has_reviews %},
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": {{ product.reviews_rating | default: 0 }},
+    "reviewCount": {{ product.reviews_count }}
+  }{% if product.reviews.size > 0 %},
+  "review": [
+    {% for review in product.reviews %}
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "{{ review.author | escape }}"
+      },
+      "datePublished": "{{ review.date | date: '%Y-%m-%d' }}",
+      "reviewBody": "{{ review.body | strip_html | escape }}",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": {{ review.rating }}
+      }
+    }{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+  ]{% endif %}
+  {% endif %}
+}
+</script>
+
+
+
+
+
+
+
+
+{% comment %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -65,6 +178,9 @@
   {% endif %}
 }
 </script>
+{% endcomment %}
+
+
 {% comment %}
 {% if product.handle contains 'red-embroidered-jumpsuit-with-belt' %}
   {% assign has_reviews = product.reviews_count > 0 %}
