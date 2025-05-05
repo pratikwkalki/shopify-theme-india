@@ -65,7 +65,7 @@
   {% endif %}
 }
 </script>
-
+{% comment %}
 {% if product.handle contains 'red-embroidered-jumpsuit-with-belt' %}
   {% assign has_reviews = product.reviews_count > 0 %}
 <script type="application/ld+json">
@@ -173,6 +173,8 @@
 </script>
 
 {% endif %}
+{% endcomment %}
+
 {% comment %}
 {% if product.handle contains 'sheen-green-crepe-jumpsuit-and-net-shrug-with-a-crystal-bead-embroidered-belt' %}
   <script type="application/ld+json">
