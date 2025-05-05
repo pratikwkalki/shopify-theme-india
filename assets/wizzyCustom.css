@@ -1862,6 +1862,9 @@ span.wizzy-facet-list-item-checkbox {
 }
 
 @media (min-width: 768px) {
+  #init-wizzy-featured-view-button {
+    color: black;
+  }
   .wizzy-autocomplete-wrapper.withPromotionBanners {
     flex-direction: column;
   }
