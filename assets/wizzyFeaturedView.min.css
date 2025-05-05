@@ -5,10 +5,10 @@
   transform: translate(-50%, 25%);
 }
 .wizzy__featuredview__discountTag__iwAlX {
-  display: unset;
-  font-size: 13px;
+  display: unset !important;
+  font-size: 13px !important;
   padding: 3px 7px;
-  position: unset;
+  position: unset !important;
 }
 wizzy__featuredview__squaredImageBackdrop__lZfX1 {
   background: none !important;
