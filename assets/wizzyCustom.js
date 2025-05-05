@@ -889,17 +889,13 @@ window.onWizzyScriptLoaded = function () {
       );
       ranges.forEach((range) => {
         if (range.textContent.trim() === "(0)") {
-          range.parentElement.remove(); // remove the parent element from the DOM
+          range.parentElement.remove();
         }
       });
 
-      
-      
-     
-
       const selectedList = document.querySelector(".wizzy-selected-facet-list");
-      const targetDiv1 = document.querySelector(".wizzy-facet-list-block");
-      const targetDiv2 = document.querySelectorAll(".wizzy-facet-body");
+      const targetDiv1 = document.querySelector(".wizzy-facet-list-block"); // Replace if needed
+      const targetDiv2 = document.querySelectorAll(".wizzy-facet-body"); // Replace if needed
       let title = document.querySelector(".applied-filters-header");
       if (selectedList && selectedList.querySelectorAll("li").length > 0) {
         // console.log("Inside divs");
@@ -961,6 +957,11 @@ window.onWizzyScriptLoaded = function () {
             }
           });
         }
+      });
+
+      const priceElements = document.querySelectorAll('.price-item--regular');
+      priceElements.forEach((el) => {
+        el.textContent = el.textContent.replace(/\.00\b/, '');
       });
       return data;
     }
