@@ -1785,6 +1785,9 @@ span.wizzy-facet-list-item-checkbox {
 }
 
 @media (max-width: 768px) {
+  .wizzy-search-results-rendered .breadcrumbs {
+    display: block !important;
+  }
   .wizzy-search-wrapper {
     padding-top: 50px;
   }
@@ -1859,9 +1862,6 @@ span.wizzy-facet-list-item-checkbox {
 }
 
 @media (min-width: 768px) {
-  .wizzy-search-results-rendered .breadcrumbs {
-    display: block !important;
-  }
   .wizzy-autocomplete-wrapper.withPromotionBanners {
     flex-direction: column;
   }
