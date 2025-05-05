@@ -6211,10 +6211,10 @@ wishlist-link-floating {
 
 
 @media (min-width: 990px) and (max-width: 9999px) {
-     .collection_header_transparent_new .shopify-section-header-sticky {
+    /* .collection_header_transparent_new .shopify-section-header-sticky {
          transform: translateY(0px) !important;
     }
-    /*.template--bridal sticky-header {
+    .template--bridal sticky-header {
        display: block !important;
           position: relative !important;
          background: var(--gradient-background) !important;
