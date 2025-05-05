@@ -2832,7 +2832,7 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
 
 .Collection_luxe_product_bottompart_new .card_review_new{ display:none; }
 .Collection_luxe_product_bottompart_new .card__heading a{ -webkit-line-clamp: 1; }
-.template--luxe-collection-new .page-width{max-width: 100% !important}
+
 .Collection_luxe_product_toppart_new{ display:flex; flex-direction:column-reverse; justify-content:center; }
 .Collection_luxe_product_main_new{ margin:0px 0 60px!important; }
 .Collection_luxe_product_toppart_2_new .Collection_product_grid_rightside_innertop_1_detail_new{ justify-content:center; }
