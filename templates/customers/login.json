@@ -13,9 +13,9 @@
       "type": "Customer-login-template-new",
       "settings": {
         "main_background_color": "#ffffff",
-        "main_heading_text": "",
-        "main_heading_text1": "",
-        "main_heading_text2": "",
+        "main_heading_text": "Register & Be A Part Of The KALKI Circle!",
+        "main_heading_text1": "Enjoy exclusive benefits like:",
+        "main_heading_text2": "- Exclusive early collection showcase\n<br>- Access amazing offers, discounts and more\n<br><br>Join Now!",
         "main_information_text": "",
         "main_use_code_text": "",
         "main_desktop_full_image": "shopify://shop_images/Signup-img_6-5-25.jpg",
