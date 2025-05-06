@@ -24,7 +24,9 @@
         <div class="Customer_register_template_innerleft_new">
           {%- if section.settings.main_heading_text != blank -%}
             <div class="Customer_register_template_innerleft_title_new">
-              <h2>{{ section.settings.main_heading_text }}</h3>
+              <h2>{{ section.settings.main_heading_text }}</h2>
+              <h3>{{ section.settings.main_heading_text1 }}</h3>
+              <p>{{ section.settings.main_heading_text2 }}</p>
             </div>  
           {%- endif -%}
           {%- if section.settings.main_information_text != blank -%}
@@ -266,6 +268,18 @@
       {
         "type": "textarea",
         "id": "main_heading_text",
+        "label": "Add Main Heading Text"
+        
+      },
+      {
+        "type": "textarea",
+        "id": "main_heading_text1",
+        "label": "Add Main Heading Text"
+        
+      },
+      {
+        "type": "textarea",
+        "id": "main_heading_text2",
         "label": "Add Main Heading Text"
         
       },
