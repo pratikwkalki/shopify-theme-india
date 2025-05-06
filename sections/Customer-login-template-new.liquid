@@ -8,7 +8,7 @@
 {% endif %}
 <div class="Customer_register_template_main_new Customer_login_template_main_new" style="background: {{ section.settings.main_background_color }};">
   <div class="Customer_register_template_inner_new">
-    {%- if section.settings.main_heading_text != blank or section.settings.main_information_text != blank or section.settings.main_use_code_text != blank -%}
+    
       <div class="Customer_register_template_mainleft_new Customer_register_template_mainleft_new_{{ section.id }}" style="{% if section.settings.main_desktop_full_image != blank %}background: url({{ section.settings.main_desktop_full_image | img_url: 'master' }}) no-repeat center center; background-size: cover;{% else %}background: #cccccc;{% endif %}">
         {%- if section.settings.main_mobile_full_image != blank -%}
           <style>
@@ -46,7 +46,7 @@
           *T&C Apply
         </div>
       </div>
-    {%- endif -%}
+ 
 
   <!-- Lucent OTP Login -->
   <div id="sotp-widget" class="sotp-widget otp-loader">&nbsp;</div>
