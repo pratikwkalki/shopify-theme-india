@@ -202,8 +202,8 @@
         "information_tH6WDF": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/1-slider-banner-classic-summer-affair-all-country-1640x615-02-05-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/1-mobile-home-classic-summer-affair-all-country-500x707-02-05-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/1-slider-banner-classic-summer-affair-all-country-1640x615-6-5-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1-mobile-home-classic-summer-affair-all-country-500x707-6-05-25.jpg",
             "alt_text": "Classic Summer Affair",
             "main_banner_redirect_link": "shopify://collections/classic-summer-affair"
           }
@@ -211,8 +211,8 @@
         "information_QJq4LK": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/2-slider-banner-new-arrivals-all-country-desktop-2800x1050-02-05-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/2-mobile-banner-new-arrivals-all-country-500x707-02-05-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/2-slider-banner-new-arrivals-all-country-desktop-2800x1050-6-5-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/2-mobile-banner-new-arrivals-all-country-500x707-6-5-25.jpg",
             "alt_text": "Drape Dynasty",
             "main_banner_redirect_link": "shopify://collections/new-arrivals"
           }
@@ -220,19 +220,19 @@
         "information_Vw93j8": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/3_slider_banner_see_all_mens_wear_all_country_desktop_2800x1050_1e0cd686-4afd-47fd-b00c-e2e492474694.jpg",
-            "main_mobile_full_image": "shopify://shop_images/3_mobile_banner_see_all_mens_wear_all_country_500x707_22_04_25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/3-slider-banner-all-country-desktop-1440x540-6-5-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/3-mobile-banner-all-country-500x707-6-5-25.jpg",
             "alt_text": "Kurta Chronicles",
-            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/see-all-menswear"
+            "main_banner_redirect_link": "shopify://collections/see-all-menswear"
           }
         },
         "information_7ncwjR": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/4-slider-banner-bride-and-groom-all-country-desktop-2800x1050-27-3-25-new1.jpg",
-            "main_mobile_full_image": "shopify://shop_images/4-mobile-banner-bride-and-groom-all-country-500x707-27-3-25-new1.jpg",
+            "main_desktop_full_image": "shopify://shop_images/4-slider-banner-bride-and-groom-all-country-desktop-2800x1050-6-5-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/4-mobile-banner-bride-and-groom-all-country-500x707-6-5-25.jpg",
             "alt_text": "Bridal World",
-            "main_banner_redirect_link": "https://in.kalkifashion.com/collections/bride-and-groom-collection"
+            "main_banner_redirect_link": "shopify://collections/bride-and-groom-collection"
           }
         }
       },
