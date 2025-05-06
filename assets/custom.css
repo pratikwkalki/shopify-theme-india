@@ -3017,7 +3017,7 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
 .Customer_register_template_innerleft_texts_new h3{ margin:0; color:#223330; font-size:23px; font-weight:400; line-height:108.696%; letter-spacing:0.23px; text-transform: capitalize; }
 .Customer_register_template_innerleft_infos_new{padding-top:23px;}
 .Customer_register_template_innerleft_infos_new h4{margin:0; color:#223330; text-align:center; font-size:20px; font-weight:400; line-height:100%; border: 1px dashed #B688AF; background:#FFF; padding:12px 16px; min-width:205px; display:inline-block;}
-.Customer_register_template_innerleft_apply_new{color: #223330; font-size: 10px; font-weight:400; line-height:120%; padding:26px 29px; position:absolute; right:0; bottom:0; width:100%; text-align:right; }
+.Customer_register_template_innerleft_apply_new{color: #223330; font-size: 10px; font-weight:400; line-height:120%; padding:26px 29px; position:absolute; right:0; bottom:0; width:100%; text-align:right; text-shadow: rgba(255, 255, 255, 0.5) 1px 0px 0px, rgba(255, 255, 255, 0.5) 0.540302px 0.841471px 0px, rgba(255, 255, 255, 0.5) -0.416147px 0.909297px 0px, rgba(255, 255, 255, 0.5) -0.989992px 0.14112px 0px, rgba(255, 255, 255, 0.5) -0.653644px -0.756802px 0px, rgba(255, 255, 255, 0.5) 0.283662px -0.958924px 0px, rgba(255, 255, 255, 0.5) 0.96017px -0.279415px 0px;}
 .Customer_register_template_inner_new .customer .registerbtn{width: 50%}
 .Customer_register_template_mainright_new{ width: 60%; padding: 60px 50px; min-height: 650px; display: flex; margin: auto; justify-content: center; align-items: center; }
 .Customer_register_template_innerright_new{max-width:100% !important; padding:0 !important; width: 100%;}
