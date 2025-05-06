@@ -1,1 +1,30 @@
-{"sections":{"main":{"type":"Customer-register-template-new","settings":{"main_background_color":"#ffffff","main_heading_text":"<p>Register & Be A Part Of The KALKI Circle!<br\/>Enjoy exclusive benefits like:<\/p><p>- Exclusive early collection showcase<\/p><p>- Access amazing offers, discounts and more<\/p><p>Join Now!<\/p>","main_information_text":"","main_use_code_text":"","main_desktop_full_image":"shopify:\/\/shop_images\/5-thankyou-page-banner-size-3-3-25-400X700_a042f24d-3c04-4bb7-a6da-58f706f8f756.jpg","main_mobile_full_image":"shopify:\/\/shop_images\/5-thankyou-page-banner-size-3-3-25-400X700_a042f24d-3c04-4bb7-a6da-58f706f8f756.jpg","main_right_information_text_1":"<p>Welcome to Kalki! It's quick and easy to set up an account.<\/p>","main_right_information_text_2":"<p>By continuing, I agree to the <a href=\"\/pages\/terms-conditions\" target=\"_blank\" title=\"Terms & conditions\">Terms of Use<\/a> and <a href=\"\/pages\/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">Privacy Policy<\/a><\/p>","main_right_information_text_3":"<p>Already Have an Account?  <a href=\"\/account\/login\" title=\"\/account\/login\">Sign In<\/a><\/p>"}}},"order":["main"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "Customer-register-template-new",
+      "settings": {
+        "main_background_color": "#ffffff",
+        "main_heading_text": "<p>Register & Be A Part Of The KALKI Circle!<br/>Enjoy exclusive benefits like:</p><p>- Exclusive early collection showcase</p><p>- Access amazing offers, discounts and more</p><p>Join Now!</p>",
+        "main_information_text": "Register & Be A Part Of The KALKI Circle!Enjoy exclusive benefits like:",
+        "main_use_code_text": "",
+        "main_desktop_full_image": "shopify://shop_images/5-thankyou-page-banner-size-3-3-25-400X700_a042f24d-3c04-4bb7-a6da-58f706f8f756.jpg",
+        "main_mobile_full_image": "shopify://shop_images/5-thankyou-page-banner-size-3-3-25-400X700_a042f24d-3c04-4bb7-a6da-58f706f8f756.jpg",
+        "main_right_information_text_1": "<p>Welcome to Kalki! It's quick and easy to set up an account.</p>",
+        "main_right_information_text_2": "<p>By continuing, I agree to the <a href=\"/pages/terms-conditions\" target=\"_blank\" title=\"Terms & conditions\">Terms of Use</a> and <a href=\"/pages/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">Privacy Policy</a></p>",
+        "main_right_information_text_3": "<p>Already Have an Account?  <a href=\"/account/login\" title=\"/account/login\">Sign In</a></p>"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
