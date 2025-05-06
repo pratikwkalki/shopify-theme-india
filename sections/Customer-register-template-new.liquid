@@ -24,7 +24,7 @@
         <div class="Customer_register_template_innerleft_new">
           {%- if section.settings.main_heading_text != blank -%}
             <div class="Customer_register_template_innerleft_title_new">
-              <div>{{ section.settings.main_heading_text }}</div>
+              <h2>{{ section.settings.main_heading_text }}</h3>
             </div>  
           {%- endif -%}
           {%- if section.settings.main_information_text != blank -%}
@@ -264,7 +264,7 @@
         "default": "#FFFFFF"
       },
       {
-        "type": "richtext",
+        "type": "textarea",
         "id": "main_heading_text",
         "label": "Add Main Heading Text"
         
