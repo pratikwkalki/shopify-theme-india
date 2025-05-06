@@ -21,6 +21,7 @@
             }
           </style>
         {%- endif -%}
+      {%- if section.settings.main_heading_text != blank or section.settings.main_information_text != blank or section.settings.main_use_code_text != blank -%}
         <div class="Customer_register_template_innerleft_new">
           {%- if section.settings.main_heading_text != blank -%}
             <div class="Customer_register_template_innerleft_title_new">
@@ -40,6 +41,7 @@
             </div>  
           {%- endif -%}
         </div>
+        {%- endif -%}
         <div class="Customer_register_template_innerleft_apply_new">
           *T&C Apply
         </div>
