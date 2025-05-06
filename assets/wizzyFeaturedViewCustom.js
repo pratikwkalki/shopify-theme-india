@@ -10,6 +10,7 @@
         }),
         data
       );
+    }
       );
    window.featuredViewConfig.events.registerEvent(
     window.featuredViewConfig.events.allowedEvents.ADD_TO_CART,
