@@ -212,26 +212,38 @@
                 </span>
               {%- endif -%}
 
-                <!-- <div class="field Dateofbirth">
+                 <div class="field Dateofbirth">
                     <input type="date" 
-                      id="dateofbirth"
+                      id="RegisterForm-dateofbirth"
                       class="required date_picker__input"
-                      name="dateofbirth"
+                      name="customer[note][Date Of Birth]"
                       required
                     />
-                    <label for="dateofbirth">
+                    <label for="RegisterForm-dateofbirth">
                       Date of Birth*
                     </label>
                 </div>
-                <div class="field Dateofbirth">
-                      <select id="CustomerFormFlavor" name="customer[note][Flavor]">
-                        <option>Chocolate</option>
-                        <option>Vanilla</option>
-                        <option>Strawberry</option>
+                <div class="field gender custom-select">
+                      <select id="gender" name="customer[note][Gender]" >
+                        <option disabled selected>Gender*</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                        <option>Prefer not to say</option>
                       </select>
-                    
                   </div>
-                       -->
+
+              <div class="field Anniversary">
+                    <input type="date" 
+                      id="RegisterForm-wedding_date"
+                      class="required date_picker__input"
+                      name="customer[note][Anniversary Date]"
+                      required
+                    />
+                    <label for="Anniversary">
+                      Anniversary Date*
+                    </label>
+                </div>
               <button class="button submit_btn_new registerbtn">
                 {{ 'customer.register.submit' | t }}
               </button>
