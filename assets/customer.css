@@ -849,7 +849,7 @@ li[data-address] > h2 {
     color: #fff;
     font-size: 14px;
     color: #fff;
-    line-height: 1.4;
+    line-height: 2;
     margin: 15px 0;
 }
 .customer.addresses [name="address[country]"] option[value="India"] {
