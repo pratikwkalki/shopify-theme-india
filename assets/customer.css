@@ -833,7 +833,21 @@ li[data-address] > h2 {
 }
 .Customer_register_template_innerleft_title_new h2 {
     color: #fff;
-    font-size: 20px;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+.Customer_register_template_innerleft_title_new h3 {
+    color: #fff;
+    font-size: 19px;
+    color: #fff;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+.Customer_register_template_innerleft_title_new p {
+    color: #fff;
+    font-size: 14px;
     color: #fff;
     line-height: 1.4;
     margin: 15px 0;
@@ -860,7 +874,15 @@ li[data-address] > h2 {
 }
 @media screen and (max-width: 749px) {
   .Customer_register_template_innerleft_title_new h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  .Customer_register_template_innerleft_title_new h3 {
     font-size: 14px;
+    margin: 10px 0;
+  }
+  .Customer_register_template_innerleft_title_new p {
+    font-size: 12px;
     margin: 10px 0;
   }
   .Customer_register_template_innerleft_title_new {
