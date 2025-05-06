@@ -3073,12 +3073,38 @@ template-collection template--deme-collection .rumi-firework-subtitle { max-widt
 #customer_login {
     display: block !important;
 }
-.customer .field.FirstName,.customer .field.LastName{width: calc(50% - 8px);}
+.customer .field.FirstName,.customer .field.LastName,.customer .field.gender,.customer .field.Dateofbirth {width: calc(50% - 8px);}
 .customer .field.LastName{ margin-top: 0rem; margin-top:0px !important;}
 .customer .field.email,.customer .field.Phonenumber,.customer .field.password{width: 100%}
 .customer input[type="date"]::-webkit-calendar-picker-indicator {
   background: url(https://img.icons8.com/cotton/64/000000/calendar.png) no-repeat;
-  background-size: 25px 25px;font-size: 23px;
+  background-size: 25px 25px;font-size: 25px; margin-bottom: 10px
+}
+
+/* custom select */
+/* The container must be positioned relative: */
+.custom-select { position: relative; font-family: Arial;}
+
+.custom-select select { display: none; /*hide original SELECT element: */}
+.select-selected { background-color:  #ffffff;}
+
+/* Style the arrow inside the select element: */
+.select-selected:after { position: absolute; content: ""; top: 50%; right: 10px; width: 0; height: 0; border: 6px solid transparent; border-color: #000 transparent transparent transparent;}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after { border-color: transparent transparent #000 transparent;  top: 35%;}
+
+/* style the items (options), including the selected item: */
+  .select-items div,.select-selected { color: #000000; padding: 8px 16px; border: 1px solid #D9D9D9 !important;border-radius: 6px !important;  cursor: pointer; width:100%; position: relative;display: flex; align-items: center;}
+
+/* Style items (options): */
+.select-items {position: absolute; background-color: #fff; top: 100%; left: 0; right: 0; z-index: 99;}
+
+/* Hide the items when the select box is closed: */
+.select-hide {display: none;}
+
+.select-items div:hover, .same-as-selected {
+  background-color: #fff;
 }
 /* Register & Login */
 
