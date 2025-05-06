@@ -10,6 +10,12 @@
         }),
         data
       );
+    window.featuredViewConfig.events.allowedEvents.ADD_TO_CART,
+    function (data) {
+      
+      console.log("Add to Cart Clicked");
+      return data;
+      
     }
   );
 
