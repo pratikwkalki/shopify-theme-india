@@ -17,7 +17,7 @@
       
      console.log("Add to Cart Clicked");
       return data;
-      );
+   );
    
 
 
