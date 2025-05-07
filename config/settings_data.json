@@ -317,6 +317,11 @@
         "type": "shopify://apps/webengage/blocks/webengage-embed/1d458caf-1d70-4697-a570-55048d495614",
         "disabled": false,
         "settings": {}
+      },
+      "3807995532714858160": {
+        "type": "shopify://apps/trafficly-visitors-counter/blocks/trafficly/ff0a9f47-c478-468c-8fa1-f5a7bb122960",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
