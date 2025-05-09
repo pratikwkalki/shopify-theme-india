@@ -102,9 +102,7 @@ TagalysCustomisations.initAllWidgets = function() {
   TagalysCustomisations.initAllProductBasedWidgets()
 }
 
-onTagalysReady(function () {
-  Tagalys.Analytics.trackPlatformEvents();
-});
+
 
 onTagalysReady(function () {
   TagalysCustomisations.initAllWidgets()
