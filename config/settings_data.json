@@ -320,7 +320,7 @@
       },
       "3807995532714858160": {
         "type": "shopify://apps/trafficly-visitors-counter/blocks/trafficly/ff0a9f47-c478-468c-8fa1-f5a7bb122960",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     },
