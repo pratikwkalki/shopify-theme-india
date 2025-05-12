@@ -142,7 +142,7 @@
     {%- endif -%}
     {%- if template.name == 'page' -%}
       {%- if page.metafields.custom.page_hreflang != blank -%}
-        {{ page.metafields.custom.page_hreflang }}
+        {{ page.metafields.custom.page_hreflang | json }}
       {%- endif -%}
     {%- endif -%}
     {%- if page.handle contains 'bridal-wedding-dresses' -%}
