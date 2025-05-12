@@ -23,13 +23,15 @@
 window.featuredViewConfig.events.registerEvent(
     window.featuredViewConfig.events.allowedEvents.ON_FEATURED_VIEW_CLICKED,
     function (data) {
-      
-      let wishlist_icon = document.querySelector('.wizzy__featuredview__cartCount__Ttudn');
+      setTimeout(()=>{
+        let wishlist_icon = document.querySelector('.wizzy__featuredview__cartCount__Ttudn');
       let main_counter = document.querySelector('.wk-counter.wk-bubble');
       console.log(wishlist_icon);
       console.log(main_counter);
       if(wishlist_icon && main_counter)
         wishlist_icon.innerText = main_counter.innerText;
+      },2000)
+      
       return data;
     }
    );
