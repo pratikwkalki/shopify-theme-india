@@ -31,7 +31,7 @@ window.featuredViewConfig.events.registerEvent(
       console.log(main_counter);
       if(wishlist_icon && main_counter)
         wishlist_icon.innerText = main_counter.innerText;
-      },10000);
+      },1000);
       
       return data;
     }
