@@ -17,6 +17,10 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
 .wizzy__featuredview__descriptionRowValue__KDEO7 {
   width: unset !important;
 }
+.wizzy__featuredview__cartCount__Ttudn {
+  padding: unset !important;
+  padding-lef: 5px !important;
+}
 .wizzy__featuredview__descriptionContentRow__iXPIN {
   font-size: 13px;
 }
