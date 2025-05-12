@@ -253,3 +253,16 @@ then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
 
 //custom select dropdown close
+
+
+// this is for desktop menu below image text center
+function handleImgError(img) {
+  const a = img.closest('a');
+  if (a) {
+    a.classList.add('hide');
+    const next = a.nextElementSibling;
+    if (next) {
+      next.classList.add('title-left-align');
+    }
+  }
+}
