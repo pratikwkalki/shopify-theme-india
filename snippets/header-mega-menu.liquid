@@ -85,7 +85,7 @@
                                           <img src="{{ image_filename | file_url }}" alt="{{ grandchildlink.handle }}" class="Hover_image_new" loading="lazy" fetchpriority="auto"  onerror="handleImgError(this)">
                                         </a>
                                       {% endunless %}
-                                        <a id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}" href="{{ grandchildlink.url }}" class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %} {{ grandchildlink.title | handleize }}_3_new {% if childlink_title_handle contains 'color' %} color_menu_new {% endif %}" {% if grandchildlink.current %} aria-current="page" {% endif %}>
+                                        <a id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}" href="{{ grandchildlink.url }}" class="title-center-align mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %} {{ grandchildlink.title | handleize }}_3_new {% if childlink_title_handle contains 'color' %} color_menu_new {% endif %}" {% if grandchildlink.current %} aria-current="page" {% endif %}>
                                         {%- if childlink_title_handle contains 'color' -%}
                                             {%- for menu_3_dot_color in dot_colors -%}
                                               {%- if grandchildlink.title contains menu_3_dot_color.menu_name.value -%}
