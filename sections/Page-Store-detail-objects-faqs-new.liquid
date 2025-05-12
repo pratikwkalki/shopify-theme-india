@@ -42,7 +42,7 @@
                           {%- endif -%}
                           {%- if features[Answer].value != blank -%}
                             <div class="answer" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                             {{ features[Answer] | metafield_tag   }}
+                             {{ features[Answer] | metafield_tag }}
                             </div>
                           {%- endif -%}
                         </li>
@@ -83,7 +83,7 @@
             "name": "{{ features[Question].value }}",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "{{ features[Answer] | metafield_tag | strip_html }}"
+              "text": "{{ features[Answer] | metafield_tag  | metafield_text   }}"
             }
           } {% unless forloop.index == totalCount %},{% endunless %}
         {%- endif -%}
