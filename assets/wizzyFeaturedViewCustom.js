@@ -33,7 +33,7 @@ window.featuredViewConfig.events.registerEvent(
         {
           cart_count.innerText = main_cart_count.innerText;
         }
-        else
+        else if(cart_count)
         {
           cart_count.style.setProperty("display", "none", "important");
         }
@@ -74,7 +74,7 @@ window.featuredViewConfig.events.registerEvent(
         {
           cart_count.innerText = main_cart_count.innerText;
         }
-        else
+        else if(cart_count)
         {
           cart_count.style.setProperty("display", "none", "important");
         }
