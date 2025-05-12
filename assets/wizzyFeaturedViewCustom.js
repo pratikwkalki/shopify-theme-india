@@ -26,7 +26,10 @@ window.featuredViewConfig.events.registerEvent(
       
       let wishlist_icon = document.querySelector('.wizzy__featuredview__cartCount__Ttudn');
       let main_counter = document.querySelector('.wk-counter.wk-bubble');
-      wishlist_icon.innerText = main_counter.innerText;
+      console.log(wishlist_icon);
+      console.log(main_counter);
+      if(wishlist_icon && main_counter)
+        wishlist_icon.innerText = main_counter.innerText;
       return data;
     }
    );
