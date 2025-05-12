@@ -106,11 +106,15 @@ window.featuredViewConfig.events.registerEvent(
       .then(response => response.text())  // Since it seems the response is HTML, we’ll parse it as text
       .then(data => {
         console.log("Response data:", data);
-         return fetch("https://in.kalkifashion.com/cart.js");
       })
       .catch(error => {
         console.error("Error:", error);
       });
+      let cart_count = document.querySelector('.wizzy__cart__count');
+      if (cart_count) {
+        let currentCount = parseInt(cart_count.textContent.trim(), 10) || 0;
+        cart_count.textContent = (currentCount + 1).toString();
+      }
       return data;
     }
    );
