@@ -1796,6 +1796,9 @@ span.wizzy-facet-list-item-checkbox {
     top: 155px;
     margin-top: 0px;
   }
+  .wizzy-search-summary-wrapper {
+    padding-bottom: 15px;
+  }
   .wz-promotion-banner {
     position: relative;
   }
