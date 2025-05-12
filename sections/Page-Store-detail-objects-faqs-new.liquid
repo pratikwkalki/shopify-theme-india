@@ -81,9 +81,9 @@
           {
             "@type": "Question",
             "name": "{{ features[Question].value }}",
-            "itemprop":"text",
             "acceptedAnswer": {
               "@type": "Answer",
+              "itemprop":"text",
               "text": "{{ features[Answer] | metafield_tag | strip_html }}"
             }
           } {% unless forloop.index == totalCount %},{% endunless %}
