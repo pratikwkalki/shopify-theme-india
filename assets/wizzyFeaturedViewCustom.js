@@ -23,6 +23,7 @@
 window.featuredViewConfig.events.registerEvent(
     window.featuredViewConfig.events.allowedEvents.AFTER_PRODUCTS_TRANSFORMED,
     function (data) {
+      console.log("AFTER_PRODUCTS_TRANSFORMED");
       setTimeout(()=>{
         let wishlist_icon = document.querySelector('.wizzy__featuredview__cartCount__Ttudn');
       let main_counter = document.querySelector('.wk-counter.wk-bubble');
