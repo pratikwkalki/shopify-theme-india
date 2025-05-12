@@ -81,6 +81,7 @@
           {
             "@type": "Question",
             "name": "{{ features[Question].value }}",
+            itemprop:"text",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "{{ features[Answer] | metafield_tag | strip_html }}"
