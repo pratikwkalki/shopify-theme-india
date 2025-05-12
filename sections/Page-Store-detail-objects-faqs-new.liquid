@@ -41,8 +41,8 @@
                             </div>
                           {%- endif -%}
                           {%- if features[Answer].value != blank -%}
-                            <div class="answer" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                              <h2 itemprop="text">{{ features[Answer] | metafield_tag  }}</h2>
+                            <div class="answer" itemscope="text" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                             {{ features[Answer] | metafield_tag  }}
                             </div>
                           {%- endif -%}
                         </li>
