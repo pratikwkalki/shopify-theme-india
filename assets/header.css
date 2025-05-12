@@ -1422,7 +1422,12 @@ cart-remove-button .icon-remove {
   transition: text-decoration var(--duration-short) ease;
   word-wrap: break-word;
 }
-
+.title-center-align{
+  text-align: center !important;
+}
+.title-left-align.title-center-align{
+  text-align: left !important;
+}
 .mega-menu__link--level-2 {
   font-weight: bold;
 }
