@@ -96,7 +96,9 @@ window.featuredViewConfig.events.registerEvent(
       formData.append("quantity", "1");
       formData.append("items[0][properties][saving_price]", "product-id");
       formData.append("items[0][properties][_ref_id]", "1747046555393");
-      
+      fetch("https://in.kalkifashion.com/cart/",{
+        method: "GET",
+      });
       fetch("https://in.kalkifashion.com/cart/add", {
         method: "POST",
         body: formData,
