@@ -68,13 +68,7 @@
                                 <ul class="ul-menu-list" role="list">
                                   {%- for grandchildlink in childlink.links -%}
                                     <li class="{{ link.handle }}{{ childlink.title | handleize }}-right-img">
-                                      {%- assign menu_title = grandchildlink.title | handleize -%}
-                                      {%- for menu_3_text_color in menu_3_styles -%}
-                                        {%- assign menu_name_title = menu_3_text_color.menu_name.value | handleize -%}
-                                        {%- if menu_title == menu_name_title -%}
-                                          <style>.{{ grandchildlink.title | handleize }}_3_new { color: {{ menu_3_text_color.text_color.value }} !important; }.{{ grandchildlink.title | handleize }}_3_new:hover { color: #CC8F67 !important; }</style>
-                                        {%- endif -%}
-                                      {%- endfor -%}
+                                      {%- assign menu_title = grandchildlink.title | handleize -%}                                      
                                       {% assign collection_handle =grandchildlink.url | split: '/' | last %}
                                       {% assign image_filename = collection_handle | append: '-menu.jpg' %}
                                       {% assign main_menu_image = image_filename | file_url  %}
@@ -84,6 +78,12 @@
                                           {% comment %}<object class="Hover_image_new" data="{{ image_filename | file_url }}" type="image/jpeg"></object>{% endcomment %}
                                           <img src="{{ image_filename | file_url }}" alt="{{ grandchildlink.handle }}" width="" height="" class="Hover_image_new" loading="lazy" fetchpriority="auto"  onerror="handleImgError(this)">
                                         </a>
+                                      {%- for menu_3_text_color in menu_3_styles -%}
+                                        {%- assign menu_name_title = menu_3_text_color.menu_name.value | handleize -%}
+                                        {%- if menu_title == menu_name_title -%}
+                                          <style>.{{ grandchildlink.title | handleize }}_3_new { color: {{ menu_3_text_color.text_color.value }} !important; }.{{ grandchildlink.title | handleize }}_3_new:hover { color: #CC8F67 !important; }</style>
+                                        {%- endif -%}
+                                      {%- endfor -%}
                                       {% endunless %}
                                         <a id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}" href="{{ grandchildlink.url }}" class="title-center-align mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %} {{ grandchildlink.title | handleize }}_3_new {% if childlink_title_handle contains 'color' %} color_menu_new {% endif %}" {% if grandchildlink.current %} aria-current="page" {% endif %}>
                                         {%- if childlink_title_handle contains 'color' -%}
