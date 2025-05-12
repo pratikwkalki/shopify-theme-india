@@ -11,7 +11,7 @@
           {%- assign features = metaobject.faqs_questions_accordion.value -%}
           <div class="Page_Store_detail_objects_faqs_mainloop_new">
             <div class="Page_Store_detail_objects_faqs_innerloop_new Common_faqs_accordion_new">
-              <div class="accordion">
+              <div class="accordion" itemscope="" itemtype="http://schema.org/FAQPage" itemprop="mainEntity">
                 <ul class="list-unstyled">
                   {% assign counter = 0 %}
                   {%- for i in (1..15) -%}
@@ -28,7 +28,7 @@
                   {%- for i in (1..15) -%}
                     
                     {% if cti == 1 %}
-                    <div class="Page_Store_detail_objects_faqs_innerloop_half_new">
+                    <div class="Page_Store_detail_objects_faqs_innerloop_half_new" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                     {% endif %}
                       
                       {%- assign Question = 'question_' | append: forloop.index -%}
@@ -36,12 +36,12 @@
                       {%- if features[Question].value != blank and features[Answer].value != blank -%}
                         <li>
                           {%- if features[Question].value != blank -%}
-                            <div class="question">
+                            <div class="question" itemprop="name">
                               <h2>{{ features[Question].value }}</h2>
                             </div>
                           {%- endif -%}
                           {%- if features[Answer].value != blank -%}
-                            <div class="answer">
+                            <div class="answer" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                               {{ features[Answer] | metafield_tag }}
                             </div>
                           {%- endif -%}
