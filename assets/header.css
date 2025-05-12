@@ -1422,6 +1422,10 @@ cart-remove-button .icon-remove {
   transition: text-decoration var(--duration-short) ease;
   word-wrap: break-word;
 }
+ul.ul-menu-list li a:nth-child(1){
+  text-align: left !important;
+}
+
 .title-center-align{
   text-align: center !important;
 }
