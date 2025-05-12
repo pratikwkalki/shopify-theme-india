@@ -47,10 +47,19 @@
       "block_order": [
         "information_amPGcx"
       ],
-      "disabled": true,
       "settings": {
         "main_background_color": "#ffffff",
         "main_top_heading_text": "Heading"
+      }
+    },
+    "custom_liquid_8bMqLb": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\n.single-page-align{\nmax-width: 1080px;\n    margin: auto;}\n</style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "page_store_detail_service_new_A4aGdc": {
@@ -335,6 +344,7 @@
     "page_our_stores_banner_new_rgGhhR",
     "page_store_detail_objects_new_8zxkVP",
     "single_image_KTzYcr",
+    "custom_liquid_8bMqLb",
     "page_store_detail_service_new_A4aGdc",
     "page_store_detail_collection_new_AqYqqM",
     "page_store_detail_tabs_new_AfAkcL",
