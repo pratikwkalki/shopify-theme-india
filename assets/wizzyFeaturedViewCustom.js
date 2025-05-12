@@ -21,7 +21,7 @@
     }
    );
 window.featuredViewConfig.events.registerEvent(
-    window.featuredViewConfig.events.allowedEvents.AFTER_PRODUCTS_TRANSFORMED,
+    window.featuredViewConfig.events.allowedEvents.ON_FEATURED_VIEW_CLICKED,
     function (data) {
       
       let wishlist_icon = document.querySelector('.wizzy__featuredview__cartCount__Ttudn');
