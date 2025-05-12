@@ -117,8 +117,11 @@ window.featuredViewConfig.events.registerEvent(
           cart_count.style.setProperty("display", "block", "important");
           cart_count.textContent = '1';
         }
-        let currentCount = parseInt(cart_count.textContent.trim(), 10) || 0;
-        cart_count.textContent = (currentCount + 1).toString();
+        else
+        {
+          let currentCount = parseInt(cart_count.textContent.trim(), 10) || 0;
+          cart_count.textContent = (currentCount + 1).toString();
+        }
       }
       return data;
     }
