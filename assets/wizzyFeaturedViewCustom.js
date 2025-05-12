@@ -89,6 +89,7 @@ window.featuredViewConfig.events.registerEvent(
 window.featuredViewConfig.events.registerEvent(
     window.featuredViewConfig.events.allowedEvents.ADD_TO_CART,
     function (data) {
+      console.log("Add_to_cart", data);
       const formData = new FormData();
       formData.append("items[0][id]", "51949576749419");
       formData.append("quantity", "1");
