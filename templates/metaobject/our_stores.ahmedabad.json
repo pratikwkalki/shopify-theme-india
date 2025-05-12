@@ -53,16 +53,6 @@
         "main_top_heading_text": "Heading"
       }
     },
-    "custom_liquid_8bMqLb": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<style>\n.single-page-align{\nmax-width: 1080px;\n    margin: auto;}\n</style>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "page_store_detail_service_new_A4aGdc": {
       "type": "Page-Store-detail-service-new",
       "blocks": {
@@ -338,6 +328,16 @@
         "main_heading_text": "Visit our Store",
         "meta_object_handle_name_text": "index_visit_our_stores"
       }
+    },
+    "custom_liquid_8bMqLb": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\n.single-page-align{\nmax-width: 1080px;\n    margin: auto;}\n</style>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -345,7 +345,6 @@
     "page_our_stores_banner_new_rgGhhR",
     "page_store_detail_objects_new_8zxkVP",
     "single_image_KTzYcr",
-    "custom_liquid_8bMqLb",
     "page_store_detail_service_new_A4aGdc",
     "page_store_detail_collection_new_AqYqqM",
     "page_store_detail_tabs_new_AfAkcL",
@@ -355,6 +354,7 @@
     "page_store_detail_visits_new_AgkF3m",
     "page_store_sliders_new_zizddT",
     "page_stores_detail_slider_new_WTDrJf",
-    "visit_our_store_ckK6ye"
+    "visit_our_store_ckK6ye",
+    "custom_liquid_8bMqLb"
   ]
 }
