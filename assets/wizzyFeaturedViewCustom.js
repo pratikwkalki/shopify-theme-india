@@ -27,6 +27,12 @@ window.featuredViewConfig.events.registerEvent(
       setTimeout(()=>{
         let wishlist_icon = document.querySelector('.wizzy__featuredview__cartCount__Ttudn');
       let main_counter = document.querySelector('.wk-counter.wk-bubble');
+        let main_cart_count = document.querySelector('.cart-count-bubble span');
+        let cart_count = document.querySelector('.wizzy__cart__count');
+        if(cart_count && main_cart_count)
+        {
+          cart_count.innerText = main_cart_count.innerText;
+        }
       console.log(wishlist_icon);
       console.log(main_counter);
       if(wishlist_icon && main_counter)
@@ -50,6 +56,21 @@ window.featuredViewConfig.events.registerEvent(
         wishlist_icon.innerText = main_counter.innerText;
       },200);
       
+      return data;
+    }
+   );
+
+window.featuredViewConfig.events.registerEvent(
+    window.featuredViewConfig.events.allowedEvents.ON_ADD_TO_CART_SUCCESS,
+    function (data) {
+      setTimeout(()=>{
+        let main_cart_count = document.querySelector('.cart-count-bubble span');
+        let cart_count = document.querySelector('.wizzy__cart__count');
+        if(cart_count && main_cart_count)
+        {
+          cart_count.innerText = main_cart_count.innerText;
+        }
+      },200);
       return data;
     }
    );
