@@ -1794,6 +1794,7 @@ span.wizzy-facet-list-item-checkbox {
   #init-wizzy-featured-view-button {
     position: sticky;
     top: 155px;
+    margin-top: 0px;
   }
   .wz-promotion-banner {
     position: relative;
