@@ -20,6 +20,14 @@
       return data;
     }
    );
+window.featuredViewConfig.events.registerEvent(
+    window.featuredViewConfig.events.allowedEvents.AFTER_PRODUCTS_TRANSFORMED,
+    function (data) {
+      
+     console.log("AFTER_PRODUCTS_TRANSFORMED", data);
+      return data;
+    }
+   );
    
 
 
