@@ -104,6 +104,7 @@ window.featuredViewConfig.events.registerEvent(
       .then(response => response.text())  // Since it seems the response is HTML, we’ll parse it as text
       .then(data => {
         console.log("Response data:", data);
+         return fetch("https://in.kalkifashion.com/cart.js");
       })
       .catch(error => {
         console.error("Error:", error);
