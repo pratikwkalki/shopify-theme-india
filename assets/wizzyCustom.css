@@ -1792,8 +1792,8 @@ span.wizzy-facet-list-item-checkbox {
     /* padding-top: 50px; */
   }
   #init-wizzy-featured-view-button {
-    position: fixed;
-    top: 140px;
+    position: sticky;
+    top: 155px;
   }
   .wz-promotion-banner {
     position: relative;
