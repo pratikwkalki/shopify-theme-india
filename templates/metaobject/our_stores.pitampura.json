@@ -348,6 +348,16 @@
         "main_heading_text": "Visit our Store",
         "meta_object_handle_name_text": "index_visit_our_stores"
       }
+    },
+    "custom_liquid_WAaWfK": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\n.single-page-align{\nmax-width: 1080px;\n    margin: auto;}\n</style>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -364,6 +374,7 @@
     "page_store_detail_visits_new_AgkF3m",
     "page_store_sliders_new_yhWd6C",
     "page_stores_detail_slider_new_bA4xRc",
-    "visit_our_store_4mjW4B"
+    "visit_our_store_4mjW4B",
+    "custom_liquid_WAaWfK"
   ]
 }
