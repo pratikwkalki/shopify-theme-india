@@ -33,6 +33,10 @@ window.featuredViewConfig.events.registerEvent(
         {
           cart_count.innerText = main_cart_count.innerText;
         }
+        else
+        {
+          cart_count.style.setProperty("display", "none", "important");
+        }
       console.log(wishlist_icon);
       console.log(main_counter);
       if(wishlist_icon && main_counter)
@@ -69,6 +73,10 @@ window.featuredViewConfig.events.registerEvent(
         if(cart_count && main_cart_count)
         {
           cart_count.innerText = main_cart_count.innerText;
+        }
+        else
+        {
+          cart_count.style.setProperty("display", "none", "important");
         }
       },200);
       return data;
