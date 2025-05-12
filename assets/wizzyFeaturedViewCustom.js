@@ -103,7 +103,7 @@ window.featuredViewConfig.events.registerEvent(
         method: "POST",
         body: formData,
       })
-      .then(response => response.text())  // Since it seems the response is HTML, we’ll parse it as text
+      .then(response => response.text())
       .then(data => {
         console.log("Response data:", data);
       })
