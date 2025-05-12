@@ -329,13 +329,13 @@
         "information_FAEPEb": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-mothers-day-outfit-all-country-400x533-05-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-mothers-day-outfit-all-country-400x533-05-05-25.jpg",
-            "title": "Mother's Day Edit",
-            "sub_head_text": "",
+            "main_desktop_image": "shopify://shop_images/1-mini-desk-bestsellers-all-country-400x533-12-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mini-desk-bestsellers-all-country-400x533-12-05-25.jpg",
+            "title": "Bestsellers",
+            "sub_head_text": "You'll Love",
             "main_tags_detail_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/mothers-day-outfit"
+            "main_button_link": "shopify://collections/bestsellers"
           }
         },
         "information_hhzzrz": {
