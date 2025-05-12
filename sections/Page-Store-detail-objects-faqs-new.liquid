@@ -42,7 +42,7 @@
                           {%- endif -%}
                           {%- if features[Answer].value != blank -%}
                             <div class="answer" itemscope="" itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-                             <p itemscope="text">{{ features[Answer] | metafield_text }}</p>
+                             <p itemprop="text">{{ features[Answer] | metafield_text }}</p>
                             </div>
                           {%- endif -%}
                         </li>
