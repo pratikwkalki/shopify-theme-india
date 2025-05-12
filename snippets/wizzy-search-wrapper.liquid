@@ -1,5 +1,61 @@
 <script type="text/template" id="wizzy-search-wrapper" wizzy-override>
-   <div id="wizzyFeaturedViewRoot"></div>
+   
+  <div class="wizzy-search-wrapper [[#inOnCategoryPage]]wizzy-category-page[[/inOnCategoryPage]] [[#displayTileView]]display-tile-view[[/displayTileView]]
+  [[#hasFacets]]has-facets[[/hasFacets]]
+  [[#hasToDisplayFiltersAtTop]]has-filters-button-at-top[[/hasToDisplayFiltersAtTop]]
+  [[#hasLeftFacets]]has-left-facets[[/hasLeftFacets]]
+  [[#hasTopFacets]]has-top-facets[[/hasTopFacets]]
+  [[#displayFacetsInDrawer]]has-facets-in-drawer facets-drawer-on-[[facetDrawerPosition]][[/displayFacetsInDrawer]]" [[#displayTileView]]wizzy-tile-view-level="[[tileViewLevel]]"[[/displayTileView]]>
+      [[^isOnCategoryPage]]
+      <nav class="breadcrumbs Breadcrumb_navigation_main_new" role="navigation" aria-label="breadcrumbs">
+        <ol class="breadcrumbs__list" style="
+        padding-left: 0px;
+        ">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="/">Home</a>
+          </li><li class="breadcrumbs__item">
+                <span class="breadcrumbs__link" aria-current="page">Search</span>
+              </li></ol>
+      </nav>
+      [[/isOnCategoryPage]]
+      <div class="wizzy-search-summary-wrapper">
+          [[#summary]]
+          [[&summary]]
+          [[/summary]]
+          <div class="wizzy-resize-grid desktop">
+            <span class="wizzy-grid-resize-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="4" height="4" fill="black"></rect>
+                <rect x="6" width="4" height="4" fill="black"></rect>
+                <rect x="12" width="4" height="4" fill="black"></rect>
+                <rect y="6" width="4" height="4" fill="black"></rect>
+                <rect x="6" y="6" width="4" height="4" fill="black"></rect>
+                <rect x="12" y="6" width="4" height="4" fill="black"></rect>
+                <rect y="12" width="4" height="4" fill="black"></rect>
+                <rect x="6" y="12" width="4" height="4" fill="black"></rect>
+                <rect x="12" y="12" width="4" height="4" fill="black"></rect>
+              </svg>
+            </span>
+            <input class="wizzy-range-for-grid" type="range" id="vol" name="vol" min="2" max="6" step="2">
+          </div>
+      </div>
+      <div class="wizzy-resize-grid mobile">
+            <span class="wizzy-grid-resize-icon">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="4" height="4" fill="black"></rect>
+                <rect x="6" width="4" height="4" fill="black"></rect>
+                <rect x="12" width="4" height="4" fill="black"></rect>
+                <rect y="6" width="4" height="4" fill="black"></rect>
+                <rect x="6" y="6" width="4" height="4" fill="black"></rect>
+                <rect x="12" y="6" width="4" height="4" fill="black"></rect>
+                <rect y="12" width="4" height="4" fill="black"></rect>
+                <rect x="6" y="12" width="4" height="4" fill="black"></rect>
+                <rect x="12" y="12" width="4" height="4" fill="black"></rect>
+              </svg>
+            </span>
+            <input class="wizzy-range-for-grid" type="range" id="vol" name="vol" min="2" max="6" step="2">
+          </div>
+      <div id="wizzyFeaturedViewRoot"></div>
      <style>
        .wizzyFeaturedViewRendered #wizzyFeaturedViewRoot {
            height: 100%;
@@ -61,61 +117,6 @@
 
        <span>Explore Products in Story View</span>
      </button>
-  <div class="wizzy-search-wrapper [[#inOnCategoryPage]]wizzy-category-page[[/inOnCategoryPage]] [[#displayTileView]]display-tile-view[[/displayTileView]]
-  [[#hasFacets]]has-facets[[/hasFacets]]
-  [[#hasToDisplayFiltersAtTop]]has-filters-button-at-top[[/hasToDisplayFiltersAtTop]]
-  [[#hasLeftFacets]]has-left-facets[[/hasLeftFacets]]
-  [[#hasTopFacets]]has-top-facets[[/hasTopFacets]]
-  [[#displayFacetsInDrawer]]has-facets-in-drawer facets-drawer-on-[[facetDrawerPosition]][[/displayFacetsInDrawer]]" [[#displayTileView]]wizzy-tile-view-level="[[tileViewLevel]]"[[/displayTileView]]>
-      [[^isOnCategoryPage]]
-      <nav class="breadcrumbs Breadcrumb_navigation_main_new" role="navigation" aria-label="breadcrumbs">
-        <ol class="breadcrumbs__list" style="
-        padding-left: 0px;
-        ">
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="/">Home</a>
-          </li><li class="breadcrumbs__item">
-                <span class="breadcrumbs__link" aria-current="page">Search</span>
-              </li></ol>
-      </nav>
-      [[/isOnCategoryPage]]
-      <div class="wizzy-search-summary-wrapper">
-          [[#summary]]
-          [[&summary]]
-          [[/summary]]
-          <div class="wizzy-resize-grid desktop">
-            <span class="wizzy-grid-resize-icon">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="4" height="4" fill="black"></rect>
-                <rect x="6" width="4" height="4" fill="black"></rect>
-                <rect x="12" width="4" height="4" fill="black"></rect>
-                <rect y="6" width="4" height="4" fill="black"></rect>
-                <rect x="6" y="6" width="4" height="4" fill="black"></rect>
-                <rect x="12" y="6" width="4" height="4" fill="black"></rect>
-                <rect y="12" width="4" height="4" fill="black"></rect>
-                <rect x="6" y="12" width="4" height="4" fill="black"></rect>
-                <rect x="12" y="12" width="4" height="4" fill="black"></rect>
-              </svg>
-            </span>
-            <input class="wizzy-range-for-grid" type="range" id="vol" name="vol" min="2" max="6" step="2">
-          </div>
-      </div>
-      <div class="wizzy-resize-grid mobile">
-            <span class="wizzy-grid-resize-icon">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="4" height="4" fill="black"></rect>
-                <rect x="6" width="4" height="4" fill="black"></rect>
-                <rect x="12" width="4" height="4" fill="black"></rect>
-                <rect y="6" width="4" height="4" fill="black"></rect>
-                <rect x="6" y="6" width="4" height="4" fill="black"></rect>
-                <rect x="12" y="6" width="4" height="4" fill="black"></rect>
-                <rect y="12" width="4" height="4" fill="black"></rect>
-                <rect x="6" y="12" width="4" height="4" fill="black"></rect>
-                <rect x="12" y="12" width="4" height="4" fill="black"></rect>
-              </svg>
-            </span>
-            <input class="wizzy-range-for-grid" type="range" id="vol" name="vol" min="2" max="6" step="2">
-          </div>
       <div class="wizzy-search-results-wrapper">
           [[#hasFacets]]
           [[#hasToDisplayFiltersAtTop]]
