@@ -112,6 +112,11 @@ window.featuredViewConfig.events.registerEvent(
       });
       let cart_count = document.querySelector('.wizzy__cart__count');
       if (cart_count) {
+        if(cart_count.style.display === "none")
+        {
+          cart_count..style.setProperty("display", "block", "important");
+          cart_count.textContent = '1';
+        }
         let currentCount = parseInt(cart_count.textContent.trim(), 10) || 0;
         cart_count.textContent = (currentCount + 1).toString();
       }
