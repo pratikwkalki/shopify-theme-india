@@ -82,7 +82,7 @@
                                       {%- unless childlink_title_handle contains 'color' or childlink_title_handle contains 'shopper' or childlink_title_handle contains 'exclusive-collections' -%}
                                         <a href="{{ grandchildlink.url }}" class="megamenu_right_top_video_OR_image_new">
                                           {% comment %}<object class="Hover_image_new" data="{{ image_filename | file_url }}" type="image/jpeg"></object>{% endcomment %}
-                                          <img src="{{ image_filename | file_url }}" alt="{{ grandchildlink.handle }}" class="Hover_image_new" loading="lazy" fetchpriority="auto"  onerror="handleImgError(this)">
+                                          <img src="{{ image_filename | file_url }}" alt="{{ grandchildlink.handle }}" width="" height="" class="Hover_image_new" loading="lazy" fetchpriority="auto"  onerror="handleImgError(this)">
                                         </a>
                                       {% endunless %}
                                         <a id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}" href="{{ grandchildlink.url }}" class="title-center-align mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %} {{ grandchildlink.title | handleize }}_3_new {% if childlink_title_handle contains 'color' %} color_menu_new {% endif %}" {% if grandchildlink.current %} aria-current="page" {% endif %}>
