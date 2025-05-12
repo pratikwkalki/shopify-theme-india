@@ -36,7 +36,23 @@ window.featuredViewConfig.events.registerEvent(
       return data;
     }
    );
-   
+
+   window.featuredViewConfig.events.registerEvent(
+    window.featuredViewConfig.events.allowedEvents.PRODUCT_ADDED_TO_WISHLIST,
+    function (data) {
+      console.log("AFTER_PRODUCTS_TRANSFORMED");
+      setTimeout(()=>{
+        let wishlist_icon = document.querySelector('.wizzy__featuredview__cartCount__Ttudn');
+      let main_counter = document.querySelector('.wk-counter.wk-bubble');
+      console.log(wishlist_icon);
+      console.log(main_counter);
+      if(wishlist_icon && main_counter)
+        wishlist_icon.innerText = main_counter.innerText;
+      },200);
+      
+      return data;
+    }
+   );
 
 
 
