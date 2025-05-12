@@ -90,8 +90,9 @@ window.featuredViewConfig.events.registerEvent(
     window.featuredViewConfig.events.allowedEvents.ADD_TO_CART,
     function (data) {
       console.log("Add_to_cart", data);
+      let variant_id = data.currentProduct.productVariantPrices[0].variationId;
       const formData = new FormData();
-      formData.append("items[0][id]", data.currentProduct.id);
+      formData.append("items[0][id]", variant_id);
       formData.append("quantity", "1");
       formData.append("items[0][properties][saving_price]", "product-id");
       formData.append("items[0][properties][_ref_id]", "1747046555393");
