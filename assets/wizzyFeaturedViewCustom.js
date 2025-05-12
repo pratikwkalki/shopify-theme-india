@@ -114,7 +114,7 @@ window.featuredViewConfig.events.registerEvent(
       if (cart_count) {
         if(cart_count.style.display === "none")
         {
-          cart_count..style.setProperty("display", "block", "important");
+          cart_count.style.setProperty("display", "block", "important");
           cart_count.textContent = '1';
         }
         let currentCount = parseInt(cart_count.textContent.trim(), 10) || 0;
