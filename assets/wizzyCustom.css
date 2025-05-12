@@ -1789,7 +1789,7 @@ span.wizzy-facet-list-item-checkbox {
     display: block !important;
   }
   .wizzy-search-wrapper {
-    padding-top: 50px;
+    /* padding-top: 50px; */
   }
   #init-wizzy-featured-view-button {
     position: fixed;
