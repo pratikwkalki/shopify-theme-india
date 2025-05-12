@@ -28,7 +28,7 @@
                   {%- for i in (1..15) -%}
                     
                     {% if cti == 1 %}
-                    <div class="Page_Store_detail_objects_faqs_innerloop_half_new" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <div class="Page_Store_detail_objects_faqs_innerloop_half_new" >
                     {% endif %}
                       
                       {%- assign Question = 'question_' | append: forloop.index -%}
@@ -36,7 +36,7 @@
                       {%- if features[Question].value != blank and features[Answer].value != blank -%}
                         <li>
                           {%- if features[Question].value != blank -%}
-                            <div class="question">
+                            <div class="question" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                               <h2 itemprop="name">{{ features[Question].value }}</h2>
                             </div>
                           {%- endif -%}
