@@ -34,9 +34,9 @@
                       {%- assign Question = 'question_' | append: forloop.index -%}
                       {%- assign Answer = 'answer_' | append: forloop.index -%}
                       {%- if features[Question].value != blank and features[Answer].value != blank -%}
-                        <li>
+                        <li itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
                           {%- if features[Question].value != blank -%}
-                            <div class="question" itemscope="" itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <div class="question" >
                               <h2 itemprop="name">{{ features[Question].value }}</h2>
                             </div>
                           {%- endif -%}
