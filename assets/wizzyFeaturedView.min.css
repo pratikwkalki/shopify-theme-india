@@ -4,6 +4,20 @@
   top: 25%;
   transform: translate(-50%, 25%);
 }
+.wizzy__cart__count {
+  background: #ff6464;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-size: 9px;
+  height: 15px;
+  padding: 3px;
+  position: absolute;
+  right: -4px;
+  top: -4px;
+  width: 15px;
+  z-index: -1;
+}
 .wizzy__featuredview__discountTag__iwAlX {
   display: unset !important;
   font-size: 13px !important;
