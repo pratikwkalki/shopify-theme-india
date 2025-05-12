@@ -86,6 +86,32 @@ window.featuredViewConfig.events.registerEvent(
       return data;
     }
    );
+window.featuredViewConfig.events.registerEvent(
+    window.featuredViewConfig.events.allowedEvents.ADD_TO_CART,
+    function (data) {
+      const formData = new FormData();
+      formData.append("items[0][id]", "51949576749419");
+      formData.append("quantity", "1");
+      formData.append("items[0][properties][saving_price]", "product-id");
+      formData.append("items[0][properties][_ref_id]", "1747046555393");
+      
+      fetch("https://in.kalkifashion.com/cart/add", {
+        method: "POST",
+        body: formData,
+      })
+      .then(response => response.text())  // Since it seems the response is HTML, we’ll parse it as text
+      .then(data => {
+        console.log("Response data:", data);
+      })
+      .catch(error => {
+        console.error("Error:", error);
+      });
+      return data;
+    }
+   );
+
+
+
 
 
 
