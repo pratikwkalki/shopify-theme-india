@@ -4,6 +4,21 @@
   top: 25%;
   transform: translate(-50%, 25%);
 }
+.more-products-indicator {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.375rem;
+  justify-content: end;
+  padding-bottom: 0.375rem;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
 .wizzy__cart__count {
   background: #ff6464;
   border-radius: 10px;
