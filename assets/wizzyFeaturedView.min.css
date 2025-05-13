@@ -4,7 +4,10 @@
   top: 25%;
   transform: translate(-50%, 25%);
 }
-.swiper-wrapper > .swiper-slide:last-of-type .more-products-container {
+.swiper
+  wizz.swiper-wrapper
+  > .swiper-slide:last-of-type
+  .more-products-container {
   display: none;
 }
 .more-products-container {
