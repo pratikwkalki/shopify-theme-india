@@ -4,7 +4,7 @@
   top: 25%;
   transform: translate(-50%, 25%);
 }
-.swiper .swiper-wrapper > .swiper-slide:last-of-type .more-products-container {
+.swiper .swiper-wrapper > .swiper-slide:last-of-type .more-products-indicator {
   display: none;
 }
 .shareButton {
