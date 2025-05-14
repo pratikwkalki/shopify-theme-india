@@ -1,4 +1,4 @@
-{%- if section.settings.main_heading_text != blank or section.settings.main_mp4_video_1 != blank or section.settings.main_desktop_image_1 != blank or section.settings.main_mobile_image_1 != blank or section.settings.main_mp4_video_2 != blank or section.settings.main_desktop_image_2 != blank or section.settings.main_mobile_image_2 != blank or section.settings.main_mp4_video_3 != blank or section.settings.main_desktop_image_3 != blank or section.settings.main_mobile_image_3 != blank or section.settings.main_mp4_video_4 != blank or section.settings.main_desktop_image_4 != blank or section.settings.main_mobile_image_4 != blank or section.settings.main_information_text != blank or section.settings.main_sub_heading_text != blank or section.settings.main_button_link != blank -%}
+{%- if section.settings.main_heading_text != blank or section.settings.main_mp4_video_1 != blank or section.settings.main_desktop_image_1 != blank or section.settings.main_mobile_image_1 != blank or section.settings.main_mp4_video_2 != blank or section.settings.main_desktop_image_2 != blank or section.settings.main_mobile_image_2 != blank or section.settings.main_mp4_video_3 != blank or section.settings.main_desktop_image_3 != blank or section.settings.main_mobile_image_3 != blank or section.settings.main_mp4_video_4 != blank or section.settings.main_desktop_image_4 != blank or section.settings.main_mobile_image_4 != blank or section.settings.main_information_text != blank or section.settings.main_sub_heading_text != blank or section.settings.main_button_link != blank or section.settings.sub_small_information_text != blank -%}
   <div class="Index_arrivals_details_main_new" style="background: {{ section.settings.main_background_color }};">
     <div class="page-width">
       {%- if section.settings.main_heading_text != blank -%}
@@ -136,7 +136,7 @@
                   </div>
                 </div>
               {%- endif -%}
-              {%- if section.settings.main_information_text != blank or section.settings.main_sub_heading_text != blank or section.settings.main_button_link != blank -%}
+              {%- if section.settings.main_information_text != blank or section.settings.main_sub_heading_text != blank or section.settings.main_button_link != blank or section.settings.sub_small_information_text != blank -%}
                 <div class="Index_arrivals_details_mainright_new">
                   <div class="Index_arrivals_details_innerright_new">
                     {%- if section.settings.main_information_text != blank -%}
@@ -154,6 +154,11 @@
                         <a href="{{ section.settings.main_button_link }}" class="button button_white saree-edit">
                           {{ section.settings.main_button_text }}
                         </a>
+                      </div>  
+                    {%- endif -%}
+                    {%- if section.settings.sub_small_information_text != blank -%}
+                      <div class="Index_arrivals_details_innerright_infos_new">
+                        {{ section.settings.sub_small_information_text }}
                       </div>  
                     {%- endif -%}
                   </div>
@@ -289,6 +294,12 @@
         "type": "richtext",
         "id": "main_information_text",
         "label": "Add Main Information Text",
+        "default": "<p>just in</p>"
+      },
+      {
+        "type": "text",
+        "id": "sub_small_information_text",
+        "label": "Add sub small Information Text",
         "default": "<p>just in</p>"
       },
       {
