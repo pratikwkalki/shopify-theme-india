@@ -501,7 +501,7 @@
     class="gradient {{ page.title | handleize }}_page_new template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} template--{{ template.suffix }} {% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}
       {% if collection.metafields.custom.hide_announcement_bar == true %} collection_hide_announcement_bar_new {% endif %} {% if collection.metafields.custom.header_transparent == true %} header-init-state-enable collection_header_transparent_new {% endif %} {% if collection.metafields.custom.collection_full_width == true %} collection_full_width_new {% endif %}
       {% if page.metafields.custom.hide_announcement_bar == true %} collection_hide_announcement_bar_new {% endif %} {% if page.metafields.custom.header_transparent == true %} header-init-state-enable collection_header_transparent_new page_white_header_transparent_new {% endif %} {% if template.suffix == 'bridal' %} collection_header_transparent_new {% endif %} {% if template contains 'product' and template.suffix == 'bridal' %} header-init-state-enable {% endif %}
-      {% if template contains 'bridal-collection-new' %} header-init-state-enable {% endif %}{% if customer != null %} customer-loggedin {% endif %}"
+      {% if template contains 'bridal-collection-new' %} header-init-state-enable {% endif %}{%- if customer != null -%} customer-loggedin {%- endif -%}"
     js-product-template
   >
 
