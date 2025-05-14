@@ -147,12 +147,7 @@
     {%- endif -%}
 
     
-   {% for relatedCollection in page.metafields.custom.page_hreflang.value %} 
-     {{ relatedCollection | json  }}
-{% if page.metafields.custom.page_hreflang != blank %}
-  {{ page.metafields.custom.page_hreflang.value | json  }}
-{%- endif -%}
-{% endfor %}
+  
 
 
     
@@ -508,6 +503,12 @@
     "
     js-product-template
   >
+
+{% if page.metafields.custom.page_hreflang != blank %}
+  {{ page.metafields.custom.page_hreflang.value | json  }}
+{%- endif -%}
+
+    
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
