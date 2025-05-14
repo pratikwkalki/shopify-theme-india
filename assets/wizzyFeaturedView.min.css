@@ -7,6 +7,9 @@
 .swiper .swiper-wrapper > .swiper-slide:last-of-type .more-products-container {
   display: none;
 }
+.wizzy__cart__count {
+  display: none;
+}
 .more-products-container {
   display: flex;
   justify-content: end;
