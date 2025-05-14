@@ -148,7 +148,7 @@
 
     
    {% for relatedCollection in page.metafields.custom.page_hreflang.value %} 
-     {{ page.metafields.custom.page_hreflang.value | json  }}
+     {{ relatedCollection | json  }}
 {% if page.metafields.custom.page_hreflang != blank %}
   {{ page.metafields.custom.page_hreflang.value | json  }}
 {%- endif -%}
