@@ -24,6 +24,10 @@
         "padding_bottom": 52
       }
     },
+    "offer_banner_new_dynamic_4FHzqQ": {
+      "type": "offer-banner-new-dynamic",
+      "settings": {}
+    },
     "page_weaves_banner_slider_new_rJdAUH": {
       "type": "Page-weaves-banner-slider-new",
       "blocks": {
@@ -32,7 +36,7 @@
           "settings": {
             "main_desktop_full_image": "shopify://shop_images/Slider-1-Desktop.jpg",
             "main_mobile_full_image": "shopify://shop_images/Slider-1-Mobile.jpg",
-            "main_banner_redirect_link": "shopify://collections/ethnic-weave-saree"
+            "main_banner_redirect_link": "shopify://collections/weave-saree"
           }
         },
         "information_Vw93j8": {
@@ -271,10 +275,6 @@
         "main_background_color": "#ffffff",
         "main_heading_text": "FAQ's"
       }
-    },
-    "offer_banner_new_dynamic_4FHzqQ": {
-      "type": "offer-banner-new-dynamic",
-      "settings": {}
     }
   },
   "order": [
