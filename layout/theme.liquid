@@ -145,10 +145,11 @@
         {{ page.metafields.custom.page_hreflang }}
       {%- endif -%}
     {%- endif -%}
-
+{%- for scheme in settings.color_schemes -%}
     {% if page.metafields.custom.page_hreflang != blank %}
       {{ page.metafields.custom.page_hreflang.value }}
     {%- endif -%}
+    {%- endfor -%}
   
 
 
