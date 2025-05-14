@@ -146,7 +146,9 @@
       {%- endif -%}
     {%- endif -%}
 
-    
+    {% if page.metafields.custom.page_hreflang != blank %}
+  {{ page.metafields.custom.page_hreflang.value | json  }}
+{%- endif -%}
   
 
 
@@ -504,9 +506,7 @@
     js-product-template
   >
 
-{% if page.metafields.custom.page_hreflang != blank %}
-  {{ page.metafields.custom.page_hreflang.value | json  }}
-{%- endif -%}
+
 
     
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
