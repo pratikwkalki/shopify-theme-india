@@ -28,7 +28,7 @@ font-family: var(--font-northwell);  - 'Northwell'
 
 @font-face {
     font-family: 'NewYork PERSONAL USE';
-    src: url("https://cdn.shopify.com/s/files/1/0636/0134/4666/files/NewYork-PERSONAL-USE.otf?v=1747200321") format('woff');
+    src: url("https://cdn.shopify.com/s/files/1/0636/0134/4666/files/NewYork_PERSONAL_USE.woff?v=1747200530") format('woff');
     font-style: normal;
     font-weight: normal;
 }
