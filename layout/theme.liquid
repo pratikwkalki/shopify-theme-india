@@ -146,10 +146,13 @@
       {%- endif -%}
     {%- endif -%}
 
-    {% unless page.metafields.custom.page_hreflang != blank %}
-      {{ page.metafields.custom.page_hreflang }}
+
+    {%- for rows in shop.metaobjects.custom.our_stores.value  -%}
+      {{ shop.metaobjects.custom.our_stores | json }}
+    {% unless rows.metafields.custom.page_hreflang != blank %}
+      {{ rows.metafields.custom.page_hreflang }}
     {%- endunless -%}
-  
+   {%- endfor -%}
   
 
 
