@@ -8,7 +8,7 @@
   display: none;
 }
 .wizzy__cart__count {
-  display: none;
+  display: none !important;
 }
 .more-products-container {
   display: flex;
