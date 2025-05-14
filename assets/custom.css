@@ -748,7 +748,7 @@ summary .icon-caret { position: relative; }
 .Index_arrivals_details_innerright_infos_new{text-align:center;}
 .Index_arrivals_details_innerright_infos_new p{margin:0; font-family: var(--font-NewYork-display); font-size:30px; line-height:160%; font-weight:500; color:#661B14;}
 .Index_arrivals_details_innerright_title_new{padding-top:0px; text-align:center; padding-bottom: 30px;}
-.Index_arrivals_details_innerright_title_new h2{margin:0; font-size:36px; line-height:100%; font-weight:600; color:#661B14; text-transform:capitalize; font-family:var(--font-NewYork-display);}
+.Index_arrivals_details_innerright_title_new h2{margin:0; font-size:46px; line-height:100%; font-weight:600; color:#661B14; text-transform:uppercase; font-family:var(--font-NewYork-display);}
 .Index_arrivals_details_innerright_button_new{padding-top: 0px; text-align: center; padding-bottom: 30px;}
 .Index_arrivals_details_innerright_title_new h2:after {
     content: "TM";
