@@ -11,6 +11,10 @@
   .more-products-indicator {
   display: none;
 }
+.wizzy__featuredview__productOverviewContainer__NDRQM.wizzy__featuredview__opened__PvLGY
+  .shareButton {
+  display: none;
+}
 .shareButton {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
