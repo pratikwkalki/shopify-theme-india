@@ -7,6 +7,9 @@
 .swiper .swiper-wrapper > .swiper-slide:last-of-type .more-products-indicator {
   display: none;
 }
+.wizzy__featuredview__productOverviewContainer__NDRQM .more-products-indicator {
+  display: none;
+}
 .shareButton {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
