@@ -147,12 +147,7 @@
     {%- endif -%}
 
 
-    {%- for rows in shop.metaobjects.custom.our_stores.value  -%}
-      {{ shop.metaobjects.custom.our_stores | json }}
-    {% unless rows.metafields.custom.page_hreflang != blank %}
-      {{ rows.metafields.custom.page_hreflang }}
-    {%- endunless -%}
-   {%- endfor -%}
+    
   
 
 
