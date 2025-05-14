@@ -7,7 +7,8 @@
 .swiper .swiper-wrapper > .swiper-slide:last-of-type .more-products-indicator {
   display: none;
 }
-.wizzy__featuredview__productOverviewContainer__NDRQM .more-products-indicator {
+.wizzy__featuredview__productOverviewContainer__NDRQM.wizzy__featuredview__opened__PvLGY
+  .more-products-indicator {
   display: none;
 }
 .shareButton {
