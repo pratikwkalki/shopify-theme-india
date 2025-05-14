@@ -746,10 +746,10 @@ summary .icon-caret { position: relative; }
 .Index_arrivals_details_innerleft_2_rightside_2_bottompart_2_rightside_videoimage_new img{width:100%; position:absolute; object-fit:cover; top:0; right:0; left:0; bottom:0; height:100% !important;}
 .Index_arrivals_details_mainright_new{width:40%; padding: 0 28px;}
 .Index_arrivals_details_innerright_infos_new{text-align:center;}
-.Index_arrivals_details_innerright_infos_new p{margin:0; font-family: var(--font-noto-serif-display); font-size:30px; line-height:160%; font-weight:500; color:#661B14;}
+.Index_arrivals_details_innerright_infos_new p{margin:0; font-family: var(--font-NewYork-display); font-size:30px; line-height:160%; font-weight:500; color:#661B14;}
 .Index_arrivals_details_innerright_title_new{padding-top:10px; text-align:center; padding-bottom: 30px;}
 .Index_arrivals_details_innerright_title_new h2{margin:0; font-size:36px; line-height:100%; font-weight:600; color:#661B14; text-transform:capitalize; }
-.Index_arrivals_details_innerright_title_new h2{margin:0; font-family:var(--font-noto-serif-display); }
+.Index_arrivals_details_innerright_title_new h2{margin:0; font-family:var(--font-NewYork-display); }
 .Index_arrivals_details_innerright_button_new{padding-top:22px; text-align:center;}
 .Index_arrivals_details_innerright_title_new h2:after {
     content: "TM";
