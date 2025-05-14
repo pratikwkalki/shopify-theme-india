@@ -27,6 +27,12 @@ font-family: var(--font-northwell);  - 'Northwell'
 }
 
 @font-face {
+    font-family: 'NewYork PERSONAL USE';
+    src: url("https://cdn.shopify.com/s/files/1/0636/0134/4666/files/NewYork-PERSONAL-USE.otf?v=1747200321") format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
     font-family: 'Futura Now Headline';
     src: url("https://cdn.shopify.com/s/files/1/0636/0134/4666/files/futuranowheadline-webfont.woff2?v=1717482979") format('woff2');
     font-weight: 400;
