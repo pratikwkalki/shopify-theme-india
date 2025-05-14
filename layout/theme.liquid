@@ -147,7 +147,7 @@
     {%- endif -%}
     
     {%- assign my_metaobject = page.metafields.custom.page_hreflang -%}
-    {{ page.metafields.custom.page_hreflang.value | json }}
+    <!-- {{ page.metafields.custom.page_hreflang.value | json }} -->
 {%- if my_metaobject != blank -%}
   {{ page.metafields.custom.page_hreflang.value  }}
 {%- endif -%}
