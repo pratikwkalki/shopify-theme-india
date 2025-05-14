@@ -145,11 +145,12 @@
         {{ page.metafields.custom.page_hreflang }}
       {%- endif -%}
     {%- endif -%}
-    <!-- {%- assign my_metaobject = page.metafields.custom.page_hreflang -%}
-        {%- if my_metaobject.page_hreflang != blank -%}
-          {{ my_metaobject.page_hreflang.value }}
-        {%- endif -%}
-    {{ page.metafields.custom.page_hreflang | json }} -->
+    
+    {%- assign my_metaobject = page.metafields.custom.page_hreflang -%}
+{%- if my_metaobject != blank -%}
+  {{ my_metaobject.value }}
+{%- endif -%}
+
     {%- if page.handle contains 'bridal-wedding-dresses' -%}
       <link rel="alternate" hreflang="en-us" href="https://www.kalkifashion.com/bridal-wedding-dresses" />
       <link rel="alternate" hreflang="en-gb" href="https://uk.kalkifashion.com/pages/bridal-wedding-dresses" />
