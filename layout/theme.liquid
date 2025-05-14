@@ -145,6 +145,10 @@
         {{ page.metafields.custom.page_hreflang }}
       {%- endif -%}
     {%- endif -%}
+    {%- assign customhreflang = page.metafields.custom.page_hreflang -%}
+      {%- if customhreflang.page_hreflang != blank -%}
+        {{ customhreflang.page_hreflang.value }}
+      {%- endif -%}
     {%- if page.handle contains 'bridal-wedding-dresses' -%}
       <link rel="alternate" hreflang="en-us" href="https://www.kalkifashion.com/bridal-wedding-dresses" />
       <link rel="alternate" hreflang="en-gb" href="https://uk.kalkifashion.com/pages/bridal-wedding-dresses" />
