@@ -7,9 +7,7 @@
 .swiper .swiper-wrapper > .swiper-slide:last-of-type .more-products-container {
   display: none;
 }
-.wizzy__cart__count {
-  display: none;
-}
+
 .more-products-container {
   display: flex;
   justify-content: end;
@@ -33,7 +31,7 @@
   background: #ff6464;
   border-radius: 10px;
   color: #fff;
-  display: inline-block;
+
   font-size: 9px;
   height: 15px;
   padding: unset !important;
