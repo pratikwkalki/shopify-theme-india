@@ -378,7 +378,7 @@ window.onWizzyScriptLoaded = function () {
       if (payload.api === "search" || payload.api === "filter") {
         var facets = payload.response.payload.facets;
         facets.forEach((facet) => {
-          facet.key === "colors" &&
+          facet.key === "product_confi_color_magento" &&
             facet.data.forEach((item) => {
               let color = findHaxCode(item.key);
               // console.log(color);
