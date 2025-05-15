@@ -410,6 +410,7 @@ span.wizzy-autocomplete-label {
   .wizzy-facet-item-swatch.facet-visual-swatch {
   width: 18px;
   height: 18px;
+  background-position: center;
 }
 .wizzy-search-wrapper
   .wizzy-search-filters-left
