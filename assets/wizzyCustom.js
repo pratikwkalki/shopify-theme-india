@@ -154,7 +154,6 @@ window.onWizzyScriptLoaded = function () {
     }
   );
   const colorMap = new Map([
-    ["Rust", ["#b7410e", !1]],
     [
       "Multicolor",
       [
