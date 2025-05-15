@@ -156,7 +156,6 @@
     },
     "app_link_popup_dpWC4J": {
       "type": "app-link-popup",
-      "disabled": true,
       "settings": {
         "title": "Download the App!",
         "description": "For Better Kalki Shopping Experience !",
