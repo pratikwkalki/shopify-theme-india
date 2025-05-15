@@ -248,7 +248,7 @@ window.onWizzyScriptLoaded = function () {
   );
   const colorMap = new Map([
     [
-      "Multicolor",
+      "Multi",
       [
         "https://cdn.shopify.com/s/files/1/0636/0134/4666/files/multicolor_filter_01dd6091-6aa8-4887-97bf-1a50e81100a5.png?v=1747300683",
         !0,
