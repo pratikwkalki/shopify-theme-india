@@ -146,7 +146,9 @@
       {%- endif -%}
     {%- endif -%}
 
-
+{% if request.page_type == 'metaobject' %}
+     {{ metaobject.page_hreflang.value }} 
+  {%- endif -%}
     
   
 
