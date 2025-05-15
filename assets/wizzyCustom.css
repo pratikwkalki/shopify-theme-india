@@ -247,7 +247,9 @@ span.wizzy-autocomplete-label {
 
   box-shadow: unset;
 }
-.wizzy-grid-filters-box .facet-body-colors .wizzy-facet-list-item-checkbox {
+.wizzy-grid-filters-box
+  .facet-body-product_confi_color_magento
+  .wizzy-facet-list-item-checkbox {
   display: none !important;
 }
 .wizzy-grid-filters-box .wizzy-facet-list-item-label {
@@ -376,10 +378,12 @@ span.wizzy-autocomplete-label {
   .wizzy-search-results-list {
   margin-bottom: 20px;
 }
-.wizzy-facet-body.facet-body-colors .facet-item-label-value {
+.wizzy-facet-body.facet-body-product_confi_color_magento
+  .facet-item-label-value {
   display: none;
 }
-.wizzy-facet-body.facet-body-colors .wizzy-facet-list-item-count {
+.wizzy-facet-body.facet-body-product_confi_color_magento
+  .wizzy-facet-list-item-count {
   display: none;
 }
 .wizzy-search-wrapper
@@ -409,7 +413,7 @@ span.wizzy-autocomplete-label {
 }
 .wizzy-search-wrapper
   .wizzy-search-filters-left
-  .wizzy-facet-body.facet-body-colors
+  .wizzy-facet-body.facet-body-product_confi_color_magento
   .wizzy-facet-list {
   display: flex;
   flex-wrap: wrap;
@@ -639,13 +643,13 @@ span.wizzy-autocomplete-label {
     .wizzy-search-filters-left.wizzy-v2
     .wizzy-search-filters-left-wrapper
     .wizzy-facet-list-block
-    .wizzy-facet-body.facet-body-colors
+    .wizzy-facet-body.facet-body-product_confi_color_magento
     .wizzy-facet-list {
     height: unset;
   }
   .wizzy-search-wrapper
     .wizzy-search-filters-left.wizzy-v2
-    .wizzy-facet-body.facet-body-colors
+    .wizzy-facet-body.facet-body-product_confi_color_magento
     .wizzy-facet-list
     .wizzy-facet-list-item.facet-has-swatch
     .wizzy-facet-list-item-label
@@ -655,7 +659,7 @@ span.wizzy-autocomplete-label {
   .wizzy-search-wrapper
     .wizzy-search-results-wrapper
     .wizzy-search-filters-left.wizzy-v2
-    .wizzy-facet-body.facet-body-colors
+    .wizzy-facet-body.facet-body-product_confi_color_magento
     .wizzy-facet-list
     .wizzy-facet-list-item
     .wizzy-facet-list-item-label
@@ -670,7 +674,7 @@ span.wizzy-autocomplete-label {
   }
   .wizzy-search-wrapper
     .wizzy-search-filters-left
-    .wizzy-facet-body.facet-body-colors
+    .wizzy-facet-body.facet-body-product_confi_color_magento
     .wizzy-facet-list
     .wizzy-facet-list-item.facet-has-swatch.active
     .wizzy-facet-list-item-label {
@@ -683,13 +687,13 @@ span.wizzy-autocomplete-label {
   }
   .wizzy-search-wrapper
     .wizzy-search-filters-left.wizzy-v2
-    .wizzy-facet-body.facet-body-colors
+    .wizzy-facet-body.facet-body-product_confi_color_magento
     .wizzy-facet-list
     .wizzy-facet-list-item.facet-has-swatch
     .wizzy-facet-list-item-count,
   .wizzy-search-wrapper
     .wizzy-search-filters-left.wizzy-v2
-    .wizzy-facet-body.facet-body-colors
+    .wizzy-facet-body.facet-body-product_confi_color_magento
     .wizzy-facet-list
     .wizzy-facet-list-item.facet-has-swatch
     .wizzy-facet-list-item-label
@@ -702,7 +706,7 @@ span.wizzy-autocomplete-label {
     .wizzy-search-filters-left.wizzy-v2
     .wizzy-search-filters-left-wrapper
     .wizzy-facet-list-block
-    .wizzy-facet-body.facet-body-colors
+    .wizzy-facet-body.facet-body-product_confi_color_magento
     .wizzy-facet-list
     .wizzy-facet-list-item
     .facet-item-label-value {
@@ -714,7 +718,7 @@ span.wizzy-autocomplete-label {
     .wizzy-search-filters-left.wizzy-v2
     .wizzy-search-filters-left-wrapper
     .wizzy-facet-list-block
-    .wizzy-facet-body.facet-body-colors
+    .wizzy-facet-body.facet-body-product_confi_color_magento
     .wizzy-facet-list
     .wizzy-facet-list-item.facet-has-swatch {
     display: flex;
@@ -1726,7 +1730,10 @@ span.wizzy-facet-list-item-checkbox {
     left: 250px !important;
   }
 }
-.wizzy-grid-filters-box .facet-body-colors .wizzy-facet-list li {
+.wizzy-grid-filters-box
+  .facet-body-product_confi_color_magento
+  .wizzy-facet-list
+  li {
   background-color: #eeeeee;
 }
 .wizzy-grid-filters-box .wizzy-facet-list-item-label {
@@ -1739,15 +1746,15 @@ span.wizzy-facet-list-item-checkbox {
   border-radius: 15px !important;
 }
 .wizzy-grid-filters-box
-  .wizzy-facet-body.facet-body-colors
+  .wizzy-facet-body.facet-body-product_confi_color_magento
   .facet-item-label-value,
 .wizzy-grid-filters-box
-  .wizzy-facet-body.facet-body-colors
+  .wizzy-facet-body.facet-body-product_confi_color_magento
   .wizzy-facet-list-item-count {
   display: block;
 }
 .wizzy-grid-filters-box
-  .wizzy-facet-body.facet-body-colors
+  .wizzy-facet-body.facet-body-product_confi_color_magento
   .wizzy-facet-list-item-label {
   display: flex;
   background: #fff;
@@ -1756,7 +1763,10 @@ span.wizzy-facet-list-item-checkbox {
 
   gap: 5px;
 }
-.wizzy-grid-filters-box .facet-body-colors .wizzy-facet-list li {
+.wizzy-grid-filters-box
+  .facet-body-product_confi_color_magento
+  .wizzy-facet-list
+  li {
   background: #fff;
 
   padding-right: 10px;
