@@ -125,10 +125,10 @@
     <link rel="alternate" hreflang="en-in" href="{{ request.origin }}{{ request.path }}">
 
     {%- if template == 'index' -%}
+      "<link rel="alternate" hreflang="en-gb" href="https://uk.kalkifashion.com/" />
       <link rel="alternate" hreflang="en-us" href="https://www.kalkifashion.com/" />
-      <link rel="alternate" hreflang="en-gb" href="https://uk.kalkifashion.com/" />
-      <link rel="alternate" hreflang="en" href="https://www.kalkifashion.com/global/" />
-      <link rel="alternate" hreflang="x-default" href="https://www.kalkifashion.com/global/" />
+      <link rel="alternate" hreflang="en-in" href="https://in.kalkifashion.com/" />
+      <link rel="alternate" hreflang="x-default" href="https://www.kalkifashion.com/global/" />"
     {%- endif -%}
     {%- if template.name == 'collection' -%}
       {%- if collection.metafields.custom.collection_hreflang != blank -%}
