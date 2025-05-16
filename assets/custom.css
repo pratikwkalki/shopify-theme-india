@@ -529,7 +529,7 @@ summary .icon-caret { position: relative; }
 .Index_top_banner_slider_allloop_innerboxs_videoimage_new{}
 .Index_top_banner_slider_allloop_innerboxs_videoimage_new img{width:100%;z-index:1;position:relative;display:block; /*position:absolute; object-fit:cover; top:0; left:0; bottom:0; right:0; height:100% !important;*/ }
 .Index_top_banner_slider_allloop_innerboxs_videoimage_new video{width:100%; /*position:absolute; object-fit:cover; top:0; left:0; bottom:0; right:0; height:100% !important;*/ }
-.swiper-button-prev{ background:rgba(255,255,255,0.95) url('left_arrow_slider.svg') no-repeat center center; width: 52px; height: 50px; left:0;top: 50%;transform: translateY(-50%);margin-top: 0; }
+.swiper-button-prev{ cursor:pointer; background:rgba(255,255,255,0.95) url('left_arrow_slider.svg') no-repeat center center; width: 52px; height: 50px; left:0;top: 50%;transform: translateY(-50%);margin-top: 0; }
 .swiper-button-prev:after{ display:none; }
 .swiper-button-next{ cursor:pointer; background:rgba(255,255,255,0.95) url('right_arrow_slider.svg') no-repeat center center; width: 52px; height: 50px; right:0;top: 50%;transform: translateY(-50%);margin-top: 0; }
 .swiper-button-next:after{ display:none; }
