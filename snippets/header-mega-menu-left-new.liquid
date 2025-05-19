@@ -16,25 +16,25 @@
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in left_menu.links -%}
       <li class="custom_mega_menu_top_left_new custom_mega_menu_top_new
-        {% if forloop.first and template_name == "index" %} select_first_element {% endif %} 
-        {% if forloop.first and template_name == "list-collections" %} select_first_element {% endif %} 
-        {% if forloop.first and template_name == "page" %}{% unless page.metafields.custom.header_transparent == true %} select_first_element {% endunless %}{% endif %} 
-        {% if forloop.first and template_name contains "customers" %} select_first_element {% endif %} 
-        {% if forloop.first and template_name contains "metaobject" %} select_first_element {% endif %} 
-        {% if forloop.first and request.path contains "/collections/all" %} select_first_element {% endif %}
-        {% if forloop.first and request.path contains "/collections/kids" %} select_first_elementkids {% endif %}
-        {% if link.title == collection.metafields.custom.collection_menu and template_name == "collection" %} select_first_element {% endif %}
-        {% if forloop.first and template_name == "collection" %}{% if collection.metafields.custom.collection_menu == blank %} select_first_element {% endif %}{% endif %} 
-        {% if link.title == product.metafields.custom.navigation_menu_for_product and template_name == "product" %} select_first_element {% endif %}
-        {% if forloop.first and template_name == "product" %}{% if product.metafields.custom.navigation_menu_for_product == blank %} select_first_element {% endif %}{% endif %}">
-        {% if collection.metafields.custom.collection_menu != blank %}
-          {% assign bridal_menu = collection.metafields.custom.collection_menu | handleize %}
-        {% elsif product.metafields.custom.navigation_menu_for_product != blank %}
-          {% assign bridal_menu = product.metafields.custom.navigation_menu_for_product | handleize %}
-        {% elsif page.metafields.custom.display_bridal_megamenu == true %}
-          {% assign bridal_menu = "bridal" %}
-        {% endif %}
-        {% if link.links != blank %}
+        {%- if forloop.first and template_name == "index" -%} select_first_element {%- endif -%} 
+        {%- if forloop.first and template_name == "list-collections" -%} select_first_element {%- endif -%} 
+        {%- if forloop.first and template_name == "page" -%}{%- unless page.metafields.custom.header_transparent == true -%} select_first_element {%- endunless -%}{%- endif -%} 
+        {%- if forloop.first and template_name contains "customers" -%} select_first_element {%- endif -%} 
+        {%- if forloop.first and template_name contains "metaobject" -%} select_first_element {%- endif -%} 
+        {%- if forloop.first and request.path contains "/collections/all" -%} select_first_element {%- endif -%}
+        {%- if forloop.first and request.path contains "/collections/kids" -%} select_first_elementkids {%- endif -%}
+        {%- if link.title == collection.metafields.custom.collection_menu and template_name == "collection" -%} select_first_element {%- endif -%}
+        {%- if forloop.first and template_name == "collection" -%}{%- if collection.metafields.custom.collection_menu == blank -%} select_first_element {%- endif -%}{%- endif -%} 
+        {%- if link.title == product.metafields.custom.navigation_menu_for_product and template_name == "product" -%} select_first_element {%- endif -%}
+        {%- if forloop.first and template_name == "product" -%}{%- if product.metafields.custom.navigation_menu_for_product == blank -%} select_first_element {%- endif -%}{%- endif -%}">
+        {%- if collection.metafields.custom.collection_menu != blank -%}
+          {%- assign bridal_menu = collection.metafields.custom.collection_menu | handleize -%}
+        {%- elsif product.metafields.custom.navigation_menu_for_product != blank -%}
+          {%- assign bridal_menu = product.metafields.custom.navigation_menu_for_product | handleize -%}
+        {%- elsif page.metafields.custom.display_bridal_megamenu == true -%}
+          {%- assign bridal_menu = "bridal" -%}
+        {%- endif -%}
+        {%- if link.links != blank -%}
           <header-menu class="{% if bridal_menu == "bridal" %} display_bridal_menu_new {% endif %}">
             <div class="mega-menu">
               <a
@@ -139,7 +139,7 @@
               {%- endif -%}
             </div>
           </header-menu>
-        {% else %}
+        {%- else -%}
           <a
             id="HeaderMenu-{{ link.handle }}"
             href="{{ link.url }}"
@@ -150,7 +150,7 @@
               {{- link.title | escape -}}
             </span>
           </a>
-        {% endif %}
+        {%- endif -%}
       </li>
     {%- endfor -%}
     <li class="custom_mega_menu_top_left_new custom_mega_menu_top_new">
