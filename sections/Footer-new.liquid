@@ -80,15 +80,18 @@
                                           {%- if block.settings.main_app_icon_url_1 != blank -%}
                                             <a href="{{ block.settings.main_app_icon_url_1 }}" target="_blank">
                                           {%- endif -%}
-                                              {{
-                                                block.settings.main_app_icon_image_1 | 
-                                                image_url: width: img.width | 
-                                                image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                                fetchpriority: 'auto', 
-                                                class:'Icon_app_image_new',
-                                                alt: 'Google Play',
-                                                loading: 'lazy'
-                                              }}
+                                              <img src="{{ block.settings.main_app_icon_image_1 | image_url: width: 180 }}" 
+                                                srcset=" {{ block.settings.main_app_icon_image_1 | image_url: width: 90 }} 90w, {{ block.settings.main_app_icon_image_1 | image_url: width: 120 }} 120w,
+                                                  {{ block.settings.main_app_icon_image_1 | image_url: width: 180 }} 180w,
+                                                  {{ block.settings.main_app_icon_image_1 | image_url: width: 240 }} 240w,
+                                                  {{ block.settings.main_app_icon_image_1 | image_url: width: 360 }} 360w"
+                                                sizes="(max-width: 600px) 120px, 180px"
+                                                alt="Google Play"
+                                                loading="lazy"
+                                                class="Icon_app_image_new"
+                                                width="138"
+                                                height="43"
+                                              />
                                           {%- if block.settings.main_app_icon_url_1 != blank -%}
                                             </a>
                                           {%- endif -%}
@@ -99,15 +102,21 @@
                                           {%- if block.settings.main_app_icon_url_2 != blank -%}
                                             <a href="{{ block.settings.main_app_icon_url_2 }}" target="_blank">
                                           {%- endif -%}
-                                              {{
-                                                block.settings.main_app_icon_image_2 | 
-                                                image_url: width: img.width | 
-                                                image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                                fetchpriority: 'auto', 
-                                                class:'Icon_app_image_new',
-                                                alt: 'App Store',
-                                                loading: 'lazy'
-                                              }}
+                                              <img
+                                        src="{{ block.settings.main_app_icon_image_2 | image_url: width: 180 }}" 
+                                        srcset="
+                                          {{ block.settings.main_app_icon_image_2 | image_url: width: 90 }} 90w,
+                                          {{ block.settings.main_app_icon_image_2 | image_url: width: 120 }} 120w,
+                                          {{ block.settings.main_app_icon_image_2 | image_url: width: 180 }} 180w,
+                                          {{ block.settings.main_app_icon_image_2 | image_url: width: 240 }} 240w,
+                                          {{ block.settings.main_app_icon_image_2 | image_url: width: 360 }} 360w"
+                                        sizes="(max-width: 600px) 120px, 180px"
+                                        alt="Google Play"
+                                        loading="lazy"
+                                        class="Icon_app_image_new"
+                                        width="138"
+                                                height="43"
+                                               />
                                           {%- if block.settings.main_app_icon_url_2 != blank -%}
                                             </a>
                                           {%- endif -%}
