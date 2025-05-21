@@ -345,7 +345,7 @@
       },
       "7612553728132747764": {
         "type": "shopify://apps/stamped-reviews/blocks/net-promoter-score-form-modal/a103faaf-2125-4b0e-89fa-de5149736723",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "email": "",
           "name": "",
