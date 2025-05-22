@@ -6850,8 +6850,6 @@ body.template-product:has(.is-only-wishlist) .sticky-addtocart-button {
 .shopby-btn-next, .shopby-btn-prev {
     background-color: transparent !important;
     height: 47px;
-    top: 2px;
-    bottom: 0;
     margin: auto;
 }
 #fc_frame.fc-widget-normal {
