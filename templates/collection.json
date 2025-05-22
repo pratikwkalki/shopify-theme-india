@@ -188,6 +188,25 @@
       "settings": {
         "main_heading_text": "Explore More"
       }
+    },
+    "1747892034e76c0d5c": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_25213c8_UncixM": {
+          "type": "ai_gen_block_25213c8",
+          "settings": {
+            "scroll_target": "product_grid",
+            "scroll_behavior": "smooth",
+            "scroll_offset": 80,
+            "scroll_delay": 300
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_25213c8_UncixM"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -204,6 +223,7 @@
     "collection_object_lists_new_A3dwXa",
     "collection_blogs_list_4FBdha",
     "collection_object_banners_new_ighfKw",
-    "plp_footer_explore_more_7r66nN"
+    "plp_footer_explore_more_7r66nN",
+    "1747892034e76c0d5c"
   ]
 }
