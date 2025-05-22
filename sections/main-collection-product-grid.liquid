@@ -56,6 +56,7 @@
                 
               </div>
             <div class="collection_left_new">
+        <div class="scrolling-element-inside"  >
           <aside
             aria-labelledby="verticalTitle"
             class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %} Collection_product_grid_leftside_new"
@@ -70,6 +71,7 @@
               paginate: paginate
             %}
           </aside>
+          
 
           {%- if section.settings.main_mp4_video_1 != blank or section.settings.main_desktop_image_1 != blank or section.settings.main_mobile_image_1 != blank or section.settings.main_heading_text_1 != blank or section.settings.main_information_text_1 != blank or section.settings.main_icon_image_1 != blank or section.settings.main_button_link_1 != blank -%}
             <div class="Collection_product_grid_leftside_1_new">
@@ -200,6 +202,7 @@
               </div>
             </div>
           {%- endif -%}
+        </div>
         </div>
         </div>
       {%- endif -%}
