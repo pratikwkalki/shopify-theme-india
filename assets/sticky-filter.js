@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var he1 = he?.offsetHeight || 0;
     var hf1 = he?.offsetHeight || 0;
 
-    var allheight = hdrHeight + ha1 + hb1 + hc1 + hd1 + he1 + hf1 - 100;
+    var allheight = hdrHeight + ha1 + hb1 + hc1 + hd1 + he1 + hf1 - 200;
 
     window.addEventListener("scroll", function () {
       var scrollY = window.scrollY;
