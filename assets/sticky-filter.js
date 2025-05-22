@@ -58,8 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const element = document.getElementById('sideNav');
       if (!element) return;
 
-      const calculatedHeight = window.innerHeight - 200;
-      console.log(calculatedHeight);
+      const calculatedHeight = window.innerHeight - 200;      
 
       element.style.height = `${calculatedHeight}px`;
     }
