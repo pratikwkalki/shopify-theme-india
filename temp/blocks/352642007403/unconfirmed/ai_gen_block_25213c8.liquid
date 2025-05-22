@@ -1,6 +1,195 @@
+{% doc %}
+  @prompt
+    Create code that automatically scrolls to the top of the product listing page whenever a filter is applied, so users can immediately see the filtered results
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .auto-scroll-filter-{{ ai_gen_id }} {
+    display: none;
+  }
+{% endstyle %}
+
+<div class="auto-scroll-filter-{{ ai_gen_id }}" {{ block.shopify_attributes }}></div>
+
+<script>
+  (function() {
+    class AutoScrollFilter extends HTMLElement {
+      constructor() {
+        super();
+        this.scrollTarget = "{{ block.settings.scroll_target }}";
+        this.scrollBehavior = "{{ block.settings.scroll_behavior }}";
+        this.scrollOffset = {{ block.settings.scroll_offset }};
+        this.scrollDelay = {{ block.settings.scroll_delay }};
+      }
+
+      connectedCallback() {
+        // Only run on collection pages
+        if (!document.querySelector('.collection') && !document.querySelector('.search')) {
+          return;
+        }
+
+        this.setupFilterObserver();
+        this.setupURLChangeListener();
+      }
+
+      setupFilterObserver() {
+        // Watch for filter form submissions
+        const filterForms = document.querySelectorAll('form[action*="filter"], form[action*="sort_by"]');
+        
+        filterForms.forEach(form => {
+          form.addEventListener('submit', () => {
+            this.scrollAfterDelay();
+          });
+        });
+
+        // Watch for filter changes via inputs (for instant filtering)
+        const filterInputs = document.querySelectorAll(
+          'input[name^="filter."], select[name^="filter."], ' +
+          'input[name="sort_by"], select[name="sort_by"]'
+        );
+        
+        filterInputs.forEach(input => {
+          input.addEventListener('change', () => {
+            this.scrollAfterDelay();
+          });
+        });
+      }
+
+      setupURLChangeListener() {
+        // Listen for URL changes (for AJAX filtering)
+        let lastUrl = location.href;
+        
+        new MutationObserver(() => {
+          const url = location.href;
+          if (url !== lastUrl) {
+            lastUrl = url;
+            if (url.includes('filter.') || url.includes('sort_by=')) {
+              this.scrollAfterDelay();
+            }
+          }
+        }).observe(document, {subtree: true, childList: true});
+      }
+
+      scrollAfterDelay() {
+        setTimeout(() => {
+          this.scrollToTarget();
+        }, this.scrollDelay);
+      }
+
+      scrollToTarget() {
+        let targetElement;
+        
+        if (this.scrollTarget === 'collection_header') {
+          targetElement = document.querySelector('.collection-hero, .collection-header, .page-width h1');
+        } else if (this.scrollTarget === 'product_grid') {
+          targetElement = document.querySelector('.product-grid, .collection-products, .collection .grid');
+        } else if (this.scrollTarget === 'filter_toolbar') {
+          targetElement = document.querySelector('.facets-container, .collection-filters, .facet-filters');
+        } else {
+          // Default to page top
+          window.scrollTo({
+            top: 0,
+            behavior: this.scrollBehavior
+          });
+          return;
+        }
+
+        if (targetElement) {
+          const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({
+            top: elementPosition - this.scrollOffset,
+            behavior: this.scrollBehavior
+          });
+        } else {
+          // Fallback to page top if target not found
+          window.scrollTo({
+            top: 0,
+            behavior: this.scrollBehavior
+          });
+        }
+      }
+    }
+
+    customElements.define('auto-scroll-filter-{{ ai_gen_id }}', AutoScrollFilter);
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Auto Scroll Filters",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Scroll Settings"
+    },
+    {
+      "type": "select",
+      "id": "scroll_target",
+      "label": "Scroll to",
+      "options": [
+        {
+          "value": "page_top",
+          "label": "Page top"
+        },
+        {
+          "value": "collection_header",
+          "label": "Collection header"
+        },
+        {
+          "value": "product_grid",
+          "label": "Product grid"
+        },
+        {
+          "value": "filter_toolbar",
+          "label": "Filter toolbar"
+        }
+      ],
+      "default": "product_grid"
+    },
+    {
+      "type": "select",
+      "id": "scroll_behavior",
+      "label": "Scroll behavior",
+      "options": [
+        {
+          "value": "smooth",
+          "label": "Smooth"
+        },
+        {
+          "value": "auto",
+          "label": "Instant"
+        }
+      ],
+      "default": "smooth"
+    },
+    {
+      "type": "range",
+      "id": "scroll_offset",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Scroll offset",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "scroll_delay",
+      "min": 0,
+      "max": 1000,
+      "step": 50,
+      "unit": "ms",
+      "label": "Scroll delay",
+      "default": 300
+    }
+  ],
+  "presets": [
+    {
+      "name": "Auto Scroll Filters"
+    }
+  ]
+}
 {% endschema %}
