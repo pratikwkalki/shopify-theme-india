@@ -196,9 +196,9 @@
           "type": "ai_gen_block_25213c8",
           "settings": {
             "scroll_target": "product_grid",
-            "scroll_behavior": "smooth",
+            "scroll_behavior": "auto",
             "scroll_offset": 80,
-            "scroll_delay": 300
+            "scroll_delay": 0
           },
           "blocks": {}
         }
