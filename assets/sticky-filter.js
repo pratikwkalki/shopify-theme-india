@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var hd = document.getElementById("shopify-section-template--24341383086443__collection_meta_banner_new_tai6tf");
     var he = document.getElementById("shopify-section-template--24341383086443__collection_meta_columns_new_YyGhUJ");
     var hf = document.getElementById("shopify-section-sections--24341382201707__app_link_popup_dpWC4J");
-    var hg = document.getElementById(shopify-section-sections--24341382201707__header_announcement_bar_new_UBfXFY);
+    var hg = document.getElementById("shopify-section-sections--24341382201707__header_announcement_bar_new_UBfXFY");
 
     
 
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var hf1 = he?.offsetHeight || 0;
     var hg1 = he?.offsetHeight || 0;
 
-    var allheight = hdrHeight + ha1 + hb1 + hc1 + hd1 + he1 + hf1 + hg1 - 430;
+    var allheight = hdrHeight + ha1 + hb1 + hc1 + hd1 + he1 + hf1 + hg1 - 100;
     console.log(allheight);
 
     window.addEventListener("scroll", function () {
