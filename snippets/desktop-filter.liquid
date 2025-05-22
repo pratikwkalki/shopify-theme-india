@@ -20,17 +20,7 @@
           {% comment %} Pills are right below the title for filter type vertical {% endcomment %}
           {%- if filter_type == 'vertical' -%}
             <div class="active-facets active-facets-desktop">
-              <div class="active-facets-vertical-filter">
-                {%- unless results.filters == empty -%}
-                  <h3
-                    class="facets__heading facets__heading--vertical caption-large text-body"
-                    id="verticalTitle"
-                    tabindex="-1"
-                  >
-                    {{ 'products.facets.filter_by_label' | t }}
-                  </h3>
-                {%- endunless -%}
-              </div>
+              
               <div class="facet-items_wrap">
                 <span class="filter-current-subtitle">Now Shopping by</span>
                 {%- for filter in results.filters -%}

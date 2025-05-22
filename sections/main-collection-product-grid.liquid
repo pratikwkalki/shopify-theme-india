@@ -1,6 +1,7 @@
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'sticky-filter.js' | asset_url }}" defer="defer"></script>
 
 {% if section.settings.image_shape == 'blob' %}
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
@@ -43,7 +44,18 @@
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
-        <div class="collection_left_new">
+        <div id="sideNav">
+              <div class="active-facets-vertical-filter" id="custom-active-facets">                
+                  <h3
+                    class="facets__heading facets__heading--vertical caption-large text-body"
+                    id="verticalTitle"
+                    tabindex="-1"
+                  >
+                    {{ 'products.facets.filter_by_label' | t }}
+                  </h3>
+                
+              </div>
+            <div class="collection_left_new">
           <aside
             aria-labelledby="verticalTitle"
             class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %} Collection_product_grid_leftside_new"
@@ -188,6 +200,7 @@
               </div>
             </div>
           {%- endif -%}
+        </div>
         </div>
       {%- endif -%}
       
