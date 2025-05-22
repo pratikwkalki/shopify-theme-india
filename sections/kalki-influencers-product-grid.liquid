@@ -43,151 +43,164 @@
       {{ 'component-facets.css' | asset_url | stylesheet_tag }}
       <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
-        <div class="collection_left_new">
-          <aside
-            aria-labelledby="verticalTitle"
-            class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %} Collection_product_grid_leftside_new"
-            id="main-collection-filters"
-            data-id="{{ section.id }}"
-          >
-            {% render 'facets',
-              results: collection,
-              enable_filtering: section.settings.enable_filtering,
-              enable_sorting: section.settings.enable_sorting,
-              filter_type: section.settings.filter_type,
-              paginate: paginate
-            %}
-          </aside>
-
-          {%- if section.settings.main_mp4_video_1 != blank or section.settings.main_desktop_image_1 != blank or section.settings.main_mobile_image_1 != blank or section.settings.main_heading_text_1 != blank or section.settings.main_information_text_1 != blank or section.settings.main_icon_image_1 != blank or section.settings.main_button_link_1 != blank -%}
-            <div class="Collection_product_grid_leftside_1_new">
-              <div class="Collection_product_grid_leftside_1_bottom_new">
-                {%- if section.settings.main_mp4_video_1 != blank or section.settings.main_desktop_image_1 != blank or section.settings.main_mobile_image_1 != blank -%}
-                  <div class="Collection_product_grid_leftside_1_bottom_1_new">
-                    <div class="Collection_product_grid_leftside_1_bottom_1_videoimageboth_new">
-                      {%- if section.settings.main_mp4_video_1 != blank -%}
-                        <div class="Collection_product_grid_leftside_1_bottom_1_videoimage_new">
-                          {{ section.settings.main_mp4_video_1 | video_tag: controls: false, autoplay: true, loop: true }}
-                        </div>
-                      {% else %}  
-                        {%- if section.settings.main_desktop_image_1 != blank and section.settings.main_mobile_image_1 != blank -%}
-                          <div class="Collection_product_grid_leftside_1_bottom_1_videoimage_new">
-                            {%- if section.settings.main_desktop_image_1 != blank -%}
-                              {{
-                                section.settings.main_desktop_image_1 | 
-                                image_url: width: img.width | 
-                                image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                fetchpriority: 'auto', 
-                                class:'desktop_image_new'
-                              }}
-                            {%- endif -%}
-                            {%- if section.settings.main_mobile_image_1 != blank -%}
-                              {{
-                                section.settings.main_mobile_image_1 | 
-                                image_url: width: img.width | 
-                                image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                fetchpriority: 'auto', 
-                                class:'mobile_image_new'
-                              }}
-                            {%- endif -%}
+        <div id="sideNav">
+              <div class="active-facets-vertical-filter" id="custom-active-facets">                
+                  <h3
+                    class="facets__heading facets__heading--vertical caption-large text-body"
+                    id="verticalTitle"
+                    tabindex="-1"
+                  >
+                    {{ 'products.facets.filter_by_label' | t }}
+                  </h3>                
+              </div>
+            <div class="collection_left_new">
+                <div class="scrolling-element-inside"  >
+                  <aside
+                    aria-labelledby="verticalTitle"
+                    class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %} Collection_product_grid_leftside_new"
+                    id="main-collection-filters"
+                    data-id="{{ section.id }}"
+                  >
+                    {% render 'facets',
+                      results: collection,
+                      enable_filtering: section.settings.enable_filtering,
+                      enable_sorting: section.settings.enable_sorting,
+                      filter_type: section.settings.filter_type,
+                      paginate: paginate
+                    %}
+                  </aside>
+        
+                  {%- if section.settings.main_mp4_video_1 != blank or section.settings.main_desktop_image_1 != blank or section.settings.main_mobile_image_1 != blank or section.settings.main_heading_text_1 != blank or section.settings.main_information_text_1 != blank or section.settings.main_icon_image_1 != blank or section.settings.main_button_link_1 != blank -%}
+                    <div class="Collection_product_grid_leftside_1_new">
+                      <div class="Collection_product_grid_leftside_1_bottom_new">
+                        {%- if section.settings.main_mp4_video_1 != blank or section.settings.main_desktop_image_1 != blank or section.settings.main_mobile_image_1 != blank -%}
+                          <div class="Collection_product_grid_leftside_1_bottom_1_new">
+                            <div class="Collection_product_grid_leftside_1_bottom_1_videoimageboth_new">
+                              {%- if section.settings.main_mp4_video_1 != blank -%}
+                                <div class="Collection_product_grid_leftside_1_bottom_1_videoimage_new">
+                                  {{ section.settings.main_mp4_video_1 | video_tag: controls: false, autoplay: true, loop: true }}
+                                </div>
+                              {% else %}  
+                                {%- if section.settings.main_desktop_image_1 != blank and section.settings.main_mobile_image_1 != blank -%}
+                                  <div class="Collection_product_grid_leftside_1_bottom_1_videoimage_new">
+                                    {%- if section.settings.main_desktop_image_1 != blank -%}
+                                      {{
+                                        section.settings.main_desktop_image_1 | 
+                                        image_url: width: img.width | 
+                                        image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                        fetchpriority: 'auto', 
+                                        class:'desktop_image_new'
+                                      }}
+                                    {%- endif -%}
+                                    {%- if section.settings.main_mobile_image_1 != blank -%}
+                                      {{
+                                        section.settings.main_mobile_image_1 | 
+                                        image_url: width: img.width | 
+                                        image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                        fetchpriority: 'auto', 
+                                        class:'mobile_image_new'
+                                      }}
+                                    {%- endif -%}
+                                  </div>
+                                {%- endif -%}
+                              {%- endif -%}
+                            </div>
                           </div>
                         {%- endif -%}
-                      {%- endif -%}
+                        {%- if section.settings.main_heading_text_1 != blank or section.settings.main_information_text_1 != blank or section.settings.main_icon_image_1 != blank or section.settings.main_button_link_1 != blank -%}
+                          <div class="Collection_product_grid_leftside_1_bottom_2_new" style="{% if section.settings.main_background_image_1 != blank %}background: url({{ section.settings.main_background_image_1 | img_url: 'master' }}) no-repeat center center; background-size: cover;{% else %}background: {{ section.settings.main_background_color_1 }};{% endif %}">
+                            <div class="Collection_product_grid_leftside_1_bottom_2_titlebuttonboth_new">
+                              {%- if section.settings.main_heading_text_1 != blank -%}
+                                <div class="Collection_product_grid_leftside_1_bottom_2_title_new">
+                                  <h2>{{ section.settings.main_heading_text_1 }}</h2>
+                                </div>  
+                              {%- endif -%}
+                              {%- if section.settings.main_information_text_1 != blank -%}
+                                <div class="Collection_product_grid_leftside_1_bottom_2_infos_new">
+                                  {{ section.settings.main_information_text_1 }}
+                                </div>
+                              {%- endif -%}
+                              {%- if section.settings.main_icon_image_1 != blank -%}
+                                <div class="Collection_product_grid_leftside_1_bottom_2_icons_new">
+                                  {{
+                                    section.settings.main_icon_image_1 | 
+                                    image_url: width: img.width | 
+                                    image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                                    fetchpriority: 'auto', 
+                                    class:'Icon_image_new'
+                                  }}
+                                </div>
+                              {%- endif -%}
+                              {%- if section.settings.main_button_text_1 != blank and section.settings.main_button_link_1 != blank -%}
+                                <div class="Collection_product_grid_leftside_1_bottom_2_button_new">
+                                  <a href="{{ section.settings.main_button_link_1 }}" class="button button_white black_bg_button">
+                                    {{ section.settings.main_button_text_1 }}
+                                  </a>
+                                </div>  
+                              {%- endif -%}
+                            </div>
+                          </div>  
+                        {%- endif -%}
+                      </div>
                     </div>
-                  </div>
-                {%- endif -%}
-                {%- if section.settings.main_heading_text_1 != blank or section.settings.main_information_text_1 != blank or section.settings.main_icon_image_1 != blank or section.settings.main_button_link_1 != blank -%}
-                  <div class="Collection_product_grid_leftside_1_bottom_2_new" style="{% if section.settings.main_background_image_1 != blank %}background: url({{ section.settings.main_background_image_1 | img_url: 'master' }}) no-repeat center center; background-size: cover;{% else %}background: {{ section.settings.main_background_color_1 }};{% endif %}">
-                    <div class="Collection_product_grid_leftside_1_bottom_2_titlebuttonboth_new">
-                      {%- if section.settings.main_heading_text_1 != blank -%}
-                        <div class="Collection_product_grid_leftside_1_bottom_2_title_new">
-                          <h2>{{ section.settings.main_heading_text_1 }}</h2>
-                        </div>  
-                      {%- endif -%}
-                      {%- if section.settings.main_information_text_1 != blank -%}
-                        <div class="Collection_product_grid_leftside_1_bottom_2_infos_new">
-                          {{ section.settings.main_information_text_1 }}
-                        </div>
-                      {%- endif -%}
-                      {%- if section.settings.main_icon_image_1 != blank -%}
-                        <div class="Collection_product_grid_leftside_1_bottom_2_icons_new">
-                          {{
-                            section.settings.main_icon_image_1 | 
-                            image_url: width: img.width | 
-                            image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                            fetchpriority: 'auto', 
-                            class:'Icon_image_new'
-                          }}
-                        </div>
-                      {%- endif -%}
-                      {%- if section.settings.main_button_text_1 != blank and section.settings.main_button_link_1 != blank -%}
-                        <div class="Collection_product_grid_leftside_1_bottom_2_button_new">
-                          <a href="{{ section.settings.main_button_link_1 }}" class="button button_white black_bg_button">
-                            {{ section.settings.main_button_text_1 }}
-                          </a>
-                        </div>  
-                      {%- endif -%}
+                  {%- endif -%}
+        
+                  {%- if section.settings.main_icon_image_2 != blank or section.settings.main_heading_text_2 != blank -%}
+                    <div class="Collection_product_grid_leftside_2_new">
+                      <div class="Collection_product_grid_leftside_2_bottom_new">
+                        {%- if section.settings.main_icon_image_2 != blank -%}
+                          <div class="Collection_product_grid_leftside_2_bottom_icons_new">
+                            {{
+                              section.settings.main_icon_image_2 | 
+                              image_url: width: img.width | 
+                              image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                              fetchpriority: 'auto', 
+                              class:'Icon_full_image_new'
+                            }}
+                          </div>
+                        {%- endif -%}
+                        {%- if section.settings.main_heading_text_2 != blank -%}
+                          <div class="Collection_product_grid_leftside_2_bottom_title_new">
+                            <p>{{ section.settings.main_heading_text_2 }}</p>
+                          </div>
+                        {%- endif -%}
+                        {%- if section.settings.btn_text_2 != blank -%}
+                          <div class="Collection_product_grid_leftside_2_bottom_btn">
+                            <a href="{{ section.settings.add_shipping_url }}">{{ section.settings.btn_text_2 }}</a>
+                          </div>
+                        {%- endif -%}
+                      </div>
                     </div>
-                  </div>  
-                {%- endif -%}
-              </div>
+                  {%- endif -%}
+                  {%- if section.settings.main_icon_image_3 != blank or section.settings.main_heading_text_3 != blank -%}
+                    <div class="Collection_product_grid_leftside_2_new">
+                      <div class="Collection_product_grid_leftside_2_bottom_new">
+                        {%- if section.settings.main_icon_image_3 != blank -%}
+                          <div class="Collection_product_grid_leftside_2_bottom_icons_new">
+                            {{
+                              section.settings.main_icon_image_3 | 
+                              image_url: width: img.width | 
+                              image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
+                              fetchpriority: 'auto', 
+                              class:'Icon_full_image_new'
+                            }}
+                          </div>
+                        {%- endif -%}
+                        {%- if section.settings.main_heading_text_3 != blank -%}
+                          <div class="Collection_product_grid_leftside_2_bottom_title_new">
+                            <p>{{ section.settings.main_heading_text_3 }}</p>
+                          </div>
+                        {%- endif -%}
+                        {%- if section.settings.add_return_url != blank -%}
+                          <div class="Collection_product_grid_leftside_2_bottom_btn">
+                            <a href="{{ section.settings.add_return_url }}">{{ section.settings.btn_text_3 }}</a>
+                          </div>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                </div>
             </div>
-          {%- endif -%}
-
-          {%- if section.settings.main_icon_image_2 != blank or section.settings.main_heading_text_2 != blank -%}
-            <div class="Collection_product_grid_leftside_2_new">
-              <div class="Collection_product_grid_leftside_2_bottom_new">
-                {%- if section.settings.main_icon_image_2 != blank -%}
-                  <div class="Collection_product_grid_leftside_2_bottom_icons_new">
-                    {{
-                      section.settings.main_icon_image_2 | 
-                      image_url: width: img.width | 
-                      image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                      fetchpriority: 'auto', 
-                      class:'Icon_full_image_new'
-                    }}
-                  </div>
-                {%- endif -%}
-                {%- if section.settings.main_heading_text_2 != blank -%}
-                  <div class="Collection_product_grid_leftside_2_bottom_title_new">
-                    <p>{{ section.settings.main_heading_text_2 }}</p>
-                  </div>
-                {%- endif -%}
-                {%- if section.settings.btn_text_2 != blank -%}
-                  <div class="Collection_product_grid_leftside_2_bottom_btn">
-                    <a href="{{ section.settings.add_shipping_url }}">{{ section.settings.btn_text_2 }}</a>
-                  </div>
-                {%- endif -%}
-              </div>
-            </div>
-          {%- endif -%}
-          {%- if section.settings.main_icon_image_3 != blank or section.settings.main_heading_text_3 != blank -%}
-            <div class="Collection_product_grid_leftside_2_new">
-              <div class="Collection_product_grid_leftside_2_bottom_new">
-                {%- if section.settings.main_icon_image_3 != blank -%}
-                  <div class="Collection_product_grid_leftside_2_bottom_icons_new">
-                    {{
-                      section.settings.main_icon_image_3 | 
-                      image_url: width: img.width | 
-                      image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                      fetchpriority: 'auto', 
-                      class:'Icon_full_image_new'
-                    }}
-                  </div>
-                {%- endif -%}
-                {%- if section.settings.main_heading_text_3 != blank -%}
-                  <div class="Collection_product_grid_leftside_2_bottom_title_new">
-                    <p>{{ section.settings.main_heading_text_3 }}</p>
-                  </div>
-                {%- endif -%}
-                {%- if section.settings.add_return_url != blank -%}
-                  <div class="Collection_product_grid_leftside_2_bottom_btn">
-                    <a href="{{ section.settings.add_return_url }}">{{ section.settings.btn_text_3 }}</a>
-                  </div>
-                {%- endif -%}
-              </div>
-            </div>
-          {%- endif -%}
         </div>
       {%- endif -%}
       
