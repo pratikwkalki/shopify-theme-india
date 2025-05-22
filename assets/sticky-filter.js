@@ -3,15 +3,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var navBar = document.getElementById("sideNav");
     var navBarText = document.getElementById("custom-active-facets");
-    var navBarFooter = document.getElementById("shopify-section-sections--24428475973995__footer");
+    var navBarFooter = document.getElementById("shopify-section-sections--24341382168939__footer");
 
     var ProductContentBlock = document.getElementById("ProductGridContainer");
-    var header = document.getElementById("shopify-section-sections--24428476006763__header");
-    var ha = document.getElementById("shopify-section-template--24428473352555__main");
-    var hb = document.getElementById("shopify-section-template--24428473352555__offer_banner_new_dynamic_DpBCKJ");
-    var hc = document.getElementById("shopify-section-template--24428473352555__html_category_highlighted_banners_7YdPPY");
-    var hd = document.getElementById("shopify-section-template--24428473352555__collection_meta_banner_new_tai6tf");
-    var he = document.getElementById("shopify-section-template--24428473352555__collection_meta_columns_new_YyGhUJ");
+    var header = document.getElementById("shopify-section-sections--24341382201707__header");
+    var ha = document.getElementById("shopify-section-sections--24341382201707__app_link_popup_dpWC4J");
+    var hb = document.getElementById("shopify-section-template--24341383086443__main");
+    var hc = document.getElementById("shopify-section-template--24341383086443__offer_banner_new_dynamic_DpBCKJ");
+    var hd = document.getElementById("shopify-section-template--24341383086443__html_category_highlighted_banners_7YdPPY");
+    var he = document.getElementById("shopify-section-template--24341383086443__collection_meta_banner_new_tai6tf");
+    var hf = document.getElementById("shopify-section-template--24341383086443__collection_meta_columns_new_YyGhUJ");
 
     var hdrHeight = header?.offsetHeight || 0;
     var ha1 = ha?.offsetHeight || 0;
@@ -19,8 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var hc1 = hc?.offsetHeight || 0;
     var hd1 = hd?.offsetHeight || 0;
     var he1 = he?.offsetHeight || 0;
+    var hf1 = he?.offsetHeight || 0;
 
-    var allheight = hdrHeight + ha1 + hb1 + hc1 + hd1 + he1 - 100;
+    var allheight = hdrHeight + ha1 + hb1 + hc1 + hd1 + he1 + hf1 - 100;
 
     window.addEventListener("scroll", function () {
       var scrollY = window.scrollY;
