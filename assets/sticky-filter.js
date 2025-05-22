@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   if (!window.matchMedia("(min-width: 1025px)").matches) return;
 
-  // Helper: pick the first existing element from an array of IDs
+  // Helper: return first existing element by ID
   function getFirstAvailableElement(ids) {
     for (const id of ids) {
       const el = document.getElementById(id);
@@ -12,13 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const navBar         = document.getElementById("sideNav");
   const navBarText     = document.getElementById("custom-active-facets");
-  const navBarFooter   = document.getElementById("shopify-section-sections--24428475973995__footer");
+  const navBarFooter   = document.getElementById("shopify-section-sections--24423642333547__footer");
   const ProductContent = document.getElementById("ProductGridContainer");
-  const header         = document.getElementById("shopify-section-sections--24428476006763__header");
-  const hf = document.getElementById("shopify-section-sections--24341382201707__app_link_popup_dpWC4J");
-  const hg = document.getElementById("shopify-section-sections--24341382201707__header_announcement_bar_new_UBfXFY");
+  const header         = document.getElementById("shopify-section-sections--24341382201707__header");
+  const hf             = getFirstAvailableElement([
+    "shopify-section-sections--24341382201707__app_link_popup_dpWC4J"
+  ]);
+  const hg             = getFirstAvailableElement([
+    "shopify-section-sections--24341382201707__header_announcement_bar_new_UBfXFY"
+  ]);
 
-  // Use getFirstAvailableElement to replace all your `||` chains
   const ha = getFirstAvailableElement([
     "shopify-section-template--24341383086443__main",
     "shopify-section-template--24423642333547__main"
@@ -40,18 +43,17 @@ document.addEventListener("DOMContentLoaded", function () {
     "shopify-section-template--24423642333547__collection_meta_columns_new_YyGhUJ"
   ]);
 
-  
-
-  // Compute cumulative height
+  // Compute total offset height
   const hdrH = header?.offsetHeight || 0;
   const haH  = ha?.offsetHeight     || 0;
   const hbH  = hb?.offsetHeight     || 0;
   const hcH  = hc?.offsetHeight     || 0;
   const hdH  = hd?.offsetHeight     || 0;
   const heH  = he?.offsetHeight     || 0;
-  const hf1 = he?.offsetHeight || 0;
-  const hg1 = he?.offsetHeight || 0;
-  const allHeight = hdrH + haH + hbH + hcH + hdH + heH + he1 + hf1 + hg1 - 880;
+  const hfH  = hf?.offsetHeight     || 0;
+  const hgH  = hg?.offsetHeight     || 0;
+  // adjust the final subtraction as needed (you had -880)
+  const allHeight = hdrH + haH + hbH + hcH + hdH + heH + hfH + hgH - 880;
 
   // Scroll handler
   window.addEventListener("scroll", function () {
@@ -76,14 +78,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Reset sideNav scroll on full page load
   window.addEventListener("load", function () {
-    navBar && (navBar.scrollTop = 0);
+    if (navBar) navBar.scrollTop = 0;
   });
 
   // Set sideNav height and update on resize
   function setNavHeight() {
     if (!navBar) return;
-    const h = window.innerHeight - 200;
-    navBar.style.height = `${h}px`;
+    navBar.style.height = `${window.innerHeight - 200}px`;
   }
   setNavHeight();
   window.addEventListener("resize", setNavHeight);
