@@ -97,6 +97,50 @@ img{ height: auto !important; }
 }*/
 /* skeleton page css close*/
 
+
+/* sticky left filter menu PLP */
+@media (max-width: 1023px) {
+  #custom-active-facets{display: none}
+}
+@media (min-width: 1024px) {
+
+
+.collection_left_new{
+    overflow: auto;
+  direction: rtl;
+      padding-right: 40px !important;
+      padding-left: 20px;
+}
+.scrolling-element-inside{
+  direction: ltr;
+}
+
+.navScrolled {
+  position: fixed;
+      top:0px;
+    margin-top: 180px;
+  display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+.filtertitle{
+     padding-left: 28px !important;
+}
+.blokmargin{
+  margin-left: 260px;
+}
+#custom-active-facets{
+      justify-content: space-between;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.collection_left_new::-webkit-scrollbar-thumb {
+    background: #a6a4a4;
+}
+  
+}
+/* sticky left filter menu PLP close */
+
 .order-1{order:1}
 .order-2{order:2}
 .order-3{order:3}
