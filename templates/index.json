@@ -406,67 +406,67 @@
         "information_hxURPn": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-curated-collections-chikankari-400x533-19-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-curated-collections-chikankari-400x533-19-04-25.jpg",
-            "title": "Chikankari Charm",
+            "main_desktop_image": "shopify://shop_images/1-curated-collections-boho-400x533-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-curated-collections-boho-400x533-20-05-25.jpg",
+            "title": "Boho Vibes",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/chikankari-collection"
+            "main_button_link": "shopify://collections/boho-style"
           }
         },
         "information_NQxDrp": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-curated-collections-boho-400x533-19-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-curated-collections-boho-400x533-19-04-25.jpg",
-            "title": "Boho Beaut",
-            "sub_head_text": "",
+            "main_desktop_image": "shopify://shop_images/4-curated-collections-printed-collection-400x533-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/4-curated-collections-printed-collection-400x533-20-05-25.jpg",
+            "title": "Print Paradise",
+            "sub_head_text": "The Muse Collection",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/boho-style"
+            "main_button_link": "shopify://collections/printed-collection"
           }
         },
         "information_MBGFwT": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/3-curated-collections-pastels-400x533-19-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/3-curated-collections-pastels-400x533-19-04-25.jpg",
-            "title": "Pastel Pret",
-            "sub_head_text": "",
+            "main_desktop_image": "shopify://shop_images/5-curated-collections-trending-color-400x533-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/5-curated-collections-trending-color-400x533-20-05-25.jpg",
+            "title": "In Full Hue",
+            "sub_head_text": "May’s Colour Theory",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/pastels"
+            "main_button_link": "shopify://collections/green-collection"
           }
         },
         "information_Ud6yrw": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/4-curated-collections-ombre-400x533-19-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/4-curated-collections-ombre-400x533-19-04-25.jpg",
-            "title": "On-Trend Ombre",
+            "main_desktop_image": "shopify://shop_images/6-curated-collections-pastels-400x533-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/6-curated-collections-pastels-400x533-20-05-25.jpg",
+            "title": "Spring Pastel Edit",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/ombre-collection"
+            "main_button_link": "shopify://collections/pastels"
           }
         },
         "information_Bxxdri": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/5-curated-collections-printed-collection-400x533-19-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/5-curated-collections-printed-collection-400x533-19-04-25.jpg",
-            "title": "Printed Paradise",
-            "sub_head_text": "",
+            "main_desktop_image": "shopify://shop_images/2-curated-collections-chikankari-400x533-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2-curated-collections-chikankari-400x533-20-05-25.jpg",
+            "title": "Chikankari Edit",
+            "sub_head_text": "Sarah Sarosh-Inspired",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/printed-collection"
+            "main_button_link": "shopify://collections/chikankari-collection"
           }
         },
         "information_8nwx8x": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/6-curated-collections-essential-suits-400x533-19-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/6-curated-collections-essential-suits-400x533-19-04-25.jpg",
-            "title": "All About Essentials",
+            "main_desktop_image": "shopify://shop_images/3-curated-collections-minimal-styles-400x533-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-curated-collections-minimal-styles-400x533-20-05-25.jpg",
+            "title": "Less is Luxe",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/essential-suits"
+            "main_button_link": "shopify://collections/minimal-styles"
           }
         }
       },
