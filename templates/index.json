@@ -566,10 +566,10 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/01-exclusive-edit-co-ords-400x533-19-04-25.jpg",
             "main_mobile_image": "shopify://shop_images/01-exclusive-edit-co-ords-400x533-19-04-25.jpg",
-            "title": "The Co-Ords",
-            "sub_head_text": "You'll Definitely Need",
+            "title": "Must-have",
+            "sub_head_text": "New aged blouses",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/co-ord-sets"
+            "main_button_link": "shopify://collections/blouse"
           }
         },
         "information_fc8yQa": {
@@ -577,10 +577,10 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/02-exclusive-edit-organza-saree-400x533-19-04-25-new.jpg",
             "main_mobile_image": "shopify://shop_images/02-exclusive-edit-organza-saree-400x533-19-04-25-new.jpg",
-            "title": "Organza Sarees",
+            "title": "The Perfect Pair",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/organza-saree"
+            "main_button_link": "shopify://collections/co-ord-sets"
           }
         },
         "information_XEBcff": {
@@ -588,10 +588,10 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/03-exclusive-edit-blouses-400x533-19-04-25.jpg",
             "main_mobile_image": "shopify://shop_images/03-exclusive-edit-blouses-400x533-19-04-25.jpg",
-            "title": "Blouses Bedazzle",
+            "title": "Jewellery Edit",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/blouse"
+            "main_button_link": "shopify://collections/jewellery"
           }
         },
         "information_wtnLpP": {
@@ -599,21 +599,10 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/04-exclusive-edit-jewellery-400x533-19-04-25.jpg",
             "main_mobile_image": "shopify://shop_images/04-exclusive-edit-jewellery-400x533-19-04-25.jpg",
-            "title": "Jewellery Edit",
-            "sub_head_text": "",
+            "title": "Kids Edition",
+            "sub_head_text": "Mini Meet Cutes",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/jewellery"
-          }
-        },
-        "information_YtTy3i": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/05-exclusive-edit-embriodered-saree-400x533-19-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/05-exclusive-edit-embriodered-saree-400x533-19-04-25.jpg",
-            "title": "Embroidered Sarees",
-            "sub_head_text": "",
-            "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/embroidered-saree"
+            "main_button_link": "shopify://collections/kids"
           }
         }
       },
@@ -621,8 +610,7 @@
         "information_Gq9Tez",
         "information_fc8yQa",
         "information_XEBcff",
-        "information_wtnLpP",
-        "information_YtTy3i"
+        "information_wtnLpP"
       ],
       "custom_css": [],
       "settings": {
