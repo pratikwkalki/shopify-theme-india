@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (grid) {
       const rect = grid.getBoundingClientRect();
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      const offsetPosition = rect.top + scrollTop - 100; // 100px offset from top
+      const offsetPosition = rect.top + scrollTop - 200; // 100px offset from top
 
       window.scrollTo({
         top: offsetPosition,
