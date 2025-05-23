@@ -1,97 +1,95 @@
-document.addEventListener("DOMContentLoaded",function(){if(!window.matchMedia("(min-width: 1025px)").matches)return;function e(e){for(const t of e){const n=document.getElementById(t);if(n)return n}return null}const t=document.getElementById("sideNav"),n=document.getElementById("custom-active-facets"),o=document.getElementById("shopify-section-sections--24341382168939__footer"),r=document.getElementById("ProductGridContainer"),d=document.getElementById("shopify-section-sections--24341382201707__header"),a=document.getElementById("shopify-section-sections--24341382201707__app_link_popup_dpWC4J"),i=document.getElementById("shopify-section-sections--24341382201707__header_announcement_bar_new_UBfXFY"),l=e(["shopify-section-template--24423642333547__main","shopify-section-template--24341383086443__main"]),c=e(["shopify-section-template--24423642333547__offer_banner_new_dynamic_DpBCKJ","shopify-section-template--24341383086443__offer_banner_new_dynamic_DpBCKJ"]),s=e(["shopify-section-template--24423642333547__html_category_highlighted_banners_7YdPPY","shopify-section-template--24341383086443__html_category_highlighted_banners_7YdPPY"]),m=e(["shopify-section-template--24423642333547__collection_meta_banner_new_tai6tf","shopify-section-template--24341383086443__collection_meta_banner_new_tai6tf"]),u=e(["shopify-section-template--24423642333547__collection_meta_columns_new_YyGhUJ","shopify-section-template--24341383086443__collection_meta_columns_new_YyGhUJ"]);function h(){return(d?d.offsetHeight:0)+(l?l.offsetHeight:0)+(c?c.offsetHeight:0)+(s?s.offsetHeight:0)+(m?m.offsetHeight:0)+(u?u.offsetHeight:0)+(a?a.offsetHeight:0)+(i?i.offsetHeight:0)-100}let f=!1;function p(){const e=window.scrollY,t=e+window.innerHeight,n=o?o.offsetTop:1/0,r=h();if(t>=n){t&&t.classList.remove("navScrolled"),n&&n.classList.remove("filtertitle"),r&&r.classList.remove("blokmargin")}else if(e>r){t&&t.classList.add("navScrolled"),n&&n.classList.add("filtertitle"),r&&r.classList.add("blokmargin")}else{t&&t.classList.remove("navScrolled"),n&&n.classList.remove("filtertitle"),r&&r.classList.remove("blokmargin")}f=!1}window.addEventListener("scroll",function(){f||(window.requestAnimationFrame(p),f=!0)}),window.addEventListener("load",function(){t&&(t.scrollTop=0)});function g(){t&&(t.style.height=window.innerHeight-200+"px")}g(),window.addEventListener("resize",g)});
 
+document.addEventListener("DOMContentLoaded", function () {
+  if (!window.matchMedia("(min-width: 1025px)").matches) return;
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   if (!window.matchMedia("(min-width: 1025px)").matches) return;
+  function getFirstAvailable(ids) {
+    for (const id of ids) {
+      const el = document.getElementById(id);
+      if (el) return el;
+    }
+    return null;
+  }
 
-//   function getFirstAvailable(ids) {
-//     for (const id of ids) {
-//       const el = document.getElementById(id);
-//       if (el) return el;
-//     }
-//     return null;
-//   }
+  const navBar = document.getElementById("sideNav"),
+        navBarText = document.getElementById("custom-active-facets"),
+        footer = document.getElementById("shopify-section-sections--24341382168939__footer"),
+        productGrid = document.getElementById("ProductGridContainer"),
+        header = document.getElementById("shopify-section-sections--24341382201707__header"),
+        popup = document.getElementById("shopify-section-sections--24341382201707__app_link_popup_dpWC4J"),
+        announcement = document.getElementById("shopify-section-sections--24341382201707__header_announcement_bar_new_UBfXFY"),
+        ha = getFirstAvailable([
+          "shopify-section-template--24423642333547__main",
+          "shopify-section-template--24341383086443__main"
+        ]),
+        hb = getFirstAvailable([
+          "shopify-section-template--24423642333547__offer_banner_new_dynamic_DpBCKJ",
+          "shopify-section-template--24341383086443__offer_banner_new_dynamic_DpBCKJ"
+        ]),
+        hc = getFirstAvailable([
+          "shopify-section-template--24423642333547__html_category_highlighted_banners_7YdPPY",
+          "shopify-section-template--24341383086443__html_category_highlighted_banners_7YdPPY"
+        ]),
+        hd = getFirstAvailable([
+          "shopify-section-template--24423642333547__collection_meta_banner_new_tai6tf",
+          "shopify-section-template--24341383086443__collection_meta_banner_new_tai6tf"
+        ]),
+        he = getFirstAvailable([
+          "shopify-section-template--24423642333547__collection_meta_columns_new_YyGhUJ",
+          "shopify-section-template--24341383086443__collection_meta_columns_new_YyGhUJ"
+        ]);
 
-//   const navBar = document.getElementById("sideNav"),
-//         navBarText = document.getElementById("custom-active-facets"),
-//         footer = document.getElementById("shopify-section-sections--24341382168939__footer"),
-//         productGrid = document.getElementById("ProductGridContainer"),
-//         header = document.getElementById("shopify-section-sections--24341382201707__header"),
-//         popup = document.getElementById("shopify-section-sections--24341382201707__app_link_popup_dpWC4J"),
-//         announcement = document.getElementById("shopify-section-sections--24341382201707__header_announcement_bar_new_UBfXFY"),
-//         ha = getFirstAvailable([
-//           "shopify-section-template--24423642333547__main",
-//           "shopify-section-template--24341383086443__main"
-//         ]),
-//         hb = getFirstAvailable([
-//           "shopify-section-template--24423642333547__offer_banner_new_dynamic_DpBCKJ",
-//           "shopify-section-template--24341383086443__offer_banner_new_dynamic_DpBCKJ"
-//         ]),
-//         hc = getFirstAvailable([
-//           "shopify-section-template--24423642333547__html_category_highlighted_banners_7YdPPY",
-//           "shopify-section-template--24341383086443__html_category_highlighted_banners_7YdPPY"
-//         ]),
-//         hd = getFirstAvailable([
-//           "shopify-section-template--24423642333547__collection_meta_banner_new_tai6tf",
-//           "shopify-section-template--24341383086443__collection_meta_banner_new_tai6tf"
-//         ]),
-//         he = getFirstAvailable([
-//           "shopify-section-template--24423642333547__collection_meta_columns_new_YyGhUJ",
-//           "shopify-section-template--24341383086443__collection_meta_columns_new_YyGhUJ"
-//         ]);
+  function getTotalHeight() {
+    return (header ? header.offsetHeight : 0) +
+           (ha ? ha.offsetHeight : 0) +
+           (hb ? hb.offsetHeight : 0) +
+           (hc ? hc.offsetHeight : 0) +
+           (hd ? hd.offsetHeight : 0) +
+           (he ? he.offsetHeight : 0) +
+           (popup ? popup.offsetHeight : 0) +
+           (announcement ? announcement.offsetHeight : 0) - 100;
+  }
 
-//   function getTotalHeight() {
-//     return (header ? header.offsetHeight : 0) +
-//            (ha ? ha.offsetHeight : 0) +
-//            (hb ? hb.offsetHeight : 0) +
-//            (hc ? hc.offsetHeight : 0) +
-//            (hd ? hd.offsetHeight : 0) +
-//            (he ? he.offsetHeight : 0) +
-//            (popup ? popup.offsetHeight : 0) +
-//            (announcement ? announcement.offsetHeight : 0) - 100;
-//   }
+  let ticking = false;
+  function handleScroll() {
+    const scrollY = window.scrollY;
+    const scrollBottom = scrollY + window.innerHeight;
+    const footerTop = footer ? footer.offsetTop : Infinity;
+    const totalHeight = getTotalHeight();
 
-//   let ticking = false;
-//   function handleScroll() {
-//     const scrollY = window.scrollY;
-//     const scrollBottom = scrollY + window.innerHeight;
-//     const footerTop = footer ? footer.offsetTop : Infinity;
-//     const totalHeight = getTotalHeight();
+    if (scrollBottom >= footerTop) {
+      navBar?.classList.remove("navScrolled");
+      navBarText?.classList.remove("filtertitle");
+      productGrid?.classList.remove("blokmargin");
+    } else if (scrollY > totalHeight) {
+      navBar?.classList.add("navScrolled");
+      navBarText?.classList.add("filtertitle");
+      productGrid?.classList.add("blokmargin");
+    } else {
+      navBar?.classList.remove("navScrolled");
+      navBarText?.classList.remove("filtertitle");
+      productGrid?.classList.remove("blokmargin");
+    }
+    ticking = false;
+  }
 
-//     if (scrollBottom >= footerTop) {
-//       navBar?.classList.remove("navScrolled");
-//       navBarText?.classList.remove("filtertitle");
-//       productGrid?.classList.remove("blokmargin");
-//     } else if (scrollY > totalHeight) {
-//       navBar?.classList.add("navScrolled");
-//       navBarText?.classList.add("filtertitle");
-//       productGrid?.classList.add("blokmargin");
-//     } else {
-//       navBar?.classList.remove("navScrolled");
-//       navBarText?.classList.remove("filtertitle");
-//       productGrid?.classList.remove("blokmargin");
-//     }
-//     ticking = false;
-//   }
+  window.addEventListener("scroll", function () {
+    if (!ticking) {
+      window.requestAnimationFrame(handleScroll);
+      ticking = true;
+    }
+  });
 
-//   window.addEventListener("scroll", function () {
-//     if (!ticking) {
-//       window.requestAnimationFrame(handleScroll);
-//       ticking = true;
-//     }
-//   });
+  window.addEventListener("load", function () {
+    if (navBar) navBar.scrollTop = 0;
+  });
 
-//   window.addEventListener("load", function () {
-//     if (navBar) navBar.scrollTop = 0;
-//   });
+  function adjustHeight() {
+    if (navBar) navBar.style.height = (window.innerHeight - 200) + "px";
+  }
 
-//   function adjustHeight() {
-//     if (navBar) navBar.style.height = (window.innerHeight - 200) + "px";
-//   }
-
-//   adjustHeight();
-//   window.addEventListener("resize", adjustHeight);
-// });
+  adjustHeight();
+  window.addEventListener("resize", adjustHeight);
+});
 
 
 
