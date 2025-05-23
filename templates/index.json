@@ -635,23 +635,23 @@
         "information_rVmqny": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-bridal-world-day-haldi-mehendi-19-04-19.jpg",
-            "main_mobile_image": "shopify://shop_images/1-bridal-world-day-haldi-mehendi-19-04-19.jpg",
+            "main_desktop_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
             "title": "Haldi | Mehendi",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/bridal-haldi-and-mehendi-collection"
+            "main_button_link": "shopify://collections/bridal-haldi-and-mehendi-collection"
           }
         },
         "information_dBLnzc": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-bridal-world-cocoktail-sangeet-19-04-19.jpg",
-            "main_mobile_image": "shopify://shop_images/2-bridal-world-cocoktail-sangeet-19-04-19.jpg",
+            "main_desktop_image": "shopify://shop_images/3-bridal-world-reception-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-bridal-world-reception-20-05-25.jpg",
             "title": "Cocktail | Sangeet",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/cocktail-and-sangeet-edit"
+            "main_button_link": "shopify://collections/bridal-sangeet-collection"
           }
         },
         "information_E83nqK": {
@@ -659,10 +659,10 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/3-bridal-world-reception-19-04-19.jpg",
             "main_mobile_image": "shopify://shop_images/3-bridal-world-reception-19-04-19.jpg",
-            "title": "Reception Regalia",
+            "title": "Reception",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/reception-collection"
+            "main_button_link": "shopify://collections/reception"
           }
         },
         "information_mKbaME": {
@@ -670,10 +670,10 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/4-bridal-world-trousseau-19-04-19.jpg",
             "main_mobile_image": "shopify://shop_images/4-bridal-world-trousseau-19-04-19.jpg",
-            "title": "Trousseau Trends",
+            "title": "Bridal Trousseau Edit",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/trousseau-collection"
+            "main_button_link": "shopify://collections/trousseau-collection"
           }
         }
       },
