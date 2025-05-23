@@ -1,18 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const filterForm         = document.querySelector('#FacetFiltersForm');
+  const filterForm = document.querySelector("#FacetFiltersForm");
   const productGridSelector = ".Collection_product_grid_inner_new";
 
-  function scrollToProductGrid() {
+  function scrollToProductGridWhenReady() {
     const grid = document.querySelector(productGridSelector);
     if (!grid) return;
 
-    // 1) Align at top…
-    grid.scrollIntoView({ behavior: "smooth", block: "start" });
+    // Wait for grid to be visibly rendered
+    let attempts = 0;
+    const maxAttempts = 10;
+    const checkRendered = setInterval(() => {
+      const rect = grid.getBoundingClientRect();
+      if (grid.offsetHeight > 0 && rect.top !== 0 || attempts >= maxAttempts) {
+        clearInterval(checkRendered);
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const offsetTop = rect.top + scrollTop - 200;
 
-    // 2) …then pull up 200px after a short delay
-    setTimeout(() => {
-      window.scrollBy({ top: -200, behavior: "smooth" });
-    }, 50);
+        window.scrollTo({ top: offsetTop, behavior: "smooth" });
+      }
+      attempts++;
+    }, 100);
   }
 
   function observeGridUpdateAndScroll() {
@@ -21,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const observer = new MutationObserver((mutations, obs) => {
       if (gridWrapper.innerHTML.trim().length > 0) {
-        scrollToProductGrid();
+        scrollToProductGridWhenReady();
         obs.disconnect();
       }
     });
