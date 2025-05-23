@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
            (hd ? hd.offsetHeight : 0) +
            (he ? he.offsetHeight : 0) +
            (popup ? popup.offsetHeight : 0) +
-           (announcement ? announcement.offsetHeight : 0) - 80;
+           (announcement ? announcement.offsetHeight : 0) - 120;
   }
 
   let ticking = false;
