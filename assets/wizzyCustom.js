@@ -499,10 +499,18 @@ window.onWizzyScriptLoaded = function () {
         if (p) {
           let price = p.textContent.replace(/\.0/g, "");
           let [minPrice, maxPrice] = price.split("-");
-          minPrice = parseInt(minPrice).toLocaleString("en-IN");
-          maxPrice = parseInt(maxPrice).toLocaleString("en-IN");
-
-          p.textContent = `₹${minPrice} - ₹${maxPrice}`;
+           minPrice = minPrice.trim();
+            maxPrice = maxPrice.trim();
+        
+            if (!minPrice.startsWith("₹")) {
+              minPrice = `₹${minPrice}`;
+            }
+        
+            if (!maxPrice.startsWith("₹")) {
+              maxPrice = `₹${maxPrice}`;
+            }
+        
+            p.textContent = `${minPrice} - ${maxPrice}`;
         }
       });
 
@@ -695,10 +703,18 @@ window.onWizzyScriptLoaded = function () {
         if (p) {
           let price = p.textContent.replace(/\.0/g, "");
           let [minPrice, maxPrice] = price.split("-");
-          minPrice = parseInt(minPrice).toLocaleString("en-IN");
-          maxPrice = parseInt(maxPrice).toLocaleString("en-IN");
-
-          p.textContent = `₹${minPrice} - ₹${maxPrice}`;
+           minPrice = minPrice.trim();
+            maxPrice = maxPrice.trim();
+        
+            if (!minPrice.startsWith("₹")) {
+              minPrice = `₹${minPrice}`;
+            }
+        
+            if (!maxPrice.startsWith("₹")) {
+              maxPrice = `₹${maxPrice}`;
+            }
+        
+            p.textContent = `${minPrice} - ${maxPrice}`;
         }
       });
 
