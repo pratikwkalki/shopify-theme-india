@@ -343,7 +343,7 @@ window.onWizzyScriptLoaded = function () {
       );
       selectedPrice.forEach((p) => {
         if (p) {
-          let price = p.textContent.replace(/\.0/g, ""); // remove .0
+          let price = p.textContent.replace(/\.0/g, ""); 
           let [minPrice, maxPrice] = price.split("-");
           minPrice = parseInt(minPrice).toLocaleString("en-IN");
           maxPrice = parseInt(maxPrice).toLocaleString("en-IN");
@@ -443,13 +443,13 @@ window.onWizzyScriptLoaded = function () {
       );
       ranges.forEach((range) => {
         if (range.textContent.trim() === "(0)") {
-          range.parentElement.remove(); // remove the parent element from the DOM
+          range.parentElement.remove(); 
         }
       });
 
       const selectedList = document.querySelector(".wizzy-selected-facet-list");
-      const targetDiv1 = document.querySelector(".wizzy-facet-list-block"); // Replace if needed
-      const targetDiv2 = document.querySelectorAll(".wizzy-facet-body"); // Replace if needed
+      const targetDiv1 = document.querySelector(".wizzy-facet-list-block"); 
+      const targetDiv2 = document.querySelectorAll(".wizzy-facet-body"); 
       let title = document.querySelector(".applied-filters-header");
       if (selectedList && selectedList.querySelectorAll("li").length > 0) {
         console.log("Inside divs");
@@ -486,6 +486,11 @@ window.onWizzyScriptLoaded = function () {
             facetList.scrollBy({ left: 200, behavior: "smooth" });
           });
         });
+
+      const priceElements = document.querySelectorAll('.price-item--regular');
+      priceElements.forEach((el) => {
+        el.textContent = el.textContent.replace(/\.00\b/, '');
+      });
 
       return data;
     }
