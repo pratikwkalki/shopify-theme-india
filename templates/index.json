@@ -538,62 +538,6 @@
         "playlist_id": "2b399b8dceb8ee31841d"
       }
     },
-    "index_custom_price_budget_new_DNJynV": {
-      "type": "Index-custom-price-budget-new",
-      "blocks": {
-        "information_i49cqW": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/1-blouses-400x533-27-3-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-blouses-400x533-27-3-25.jpg",
-            "main_sub_heading_text": "<p>Blouses Bedazzle</p>",
-            "title": "<p>Under <br/>₹20,000</p>",
-            "main_redirect_link": "/"
-          }
-        },
-        "information_ewXNRq": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/Frame_1074-min.jpg",
-            "main_mobile_image": "shopify://shop_images/Frame_1074-min.jpg",
-            "main_sub_heading_text": "<p>Anarkali  Suit</p>",
-            "title": "<p>Under <br/>₹20,000</p>",
-            "main_redirect_link": "/"
-          }
-        },
-        "information_bgfTBq": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/Frame_1075-min.jpg",
-            "main_mobile_image": "shopify://shop_images/Frame_1075-min.jpg",
-            "main_sub_heading_text": "<p>Anarkali  Suit</p>",
-            "title": "<p>Under <br/>₹20,000</p>",
-            "main_redirect_link": "/"
-          }
-        },
-        "information_BLkyAX": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/Frame_1076-min.jpg",
-            "main_mobile_image": "shopify://shop_images/Frame_1076-min.jpg",
-            "main_sub_heading_text": "<p>Anarkali  Suit</p>",
-            "title": "<p>Under <br/>₹20,000</p>",
-            "main_redirect_link": "/"
-          }
-        }
-      },
-      "block_order": [
-        "information_i49cqW",
-        "information_ewXNRq",
-        "information_bgfTBq",
-        "information_BLkyAX"
-      ],
-      "disabled": true,
-      "settings": {
-        "main_background_color": "#ffffff",
-        "main_heading_text": "Shop by Budget"
-      }
-    },
     "index_arrivals_details_new_pkzRNd": {
       "type": "Index-arrivals-details-new",
       "settings": {
@@ -757,69 +701,6 @@
         "main_heading_text": ""
       }
     },
-    "index_custom_collections_new_mmGfwW": {
-      "type": "Index-custom-collections-new",
-      "blocks": {
-        "information_Ny9QBy": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/cocktail-collection-banner-400x533-30-3-24-uk.jpg",
-            "main_mobile_image": "shopify://shop_images/cocktail-collection-banner-400x533-30-3-24-uk.jpg",
-            "title": "<p>Cocktail Chic</p>",
-            "sub_head_text": "<p>Sub Heading</p>",
-            "main_tags_detail_text": "",
-            "main_button_text": "Shop Now",
-            "main_button_link": "https://uk.kalkifashion.com/collections/ethnic-bridal-cocktail-collection"
-          }
-        },
-        "information_eyiqgQ": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/sangeet-collection-banner-400x533-30-3-24-uk.jpg",
-            "main_mobile_image": "shopify://shop_images/sangeet-collection-banner-400x533-30-3-24-uk.jpg",
-            "title": "<p>Sangeet Soirée</p>",
-            "sub_head_text": "<p>Sub Heading</p>",
-            "main_tags_detail_text": "",
-            "main_button_text": "Shop Now",
-            "main_button_link": "https://uk.kalkifashion.com/collections/ethnic-bridal-sangeet-collection"
-          }
-        },
-        "information_GqAyyg": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/wedding-collection-banner-400x533-30-3-24-uk.jpg",
-            "main_mobile_image": "shopify://shop_images/wedding-collection-banner-400x533-30-3-24-uk.jpg",
-            "title": "Wedding Wonders",
-            "sub_head_text": "Sub Heading",
-            "main_tags_detail_text": "",
-            "main_button_text": "Shop Now",
-            "main_button_link": "https://uk.kalkifashion.com/collections/lehenga-choli-bridal-wedding-lehengas"
-          }
-        },
-        "information_V4DJWT": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/reception-collection-banner-400x533-30-3-24-uk.jpg",
-            "main_mobile_image": "shopify://shop_images/reception-collection-banner-400x533-30-3-24-uk.jpg",
-            "title": "<p>Reception Runway</p>",
-            "sub_head_text": "<p>Sub Heading</p>",
-            "main_tags_detail_text": "",
-            "main_button_text": "Shop Now",
-            "main_button_link": "https://uk.kalkifashion.com/collections/ethnic-reception-collection"
-          }
-        }
-      },
-      "block_order": [
-        "information_Ny9QBy",
-        "information_eyiqgQ",
-        "information_GqAyyg",
-        "information_V4DJWT"
-      ],
-      "disabled": true,
-      "settings": {
-        "main_background_color": "#ffffff"
-      }
-    },
     "index_icon_text_info_list_new_dh9jjK": {
       "type": "Index-icon-text-info-list-new",
       "blocks": {
@@ -936,12 +817,10 @@
     "tagalys_section_WMBWrM",
     "index_side_by_side_banner_new_LKaU6a",
     "tagalys_section_WnWMid",
-    "index_custom_price_budget_new_DNJynV",
     "index_arrivals_details_new_pkzRNd",
     "index_collection_lists_new_PzNwEn",
     "index_middle_banner_infos_new_fqA8qP",
     "index_collection_lists_new_JNfDX7",
-    "index_custom_collections_new_mmGfwW",
     "index_icon_text_info_list_new_dh9jjK",
     "apps_gV7wH3",
     "visit_our_store_zcMiCP",
