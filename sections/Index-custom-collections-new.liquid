@@ -7,7 +7,7 @@
             {%- if block.settings.main_mp4_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank or block.settings.main_tags_detail_text != blank or block.settings.sub_head_text != blank or block.settings.title != blank or block.settings.main_button_link != blank -%}
               <div class="Index_custom_collections_allloop_mainboxs_new skeleton">
                 {%- if block.settings.main_button_link != blank -%}
-                  <a href="{{ block.settings.main_button_link }}" aria-label="Shop Now {{ block.settings.title }}" title="{{ block.settings.title }}">
+                  <a href="{{ block.settings.main_button_link }}" aria-label="Shop Now {{ block.settings.title }}" title="{{ block.settings.title }}"></a>
                 {%- endif -%}  
                 <div class="Index_custom_collections_allloop_innerboxs_new">
                   {%- if block.settings.main_mp4_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank -%}
@@ -64,9 +64,6 @@
                     </div>  
                   {%- endif -%}
                 </div>
-              {%- if block.settings.main_button_link != blank -%}
-                  </a>
-                {%- endif -%}
               </div>
             {%- endif -%}
           {%- endfor -%}
