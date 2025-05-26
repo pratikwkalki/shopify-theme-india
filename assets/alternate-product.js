@@ -280,7 +280,9 @@ document.addEventListener('DOMContentLoaded', function() {
         templateContainer.querySelectorAll(selectors.stitchedGroupSelector).forEach(elm => {
           elm.classList.add('hide')
         })
-        templateContainer.querySelector('#blouse-style-input').removeAttribute('required');
+        if (templateContainer.querySelector('#blouse-style-input')) {
+          templateContainer.querySelector('#blouse-style-input').removeAttribute('required');
+        }
 
         // select first option
         if(initialSelectedOption && optionValues.length) {
@@ -352,7 +354,9 @@ document.addEventListener('DOMContentLoaded', function() {
         templateContainer.querySelectorAll(selectors.stitchedGroupSelector).forEach(elm => {
           elm.classList.remove('hide')
         })
-        templateContainer.querySelector('#blouse-style-input').setAttribute('required', 'true');
+        if (templateContainer.querySelector('#blouse-style-input')) {
+          templateContainer.querySelector('#blouse-style-input').setAttribute('required', 'true');
+        }
 
         // set all required fields of stitched group
         requiredFieldsToggle(allRequiredFields, false)
