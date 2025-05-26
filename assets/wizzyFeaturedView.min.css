@@ -409,6 +409,10 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
 #wizzyFeaturedViewRoot .swiper-wrapper {
   transform: translateZ(0);
 }
+#wizzyFeaturedViewRoot .swiper-ios .swiper-slide,
+#wizzyFeaturedViewRoot .swiper-wrapper {
+  transform: translateZ(0);
+}
 
 #wizzyFeaturedViewRoot .swiper-horizontal {
   touch-action: pan-y;
