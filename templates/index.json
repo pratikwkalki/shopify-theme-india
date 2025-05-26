@@ -566,8 +566,8 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/01-exclusive-edit-blouses-400x533-20-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/01-exclusive-edit-blouses-400x533-20-05-25.jpg",
-            "title": "Must-have",
-            "sub_head_text": "New aged blouses",
+            "title": "Must-Have",
+            "sub_head_text": "New Aged Blouses",
             "main_button_text": "Shop Now",
             "main_button_link": "shopify://collections/blouse"
           }
@@ -577,7 +577,7 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/02-exclusive-edit-co-ords-400x533-20-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/02-exclusive-edit-co-ords-400x533-20-05-25.jpg",
-            "title": "The Perfect Pair",
+            "title": "The Co-Ords",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "shopify://collections/co-ord-sets"
