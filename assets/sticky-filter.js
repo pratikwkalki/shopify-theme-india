@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const navBar = document.getElementById("sideNav"),
+        scrollElm = document.querySelector(".collection_left_new"),
         navBarText = document.getElementById("custom-active-facets"),
         footer = document.getElementById("shopify-section-sections--24341382168939__footer"),
         productGrid = document.getElementById("ProductGridContainer"),
@@ -58,14 +59,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (scrollBottom >= footerTop) {
       navBar?.classList.remove("navScrolled");
+      scrollElm?.classList.remove("collection_left_new1");     
       navBarText?.classList.remove("filtertitle");
       productGrid?.classList.remove("blokmargin");
     } else if (scrollY > totalHeight) {
       navBar?.classList.add("navScrolled");
+      scrollElm?.classList.add("collection_left_new1"); 
       navBarText?.classList.add("filtertitle");
       productGrid?.classList.add("blokmargin");
     } else {
       navBar?.classList.remove("navScrolled");
+      scrollElm?.classList.remove("collection_left_new1"); 
       navBarText?.classList.remove("filtertitle");
       productGrid?.classList.remove("blokmargin");
     }
