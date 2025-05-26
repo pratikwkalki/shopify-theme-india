@@ -3368,7 +3368,7 @@ label[for=AddressCountryNew], label[for=AddressProvinceNew]{ font-weight:900; }
 
 .Page_weaves_top_banner_main_new{ margin:0 0 48px; }
 
-.Page_weaves_banner_slider_main_new .Index_top_banner_slider { padding-bottom:48px; }
+.Page_weaves_banner_slider_main_new .Index_top_banner_slider { padding-bottom:0px; }
 .Page_weaves_banner_slider_main_new .swiper-pagination { bottom: 10px !important; }
 .Page_weaves_banner_slider_main_new .swiper-pagination-bullet{ background:#0F0D1A; }
 .Page_weaves_banner_slider_main_new .swiper-button-prev{ top:calc(50% - 28px); }
