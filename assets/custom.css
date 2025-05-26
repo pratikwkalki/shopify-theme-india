@@ -617,7 +617,7 @@ summary .icon-caret { position: relative; }
 .Index_custom_collections_inner_new{}
 .Index_custom_collections_allloop_new{display:flex; align-items:center; grid-gap:18px;}
 .Index_custom_collections_allloop_mainboxs_new{width:25%; position:relative;}
-.Index_custom_collections_allloop_mainboxs_new > a{position:absolute; top:0; left:0; z-index:2; display:block !important; width:100%; height:100%;}
+.Index_custom_collections_allloop_mainboxs_new > a{position:absolute; top:0; left:0; z-index:4; display:block !important; width:100%; height:100%;}
 .Index_custom_collections_allloop_mainboxs_new{}
 .Index_custom_collections_allloop_innerboxs_new:after{z-index: 2; content:''; position:absolute; bottom:0; left:0; width:100%; height:182px; background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.70) 100%); }
 .Index_custom_collections_allloop_innerboxs_1_new{ position: relative; z-index: 1;}
