@@ -443,8 +443,8 @@
         "information_rVmqny": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-shop-by-collection-mehendi-mastery-24-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-shop-by-collection-mehendi-mastery-24-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/1-shop-by-collection-mehendi-mastery-23-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-shop-by-collection-mehendi-mastery-23-05-25.jpg",
             "title": "Mehendi Magic",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -454,8 +454,8 @@
         "information_dBLnzc": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-shop-by-collection-sangeet-soiree-24-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-shop-by-collection-sangeet-soiree-24-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/2-shop-by-collection-sangeet-soiree-23-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2-shop-by-collection-sangeet-soiree-23-05-25.jpg",
             "title": "Sangeet Soirée",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -476,8 +476,8 @@
         "information_mKbaME": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/4-shop-by-collection-reception-royalty-25-04-25-1.jpg",
-            "main_mobile_image": "shopify://shop_images/4-shop-by-collection-reception-royalty-25-04-25-1.jpg",
+            "main_desktop_image": "shopify://shop_images/4-shop-by-collection-reception-royalty-23-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/4-shop-by-collection-reception-royalty-23-05-25.jpg",
             "title": "Reception Royalty",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -511,17 +511,17 @@
         "information_hxURPn": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/01-shop-by-category-discounted-deals-250x250-24-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/01-shop-by-category-discounted-deals-250x250-24-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/01-shop-by-category-discounted-deals-250x250-23-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/01-shop-by-category-discounted-deals-250x250-23-05-25.jpg",
             "title": "<p>Discounted Deals</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/menswear-on-sale"
+            "main_redirect_link": "shopify://collections/menswear-on-sale"
           }
         },
         "information_Ud6yrw": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/02-shop-by-category-limited-edition-250x250-24-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/02-shop-by-category-limited-edition-250x250-24-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/02-shop-by-category-limited-edition-250x250-23-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/02-shop-by-category-limited-edition-250x250-23-05-25.jpg",
             "title": "<p>Limited Edition</p>",
             "main_redirect_link": "https://in.kalkifashion.com/collections/ethnic-last-chance-mens-wear"
           }
@@ -529,46 +529,46 @@
         "information_NQxDrp": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/03-shop-by-category-cute-couture-250x250-24-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/03-shop-by-category-cute-couture-250x250-24-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/03-shop-by-category-cute-couture-250x250-23-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/03-shop-by-category-cute-couture-250x250-23-05-25.jpg",
             "title": "<p>Boy's Fashion</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/see-all-boys"
+            "main_redirect_link": "shopify://collections/see-all-boys"
           }
         },
         "information_MBGFwT": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/04-shop-by-category-midnight-black-250x250-24-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/04-shop-by-category-midnight-black-250x250-24-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/04-shop-by-category-midnight-black-250x250-23-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/04-shop-by-category-midnight-black-250x250-23-05-25.jpg",
             "title": "<p>Midnight Black</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/black-menswear"
+            "main_redirect_link": "shopify://collections/black-menswear"
           }
         },
         "information_cixgzh": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/05-shop-by-category-must-haves-250x250-24-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/05-shop-by-category-must-haves-250x250-24-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/05-shop-by-category-must-haves-250x250-23-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/05-shop-by-category-must-haves-250x250-23-05-25.jpg",
             "title": "<p>Must-Haves</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/essential-for-men"
+            "main_redirect_link": "shopify://collections/essential-for-men"
           }
         },
         "information_hTU38k": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/06-shop-by-category-budget-finds-250x250-24-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/06-shop-by-category-budget-finds-250x250-24-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/06-shop-by-category-budget-finds-250x250-23-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/06-shop-by-category-budget-finds-250x250-23-05-25.jpg",
             "title": "<p>Budget Finds</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/menswear-under-inr-8999"
+            "main_redirect_link": "shopify://collections/menswear-under-inr-8999"
           }
         },
         "information_BUC6E6": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/07-shop-by-category-groomsquad-250x250-24-04-25.jpg",
-            "main_mobile_image": "shopify://shop_images/07-shop-by-category-groomsquad-250x250-24-04-25.jpg",
+            "main_desktop_image": "shopify://shop_images/07-shop-by-category-groomsquad-250x250-23-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/07-shop-by-category-groomsquad-250x250-23-05-25.jpg",
             "title": "<p>Groomsquad</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/groomsman"
+            "main_redirect_link": "shopify://collections/groomsman"
           }
         }
       },
