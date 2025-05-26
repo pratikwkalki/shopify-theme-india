@@ -404,7 +404,10 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
   width: 100%;
   z-index: 1;
 }
-
+#init-wizzy-featured-view-button
+{
+  color: black;
+}
 #wizzyFeaturedViewRoot .swiper-android .swiper-slide,
 #wizzyFeaturedViewRoot .swiper-wrapper {
   transform: translateZ(0);
