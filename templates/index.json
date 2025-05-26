@@ -343,8 +343,8 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/2-mini-desk-new-arrivals-india-400x533-20-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/2-mini-desk-new-arrivals-india-400x533-20-05-25.jpg",
-            "title": "Rain Approved",
-            "sub_head_text": "New szn fit check",
+            "title": "Season's Newest",
+            "sub_head_text": "",
             "main_tags_detail_text": "",
             "main_button_text": "Shop BESTSELLERS",
             "main_button_link": "shopify://collections/new-arrivals"
@@ -430,8 +430,8 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/5-curated-collections-trending-color-400x533-20-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/5-curated-collections-trending-color-400x533-20-05-25.jpg",
-            "title": "In Full Hue",
-            "sub_head_text": "May’s Colour Theory",
+            "title": "The Greens",
+            "sub_head_text": "Season's Trendiest Colour",
             "main_button_text": "Shop Now",
             "main_button_link": "shopify://collections/green-collection"
           }
@@ -452,8 +452,8 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/2-curated-collections-chikankari-400x533-20-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/2-curated-collections-chikankari-400x533-20-05-25.jpg",
-            "title": "Chikankari Edit",
-            "sub_head_text": "Sarah Sarosh-Inspired",
+            "title": "Chikankari Couture",
+            "sub_head_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "shopify://collections/chikankari-collection"
           }
@@ -463,7 +463,7 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/3-curated-collections-minimal-styles-400x533-20-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/3-curated-collections-minimal-styles-400x533-20-05-25.jpg",
-            "title": "Less is Luxe",
+            "title": "The Minimalists",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "shopify://collections/minimal-styles"
