@@ -523,7 +523,7 @@
             "main_desktop_image": "shopify://shop_images/02-shop-by-category-limited-edition-250x250-23-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/02-shop-by-category-limited-edition-250x250-23-05-25.jpg",
             "title": "<p>Limited Edition</p>",
-            "main_redirect_link": "https://in.kalkifashion.com/collections/ethnic-last-chance-mens-wear"
+            "main_redirect_link": "shopify://collections/last-chance-menswear"
           }
         },
         "information_NQxDrp": {
