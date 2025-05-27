@@ -7,6 +7,9 @@
 .swiper .swiper-wrapper > .swiper-slide:last-of-type .more-products-indicator {
   display: none;
 }
+#wizzyFeaturedViewRoot .swiper-slide {
+    touch-action: pan-y;
+}
 .wizzy__featuredview__productOverviewContainer__NDRQM.wizzy__featuredview__opened__PvLGY
   .more-products-indicator {
   display: none;
@@ -414,11 +417,11 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
 }
 #wizzyFeaturedViewRoot .swiper-android .swiper-slide,
 #wizzyFeaturedViewRoot .swiper-wrapper {
-  transform: translateZ(0);
+  /* transform: translateZ(0); */
 }
 #wizzyFeaturedViewRoot .swiper-ios .swiper-slide,
 #wizzyFeaturedViewRoot .swiper-wrapper {
-  transform: translateZ(0);
+  /* transform: translateZ(0); */
 }
 
 #wizzyFeaturedViewRoot .swiper-horizontal {
