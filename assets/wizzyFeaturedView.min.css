@@ -417,7 +417,7 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
 }
 #wizzyFeaturedViewRoot .swiper-android .swiper-slide,
 #wizzyFeaturedViewRoot .swiper-wrapper {
-  transform: translateZ(0);
+  /* transform: translateZ(0); */
   
 }
 #wizzyFeaturedViewRoot .swiper-ios .swiper-slide,
