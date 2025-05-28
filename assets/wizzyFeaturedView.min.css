@@ -423,7 +423,7 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
 #wizzyFeaturedViewRoot .swiper-ios .swiper-slide,
 #wizzyFeaturedViewRoot .swiper-wrapper {
   /* transform: translateZ(0); */
-  transform: translate3d(0, 0, 0) !important;
+  /* transform: translate3d(0, 0, 0) !important; */
   
 }
 
@@ -463,7 +463,7 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: translateZ(0);
- transform: translate3d(0, 0, 0) !important;
+ /* transform: translate3d(0, 0, 0) !important; */
   
 }
 
@@ -633,7 +633,7 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
   position: absolute;
   text-align: center;
   transform: translateZ(0);
-  transform: translate3d(0, 0, 0) !important;
+  /* transform: translate3d(0, 0, 0) !important; */
   
   transition: opacity 0.3s;
   z-index: 10;
