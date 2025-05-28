@@ -184,14 +184,12 @@
     },
     "plp_footer_explore_more_7r66nN": {
       "type": "PLP-footer-explore-more",
-      "name": "PLP Footer explore more",
       "settings": {
         "main_heading_text": "Explore More"
       }
     },
     "custom_liquid_9iAfrR": {
       "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "<style>\n@media (min-width: 1024px) {\n  .Collection_descriptions_inner_new,.Collection_object_faqs_inner_new,.Collection_object_lists_inner_new,.collection-blogs-title.Common_title_new,.collection-blogs-list-wrap,.plp-explore-more-section_title,.plp-explore-more-section {\n    margin-left: 260px;\n  }\n}\n</style>",
         "color_scheme": "",
