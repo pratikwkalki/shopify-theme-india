@@ -417,7 +417,7 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
 }
 #wizzyFeaturedViewRoot .swiper-android .swiper-slide,
 #wizzyFeaturedViewRoot .swiper-wrapper {
-  /* transform: translateZ(0); */
+  transform: translateZ(0);
   transform: translate3d(0, 0, 0) !important;
   will-change: transform;
 }
@@ -463,7 +463,7 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
 #wizzyFeaturedViewRoot .swiper-backface-hidden .swiper-slide {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  /* transform: translateZ(0); */
+  transform: translateZ(0);
  transform: translate3d(0, 0, 0) !important;
   will-change: transform;
 }
@@ -633,7 +633,7 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
 #wizzyFeaturedViewRoot .swiper-pagination {
   position: absolute;
   text-align: center;
-  /* transform: translateZ(0); */
+  transform: translateZ(0);
   transform: translate3d(0, 0, 0) !important;
   will-change: transform;
   transition: opacity 0.3s;
