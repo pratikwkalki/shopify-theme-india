@@ -3,15 +3,12 @@
     {% assign MagicToolboxUseMagicScroll = 'Yes' %}
     {% assign MagicToolboxMagicScrollLicenseKey = '' %}
     {{ 'magiczoomplus.js' | asset_url | script_tag }}
-    <link rel="stylesheet" href="{{ 'magiczoomplus.css' | asset_url  }}" media="print" onload="this.media='all'">
-    <noscript>{{ 'magiczoomplus.css' | asset_url }}</noscript>
+    {{ 'magiczoomplus.css' | asset_url | stylesheet_tag }}
     {% if MagicToolboxUseMagicScroll == 'Yes' %}
     {{ 'magicscroll.js' | asset_url | script_tag }}
-    <link rel="stylesheet" href="{{ 'magicscroll.css' | asset_url }}" media="print" onload="this.media='all'">
-    <noscript>{{ 'magicscroll.css' | asset_url  }}</noscript>
+    {{ 'magicscroll.css' | asset_url | stylesheet_tag }}
     {% endif %}
-    <link rel="stylesheet" href="{{ 'magiczoomplus.additional.css' | asset_url }}" media="print" onload="this.media='all'">
-    <noscript>{{ 'magiczoomplus.additional.css' | asset_url }}</noscript>
+    {{ 'magiczoomplus.additional.css' | asset_url | stylesheet_tag }}
 
 
     
