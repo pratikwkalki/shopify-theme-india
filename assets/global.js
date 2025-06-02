@@ -443,7 +443,6 @@ class MenuDrawer extends HTMLElement {
         document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
       }
     } else {
-      setTimeout(() => {
         detailsElement.classList.add('menu-opening');
         summaryElement.setAttribute('aria-expanded', true);
         parentMenuElement && parentMenuElement.classList.add('submenu-open');
@@ -455,7 +454,6 @@ class MenuDrawer extends HTMLElement {
             nextSibling.addEventListener('transitionend', addTrapFocus);
           }
         }
-      }, 100);
     }
   }
 
