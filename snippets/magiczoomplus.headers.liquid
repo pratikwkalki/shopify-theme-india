@@ -2,11 +2,11 @@
     {% comment %}{% if template contains 'product' %}{% endcomment %}
     {% assign MagicToolboxUseMagicScroll = 'Yes' %}
     {% assign MagicToolboxMagicScrollLicenseKey = '' %}
-    {{ 'magiczoomplus.js' | asset_url | script_tag }}
+    <script src="{{ 'magiczoomplus.js' | asset_url }}" defer="defer"></script>
     <link rel="stylesheet" href="{{ 'magiczoomplus.css' | asset_url  }}" media="print" onload="this.media='all'">
     <noscript>{{ 'magiczoomplus.css' | asset_url }}</noscript>
     {% if MagicToolboxUseMagicScroll == 'Yes' %}
-    {{ 'magicscroll.js' | asset_url | script_tag }}
+    <script src="{{ 'magicscroll.js' | asset_url }}" defer="defer"></script>
     <link rel="stylesheet" href="{{ 'magicscroll.css' | asset_url }}" media="print" onload="this.media='all'">
     <noscript>{{ 'magicscroll.css' | asset_url  }}</noscript>
     {% endif %}
