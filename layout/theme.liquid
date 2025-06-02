@@ -493,7 +493,18 @@
   {% include 'kart_discount' %}
   
   <script src="{{ 'scroll-to-products.js' | asset_url }}" defer="defer"></script>
-  
+  <!-- Append the `?module` param to load the module version of `web-vitals` -->
+<script type="module">
+  import {
+    onCLS,
+    onINP,
+    onLCP,
+  } from 'https://unpkg.com/web-vitals@5/dist/web-vitals.attribution.js?module';
+
+  onCLS(console.log);
+  onINP(console.log);
+  onLCP(console.log);
+</script>
   </head>
 
   <body 
