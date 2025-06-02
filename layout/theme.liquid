@@ -650,6 +650,15 @@
 
     <!-- Lucent OTP Login -->
     {%- section 'otp-section' -%}
+
+    <script src="https://unpkg.com/web-vitals@3/dist/web-vitals.iife.js"></script>
+<script>
+  webVitals.getCLS(console.log);
+  webVitals.getFID(console.log);
+  webVitals.getLCP(console.log);
+  webVitals.getINP(console.log);
+</script>
+    
 {%- comment -%}
   {%- render 'razorpay-magic-sso' -%}
 {%- endcomment -%}
