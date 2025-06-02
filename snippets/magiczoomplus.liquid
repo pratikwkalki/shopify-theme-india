@@ -269,6 +269,7 @@ a[data-slide-id].mz-thumb-selected img {
                data-image="{%- render 'gumlet', src: gm_featured_image w: 1000 %}" 
                {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'gumlet', src: gm_featured_image w: 1400 %}" {% endif %}
                >
+              <link rel="preload" as="image" href="{%- render 'gumlet', src: gm_featured_image w: 1000 %}" type="image/avif" fetchpriority="high">
                     <img  
                         style="max-width:100%; aspect-ratio:auto {{ mt_featured_image.width }} / {{ mt_featured_image.height }}; height:auto;"
                         width="{{ mt_featured_image.width }}"
