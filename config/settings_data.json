@@ -147,7 +147,7 @@
     "gumletUrl": "https://kalki.gumlet.io",
     "wizzy_is_lazy_init": "true",
     "wizzy_is_lazy_init_enabled": "true",
-    "wizzy_beta_frontend_j": "",
+    "wizzy_beta_frontend_js": "",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
