@@ -458,7 +458,9 @@ class MenuDrawer extends HTMLElement {
   }
 
   openMenuDrawer(summaryElement) {
-    this.mainDetailsToggle.classList.add('menu-opening');
+    setTimeout(() => {
+      this.mainDetailsToggle.classList.add('menu-opening');
+    });
     summaryElement.setAttribute('aria-expanded', true);
     trapFocus(this.mainDetailsToggle, summaryElement);
     document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
