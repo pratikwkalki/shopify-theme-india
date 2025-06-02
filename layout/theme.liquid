@@ -493,17 +493,20 @@
   {% include 'kart_discount' %}
   
   <script src="{{ 'scroll-to-products.js' | asset_url }}" defer="defer"></script>
-  <!-- Append the `?module` param to load the module version of `web-vitals` -->
-<script type="module">
-  import {
-    onCLS,
-    onINP,
-    onLCP,
-  } from 'https://unpkg.com/web-vitals@5/dist/web-vitals.attribution.js?module';
-
-  onCLS(console.log);
-  onINP(console.log);
-  onLCP(console.log);
+  <script>
+  (function () {
+    var script = document.createElement('script');
+    script.src =
+      'https://unpkg.com/web-vitals@5/dist/web-vitals.attribution.iife.js';
+    script.onload = function () {
+      // When loading `web-vitals` using a classic script, all the public
+      // methods can be found on the `webVitals` global namespace.
+      webVitals.onCLS(console.log);
+      webVitals.onINP(console.log);
+      webVitals.onLCP(console.log);
+    };
+    document.head.appendChild(script);
+  })();
 </script>
   </head>
 
