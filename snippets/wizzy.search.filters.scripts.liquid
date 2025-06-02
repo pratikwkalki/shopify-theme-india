@@ -8,14 +8,14 @@
 {% render 'wizzy-autocomplete-suggestions' %}
 {% render 'wizzy-search-summary'%}
 {% render 'wizzy-grid-facet-block' %}
-{% comment %}
+
 <script>
   if (typeof window.wizzyLazyAssets != "undefined") {
     window.wizzyLazyAssets = window.wizzyLazyAssets ? window.wizzyLazyAssets : [];
         window.wizzyLazyAssets.push("{{ 'wizzyFrontend.min.js' | asset_url  }}",'scripts');
   }
 </script>
-{% endcomment %}
+
 <script>
   if (typeof window.wizzyLazyAssets != "undefined") {
     window.wizzyLazyAssets = window.wizzyLazyAssets ? window.wizzyLazyAssets : [];
