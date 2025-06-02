@@ -650,18 +650,6 @@
 
     <!-- Lucent OTP Login -->
     {%- section 'otp-section' -%}
-<!-- Append the `?module` param to load the module version of `web-vitals` -->
-<script type="module">
-  import {
-    onCLS,
-    onINP,
-    onLCP,
-  } from 'https://unpkg.com/web-vitals@5/dist/web-vitals.attribution.js?module';
-
-  onCLS('onCLS',console.log);
-  onINP('onINP', console.log);
-  onLCP('onLCP', console.log);
-</script>
 {%- comment -%}
   {%- render 'razorpay-magic-sso' -%}
 {%- endcomment -%}
