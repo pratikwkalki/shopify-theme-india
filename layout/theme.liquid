@@ -503,9 +503,9 @@
     script.onload = function () {
       // When loading `web-vitals` using a classic script, all the public
       // methods can be found on the `webVitals` global namespace.
-      webVitals.onCLS(console.log);
-      webVitals.onINP(console.log);
-      webVitals.onLCP(console.log);
+      webVitals.onCLS('onCLS', console.log);
+      webVitals.onINP('onINP', console.log);
+      webVitals.onLCP('onLCP', console.log);
     };
     document.head.appendChild(script);
   })();
