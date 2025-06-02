@@ -651,12 +651,6 @@
     <!-- Lucent OTP Login -->
     {%- section 'otp-section' -%}
 
-    <script src="https://unpkg.com/web-vitals@3/dist/web-vitals.iife.js"></script>
-<script>
- webVitals.getINP((metric) => {
-    console.log('INP triggered', metric);
-  }); // Interaction to next paint (replaces FID)
-</script>
 {%- comment -%}
   {%- render 'razorpay-magic-sso' -%}
 {%- endcomment -%}
