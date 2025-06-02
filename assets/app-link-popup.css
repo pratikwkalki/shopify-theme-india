@@ -1,3 +1,9 @@
+.shopify-section-group-header-group[id*="app_link_popup"]:has(>div[style*="block"]) {
+    display: block;
+}
+.shopify-section-group-header-group[id*="app_link_popup"] {
+    display: none;
+}
 .app-link-modal {
     position: fixed;
     z-index: 99999;
