@@ -656,12 +656,7 @@
   function reportWebVital(metric) {
     console.log(`${metric.name}:`, metric.value, metric);
   }
-
-  webVitals.getCLS(reportWebVital);  // Layout shift
-  webVitals.getFID(reportWebVital);  // First input delay (legacy, use INP instead)
-  webVitals.getLCP(reportWebVital);  // Largest contentful paint
   webVitals.getINP(reportWebVital);  // Interaction to next paint (replaces FID)
-  webVitals.getTTFB(reportWebVital); // Time to first byte (optional)
 </script>
 {%- comment -%}
   {%- render 'razorpay-magic-sso' -%}
