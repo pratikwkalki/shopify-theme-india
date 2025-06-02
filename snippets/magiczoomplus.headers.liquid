@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{ 'magiczoomplus.css' | asset_url  }}" media="print" onload="this.media='all'">
     <noscript>{{ 'magiczoomplus.css' | asset_url }}</noscript>
     {% if MagicToolboxUseMagicScroll == 'Yes' %}
-     <script src="{{ 'magicscroll.js' | asset_url }}" defer="defer"></script>
+    {{ 'magicscroll.js' | asset_url | script_tag }}
     <link rel="stylesheet" href="{{ 'magicscroll.css' | asset_url }}" media="print" onload="this.media='all'">
     <noscript>{{ 'magicscroll.css' | asset_url  }}</noscript>
     {% endif %}
