@@ -423,40 +423,44 @@
   </script>
     <script>
       // this is for traficly set below buynow button 
-        function movevisitorsBasedOnWidth() {
-          var visitors = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
-          var shopiButton = document.querySelector('.shopify-payment-button__button.shopify-payment-button__button--unbranded');
-          var mobileContainer = document.querySelector('.visitors_counter.visitors_counter_mobile');
-        
-          if (!visitors || visitors.dataset.moved === 'true') return;
-        
-          if (window.innerWidth <= 749 && mobileContainer) {
-            mobileContainer.appendChild(visitors);
-          } else if (shopiButton) {
-            shopiButton.insertAdjacentElement('afterend', visitors);
-          }
-        
-          visitors.dataset.moved = 'true'; // Prevent repeated moves
-        }
-        
-        // Use MutationObserver to handle dynamic DOM loading
-        const observer = new MutationObserver(() => {
-          movevisitorsBasedOnWidth();
-        });
-        
-        observer.observe(document.body, { childList: true, subtree: true });
-        
-        // Stop observing after 10s (optional for performance)
-        setTimeout(() => observer.disconnect(), 10000);
-        
-        // Optional: if window resized and you want to move again
-        window.addEventListener('resize', () => {
-          const visitors = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
-          if (visitors) {
-            visitors.dataset.moved = 'false'; // Reset move state
-            movevisitorsBasedOnWidth();
-          }
-        });
+        function moveAsideBasedOnWidth() {
+  var aside = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
+  var blockTitle = document.querySelector('.shopify-payment-button__button.shopify-payment-button__button--unbranded');
+  var mobileContainer = document.querySelector('.visitors_counter.visitors_counter_mobile');
+
+  // Make sure the popup script has fully initialized it (optional, if popup adds a marker class or data-attribute)
+  if (!aside || aside.dataset.moved === 'true') return;
+
+  // Wait until the popup has been initialized, if needed (some apps attach listeners at init only)
+  if (!aside.classList.contains('carecart-initialized')) {
+    // You can change this check if your popup plugin uses another init signal
+    return;
+  }
+
+  if (window.innerWidth <= 749 && mobileContainer) {
+    mobileContainer.appendChild(aside);
+  } else if (blockTitle) {
+    blockTitle.insertAdjacentElement('afterend', aside);
+  }
+
+  aside.dataset.moved = 'true';
+}
+
+const observer = new MutationObserver(() => {
+  moveAsideBasedOnWidth();
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
+
+setTimeout(() => observer.disconnect(), 10000);
+
+window.addEventListener('resize', () => {
+  const aside = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
+  if (aside) {
+    delete aside.dataset.moved;
+    moveAsideBasedOnWidth();
+  }
+});
     </script>
   {% schema %}
   {
