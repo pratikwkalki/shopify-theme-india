@@ -423,33 +423,25 @@
   </script>
     <script>
       // this is for traficly set below buynow button 
-      // function moveAsideConditionally() {
-      //       var aside = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
-      //       var blockTitle = document.querySelector('.shopify-payment-button__button.shopify-payment-button__button--unbranded');
-      //       var mobileContainer = document.querySelector('.visitors_counter.visitors_counter_mobile');
-          
-            
-      //         if (window.innerWidth <= 749 && mobileContainer) {
-      //           mobileContainer.appendChild(aside);
-      //         } else if (blockTitle) {
-      //           blockTitle.insertAdjacentElement('afterend', aside);
-      //         }
-           
-      //     }
-          
-      //     // Observe DOM changes
-      //     const observer = new MutationObserver(() => {
-      //       moveAsideConditionally();
-      //     });
-          
-      //     // Start observing body for changes
-      //     observer.observe(document.body, {
-      //       childList: true,
-      //       subtree: true
-      //     });
-          
-      //     // Optional: stop observing after a while
-      //     setTimeout(() => observer.disconnect(), 10000);
+       window.addEventListener('load', function () {
+        setTimeout(function () {
+          var VisitorCounter = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
+          var CounterDesktop = document.querySelector('.visitors_counter.visitors_counter_desktop');
+          var CounterMobile = document.querySelector('.visitors_counter.visitors_counter_mobile');
+      
+          if (!VisitorCounter) return;
+      
+          if (window.innerWidth < 749) {
+            if (CounterMobile) {
+              CounterMobile.appendChild(VisitorCounter);
+            }
+          } else {
+            if (CounterDesktop) {
+              CounterDesktop.appendChild(VisitorCounter);
+            }
+          }
+        }, 1000); // Delay in milliseconds (1000ms = 2s)
+      });
     </script>
   {% schema %}
   {
