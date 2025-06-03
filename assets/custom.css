@@ -1318,13 +1318,6 @@ select {
 .menu-drawer-container {
   display: flex;
 }
-.header_second_menu_new .list-menu {
-  grid-gap: 0px;
-  display: flex;
-}
-.header_second_menu_new .list-menu > li {
-  margin: 0 4px;
-}
 .Header_desktop_left_menu_inner_new .header__inline-menu,
 .header_second_menu_new .list-menu > li:first-child {
   margin-left: 0;
