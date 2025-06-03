@@ -173,9 +173,7 @@ body {
     font-weight: 500;
     line-height: 116.667%;
   }
-  .Index_top_banner_slider_main_new {
-    margin: 17px 0;
-  }
+  
   .swiper-button-next,
   .swiper-button-prev {
     width: 36px;
@@ -2261,9 +2259,6 @@ cart-drawer.is-empty .drawer__header {
     font-weight: 500;
     line-height: 116.667%;
   }
-  .Index_top_banner_slider_main_new {
-    margin: 17px 0;
-  }
   .swiper-button-next,
   .swiper-button-prev {
     width: 36px;
@@ -2345,9 +2340,6 @@ cart-drawer.is-empty .drawer__header {
     font-size: 12px;
     min-width: 130px;
     letter-spacing: 0.6px;
-  }
-  .Index_top_banner_slider_main_new {
-    margin: 20px auto;
   }
   .swiper-button-next,
   .swiper-button-prev {

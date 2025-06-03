@@ -1,0 +1,11 @@
+
+@media (min-width: 750px) and (max-width: 989px) {
+  .Index_top_banner_slider_main_new {
+    margin: 20px auto;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .Index_top_banner_slider_main_new {
+    margin: 17px 0;
+  }
+}
