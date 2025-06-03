@@ -1279,35 +1279,6 @@ select {
   -webkit-print-color-adjust: exact;
   color-adjust: exact;
 }
-.button {
-  border-radius: 6px;
-  min-height: initial;
-  background: #172926;
-  padding: 16px 40px;
-  min-width: 196px;
-  color: #fff;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.6px;
-  text-transform: uppercase;
-}
-.button_white {
-  border-radius: 2px;
-  padding: 12px;
-  min-width: 148px;
-  background: #fff;
-  color: #000;
-  font-size: 14px;
-  letter-spacing: 0.98px;
-  line-height: 18px;
-}
-.header {
-  padding: 0 !important;
-  display: flex;
-  flex-direction: column;
-}
 .Header_desktop_left_menu_main_new,
 .header__icons {
   width: calc(50% - 65px);
