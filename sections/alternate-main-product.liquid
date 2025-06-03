@@ -433,17 +433,17 @@
   }
 }
 
-const observer = new MutationObserver(() => {
-  moveAsideAfterBlockTitle();
-});
+// const observer = new MutationObserver(() => {
+//   moveAsideAfterBlockTitle();
+// });
 
-observer.observe(document.body, {
-  childList: true,
-  subtree: true
-});
+// observer.observe(document.body, {
+//   childList: true,
+//   subtree: true
+// });
 
 // Optional: disconnect after some time to stop watching forever
-setTimeout(() => observer.disconnect(), 10000); // Stop observing after 10 seconds
+// setTimeout(() => observer.disconnect(), 10000); // Stop observing after 10 seconds
     </script>
   {% schema %}
   {
