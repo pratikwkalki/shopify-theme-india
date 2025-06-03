@@ -1,4 +1,5 @@
 {%- if section.settings.main_heading_text != blank or section.settings.main_mp4_video_1 != blank or section.settings.main_desktop_image_1 != blank or section.settings.main_mobile_image_1 != blank or section.settings.main_mp4_video_2 != blank or section.settings.main_desktop_image_2 != blank or section.settings.main_mobile_image_2 != blank or section.settings.main_mp4_video_3 != blank or section.settings.main_desktop_image_3 != blank or section.settings.main_mobile_image_3 != blank or section.settings.main_mp4_video_4 != blank or section.settings.main_desktop_image_4 != blank or section.settings.main_mobile_image_4 != blank or section.settings.main_information_text != blank or section.settings.main_sub_heading_text != blank or section.settings.main_button_link != blank or section.settings.sub_small_information_text != blank -%}
+  {{ 'index-arrivals-details.css' | asset_url | stylesheet_tag: preload: true }}
   <div class="Index_arrivals_details_main_new" style="background: {{ section.settings.main_background_color }};">
     <div class="page-width">
       {%- if section.settings.main_heading_text != blank -%}
