@@ -572,6 +572,8 @@
     padding: 16px 10px 14px;
     margin-top: 16px;
     letter-spacing: 0.56px;
+    transition: none;
+    transition: border 0.3s, color 0.3s, background 0.3s;
 }
 .main-cart-drawer .cart-drawer-view-cart:hover {
     color: #fff;
