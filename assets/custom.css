@@ -22552,19 +22552,6 @@ label[for="AddressProvinceNew"] {
     display: block;
   }
 
-  .Page_weaves_top_banner_main_new {
-    margin: 0 0 20px;
-  }
-  .Page_weaves_top_banner_main_new
-    .Page_collection_detail_template_banner_videoimage_new {
-    height: auto;
-  }
-  .Page_weaves_top_banner_main_new
-    .Page_collection_detail_template_banner_videoimage_new
-    img {
-    position: relative;
-  }
-
   .Page_weaves_banner_slider_main_new .Index_top_banner_slider_inner_new {
     padding: 0;
   }
