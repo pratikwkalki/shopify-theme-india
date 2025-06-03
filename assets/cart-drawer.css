@@ -499,6 +499,8 @@
     font-size: 18px;
     line-height: 26px;
     border-radius: 200px;
+    transition: none;
+    transition: border 0.3s, color 0.3s, background 0.3s;
 }
 .cart-drawer cart-drawer-items {
     padding-top: 0;
