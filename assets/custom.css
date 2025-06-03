@@ -1311,18 +1311,6 @@ select {
   max-width: 24px;
   max-height: 24px;
 }
-.header__icons {
-  padding-right: 0;
-  padding-left: 0;
-  align-items: center;
-}
-.header__menu-item .icon-caret {
-  right: 0;
-  margin-left: 8px;
-  height: 7px;
-  margin-top: 2.5px;
-  display: none;
-}
 .header__search {
   width: 100%;
   max-width: 328px;
@@ -3952,13 +3940,6 @@ details[open] > .header__menu-item .icon-caret path {
 .header__icon:hover .icon,
 .modal__close-button:hover .icon {
   transform: scale(1);
-}
-.header__icon .icon {
-  height: auto;
-  width: auto;
-  display: flex;
-  max-width: 24px;
-  max-height: 24px;
 }
 .header__icons {
   padding-right: 0;
