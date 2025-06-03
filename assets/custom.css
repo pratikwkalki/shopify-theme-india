@@ -88,50 +88,7 @@ body {
   padding: 0;
 }
 @media (min-width: 0px) and (max-width: 749px) {
-  .desktop_image_new,
-  .header__icon.header__icon--videocall {
-    display: none !important;
-  }
-  .page-width {
-    padding: 0 16px !important;
-  }
-  .mobile_image_new {
-    display: flex !important;
-  }
-  .button_white {
-    border-radius: 2px;
-    padding: 7px;
-    font-size: 12px;
-    min-width: 130px;
-    letter-spacing: 0.6px;
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: 36px;
-    height: 34px;
-    background-size: 10px;
-  }
-  .Index_icon_with_text_list_main_new {
-    margin: 36px 0;
-  }
-  .Index_icon_with_text_list_allloop_new {
-    flex-flow: wrap;
-    grid-gap: 40px;
-  }
-  .Index_icon_with_text_list_allloop_mainboxs_new {
-    width: calc(50% - 20px);
-    padding: 0;
-  }
-  .Index_icon_with_text_list_allloop_innerboxs_title_new {
-    padding-top: 10px;
-    font-size: 14px;
-    line-height: 142.857%;
-    letter-spacing: 0.14px;
-  }
-  .Index_icon_with_text_list_allloop_popup_inner_new {
-    max-height: 600px;
-    overflow: scroll;
-  }
+  
   .Customer_register_template_innerright_mainform_new,
   .Index_custom_collections_allloop_innerboxs_3_button_new {
     padding-top: 10px;
@@ -162,9 +119,6 @@ body {
   .Footer_2_new .Footer_common_infos_new ul li {
     font-size: 14px;
   }
-  .Customer_register_template_main_new {
-    padding-top: 15px;
-  }
   .Customer_login_template_innerright_titleinfos_infos_new {
     margin: 5px auto;
     max-width: 290px;
@@ -173,16 +127,6 @@ body {
     max-width: 380px !important;
     width: 100%;
     padding: 0 20px !important;
-  }
-  .back_to_top_new {
-    right: 15px;
-    bottom: 58px;
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
-  }
-  .back_to_top_new svg {
-    width: 8px;
   }
 }
 .fa {
