@@ -1726,35 +1726,7 @@ cart-drawer.is-empty .drawer__header {
   display: flex;
   justify-content: center;
 }
-.Index_icon_with_text_list_main_new {
-  margin: 40px 0;
-}
-.Index_icon_with_text_list_allloop_new {
-  display: flex;
-  align-items: flex-start;
-  grid-gap: 0px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.Index_icon_with_text_list_allloop_mainboxs_new {
-  padding: 20px 40px;
-  width: 16%;
-}
-.Index_icon_with_text_list_allloop_innerboxs_icons_new img {
-  max-width: initial;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  height: 50px !important;
-}
-.Index_icon_with_text_list_allloop_innerboxs_title_new {
-  padding-top: 15px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 125%;
-  letter-spacing: 0.16px;
-}
+
 .index-popup-overlay {
   position: fixed;
   width: 100vw;
@@ -1767,69 +1739,7 @@ cart-drawer.is-empty .drawer__header {
   bottom: 0;
   display: none;
 }
-.Index_icon_with_text_list_allloop_popup_new {
-  max-width: 680px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  z-index: 99999999;
-  padding: 20px;
-  display: none;
-}
-.Index_icon_with_text_list_allloop_popup_inner_new {
-  height: 100%;
-  background: #fff;
-  border-radius: 8px;
-}
-.Index_icon_with_text_list_allloop_popup_title_new {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  border-bottom: 1px solid #e5e7eb;
-}
-.Index_icon_with_text_list_allloop_popup_title_left_new {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.6px;
-}
-.Index_icon_with_text_list_allloop_popup_title_right_new {
-  width: 32px;
-  height: 32px;
-  padding: 6px;
-  border-radius: 8px;
-}
-.Index_icon_with_text_list_allloop_popup_desc_main_new {
-  padding: 24px;
-}
-.Index_icon_with_text_list_allloop_popup_desc_new {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 140%;
-}
-.Index_icon_with_text_list_allloop_popup_desc_new p,
-.main-cart-drawer .cart-drawer .grand-total,
-.main-cart-drawer .cart-drawer .promo {
-  margin: 0 0 10px;
-}
-.Index_icon_with_text_list_allloop_popup_desc_new strong {
-  font-weight: 800;
-  font-family: var(--font-body-family);
-}
-.Index_icon_with_text_list_allloop_popup_desc_new h6 {
-  font-family: var(--font-body-family);
-  text-align: center;
-  margin: 20px 0 15px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 140%;
-}
-.Index_icon_with_text_list_allloop_popup_button_new {
-  text-align: center;
-  margin-top: 20px;
-}
+
 .Index_custom_collections_main_new,
 .Index_form_app_detail_main_new {
   margin: 18px 0;
@@ -2000,27 +1910,6 @@ cart-drawer.is-empty .drawer__header {
     height: 34px;
     background-size: 10px;
   }
-  .Index_icon_with_text_list_main_new {
-    margin: 36px 0;
-  }
-  .Index_icon_with_text_list_allloop_new {
-    flex-flow: wrap;
-    grid-gap: 40px;
-  }
-  .Index_icon_with_text_list_allloop_mainboxs_new {
-    width: calc(50% - 20px);
-    padding: 0;
-  }
-  .Index_icon_with_text_list_allloop_innerboxs_title_new {
-    padding-top: 10px;
-    font-size: 14px;
-    line-height: 142.857%;
-    letter-spacing: 0.14px;
-  }
-  .Index_icon_with_text_list_allloop_popup_inner_new {
-    max-height: 600px;
-    overflow: scroll;
-  }
   .Index_custom_collections_main_new,
   .Index_form_app_detail_main_new {
     margin: 10px 0;
@@ -2081,19 +1970,6 @@ cart-drawer.is-empty .drawer__header {
     width: 42px;
     height: 40px;
     background-size: 12px;
-  }
-  .Index_icon_with_text_list_main_new {
-    margin: 30px auto;
-  }
-  .Index_icon_with_text_list_allloop_new {
-    grid-gap: 0px;
-  }
-  .Index_custom_collections_allloop_innerboxs_3_new,
-  .Index_icon_with_text_list_allloop_mainboxs_new {
-    padding: 15px;
-  }
-  .Index_icon_with_text_list_allloop_innerboxs_title_new {
-    font-size: 15px;
   }
   .Index_custom_collections_main_new {
     margin: 10px auto;
@@ -2162,9 +2038,6 @@ cart-drawer.is-empty .drawer__header {
   }
   .mega-menu__link--level-2 {
     padding: 0 0 6px !important;
-  }
-  .Index_icon_with_text_list_allloop_new {
-    grid-gap: 0px;
   }
   .Index_custom_collections_allloop_innerboxs_3_new {
     padding: 20px 15px;
@@ -5289,45 +5162,6 @@ summary .icon-caret {
 .swiper-button-prev.swiper-button-disabled {
   opacity: 0;
 }
-
-.Index_icon_with_text_list_main_new {
-  margin: 16px 0;
-}
-.Index_icon_with_text_list_inner_new {
-}
-.Index_icon_with_text_list_allloop_new {
-  display: flex;
-  align-items: flex-start;
-  grid-gap: 0px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.Index_icon_with_text_list_allloop_mainboxs_new {
-  padding: 20px 8px;
-  width: 16.66%;
-}
-.Index_icon_with_text_list_allloop_innerboxs_new {
-}
-.Index_icon_with_text_list_allloop_innerboxs_icons_new {
-  text-align: center;
-}
-.Index_icon_with_text_list_allloop_innerboxs_icons_new img {
-  max-width: initial;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  height: 50px !important;
-}
-.Index_icon_with_text_list_allloop_innerboxs_title_new {
-  padding-top: 16px;
-  padding-bottom: 20px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 125%;
-  letter-spacing: 0.16px;
-}
-
 .index-popup-overlay {
   position: fixed;
   width: 100vw;
@@ -5340,90 +5174,7 @@ summary .icon-caret {
   bottom: 0;
   display: none;
 }
-.Index_icon_with_text_list_allloop_popup_new {
-  max-width: 680px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  z-index: 99999999;
-  padding: 20px;
-  display: none;
-}
-.Index_icon_with_text_list_allloop_popup_inner_new {
-  height: 100%;
-  background: #fff;
-  border-radius: 8px;
-}
-.Index_icon_with_text_list_allloop_popup_title_new {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  border-bottom: 1px solid #e5e7eb;
-}
-.Index_icon_with_text_list_allloop_popup_title_left_new {
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.6px;
-}
-.Index_icon_with_text_list_allloop_popup_title_right_new {
-  width: 32px;
-  height: 32px;
-  padding: 6px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-.Index_icon_with_text_list_allloop_popup_title_right_new:hover {
-  background: #e5e7eb;
-  color: #000;
-}
-.Index_icon_with_text_list_allloop_popup_title_right_new svg {
-  display: flex;
-}
-.Index_icon_with_text_list_allloop_popup_desc_main_new {
-  padding: 24px;
-}
-.Index_icon_with_text_list_allloop_popup_desc_new {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 140%;
-}
-.Index_icon_with_text_list_allloop_popup_desc_new p {
-  margin: 0 0 10px 0;
-}
-.Index_icon_with_text_list_allloop_popup_desc_new ul {
-  padding: 0;
-  margin: 15px 0;
-  display: flex;
-  flex-wrap: wrap;
-  grid-gap: 10px;
-}
-.Index_icon_with_text_list_allloop_popup_desc_new ul li {
-  list-style-type: none;
-  width: calc(25% - 8px);
-}
-.Index_icon_with_text_list_allloop_popup_desc_new strong {
-  font-weight: 800;
-  font-family: var(--font-body-family);
-}
-.Index_icon_with_text_list_allloop_popup_desc_new h6 {
-  font-family: var(--font-body-family);
-  font-weight: 400;
-  text-align: center;
-  margin: 20px 0 15px 0;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 140%;
-}
-.Index_icon_with_text_list_allloop_popup_button_new {
-  text-align: center;
-  margin-top: 20px;
-}
-.Index_icon_with_text_list_allloop_mainboxs_new {
-  cursor: pointer;
-}
+
 
 .Index_custom_collections_main_new {
   margin: 18px 0;
@@ -16519,25 +16270,6 @@ label[for="AddressProvinceNew"] {
     background-size: 10px;
   }
 
-  .Index_icon_with_text_list_main_new {
-    margin: 36px 0;
-  }
-  .Index_icon_with_text_list_allloop_new {
-    flex-flow: wrap;
-    grid-gap: 40px;
-  }
-  .Index_icon_with_text_list_allloop_mainboxs_new {
-    width: calc(50% - 20px);
-    padding: 0px;
-  }
-  .Index_icon_with_text_list_allloop_popup_desc_new ul li {
-    width: calc(50% - 5px);
-  }
-  .Index_icon_with_text_list_allloop_popup_inner_new {
-    max-height: 600px;
-    overflow: scroll;
-  }
-
   .Index_custom_collections_main_new {
     margin: 10px 0;
   }
@@ -20077,20 +19809,6 @@ label[for="AddressProvinceNew"] {
     height: 40px;
     background-size: 12px;
   }
-
-  .Index_icon_with_text_list_main_new {
-    margin: 30px auto;
-  }
-  .Index_icon_with_text_list_allloop_new {
-    grid-gap: 0px;
-  }
-  .Index_icon_with_text_list_allloop_mainboxs_new {
-    padding: 15px;
-  }
-  .Index_icon_with_text_list_allloop_innerboxs_title_new {
-    font-size: 15px;
-  }
-
   .Index_custom_collections_main_new {
     margin: 10px auto;
   }
@@ -21696,10 +21414,6 @@ label[for="AddressProvinceNew"] {
   /* Header */
 
   /* Index */
-  .Index_icon_with_text_list_allloop_new {
-    grid-gap: 0px;
-  }
-
   .Index_custom_collections_allloop_innerboxs_3_new {
     padding: 20px 15px;
   }
