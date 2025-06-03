@@ -1322,19 +1322,6 @@ select {
 .header_second_menu_new .list-menu > li:first-child {
   margin-left: 0;
 }
-.header__menu-item {
-  padding: 19px 7px !important;
-  font-size: 13.6px;
-  font-weight: 500;
-  line-height: 16px !important;
-  letter-spacing: 0;
-  text-transform: uppercase;
-  position: relative;
-}
-.header__icon--menu {
-  width: 48px;
-  height: 48px;
-}
 .header__icon,
 .header__icon--cart .icon {
   height: 32px;
