@@ -450,12 +450,12 @@
         setTimeout(() => observer.disconnect(), 10000);
         
         // Optional: if window resized and you want to move again
-        window.addEventListener('resize', () => {
-          const aside = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
-          if (aside) {
-            aside.dataset.moved = 'false'; // Reset move state
-            moveAsideBasedOnWidth();
-          }
+        // window.addEventListener('resize', () => {
+        //   const aside = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
+        //   if (aside) {
+        //     aside.dataset.moved = 'false'; // Reset move state
+        //     moveAsideBasedOnWidth();
+        //   }
         });
     </script>
   {% schema %}
