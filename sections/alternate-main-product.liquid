@@ -425,24 +425,39 @@
     var CounterDesktop = document.querySelector('.visitors_counter.visitors_counter_desktop');
     var CounterMobile = document.querySelector('.visitors_counter.visitors_counter_mobile');
 
-    if (!VisitorCounter) return;
+    if (!VisitorCounter || (!CounterDesktop && !CounterMobile)) return;
 
+    // Check if it's already moved to the correct place
     if (window.innerWidth < 749) {
-      if (CounterMobile) {
+      if (CounterMobile && !CounterMobile.contains(VisitorCounter)) {
         CounterMobile.appendChild(VisitorCounter);
       }
     } else {
-      if (CounterDesktop) {
+      if (CounterDesktop && !CounterDesktop.contains(VisitorCounter)) {
         CounterDesktop.appendChild(VisitorCounter);
       }
     }
   }
 
-  // Run immediately
-  setTimeout(moveVisitorCounter, 250);
+  // Observe for dynamic loading of the visitor counter
+  const observer = new MutationObserver(() => {
+    const target = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
+    if (target) {
+      moveVisitorCounter();
+      observer.disconnect(); // Stop observing once found and moved
+    }
+  });
 
-  // Optional: run again on resize in case screen size changes
-  window.addEventListener('resize', function () {
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
+
+  // Also run once after short delay (safety net)
+  setTimeout(moveVisitorCounter, 500);
+
+  // Optional: run again on resize in case of orientation changes
+  window.addEventListener('resize', () => {
     setTimeout(moveVisitorCounter, 250);
   });
 });
