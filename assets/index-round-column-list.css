@@ -1,4 +1,6 @@
-
+.Index_round_column_list_main_new {
+  display: none;
+}
 
 @media (min-width: 0px) and (max-width: 749px) {
   .Index_round_column_list_main_new {

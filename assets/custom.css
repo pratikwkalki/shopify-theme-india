@@ -5366,11 +5366,6 @@ summary .icon-caret {
   display: inline-block;
   text-underline-offset: 2px;
 }
-
-.Index_round_column_list_main_new {
-  display: none;
-}
-
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
