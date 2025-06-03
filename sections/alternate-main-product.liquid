@@ -423,7 +423,7 @@
       
         if (aside && !aside.dataset.moved) {
           if (window.innerWidth <= 749 && mobileContainer) {
-            mobileContainer.appendChild(aside);
+            mobileContainer.insertAdjacentElement(aside);
           } else if (blockTitle) {
             blockTitle.insertAdjacentElement('afterend', aside);
           }
