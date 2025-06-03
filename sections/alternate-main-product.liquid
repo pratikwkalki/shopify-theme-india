@@ -416,33 +416,30 @@
     });
 
    
-
+    // this is for traficly set below buynow button 
+           window.addEventListener('load', function () {
+            setTimeout(function () {
+              var VisitorCounter = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
+              var CounterDesktop = document.querySelector('.visitors_counter.visitors_counter_desktop');
+              var CounterMobile = document.querySelector('.visitors_counter.visitors_counter_mobile');
+          
+              if (!VisitorCounter) return;
+          
+              if (window.innerWidth < 749) {
+                if (CounterMobile) {
+                  CounterMobile.appendChild(VisitorCounter);
+                }
+              } else {
+                if (CounterDesktop) {
+                  CounterDesktop.appendChild(VisitorCounter);
+                }
+              }
+            }, 1000); // Delay in milliseconds (1000ms = 2s)
+          });
   
 
      
   </script>
-    <script>
-      // this is for traficly set below buynow button 
-       window.addEventListener('load', function () {
-        setTimeout(function () {
-          var VisitorCounter = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
-          var CounterDesktop = document.querySelector('.visitors_counter.visitors_counter_desktop');
-          var CounterMobile = document.querySelector('.visitors_counter.visitors_counter_mobile');
-      
-          if (!VisitorCounter) return;
-      
-          if (window.innerWidth < 749) {
-            if (CounterMobile) {
-              CounterMobile.appendChild(VisitorCounter);
-            }
-          } else {
-            if (CounterDesktop) {
-              CounterDesktop.appendChild(VisitorCounter);
-            }
-          }
-        }, 1000); // Delay in milliseconds (1000ms = 2s)
-      });
-    </script>
   {% schema %}
   {
     "name": "Alternate Template",
