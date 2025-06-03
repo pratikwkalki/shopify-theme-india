@@ -424,17 +424,17 @@
     <script>
       // this is for traficly set below buynow button 
         function moveAsideConditionally() {
-          var aside = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
-          var blockTitle = document.querySelector('.shopify-payment-button__button.shopify-payment-button__button--unbranded');
+          var visitors = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
+          var shopiButton = document.querySelector('.shopify-payment-button__button.shopify-payment-button__button--unbranded');
           var mobileContainer = document.querySelector('.visitors_counter.visitors_counter_mobile');
         
-          if (aside && !aside.dataset.moved) {
+          if (visitors && !visitors.dataset.moved) {
             if (window.innerWidth <= 749 && mobileContainer) {
-              mobileContainer.appendChild(aside);
-            } else if (blockTitle) {
-              blockTitle.insertAdjacentElement('afterend', aside);
+              mobileContainer.appendChild(visitors);
+            } else if (shopiButton) {
+              shopiButton.insertAdjacentElement('afterend', visitors);
             }
-            aside.dataset.moved = 'true'; // Avoid moving again
+            visitors.dataset.moved = 'true'; // Avoid moving again
           }
         }
         
@@ -444,10 +444,10 @@
         });
         
         // Start observing body for changes
-        // observer.observe(document.body, {
-        //   childList: true,
-        //   subtree: true
-        // });
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
         
         // Optional: stop observing after a while
         setTimeout(() => observer.disconnect(), 10000);
