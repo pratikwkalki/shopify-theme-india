@@ -423,34 +423,40 @@
   </script>
     <script>
       // this is for traficly set below buynow button 
-        function moveAsideConditionally() {
+        function movevisitorsBasedOnWidth() {
           var visitors = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
           var shopiButton = document.querySelector('.shopify-payment-button__button.shopify-payment-button__button--unbranded');
           var mobileContainer = document.querySelector('.visitors_counter.visitors_counter_mobile');
         
-          if (visitors && !visitors.dataset.moved) {
-            if (window.innerWidth <= 749 && mobileContainer) {
-              mobileContainer.appendChild(visitors);
-            } else if (shopiButton) {
-              shopiButton.insertAdjacentElement('afterend', visitors);
-            }
-            visitors.dataset.moved = 'true'; // Avoid moving again
+          if (!visitors || visitors.dataset.moved === 'true') return;
+        
+          if (window.innerWidth <= 749 && mobileContainer) {
+            mobileContainer.appendChild(visitors);
+          } else if (shopiButton) {
+            shopiButton.insertAdjacentElement('afterend', visitors);
           }
+        
+          visitors.dataset.moved = 'true'; // Prevent repeated moves
         }
         
-        // Observe DOM changes
+        // Use MutationObserver to handle dynamic DOM loading
         const observer = new MutationObserver(() => {
-          moveAsideConditionally();
+          movevisitorsBasedOnWidth();
         });
         
-        // Start observing body for changes
-        observer.observe(document.body, {
-          childList: true,
-          subtree: true
-        });
+        observer.observe(document.body, { childList: true, subtree: true });
         
-        // Optional: stop observing after a while
+        // Stop observing after 10s (optional for performance)
         setTimeout(() => observer.disconnect(), 10000);
+        
+        // Optional: if window resized and you want to move again
+        window.addEventListener('resize', () => {
+          const visitors = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
+          if (visitors) {
+            visitors.dataset.moved = 'false'; // Reset move state
+            movevisitorsBasedOnWidth();
+          }
+        });
     </script>
   {% schema %}
   {
