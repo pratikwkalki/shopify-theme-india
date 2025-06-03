@@ -423,33 +423,33 @@
   </script>
     <script>
       // this is for traficly set below buynow button 
-      function moveAsideConditionally() {
-            var aside = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
-            var blockTitle = document.querySelector('.shopify-payment-button__button.shopify-payment-button__button--unbranded');
-            var mobileContainer = document.querySelector('.visitors_counter.visitors_counter_mobile');
+      // function moveAsideConditionally() {
+      //       var aside = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
+      //       var blockTitle = document.querySelector('.shopify-payment-button__button.shopify-payment-button__button--unbranded');
+      //       var mobileContainer = document.querySelector('.visitors_counter.visitors_counter_mobile');
           
             
-              if (window.innerWidth <= 749 && mobileContainer) {
-                mobileContainer.appendChild(aside);
-              } else if (blockTitle) {
-                blockTitle.insertAdjacentElement('afterend', aside);
-              }
+      //         if (window.innerWidth <= 749 && mobileContainer) {
+      //           mobileContainer.appendChild(aside);
+      //         } else if (blockTitle) {
+      //           blockTitle.insertAdjacentElement('afterend', aside);
+      //         }
            
-          }
+      //     }
           
-          // Observe DOM changes
-          const observer = new MutationObserver(() => {
-            moveAsideConditionally();
-          });
+      //     // Observe DOM changes
+      //     const observer = new MutationObserver(() => {
+      //       moveAsideConditionally();
+      //     });
           
-          // Start observing body for changes
-          observer.observe(document.body, {
-            childList: true,
-            subtree: true
-          });
+      //     // Start observing body for changes
+      //     observer.observe(document.body, {
+      //       childList: true,
+      //       subtree: true
+      //     });
           
-          // Optional: stop observing after a while
-          setTimeout(() => observer.disconnect(), 10000);
+      //     // Optional: stop observing after a while
+      //     setTimeout(() => observer.disconnect(), 10000);
     </script>
   {% schema %}
   {
