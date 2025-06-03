@@ -318,11 +318,6 @@
         "disabled": false,
         "settings": {}
       },
-      "3807995532714858160": {
-        "type": "shopify://apps/trafficly-visitors-counter/blocks/trafficly/ff0a9f47-c478-468c-8fa1-f5a7bb122960",
-        "disabled": true,
-        "settings": {}
-      },
       "14339172867238703359": {
         "type": "shopify://apps/yotpo-product-reviews/blocks/reviews_tab/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
         "disabled": false,
@@ -348,6 +343,11 @@
           "label_name": "",
           "label_email": ""
         }
+      },
+      "3807995532714858160": {
+        "type": "shopify://apps/trafficly-visitors-counter/blocks/trafficly/ff0a9f47-c478-468c-8fa1-f5a7bb122960",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
