@@ -73,6 +73,7 @@
                 </div>
                 <div class="index-popup-overlay"></div>
                 {% if section.settings.manufacturing_popup != blank %}
+                  {{ 'index_icon_with_text.css' | asset_url | stylesheet_tag }}
                   <div class="Index_icon_with_text_list_allloop_popup_new popup_manufacturing_open">
                     <div class="Index_icon_with_text_list_allloop_popup_inner_new">
                       <div>
