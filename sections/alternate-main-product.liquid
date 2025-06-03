@@ -423,40 +423,34 @@
   </script>
     <script>
       // this is for traficly set below buynow button 
-        function moveAsideBasedOnWidth() {
+        function moveAsideConditionally() {
           var aside = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
           var blockTitle = document.querySelector('.shopify-payment-button__button.shopify-payment-button__button--unbranded');
           var mobileContainer = document.querySelector('.visitors_counter.visitors_counter_mobile');
         
-          if (!aside || aside.dataset.moved === 'true') return;
-        
-          if (window.innerWidth <= 749 && mobileContainer) {
-            mobileContainer.insertAdjacentElement('afterend', aside);
-          } else if (blockTitle) {
-            blockTitle.insertAdjacentElement('afterend', aside);
+          if (aside && !aside.dataset.moved) {
+            if (window.innerWidth <= 749 && mobileContainer) {
+              mobileContainer.appendChild(aside);
+            } else if (blockTitle) {
+              blockTitle.insertAdjacentElement('afterend', aside);
+            }
+            aside.dataset.moved = 'true'; // Avoid moving again
           }
-        
-          aside.dataset.moved = 'true'; // Prevent repeated moves
         }
         
-        // Use MutationObserver to handle dynamic DOM loading
+        // Observe DOM changes
         const observer = new MutationObserver(() => {
-          moveAsideBasedOnWidth();
+          moveAsideConditionally();
         });
         
-        observer.observe(document.body, { childList: true, subtree: true });
+        // Start observing body for changes
+        observer.observe(document.body, {
+          childList: true,
+          subtree: true
+        });
         
-        // Stop observing after 10s (optional for performance)
+        // Optional: stop observing after a while
         setTimeout(() => observer.disconnect(), 10000);
-        
-        // Optional: if window resized and you want to move again
-        window.addEventListener('resize', () => {
-          const aside = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
-          if (aside) {
-            aside.dataset.moved = 'false'; // Reset move state
-            moveAsideBasedOnWidth();
-          }
-        });
     </script>
   {% schema %}
   {
