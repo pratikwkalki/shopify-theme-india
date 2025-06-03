@@ -417,14 +417,13 @@
 
    
     // this is for traficly set below buynow button 
-            document.addEventListener('DOMContentLoaded', function () {
+           
+            
+            window.addEventListener('load', function () {
               var VisitorCounter = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
               if (VisitorCounter) {
                 VisitorCounter.classList.add('visitor-counter-hidden-important');
               }
-            });
-            
-            window.addEventListener('load', function () {
               setTimeout(function () {
                 var VisitorCounter = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
                 var CounterDesktop = document.querySelector('.visitors_counter.visitors_counter_desktop');
