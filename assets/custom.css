@@ -8371,6 +8371,9 @@ div[data-widget-style] div.stamped-container {
   color: rgba(199, 157, 111);
   text-decoration: none;
 }
+.Collection_descriptions_infos_new ul li h3{
+  display: inline
+}
 .read_more_new {
   margin: 20px 0 0;
   font-size: 14px;
