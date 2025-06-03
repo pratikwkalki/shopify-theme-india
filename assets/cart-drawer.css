@@ -36,6 +36,7 @@
     position: absolute;
     right: 16px;
     top: 16px;
+    transition: none;
 }
 .cart-drawer .drawer__close svg {
     width: 100%;
