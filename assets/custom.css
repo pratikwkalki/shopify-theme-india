@@ -1308,13 +1308,6 @@ select {
   display: flex;
   flex-direction: column;
 }
-.header_top_new {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 16px 0 12px;
-}
 .Header_desktop_left_menu_main_new,
 .header__icons {
   width: calc(50% - 65px);
@@ -1324,10 +1317,6 @@ select {
 .main-cart-drawer.is-empty .cart-drawer .drawer__inner,
 .menu-drawer-container {
   display: flex;
-}
-.header__icons {
-  justify-content: flex-end;
-  grid-gap: 18px;
 }
 .header_second_menu_new .list-menu {
   grid-gap: 0px;
