@@ -378,11 +378,14 @@
 
   // this is for traficly set below buynow button 
            window.addEventListener('load', function () {
+             
             setTimeout(function () {
               var VisitorCounter = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
               var CounterDesktop = document.querySelector('.visitors_counter.visitors_counter_desktop');
               var CounterMobile = document.querySelector('.visitors_counter.visitors_counter_mobile');
-          
+                if (VisitorCounter) {
+                  VisitorCounter.setAttribute("style", "display: block !important;");
+                }
               if (!VisitorCounter) return;
           
               if (window.innerWidth < 749) {
