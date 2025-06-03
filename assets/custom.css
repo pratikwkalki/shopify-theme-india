@@ -173,7 +173,6 @@ body {
     font-weight: 500;
     line-height: 116.667%;
   }
-  
   .swiper-button-next,
   .swiper-button-prev {
     width: 36px;
@@ -5523,43 +5522,7 @@ summary .icon-caret {
   background: #ffffff !important;
 }
 
-.Index_top_banner_slider_inner_new .swiper-pagination {
-  width: 100%;
-  position: absolute !important;
-}
 
-.Index_top_banner_slider_main_new {
-  margin-bottom: 30px;
-}
-.Index_top_banner_slider_inner_new .swiper-pagination {
-  position: static;
-  padding-top: 36px;
-}
-.Index_top_banner_slider_inner_new
-  .swiper-pagination
-  .swiper-pagination-bullet {
-  background-color: rgba(0, 0, 0, 1);
-}
-.Index_top_banner_slider_allloop_new {
-}
-.Index_top_banner_slider_allloop_mainboxs_new {
-}
-.Index_top_banner_slider_allloop_innerboxs_new {
-}
-.Index_top_banner_slider_allloop_innerboxs_videoimageboth_new {
-  position: relative; /*height: 540px;*/
-}
-.Index_top_banner_slider_allloop_innerboxs_videoimage_new {
-}
-.Index_top_banner_slider_allloop_innerboxs_videoimage_new img {
-  width: 100%;
-  z-index: 1;
-  position: relative;
-  display: block; /*position:absolute; object-fit:cover; top:0; left:0; bottom:0; right:0; height:100% !important;*/
-}
-.Index_top_banner_slider_allloop_innerboxs_videoimage_new video {
-  width: 100%; /*position:absolute; object-fit:cover; top:0; left:0; bottom:0; right:0; height:100% !important;*/
-}
 .swiper-button-prev {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.95) url("left_arrow_slider.svg") no-repeat
@@ -16909,14 +16872,6 @@ label[for="AddressProvinceNew"] {
     line-height: 116.667%;
   }
 
-  .Index_top_banner_slider_main_new {
-    margin: 17px 0;
-  }
-  .Index_top_banner_slider .swiper-button-next {
-  }
-  .Index_top_banner_slider .swiper-button-prev {
-  }
-
   .swiper-button-prev {
     width: 36px;
     height: 34px;
@@ -20491,12 +20446,7 @@ label[for="AddressProvinceNew"] {
     min-width: 130px;
     letter-spacing: 0.6px;
   }
-
-  /* Index (min-width:750px) and (max-width:989px)*/
-  .Index_top_banner_slider_main_new {
-    margin: 20px auto;
-  }
-
+  
   .swiper-button-next {
     width: 42px;
     height: 40px;
