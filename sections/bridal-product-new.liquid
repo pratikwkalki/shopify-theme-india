@@ -389,10 +389,12 @@
     if (window.innerWidth < 749) {
       if (CounterMobile && !CounterMobile.contains(VisitorCounter)) {
         CounterMobile.appendChild(VisitorCounter);
+        VisitorCounter.classList.add('visitor-counter-visable');
       }
     } else {
       if (CounterDesktop && !CounterDesktop.contains(VisitorCounter)) {
         CounterDesktop.appendChild(VisitorCounter);
+        VisitorCounter.classList.add('visitor-counter-visable');
       }
     }
   }
