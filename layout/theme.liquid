@@ -496,7 +496,32 @@
   
   <script src="{{ 'scroll-to-products.js' | asset_url }}" defer="defer"></script>
 
-
+<script>
+  window.addEventListener('load', function () {
+              
+              setTimeout(function () {
+                var VisitorCounter = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
+                var CounterDesktop = document.querySelector('.visitors_counter.visitors_counter_desktop');
+                var CounterMobile = document.querySelector('.visitors_counter.visitors_counter_mobile');
+            
+                if (!VisitorCounter) return;
+            
+                if (window.innerWidth < 749) {
+                  if (CounterMobile) {
+                    CounterMobile.appendChild(VisitorCounter);
+                  }
+                } else {
+                  if (CounterDesktop) {
+                    CounterDesktop.appendChild(VisitorCounter);
+                  }
+                }
+            
+                // Swap visibility classes
+                
+                VisitorCounter.classList.add('visitor-counter-visible-important');
+              }, 250);
+            });
+</script>
   
   </head>
 
