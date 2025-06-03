@@ -1,0 +1,34 @@
+.Page_weaves_top_banner_main_new {
+  margin: 0 0 48px;
+}
+@media (min-width: 750px) and (max-width: 989px) {
+  .Page_weaves_top_banner_main_new {
+    margin: 0 0 20px;
+  }
+  .Page_weaves_top_banner_main_new
+    .Page_collection_detail_template_banner_videoimage_new {
+    height: auto;
+  }
+  .Page_weaves_top_banner_main_new
+    .Page_collection_detail_template_banner_videoimage_new
+    img {
+    position: relative;
+  }
+}
+@media (min-width: 0px) and (max-width: 749px) {
+  .Page_weaves_top_banner_main_new {
+    margin: 0 0 20px;
+  }
+  .Page_weaves_top_banner_main_new .page-width {
+    padding: 0 !important;
+  }
+  .Page_weaves_top_banner_main_new
+    .Page_collection_detail_template_banner_videoimage_new {
+    height: auto;
+  }
+  .Page_weaves_top_banner_main_new
+    .Page_collection_detail_template_banner_videoimage_new
+    img {
+    position: relative;
+  }
+}
