@@ -1,4 +1,5 @@
 {%- if section.blocks.size > 0 -%}
+  {{ 'index-round-column-list.css' | asset_url | stylesheet_tag: preload: true }}
   <div class="Index_round_column_list_main_new {{ section.settings.customClass }}" style="background: {{ section.settings.main_background_color }}; min-height: 156px;" x-data="{ isMobile: window.innerWidth <= 749 }">
     <template x-if="isMobile">
       <div class="Index_round_column_list_inner_new">
