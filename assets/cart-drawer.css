@@ -390,6 +390,7 @@
     align-items: center;
     padding: 12px 20px;
     min-height: 84px;
+    transition: none;
 }
 .cart-drawer .menu-link .img-wrap {
     max-width: 49px;
