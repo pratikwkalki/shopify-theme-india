@@ -1811,17 +1811,7 @@ cart-drawer.is-empty .drawer__header {
   padding-top: 19px;
   text-align: center;
 }
-.Index_form_app_detail_parts_new {
-  position: relative;
-  padding: 50px;
-}
-.Index_form_app_detail_parts_1_new {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 .Index_arrivals_details_innerleft_1_leftside_videoimage_new img,
 .Index_arrivals_details_innerleft_2_rightside_1_toppart_videoimage_new img,
 .Index_arrivals_details_innerleft_2_rightside_2_bottompart_1_leftside_videoimage_new
@@ -1933,9 +1923,6 @@ cart-drawer.is-empty .drawer__header {
   .Index_custom_collections_allloop_innerboxs_3_button_new {
     padding-top: 10px;
   }
-  .Index_form_app_detail_parts_new {
-    padding: 40px 16px;
-  }
   .Footer_common_title_new span {
     display: inline-block;
     float: right;
@@ -1983,12 +1970,7 @@ cart-drawer.is-empty .drawer__header {
   .Index_custom_collections_allloop_innerboxs_3_button_new {
     padding-top: 12px;
   }
-  .Index_form_app_detail_main_new {
-    margin: 10px 0;
-  }
-  .Index_form_app_detail_parts_new {
-    padding: 40px;
-  }
+  
 }
 @media (min-width: 990px) and (max-width: 1424px) {
   .page-width {
@@ -5328,86 +5310,6 @@ summary .icon-caret {
 .collection_header_transparent_new .content-for-layout {
   margin-top: 0;
 }
-.Index_form_app_detail_main_new {
-  margin: 32px 0;
-}
-.Index_form_app_detail_inner_new {
-}
-.Index_form_app_detail_parts_new {
-  position: relative;
-  padding: 50px;
-}
-.Index_form_app_detail_parts_1_new {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.Index_form_app_detail_parts_1_detail_new {
-}
-.Index_form_app_detail_parts_1_detail_videoimageboth_new {
-}
-.Index_form_app_detail_parts_1_detail_videoimage_new {
-}
-.Index_form_app_detail_parts_1_detail_videoimage_new video {
-  width: 100%;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  height: 100% !important;
-}
-.Index_form_app_detail_parts_1_detail_videoimage_new img {
-  width: 100%;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  height: 100% !important;
-}
-.Index_form_app_detail_parts_2_new {
-  position: relative;
-  z-index: 1;
-}
-.Index_form_app_detail_parts_2_detail_new {
-}
-.Index_form_app_detail_parts_2_detail_title_new {
-  text-align: center;
-}
-.Index_form_app_detail_parts_2_detail_title_new h2 {
-  margin: 0;
-  text-align: center;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 118.222%;
-  text-transform: capitalize;
-  color: #fff;
-}
-.Index_form_app_detail_parts_2_detail_title_new h2 p {
-  margin: 0;
-  font-family: var(--font-noto-serif-display);
-}
-.Index_form_app_detail_parts_2_detail_infos_new {
-  text-align: center;
-  padding-top: 18px;
-  color: #fff;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 120%;
-}
-.Index_form_app_detail_parts_2_detail_infos_new p {
-  margin: 0;
-}
-.Index_form_app_detail_parts_2_detail_forms_new {
-  padding-top: 14px;
-}
-
 .Index_information_lists_main_new {
   margin: 18px 0;
 }
@@ -16314,24 +16216,6 @@ label[for="AddressProvinceNew"] {
   .Index_custom_collections_allloop_innerboxs_3_subtitle_new p {
     font-size: 14px;
   }
-  .Index_form_app_detail_main_new {
-    margin: 10px 0;
-  }
-  .Index_form_app_detail_parts_new {
-    padding: 40px 16px;
-  }
-  .Index_form_app_detail_parts_2_detail_title_new h2 {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 122.222%;
-    letter-spacing: 0.18px;
-  }
-  .Index_form_app_detail_parts_2_detail_infos_new {
-    padding: 6px 10px 0 10px;
-    font-size: 12px;
-    line-height: 133.33%;
-  }
-
   .Index_information_lists_main_new {
     margin: 10px 0;
   }
@@ -19834,27 +19718,12 @@ label[for="AddressProvinceNew"] {
   .Index_custom_collections_allloop_innerboxs_3_button_new {
     padding-top: 12px;
   }
-
-  .Index_form_app_detail_main_new {
-    margin: 10px 0;
-  }
-  .Index_form_app_detail_parts_new {
-    padding: 40px;
-  }
-  .Index_form_app_detail_parts_2_detail_title_new h2 {
-    font-size: 24px;
-  }
-  .Index_form_app_detail_parts_2_detail_infos_new {
-    font-size: 13px;
-  }
-
   .Index_information_lists_main_new {
     margin: 10px 0;
   }
   .Index_information_lists_allloop_innerboxs_new {
     font-size: 18px;
   }
-
   .Index_custom_category_main_new {
     margin: 40px 0;
   }
@@ -19864,7 +19733,6 @@ label[for="AddressProvinceNew"] {
   .Index_custom_category_innerloop_innerboxs_2_titletextboth_new h2 p {
     font-size: 18px;
   }
-
   .Index_side_by_side_banner_main_new {
     margin: 40px 0;
   }
