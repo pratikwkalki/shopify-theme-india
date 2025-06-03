@@ -419,26 +419,34 @@
     // this is for traficly set below buynow button 
            
           
-            window.addEventListener('load', function () {
-              
-              setTimeout(function () {
-                var VisitorCounter = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
-                var CounterDesktop = document.querySelector('.visitors_counter.visitors_counter_desktop');
-                var CounterMobile = document.querySelector('.visitors_counter.visitors_counter_mobile');
-            
-                if (!VisitorCounter) return;
-            
-                if (window.innerWidth < 749) {
-                  if (CounterMobile) {
-                    CounterMobile.appendChild(VisitorCounter);
-                  }
-                } else {
-                  if (CounterDesktop) {
-                    CounterDesktop.appendChild(VisitorCounter);
-                  }
-                }
-              }, 250);
-            });
+            document.addEventListener('DOMContentLoaded', function () {
+  function moveVisitorCounter() {
+    var VisitorCounter = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
+    var CounterDesktop = document.querySelector('.visitors_counter.visitors_counter_desktop');
+    var CounterMobile = document.querySelector('.visitors_counter.visitors_counter_mobile');
+
+    if (!VisitorCounter) return;
+
+    if (window.innerWidth < 749) {
+      if (CounterMobile) {
+        CounterMobile.appendChild(VisitorCounter);
+      }
+    } else {
+      if (CounterDesktop) {
+        CounterDesktop.appendChild(VisitorCounter);
+      }
+    }
+  }
+
+  // Run immediately
+  setTimeout(moveVisitorCounter, 250);
+
+  // Optional: run again on resize in case screen size changes
+  window.addEventListener('resize', function () {
+    setTimeout(moveVisitorCounter, 250);
+  });
+});
+
 
      
   </script>
