@@ -417,28 +417,36 @@
 
    
     // this is for traficly set below buynow button 
-            window.addEventListener('load', function () {
-             
-            setTimeout(function () {
+            document.addEventListener('DOMContentLoaded', function () {
               var VisitorCounter = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
-              var CounterDesktop = document.querySelector('.visitors_counter.visitors_counter_desktop');
-              var CounterMobile = document.querySelector('.visitors_counter.visitors_counter_mobile');
-                if (VisitorCounter) {
-                  VisitorCounter.setAttribute("style", "display: block !important;");
-                }
-              if (!VisitorCounter) return;
-          
-              if (window.innerWidth < 749) {
-                if (CounterMobile) {
-                  CounterMobile.appendChild(VisitorCounter);
-                }
-              } else {
-                if (CounterDesktop) {
-                  CounterDesktop.appendChild(VisitorCounter);
-                }
+              if (VisitorCounter) {
+                VisitorCounter.classList.add('visitor-counter-hidden-important');
               }
-            }, 250); // Delay in milliseconds (250ms = 15s)
-          });
+            });
+            
+            window.addEventListener('load', function () {
+              setTimeout(function () {
+                var VisitorCounter = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
+                var CounterDesktop = document.querySelector('.visitors_counter.visitors_counter_desktop');
+                var CounterMobile = document.querySelector('.visitors_counter.visitors_counter_mobile');
+            
+                if (!VisitorCounter) return;
+            
+                if (window.innerWidth < 749) {
+                  if (CounterMobile) {
+                    CounterMobile.appendChild(VisitorCounter);
+                  }
+                } else {
+                  if (CounterDesktop) {
+                    CounterDesktop.appendChild(VisitorCounter);
+                  }
+                }
+            
+                // Swap visibility classes
+                VisitorCounter.classList.remove('visitor-counter-hidden-important');
+                VisitorCounter.classList.add('visitor-counter-visible-important');
+              }, 2000);
+            });
 
      
   </script>
