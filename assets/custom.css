@@ -6,7 +6,7 @@ font-family: var(--font-northwell);  - 'Northwell'
 */
 @font-face {
   font-family: "Futura";
-  src: url("https://cdn.shopify.com/s/files/1/0636/0134/4666/files/FuturaBook.woff2?v=1737518189")
+  src: url("https://kalki.gumlet.io/cdn/shop/files/FuturaBook.woff2?v=1737518189")
     format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -14,7 +14,7 @@ font-family: var(--font-northwell);  - 'Northwell'
 }
 @font-face {
   font-family: "Futura";
-  src: url("https://cdn.shopify.com/s/files/1/0636/0134/4666/files/FuturaMedium.woff2?v=1737518188")
+  src: url("https://kalki.gumlet.io/cdn/shop/files/FuturaMedium.woff2?v=1737518188")
     format("woff2");
   font-weight: 500;
   font-style: normal;
@@ -22,7 +22,7 @@ font-family: var(--font-northwell);  - 'Northwell'
 }
 @font-face {
   font-family: "Futura";
-  src: url("https://cdn.shopify.com/s/files/1/0636/0134/4666/files/FuturaHeavy.woff2?v=1737518189")
+  src: url("https://kalki.gumlet.io/cdn/shop/files/FuturaHeavy.woff2?v=1737518189")
     format("woff2");
   font-weight: 900;
   font-style: normal;
@@ -31,7 +31,7 @@ font-family: var(--font-northwell);  - 'Northwell'
 
 @font-face {
   font-family: "Futura Now Headline";
-  src: url("https://cdn.shopify.com/s/files/1/0636/0134/4666/files/futuranowheadline-webfont.woff2?v=1717482979")
+  src: url("https://kalki.gumlet.io/cdn/shop/files/futuranowheadline-webfont.woff2?v=1717482979")
     format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -40,7 +40,7 @@ font-family: var(--font-northwell);  - 'Northwell'
 
 @font-face {
   font-family: "Futura Now Headline";
-  src: url("https://cdn.shopify.com/s/files/1/0636/0134/4666/files/futuranowheadlinebold-webfont.woff2?v=1717482979")
+  src: url("https://kalki.gumlet.io/cdn/shop/files/futuranowheadlinebold-webfont.woff2?v=1717482979")
     format("woff2");
   font-weight: 700;
   font-style: normal;
@@ -49,7 +49,7 @@ font-family: var(--font-northwell);  - 'Northwell'
 
 @font-face {
   font-family: "Futura Now Headline";
-  src: url("https://cdn.shopify.com/s/files/1/0636/0134/4666/files/futuranowheadlinemedium-webfont.woff2?v=1717482979")
+  src: url("https://kalki.gumlet.io/cdn/shop/files/futuranowheadlinemedium-webfont.woff2?v=1717482979")
     format("woff2");
   font-weight: 500;
   font-style: normal;
@@ -57,7 +57,7 @@ font-family: var(--font-northwell);  - 'Northwell'
 }
 @font-face {
   font-family: "NewYork PERSONAL USE";
-  src: url("https://cdn.shopify.com/s/files/1/0636/0134/4666/files/NewYork_PERSONAL_USE.woff?v=1747200530")
+  src: url("https://kalki.gumlet.io/cdn/shop/files/NewYork_PERSONAL_USE.woff?v=1747200530")
     format("woff");
   font-style: normal;
   font-weight: normal;
