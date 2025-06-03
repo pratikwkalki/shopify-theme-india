@@ -423,44 +423,27 @@
   </script>
     <script>
       // this is for traficly set below buynow button 
-        function moveAsideBasedOnWidth() {
+        function moveAsideAfterBlockTitle() {
   var aside = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
   var blockTitle = document.querySelector('.shopify-payment-button__button.shopify-payment-button__button--unbranded');
-  var mobileContainer = document.querySelector('.visitors_counter.visitors_counter_mobile');
 
-  // Make sure the popup script has fully initialized it (optional, if popup adds a marker class or data-attribute)
-  if (!aside || aside.dataset.moved === 'true') return;
-
-  // Wait until the popup has been initialized, if needed (some apps attach listeners at init only)
-  if (!aside.classList.contains('carecart-initialized')) {
-    // You can change this check if your popup plugin uses another init signal
-    return;
-  }
-
-  if (window.innerWidth <= 749 && mobileContainer) {
-    mobileContainer.appendChild(aside);
-  } else if (blockTitle) {
+  if (aside && blockTitle && !aside.dataset.moved) {
     blockTitle.insertAdjacentElement('afterend', aside);
+    aside.dataset.moved = 'true'; // Prevent moving again
   }
-
-  aside.dataset.moved = 'true';
 }
 
 const observer = new MutationObserver(() => {
-  moveAsideBasedOnWidth();
+  moveAsideAfterBlockTitle();
 });
 
-observer.observe(document.body, { childList: true, subtree: true });
-
-setTimeout(() => observer.disconnect(), 10000);
-
-window.addEventListener('resize', () => {
-  const aside = document.querySelector('.visitor-counter-content-box-carecartbysalespop-2020');
-  if (aside) {
-    delete aside.dataset.moved;
-    moveAsideBasedOnWidth();
-  }
+observer.observe(document.body, {
+  childList: true,
+  subtree: true
 });
+
+// Optional: disconnect after some time to stop watching forever
+setTimeout(() => observer.disconnect(), 10000); // Stop observing after 10 seconds
     </script>
   {% schema %}
   {
