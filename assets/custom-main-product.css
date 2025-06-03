@@ -932,7 +932,7 @@ text-decoration: underline;
     width: 100%;
 }
 
-.visitor-counter-content-box-carecartbysalespop-2020{height: auto !important; }
+.visitor-counter-content-box-carecartbysalespop-2020{height: auto !important; display: none!important}
 .counter-text-carecartbysalespop-2020{min-height:  auto !important;}
 
 @media screen and (max-width:1480px) {
