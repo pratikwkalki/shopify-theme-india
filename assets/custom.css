@@ -5516,13 +5516,10 @@ summary .icon-caret {
   opacity: 0.2;
   cursor: pointer;
 }
-
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1 !important;
   background: #ffffff !important;
 }
-
-
 .swiper-button-prev {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.95) url("left_arrow_slider.svg") no-repeat
