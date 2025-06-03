@@ -1,3 +1,4 @@
+
 .alternate_template_section {
     margin-top: 28px;
 }
@@ -98,7 +99,7 @@ body:not(.template--bridal) .product-custom .product_details {
   margin: 0 auto;
 }
 .product-custom .title_with_heart-icon {
-  display: flex;
+  display: flex;2
   justify-content: space-between;
   margin-bottom: 8px;
   position: relative;
@@ -930,6 +931,10 @@ text-decoration: underline;
     gap: 12px;
     width: 100%;
 }
+
+.visitor-counter-content-box-carecartbysalespop-2020{height: auto !important; display: none!important}
+.counter-text-carecartbysalespop-2020{min-height:  auto !important;}
+
 @media screen and (max-width:1480px) {
   #stamped-main-widget {
     margin-left: -20px !important;
