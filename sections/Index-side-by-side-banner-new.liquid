@@ -1,5 +1,6 @@
 {%- if section.settings.main_heading_text != blank or section.blocks.size > 0 -%}
-  {{ 'index-side-by-side-banner.css' | asset_url | stylesheet_tag }}
+  <link rel="preload" href="{{ 'index-side-by-side-banner.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ 'index-side-by-side-banner.css' | asset_url }}"></noscript>
   <div class="Index_side_by_side_banner_main_new" style="background: {{ section.settings.main_background_color }};">
     <div class="page-width">
       <div class="Index_side_by_side_banner_inner_new">
