@@ -64,3 +64,18 @@
   margin-left: 4px;
   margin-top: -2px;
 }
+@media (min-width: 0px) and (max-width: 749px) {
+ .Index_object_visit_stores_innerloop_innerboxs_video_OR_image_new {
+    padding-bottom: 57.8%;
+  }
+  .Index_object_visit_stores_innerloop_innerboxs_innervideoimage_titles_new {
+    font-size: 14px;
+    line-height: 142.857%;
+    letter-spacing: 0.14px;
+    padding-top: 14px;
+    max-width: 100%;
+  }
+  .Index_object_visit_stores_innerloop_innerboxs_innervideoimage_button_new a {
+    padding: 9px 20px;
+  }
+}
