@@ -2155,9 +2155,6 @@ cart-drawer.is-empty .drawer__header {
     line-height: 25.2px;
   }
 }
-.header .header__icon--wishlist:empty {
-  display: none !important;
-}
 .option-drop.cs-option-drop {
   margin-bottom: 0;
   width: 197px;
@@ -21272,9 +21269,6 @@ label[for="AddressProvinceNew"] {
 .header .wk-icon svg {
   width: 22px !important;
   height: 22px !important;
-}
-.header .header__icon--wishlist:empty {
-  display: none !important;
 }
 .grecaptcha-badge {
   display: none !important;
