@@ -1,4 +1,4 @@
-{% comment %} {% if product.metafields.custom.similar_color_products != blank %}
+{% if product.metafields.custom.similar_color_products != blank %}
   <div class="similar_color_products">
     <div class="text_media">
       <span class="color_text">More Colors</span>
@@ -19,8 +19,7 @@
     {% endif %}
   </div>
 {% endif %}
- {% endcomment %}
-
+{% comment %}
 {% assign similar_products = product.metafields.custom.similar_color_products.value %}
 {% if similar_products and similar_products != blank %}
   <div class="text_with_image color-options">
@@ -38,3 +37,4 @@
     {% endfor %}
   </div>
 {% endif %}
+{% endcomment %}
