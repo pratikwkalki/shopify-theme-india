@@ -1,5 +1,6 @@
 {%- if section.blocks.size > 0 -%}
-  {{ 'index-icon-text-info-list.css' | asset_url | stylesheet_tag }}
+  <link rel="preload" href="{{ 'index-icon-text-info-list.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ 'index-icon-text-info-list.css' | asset_url }}"></noscript>
   <div class="Index_icon_text_info_list_main_new">
     <div class="page-width">
       {% assign main_desktop_full_image = section.settings.main_desktop_full_image  | image_url %}
