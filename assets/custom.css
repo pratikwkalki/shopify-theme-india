@@ -5246,139 +5246,6 @@ summary .icon-caret {
 #section-firework-embed {
   margin: 0 0 50px 0 !important;
 }
-.Index_newsletter_form_main_new {
-  padding: 32px 0;
-}
-.Index_newsletter_form_inner_new {
-}
-.Index_newsletter_form_leftrightboth_new {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.Index_newsletter_form_mainleft_new {
-  width: 50%;
-}
-.Index_newsletter_form_innerleft_new {
-}
-.Index_newsletter_form_innerleft_title_new {
-}
-.Index_newsletter_form_innerleft_title_new h2 {
-  margin: 0;
-  color: #000;
-  font-size: 34px;
-  font-weight: 650;
-  line-height: 120%;
-  text-transform: capitalize;
-  letter-spacing: -1px;
-}
-.Index_newsletter_form_innerleft_infos_new {
-  max-width: 515px;
-}
-.Index_newsletter_form_innerleft_infos_new p {
-  padding-top: 5px;
-  color: #000;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 150%;
-  margin: 0;
-}
-.Index_newsletter_form_mainright_new {
-  width: 50%;
-  padding-left: 20px;
-}
-.Index_newsletter_form_innerright_new {
-}
-.Index_newsletter_form_innerright_mainform_new {
-}
-.Index_newsletter_form_innerright_innerform_new {
-}
-.Index_newsletter_form_main_new .newsletter-form__field-wrapper {
-  max-width: initial;
-}
-.Index_newsletter_form_main_new .newsletter-form__field-wrapper .field {
-}
-.Index_newsletter_form_main_new .newsletter-form {
-  max-width: 100%;
-}
-.Index_newsletter_form_main_new .newsletter-form__field-wrapper .field__input {
-  padding: 18px 14px;
-  color: #a1a1a1;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 100%;
-  width: 50%;
-  margin-right: 10px;
-  border-radius: 5px;
-  background: #fff;
-  min-height: 56px;
-  margin: 0 12px 0 0;
-  box-shadow: 0 0 0 !important;
-}
-.Index_newsletter_form_main_new .field__input:focus ~ .field__label,
-.Index_newsletter_form_main_new
-  .field__input:not(:placeholder-shown)
-  ~ .field__label,
-.Index_newsletter_form_main_new .field__input:-webkit-autofill ~ .field__label,
-.Index_newsletter_form_main_new .customer .field input:focus ~ label {
-  left: 14px !important;
-}
-.Index_newsletter_form_main_new .field__label {
-  color: #a1a1a1;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 100%;
-  top: 18px;
-  left: 14px;
-}
-.Index_newsletter_form_main_new
-  .newsletter-form__button:not(:focus-visible):not(.focused) {
-  border-radius: 5px;
-  background: #223330;
-  width: 50%;
-  position: relative;
-  min-height: 56px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 100%;
-  text-transform: uppercase;
-}
-.Index_newsletter_form_main_new .field:before {
-  display: none;
-}
-.Index_newsletter_form_main_new .field:after {
-  display: none;
-}
-.Index_newsletter_form_main_new .newsletter-form__message {
-  margin-top: 1rem !important;
-  position: absolute !important;
-  top: 100% !important;
-}
-.Index_newsletter_form_main_new .field__input:focus ~ .field__label,
-.Index_newsletter_form_main_new
-  .field__input:not(:placeholder-shown)
-  ~ .field__label,
-.Index_newsletter_form_main_new .field__input:-webkit-autofill ~ .field__label,
-.Index_newsletter_form_main_new .customer .field input:focus ~ label {
-  display: none;
-}
-.Index_newsletter_form_innerright_maininfo_new {
-}
-.Index_newsletter_form_innerright_innerinfo_new {
-}
-.Index_newsletter_form_innerright_innerinfo_new p {
-  margin: 0;
-  padding-top: 8px;
-  color: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 150%;
-  max-width: 320px;
-  margin-right: 0;
-  margin-left: auto;
-}
 
 .Footer_main_new {
   padding: 48px 0 32px;
@@ -14911,42 +14778,6 @@ label[for="AddressProvinceNew"] {
     margin: 0 0 40px 0 !important;
   }
 
-  .Index_newsletter_form_leftrightboth_new {
-    display: block;
-  }
-  .Index_newsletter_form_mainleft_new {
-    width: 100%;
-  }
-  .Index_newsletter_form_mainright_new {
-    width: 100%;
-    padding-left: 0px;
-    padding-top: 14px;
-  }
-  .Index_newsletter_form_main_new .newsletter-form__field-wrapper .field {
-    width: 100%;
-    display: block;
-  }
-  .Index_newsletter_form_main_new
-    .newsletter-form__field-wrapper
-    .field__input {
-    width: 100%;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-  .Index_newsletter_form_main_new
-    .newsletter-form__button:not(:focus-visible):not(.focused) {
-    width: 100%;
-    margin: auto;
-  }
-  .Index_newsletter_form_innerright_innerinfo_new p {
-    max-width: 100%;
-    margin: auto;
-    padding: 10px 10px 0 10px;
-  }
-  .Index_newsletter_form_main_new .newsletter-form__message {
-    position: relative !important;
-  }
-
   .Footer_main_new {
     padding: 40px 0 28px;
   }
@@ -18014,52 +17845,6 @@ label[for="AddressProvinceNew"] {
   #section-firework-embed {
     margin: 0 0 40px 0 !important;
   }
-
-  .Index_newsletter_form_main_new {
-    padding: 25px 0;
-  }
-  .Index_newsletter_form_innerleft_title_new h2 {
-    font-size: 22px;
-  }
-  .Index_newsletter_form_innerleft_infos_new p {
-    font-size: 13px;
-  }
-  .newsletter-form__field-wrapper .field {
-    display: block;
-  }
-  .Index_newsletter_form_main_new
-    .newsletter-form__field-wrapper
-    .field__input {
-    padding: 8px 14px;
-    height: auto;
-    font-size: 16px;
-    line-height: 100%;
-    width: 100%;
-    min-height: 40px !important;
-    margin: 0 0 10px 0;
-  }
-  .Index_newsletter_form_main_new .field__label {
-    top: 11px;
-  }
-  .Index_newsletter_form_main_new
-    .newsletter-form__button:not(:focus-visible):not(.focused) {
-    width: 100%;
-    min-height: 40px;
-    font-size: 14px;
-  }
-  .Index_newsletter_form_main_new
-    .newsletter-form__field-wrapper
-    .field__input {
-    font-size: 14px;
-  }
-  .Index_newsletter_form_main_new .newsletter-form__message {
-    position: relative !important;
-    justify-content: center;
-  }
-  .Index_newsletter_form_innerright_innerinfo_new p {
-    margin: auto;
-  }
-
   .Footer_1_detail_new {
     flex-flow: wrap;
     row-gap: 32px;
@@ -19420,20 +19205,6 @@ label[for="AddressProvinceNew"] {
     margin-bottom: 0;
   }
   /* Header */
-
-  /* Index */
-  .Index_newsletter_form_main_new
-    .newsletter-form__button:not(:focus-visible):not(.focused) {
-    font-size: 14px;
-    padding: 16px;
-  }
-  .Index_newsletter_form_innerright_innerinfo_new p {
-    max-width: 50%;
-  }
-  .Index_newsletter_form_innerleft_title_new h2 {
-    font-size: 30px;
-  }
-  /* Index */
 
   /* Product */
   .Product_meta_feature_list_mainleft_new {
