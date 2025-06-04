@@ -64,6 +64,11 @@
   margin-left: 4px;
   margin-top: -2px;
 }
+.Index_visit_stores_slider .swiper-button-next,
+.Index_visit_stores_slider .swiper-button-prev {
+  top: 32%;
+}
+
 @media (min-width: 750px) and (max-width: 989px) {
   .Index_object_visit_stores_main_new {
     margin: 40px 0;
