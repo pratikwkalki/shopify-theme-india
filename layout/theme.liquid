@@ -478,7 +478,7 @@
   {%- if template.name == 'cart' -%}
     {%- include 'kart_discount' -%}
   {%- endif -%}
-    <script>
+    <!-- <script>
       document.addEventListener("DOMContentLoaded", function () {
         const isWideScreen = window.innerWidth > 768;
     
@@ -491,7 +491,7 @@
           }
         });
       });
-    </script>
+    </script> -->
   {% include 'kart_discount' %}
   
   <script src="{{ 'scroll-to-products.js' | asset_url }}" defer="defer"></script>

@@ -9005,12 +9005,6 @@ template-collection template--deme-collection .rumi-firework-subtitle {
   font-size: 16px;
   line-height: 131.25%;
 }
-
-.Page_about_us_object_info_main_new .Index_object_visit_stores_inner_new {
-  max-width: 1080px;
-  margin: auto;
-}
-
 .Page_about_us_object_info_maindetails_new {
   padding-top: 30px;
 }
@@ -16549,9 +16543,6 @@ label[for="AddressProvinceNew"] {
     letter-spacing: 0.98px;
   }
 
-  .Page_about_us_object_info_main_new .Index_object_visit_stores_title_new h2 {
-    font-size: 24px;
-  }
   /* About */
 
   /* Our Store (min-width:0px) and (max-width:749px)*/
