@@ -23063,6 +23063,7 @@ body
     justify-content: space-around;
     align-items: center;
     display: flex !important;
+    height: 58px;
   }
   .home-mobile-sticky-bar a {
     color: rgba(var(--color-foreground));
