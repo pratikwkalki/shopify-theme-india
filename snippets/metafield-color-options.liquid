@@ -10,7 +10,7 @@
           {{ similar_product.media[0] | json }}
           {{ similar_product.title | json }} -->
           {% if similar_product.metafields.custom.color_name != blank and similar_product.metafields.custom.color_image != blank %}
-          <a href="{{ similar_product.url }}" class="ancor {% if product.handle == similar_product.handle %}active{% endif %}">
+          <a href="{{ product.metafields.custom.similar_product.url }}" class="ancor {% if product.handle == similar_product.handle %}active{% endif %}">
             <div class="image">
               <img src="{{ product.metafields.custom.color_image | img_url: '100x' }}" alt="{{ similar_product.title }}" width="" height="">
             </div>
