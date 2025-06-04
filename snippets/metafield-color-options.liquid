@@ -1,4 +1,4 @@
-{% if product.metafields.custom.similar_color_products != blank %}
+{% comment %} {% if product.metafields.custom.similar_color_products != blank %}
   <div class="similar_color_products">
     <div class="text_media">
       <span class="color_text">More Colors</span>
@@ -19,30 +19,22 @@
     {% endif %}
   </div>
 {% endif %}
+ {% endcomment %}
 
-
-{% comment %}
-{% if product.metafields.custom.color_name != blank or similar_product.metafields.custom.color_image != blank %}
-  <div class="text_media">
-    <span class="color_text">Color:</span>
-    {{ product.metafields.custom.color_name }}
-  </div>
-  {% if product.metafields.custom.similar_color_products %}
-    <div class="text_with_image color-options">
-      {% for similar_product in product.metafields.custom.similar_color_products.value %}
-        <!-- {{ similar_product.media | json }} -->
-        {% if similar_product.metafields.custom.color_name != blank and similar_product.metafields.custom.color_image != blank %}
+{% assign similar_products = product.metafields.custom.similar_color_products.value %}
+{% if similar_products and similar_products != blank %}
+  <div class="text_with_image color-options">
+    {% for similar_product in similar_products %}
+      {% if similar_product.metafields.custom.color_name != blank %}
         <a href="{{ similar_product.url }}" class="ancor {% if product.handle == similar_product.handle %}active{% endif %}">
           <div class="image">
-            {% if similar_product.images.size > 0 %}
-              <img src="{{ similar_product.images[0] | img_url: '100x' }}" alt="{{ similar_product.title }}" width="" height="" />
+            {% if similar_product.media.size > 0 %}
+              <img src="{{ similar_product.media[0].preview_image.src | img_url: '100x' }}" alt="{{ similar_product.title }}">
             {% endif %}
-            <!-- <img src="{{ similar_product.metafields.custom.color_image | img_url: '100x' }}" alt="{{ similar_product.title }}" width="" height=""> -->
           </div>
           <div class="text">{{ similar_product.metafields.custom.color_name }}</div>
         </a>
-        {% endif %}
-      {% endfor %}
-    </div>
-  {% endif %}
-{% endif %}{% endcomment %}
+      {% endif %}
+    {% endfor %}
+  </div>
+{% endif %}
