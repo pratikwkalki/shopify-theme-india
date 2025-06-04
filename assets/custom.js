@@ -267,3 +267,17 @@ function handleImgError(img) {
     }
   }
 }
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll('a[data-desktop-target="_blank"]');
+
+  links.forEach(link => {
+    if (window.innerWidth >= 768) { // Adjust breakpoint if needed
+      link.setAttribute("target", "_blank");
+    } else {
+      link.removeAttribute("target");
+    }
+  });
+});
