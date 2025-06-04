@@ -22,7 +22,7 @@
 
 
 
-{% if product.metafields.custom.color_name != blank %}
+{% if product.metafields.custom.color_name != blank or similar_product.metafields.custom.color_image != blank %}
   <div class="text_media">
     <span class="color_text">Color:</span>
     {{ product.metafields.custom.color_name }}
@@ -34,7 +34,7 @@
         {% if similar_product.metafields.custom.color_name != blank and similar_product.metafields.custom.color_image != blank %}
         <a href="{{ similar_product.url }}" class="ancor {% if product.handle == similar_product.handle %}active{% endif %}">
           <div class="image">
-            <img src="{{ similar_product.metafields.custom.color_image | img_url: '100x' }}" alt="{{ similar_product.title }}" >
+            <img src="{{ similar_product.metafields.custom.color_image | img_url: '100x' }}" alt="{{ similar_product.title }}" width="" height="">
           </div>
           <div class="text">{{ similar_product.metafields.custom.color_name }}</div>
         </a>
