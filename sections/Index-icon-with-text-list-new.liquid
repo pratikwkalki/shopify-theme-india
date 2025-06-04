@@ -1,5 +1,6 @@
 {%- if section.blocks.size > 0 -%}
-  {{ 'index_icon_with_text.css' | asset_url | stylesheet_tag }}
+  <link rel="preload" href="{{ 'index_icon_with_text.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ 'index_icon_with_text.css' | asset_url }}"></noscript>
   <div class="Index_icon_with_text_list_main_new" style="background: {{ section.settings.main_background_color }};">
     <div class="page-width">
       <div class="Index_icon_with_text_list_inner_new">
