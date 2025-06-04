@@ -270,31 +270,3 @@ function handleImgError(img) {
 
 
 
-function setDesktopTargetLinks(container = document) {
-  const links = container.querySelectorAll('a[data-open-in-new-tab="_blank"]');
-
-  links.forEach(link => {
-    if (window.innerWidth >= 768) {
-      link.setAttribute("target", "_blank");
-    } else {
-      link.removeAttribute("target");
-    }
-  });
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  setDesktopTargetLinks();
-
-  // Observe DOM changes (e.g., infinite scroll adds new content)
-  const observer = new MutationObserver((mutations) => {
-    mutations.forEach(mutation => {
-      mutation.addedNodes.forEach(node => {
-        if (node.nodeType === 1) {
-          setDesktopTargetLinks(node);
-        }
-      });
-    });
-  });
-
-  observer.observe(document.body, { childList: true, subtree: true });
-});
