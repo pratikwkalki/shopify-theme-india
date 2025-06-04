@@ -492,15 +492,31 @@
       //   });
       // });
 
-      document.addEventListener("DOMContentLoaded", function () {
+  //     document.addEventListener("DOMContentLoaded", function () {
+  //   if (window.innerWidth > 768) {
+  //     document.querySelectorAll('a[data-open-in-new-tab="true"]').forEach(function (link) {
+  //       link.setAttribute("target", "_blank");
+  //       link.setAttribute("rel", "noopener noreferrer");
+  //     });
+  //   }
+  // });
+      function updateTargetForDesktop() {
     if (window.innerWidth > 768) {
-      document.querySelectorAll('a[data-open-in-new-tab="true"]').forEach(function (link) {
+      document.querySelectorAll('a[data-open-in-new-tab="true"]:not([data-target-set])').forEach(function (link) {
         link.setAttribute("target", "_blank");
         link.setAttribute("rel", "noopener noreferrer");
+        link.setAttribute("data-target-set", "true"); // Mark as processed
       });
     }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    updateTargetForDesktop();
+
+    // Observe DOM changes (for infinite scroll)
+    const observer = new MutationObserver(updateTargetForDesktop);
+    observer.observe(document.body, { childList: true, subtree: true });
   });
-      
       
     </script>
   {% include 'kart_discount' %}
