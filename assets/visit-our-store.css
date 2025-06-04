@@ -119,6 +119,7 @@
   font-size: 13px;
   color: #000;
   min-width: 140px;
+  transition: none;
 }
 
 .visit-our-Store-slider {
