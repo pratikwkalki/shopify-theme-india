@@ -5048,11 +5048,6 @@ summary .icon-caret {
 #tagalys-namespace.tagalys-namespace .widget .widget-heading {
   line-height: 32px;
 }
-
-
-.Index_featured_collection_main_new {
-  margin: 50px 0;
-}
 .card--standard .card__inner {
   --ratio-percent: 142.14% !important;
 }
@@ -5112,27 +5107,6 @@ summary .icon-caret {
   display: flex !important;
   grid-gap: 8px !important;
   align-items: center;
-}
-.Index_featured_collection_main_new .swiper-button-next,
-.Index_featured_collection_main_new .swiper-button-prev {
-  top: 39%;
-}
-.Index_featured_collection_main_new .product_grid_item_new {
-  width: 257px;
-}
-.Index_featured_collection_main_new .swiper-pagination {
-  display: none;
-  position: relative !important;
-  bottom: 0 !important;
-  margin-top: 24px !important;
-}
-.Index_featured_collection_main_new .swiper-pagination-bullet {
-  background: #dddddd;
-  opacity: 1;
-  margin: 0 4px;
-}
-.Index_featured_collection_main_new .swiper-pagination-bullet-active {
-  background: #000000;
 }
 .product-card-wrapper .badge {
   border-radius: 0;
@@ -14902,9 +14876,6 @@ label[for="AddressProvinceNew"] {
   .Index_custom_category_innerloop_innerboxs_new:after {
     height: 90px;
   }
-  .Index_featured_collection_main_new {
-    margin: 40px 0;
-  }
   .Index_collection_innerdetail_new {
     margin: 0 -16px;
   }
@@ -14916,12 +14887,6 @@ label[for="AddressProvinceNew"] {
   }
   .Index_collection_slider .swiper-button-prev {
     display: none;
-  }
-  .Index_featured_collection_main_new .product_grid_item_new {
-    width: 160px;
-  }
-  .Index_featured_collection_main_new .swiper-pagination {
-    display: flex;
   }
   .card__heading a {
     font-size: 13px;
@@ -18042,12 +18007,6 @@ label[for="AddressProvinceNew"] {
   }
   .Index_custom_category_innerloop_innerboxs_2_titletextboth_new h2 p {
     font-size: 18px;
-  }
-  .Index_featured_collection_main_new {
-    margin: 40px 0;
-  }
-  .Index_featured_collection_main_new .product_grid_item_new {
-    width: 172px;
   }
   .Index_title_main_new {
     margin: 40px 0 0 0;
