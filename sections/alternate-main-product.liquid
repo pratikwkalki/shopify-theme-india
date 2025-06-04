@@ -294,7 +294,7 @@
           {% if isOnlyWishlistCon != true %}   
             {% render "product-delivery-days" current_product: product,  additional_delivery_days: section.settings.additional_delivery_days  %}
             {% render 'delivery-message' message: section.settings.delivery_message,message_additional: section.settings.delivery_message_addional %}
-            {% render 'metafield-twinning-with' product: product %}
+            {% render 'metafield-color-options' product: product %}
             {% render "cross-sell" product: product %}
             {% render 'extra-product-info' section: section %}
             {% render 'pdp-accordion' product: product, section: section %}            
