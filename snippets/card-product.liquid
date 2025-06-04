@@ -23,7 +23,37 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
 
+<script>
+  function applyDesktopOnlyTargets(context = document) {
+    const links = context.querySelectorAll('a[data-open-in-new-tab="_blank"]');
+    const isDesktop = window.innerWidth >= 768; // Customize breakpoint as needed
 
+    links.forEach(link => {
+      if (isDesktop) {
+        link.setAttribute("target", "_blank");
+      } else {
+        link.removeAttribute("target");
+      }
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    applyDesktopOnlyTargets();
+
+    // Optional: observe dynamically loaded content like infinite scroll
+    const observer = new MutationObserver(mutations => {
+      mutations.forEach(mutation => {
+        mutation.addedNodes.forEach(node => {
+          if (node.nodeType === 1) {
+            applyDesktopOnlyTargets(node);
+          }
+        });
+      });
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+  });
+</script>
 
 {%- if card_product and card_product != empty -%}
   {%- liquid
