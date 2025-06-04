@@ -64,6 +64,15 @@
   margin-left: 4px;
   margin-top: -2px;
 }
+@media (min-width: 750px) and (max-width: 989px) {
+  .Index_object_visit_stores_main_new {
+    margin: 40px 0;
+  }
+  .Index_object_visit_stores_innerloop_innerboxs_innervideoimage_titles_new {
+    font-size: 14px;
+    padding-top: 16px;
+  }
+}
 @media (min-width: 0px) and (max-width: 749px) {
  .Index_object_visit_stores_innerloop_innerboxs_video_OR_image_new {
     padding-bottom: 57.8%;
@@ -77,5 +86,11 @@
   }
   .Index_object_visit_stores_innerloop_innerboxs_innervideoimage_button_new a {
     padding: 9px 20px;
+  }
+  .Index_object_visit_stores_main_new {
+    margin: 40px 0;
+  }
+  .Index_object_visit_stores_innerloop_new {
+    margin: 0 -16px;
   }
 }
