@@ -19,22 +19,3 @@
     {% endif %}
   </div>
 {% endif %}
-{% comment %}
-{% assign similar_products = product.metafields.custom.similar_color_products.value %}
-{% if similar_products and similar_products != blank %}
-  <div class="text_with_image color-options">
-    {% for similar_product in similar_products %}
-      {% if similar_product.metafields.custom.color_name != blank %}
-        <a href="{{ similar_product.url }}" class="ancor {% if product.handle == similar_product.handle %}active{% endif %}">
-          <div class="image">
-            {% if similar_product.media.size > 0 %}
-              <img src="{{ similar_product.media[0].preview_image.src | img_url: '100x' }}" alt="{{ similar_product.title }}">
-            {% endif %}
-          </div>
-          <div class="text">{{ similar_product.metafields.custom.color_name }}</div>
-        </a>
-      {% endif %}
-    {% endfor %}
-  </div>
-{% endif %}
-{% endcomment %}
