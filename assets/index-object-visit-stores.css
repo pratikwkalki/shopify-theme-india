@@ -68,6 +68,10 @@
 .Index_visit_stores_slider .swiper-button-prev {
   top: 32%;
 }
+.Page_about_us_object_info_main_new .Index_visit_stores_slider .swiper-button-next,
+.Page_about_us_object_info_main_new .Index_visit_stores_slider .swiper-button-prev {
+  top: 22%;
+}
 
 @media (min-width: 750px) and (max-width: 989px) {
   .Index_object_visit_stores_main_new {
@@ -97,5 +101,15 @@
   }
   .Index_object_visit_stores_innerloop_new {
     margin: 0 -16px;
+  }
+  .Index_visit_stores_slider {
+    padding: 0 16px;
+  }
+  .Index_visit_stores_slider .swiper-button-next {
+  }
+  .Index_visit_stores_slider .swiper-button-prev {
+  }
+  .Index_visit_stores_slider .Index_object_visit_stores_innerloop_mainboxs_new {
+    width: 290px;
   }
 }
