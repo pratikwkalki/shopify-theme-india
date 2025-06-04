@@ -3549,6 +3549,7 @@ select {
   font-size: 14px;
   letter-spacing: 0.98px;
   line-height: 18px;
+  transition: none;
 }
 .button_white:hover {
   /*background: #000; color: #fff;*/
