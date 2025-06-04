@@ -150,7 +150,7 @@
           >
             {%- if enable_filtering -%}
               {%- for filter in results.filters -%}
-                {% assign available_values = filter.values | where: 'count', '>', 0 %}
+                
                 {% liquid
                   case filter.presentation
                     when 'swatch'
