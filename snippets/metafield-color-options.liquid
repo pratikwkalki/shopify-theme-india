@@ -6,7 +6,7 @@
     {% if product.metafields.custom.similar_color_products %}
       <div class="text_with_image color-options">
         {% for similar_product in product.metafields.custom.similar_color_products.value %}
-          {% if similar_product.metafields.custom.color_name != blank and similar_product.metafields.custom.color_image != blank %}
+          {% if similar_product.metafields.custom.color_name != blank and similar_product.image != blank %}
           <a href="{{ similar_product.url }}" class="ancor {% if product.handle == similar_product.handle %}active{% endif %}">
             <div class="image">
                {% if similar_product.images.size > 0 %}
