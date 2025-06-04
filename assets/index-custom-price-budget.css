@@ -1,10 +1,6 @@
 .Index_custom_price_budget_main_new {
   margin: 50px 0;
 }
-.Index_custom_price_budget_inner_new {
-}
-.Index_custom_price_budget_mainloop_new {
-}
 .Index_custom_price_budget_innerloop_new {
   display: flex;
   grid-gap: 18px;
@@ -21,8 +17,6 @@
   left: 0px;
   display: block !important;
   z-index: 2;
-}
-.Index_custom_price_budget_innerloop_innerboxs_new {
 }
 .Index_custom_price_budget_innerloop_innerboxs_new:after {
   content: "";
@@ -41,10 +35,6 @@
   position: relative;
   width: 100%;
   padding-bottom: 138.915%;
-}
-.Index_custom_price_budget_innerloop_innerboxs_1_videoimageboth_new {
-}
-.Index_custom_price_budget_innerloop_innerboxs_1_videoimage_new {
 }
 .Index_custom_price_budget_innerloop_innerboxs_1_videoimage_new img {
   width: 100%;
