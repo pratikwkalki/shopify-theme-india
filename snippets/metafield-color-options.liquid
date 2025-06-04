@@ -9,8 +9,8 @@
           {% if similar_product.metafields.custom.color_name != blank and similar_product.metafields.custom.color_image != blank %}
           <a href="{{ similar_product.url }}" class="ancor {% if product.handle == similar_product.handle %}active{% endif %}">
             <div class="image">
-               {% if similar_product.images.size > 0 %}
-              <img src="{{ similar_product.images[0] | img_url: '100x' }}" alt="{{ similar_product.title }}" width="" height="" />
+               {% if product.images.size > 0 %}
+              <img src="{{ product.images[0] | img_url: '100x' }}" alt="{{ similar_product.title }}" width="" height="" />
             {% endif %}
             </div>
             <div class="text">{{ similar_product.metafields.custom.color_name }}</div>
