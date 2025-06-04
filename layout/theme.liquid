@@ -478,20 +478,48 @@
   {%- if template.name == 'cart' -%}
     {%- include 'kart_discount' -%}
   {%- endif -%}
-    <!-- <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const isWideScreen = window.innerWidth > 768;
+    <script>
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   const isWideScreen = window.innerWidth > 768;
     
-        document.querySelectorAll('a[data-open-in-new-tab="true"]').forEach(link => {
-          if (isWideScreen) {
-            link.setAttribute("target", "_blank");
-            link.setAttribute("rel", "noopener noreferrer");
-          } else {
-            link.removeAttribute("target");
-          }
-        });
+      //   document.querySelectorAll('a[data-open-in-new-tab="true"]').forEach(link => {
+      //     if (isWideScreen) {
+      //       link.setAttribute("target", "_blank");
+      //       link.setAttribute("rel", "noopener noreferrer");
+      //     } else {
+      //       link.removeAttribute("target");
+      //     }
+      //   });
+      // });
+      function setDesktopTargetLinks(container = document) {
+  const links = container.querySelectorAll('a[data-open-in-new-tab="_blank"]');
+
+  links.forEach(link => {
+    if (window.innerWidth >= 768) {
+      link.setAttribute("target", "_blank");
+    } else {
+      link.removeAttribute("target");
+    }
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  setDesktopTargetLinks();
+
+  // Observe DOM changes (e.g., infinite scroll adds new content)
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach(mutation => {
+      mutation.addedNodes.forEach(node => {
+        if (node.nodeType === 1) {
+          setDesktopTargetLinks(node);
+        }
       });
-    </script> -->
+    });
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true });
+});
+    </script>
   {% include 'kart_discount' %}
   
   <script src="{{ 'scroll-to-products.js' | asset_url }}" defer="defer"></script>
