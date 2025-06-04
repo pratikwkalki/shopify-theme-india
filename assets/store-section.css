@@ -208,25 +208,78 @@
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.Page_Store_Slider_innerloop_mainbox
-  .Page_Store_slider_innerloop_buttonbox
-  a:hover {
+.Page_Store_Slider_innerloop_mainbox .Page_Store_slider_innerloop_buttonbox a:hover {
   background-color: rgba(34, 51, 48, 1);
   color: rgba(255, 255, 255, 1);
 }
-.Page_Store_Slider_innerloop_mainbox
-  .Page_Store_slider_innerloop_buttonbox
-  a:hover
-  svg
-  path {
+.Page_Store_Slider_innerloop_mainbox .Page_Store_slider_innerloop_buttonbox a:hover svg path {
   stroke: #fff;
 }
-.Page_Store_Slider_innerloop_mainbox
-  .Page_Store_slider_innerloop_buttonbox
-  a
-  span {
+.Page_Store_Slider_innerloop_mainbox  .Page_Store_slider_innerloop_buttonbox a span {
   padding-left: 0.75rem;
 }
+
+.Index_object_visit_stores_innerloop_innerboxs_video_OR_image_new {
+  padding-bottom: 55%;
+  position: relative;
+}
+.Index_object_visit_stores_innerloop_innerboxs_video_OR_image_new img {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100% !important;
+}
+.Index_object_visit_stores_innerloop_innerboxs_video_OR_image_new video {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100% !important;
+}
+.Index_object_visit_stores_innerloop_innerboxs_innervideoimage_titles_new {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.32px;
+  padding-top: 24px;
+  text-align: center;
+}
+.Index_object_visit_stores_innerloop_innerboxs_innervideoimage_button_new {
+  padding-top: 12px;
+  text-align: center;
+}
+.Index_object_visit_stores_innerloop_innerboxs_innervideoimage_button_new a {
+  border-radius: 30px;
+  border: 1px solid #e1e1e5;
+  padding: 13px 20px;
+  color: #223330;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 114.286%;
+  letter-spacing: 0.42px;
+  text-transform: capitalize;
+  text-decoration: none;
+  min-width: 142px;
+  display: inline-block;
+}
+.Index_object_visit_stores_innerloop_innerboxs_innervideoimage_button_new  a:hover {
+  border-color: #223330;
+}
+.Index_object_visit_stores_innerloop_innerboxs_innervideoimage_button_new a svg {
+  max-width: 100%;
+  vertical-align: middle;
+  margin-left: 4px;
+  margin-top: -2px;
+}
+
 @media (min-width: 990px) and (max-width: 1424px) {
   .Page_Store_google_reviews_mainloop_new {
     padding-top: 30px;
@@ -277,5 +330,8 @@
   }
   .page_store_google_slider {
     padding: 0 20px;
+  }
+ .Index_object_visit_stores_innerloop_innerboxs_video_OR_image_new {
+    padding-bottom: 57.8%;
   }
 }
