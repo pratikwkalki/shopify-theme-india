@@ -23616,11 +23616,6 @@ body
     width: 32.44%;
   }
 }
-@media only screen and (min-width: 750px) and (max-width: 989px) {
-  .Page_rumi_collections_main_new .Page_weaves_collections_leftrightboth_new {
-    display: flex;
-  }
-}
 @media screen and (min-width: 990px) {
   .template-search .collection_pagination_new {
     justify-content: flex-start;
