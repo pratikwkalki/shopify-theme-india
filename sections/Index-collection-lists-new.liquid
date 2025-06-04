@@ -1,5 +1,6 @@
 {%- if section.blocks.size > 0 or section.settings.main_heading_text != blank -%}
-  {{ 'index-custom-category.css' | asset_url | stylesheet_tag }}
+  <link rel="preload" href="{{ 'index-custom-category.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ 'index-custom-category.css' | asset_url }}"></noscript>
   <div class="Index_collection_lists_main_new" style="background: {{ section.settings.main_background_color }};">
     <div class="page-width">
       <div class="Index_collection_lists_inner_new">
