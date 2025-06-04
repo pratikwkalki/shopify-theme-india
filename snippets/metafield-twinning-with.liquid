@@ -1,0 +1,17 @@
+
+{% if product.metafields.custom.twinning_with != blank %}
+  <div class="twinning-with-options">
+    <span class="twinning_title">Twinning With</span>
+    <div class="twinning-with-products">
+      {% for twinning_with_product in product.metafields.custom.twinning_with.value %}
+        {% if twinning_with_product.available %}
+          <a href="{{ twinning_with_product.url }}" class="ancor">
+            <div class="image">
+              <img src="{{ twinning_with_product.featured_image | img_url: '100x' }}" alt="{{ twinning_with_product.title }}" width="94" height="132">
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
