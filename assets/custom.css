@@ -10089,21 +10089,7 @@ template-collection template--deme-collection .rumi-firework-subtitle {
   height: 100%;
 }
 
-.Page_Store_google_reviews_main_new {
-  margin: 40px 0;
-}
-.Page_Store_google_reviews_main_new .page-width {
-}
-.Page_Store_google_reviews_inner_new {
-}
-.Page_Store_google_reviews_title_new {
-  margin-bottom: 32px;
-}
-.Page_Store_google_reviews_title_new h2 {
-  font-weight: normal;
-}
-.Page_Store_google_reviews_infos_new {
-}
+
 .Page_Store_google_reviews_infos_new p {
   margin: 0;
   color: #747380;
@@ -10117,8 +10103,6 @@ template-collection template--deme-collection .rumi-firework-subtitle {
 }
 .page_store_google_slider {
   padding: 0 30px;
-}
-.Page_Store_google_reviews_innerloop_new {
 }
 .Page_Store_google_reviews_innerloop_mainboxs_new {
   width: 406px;
@@ -17229,18 +17213,8 @@ label[for="AddressProvinceNew"] {
     padding: 0 16px;
   }
 
-  .Page_Store_google_reviews_main_new {
-    margin: 12px 0;
-  }
-  .Page_Store_google_reviews_main_new .page-width {
-    padding: 0 !important;
-  }
   .Page_Store_google_reviews_titleinfosboth_new {
     padding: 0;
-  }
-  .Page_Store_google_reviews_title_new {
-    margin-bottom: 8px;
-    padding: 0 16px;
   }
   .Page_Store_google_reviews_mainloop_new {
     padding-top: 20px;
@@ -19456,9 +19430,6 @@ label[for="AddressProvinceNew"] {
     margin-bottom: 20px;
   }
 
-  .Page_Store_google_reviews_main_new {
-    margin: 40px 0;
-  }
   .Page_Store_google_reviews_mainloop_new {
     padding-top: 20px;
   }
