@@ -5490,69 +5490,6 @@ summary .icon-caret {
   .product-image-container {
   margin-bottom: 11px;
 }
-.Index_icon_text_info_list_inner_new {
-  margin: 18px auto;
-}
-.Index_icon_text_info_list_allloop_new {
-  display: flex;
-  padding: 48px 0;
-}
-.Index_icon_text_info_list_allloop_mainboxs_new {
-  width: 50%;
-  padding: 0 20px;
-  border-right: 1px solid rgba(102, 37, 5, 0.2);
-}
-.Index_icon_text_info_list_allloop_mainboxs_new:last-child {
-  border-right: 0;
-}
-.Index_icon_text_info_list_allloop_innerboxs_new {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.Index_icon_text_info_list_allloop_innerboxs_icons_new {
-  text-align: center;
-}
-.Index_icon_text_info_list_allloop_innerboxs_icons_new img {
-  max-width: 50px;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-}
-.Index_icon_text_info_list_allloop_innerboxs_title_new {
-  padding-top: 36px;
-}
-.Index_icon_text_info_list_allloop_innerboxs_title_new h2 {
-  color: #781710;
-  text-align: center;
-  font-family: var(--font-noto-serif-display);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 134%;
-  text-transform: capitalize;
-  margin: 0;
-}
-.Index_icon_text_info_list_allloop_innerboxs_infos_new {
-  padding-top: 10px;
-}
-.Index_icon_text_info_list_allloop_innerboxs_infos_new p {
-  color: #781710;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 120%;
-  margin: 0;
-}
-.Index_icon_text_info_list_allloop_innerboxs_button_new {
-  padding-top: 14px;
-  text-align: center;
-}
-.Index_icon_text_info_list_allloop_innerboxs_button_new .button_white {
-  font-size: 15px;
-  padding: 12px 16px;
-}
-
 .Index_object_visit_stores_main_new {
   margin: 50px 0;
 }
@@ -15647,45 +15584,6 @@ label[for="AddressProvinceNew"] {
   .Product_price_save_new {
     padding: 3px 5px;
   }
-  .Index_icon_text_info_list_main_new .page-width {
-    padding: 0;
-  }
-  .Index_icon_text_info_list_inner_new {
-    margin: 12px 0;
-  }
-  .Index_icon_text_info_list_allloop_new {
-    padding: 44px 0;
-    flex-wrap: wrap;
-  }
-  .Index_icon_text_info_list_allloop_mainboxs_new {
-    width: 100%;
-    padding: 0 16px;
-  }
-  .Index_icon_text_info_list_allloop_innerboxs_new {
-    max-width: 100%;
-  }
-  .Index_icon_text_info_list_allloop_innerboxs_title_new h2 {
-    font-size: 18px;
-  }
-  .Index_icon_text_info_list_allloop_innerboxs_button_new a {
-    min-width: 122px;
-    min-height: 29px;
-  }
-  .Index_icon_text_info_list_allloop_mainboxs_new:first-child {
-    border-bottom: 1px solid rgba(102, 37, 5, 0.2);
-    padding-bottom: 24px;
-    margin-bottom: 24px;
-    border-right: 0;
-  }
-  .Index_icon_text_info_list_allloop_innerboxs_button_new .button_white {
-    min-width: 130px !important;
-    font-size: 12px;
-    padding: 6px 16px;
-  }
-  .Index_icon_text_info_list_allloop_innerboxs_button_new {
-    padding-top: 24px;
-  }
-
   .Index_object_visit_stores_main_new {
     margin: 40px 0;
   }
@@ -18935,13 +18833,6 @@ label[for="AddressProvinceNew"] {
   .Index_featured_collection_main_new .product_grid_item_new {
     width: 172px;
   }
-  .Index_icon_text_info_list_inner_new {
-    margin: 10px auto;
-  }
-  .Index_icon_text_info_list_allloop_new {
-    padding: 30px 0;
-  }
-
   .Index_object_visit_stores_main_new {
     margin: 40px 0;
   }
