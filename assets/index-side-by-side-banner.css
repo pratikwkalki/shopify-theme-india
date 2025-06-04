@@ -44,6 +44,17 @@
   height: 100% !important;
   object-position: top;
 }
+.Index_side_by_side_banner_innerloop_innerboxs_videoimage_new img {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100% !important;
+  object-position: top;
+}
 @media (min-width: 750px) and (max-width: 989px) {
   .Index_side_by_side_banner_main_new {
     margin: 40px 0;
