@@ -1,0 +1,104 @@
+.Page_weaves_collections_main_new {
+  margin: 56px 0;
+}
+.Page_weaves_collections_leftrightboth_new {
+  display: flex;
+  align-items: center;
+}
+.Page_weaves_collections_mainleft_new {
+  width: 278px;
+  padding-right: 20px;
+}
+.Page_weaves_collections_innerleft_title_new p {
+  color: #0f0d1a;
+  text-align: center;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.Page_weaves_collections_innerleft_links_new {
+  padding-top: 40px;
+  text-align: center;
+}
+.Page_weaves_collections_innerleft_links_new a {
+  background: transparent;
+  padding: 8px 16px;
+  min-width: 92px;
+  border-radius: 0;
+  font-size: 14px;
+  color: #b8864f;
+  border: 1px solid #b8864f;
+  font-weight: normal;
+}
+.Page_weaves_collections_mainright_new {
+  width: calc(100% - 278px);
+}
+.Page_weaves_collections_innerright_allloop_mainboxs_new
+  .Index_custom_collections_allloop_innerboxs_3_new {
+  padding: 30px 15px;
+}
+.Page_weaves_collection_slider .swiper-pagination {
+  display: none;
+}
+.template--deme-collection .Page_weaves_collections_main_new {
+  margin: 40px 0;
+}
+@media (min-width: 750px) and (max-width: 989px) {
+  .Page_weaves_collections_main_new {
+    margin: 32px 0 48px 0;
+  }
+  .Page_weaves_collections_leftrightboth_new {
+    display: block;
+  }
+  .Page_weaves_collections_mainleft_new {
+    width: 100%;
+    padding-right: 0;
+  }
+  .Page_weaves_collections_innerleft_title_new p {
+    font-size: 18px;
+  }
+  .Page_weaves_collections_innerleft_title_new p br {
+    display: none;
+  }
+  .Page_weaves_collections_mainright_new {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .Page_weaves_collections_innerleft_links_new {
+    padding-top: 15px;
+  }
+  .Page_weaves_collections_innerright_allloop_mainboxs_new
+    .Index_custom_collections_allloop_innerboxs_3_new {
+    padding: 20px 15px;
+  }
+}
+@media (min-width: 0px) and (max-width: 749px) {
+  .Page_weaves_collections_main_new {
+    margin: 32px 0 48px 0;
+  }
+  .Page_weaves_collections_leftrightboth_new {
+    display: block;
+  }
+  .Page_weaves_collections_mainleft_new {
+    width: 100%;
+    padding-right: 0;
+  }
+  .Page_weaves_collections_innerleft_title_new p {
+    font-size: 18px;
+  }
+  .Page_weaves_collections_innerleft_title_new p br {
+    display: none;
+  }
+  .Page_weaves_collections_mainright_new {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .Page_weaves_collections_innerleft_links_new {
+    padding-top: 15px;
+  }
+  .Page_weaves_collections_innerright_allloop_mainboxs_new .Index_custom_collections_allloop_innerboxs_3_new {
+    padding: 20px 15px;
+  }
+}
