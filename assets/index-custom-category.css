@@ -153,6 +153,9 @@
 .Index_custom_category_main_new {
   margin: 50px 0 32px;
 }
+.Index_custom_collections_allloop_innerboxs_3_title_new h3 p {
+    margin: 0;
+}
 @media (min-width: 990px) and (max-width: 1424px) {
   .Index_custom_collections_allloop_innerboxs_3_new {
     padding: 20px 15px;
