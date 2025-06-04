@@ -1,0 +1,22 @@
+.Index_middle_banner_infos_main_new {
+  margin: 18px 0;
+}
+.Index_middle_banner_infos_innerboxs_videoimageboth_new {
+  position: relative;
+}
+.Index_middle_banner_infos_innerboxs_videoimage_new img, .Index_middle_banner_infos_innerboxs_videoimage_new video {
+  width: 100%;
+}
+.template--video-appointment-new .Index_middle_banner_infos_new .page-width {
+  max-width: 1116px;
+}
+@media (min-width: 750px) and (max-width: 989px) {
+  .Index_middle_banner_infos_main_new {
+    margin: 10px 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 749px) {
+  .Index_middle_banner_infos_main_new {
+    margin: 12px 0;
+  }
+}

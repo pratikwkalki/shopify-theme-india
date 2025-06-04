@@ -5491,27 +5491,6 @@ summary .icon-caret {
   .product-image-container {
   margin-bottom: 11px;
 }
-.Index_middle_banner_infos_main_new {
-  margin: 18px 0;
-}
-.Index_middle_banner_infos_inner_new {
-}
-.Index_middle_banner_infos_mainboxs_new {
-}
-.Index_middle_banner_infos_innerboxs_new {
-}
-.Index_middle_banner_infos_innerboxs_videoimageboth_new {
-  position: relative;
-}
-.Index_middle_banner_infos_innerboxs_videoimage_new {
-}
-.Index_middle_banner_infos_innerboxs_videoimage_new img {
-  width: 100%;
-}
-.Index_middle_banner_infos_innerboxs_videoimage_new video {
-  width: 100%;
-}
-
 .Index_icon_text_info_list_inner_new {
   margin: 18px auto;
 }
@@ -11952,8 +11931,7 @@ template-collection template--deme-collection .rumi-firework-subtitle {
   min-width: 170px;
 }
 .Page_video_call_book_now_new .page-width,
-.template--video-appointment-new .page_store_detail_slider_new .page-width,
-.template--video-appointment-new .Index_middle_banner_infos_new .page-width {
+.template--video-appointment-new .page_store_detail_slider_new .page-width {
   max-width: 1116px;
 }
 /* Video Call Appointment */
@@ -15670,12 +15648,6 @@ label[for="AddressProvinceNew"] {
   .Product_price_save_new {
     padding: 3px 5px;
   }
-  .Index_middle_banner_infos_main_new {
-    margin: 12px 0;
-  }
-
-  .Index_icon_text_info_list_main_new {
-  }
   .Index_icon_text_info_list_main_new .page-width {
     padding: 0;
   }
@@ -18964,10 +18936,6 @@ label[for="AddressProvinceNew"] {
   .Index_featured_collection_main_new .product_grid_item_new {
     width: 172px;
   }
-  .Index_middle_banner_infos_main_new {
-    margin: 10px 0;
-  }
-
   .Index_icon_text_info_list_inner_new {
     margin: 10px auto;
   }
