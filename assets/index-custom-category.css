@@ -150,6 +150,9 @@
 .Index_collection_lists_main_new {
   margin: 40px 0;
 }
+.Index_custom_category_main_new {
+  margin: 50px 0 32px;
+}
 @media (min-width: 990px) and (max-width: 1424px) {
   .Index_custom_collections_allloop_innerboxs_3_new {
     padding: 20px 15px;
@@ -262,5 +265,8 @@
   }
   .Index_custom_collections_allloop_innerboxs_3_button_new {
     padding-top: 10px;
+  }
+  .Index_custom_category_main_new {
+    margin: 40px 0;
   }
 }
