@@ -150,6 +150,7 @@
           >
             {%- if enable_filtering -%}
               {%- for filter in results.filters -%}
+                {% assign available_values = filter.values | where: 'count', '>', 0 %}
                 {% liquid
                   case filter.presentation
                     when 'swatch'
@@ -180,7 +181,7 @@
                           endif
                         -%}
                       {%- endfor -%}
-                      {%- if filter.values.size > 0 and has_filter_values -%}
+                      {%- if filter.values.size > 1 and has_filter_values -%}
                         <details
                           id="Details-Mobile-{{ filter.param_name | escape }}-{{ section.id }}"
                           class="mobile-facets__details js-filter  
