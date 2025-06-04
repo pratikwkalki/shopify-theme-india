@@ -1,4 +1,4 @@
-{% comment %} {% if product.metafields.custom.similar_color_products != blank %}
+{% if product.metafields.custom.similar_color_products != blank %}
   <div class="similar_color_products">
     <div class="text_media">
       <span class="color_text">More Colors</span>
@@ -9,7 +9,9 @@
           {% if similar_product.metafields.custom.color_name != blank and similar_product.metafields.custom.color_image != blank %}
           <a href="{{ similar_product.url }}" class="ancor {% if product.handle == similar_product.handle %}active{% endif %}">
             <div class="image">
-              <img src="{{ similar_product.metafields.custom.color_image | img_url: '100x' }}" alt="{{ similar_product.title }}" width="" height="">
+               {% if similar_product.images.size > 0 %}
+              <img src="{{ similar_product.images[0] | img_url: '100x' }}" alt="{{ similar_product.title }}" width="" height="" />
+            {% endif %}
             </div>
             <div class="text">{{ similar_product.metafields.custom.color_name }}</div>
           </a>
@@ -18,10 +20,10 @@
       </div>
     {% endif %}
   </div>
-{% endif %} {% endcomment %}
+{% endif %}
 
 
-
+{% comment %}
 {% if product.metafields.custom.color_name != blank or similar_product.metafields.custom.color_image != blank %}
   <div class="text_media">
     <span class="color_text">Color:</span>
@@ -45,4 +47,4 @@
       {% endfor %}
     </div>
   {% endif %}
-{% endif %}
+{% endif %}{% endcomment %}
