@@ -23177,3 +23177,16 @@ body
     font-size: 13px;
   }
 }
+
+.collection-mobile-middle-banner {
+  display: none;
+}
+@media screen  and (max-width: 767px) {
+  .collection-mobile-middle-banner {
+    display: block;
+  }
+  .collection-mobile-middle-banner img {
+      display: block;
+      width: 100%;
+  }
+}

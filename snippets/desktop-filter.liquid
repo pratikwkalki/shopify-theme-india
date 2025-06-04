@@ -24,6 +24,7 @@
               <div class="facet-items_wrap">
                 <span class="filter-current-subtitle">Now Shopping by</span>
                 {%- for filter in results.filters -%}
+                  
                   {%- for value in filter.active_values -%}
                     {% if filter.label == 'Color' %}
                       <div class="faced_item active__filter-value">
@@ -119,6 +120,7 @@
           <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
           {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
           {%- for filter in results.filters -%}
+            
             {% liquid
               assign total_active_values = total_active_values | plus: filter.active_values.size
               case filter.presentation
@@ -149,7 +151,7 @@
                     or filter.label contains 'Delivery'
                     or filter.label contains 'Select Size'
                   %}
-                    {% if filter.values.size > 0 %}
+                    {% if filter.values.size > 1 %}
                       <details
                         id="Details-{{ filter.param_name | escape }}-{{ section.id }}"
                         class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
