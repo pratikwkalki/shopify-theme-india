@@ -24,7 +24,6 @@
               <div class="facet-items_wrap">
                 <span class="filter-current-subtitle">Now Shopping by</span>
                 {%- for filter in results.filters -%}
-                  {% assign available_values = filter.values | where: 'count', '>', 0 %}
                   {%- for value in filter.active_values -%}
                     {% if filter.label == 'Color' %}
                       <div class="faced_item active__filter-value">
