@@ -5089,115 +5089,7 @@ summary .icon-caret {
 #tagalys-namespace.tagalys-namespace .widget .widget-heading {
   line-height: 32px;
 }
-.Index_custom_price_budget_main_new {
-  margin: 50px 0;
-}
-.Index_custom_price_budget_inner_new {
-}
-.Index_custom_price_budget_mainloop_new {
-}
-.Index_custom_price_budget_innerloop_new {
-  display: flex;
-  grid-gap: 18px;
-}
-.Index_custom_price_budget_innerloop_mainboxs_new {
-  width: 25%;
-  position: relative;
-}
-.Index_custom_price_budget_innerloop_mainboxs_new > a {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  display: block !important;
-  z-index: 2;
-}
-.Index_custom_price_budget_innerloop_innerboxs_new {
-}
-.Index_custom_price_budget_innerloop_innerboxs_new:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 130px;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.5) 100%
-  );
-}
-.Index_custom_price_budget_innerloop_innerboxs_1_new {
-  position: relative;
-  width: 100%;
-  padding-bottom: 138.915%;
-}
-.Index_custom_price_budget_innerloop_innerboxs_1_videoimageboth_new {
-}
-.Index_custom_price_budget_innerloop_innerboxs_1_videoimage_new {
-}
-.Index_custom_price_budget_innerloop_innerboxs_1_videoimage_new img {
-  width: 100%;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100% !important;
-  object-position: top;
-}
-.Index_custom_price_budget_innerloop_innerboxs_1_videoimage_new video {
-  width: 100%;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100% !important;
-  object-position: top;
-}
-.Index_custom_price_budget_innerloop_innerboxs_2_new {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  padding: 15px;
-  width: 100%;
-  z-index: 1;
-}
-.Index_custom_price_budget_innerloop_innerboxs_2_titletextboth_new {
-}
-.Index_custom_price_budget_innerloop_innerboxs_2_texts_new {
-  text-align: center;
-  font-size: 16.8px;
-  font-weight: 400;
-  line-height: 133.333%;
-  letter-spacing: 0.336px;
-  text-transform: capitalize;
-}
-.Index_custom_price_budget_innerloop_innerboxs_2_texts_new p {
-  margin: 0;
-  color: #fff;
-}
-.Index_custom_price_budget_innerloop_innerboxs_2_title_new {
-  padding-top: 8px;
-}
-.Index_custom_price_budget_innerloop_innerboxs_2_title_new h2 {
-  margin: 0;
-  color: #fff;
-  text-align: center;
-  font-size: 29.867px;
-  font-weight: 600;
-  line-height: 112.5%;
-  text-transform: uppercase;
-}
-.Index_custom_price_budget_innerloop_innerboxs_2_title_new h2 p {
-  margin: 0;
-  color: #fff;
-  font-family: var(--font-noto-serif-display);
-}
+
 
 .Index_featured_collection_main_new {
   margin: 50px 0;
@@ -15171,33 +15063,6 @@ label[for="AddressProvinceNew"] {
   .Index_custom_category_innerloop_innerboxs_new:after {
     height: 90px;
   }
-  .Index_custom_price_budget_main_new {
-    margin: 40px 0;
-  }
-  .Index_custom_price_budget_innerloop_new {
-    grid-gap: 8px;
-    flex-wrap: wrap;
-  }
-  .Index_custom_price_budget_innerloop_mainboxs_new {
-    width: calc(50% - 4px);
-  }
-  .Index_custom_price_budget_innerloop_innerboxs_new:after {
-    height: 100px;
-  }
-  .Index_custom_price_budget_innerloop_innerboxs_2_new {
-    padding: 15px 10px;
-  }
-  .Index_custom_price_budget_innerloop_innerboxs_2_texts_new p {
-    font-size: 14.136px;
-    line-height: 120%;
-    letter-spacing: 0.283px;
-  }
-  .Index_custom_price_budget_innerloop_innerboxs_2_title_new h2 {
-    font-size: 18.848px;
-    font-weight: 500;
-    line-height: 120%;
-  }
-
   .Index_featured_collection_main_new {
     margin: 40px 0;
   }
@@ -18401,22 +18266,6 @@ label[for="AddressProvinceNew"] {
   .Index_custom_category_innerloop_innerboxs_2_titletextboth_new h2 p {
     font-size: 18px;
   }
-  .Index_custom_price_budget_main_new {
-    margin: 40px 0;
-  }
-  .Index_custom_price_budget_innerloop_new {
-    grid-gap: 10px;
-  }
-  .Index_custom_price_budget_innerloop_innerboxs_2_new {
-    padding: 12px;
-  }
-  .Index_custom_price_budget_innerloop_innerboxs_2_texts_new {
-    font-size: 15px;
-  }
-  .Index_custom_price_budget_innerloop_innerboxs_2_title_new h2 {
-    font-size: 20px;
-  }
-
   .Index_featured_collection_main_new {
     margin: 40px 0;
   }
@@ -19854,9 +19703,6 @@ label[for="AddressProvinceNew"] {
   /* Header */
 
   /* Index */
-  .Index_custom_price_budget_innerloop_innerboxs_2_title_new h2 {
-    font-size: 26px;
-  }
   .Index_newsletter_form_main_new
     .newsletter-form__button:not(:focus-visible):not(.focused) {
     font-size: 14px;
