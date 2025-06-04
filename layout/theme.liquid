@@ -479,50 +479,19 @@
     {%- include 'kart_discount' -%}
   {%- endif -%}
     <script>
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   const isWideScreen = window.innerWidth > 768;
+      document.addEventListener("DOMContentLoaded", function () {
+        const isWideScreen = window.innerWidth > 768;
     
-      //   document.querySelectorAll('a[data-open-in-new-tab="true"]').forEach(link => {
-      //     if (isWideScreen) {
-      //       link.setAttribute("target", "_blank");
-      //       link.setAttribute("rel", "noopener noreferrer");
-      //     } else {
-      //       link.removeAttribute("target");
-      //     }
-      //   });
-      // });
-      function updateDesktopTargets(context = document) {
-    const links = context.querySelectorAll('a[data-open-in-new-tab="_blank"]');
-    const isDesktop = window.innerWidth >= 768;
-
-    links.forEach(link => {
-      if (isDesktop) {
-        link.setAttribute('target', '_blank');
-      } else {
-        link.removeAttribute('target');
-      }
-    });
-  }
-
-  document.addEventListener('DOMContentLoaded', function () {
-    updateDesktopTargets();
-
-    // Handle infinite scroll or AJAX-loaded content
-    const observer = new MutationObserver(mutations => {
-      mutations.forEach(mutation => {
-        mutation.addedNodes.forEach(node => {
-          if (node.nodeType === 1) {
-            updateDesktopTargets(node);
+        document.querySelectorAll('a[data-open-in-new-tab="true"]').forEach(link => {
+          if (isWideScreen) {
+            link.setAttribute("target", "_blank");
+            link.setAttribute("rel", "noopener noreferrer");
+          } else {
+            link.removeAttribute("target");
           }
         });
       });
-    });
-
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true
-    });
-  });
+      
       
     </script>
   {% include 'kart_discount' %}
