@@ -5075,17 +5075,7 @@ summary .icon-caret {
   font-family: var(--font-noto-serif-display);
 }
 
-.Index_custom_category_main_new {
-  margin: 50px 0 32px;
-}
-.Index_custom_category_inner_new {
-}
-.Index_custom_category_main_new .page-width {
-}
-.Index_custom_category_mainloop_new {
-}
-.Index_custom_category_innerloop_new {
-}
+
 .Index_custom_category_innerloop_mainboxs_new {
   position: relative;
   width: 322px;
@@ -15701,10 +15691,6 @@ label[for="AddressProvinceNew"] {
     font-size: 12px;
     line-height: 149.215%;
   }
-
-  .Index_custom_category_main_new {
-    margin: 40px 0;
-  }
   .Index_custom_category_innerloop_mainboxs_new {
     width: calc(50% - 5px);
   }
@@ -19089,9 +19075,6 @@ label[for="AddressProvinceNew"] {
   }
   .Index_information_lists_allloop_innerboxs_new {
     font-size: 18px;
-  }
-  .Index_custom_category_main_new {
-    margin: 40px 0;
   }
   .Index_custom_category_innerloop_innerboxs_2_new {
     padding: 15px;
