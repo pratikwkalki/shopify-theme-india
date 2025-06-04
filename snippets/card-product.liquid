@@ -24,34 +24,37 @@
 {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
 
 <script>
-  function applyDesktopOnlyTargets(context = document) {
-    const links = context.querySelectorAll('a[data-open-in-new-tab="_blank"]');
-    const isDesktop = window.innerWidth >= 768; // Customize breakpoint as needed
+  function updateDesktopTargets(context = document) {
+    const links = context.querySelectorAll('a[data-desktop-target="_blank"]');
+    const isDesktop = window.innerWidth >= 768;
 
     links.forEach(link => {
       if (isDesktop) {
-        link.setAttribute("target", "_blank");
+        link.setAttribute('target', '_blank');
       } else {
-        link.removeAttribute("target");
+        link.removeAttribute('target');
       }
     });
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
-    applyDesktopOnlyTargets();
+  document.addEventListener('DOMContentLoaded', function () {
+    updateDesktopTargets();
 
-    // Optional: observe dynamically loaded content like infinite scroll
+    // Handle infinite scroll or AJAX-loaded content
     const observer = new MutationObserver(mutations => {
       mutations.forEach(mutation => {
         mutation.addedNodes.forEach(node => {
           if (node.nodeType === 1) {
-            applyDesktopOnlyTargets(node);
+            updateDesktopTargets(node);
           }
         });
       });
     });
 
-    observer.observe(document.body, { childList: true, subtree: true });
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
   });
 </script>
 
