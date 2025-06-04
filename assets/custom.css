@@ -20831,10 +20831,6 @@ label[for="AddressProvinceNew"] {
   .header__icons {
     grid-gap: 12px;
   }
-  .Visit-our-Store-section-innerbox .storebox .textbox h2 {
-    font-size: 20px !important;
-    line-height: 20px !important;
-  }
   .template--inara-collection .grid--5-col-desktop .grid__item,
   .template--rumi-collection .grid--5-col-desktop .grid__item,
   .template--alanna-panday-collection .grid--5-col-desktop .grid__item,
