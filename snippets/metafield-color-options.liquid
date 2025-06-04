@@ -30,7 +30,7 @@
   {% if product.metafields.custom.similar_color_products %}
     <div class="text_with_image color-options">
       {% for similar_product in product.metafields.custom.similar_color_products.value %}
-        {{ similar_product.metafields.custom.color_image | json }}
+        <!-- {{ similar_product.metafields.custom.color_image | json }} -->
         {% if similar_product.metafields.custom.color_name != blank and similar_product.metafields.custom.color_image != blank %}
         <a href="{{ similar_product.url }}" class="ancor {% if product.handle == similar_product.handle %}active{% endif %}">
           <div class="image">
