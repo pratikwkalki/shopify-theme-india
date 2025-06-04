@@ -105,10 +105,10 @@
   width: 100%;
   z-index: 3;
 }
-.Index_custom_collections_allloop_innerboxs_3_title_new h2 {
+.Index_custom_collections_allloop_innerboxs_3_title_new h2, .Index_custom_collections_allloop_innerboxs_3_title_new h3 {
   margin: 0;
 }
-.Index_custom_collections_allloop_innerboxs_3_title_new h2 {
+.Index_custom_collections_allloop_innerboxs_3_title_new h2, .Index_custom_collections_allloop_innerboxs_3_title_new h3 {
   color: #fff;
   text-align: center;
   font-size: 22px;
@@ -181,7 +181,7 @@
   .Index_custom_collections_allloop_innerboxs_3_new {
     padding: 15px;
   }
-  .Index_custom_collections_allloop_innerboxs_3_title_new h2 {
+  .Index_custom_collections_allloop_innerboxs_3_title_new h2, .Index_custom_collections_allloop_innerboxs_3_title_new h3 {
     font-size: 16px;
   }
   .Index_custom_collections_allloop_innerboxs_3_button_new {
@@ -229,7 +229,7 @@
   .Index_custom_collections_allloop_innerboxs_3_new {
     padding: 20px 8px;
   }
-  .Index_custom_collections_allloop_innerboxs_3_title_new h2 {
+  .Index_custom_collections_allloop_innerboxs_3_title_new h2, .Index_custom_collections_allloop_innerboxs_3_title_new h3 {
     font-size: 18px;
     letter-spacing: 0.16px;
     line-height: 125%;
@@ -262,7 +262,7 @@
   .Index_collection_list_slider .Index_custom_collections_allloop_innerboxs_3_button_new {
     display: none;
   }
-  .Index_collection_list_slider .Index_custom_collections_allloop_innerboxs_3_title_new h2 {
+  .Index_collection_list_slider .Index_custom_collections_allloop_innerboxs_3_title_new h2, .Index_custom_collections_allloop_innerboxs_3_title_new h3 {
     font-size: 15px;
     line-height: 133.333%;
   }
