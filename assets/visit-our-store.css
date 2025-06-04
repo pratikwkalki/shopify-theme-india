@@ -7,7 +7,12 @@
 .Page_Store_google_reviews_title_new h2 {
   font-weight: normal;
 }
-
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .Visit-our-Store-section-innerbox .storebox .textbox h2 {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+}
 @media (min-width: 750px) and (max-width: 989px) {
   .Page_Store_google_reviews_main_new {
     margin: 40px 0;
@@ -23,5 +28,18 @@
   .Page_Store_google_reviews_title_new {
     margin-bottom: 8px;
     padding: 0 16px;
+  }
+}
+@media (min-width: 0px) and (max-width: 1024px) {
+  .Visit-our-Store-section-innerbox .storebox .textbox h2 {
+    font-size: 14px !important;
+    line-height: 14px !important;
+    margin-bottom: 8px !important;
+  }
+  .visit-our-Store-slider.Index_custom_category_slider .swiper-button-next,
+  .visit-our-Store-slider.Index_custom_category_slider .swiper-button-prev {
+    display: block;
+    margin: 0 -5px;
+    width: 26px;
   }
 }
