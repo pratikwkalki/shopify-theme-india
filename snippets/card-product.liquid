@@ -25,7 +25,7 @@
 
 <script>
   function updateDesktopTargets(context = document) {
-    const links = context.querySelectorAll('a[data-desktop-target="_blank"]');
+    const links = context.querySelectorAll('a[data-open-in-new-tab="_blank"]');
     const isDesktop = window.innerWidth >= 768;
 
     links.forEach(link => {
