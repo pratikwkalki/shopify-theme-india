@@ -95,6 +95,9 @@
   .Product_breadcrumb_main_new .breadcrumbs .breadcrumbs__link{ 
     font-size:14px; 
   }
+  .Product_breadcrumb_main_new .breadcrumbs {
+      padding: 20px 0 0;
+  }
 }
 @media (min-width: 0px) and (max-width: 749px) {
   .List_collections_template_breadcrumb_new {
@@ -117,7 +120,7 @@
     padding-right: 15px;
   }
   .Product_breadcrumb_main_new .breadcrumbs {
-      padding: 20px 0 0;
+    padding: 20px 0 0;
   }
 }
 @media only screen and (max-width: 990px) {
