@@ -6662,13 +6662,6 @@ div[data-widget-style] div.stamped-container {
 .Index_rumi_collections_allloop_mainboxs_new a {
   color: #000;
 }
-.Page_rumi_collections_mainleft_new {
-  width: 33.333333% !important;
-  padding-right: 0 !important;
-}
-.Page_rumi_collections_mainright_new {
-  width: 66.66% !important;
-}
 .rumi_collection_slider_title {
   background-color: #f4d8cc;
   text-transform: uppercase;
@@ -6874,12 +6867,6 @@ div[data-widget-style] div.stamped-container {
 }
 .template--rumi-collection .video-with-text-videosection .iframe-container {
   padding-top: 0;
-}
-.Page_rumi_collections_mainleft_new
-  .Page_weaves_collections_innerleft_title_new
-  p {
-  font-size: 24px;
-  text-transform: none;
 }
 .template--alanna-panday-collection .rumi-firework-subtitle,
 template-collection template--deme-collection .rumi-firework-subtitle {
@@ -19611,12 +19598,6 @@ body
     width: calc(33.33% - 12px);
     max-width: calc(33.33% - 12px);
   }
-  .template--deme-collection
-    .Page_rumi_collections_mainleft_new
-    .Page_weaves_collections_innerleft_title_new
-    p {
-    font-size: 18px;
-  }
   .template--deme-collection .Page_weaves_collections_mainright_new {
     margin-top: 16px;
   }
@@ -19772,16 +19753,6 @@ body
   .template--rumi-collection .section-123-padding {
     padding-top: 0;
     padding-bottom: 40px;
-  }
-  .Page_rumi_collections_mainleft_new,
-  .Page_rumi_collections_mainright_new {
-    width: 100% !important;
-  }
-  .template--alanna-panday-collection
-    .Page_rumi_collections_mainleft_new
-    .Page_weaves_collections_innerleft_title_new
-    p {
-    font-size: 18px;
   }
   .template--alanna-panday-collection .Page_weaves_collections_mainright_new {
     margin-top: 16px;
