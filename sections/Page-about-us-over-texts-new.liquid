@@ -1,4 +1,5 @@
 {%- if section.settings.main_desktop_mp4_video != blank or section.settings.main_desktop_full_image != blank or section.settings.main_mobile_full_image != blank or section.settings.main_heading_text != blank or section.settings.main_information_text != blank or section.settings.main_button_link != blank -%}
+  {{ 'page-about-us.css' | asset_url | stylesheet_tag }}
   <div class="Page_about_us_over_texts_main_new {{ section.settings.customClass }}" style="background: {{ section.settings.main_background_color }};">
     <div class="page-width">
       <div class="Page_about_us_over_texts_inner_new">

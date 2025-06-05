@@ -1,4 +1,5 @@
 {%- if section.blocks.size > 0 -%}
+  {{ 'page-about-us.css' | asset_url | stylesheet_tag }}
   <div class="Page_about_us_block_lists_main_new {{ section.settings.customClass }}" style="background: {{ section.settings.main_background_color }};">
     <div class="page-width">
       <div class="Page_about_us_block_lists_inner_new">
