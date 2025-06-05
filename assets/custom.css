@@ -6650,12 +6650,7 @@ div[data-widget-style] div.stamped-container {
 /* Collection */
 
 /* Collection page new layout Rumi  */
-.rumi-video {
-  padding: 40px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 .Index_rumi_collections_allloop_mainboxs_new a {
   color: #000;
 }
@@ -6674,32 +6669,6 @@ div[data-widget-style] div.stamped-container {
   font-size: 14px;
   font-weight: 500;
 }
-.rumi-firework-subtitle p {
-  font-size: 16px;
-  line-height: 24px;
-  margin: 30px auto 0;
-  text-align: center;
-}
-.rumi-video fw-embed-feed {
-  --fw-thumbnail-font-size: 0;
-  --fw-thumbnail-font-weight: 400;
-  --fw-thumbnail-width: 300px;
-  --fw-thumbnail-height: 500px;
-}
-.rumi-video .Index_title_inner_new h2 {
-  margin: 20px 0 0;
-  font-size: 32px;
-  line-height: 28px;
-}
-.rumi-video .Index_title_title_new {
-  margin-bottom: 20px;
-}
-.rumi-video {
-  padding: 40px 0;
-  margin-top: 40px;
-}
-
-
 .Collection_rumi_product_main_new .Index_title_title_new {
   text-align: left;
   display: flex;
@@ -19548,7 +19517,6 @@ body
   .buying-guide-inner-ul {
     row-gap: 40px;
   }
-  
   .template--mens-detail-new .Index_round_column_list_1_allloop_mainboxs_new {
     border-top: 1px solid #f5f0f0;
   }
@@ -19559,13 +19527,6 @@ body
     .Collection_category_lists_innerloop_mainboxs_new
     a {
     margin-right: -10px;
-  }
-  .rumi-video {
-    padding: 16px;
-  }
-  .rumi-video .Index_title_inner_new h2 {
-    text-align: center;
-    font-size: 18px;
   }
   .template--rumi-collection .rich-text__heading,
   .template--alanna-panday-collection .rich-text__heading {
