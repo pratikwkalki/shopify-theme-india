@@ -1,0 +1,62 @@
+.breadcrumbs {
+  margin: 0 !important;
+  padding: 18px 0 0 0;
+}
+.breadcrumbs__list {
+  display: flex;
+}
+.breadcrumbs ol li {
+  position: relative;
+  padding-right: 24px;
+  display: flex;
+  letter-spacing: 0.14px;
+}
+.breadcrumbs__item a {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 125%;
+  text-decoration: none !important;
+  display: inline-block;
+  color: #000;
+}
+.breadcrumbs__item p {
+  line-height: 1;
+}
+.breadcrumbs__link {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 125%;
+  text-decoration: none !important;
+  display: inline-block;
+  color: #000;
+}
+.breadcrumbs__item:not(:last-child):after {
+  position: absolute !important;
+  right: 8px;
+  margin: 0 !important;
+  height: 20px;
+  top: 0;
+  display: block !important;
+  line-height: 20px;
+  color: #b2adad;
+}
+.breadcrumbs__link[aria-current="page"] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #0f0d1a;
+}
+.Page_template_breadcrumb_new .breadcrumbs {
+  padding-top: 16px;
+}
+@media (min-width: 0px) and (max-width: 749px) {
+  .List_collections_template_breadcrumb_new {
+    display: none;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .breadcrumbs__item {
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+  }
+}
