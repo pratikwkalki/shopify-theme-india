@@ -73,19 +73,8 @@
   height: 100%;
   width: 100%;
 }
-.List_collections_template_innerloop_innerboxs_2_detail_innerleft_1_videoimage_new
-  video {
-  width: 100%;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100% !important;
-}
-.List_collections_template_innerloop_innerboxs_2_detail_innerleft_1_videoimage_new
-  img {
+.List_collections_template_innerloop_innerboxs_2_detail_innerleft_1_videoimage_new video,
+.List_collections_template_innerloop_innerboxs_2_detail_innerleft_1_videoimage_new img{
   width: 100%;
   position: absolute;
   object-fit: cover;
@@ -102,8 +91,7 @@
   bottom: 0;
   text-align: center;
 }
-.List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_title_new
-  h2 {
+.List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_title_new h2 {
   display: none;
   margin: 0;
   color: #fff;
@@ -118,8 +106,7 @@
 .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_texts_new {
   padding: 20px 0 0 0;
 }
-.List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_texts_new
-  p {
+.List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_texts_new p {
   margin: 0;
   font-size: 16px;
   line-height: 150%;
@@ -131,16 +118,14 @@
   align-items: center;
   flex-direction: column;
 }
-.List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new
-  a {
+.List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new a {
   font-size: 16px;
   letter-spacing: 0.64px;
   line-height: 1;
   min-width: auto;
   padding: 12px 30px;
 }
-.List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new
-  img {
+.List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new img {
   max-width: 100%;
 }
 .List_collections_template_innerloop_innerboxs_2_detail_mainright_new {
@@ -156,20 +141,8 @@
   padding-bottom: 141.43%;
   display: block;
 }
-.List_collections_template_innerloop_innerboxs_2_detail_innerright_image_new
-  video {
-  width: 100%;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100% !important;
-  object-position: top;
-}
-.List_collections_template_innerloop_innerboxs_2_detail_innerright_image_new
-  img {
+.List_collections_template_innerloop_innerboxs_2_detail_innerright_image_new video,
+.List_collections_template_innerloop_innerboxs_2_detail_innerright_image_new img {
   width: 100%;
   position: absolute;
   object-fit: cover;
@@ -187,5 +160,74 @@
   .List_collections_template_innerloop_mainboxs_new {
     padding: 16px;
     margin: 0 -16px;
+  }
+}
+@media (min-width: 0px) and (max-width: 749px) {
+  .List_collections_template_title_new {
+    margin-top: 40px;
+  }
+  .List_collections_template_main_new {
+    padding: 0 0 27px 0;
+  }
+  .List_collections_template_innerloop_mainboxs_new {
+    padding: 16px;
+    margin-bottom: 13px;
+  }
+  .List_collections_template_innerloop_innerboxs_1_new {
+    display: none;
+  }
+  .List_collections_template_innerloop_innerboxs_2_detail_new {
+    flex-wrap: wrap;
+  }
+  .List_collections_template_innerloop_innerboxs_2_detail_mainleft_new {
+    width: 100%;
+    max-width: 100%;
+  }
+  .List_collections_template_innerloop_innerboxs_2_detail_mainright_new {
+    padding-left: 0;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_new {
+    padding: 16px 10px;
+  }
+  .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_title_new h2 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.16px;
+  }
+  .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_texts_new {
+    padding: 0;
+  }
+  .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_texts_new p {
+    font-size: 14px;
+    line-height: 171.429%;
+  }
+  .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new {
+    padding-top: 10px;
+  }
+  .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new a {
+    font-size: 11px;
+    letter-spacing: 0.44px;
+    padding: 10px 30px;
+  }
+  .List_collections_template_innerloop_innerboxs_2_detail_innerright_image_new {
+    width: calc(50% - 8px);
+  }
+  .list_collection_slider {
+    padding-right: 0;
+  }
+  .list_collection_slider .swiper-button-next {
+    width: 24px;
+    height: 26px;
+    right: 0;
+    background-size: 8px !important;
+  }
+  .list_collection_slider .swiper-button-prev {
+    width: 24px;
+    height: 26px;
+    right: 0;
+    background-size: 8px !important;
   }
 }
