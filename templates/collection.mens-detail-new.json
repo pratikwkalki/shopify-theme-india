@@ -298,17 +298,17 @@
         "information_yTG78t": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/1-mens-slider-banner-see-all-mens-wear-all-country-desktop-1440x540-23-05-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/1-men-mobile-banner-see-all-mens-wear-all-country-500x707-23-05-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/1-mens-slider-banner-see-all-mens-wear-all-country-desktop-1440x540-05-06-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1-men-mobile-banner-see-all-mens-wear-all-country-500x707-05-06-25.jpg",
             "main_banner_redirect_link": "shopify://collections/see-all-menswear"
           }
         },
         "information_PBqbzG": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/2-mens-slider-banner-summer-styles-all-country-desktop-1440x540-23-05-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/2-men-mobile-banner-summer-styles-all-country-500x707-23-05-25.jpg",
-            "main_banner_redirect_link": "shopify://collections/essential-for-men"
+            "main_desktop_full_image": "shopify://shop_images/2-mens-slider-banner-printed-collection-all-country-desktop-1440x540-05-06-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/2-men-mobile-banner-printed-collection-all-country-500x707-05-06-25.jpg",
+            "main_banner_redirect_link": "shopify://collections/printed-menswear"
           }
         }
       },
