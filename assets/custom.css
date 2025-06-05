@@ -5438,10 +5438,6 @@ summary .icon-caret {
 }
 
 /* Product */
-.Product_breadcrumb_main_new .breadcrumbs {
-  padding: 30px 0 0 0;
-}
-
 .Product_meta_feature_list_main_new {
   padding: 40px 0;
 }
@@ -5779,9 +5775,7 @@ div[data-widget-style] div.stamped-container {
   white-space: nowrap;
   color: #0f0d1a;
 }
-.Product_breadcrumb_main_new ol li:last-child {
-  overflow: hidden;
-}
+
 .Collection_meta_banner_main_new {
   padding: 16px 0 0 0;
 }
@@ -20597,9 +20591,6 @@ body.template-customers-activate_account .customer .field {
   padding: 0;
   /* max-width: 1090px; */
   margin: auto;
-}
-.template-page .Product_breadcrumb_main_new .breadcrumbs {
-  padding-top: 16px;
 }
 .our-stores_page_new .Common_title_new h2 {
   font-size: 36px;
