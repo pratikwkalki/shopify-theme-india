@@ -1,4 +1,5 @@
 {%- if section.settings.main_desktop_mp4_video != blank or section.settings.main_desktop_full_image != blank or section.settings.main_mobile_full_image != blank or section.settings.main_heading_text != blank or section.settings.main_button_link != blank -%}
+  {{ 'page-collection-detail.css' | asset_url | stylesheet_tag }}
   <div class="Page_collection_detail_join_us_main_new" style="background: {{ section.settings.main_background_color }};">
     <div class="Page_collection_detail_join_us_inner_new">
       {%- if section.settings.main_desktop_mp4_video != blank or section.settings.main_desktop_full_image != blank or section.settings.main_mobile_full_image != blank -%}

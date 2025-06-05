@@ -1,4 +1,5 @@
 {%- if section.settings.main_author_heading_text != blank or section.settings.main_author_detail_text != blank or section.settings.main_author_name_text != blank or section.settings.main_author_designation_text != blank or section.settings.main_mp4_video != blank or section.settings.main_desktop_image != blank or section.settings.main_mobile_image != blank -%}
+  {{ 'page-collection-detail.css' | asset_url | stylesheet_tag }}
   <div class="Page_collection_detail_devide_main_new Page_collection_detail_devide_main_new_{{ section.id }}" style="{% if section.settings.main_desktop_full_image != blank %}background: url({{ section.settings.main_desktop_full_image | img_url: 'master' }}) no-repeat center center; background-size: cover;{% else %}background: {{ section.settings.main_background_color }};{% endif %}">
     {%- if section.settings.main_mobile_full_image != blank -%}
       <style>
