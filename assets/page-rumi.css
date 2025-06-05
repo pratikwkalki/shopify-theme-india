@@ -94,7 +94,31 @@
   margin: 0;
   line-height: 1;
 }
-
+.bride-and-barat-form_page_new .rumi-page-edit,
+.mushk-lfw-couture-store_page_new .rumi-page-edit {
+  display: block;
+}
+.template--buying-guide .rich-text__blocks,
+.template--buying-guide .rumi-page-edit {
+  max-width: 880px;
+}
+@media screen and (min-width: 750px) {
+  .rumi-page-edit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .template--kalki-fashion-show main .rumi-page-edit {
+    gap: 40px;
+  }
+  .template--kalki-fashion-show main .rumi-page-edit .image-with-text {
+    width: calc(50% - 20px) !important;
+  }
+  .template--buying-guide .rumi-page-edit {
+    gap: 40px;
+    flex-wrap: nowrap;
+  }
+}
 @media screen and (max-width: 749px) {
   .rumi-testimonial-box {
     flex-wrap: wrap;
@@ -107,5 +131,14 @@
   .rumi-footer--textline {
     font-size: 14px;
     margin-top: 0;
+  }
+  .buying-guide_page_new .rumi-page-edit .image-with-text {
+    width: 100%;
+  }
+  .buying-guide_page_new .rumi-page-edit .image-with-text:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .template--kalki-fashion-show main .rumi-page-edit .image-with-text:first-child {
+    margin-bottom: 40px;
   }
 }

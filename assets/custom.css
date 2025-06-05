@@ -3401,10 +3401,7 @@ select {
   background-color: #000;
 }
 /* bride and barat form header footer hide start*/
-.bride-and-barat-form_page_new .rumi-page-edit,
-.mushk-lfw-couture-store_page_new .rumi-page-edit {
-  display: block;
-}
+
 .template--bride-barat-form #MainContent,
 .template--measurement #MainContent {
   display: flex;
@@ -6797,17 +6794,6 @@ template-collection template--deme-collection .rumi-firework-subtitle {
 .template--alanna-panday-collection .rumi-image-with-text-section,
 .template--deme-collection .rumi-image-with-text-section {
   max-width: 1200px;
-}
-
-@media screen and (min-width: 750px) {
-  .rumi-page-edit {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  /* .template--mens-detail-new .Collection_sides_by_sides_mainleft_new .Collection_sides_by_sides_innerleft_2_new {
-    display: none;
-  } */
 }
 /* Collection page new layout Rumi  */
 
@@ -18903,10 +18889,6 @@ body.template-customers-activate_account .customer .field {
 .template--buying-guide .Common_title_new h2 {
   font-size: 40px;
 }
-.template--buying-guide .rich-text__blocks,
-.template--buying-guide .rumi-page-edit {
-  max-width: 880px;
-}
 .template--buying-guide .grid--3-col-tablet .image-with-text__content ul {
   padding: 0;
   border: 1px solid #e1e1e5;
@@ -19370,12 +19352,6 @@ body
   }
 }
 @media screen and (min-width: 750px) {
-  .template--kalki-fashion-show main .rumi-page-edit {
-    gap: 40px;
-  }
-  .template--kalki-fashion-show main .rumi-page-edit .image-with-text {
-    width: calc(50% - 20px) !important;
-  }
   .template--buying-guide .grid--3-col-tablet {
     flex-wrap: nowrap;
     gap: 40px;
@@ -19386,10 +19362,6 @@ body
   }
   .template--buying-guide .grid--3-col-tablet .image-with-text__content {
     padding: 0;
-  }
-  .template--buying-guide .rumi-page-edit {
-    gap: 40px;
-    flex-wrap: nowrap;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -19576,12 +19548,7 @@ body
   .buying-guide-inner-ul {
     row-gap: 40px;
   }
-  .buying-guide_page_new .rumi-page-edit .image-with-text {
-    width: 100%;
-  }
-  .buying-guide_page_new .rumi-page-edit .image-with-text:not(:last-child) {
-    margin-bottom: 20px;
-  }
+  
   .template--mens-detail-new .Index_round_column_list_1_allloop_mainboxs_new {
     border-top: 1px solid #f5f0f0;
   }
@@ -19664,12 +19631,6 @@ body
   .contact-us_page_new .page_store_detail_slider_new .Common_title_new h2 {
     text-align: center;
     margin: 35px 0 20px;
-  }
-  .template--kalki-fashion-show
-    main
-    .rumi-page-edit
-    .image-with-text:first-child {
-    margin-bottom: 40px;
   }
   .template--kalki-fashion-show main .grid--3-col-desktop {
     padding: 0;
