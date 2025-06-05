@@ -20308,20 +20308,6 @@ body.template-customers-activate_account .customer .field {
   margin-bottom: 0;
 }
 /* customization-charges */
-
-.template--latest-collection .Index_title_new .Common_title_new h2 {
-  font-size: 40px;
-}
-.template--latest-collection .Index_title_new .Common_title_new {
-  margin-bottom: 0;
-}
-.template--latest-collection .Index_title_main_new {
-  margin-bottom: 24px;
-}
-.template--latest-collection
-  .List_collections_template_innerloop_innerboxs_1_new {
-  display: none;
-}
 .template--maternity-size-guide .Page_template_title_new h1 {
   font-size: 40px;
   margin-top: 44px;
@@ -21085,10 +21071,6 @@ body
   }
   .customization-tailoring ul {
     padding-bottom: 16px;
-  }
-  .template--latest-collection .Index_title_new .Common_title_new h2 {
-    font-size: 24px;
-    text-align: center;
   }
   .page_size_chart_tabs_inner_new {
     padding-bottom: 40px;
