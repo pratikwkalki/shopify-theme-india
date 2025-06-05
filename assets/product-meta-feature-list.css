@@ -1,0 +1,183 @@
+.Product_meta_feature_list_main_new {
+  padding: 40px 0;
+}
+.Product_meta_feature_list_inner_new {
+  max-width: 1289px;
+  margin: auto;
+}
+.Product_meta_feature_list_innerright_titletexts_newmobile_image_new h2 {
+  color: #000;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 120%;
+}
+.Product_meta_feature_list_innerleftright_new {
+  display: flex;
+  align-items: center;
+}
+.Product_meta_feature_list_mainleft_new {
+  width: 515px;
+  min-height: 730px;
+  position: relative;
+}
+.Product_meta_feature_list_innerleft_videoimage_new video {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100% !important;
+}
+.Product_meta_feature_list_innerleft_videoimage_new img {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100% !important;
+}
+.Product_meta_feature_list_mainright_new {
+  width: calc(100% - 515px);
+  background: #f7f7f7;
+  padding: 56px 60px;
+}
+.Product_meta_feature_list_innerright_titletexts_new h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 118.75%;
+  margin: 0;
+}
+.Product_meta_feature_list_innerright_infoslists_new {
+  padding: 20px 13px;
+}
+.Product_meta_feature_list_innerright_infoslists_lists_new {
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.Product_meta_feature_list_innerright_infoslists_lists_new:first-child {
+  padding-top: 20px;
+}
+.Product_meta_feature_list_innerright_infoslists_lists_new:last-child {
+  padding-bottom: 20px;
+  border-bottom: none;
+}
+.Product_meta_feature_list_innerright_infoslists_lists_new h4 {
+  color: #0f0d1a;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  margin: 0;
+}
+.Product_meta_feature_list_innerright_infoslists_lists_new p {
+  color: #0f0d1a;
+  font-size: 16px;
+  line-height: 140%;
+  margin: 0;
+}
+@media (min-width: 990px) and (max-width: 1424px) {
+  .Product_meta_feature_list_mainleft_new {
+    width: 420px;
+    min-height: 600px;
+  }
+  .Product_meta_feature_list_mainright_new {
+    width: calc(100% - 420px);
+    padding: 40px 20px;
+  }
+  .Product_meta_feature_list_innerright_titletexts_new.desktop_image_new h2 {
+    font-size: 28px;
+  }
+  .Product_meta_feature_list_innerright_infoslists_lists_new {
+    padding: 15px 0;
+  }
+  .Product_meta_feature_list_innerright_infoslists_lists_new h4 {
+    font-size: 18px;
+  }
+  .Product_meta_feature_list_innerright_infoslists_lists_new p {
+    font-size: 16px;
+  }
+  .Product_meta_feature_list_innerright_infoslists_new {
+    padding: 24px 13px 0;
+  }
+  .Product_meta_feature_list_innerright_infoslists_lists_new:first-child {
+    padding-top: 0;
+  }
+  .Product_meta_feature_list_innerright_infoslists_lists_new:last-child {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 750px) and (max-width: 989px) {
+  .Product_meta_feature_list_mainleft_new {
+    width: 350px;
+    min-height: 550px;
+  }
+  .Product_meta_feature_list_mainright_new {
+    width: calc(100% - 350px);
+    padding: 40px 20px;
+  }
+  .Product_meta_feature_list_innerright_titletexts_new.desktop_image_new h2 {
+    font-size: 20px;
+  }
+  .Product_meta_feature_list_innerright_infoslists_lists_new {
+    padding: 15px 0;
+  }
+  .Product_meta_feature_list_innerright_infoslists_lists_new h4 {
+    font-size: 17px;
+  }
+  .Product_meta_feature_list_innerright_infoslists_lists_new p {
+    font-size: 14px;
+  }
+  .Product_meta_feature_list_innerright_infoslists_new {
+    padding: 24px 13px 0;
+  }
+  .Product_meta_feature_list_innerright_infoslists_lists_new:first-child {
+    padding-top: 0;
+  }
+  .Product_meta_feature_list_innerright_infoslists_lists_new:last-child {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 749px) {
+  .Product_meta_feature_list_main_new {
+    margin: 0;
+    background: #f7f7f7 !important;
+    padding: 30px 0;
+  }
+  .Product_meta_feature_list_innerright_titletexts_new {
+    padding-bottom: 16px;
+  }
+  .Product_meta_feature_list_innerright_titletexts_new h2 {
+    font-size: 22px;
+  }
+  .Product_meta_feature_list_innerleftright_new {
+    display: block;
+  }
+  .Product_meta_feature_list_mainleft_new {
+    width: 100%;
+    min-height: 449px;
+    margin: auto;
+  }
+  .Product_meta_feature_list_mainright_new {
+    width: 100%;
+    background: none;
+    padding: 16px 0 0 0;
+  }
+  .Product_meta_feature_list_innerright_new {
+  }
+  .Product_meta_feature_list_innerright_infoslists_new {
+    max-width: 100%;
+    padding: 2px 13px;
+  }
+  .Product_meta_feature_list_innerright_infoslists_lists_new {
+    padding: 18px 0 !important;
+  }
+  .Product_meta_feature_list_innerright_infoslists_lists_new h4 {
+    font-size: 16px;
+  }
+  .Product_meta_feature_list_innerright_infoslists_lists_new p {
+    font-size: 14px;
+  }
+}
