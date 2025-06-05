@@ -5,3 +5,23 @@
 .related-products__heading {
   margin: 0 0 3rem;
 }
+@media (min-width: 0px) and (max-width: 749px) {
+  .Product_related_bridal_list_new {
+    padding: 0 16px;
+  }
+  .Product_related_bridal_list_new .product_grid_item_new {
+    width: 160px;
+  }
+  .Product_related_bridal_list_new .swiper-wrapper {
+    padding-bottom: 30px;
+  }
+  .Product_related_bridal_list_new .swiper-pagination {
+    bottom: 2px !important;
+  }
+  .Product_related_bridal_list_new .swiper-pagination-bullet {
+    background: #000;
+  }
+  .Product_bridal_related_new .page-width {
+    padding: 0 !important;
+  }
+}

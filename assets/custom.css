@@ -13662,25 +13662,6 @@ label[for="AddressProvinceNew"] {
   #stamped-main-widget {
     margin: 20px -16px !important;
   }
-  .Product_related_bridal_list_new {
-    padding: 0 16px;
-  }
-  .Product_related_bridal_list_new .product_grid_item_new {
-    width: 160px;
-  }
-  .Product_related_bridal_list_new .swiper-wrapper {
-    padding-bottom: 30px;
-  }
-  .Product_related_bridal_list_new .swiper-pagination {
-    bottom: 2px !important;
-  }
-  .Product_related_bridal_list_new .swiper-pagination-bullet {
-    background: #000;
-  }
-
-  .Product_bridal_related_new .page-width {
-    padding: 0 !important;
-  }
   .product_whishlist_new
     #widget-fave-html
     .ssw-wishlist-btn
