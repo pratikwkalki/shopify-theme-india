@@ -117,4 +117,11 @@
   .Page_weaves_collections_innerright_allloop_mainboxs_new .Index_custom_collections_allloop_innerboxs_3_new {
     padding: 20px 15px;
   }
+  .Page_rumi_collections_mainleft_new,
+  .Page_rumi_collections_mainright_new {
+    width: 100% !important;
+  }
+  .template--alanna-panday-collection .Page_rumi_collections_mainleft_new .Page_weaves_collections_innerleft_title_new p {
+    font-size: 18px;
+  }
 }
