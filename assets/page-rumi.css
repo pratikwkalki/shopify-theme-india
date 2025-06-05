@@ -218,12 +218,8 @@
 .template--rumi-collection .video-with-text-videosection .iframe-container {
   padding-top: 0;
 }
-.template--alanna-panday-collection
-  .Collection_rumi_product_main_new
-  #product-grid.grid,
-.template--deme-collection
-  .Collection_rumi_product_main_new
-  #product-grid.grid {
+.template--alanna-panday-collection  .Collection_rumi_product_main_new  #product-grid.grid,
+.template--deme-collection  .Collection_rumi_product_main_new  #product-grid.grid {
   margin-top: 32px;
 }
 .template--alanna-panday-collection .rumi-image-with-text-section,
