@@ -210,6 +210,12 @@
   }
 }
 @media (min-width: 750px) and (max-width: 989px) {
+  .Index_custom_category_innerloop_innerboxs_2_new {
+    padding: 15px;
+  }
+  .Index_custom_category_innerloop_innerboxs_2_titletextboth_new h2 p {
+    font-size: 18px;
+  }
   .Index_custom_collections_main_new {
     margin: 10px auto;
   }
