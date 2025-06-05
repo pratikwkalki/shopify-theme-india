@@ -226,6 +226,10 @@
 @media (min-width: 0px) and (max-width: 749px) {
   .List_collections_template_title_new {
     margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .List_collections_template_title_new h2 {
+    font-size: 20px;
   }
   .List_collections_template_main_new {
     padding: 0 0 27px 0;
