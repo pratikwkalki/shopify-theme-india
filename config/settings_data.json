@@ -318,18 +318,6 @@
         "disabled": false,
         "settings": {}
       },
-      "14339172867238703359": {
-        "type": "shopify://apps/yotpo-product-reviews/blocks/reviews_tab/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-        "disabled": false,
-        "settings": {
-          "product": ""
-        }
-      },
-      "7570552984445421165": {
-        "type": "shopify://apps/yotpo-product-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
-        "disabled": false,
-        "settings": {}
-      },
       "7612553728132747764": {
         "type": "shopify://apps/stamped-reviews/blocks/net-promoter-score-form-modal/a103faaf-2125-4b0e-89fa-de5149736723",
         "disabled": true,
