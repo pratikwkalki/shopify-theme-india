@@ -1,0 +1,92 @@
+.Product_meta_product_list_main_new {
+  padding: 20px 0;
+}
+.Product_meta_product_list_title_new {
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.Product_meta_product_list_innerdetail_new {
+  display: flex;
+  grid-gap: 15px;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.Product_meta_product_list_innerdetail_new .product_grid_item_new {
+  width: calc(20% - 12px);
+  max-width: initial;
+}
+.Product_meta_product_list_innerdetail_6_product_new .product_grid_item_new:last-child {
+  display: none;
+}
+.Product_Bridal_meta_product_list_main_new .cs_delivery_inner-wrapper {
+  display: none;
+}
+.Product_Bridal_meta_product_list_main_new .Product_meta_product_list_innerdetail_new {
+  display: block;
+}
+
+@media (min-width: 990px) and (max-width: 1424px) {
+  .Product_meta_product_list_innerdetail_new {
+    grid-gap: 8px;
+  }
+  .Product_meta_product_list_innerdetail_new .product_grid_item_new {
+    width: calc(20% - 6px);
+  }
+  .Product_meta_product_list_main_new {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 750px) and (max-width: 989px) {
+  .Product_meta_product_list_innerdetail_new {
+    grid-gap: 8px;
+  }
+  .Product_meta_product_list_innerdetail_new .product_grid_item_new {
+    width: calc(20% - 6px);
+  }
+  .Product_meta_product_list_main_new {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 0px) and (max-width: 749px) {
+  .Product_meta_product_list_innerdetail_new {
+    flex-wrap: wrap;
+    grid-gap: 20px 8px;
+  }
+  .Product_meta_product_list_innerdetail_new .product_grid_item_new {
+    width: calc(50% - 4px);
+    flex-grow: initial;
+  }
+  .Product_meta_product_list_innerdetail_6_product_new
+    .product_grid_item_new:last-child {
+    display: block;
+  }
+  .Product_meta_product_list_main_new {
+    padding: 25px 0;
+    margin-bottom: 15px;
+  }
+  .Product_meta_product_list_title_new {
+    margin-top: 0;
+  }
+  .Product_meta_product_list_main_new {
+    margin-bottom: 0;
+  }
+  .Product_Bridal_meta_product_list_main_new .page-width {
+    padding: 0 !important;
+  }
+  .Product_bridal_list_new {
+    padding: 0 16px;
+  }
+  .Product_bridal_list_new .product_grid_item_new {
+    width: 160px;
+  }
+  .Product_bridal_list_new .swiper-wrapper {
+    padding-bottom: 30px;
+  }
+  .Product_bridal_list_new .swiper-pagination {
+    bottom: 2px !important;
+  }
+  .Product_bridal_list_new .swiper-pagination-bullet {
+    background: #000;
+  }
+}
