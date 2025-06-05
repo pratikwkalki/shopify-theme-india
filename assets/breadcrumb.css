@@ -88,6 +88,9 @@
 .Page_template_breadcrumb_new .breadcrumbs {
   padding-top: 16px;
 }
+.Product_breadcrumb_main_new .breadcrumbs__list {
+    flex-wrap: nowrap;
+}
 @media(min-width:750px) and (max-width:990px){
   .Product_breadcrumb_main_new .breadcrumbs .breadcrumbs__link{ 
     font-size:14px; 
