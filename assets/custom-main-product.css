@@ -1494,7 +1494,7 @@ div[data-tooltip]:hover::after {
     top: 160px;
     position: sticky;
   }
-  .Product_breadcrumb_main_new .breadcrumbs .breadcrumbs__link{ font-size:14px; }
+  
   .product-custom .price .price-item {
     font-size: 16px;
     font-weight: 400;
@@ -1603,10 +1603,6 @@ div[data-tooltip]:hover::after {
   .product-custom .Petticoat_wrap_text-image .title{ font-size:14px; }
   .product-custom .product-faq-wrapper_main-wrap{ margin-top:20px; }
   div.MagicToolboxContainer{ width:100% !important; }
-
-  .Product_breadcrumb_main_new .breadcrumbs {
-      padding: 20px 0 0;
-  }
   .product-custom {
       padding: 20px 0 20px;
   }
