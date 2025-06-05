@@ -60,6 +60,9 @@
   .template--deme-collection .Page_rumi_collections_mainleft_new .Page_weaves_collections_innerleft_title_new p {
     font-size: 18px;
   }
+  .template--deme-collection .Page_weaves_collections_mainright_new {
+    margin-top: 16px;
+  }
 }
 @media (min-width: 750px) and (max-width: 989px) {
   .Page_weaves_collections_main_new {
@@ -123,5 +126,8 @@
   }
   .template--alanna-panday-collection .Page_rumi_collections_mainleft_new .Page_weaves_collections_innerleft_title_new p {
     font-size: 18px;
+  }
+  .template--alanna-panday-collection .Page_weaves_collections_mainright_new {
+    margin-top: 16px;
   }
 }

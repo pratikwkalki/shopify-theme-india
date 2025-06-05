@@ -19598,9 +19598,7 @@ body
     width: calc(33.33% - 12px);
     max-width: calc(33.33% - 12px);
   }
-  .template--deme-collection .Page_weaves_collections_mainright_new {
-    margin-top: 16px;
-  }
+  
   .Page_FAQs_template_innerloop_new {
     gap: 10px;
   }
@@ -19753,9 +19751,6 @@ body
   .template--rumi-collection .section-123-padding {
     padding-top: 0;
     padding-bottom: 40px;
-  }
-  .template--alanna-panday-collection .Page_weaves_collections_mainright_new {
-    margin-top: 16px;
   }
   .template--alanna-panday-collection
     .Collection_rumi_product_main_new
