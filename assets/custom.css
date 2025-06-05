@@ -16736,48 +16736,6 @@ label[for="AddressProvinceNew"] {
   }
   /* Product */
 
-  /* Collection List (min-width:750px) and (max-width:989px)*/
-  .List_collections_template_innerloop_mainboxs_new {
-    padding: 20px;
-    margin-bottom: 30px;
-  }
-  .List_collections_template_innerloop_innerboxs_1_new {
-    padding-right: 20px;
-  }
-  .List_collections_template_innerloop_innerboxs_1_detail_title_new h4 {
-    font-size: 24px;
-  }
-  .List_collections_template_innerloop_innerboxs_2_detail_mainleft_new {
-    width: 200px;
-    max-width: 100%;
-  }
-  .List_collections_template_innerloop_innerboxs_2_detail_mainright_new {
-    padding-left: 12px;
-    width: calc(100% - 200px);
-  }
-  .List_collections_template_innerloop_innerboxs_2_detail_innerright_image_new {
-    width: calc(50% - 6px);
-  }
-  .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_title_new
-    h2 {
-    font-size: 22px;
-  }
-  .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_texts_new {
-    padding: 15px 0 0;
-  }
-  .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new {
-    padding-top: 20px;
-  }
-  .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_button_new
-    a {
-    font-size: 14px;
-    min-width: 150px;
-  }
-  .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_new {
-    padding: 20px 20px;
-  }
-  /* Collection List */
-
   /* Collection (min-width:750px) and (max-width:989px)*/
   .Collection_meta_columns_loops_mainbox_new {
     width: 33.33%;
