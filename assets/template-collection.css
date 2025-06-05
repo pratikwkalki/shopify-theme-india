@@ -126,6 +126,15 @@
 .Index_featured_collection_main_new .swiper-pagination-bullet-active {
   background: #000000;
 }
+.Index_collection_slider {
+  padding: 0 16px;
+}
+.Index_collection_slider .swiper-button-next {
+  display: none;
+}
+.Index_collection_slider .swiper-button-prev {
+  display: none;
+}
 @media (min-width: 750px) and (max-width: 989px) {
   .Index_featured_collection_main_new {
     margin: 40px 0;
