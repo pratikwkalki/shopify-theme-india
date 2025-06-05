@@ -4,7 +4,7 @@
 
 
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
-       
+{{ 'page-rumi.css' | asset_url | stylesheet_tag }}
  {%- for block in section.blocks -%}
 {%- if block.settings.padding_right_2 != blank or block.settings.padding_left_2 != blank or block.settings.padding_top_2 != blank or block.settings.padding_bottom_2 != blank or block.settings.padding_bottom != blank or block.settings.padding_top != blank  -%}
  {%- style -%}
