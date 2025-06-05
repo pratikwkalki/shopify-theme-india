@@ -1,5 +1,6 @@
 
 {%- if product.metafields.custom.product_more_styles_to_love_product_list != blank -%}
+  {{ 'product-meta-product-list.css' | asset_url | stylesheet_tag }}
   {{ 'component-card.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   
