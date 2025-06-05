@@ -14267,23 +14267,6 @@ label[for="AddressProvinceNew"] {
   /* Collection List */
 
   /* Collection (min-width:0px) and (max-width:749px)*/
-  .breadcrumbs__link {
-    font-size: 12px;
-  }
-  .breadcrumbs__item a {
-    font-size: 12px;
-  }
-  .breadcrumbs__item:not(:last-child):after {
-    right: 7px;
-    height: 16px;
-    line-height: 16px;
-    font-size: 12px;
-    right: 4px;
-  }
-  .breadcrumbs ol li {
-    padding-right: 15px;
-  }
-
   .Collection_product_grid_leftside_1_new {
     display: none;
   }
