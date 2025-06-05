@@ -6702,40 +6702,6 @@ div[data-widget-style] div.stamped-container {
   margin-top: 40px;
 }
 
-.rumi-testimonial-box {
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-.rumi-testimonial-box-image {
-  width: 150px;
-  min-width: 150px;
-  margin-right: 16px;
-  margin-bottom: 0;
-  display: flex;
-}
-.rumi-testimonial-box-text {
-  text-align: center;
-  width: 100%;
-}
-.rumi-testimonial-box-text .maintext p {
-  margin-bottom: 20px;
-  font-size: 16px;
-  margin-top: 0;
-  line-height: 24px;
-}
-.rumi-testimonial-box-text .maintext h2 {
-  margin-bottom: 0rem;
-  line-height: 28px;
-  font-size: 20px;
-}
-.rumi-testimonial-box-text .maintext.subtext2 p {
-  margin: 0;
-  line-height: 1.5;
-}
-
 .rumi-footer--box {
   background-position: center;
   background-size: cover;
@@ -6885,20 +6851,7 @@ template-collection template--deme-collection .rumi-firework-subtitle {
 .template--deme-collection .rumi-image-with-text-section {
   max-width: 1200px;
 }
-.template--alanna-panday-collection
-  .rumi-testimonial-box-text
-  .maintext
-  h2
-  strong {
-  font-weight: 500;
-}
-.template--alanna-panday-collection
-  .rumi-testimonial-box-text
-  .maintext.subtext2
-  p,
-.template--deme-collection .rumi-testimonial-box-text .maintext.subtext2 p {
-  font-size: 14px;
-}
+
 @media screen and (min-width: 750px) {
   .rumi-page-edit {
     display: flex;
@@ -19710,14 +19663,6 @@ body
     .Collection_rumi_product_main_new
     #product-grid.grid {
     margin-top: 20px;
-  }
-  .rumi-testimonial-box {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .rumi-testimonial-box-image {
-    margin-right: 0rem;
-    margin-bottom: 1.25rem;
   }
   .Collection_rumi_product_main_new.Collection_product_grid_main_new {
     margin-bottom: 16px !important;
