@@ -17872,14 +17872,6 @@ label[for="AddressProvinceNew"] {
 }
 
 @media (min-width: 990px) and (max-width: 1424px) {
-  .List_collections_template_innerloop_mainboxs_new {
-    padding: 30px;
-    margin-bottom: 30px;
-  }
-  .List_collections_template_innerloop_innerboxs_2_detail_mainright_new {
-    width: calc(100% - 170px);
-  }
-
   .page-width {
     padding: 0 16px !important;
   }
