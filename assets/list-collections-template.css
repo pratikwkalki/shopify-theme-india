@@ -156,6 +156,19 @@
 .List_collections_template_innerloop_innerboxs_2_detail_innerleft_2_title_new {
   display: none;
 }
+.template--latest-collection .Index_title_new .Common_title_new h2 {
+  font-size: 40px;
+}
+.template--latest-collection .Index_title_new .Common_title_new {
+  margin-bottom: 0;
+}
+.template--latest-collection .Index_title_main_new {
+  margin-bottom: 24px;
+}
+.template--latest-collection
+  .List_collections_template_innerloop_innerboxs_1_new {
+  display: none;
+}
 @media screen and (max-width: 767px) {
   .List_collections_template_innerloop_mainboxs_new {
     padding: 16px;
@@ -277,5 +290,9 @@
     height: 26px;
     right: 0;
     background-size: 8px !important;
+  }
+  .template--latest-collection .Index_title_new .Common_title_new h2 {
+    font-size: 24px;
+    text-align: center;
   }
 }
