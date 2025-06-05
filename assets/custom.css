@@ -1444,13 +1444,6 @@ select {
   .header__menu-item {
   color: #aa6437;
 }
-.Header_desktop_left_menu_inner_new .header__menu-item[aria-current="page"] {
-  background: #000 !important;
-  color: #fff !important;
-}
-.Header_desktop_left_menu_inner_new .header__active-menu-item {
-  color: #fff !important;
-}
 .header_second_menu_new {
   border-top: 1px solid #ddd;
   width: 100%;
@@ -1694,14 +1687,14 @@ cart-drawer.is-empty .drawer__header {
   position: relative;
 }
 .swiper-button-prev {
-  background: url("https://uk.kalkifashion.com/cdn/shop/t/5/assets/left_arrow_slider.svg")
+  background: url("https://in.kalkifashion.com/cdn/shop/t/5/assets/left_arrow_slider.svg")
     center center no-repeat #fffffff2;
   width: 52px;
   height: 50px;
   left: 0;
 }
 .swiper-button-next {
-  background: url("https://uk.kalkifashion.com/cdn/shop/t/5/assets/right_arrow_slider.svg")
+  background: url("https://in.kalkifashion.com/cdn/shop/t/5/assets/right_arrow_slider.svg")
     center center no-repeat #fffffff2;
   width: 52px;
   height: 50px;
@@ -1789,12 +1782,6 @@ cart-drawer.is-empty .drawer__header {
     font-size: 12px;
     min-width: 130px;
     letter-spacing: 0.6px;
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: 36px;
-    height: 34px;
-    background-size: 10px;
   }
   .Index_form_app_detail_main_new {
     margin: 10px 0;
@@ -2170,7 +2157,7 @@ cart-drawer.is-empty .drawer__header {
   font-style: normal;
   font-weight: 500;
   font-family: var(--font-body-family);
-  background: url("https://uk.kalkifashion.com/cdn/shop/t/5/assets/option_down_arrow.svg")
+  background: url("https://in.kalkifashion.com/cdn/shop/t/5/assets/option_down_arrow.svg")
     right 12px center no-repeat;
 }
 .cs-option-drop .select:after {
@@ -3870,11 +3857,7 @@ summary .icon-caret {
   color: #aa6437;
   font-weight: 700;
 }
-.Header_desktop_left_menu_inner_new
-  .header__inline-menu
-  > .list-menu
-  li.select_first_element
-  .header__menu-item {
+.Header_desktop_left_menu_inner_new .header__inline-menu > .list-menu li.select_first_element .header__menu-item {
   background: #000;
   color: #ffffff !important;
 }
@@ -3885,6 +3868,8 @@ summary .icon-caret {
 .Header_desktop_left_menu_inner_new .header__menu-item[aria-current="page"] {
   background: #000 !important;
   color: #ffffff !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 .Header_desktop_left_menu_inner_new .header__active-menu-item {
   color: #ffffff !important;
@@ -3967,10 +3952,7 @@ summary .icon-caret {
   top: 12px;
   left: 44px;
 }
-.template-search
-  .template-search__search
-  .field__input:not(:placeholder-shown)
-  ~ .field__label,
+.template-search .template-search__search .field__input:not(:placeholder-shown) ~ .field__label,
 .template-search .template-search__search .field__input:focus ~ .field__label {
   top: -7px;
   left: 26px;
@@ -3990,10 +3972,6 @@ summary .icon-caret {
 }
 .template-search .search__input.field__input:-moz-placeholder {
   opacity: 0 !important;
-}
-.Header_desktop_left_menu_inner_new .header__menu-item[aria-current="page"] {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
 }
 .Header_desktop_left_menu_inner_new .select_first_element > a {
   padding-left: 20px !important;
@@ -14005,12 +13983,7 @@ label[for="AddressProvinceNew"] {
   }
 
   /* Index (min-width:0px) and (max-width:749px)*/
-  .swiper-button-prev {
-    width: 36px;
-    height: 34px;
-    background-size: 10px;
-  }
-  .swiper-button-next {
+  .swiper-button-prev, .swiper-button-next {
     width: 36px;
     height: 34px;
     background-size: 10px;
@@ -14032,15 +14005,7 @@ label[for="AddressProvinceNew"] {
   .Index_collection_innerdetail_new {
     margin: 0 -16px;
   }
-  .Index_collection_slider {
-    padding: 0 16px;
-  }
-  .Index_collection_slider .swiper-button-next {
-    display: none;
-  }
-  .Index_collection_slider .swiper-button-prev {
-    display: none;
-  }
+  
   .card__heading a {
     font-size: 13px;
     line-height: 130%;
