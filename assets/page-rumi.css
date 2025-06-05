@@ -40,6 +40,61 @@
   font-size: 14px;
 }
 
+.rumi-footer--box {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.rumi-footer--textline {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 12px;
+  line-height: 22px;
+}
+.rumi-footer-store-box {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px 24px;
+}
+.rumi-footer-store-box:last-child {
+  margin-bottom: 0;
+}
+.rumi-footer-store-box-group {
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+}
+.rumi-footer-store-box-group-color-white {
+  color: #fff;
+}
+.rumi-footer-store-box-group .img-box {
+  display: flex;
+  width: 16px;
+  margin-right: 8px;
+}
+.rumi-footer-store-box-group .img-box2 {
+  display: flex;
+  width: 30px;
+  margin-right: 8px;
+}
+.rumi-footer-store-box-group .img-box img,
+.rumi-footer-store-box-group .img-box2 img {
+  max-width: 100%;
+}
+.rumi-footer-store-box-group p.footertext {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1;
+}
+.rumi-footer-store-box-group p.footertext2 {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1;
+}
+
 @media screen and (max-width: 749px) {
   .rumi-testimonial-box {
     flex-wrap: wrap;
@@ -48,5 +103,9 @@
   .rumi-testimonial-box-image {
     margin-right: 0rem;
     margin-bottom: 1.25rem;
+  }
+  .rumi-footer--textline {
+    font-size: 14px;
+    margin-top: 0;
   }
 }
