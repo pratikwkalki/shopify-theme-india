@@ -251,6 +251,20 @@
   }
 }
 @media (min-width: 0px) and (max-width: 749px) {
+  .Index_custom_category_innerloop_mainboxs_new {
+    width: calc(50% - 5px);
+  }
+  .Index_custom_category_innerloop_innerboxs_2_new {
+    padding: 20px 10px;
+  }
+  .Index_custom_category_innerloop_innerboxs_2_titletextboth_new h2 {
+    font-size: 18px;
+    line-height: 111.111%;
+    letter-spacing: 0.18px;
+  }
+  .Index_custom_category_innerloop_innerboxs_new:after {
+    height: 90px;
+  }
   .Index_custom_collections_main_new {
     margin: 10px 0;
   }

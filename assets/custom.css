@@ -13911,20 +13911,6 @@ label[for="AddressProvinceNew"] {
     height: 34px;
     background-size: 10px;
   }
-  .Index_custom_category_innerloop_mainboxs_new {
-    width: calc(50% - 5px);
-  }
-  .Index_custom_category_innerloop_innerboxs_2_new {
-    padding: 20px 10px;
-  }
-  .Index_custom_category_innerloop_innerboxs_2_titletextboth_new h2 {
-    font-size: 18px;
-    line-height: 111.111%;
-    letter-spacing: 0.18px;
-  }
-  .Index_custom_category_innerloop_innerboxs_new:after {
-    height: 90px;
-  }
   .Index_collection_innerdetail_new {
     margin: 0 -16px;
   }
