@@ -443,6 +443,65 @@
   line-height: 140%;
   padding-top: 20px;
 }
+
+.template--style-deck .rich-text .rich-text__blocks {
+  max-width: 100%;
+  width: 50%;
+}
+.template--style-deck .rich-text .rich-text__heading,
+.template--style-deck .Page_about_us_over_texts_detail_2_new h2 {
+  font-family: Didot;
+  font-size: 28px;
+  color: #2a2a2a;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.template--style-deck .rich-text p {
+  font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #2a2a2a;
+  text-align: center;
+  line-height: normal;
+}
+.template--style-deck .Page_about_us_over_texts_new {
+  margin: 0 auto;
+  max-width: 1470px;
+  padding: 0 16px;
+}
+.template--style-deck .Page_about_us_over_texts_new .page-width {
+  padding: 0 !important;
+}
+.template--style-deck .Page_about_us_over_texts_new ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.template--style-deck .Page_about_us_over_texts_new ul li {
+  padding: 20px;
+  font-family: Didot;
+  font-style: italic;
+  font-size: 24px;
+  line-height: normal;
+}
+.template--style-deck .Page_about_us_over_texts_new ul li a {
+  color: #662505;
+  text-decoration: none;
+}
+.template--style-deck .Page_about_us_over_texts_new ul li a:hover {
+  text-decoration: underline;
+}
+.template--style-deck .Page_about_us_over_texts_detail_2_detail_infos_new {
+  padding-top: 0;
+}
+.contact-us_page_new .Page_about_us_block_lists_inner_new {
+  max-width: 1048px;
+}
+.Page_contact_us_over_texts_new .Page_about_us_over_texts_inner_new {
+  max-width: 1048px;
+}
 @media (min-width: 990px) and (max-width: 1424px) {
   .Page_about_us_milstone_innerloop_mainboxs_new {
     width: 255px;
@@ -705,5 +764,22 @@
     font-size: 14px;
     line-height: 128.571%;
     letter-spacing: 0.98px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .template--style-deck .rich-text .rich-text__blocks {
+    width: 100%;
+  }
+  .template--style-deck .Page_about_us_over_texts_new ul li {
+    font-size: 16px;
+    padding: 8px;
+  }
+  .template--style-deck .rich-text__wrapper {
+    width: 100%;
+  }
+  .template--style-deck .rich-text .rich-text__heading,
+  .template--style-deck .Page_about_us_over_texts_detail_2_new h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
   }
 }
