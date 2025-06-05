@@ -19,7 +19,8 @@
 .Product_meta_product_list_innerdetail_6_product_new .product_grid_item_new:last-child {
   display: none;
 }
-.Product_Bridal_meta_product_list_main_new .cs_delivery_inner-wrapper {
+.Product_Bridal_meta_product_list_main_new .cs_delivery_inner-wrapper,
+.Product_meta_product_list_inner_new .cs_delivery_wrapper{
   display: none;
 }
 .Product_Bridal_meta_product_list_main_new .Product_meta_product_list_innerdetail_new {
