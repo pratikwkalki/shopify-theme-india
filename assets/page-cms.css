@@ -114,7 +114,7 @@
 }
 @media (min-width: 750px) and (max-width: 989px) {
   .Page_template_breadcrumb_new .breadcrumbs {
-    padding-top: 30px;
+    padding-top: 30px !important;
   }
   .Page_template_title_new {
     margin-bottom: 0;
