@@ -117,15 +117,13 @@
   height: 24px;
   margin-right: 20px;
 }
-.Page_contact_us_template_detail_2_innerleft_innerloop_innerboxs_1_icons_new
-  img {
+.Page_contact_us_template_detail_2_innerleft_innerloop_innerboxs_1_icons_new img {
   max-width: 100%;
 }
 .Page_contact_us_template_detail_2_innerleft_innerloop_innerboxs_2_new {
   width: calc(100% - 44px);
 }
-.Page_contact_us_template_detail_2_innerleft_innerloop_innerboxs_2_texts_title_new
-  h4 {
+.Page_contact_us_template_detail_2_innerleft_innerloop_innerboxs_2_texts_title_new h4 {
   font-family: var(--font-body-family) !important;
   margin: 0;
   color: #000;
@@ -138,16 +136,13 @@
 .Page_contact_us_template_detail_2_innerleft_innerloop_innerboxs_2_texts_infos_new {
   padding-top: 8px;
 }
-.Page_contact_us_template_detail_2_innerleft_innerloop_innerboxs_2_texts_infos_new
-  p {
+.Page_contact_us_template_detail_2_innerleft_innerloop_innerboxs_2_texts_infos_new p {
   margin: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 150%;
 }
-.Page_contact_us_template_detail_2_innerleft_innerloop_innerboxs_2_texts_infos_new
-  p
-  a {
+.Page_contact_us_template_detail_2_innerleft_innerloop_innerboxs_2_texts_infos_new p a {
   color: #000;
   text-decoration: none;
 }
@@ -177,9 +172,7 @@
 .Page_contact_us_template_detail_2_innerright_innerform_new .field {
   margin-bottom: 10px;
 }
-.Page_contact_us_template_detail_2_innerright_innerform_new
-  .field
-  .field__input {
+.Page_contact_us_template_detail_2_innerright_innerform_new .field .field__input {
   border-radius: 6px;
   border: 1px solid #e1e1e5;
   background: #fff;
@@ -202,27 +195,20 @@
   padding: 3px;
   letter-spacing: 0 !important;
 }
-.Page_contact_us_template_detail_2_innerright_innerform_new
-  .field_area_new
-  .field__label {
+.Page_contact_us_template_detail_2_innerright_innerform_new .field_area_new .field__label {
   top: 12px;
 }
-.Page_contact_us_template_detail_2_innerright_innerform_new
-  .field__label.phone-label {
+.Page_contact_us_template_detail_2_innerright_innerform_new .field__label.phone-label {
   left: 76px;
 }
 .Page_contact_us_template_detail_2_innerright_innerform_new [required] + .field__label:before,
 .Page_contact_us_template_detail_2_innerright_innerform_new .field__label.phone-label:before {
   content: "*";
 }
-.Page_contact_us_template_detail_2_innerright_innerform_new
-  .iti--show-selected-dial-code
-  .iti__selected-flag {
+.Page_contact_us_template_detail_2_innerright_innerform_new .iti--show-selected-dial-code .iti__selected-flag {
   background-color: transparent;
 }
-.Page_contact_us_template_detail_2_innerright_innerform_new
-  .phone-field.active
-  .phone-label {
+.Page_contact_us_template_detail_2_innerright_innerform_new .phone-field.active .phone-label {
   top: 8px;
   left: 76px;
   letter-spacing: 0;
@@ -234,14 +220,10 @@
   letter-spacing: 0.12px;
   transform: none;
 }
-.Page_contact_us_template_detail_2_innerright_innerform_new
-  .field.phone-field
-  .iti {
+.Page_contact_us_template_detail_2_innerright_innerform_new .field.phone-field .iti {
   width: 100% !important;
 }
-.Page_contact_us_template_detail_2_innerright_innerform_new
-  .field_area_new
-  .text-area {
+.Page_contact_us_template_detail_2_innerright_innerform_new .field_area_new .text-area {
   height: 117px;
 }
 .contact__button {
