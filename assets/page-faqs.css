@@ -94,6 +94,9 @@
   .Page_FAQs_template_main_new {
     margin: 40px 0 60px 0;
   }
+  .Page_FAQs_template_title_new {
+    margin-bottom: 25px;
+  }
 }
 @media (min-width: 0px) and (max-width: 749px) {
   .Page_FAQs_template_main_new {
@@ -124,6 +127,9 @@
   .Page_FAQs_accordions_main_new .Common_faqs_accordion_new .accordion > ul li .answer p {
     font-size: 14px;
     line-height: 23px;
+  }
+  .Page_FAQs_template_title_new {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 1024px) {
