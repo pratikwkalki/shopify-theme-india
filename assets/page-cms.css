@@ -112,7 +112,20 @@
   padding-top: 20px;
   text-align: center;
 }
-
+@media (min-width: 750px) and (max-width: 989px) {
+  .Page_template_breadcrumb_new .breadcrumbs {
+    padding-top: 30px;
+  }
+  .Page_template_title_new {
+    margin-bottom: 0;
+  }
+  .Page_template_innercontent_new {
+    margin-top: 30px;
+  }
+  .Page_returns_template_mainloop_new {
+    margin-bottom: 40px;
+  }
+}
 @media (min-width: 0px) and (max-width: 749px) {
   .Page_template_main_new {
     padding: 0 0 40px;
