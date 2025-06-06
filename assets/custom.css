@@ -10054,81 +10054,6 @@ label[for="AddressProvinceNew"] {
 /* Bridal Page */
 
 /* Weaves Page */
-.Page_weaves_template_main_new {
-  padding-bottom: 15px;
-}
-.Page_weaves_template_main_new .Page_template_breadcrumb_new .breadcrumbs {
-  padding-top: 15px;
-}
-
-.Page_weaves_banner_slider_main_new .Index_top_banner_slider {
-  padding-bottom: 0px;
-}
-.Page_weaves_banner_slider_main_new .swiper-pagination {
-  bottom: 10px !important;
-}
-.Page_weaves_banner_slider_main_new .swiper-pagination-bullet {
-  background: #0f0d1a;
-}
-.Page_weaves_banner_slider_main_new .swiper-button-prev {
-  top: calc(50% - 28px);
-}
-.Page_weaves_banner_slider_main_new .swiper-button-next {
-  top: calc(50% - 28px);
-}
-.Page_weaves_images_texts_main_new {
-  margin: 56px 0;
-}
-.Page_weaves_images_texts_allloop_mainboxs_new {
-  padding: 40px 80px;
-  height: auto;
-}
-.Page_weaves_images_texts_allloop_innerboxs_new {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-.Page_weaves_images_texts_allloop_innerboxs_mainleft_new {
-  width: 40%;
-}
-.Page_weaves_images_texts_allloop_innerboxs_innerleft_videoimage_new {
-  position: relative;
-}
-.Page_weaves_images_texts_allloop_innerboxs_innerleft_videoimage_new img {
-  width: 100%;
-  display: flex;
-}
-.Page_weaves_images_texts_allloop_innerboxs_innerleft_videoimage_new video {
-  width: 100%;
-  display: flex;
-}
-.Page_weaves_images_texts_allloop_innerboxs_mainright_new {
-  width: 60%;
-  padding: 0 40px;
-}
-.Page_weaves_images_texts_allloop_innerboxs_innerright_new {
-  padding: 10px 0;
-}
-.Page_weaves_images_texts_allloop_innerboxs_innerright_title_new h4 {
-  color: #000;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0;
-  margin: 0;
-}
-.Page_weaves_images_texts_allloop_innerboxs_innerright_infos_new p {
-  margin: 20px 0 0;
-  color: #000;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 122%;
-}
-.Page_weaves_images_slider .swiper-pagination {
-  display: none;
-}
 .Common_faqs_accordion_new .accordion > ul li .answer a {
   color: #c79d6f;
   text-decoration: none;
@@ -12308,48 +12233,6 @@ label[for="AddressProvinceNew"] {
   
   /* Bridal Page */
 
-  /* Weaves Page (min-width:0px) and (max-width:749px)*/
-  .Page_weaves_template_main_new {
-    padding: 0 0 15px 0;
-  }
-  .Page_weaves_template_main_new .Page_template_breadcrumb_new {
-    display: block;
-  }
-
-  .Page_weaves_banner_slider_main_new .Index_top_banner_slider_inner_new {
-    padding: 0;
-  }
-  .Page_weaves_banner_slider_main_new .page-width {
-    padding: 0 !important;
-  }
-  .Page_weaves_images_texts_main_new {
-    margin: 48px 0;
-  }
-  .Page_weaves_images_texts_allloop_mainboxs_new {
-    padding: 20px;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_new {
-    display: block;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_mainleft_new {
-    width: 100%;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_mainright_new {
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_innerright_new {
-    padding: 40px 0 20px 0;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_innerright_title_new h4 {
-    font-size: 18px;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_innerright_infos_new p {
-    font-size: 14px;
-  }
-  /* Weaves Page */
-
   /* Mens LP (min-width:0px) and (max-width:749px)*/
   .container_width_new .Collection_meta_banner_inner_new {
     padding: 0 16px !important;
@@ -13176,41 +13059,6 @@ label[for="AddressProvinceNew"] {
 
   /* Bridal Page */
 
-  /* Weaves Page (min-width:750px) and (max-width:989px)*/
-  .Page_weaves_template_main_new {
-    padding: 0 0 15px 0;
-  }
-  .Page_weaves_template_main_new .Page_template_breadcrumb_new {
-    display: block;
-  }
-  .Page_weaves_banner_slider_main_new .Index_top_banner_slider_inner_new {
-    padding: 0;
-  }
-  .Page_weaves_images_texts_main_new {
-    margin: 48px 0;
-  }
-  .Page_weaves_images_texts_allloop_mainboxs_new {
-    padding: 46px;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_mainleft_new {
-    width: 50%;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_mainright_new {
-    width: 50%;
-    padding-left: 20px;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_innerright_new {
-    padding: 0;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_innerright_title_new h4 {
-    font-size: 18px;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_innerright_infos_new p {
-    font-size: 14px;
-    padding-top: 20px;
-  }
-  /* Weaves Page */
-
   /* Mens LP (min-width:750px) and (max-width:989px)*/
   .container_width_new .Collection_meta_banner_inner_new {
     padding: 0 16px !important;
@@ -13623,35 +13471,6 @@ label[for="AddressProvinceNew"] {
   }
 
   /* Bridal Page */
-
-  /* Weaves Page */
-  .Page_weaves_template_main_new {
-    padding: 0 0 15px 0;
-  }
-  .Page_weaves_template_main_new .Page_template_breadcrumb_new {
-    display: block;
-  }
-
-  .Page_weaves_banner_slider_main_new .Index_top_banner_slider_inner_new {
-    padding: 0;
-  }
-  .Page_weaves_images_texts_allloop_mainboxs_new {
-    padding: 40px;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_mainleft_new {
-    width: 50%;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_mainright_new {
-    width: 50%;
-    padding-left: 0px;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_innerright_new {
-    padding: 10px 27px;
-  }
-  .Page_weaves_images_texts_allloop_innerboxs_innerright_infos_new p {
-    padding-top: 20px;
-  }
-  /* Weaves Page */
 
   /* Mens LP */
   .container_width_new .Collection_meta_banner_inner_new {
@@ -15343,39 +15162,6 @@ body.template-customers-activate_account .shopify-section-group-footer-group {
 body.template-customers-reset_password .customer .field,
 body.template-customers-activate_account .customer .field {
   flex-wrap: wrap;
-}
-
-/* weaves blog section*/
-.Page_weaves_blog_new {
-  margin-top: 56px;
-}
-.weaves_blog_list .weaves_blog_item {
-  border: 1px solid #e1e1e5;
-  padding: 20px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.weaves_blog_list .weaves_blog_item > a {
-  position: absolute;
-  inset: 0;
-}
-.weaves_blog_list .weaves_blog_title {
-  margin: 0 0 30px;
-  font-size: 19.2px;
-  line-height: 120%;
-}
-.weaves_blog_list .weaves_blog_read_more {
-  margin-top: auto;
-  margin-bottom: 0;
-  color: #c79d6f;
-  font-size: 14px;
-}
-.weaves_blog_image img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
 }
 
 .template--mens-detail-new
