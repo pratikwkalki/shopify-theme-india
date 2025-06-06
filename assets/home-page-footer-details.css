@@ -67,6 +67,10 @@
   font-weight: 400;
   padding-bottom: 28px;
 }
+.Page_bridal_details_texts_main_new .Page_store_detail_texts_object_new, 
+.Page_bridal_detail_objects_faqs_main_new .Page_Store_detail_objects_faqs_inner_new {
+    max-width: 100%;
+}
 @media (min-width: 990px) and (max-width: 1424px) {
   .Page_store_detail_texts_object_infos_new {
     height: 140px;
