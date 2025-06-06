@@ -211,11 +211,8 @@
   .field__label.phone-label {
   left: 76px;
 }
-.Page_contact_us_template_detail_2_innerright_innerform_new
-  [required]
-  + .field__label:before,
-.Page_contact_us_template_detail_2_innerright_innerform_new
-  .field__label.phone-label:before {
+.Page_contact_us_template_detail_2_innerright_innerform_new [required] + .field__label:before,
+.Page_contact_us_template_detail_2_innerright_innerform_new .field__label.phone-label:before {
   content: "*";
 }
 .Page_contact_us_template_detail_2_innerright_innerform_new
