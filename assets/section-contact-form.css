@@ -154,12 +154,6 @@
   text-align: left;
   font-weight: bold;
 }
-.field:after {
-  display: none !important;
-}
-.field:before {
-  display: none !important;
-}
 .Page_contact_us_template_detail_2_innerright_innerform_new .field {
   margin-bottom: 10px;
 }
