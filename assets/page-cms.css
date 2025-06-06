@@ -131,7 +131,7 @@
     padding: 0 0 40px;
   }
   .Page_template_title_new {
-    margin: 0;
+    margin: 10px 0 0;
   }
   .Page_template_innercontent_new {
     margin-top: 20px;
@@ -176,5 +176,8 @@
   .Page_returns_template_innerloop_innerboxs_title_new h4 {
     font-size: 12.174px;
     padding-top: 17px;
+  }
+  .Page_template_title_new h1 {
+    font-size: 20px;
   }
 }
