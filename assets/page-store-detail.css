@@ -775,4 +775,7 @@
   .page_store_detail_tabs_slider {
     padding: 0 16px;
   }
+  .page_photo_video_tabs_image_new {
+    width: 150px !important;
+  }
 }
