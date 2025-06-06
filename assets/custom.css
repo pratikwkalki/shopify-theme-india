@@ -6506,118 +6506,6 @@ div[data-widget-style] div.stamped-container {
 }
 /* contact */
 
-/* lookbook Details */
-.Page_lookbook_detail_template_main_new {
-  padding: 40px 0 0 0;
-}
-.Page_lookbook_detail_template_detail_1_returntitle_new {
-  margin-bottom: 40px;
-  position: relative;
-  padding: 0 8px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.Page_lookbook_detail_template_detail_1_return_new {
-  width: 100px;
-}
-.Page_lookbook_detail_template_detail_1_return_new a {
-  display: flex;
-}
-.Page_lookbook_detail_template_detail_1_return_new a svg {
-  width: 24px;
-}
-.Page_lookbook_detail_template_detail_1_title_new {
-  margin: 0;
-}
-.Page_lookbook_detail_template_detail_1_title_new h2 {
-  text-transform: uppercase;
-}
-.Page_lookbook_detail_template_detail_2_new {
-  border-radius: 2px;
-  background: transparent;
-  padding: 50px 0;
-}
-.Page_lookbook_detail_template_detail_2_mainloop_innerboxs_video_OR_image_new
-  video {
-  width: 100%;
-  display: flex;
-}
-.Page_lookbook_detail_template_detail_2_mainloop_innerboxs_video_OR_image_new
-  img {
-  width: 100%;
-  display: flex;
-}
-.slider_pagination_new {
-  width: 100px;
-  display: flex;
-  align-items: center;
-  color: #8e8d99;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21px;
-  justify-content: flex-end;
-  z-index: 1;
-}
-.slider_pagination_new .swiper-pagination {
-  position: relative;
-  bottom: 0 !important;
-  margin-left: 8px;
-  color: #3f3d4d;
-  opacity: 1 !important;
-  justify-content: flex-end;
-  width: auto;
-}
-
-.Page_lookbook_object_detail_main_new {
-  padding: 50px 0 70px 0;
-}
-.Page_lookbook_object_detail_inner_new {
-  max-width: 984px;
-  margin: auto;
-}
-.Page_lookbook_object_detail_title_new {
-  margin-bottom: 40px;
-}
-.Page_lookbook_object_detail_innerdetail_1_videoimage_new video {
-  width: 100%;
-  display: flex;
-}
-.Page_lookbook_object_detail_innerdetail_1_videoimage_new img {
-  width: 100%;
-  display: flex;
-}
-.Page_lookbook_object_detail_innerdetail_2_new {
-  padding-top: 40px;
-  max-width: 358px;
-  margin: auto;
-}
-.Page_lookbook_object_detail_innerdetail_2_titletexts_new h3 {
-  margin: 0;
-  color: #2f2d33;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 133.333%;
-  letter-spacing: 0.24px;
-}
-.Page_lookbook_object_detail_innerdetail_3_new {
-  max-width: 358px;
-  margin: auto;
-}
-.Page_lookbook_object_detail_innerdetail_3_infostexts_new {
-  padding-top: 40px;
-  color: #2f2d33;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 131.25%;
-}
-.Page_lookbook_object_detail_innerdetail_3_infostexts_new p {
-  margin: 0;
-}
-/* lookbook Details */
-
 /* Press */
 .Page_press_room_template_breadcrumb_new .breadcrumbs {
   padding: 30px 0 0 0;
@@ -11568,57 +11456,6 @@ label[for="AddressProvinceNew"] {
   }
   /* Collection */
 
-  /* lookbook Details (min-width:0px) and (max-width:749px)*/
-  .Page_lookbook_detail_template_main_new {
-    padding: 24px 0 0 0;
-  }
-  .Page_lookbook_detail_template_detail_1_returntitle_new {
-    margin-bottom: 24px;
-    padding: 0;
-  }
-  .Page_lookbook_detail_template_detail_1_title_new {
-    margin: 0;
-  }
-  .Page_lookbook_detail_template_detail_1_title_new h2 {
-    font-size: 18px;
-    letter-spacing: 1.08px;
-    line-height: 183.333%;
-  }
-  .Page_lookbook_detail_template_detail_2_new {
-    padding: 14px 0;
-  }
-  .Page_lookbook_detail_template_detail_1_return_new {
-    width: 70px;
-  }
-  .slider_pagination_new {
-    font-size: 13px;
-    width: 70px;
-  }
-
-  .Page_lookbook_object_detail_main_new {
-    padding: 40px 0;
-  }
-  .Page_lookbook_object_detail_inner_new {
-    max-width: 600px;
-  }
-  .Page_lookbook_object_detail_innerdetail_2_new {
-    padding-top: 19px;
-    max-width: 255px;
-  }
-  .Page_lookbook_object_detail_innerdetail_2_titletexts_new h3 {
-    font-size: 16px;
-    letter-spacing: 0.32px;
-  }
-  .Page_lookbook_object_detail_innerdetail_3_new {
-    max-width: 260px;
-  }
-  .Page_lookbook_object_detail_innerdetail_3_infostexts_new {
-    padding-top: 19px;
-    font-size: 14px;
-    line-height: 142.857%;
-  }
-  /* lookbook Details */
-
   /* Press (min-width:0px) and (max-width:749px)*/
   .Page_press_room_template_breadcrumb_new .breadcrumbs {
     padding: 16px 0 0;
@@ -13169,34 +13006,6 @@ label[for="AddressProvinceNew"] {
   }
   /* Collection */
 
-  /* lookbook Details (min-width:750px) and (max-width:989px)*/
-  .Page_lookbook_detail_template_detail_1_title_new {
-    margin: 0;
-  }
-  .Page_lookbook_detail_template_detail_2_new {
-    padding: 40px 0;
-  }
-
-  .Page_lookbook_object_detail_inner_new {
-    max-width: 600px;
-  }
-  .Page_lookbook_object_detail_main_new {
-    padding: 40px 0 40px 0;
-  }
-  .Page_lookbook_object_detail_title_new {
-    margin-bottom: 25px;
-  }
-  .Page_lookbook_object_detail_title_new h2 {
-    font-size: 25px;
-  }
-  .Page_lookbook_object_detail_innerdetail_2_new {
-    padding-top: 30px;
-  }
-  .Page_lookbook_object_detail_innerdetail_3_infostexts_new {
-    padding-top: 30px;
-  }
-  /* lookbook Details */
-
   /* Press (min-width:750px) and (max-width:989px)*/
   .Page_press_room_template_breadcrumb_new .breadcrumbs {
     padding: 16px 0 0;
@@ -13990,27 +13799,6 @@ label[for="AddressProvinceNew"] {
     margin: 40px 0;
   }  
   /* Collection */
-
-  /* lookbook Details */
-  .Page_lookbook_detail_template_detail_2_new {
-    padding: 40px 0;
-  }
-  .Page_lookbook_object_detail_main_new {
-    padding: 50px 0 50px;
-  }
-  .Page_lookbook_object_detail_inner_new {
-    max-width: 800px;
-  }
-  .Page_lookbook_object_detail_title_new {
-    margin-bottom: 30px;
-  }
-  .Page_lookbook_object_detail_innerdetail_2_new {
-    padding-top: 30px;
-  }
-  .Page_lookbook_object_detail_innerdetail_3_infostexts_new {
-    padding-top: 30px;
-  }
-  /* lookbook Details */
 
   /* Press */
   .Page_press_room_template_mainloop_new {
