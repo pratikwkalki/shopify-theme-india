@@ -103,4 +103,8 @@
     line-height: 22px;
     padding-bottom: 20px;
   }
+  .cms-index-index .Page_store_detail_texts_inner_new {
+    border-top: 0;
+    padding-top: 10px;
+  }
 }
