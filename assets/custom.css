@@ -6480,54 +6480,6 @@ div[data-widget-style] div.stamped-container {
 
 /* Collection */
 
-/* Our Store Details */
-.page_photo_video_tabs_box {
-  display: flex;
-}
-.page_photo_video_tabs_image_new {
-  width: 25% !important;
-  display: flex;
-  border: 1px solid #e1e1e5;
-  text-decoration: none;
-  height: auto !important;
-}
-.page_photo_video_tabs_content_box {
-  text-align: left;
-  padding: 15px 15px 40px 15px;
-  height: 100%;
-}
-.page_photo_video_tabs_content_box h3,
-.page_photo_video_tabs_content_box h3 p,
-.page_photo_video_tabs_content_box h4,
-.page_photo_video_tabs_content_box span {
-  margin: 0;
-  padding: 0;
-}
-.page_photo_video_tabs_content_box span {
-  margin-top: 15px;
-}
-.page_photo_video_tabs_image_inner_new {
-  text-decoration: none;
-  text-align: center;
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-}
-.page_photo_video_tabs_image_inner_new span.button_white {
-  color: #aa6437 !important;
-  position: absolute;
-  bottom: 0;
-  padding: 10px;
-  margin: 0;
-  left: 0;
-}
-.page_photo_video_tabs_image_inner_new img,
-.page_photo_video_tabs_image_inner_new video {
-  width: 100%;
-  object-fit: cover;
-}
-/* Our Store Details */
-
 /* contact */
 .Page_contact_us_template_detail_new {
   position: relative;
@@ -11937,14 +11889,6 @@ label[for="AddressProvinceNew"] {
   }
   /* Collection */
 
-  /* Our Store (min-width:0px) and (max-width:749px)*/
-
-  /* Our Store Details */
-  .page_photo_video_tabs_image_new {
-    width: 150px !important;
-  }
-  /* Our Store Details */
-
   /* contact (min-width:0px) and (max-width:749px)*/
   .Page_contact_us_template_detail_1_new {
     display: none;
@@ -16663,18 +16607,6 @@ body.template-customers-activate_account .customer .field {
   max-width: 100%;
   margin: auto;
 }
-.template--rooted-by-kalki .page_photo_video_tabs_content_box h3,
-.template--rooted-by-kalki .page_photo_video_tabs_content_box h3 p {
-  font-size: 19px;
-}
-.template--rooted-by-kalki
-  .page_photo_video_tabs_image_inner_new
-  span.button_white {
-  font-size: 16px;
-  color: #c79d6f !important;
-  font-weight: 500;
-  letter-spacing: 0;
-}
 
 .tagalys-namespace
   .widget
@@ -17256,15 +17188,6 @@ body
   .Page_infos_heading_infos_innerinfos_new h1 {
     font-size: 30px;
     margin-top: 10px;
-  }
-  .template--rooted-by-kalki .page_photo_video_tabs_content_box h3,
-  .template--rooted-by-kalki .page_photo_video_tabs_content_box h3 p {
-    font-size: 15px;
-  }
-  .template--rooted-by-kalki
-    .page_photo_video_tabs_image_inner_new
-    span.button_white {
-    font-size: 14px;
   }
 }
 @media screen and (max-width: 767px) {
