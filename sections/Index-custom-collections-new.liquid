@@ -1,3 +1,9 @@
+<style>
+  .no-content::after {
+    display: none;
+  }
+</style>
+
 {%- if section.blocks.size > 0 -%}
   <link rel="preload" href="{{ 'index-custom-category.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{ 'index-custom-category.css' | asset_url }}"></noscript>
