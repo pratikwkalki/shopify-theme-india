@@ -403,6 +403,9 @@
   .Page_video_call_book_now_2_detail_innerright_button_new a {
     font-size: 14px;
   }
+  .Page_video_call_video_banner_title_new {
+    margin-bottom: 25px;
+  }
 }
 @media (min-width: 0px) and (max-width: 749px) {
   .Page_video_call_template_main_new {
@@ -539,5 +542,8 @@
   }
   .Page_video_template_banner_youtube {
     padding-bottom: 56%;
+  }
+  .Page_video_call_video_banner_title_new {
+    margin-bottom: 20px;
   }
 }
