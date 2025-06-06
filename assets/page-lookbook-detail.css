@@ -153,6 +153,9 @@
   .Page_lookbook_object_detail_innerdetail_3_infostexts_new {
     padding-top: 30px;
   }
+  .Page_lookbook_object_detail_title_new {
+    margin-bottom: 25px;
+  }
 }
 @media (min-width: 0px) and (max-width: 749px) {
   .Page_lookbook_detail_template_main_new {
@@ -202,5 +205,8 @@
     padding-top: 19px;
     font-size: 14px;
     line-height: 142.857%;
+  }
+  .Page_lookbook_object_detail_title_new {
+    margin-bottom: 20px;
   }
 }
