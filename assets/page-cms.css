@@ -125,6 +125,9 @@
   .Page_returns_template_mainloop_new {
     margin-bottom: 40px;
   }
+  .Page_template_title_new h1 {
+    font-size: 24px;
+  }
 }
 @media (min-width: 0px) and (max-width: 749px) {
   .Page_template_main_new {
