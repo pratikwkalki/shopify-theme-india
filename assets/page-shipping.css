@@ -162,4 +162,8 @@
   .Page_heading_with_logos_innerlogos_image_new img {
     max-height: 22px;
   }
+  .Page_infos_heading_infos_innerinfos_new h1 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
 }
