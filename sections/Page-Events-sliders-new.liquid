@@ -1,4 +1,5 @@
 {%- if section.blocks.size > 0 -%}
+  {{ 'page-events.css' | asset_url | stylesheet_tag }}
   <div class="Page_Events_sliders_main_new" style="background: {{ section.settings.main_background_color }};">
     <div class="Page_Events_sliders_inner_new">
       {%- if section.settings.main_heading_text != blank or section.settings.main_button_link != blank or section.settings.main_mp4_video != blank or section.settings.main_desktop_image != blank or section.settings.main_mobile_image != blank or section.settings.main_bottom_button_text != blank -%}
