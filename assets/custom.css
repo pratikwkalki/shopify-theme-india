@@ -6686,68 +6686,6 @@ div[data-widget-style] div.stamped-container {
   line-height: 131.25%;
 }
 
-.Page_store_detail_texts_main_new {
-  margin: 60px 0 16px;
-}
-.Page_store_detail_texts_object_new {
-  max-width: 1280px;
-  margin: auto;
-}
-.Page_store_detail_texts_object_infos_new {
-  height: 122px;
-  overflow: hidden;
-}
-.Page_store_detail_texts_object_infos_new.active {
-  height: auto;
-}
-.Page_store_detail_texts_object_infos_new h2 {
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 28px;
-  margin: 0;
-  padding-bottom: 24px;
-}
-.Page_store_detail_texts_object_infos_new h2 b {
-  font-weight: 500;
-}
-.Page_store_detail_texts_object_infos_new p,
-.Page_store_detail_texts_object_infos_new li {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
-  margin: 0;
-  padding-bottom: 20px;
-  color: #3f3d4d;
-}
-.Page_store_detail_texts_object_infos_new li {
-  padding-bottom: 8px;
-}
-.Page_store_detail_texts_object_infos_new li b {
-  font-weight: 500;
-}
-.Page_store_detail_texts_object_infos_new p a {
-  color: rgba(199, 157, 111, 1);
-  text-decoration: none;
-}
-.Page_store_detail_texts_object_infos_new ul {
-  margin: 0;
-  padding: 0;
-}
-.Page_store_detail_texts_object_infos_new ul li {
-  margin: 0 0 8px 20px;
-}
-.Page_store_detail_texts_object_infos_new ul li h3 {
-  margin: 0;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 25px;
-  color: inherit;
-}
-.cms-index-index .Page_store_detail_texts_inner_new {
-  border-top: 1px solid #d9d7d7;
-  padding-top: 44px;
-}
-
 .page_store_detail_collection_main_new {
   margin: 60px 0;
 }
@@ -11198,15 +11136,6 @@ label[for="AddressProvinceNew"] {
   width: 100%;
   height: 100%;
 }
-
-.Page_store_detail_texts_object_infos_new h1 {
-  margin: 0;
-  font-size: 24px;
-  line-height: 120%;
-  color: #000;
-  font-weight: 400;
-  padding-bottom: 28px;
-}
 .template--bridal .header_second_menu_new {
   display: none;
 }
@@ -12524,17 +12453,6 @@ label[for="AddressProvinceNew"] {
   .Page_store_detail_service_innerloop_innerboxs_infos_new p {
     font-size: 14px;
     line-height: 128.571%;
-  }
-
-  .Page_store_detail_texts_main_new {
-    margin: 40px 0 16px;
-  }
-  .Page_store_detail_texts_object_infos_new {
-    height: 172px;
-  }
-  .Page_store_detail_texts_object_infos_new h2 {
-    font-size: 16px;
-    line-height: 140%;
   }
 
   .Page_Store_detail_objects_faqs_main_new {
@@ -13933,18 +13851,6 @@ label[for="AddressProvinceNew"] {
     letter-spacing: 3px;
   }
 
-  .Page_bridal_details_texts_main_new {
-    margin: 32px 0;
-  }
-  .Page_store_detail_texts_object_infos_new ul li h3 {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .Page_store_detail_texts_object_infos_new h1 {
-    font-size: 18px;
-    line-height: 22px;
-    padding-bottom: 20px;
-  }
   .Page_bridal_detail_objects_faqs_main_new {
     margin: 32px 0;
     padding: 0;
@@ -14405,14 +14311,6 @@ label[for="AddressProvinceNew"] {
   }
   .Page_store_detail_service_innerloop_innerboxs_infos_new p {
     font-size: 14px;
-  }
-
-  .Page_store_detail_texts_main_new {
-    margin: 40px 0 16px;
-  }
-
-  .Page_store_detail_texts_object_infos_new {
-    height: 150px;
   }
 
   .Page_Store_detail_objects_faqs_main_new {
@@ -15335,9 +15233,6 @@ label[for="AddressProvinceNew"] {
     width: calc(25% - 45px);
   }
 
-  .Page_store_detail_texts_object_infos_new {
-    height: 140px;
-  }
   .Page_Store_detail_objects_faqs_innerloop_new .accordion > ul {
     grid-gap: 0 50px;
   }
