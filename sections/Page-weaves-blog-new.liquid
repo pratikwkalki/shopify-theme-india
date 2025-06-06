@@ -1,4 +1,5 @@
 {%- if section.blocks.size > 0 -%}
+  {{ 'page-weaves.css' | asset_url | stylesheet_tag }}
   <div class="page-width">
     <div class="weaves_blog_section">
       {% if section.settings.title != blank %}
