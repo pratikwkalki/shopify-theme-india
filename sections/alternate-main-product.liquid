@@ -1,6 +1,6 @@
 
 
-{{ "custom-main-product.css" | asset_url | stylesheet_tag }}
+{{ "custom-main-product.css" | asset_url | stylesheet_tag: preload: true }}
 {{ "blouse-style-popup.css" |  asset_url |  stylesheet_tag }}
 {{ "khadi-product.css" |  asset_url |  stylesheet_tag }}
  
