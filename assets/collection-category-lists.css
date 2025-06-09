@@ -54,6 +54,12 @@
 .Collection_category_lists_innerloop_innerboxs_2_titletextboth_new h3 strong {
   font-weight: 500;
 }
+.Collection_custom_category_slider .swiper-button-prev {
+  top: 40%;
+}
+.Collection_custom_category_slider .swiper-button-next {
+  top: 40%;
+}
 @media (min-width: 990px) and (max-width: 1424px) {
   .Collection_category_lists_innerloop_mainboxs_new {
     width: 114px;
