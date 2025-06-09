@@ -11,3 +11,23 @@
   width: calc(25% - 15px);
     position: relative;
 }
+.wedding_custom_collections_allloop_innerboxs_1_new{
+  position: relative;
+    z-index: 1;
+}
+.wedding_custom_collections_allloop_innerboxs_1_videoimageboth_new {
+    padding-bottom: 133.335%;
+    position: relative;
+}
+.wedding_custom_collections_allloop_innerboxs_3_new{
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 37px 15px;
+    width: 100%;
+    z-index: 3;
+}
+.wedding_custom_collections_allloop_innerboxs_3_button_new{
+  padding-top: 19px;
+    text-align: center;
+}
