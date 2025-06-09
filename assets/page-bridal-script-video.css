@@ -1,0 +1,55 @@
+.Page_bridal_script_video_main_new {
+  margin: 48px 0;
+}
+.Page_bridal_script_video_detail_new {
+  display: flex;
+  align-items: center;
+}
+.Page_bridal_script_video_detail_mainscript_new {
+  width: 33.33%;
+}
+.Page_bridal_script_video_detail_maininfos_new {
+  width: 33.33%;
+  padding: 20px;
+}
+.Page_bridal_script_video_detail_innerinfos_title_new {
+  padding-bottom: 10px;
+}
+.Page_bridal_script_video_detail_innerinfos_title_new p {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 32px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+}
+.Page_bridal_script_video_detail_innerinfos_links_new {
+  text-align: center;
+}
+@media (min-width: 750px) and (max-width: 989px) {
+  .Page_bridal_script_video_detail_innerinfos_title_new p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+@media (min-width: 0px) and (max-width: 749px) {
+  .Page_bridal_script_video_main_new {
+    margin: 32px 0;
+  }
+  .Page_bridal_script_video_detail_new {
+    display: block;
+  }
+  .Page_bridal_script_video_detail_mainscript_new {
+    width: 100%;
+  }
+  .Page_bridal_script_video_detail_maininfos_new {
+    width: 100%;
+    padding: 32px 16px;
+  }
+  .Page_bridal_script_video_detail_innerinfos_title_new p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 3px;
+  }
+}
