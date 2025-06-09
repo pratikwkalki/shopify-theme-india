@@ -46,12 +46,12 @@
 }
 
 @media screen and (max-width: 989px) {
-  .wedding_custom_collections_allloop_mainboxs_new
- {
-    width: calc(33.3% - 15px);
-    position: relative;
-}
+  
 }
 @media screen and (max-width: 749px) {
-  
+  .wedding_custom_collections_allloop_mainboxs_new
+ {
+    width: calc(50% - 15px);
+    position: relative;
+}
 }
