@@ -1278,9 +1278,6 @@ select {
   margin-left: 0;
 }
 
-.header__icon--cart {
-  margin-right: 0;
-}
 .header__icon .icon {
   fill: none;
   vertical-align: middle;
