@@ -505,8 +505,9 @@
   {% include 'kart_discount' %}
   
   <script src="{{ 'scroll-to-products.js' | asset_url }}" defer="defer"></script>
-
-
+  {% if template contains 'luxe-collection-new' %}
+    {{ 'luxe-collection.css' | asset_url | stylesheet_tag }}
+  {% endif %}
   
   </head>
 
