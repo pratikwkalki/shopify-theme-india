@@ -1,0 +1,104 @@
+.Collection_category_lists_main_new {
+  margin: 50px 0;
+}
+.Collection_category_lists_innerloop_mainboxs_new {
+  width: 169px;
+}
+.Collection_category_lists_innerloop_mainboxs_new a {
+  text-decoration: none;
+  margin-right: 8px;
+  display: block;
+}
+.Collection_category_lists_innerloop_innerboxs_1_videoimage_new {
+  position: relative;
+  padding-bottom: 100%;
+  margin: auto;
+}
+.Collection_category_lists_innerloop_innerboxs_1_videoimage_new img {
+  border-radius: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100% !important;
+}
+.Collection_category_lists_innerloop_innerboxs_1_videoimage_new video {
+  border-radius: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100% !important;
+}
+.Collection_category_lists_innerloop_innerboxs_2_new {
+  padding-top: 18px;
+}
+.Collection_category_lists_innerloop_innerboxs_2_titletextboth_new h3 {
+  margin: 0 0 12px;
+}
+.Collection_category_lists_innerloop_innerboxs_2_titletextboth_new h3 p {
+  margin: 0;
+  color: #000;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0.6px;
+}
+.Collection_category_lists_innerloop_innerboxs_2_titletextboth_new h3 strong {
+  font-weight: 500;
+}
+@media (min-width: 990px) and (max-width: 1424px) {
+  .Collection_category_lists_innerloop_mainboxs_new {
+    width: 114px;
+  }
+  .Collection_category_lists_innerloop_innerboxs_2_titletextboth_new h3 p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 750px) and (max-width: 989px) {
+  .Collection_category_lists_main_new {
+    margin: 30px 0;
+  }
+  .Collection_category_lists_main_new .page-width {
+    padding: 0 !important;
+  }
+  .Collection_custom_category_slider {
+    padding: 0 16px;
+  }
+  .Collection_category_lists_innerloop_mainboxs_new {
+    width: 138px;
+  }
+  .Collection_category_lists_innerloop_innerboxs_2_titletextboth_new h3 p {
+    font-size: 16px;
+  }
+}
+@media (min-width: 0px) and (max-width: 749px) {
+  .Collection_category_lists_main_new {
+    margin: 30px 0;
+  }
+  .Collection_category_lists_main_new .page-width {
+    padding: 0 !important;
+  }
+  .Collection_custom_category_slider {
+    padding: 0 16px;
+  }
+  .Collection_category_lists_innerloop_mainboxs_new {
+    width: 138px;
+  }
+  .Collection_category_lists_innerloop_innerboxs_2_titletextboth_new h3 p {
+    font-size: 16px;
+  }
+  .template--mens-detail-new .Collection_category_lists_innerloop_mainboxs_new a {
+    margin-right: -10px;
+  }
+  .template--mens-detail-new .Collection_category_lists_new .Collection_category_lists_title_new h2 {
+    text-align: center;
+  }
+}
