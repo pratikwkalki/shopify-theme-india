@@ -10420,37 +10420,6 @@ wishlist-link-floating {
   z-index: 999 !important;
 }
 
-@media (min-width: 990px) and (max-width: 9999px) {
-  /* .collection_header_transparent_new .shopify-section-header-sticky {
-         transform: translateY(0px) !important;
-    }
-    .template--bridal sticky-header {
-       display: block !important;
-          position: relative !important;
-         background: var(--gradient-background) !important;
-    } */
-  /* .template--luxe-collection-new sticky-header {
-          display: block !important;
-          position: relative !important;
-       background: var(--gradient-background) !important;
-    } */
-  /* .template--bridal-wedding-dress-new sticky-header {
-       background: var(--gradient-background) !important;
-    } */
-}
-
-@media screen and (min-width: 990px) {
-  /* .product-custom.bridal-pdp {
-        margin-top: 0px !important;
-    } */
-  /* .template--luxe-collection-new .Collection_meta_banner_new {
-       margin-top: 95px !important;
-    } */
-  /* .template--bridal-wedding-dress-new .Page_bridal_banner_button_new {
-       margin-top: 95px !important;
-   } */
-}
-
 @media screen and (min-width: 750px) {
   .template--bridal-collection-new aside facet-filters-form.facets.small-hide {
     display: none !important;
@@ -11096,38 +11065,6 @@ body.popup-active {
   border-bottom: 0;
 }
 
-/* buying-guide start */
-.buying-guide-inner-ul {
-  max-width: 1200px;
-  margin: auto;
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 1.33%;
-  row-gap: 20px;
-  margin-bottom: 40px;
-}
-.buying-guide-inner-ul li {
-  display: flex;
-  flex-direction: column;
-  width: 24%;
-}
-.buying-guide-inner-ul li img {
-  max-width: 100%;
-  margin: 0 auto;
-}
-.buying-guide-inner-ul li h2 {
-  color: #bd8b54;
-  font-weight: normal;
-  font-size: 1.8rem;
-}
-.buying-guide-inner-ul li .metafield-multi_line_text_field {
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
-/* buying-guide close */
 
 body.template-customers-reset_password .section-header,
 body.template-customers-reset_password .shopify-section-group-header-group,
@@ -11170,9 +11107,7 @@ body.template-customers-activate_account .customer .field {
 .our-stores_page_new .Index_title_main_new {
   margin-bottom: 0;
 }
-.template--kalki-fashion-show main .page-width,
-.template--buying-guide .Collection_meta_columns_new .page-width,
-.template--buying-guide .multirow .page-width {
+.template--kalki-fashion-show main .page-width {
   max-width: 912px;
 }
 .template--kalki-fashion-show main .Product_breadcrumb_new .page-width {
@@ -11195,48 +11130,6 @@ body.template-customers-activate_account .customer .field {
   width: 100% !important;
   height: 100% !important;
 }
-
-/* buying-guide */
-.template--buying-guide .Page_template_main_new {
-  padding-bottom: 0;
-  padding-top: 0;
-}
-.template--buying-guide .Page_template_breadcrumb_new .breadcrumbs {
-  padding-top: 16px;
-}
-.template--buying-guide .Common_title_new h2 {
-  font-size: 40px;
-}
-.template--buying-guide .grid--3-col-tablet .image-with-text__content ul {
-  padding: 0;
-  border: 1px solid #e1e1e5;
-  border-bottom: 0;
-}
-.template--buying-guide .grid--3-col-tablet .image-with-text__content ul li {
-  font-size: 14px;
-  border-bottom: 1px solid #e1e1e5;
-  padding: 10px;
-  line-height: normal;
-}
-.template--buying-guide .grid--3-col-tablet .image-with-text__content ul li a {
-  text-decoration: none;
-  color: #662505;
-  font-weight: 500;
-}
-.template--buying-guide
-  .grid--3-col-tablet
-  .grid__item
-  .image-with-text__media {
-  height: auto;
-}
-.template--buying-guide
-  .grid--3-col-tablet
-  .grid__item
-  .image-with-text__media
-  img {
-  position: static;
-}
-/* buying-guide */
 
 /* customization-charges */
 .customization-tailoring {
@@ -11588,9 +11481,7 @@ body
     .plp-delivery-message {
     margin: 0 !important;
   }
-  .buying-guide-inner-ul li {
-    width: 32.44%;
-  }
+  
 }
 @media screen and (min-width: 990px) {
   .template-search .collection_pagination_new {
@@ -11603,19 +11494,7 @@ body
     --grid-desktop-horizontal-spacing: 40px;
   }
 }
-@media screen and (min-width: 750px) {
-  .template--buying-guide .grid--3-col-tablet {
-    flex-wrap: nowrap;
-    gap: 40px;
-  }
-  .template--buying-guide .grid--3-col-tablet .grid__item {
-    width: 100%;
-    flex-shrink: 1;
-  }
-  .template--buying-guide .grid--3-col-tablet .image-with-text__content {
-    padding: 0;
-  }
-}
+
 @media screen and (max-width: 1024px) {
   .mobile-facets__disclosure.menu-opening
     #FacetFiltersFormMobile
@@ -11780,12 +11659,6 @@ body
   .video-call-appointment_page_new .Index_custom_category_slider {
     padding: 0;
   }
-  .buying-guide-inner-ul li {
-    width: 100%;
-  }
-  .buying-guide-inner-ul {
-    row-gap: 40px;
-  }
   .template--mens-detail-new .Index_round_column_list_1_allloop_mainboxs_new {
     border-top: 1px solid #f5f0f0;
   }
@@ -11816,25 +11689,6 @@ body
   }
   .template--kalki-fashion-show main .grid--3-col-desktop {
     padding: 0;
-  }
-  .template--buying-guide .Index_title_main_new {
-    margin-top: 20px;
-  }
-  .template--buying-guide .Common_title_new h2 {
-    font-size: 26px;
-    text-align: center;
-  }
-  .template--buying-guide .Page_template_breadcrumb_new {
-    display: block;
-  }
-  .template--buying-guide .rich-text__wrapper.page-width {
-    padding: 0 !important;
-  }
-  .template--buying-guide .image-with-text .image-with-text__text {
-    margin-top: 0;
-  }
-  .template--buying-guide .image-with-text .image-with-text__content {
-    padding-bottom: 10px;
   }
   .customization-tailoring {
     padding: 20px;

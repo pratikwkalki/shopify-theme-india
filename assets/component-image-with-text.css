@@ -456,4 +456,43 @@
   img {
   position: static;
 }
+.template--buying-guide .Collection_meta_columns_new .page-width,
+.template--buying-guide .multirow .page-width {
+  max-width: 912px;
+}
+@media screen and (min-width: 750px) {
+  .template--buying-guide .grid--3-col-tablet {
+    flex-wrap: nowrap;
+    gap: 40px;
+  }
+  .template--buying-guide .grid--3-col-tablet .grid__item {
+    width: 100%;
+    flex-shrink: 1;
+  }
+  .template--buying-guide .grid--3-col-tablet .image-with-text__content {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 749px) {
+  .template--buying-guide .Index_title_main_new {
+    margin-top: 20px;
+  }
+  .template--buying-guide .Common_title_new h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .template--buying-guide .Page_template_breadcrumb_new {
+    display: block;
+  }
+  .template--buying-guide .rich-text__wrapper.page-width {
+    padding: 0 !important;
+  }
+  .template--buying-guide .image-with-text .image-with-text__text {
+    margin-top: 0;
+  }
+  .template--buying-guide .image-with-text .image-with-text__content {
+    padding-bottom: 10px;
+  }
+}
 /* buying-guide */
+

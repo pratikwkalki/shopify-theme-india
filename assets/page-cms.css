@@ -142,6 +142,11 @@
   font-size: 1.5rem;
   line-height: 1.5;
 }
+@media screen and (max-width: 989px) {
+  .buying-guide-inner-ul li {
+    width: 32.44%;
+  }
+}
 @media (min-width: 750px) and (max-width: 989px) {
   .Page_template_breadcrumb_new .breadcrumbs {
     padding-top: 30px !important;
@@ -212,5 +217,11 @@
   }
   .Page_template_title_new h1 {
     font-size: 20px;
+  }
+  .buying-guide-inner-ul li {
+    width: 100%;
+  }
+  .buying-guide-inner-ul {
+    row-gap: 40px;
   }
 }
