@@ -1,46 +1,44 @@
+<link rel="stylesheet" href="{{ 'wedding-page.css' | asset_url }}">
+
 {%- if section.blocks.size > 0 or section.settings.main_heading_text != blank -%}
   <link rel="preload" href="{{ 'index-custom-category.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{ 'index-custom-category.css' | asset_url }}"></noscript>
-  <div class="Index_custom_category_main_new" style="background: {{ section.settings.main_background_color }};">
+  <div class="wedding_collection_lists_main_new" style="background: {{ section.settings.main_background_color }};">
     <div class="page-width">
-      <div class="Index_custom_category_inner_new">
+      <div class="wedding_collection_lists_inner_new">
         {%- if section.settings.main_heading_text != blank -%}
-          <div class="Common_title_new Index_custom_category_title_new">
+          <div class="Common_title_new Index_collection_lists_title_new">
             <h2>{{ section.settings.main_heading_text }}</h2>
           </div>
         {%- endif -%}
         {%- if section.blocks.size > 0 -%}
-          <div class="Index_custom_category_mainloop_new">
-            <div class="Index_custom_category_innerloop_new">
-              <div class="swiper-container Index_custom_category_slider">
-                <div class="swiper-wrapper">
+              <div class="wedding_collection_list_slider">
+                
                   {%- for block in section.blocks -%}
-                    {%- if block.settings.main_mp4_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank or block.settings.title != blank -%}
-                      <div class="swiper-slide Index_custom_category_innerloop_mainboxs_new">
+                    {%- if block.settings.main_mp4_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank or block.settings.title != blank or block.settings.main_button_link != blank -%}
+                      <div class="wedding_custom_collections_allloop_mainboxs_new">
                         {%- if block.settings.main_button_link != blank -%}
                           <a href="{{ block.settings.main_button_link }}" aria-label="Shop Now {{ block.settings.title }}" title="{{ block.settings.title }}"></a>
                         {%- endif -%}  
-                        <div class="Index_custom_category_innerloop_innerboxs_new">
+                        
                           {%- if block.settings.main_mp4_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank -%}
-                            <div class="Index_custom_category_innerloop_innerboxs_1_new">
-                              <div class="Index_custom_category_innerloop_innerboxs_1_videoimageboth_new">
+                            <div class="wedding_custom_collections_allloop_innerboxs_1_new">
+                              <div class="wedding_custom_collections_allloop_innerboxs_1_videoimageboth_new">
                                 {%- if block.settings.main_mp4_video != blank -%}
-                                  <div class="Index_custom_category_innerloop_innerboxs_1_videoimage_new">
+                                  <div class="wedding_custom_collections_allloop_innerboxs_1_videoimage_new">
                                     {{ block.settings.main_mp4_video | video_tag: controls: false, autoplay: true, loop: true }}
                                   </div>
                                 {% else %}  
                                   {%- if block.settings.main_desktop_image != blank and block.settings.main_mobile_image != blank -%}
-                                    <div class="Index_custom_category_innerloop_innerboxs_1_videoimage_new">
-                                      {%- if block.settings.main_desktop_image != blank -%}
-                                        {% assign main_desktop_image = block.settings.main_desktop_image  | image_url %}
-                                        {% assign main_mobile_image = block.settings.main_mobile_image  | image_url %}
-                                        <picture>
-                                          <source srcset="{%- render 'gumlet', src: main_mobile_image w: 380 %}" media="(max-width: 380px)" />
-                                          <source srcset="{%- render 'gumlet', src: main_mobile_image w: 500 %}" media="(max-width: 500px)" />
-                                          <source srcset="{%- render 'gumlet', src: main_mobile_image w: 749 %}" media="(max-width: 749px)" />
-                                          <img src="{%- render 'gumlet', src: main_desktop_image w: 350 %}" alt="{{ block.settings.title }}" title="{{ block.settings.title }}" loading="lazy" width="346" height="461" />
-                                        </picture>
-                                      {%- endif -%}
+                                    <div class="wedding_custom_collections_allloop_innerboxs_1_videoimage_new">
+                                      {% assign main_desktop_image = block.settings.main_desktop_image  | image_url %}
+                                      {% assign main_mobile_image = block.settings.main_mobile_image  | image_url %}
+                                      <picture>
+                                        <source srcset="{%- render 'gumlet', src: main_mobile_image w: 380 %}" media="(max-width: 380px)" />
+                                        <source srcset="{%- render 'gumlet', src: main_mobile_image w: 500 %}" media="(max-width: 500px)" />
+                                        <source srcset="{%- render 'gumlet', src: main_mobile_image w: 749 %}" media="(max-width: 749px)" />
+                                        <img src="{%- render 'gumlet', src: main_desktop_image w: 350 %}" alt="{{ block.settings.title }}" title="{{ block.settings.title }}" loading="lazy" width="346" height="461" />
+                                      </picture>
                                     </div>
                                   {%- endif -%}
                                 {%- endif -%}
@@ -48,36 +46,34 @@
                             </div>
                           {%- endif -%}
                           {%- if block.settings.title != blank or block.settings.sub_head_text != blank or block.settings.main_button_link != blank -%}
-                            <div class="Index_custom_category_innerloop_innerboxs_2_new">
-                              {%- if block.settings.title != blank -%}
-                                <div class="Index_custom_category_innerloop_innerboxs_2_titletextboth_new">
-                                  <h2>{{ block.settings.title }}</h2>
-                                </div>
-                              {%- endif -%}
-                              {%- if block.settings.sub_head_text != blank -%}
-                                 <div class="Index_custom_collections_allloop_innerboxs_3_subtitle_new">
-                                    <p>{{ block.settings.sub_head_text }}</p>
-                                </div>
-                              {%- endif -%}
-                              {%- if block.settings.main_button_text != blank and block.settings.main_button_link != blank -%}
-                                <div class="Index_custom_collections_allloop_innerboxs_3_button_new">
-                                  <a href="{{ block.settings.main_button_link }}" class="button button_white">
-                                    {{ block.settings.main_button_text }}
-                                  </a>
-                                </div>  
-                              {%- endif -%}
+                            <div class="wedding_custom_collections_allloop_innerboxs_3_new">
+                              <div class="wedding_custom_collections_allloop_innerboxs_3_titlebuttonboth_new">
+                                {%- if block.settings.title != blank -%}
+                                  <div class="wedding_custom_collections_allloop_innerboxs_3_title_new">
+                                    <h2>{{ block.settings.title }}</h2>
+                                  </div>  
+                                {%- endif -%}
+                                {%- if block.settings.sub_head_text != blank -%}
+                                   <div class="wedding_custom_collections_allloop_innerboxs_3_subtitle_new">
+                                      <p>{{ block.settings.sub_head_text }}</p>
+                                  </div>
+                                {%- endif -%}
+                                {%- if block.settings.main_button_text != blank and block.settings.main_button_link != blank -%}
+                                  <div class="wedding_custom_collections_allloop_innerboxs_3_button_new">
+                                    <a href="{{ block.settings.main_button_link }}" class="button button_white">
+                                      {{ block.settings.main_button_text }}
+                                    </a>
+                                  </div>  
+                                {%- endif -%}
+                              </div>
                             </div>  
                           {%- endif -%}
                         </div>
-                      </div>
+                      
                     {%- endif -%}
                   {%- endfor -%}
-                </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+               
               </div>
-            </div>
-          </div>
         {%- endif -%}
       </div>
     </div>
@@ -86,8 +82,8 @@
 
 {% schema %}
   {
-    "name": "Index Custom Category",
-    "class": "Index_custom_category_new",
+    "name": "Wedding Collection Lists",
+    "class": "Wedding_collection_lists_new",
     "settings": [
       {
         "type": "color",
@@ -99,7 +95,7 @@
         "type": "text",
         "id": "main_heading_text",
         "label": "Add Main Heading Text",
-        "default": "Shop by Category"
+        "default": "Shop by Collection"
       }
     ],
     "blocks": [
@@ -149,14 +145,8 @@
     ],
     "presets": [
       {
-        "name": "Index Custom Category",
+        "name": "Wedding Collection Lists",
         "blocks": [
-          {
-            "type": "information"
-          },
-          {
-            "type": "information"
-          },
           {
             "type": "information"
           },
