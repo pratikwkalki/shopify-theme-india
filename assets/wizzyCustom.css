@@ -727,6 +727,11 @@ span.wizzy-autocomplete-label {
     padding-bottom: 0px;
     align-items: center;
   }
+  .wizzy-grid-filters-box .wizzy-facet-head {
+    margin: 0 5px;
+    color: #000;
+    font-weight: 700;
+}
   .wizzy-search-wrapper .wizzy-search-results-wrapper .wizzy-search-filters-left .wizzy-facet-body.facet-body-product_confi_color_magento .wizzy-facet-list .wizzy-facet-list-item.active .wizzy-facet-list-item-label .wizzy-facet-item-swatch-wrapper.facet-visual-swatch
   {
     border: none;
