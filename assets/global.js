@@ -399,20 +399,16 @@ class MenuDrawer extends HTMLElement {
 
     const getFilter = this.querySelector('.mobile-facets__sort_open');
     if (getFilter) {
-      getFilter.addEventListener("click", () => {
-        const wrapper = document.querySelector('menu-drawer.mobile-facets__wrapper');
-        const heading = document.querySelector('.mobile-facets__header-inner .mobile-facets__heading.small-hide');
-        if (wrapper && heading) {
-          wrapper.classList.add("sort-filter-open");
-          heading.textContent = 'Sort';
-        }
+
+      getFilter.addEventListener("click", function() {
+        document.querySelector('menu-drawer.mobile-facets__wrapper').classList.add("sort-filter-open");
+        document.querySelector('.mobile-facets__header-inner .mobile-facets__heading.small-hide').textContent = 'Sort';
       });
     }
-
+    
     this.querySelectorAll(
       'button:not(.localization-selector):not(.country-selector__close-button):not(.country-filter__reset-button)'
-    ).forEach((button) =>
-      button.addEventListener('click', this.onCloseButtonClick.bind(this))
+    ).forEach((button) => button.addEventListener('click', this.onCloseButtonClick.bind(this))
     );
   }
 
@@ -434,28 +430,22 @@ class MenuDrawer extends HTMLElement {
     const isOpen = detailsElement.hasAttribute('open');
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
-    const addTrapFocus = () => {
-      setTimeout(() => {
-        trapFocus(summaryElement.nextElementSibling, detailsElement.querySelector('button'));
-      });
+    function addTrapFocus() {
+      trapFocus(summaryElement.nextElementSibling, detailsElement.querySelector('button'));
       summaryElement.nextElementSibling.removeEventListener('transitionend', addTrapFocus);
-    };
+    }
 
     if (detailsElement === this.mainDetailsToggle) {
       if (isOpen) event.preventDefault();
       isOpen ? this.closeMenuDrawer(event, summaryElement) : this.openMenuDrawer(summaryElement);
 
       if (window.matchMedia('(max-width: 990px)')) {
-        requestAnimationFrame(() => {
-          document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
-        });
+        document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
       }
     } else {
-      requestAnimationFrame(() => {
         detailsElement.classList.add('menu-opening');
         summaryElement.setAttribute('aria-expanded', true);
-        parentMenuElement?.classList.add('submenu-open');
-
+        parentMenuElement && parentMenuElement.classList.add('submenu-open');
         if (!reducedMotion || reducedMotion.matches) {
           addTrapFocus();
         } else {
@@ -464,66 +454,46 @@ class MenuDrawer extends HTMLElement {
             nextSibling.addEventListener('transitionend', addTrapFocus);
           }
         }
-      });
     }
   }
 
   openMenuDrawer(summaryElement) {
-    requestAnimationFrame(() => {
+    setTimeout(() => {
       this.mainDetailsToggle.classList.add('menu-opening');
     });
-
     summaryElement.setAttribute('aria-expanded', true);
-
-    setTimeout(() => {
-      trapFocus(this.mainDetailsToggle, summaryElement);
-    });
-
-    requestAnimationFrame(() => {
-      document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
-    });
+    trapFocus(this.mainDetailsToggle, summaryElement);
+    document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
   }
 
   closeMenuDrawer(event, elementToFocus = false) {
-    if (!event) return;
+    if (event === undefined) return;
 
     this.mainDetailsToggle.classList.remove('menu-opening');
-
-    const allDetails = this.mainDetailsToggle.querySelectorAll('details');
-    const submenus = this.mainDetailsToggle.querySelectorAll('.submenu-open');
-
-    allDetails.forEach((details) => {
+    this.mainDetailsToggle.querySelectorAll('details').forEach((details) => {
       details.removeAttribute('open');
       details.classList.remove('menu-opening');
     });
-
-    submenus.forEach((submenu) => {
+    this.mainDetailsToggle.querySelectorAll('.submenu-open').forEach((submenu) => {
       submenu.classList.remove('submenu-open');
     });
-
     document.body.classList.remove(`overflow-hidden-${this.dataset.breakpoint}`);
     removeTrapFocus(elementToFocus);
     this.closeAnimation(this.mainDetailsToggle);
 
-    if (event instanceof KeyboardEvent) {
-      elementToFocus?.setAttribute('aria-expanded', false);
-    }
+    if (event instanceof KeyboardEvent) elementToFocus?.setAttribute('aria-expanded', false);
 
-    const wrapper = document.querySelector('menu-drawer.mobile-facets__wrapper');
-    const heading = document.querySelector('.mobile-facets__header-inner .mobile-facets__heading.small-hide');
-
-    if (wrapper && heading) {
-      wrapper.classList.remove("sort-filter-open");
-      heading.textContent = 'Filter';
+    const getFilterForm = document.querySelector('menu-drawer.mobile-facets__wrapper');
+    if (getFilterForm) {
+      getFilterForm.classList.remove("sort-filter-open");
+      document.querySelector('.mobile-facets__header-inner .mobile-facets__heading.small-hide').textContent = 'Filter'
     }
   }
 
   onFocusOut() {
     setTimeout(() => {
-      if (this.mainDetailsToggle.hasAttribute('open') &&
-          !this.mainDetailsToggle.contains(document.activeElement)) {
+      if (this.mainDetailsToggle.hasAttribute('open') && !this.mainDetailsToggle.contains(document.activeElement))
         this.closeMenuDrawer();
-      }
     });
   }
 
@@ -534,29 +504,38 @@ class MenuDrawer extends HTMLElement {
 
   closeSubmenu(detailsElement) {
     const parentMenuElement = detailsElement.closest('.submenu-open');
-    parentMenuElement?.classList.remove('submenu-open');
-
+    parentMenuElement && parentMenuElement.classList.remove('submenu-open');
     detailsElement.classList.remove('menu-opening');
-    detailsElement.querySelector('summary')?.setAttribute('aria-expanded', false);
+    detailsElement.querySelector('summary').setAttribute('aria-expanded', false);
     removeTrapFocus(detailsElement.querySelector('summary'));
-
     this.closeAnimation(detailsElement);
   }
 
   closeAnimation(detailsElement) {
-    setTimeout(() => {
-      detailsElement.removeAttribute('open');
+    let animationStart;
 
-      const parentOpen = detailsElement.closest('details[open]');
-      if (parentOpen) {
-        trapFocus(parentOpen, detailsElement.querySelector('summary'));
+    const handleAnimation = (time) => {
+      if (animationStart === undefined) {
+        animationStart = time;
       }
-    }, 400); // mimic transition duration
+
+      const elapsedTime = time - animationStart;
+
+      if (elapsedTime < 400) {
+        window.requestAnimationFrame(handleAnimation);
+      } else {
+        detailsElement.removeAttribute('open');
+        if (detailsElement.closest('details[open]')) {
+          trapFocus(detailsElement.closest('details[open]'), detailsElement.querySelector('summary'));
+        }
+      }
+    };
+
+    window.requestAnimationFrame(handleAnimation);
   }
 }
 
 customElements.define('menu-drawer', MenuDrawer);
-
 
 class HeaderDrawer extends MenuDrawer {
   constructor() {
