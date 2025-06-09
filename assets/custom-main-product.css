@@ -2242,6 +2242,48 @@ div.ymq-option-title {
 .template--gift-card variant-selects .tooltip {
     display: none;
 }
+.additional-options-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.additional-options-wrapper label {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 50%;
+  padding-right: 8px;
+}
+.aditional-cost {
+  width: 50%;
+  margin-bottom: 0px;
+}
+.aditional-cost select {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+.aditional-cost select {
+  border: 0.5px solid rgba(73, 71, 86, 0.3);
+  width: 100%;
+  height: 34px;
+  border-radius: 20px;
+  padding: 7px 30px 7px 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  background: url(option_down_arrow.svg) no-repeat right 12px center;
+  font-family: Futura, sans-serif;
+}
+
 
 @media screen and (min-width: 768px) {
   body.template-product {
