@@ -295,6 +295,70 @@
         "playlist_id": "vGn6J9",
         "fireWorks_old": false
       }
+    },
+    "index_side_by_side_banner_new_i7fVEx": {
+      "type": "Index-side-by-side-banner-new",
+      "blocks": {
+        "information_8kMGqg": {
+          "type": "information",
+          "settings": {
+            "main_desktop_full_image": "shopify://shop_images/1-editors-picks-bridesmaid-all-country-420x568-desk-27-05-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1_editors_picks_bridesmaid_all_country_800x586_mobile_27_05_25.jpg",
+            "alt_text": "",
+            "main_banner_redirect_link": ""
+          }
+        },
+        "information_rXmP3j": {
+          "type": "information",
+          "settings": {
+            "main_desktop_full_image": "shopify://shop_images/2-editors-picks-groomsman-all-country-420x568-desk-27-05-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/2-editors-picks-groomsman-all-country-800x586-mobile-27-5-25.jpg",
+            "alt_text": "",
+            "main_banner_redirect_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "information_8kMGqg",
+        "information_rXmP3j"
+      ],
+      "name": "Index Side By Side Banner",
+      "settings": {
+        "main_background_color": "#ffffff",
+        "main_heading_text": "Editor Choice"
+      }
+    },
+    "index_side_by_side_banner_new_k6VCHq": {
+      "type": "Index-side-by-side-banner-new",
+      "blocks": {
+        "information_6GygaM": {
+          "type": "information",
+          "settings": {
+            "main_desktop_full_image": "shopify://shop_images/1-editors-picks-bridesmaid-all-country-420x568-desk-27-05-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1_editors_picks_bridesmaid_all_country_800x586_mobile_27_05_25.jpg",
+            "alt_text": "",
+            "main_banner_redirect_link": ""
+          }
+        },
+        "information_dD8i6g": {
+          "type": "information",
+          "settings": {
+            "main_desktop_full_image": "shopify://shop_images/2-editors-picks-groomsman-all-country-420x568-desk-27-05-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/2-editors-picks-groomsman-all-country-800x586-mobile-27-5-25.jpg",
+            "alt_text": "",
+            "main_banner_redirect_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "information_6GygaM",
+        "information_dD8i6g"
+      ],
+      "name": "Index Side By Side Banner",
+      "settings": {
+        "main_background_color": "#ffffff",
+        "main_heading_text": ""
+      }
     }
   },
   "order": [
@@ -305,6 +369,8 @@
     "page_weaves_collections_new_gjeJMn",
     "tagalys_section_3VhgmT",
     "wedding_category_list_3DPkC7",
-    "fireworks_section_H6KUEb"
+    "fireworks_section_H6KUEb",
+    "index_side_by_side_banner_new_i7fVEx",
+    "index_side_by_side_banner_new_k6VCHq"
   ]
 }
