@@ -15,6 +15,16 @@
         "main_background_color": "#ffffff"
       }
     },
+    "custom_liquid_RFHjaK": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\n.Common_title_new.Page_template_title_new{\ndisplay:none}\n.Index_side_by_side_banner_main_new {\n    margin: 0;\n}\n</style>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "index_side_by_side_banner_new_pGtxYz": {
       "type": "Index-side-by-side-banner-new",
       "blocks": {
@@ -50,6 +60,7 @@
   },
   "order": [
     "main",
+    "custom_liquid_RFHjaK",
     "index_side_by_side_banner_new_pGtxYz"
   ]
 }
