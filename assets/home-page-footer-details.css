@@ -48,6 +48,12 @@
   letter-spacing: 0.16px;
   cursor: pointer;
 }
+.template--mens-detail-new .Collection_descriptions_infos_new.rte h2 {
+  font-size: 24px !important;
+}
+.template--mens-detail-new .Collection_descriptions_infos_new {
+  -webkit-line-clamp: 5;
+}
 .Page_store_detail_texts_main_new {
   margin: 60px 0 16px;
 }
@@ -133,6 +139,19 @@
   .Collection_descriptions_main_new {
     margin: 40px 0;
   }
+  .Collection_descriptions_infos_new h3 {
+    margin: 0 0 20px;
+    font-size: 22px;
+    line-height: 133.33%;
+  }
+  .Collection_descriptions_infos_new p {
+    font-size: 15px;
+    line-height: 130%;
+  }
+  .read_more_new {
+    margin: 10px 0 0;
+    font-size: 14px;
+  }  
   .Page_store_detail_texts_main_new {
     margin: 40px 0 16px;
   }
@@ -157,6 +176,9 @@
   }
   .Collection_descriptions_main_new {
     margin: 30px 0;
+  }
+  .read_more_new {
+    margin: 10px 0 0 0;
   }
   .Page_store_detail_texts_main_new {
     margin: 40px 0 16px;

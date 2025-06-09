@@ -3230,10 +3230,6 @@ img {
 .scroll-locked {
   overflow-y: hidden;
 }
-.Collection_descriptions_infos_new.rte h2,
-.Collection_descriptions_infos_new.rte h3 {
-  font-size: 20px !important;
-}
 [type="checkbox"],
 [type="radio"],
 select {
@@ -6173,7 +6169,6 @@ div[data-widget-style] div.stamped-container {
 .collection_full_width_new .Collection_main_template_main_new .page-width,
 .collection_full_width_new .Collection_product_grid_new .page-width,
 .collection_full_width_new .Collection_object_lists_new .page-width,
-.collection_full_width_new .Collection_descriptions_new .page-width,
 .collection_full_width_new .Collection_object_faqs_new .page-width {
   max-width: 100%;
 }
@@ -7910,25 +7905,6 @@ div[data-widget-style] div.stamped-container {
     line-height: 150%;
     padding: 8px 24px;
   }
-  
-  
-  .Collection_descriptions_inner_new {
-    border-radius: 6px;
-    border: 1px solid #e1e1e5;
-    padding: 16px;
-  }
-  .Collection_descriptions_infos_new h3 {
-    margin: 0 0 20px;
-    font-size: 18px;
-    line-height: 133.33%;
-  }
-  .Collection_descriptions_infos_new p {
-    font-size: 14px;
-    line-height: 128.571%;
-  }
-  .read_more_new {
-    margin: 10px 0 0 0;
-  }
   /* Collection */
 
   /* BRIDAL-COLLECTION (min-width:0px) and (max-width:749px)*/
@@ -8365,20 +8341,6 @@ div[data-widget-style] div.stamped-container {
   .Collection_object_lists_innerloop_innerboxs_new a {
     padding: 10px 20px;
   }
-  
-  .Collection_descriptions_infos_new h3 {
-    margin: 0 0 20px;
-    font-size: 22px;
-    line-height: 133.33%;
-  }
-  .Collection_descriptions_infos_new p {
-    font-size: 15px;
-    line-height: 130%;
-  }
-  .read_more_new {
-    margin: 10px 0 0;
-    font-size: 14px;
-  }  
   .collection__pagination_custom {
     display: none;
   }
@@ -10309,12 +10271,6 @@ body.template-customers-activate_account .customer .field {
   .widget
   .widget-heading {
   margin-bottom: 8px;
-}
-.template--mens-detail-new .Collection_descriptions_infos_new.rte h2 {
-  font-size: 24px !important;
-}
-.template--mens-detail-new .Collection_descriptions_infos_new {
-  -webkit-line-clamp: 5;
 }
 .our-stores_page_new .Common_title_new h2 {
   font-size: 36px;
