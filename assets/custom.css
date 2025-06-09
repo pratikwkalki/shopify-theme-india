@@ -10435,11 +10435,6 @@ body.template-customers-activate_account .customer .field {
 .template--mens-detail-new .Collection_descriptions_infos_new {
   -webkit-line-clamp: 5;
 }
-.template--mens-detail-new .Collection_object_banners_mainloop_new {
-  padding: 0;
-  /* max-width: 1090px; */
-  margin: auto;
-}
 .our-stores_page_new .Common_title_new h2 {
   font-size: 36px;
 }
