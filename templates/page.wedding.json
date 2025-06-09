@@ -178,6 +178,78 @@
       "settings": {
         "playlist_id": "1530e3743fd689c4d848"
       }
+    },
+    "wedding_category_list_3DPkC7": {
+      "type": "wedding-category-list",
+      "blocks": {
+        "information_RFxBwP": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
+            "title": "",
+            "sub_head_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "/"
+          }
+        },
+        "information_TihwRf": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
+            "title": "",
+            "sub_head_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "/"
+          }
+        },
+        "information_4rndc7": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
+            "title": "",
+            "sub_head_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "/"
+          }
+        },
+        "information_KHjWYi": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
+            "title": "",
+            "sub_head_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "/"
+          }
+        },
+        "information_PGrptt": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
+            "title": "",
+            "sub_head_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "/"
+          }
+        }
+      },
+      "block_order": [
+        "information_RFxBwP",
+        "information_TihwRf",
+        "information_4rndc7",
+        "information_KHjWYi",
+        "information_PGrptt"
+      ],
+      "name": "Wedding Collection Lists",
+      "settings": {
+        "main_background_color": "#FFFFFF",
+        "main_heading_text": "Shop by Collection"
+      }
     }
   },
   "order": [
@@ -186,6 +258,7 @@
     "index_side_by_side_banner_new_pGtxYz",
     "index_icon_text_info_list_new_x9NgeH",
     "page_weaves_collections_new_gjeJMn",
-    "tagalys_section_3VhgmT"
+    "tagalys_section_3VhgmT",
+    "wedding_category_list_3DPkC7"
   ]
 }
