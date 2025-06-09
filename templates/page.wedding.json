@@ -178,126 +178,6 @@
       "settings": {
         "playlist_id": "1530e3743fd689c4d848"
       }
-    },
-    "index_collection_lists_new_kxdqJg": {
-      "type": "Index-collection-lists-new",
-      "blocks": {
-        "information_pMQJL6": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "Sarees",
-            "sub_head_text": "",
-            "main_button_text": "Shop All",
-            "main_button_link": "/"
-          }
-        },
-        "information_nmhhgT": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "Sarees",
-            "sub_head_text": "",
-            "main_button_text": "Shop All",
-            "main_button_link": "/"
-          }
-        },
-        "information_AWCwHj": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "Sarees",
-            "sub_head_text": "",
-            "main_button_text": "Shop All",
-            "main_button_link": "/"
-          }
-        },
-        "information_gbBMnc": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "Sarees",
-            "sub_head_text": "",
-            "main_button_text": "Shop All",
-            "main_button_link": "/"
-          }
-        }
-      },
-      "block_order": [
-        "information_pMQJL6",
-        "information_nmhhgT",
-        "information_AWCwHj",
-        "information_gbBMnc"
-      ],
-      "name": "Index Collection Lists",
-      "settings": {
-        "main_background_color": "#FFFFFF",
-        "main_heading_text": "Shop by Collection"
-      }
-    },
-    "index_collection_lists_new_JqTTra": {
-      "type": "Index-collection-lists-new",
-      "blocks": {
-        "information_F4Pikt": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "Sarees",
-            "sub_head_text": "",
-            "main_button_text": "Shop All",
-            "main_button_link": "/"
-          }
-        },
-        "information_djTErR": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "Sarees",
-            "sub_head_text": "",
-            "main_button_text": "Shop All",
-            "main_button_link": "/"
-          }
-        },
-        "information_eXL7zD": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "Sarees",
-            "sub_head_text": "",
-            "main_button_text": "Shop All",
-            "main_button_link": "/"
-          }
-        },
-        "information_jfCY48": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "Sarees",
-            "sub_head_text": "",
-            "main_button_text": "Shop All",
-            "main_button_link": "/"
-          }
-        }
-      },
-      "block_order": [
-        "information_F4Pikt",
-        "information_djTErR",
-        "information_eXL7zD",
-        "information_jfCY48"
-      ],
-      "name": "Index Collection Lists",
-      "settings": {
-        "main_background_color": "#FFFFFF",
-        "main_heading_text": ""
-      }
     }
   },
   "order": [
@@ -306,8 +186,6 @@
     "index_side_by_side_banner_new_pGtxYz",
     "index_icon_text_info_list_new_x9NgeH",
     "page_weaves_collections_new_gjeJMn",
-    "tagalys_section_3VhgmT",
-    "index_collection_lists_new_kxdqJg",
-    "index_collection_lists_new_JqTTra"
+    "tagalys_section_3VhgmT"
   ]
 }
