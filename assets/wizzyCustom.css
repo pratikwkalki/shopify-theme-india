@@ -634,6 +634,18 @@ span.wizzy-autocomplete-label {
     display: flex;
     border-bottom: none;
     padding-bottom: 0px;
+    align-items: center;
+  }
+  .wizzy-search-wrapper .wizzy-search-results-wrapper .wizzy-search-filters-left .wizzy-facet-body.facet-body-product_confi_color_magento .wizzy-facet-list .wizzy-facet-list-item.active .wizzy-facet-list-item-label .wizzy-facet-item-swatch-wrapper.facet-visual-swatch
+  {
+    border: none;
+  }
+  .wizzy-search-wrapper .wizzy-search-results-wrapper .wizzy-search-filters-left .wizzy-facet-body .wizzy-facet-list .wizzy-facet-list-item.active .wizzy-facet-list-item-label .wizzy-facet-item-swatch-wrapper.facet-visual-swatch
+  {
+    padding: 0px;
+  }
+  .wizzy-search-wrapper .wizzy-search-filters-left .wizzy-facet-body.facet-body-product_confi_color_magento .wizzy-facet-list .wizzy-facet-list-item .wizzy-facet-list-item-label {
+    line-height: 12px;
   }
   .wizzy-autocomplete-wrapper
     .wizzy-autocomplete-top-products
