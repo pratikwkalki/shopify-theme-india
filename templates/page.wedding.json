@@ -11,10 +11,45 @@
   "sections": {
     "main": {
       "type": "Page-template-new",
-      "settings": {}
+      "settings": {
+        "main_background_color": "#ffffff"
+      }
+    },
+    "index_side_by_side_banner_new_pGtxYz": {
+      "type": "Index-side-by-side-banner-new",
+      "blocks": {
+        "information_H9VDcD": {
+          "type": "information",
+          "settings": {
+            "main_desktop_full_image": "shopify://shop_images/1-editors-picks-bridesmaid-all-country-420x568-desk-27-05-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1_editors_picks_bridesmaid_all_country_800x586_mobile_27_05_25.jpg",
+            "alt_text": "",
+            "main_banner_redirect_link": ""
+          }
+        },
+        "information_4UAkkC": {
+          "type": "information",
+          "settings": {
+            "main_desktop_full_image": "shopify://shop_images/2-editors-picks-groomsman-all-country-420x568-desk-27-05-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/2-editors-picks-groomsman-all-country-800x586-mobile-27-5-25.jpg",
+            "alt_text": "",
+            "main_banner_redirect_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "information_H9VDcD",
+        "information_4UAkkC"
+      ],
+      "name": "Index Side By Side Banner",
+      "settings": {
+        "main_background_color": "#FFFFFF",
+        "main_heading_text": "Editor's Picks"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "index_side_by_side_banner_new_pGtxYz"
   ]
 }
