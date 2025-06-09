@@ -286,6 +286,15 @@
         "main_background_color": "#ffffff",
         "main_heading_text": "Shop by Collection"
       }
+    },
+    "fireworks_section_H6KUEb": {
+      "type": "fireworks-section",
+      "name": "FireWorks Embed Section",
+      "settings": {
+        "title": "Trending Looks To Watch",
+        "playlist_id": "vGn6J9",
+        "fireWorks_old": false
+      }
     }
   },
   "order": [
@@ -295,6 +304,7 @@
     "index_icon_text_info_list_new_x9NgeH",
     "page_weaves_collections_new_gjeJMn",
     "tagalys_section_3VhgmT",
-    "wedding_category_list_3DPkC7"
+    "wedding_category_list_3DPkC7",
+    "fireworks_section_H6KUEb"
   ]
 }
