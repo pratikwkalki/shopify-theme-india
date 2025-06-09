@@ -19,6 +19,17 @@
     padding-bottom: 133.335%;
     position: relative;
 }
+.wedding_custom_collections_allloop_innerboxs_1_videoimage_new img{
+      width: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100% !important;
+    object-position: top;
+}
 .wedding_custom_collections_allloop_innerboxs_3_new{
   position: absolute;
     left: 0;
