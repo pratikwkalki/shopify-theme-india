@@ -6059,50 +6059,6 @@ div[data-widget-style] div.stamped-container {
   color: rgba(102, 37, 5);
 }
 
-.Collection_descriptions_main_new {
-  margin: 50px 0;
-}
-.Collection_descriptions_infos_new {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 7;
-  -webkit-box-orient: vertical;
-}
-.Collection_descriptions_infos_new.active {
-  display: block;
-}
-.Collection_descriptions_infos_new h3 {
-  margin: 0 0 30px 0;
-  color: #0f0d1a;
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 118.75%;
-}
-.Collection_descriptions_infos_new p {
-  margin: 20px 0;
-  color: #3f3d4d;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 125%;
-  letter-spacing: 0.16px;
-}
-.Collection_descriptions_infos_new a {
-  color: rgba(199, 157, 111);
-  text-decoration: none;
-}
-.Collection_descriptions_infos_new ul li h3{
-  display: inline
-}
-.read_more_new {
-  margin: 20px 0 0;
-  font-size: 14px;
-  font-weight: 900;
-  line-height: 125%;
-  letter-spacing: 0.16px;
-  cursor: pointer;
-}
-
 .template-search .facets-vertical-form {
   align-items: center;
 }
@@ -7955,9 +7911,7 @@ div[data-widget-style] div.stamped-container {
     padding: 8px 24px;
   }
   
-  .Collection_descriptions_main_new {
-    margin: 30px 0;
-  }
+  
   .Collection_descriptions_inner_new {
     border-radius: 6px;
     border: 1px solid #e1e1e5;
@@ -8411,10 +8365,7 @@ div[data-widget-style] div.stamped-container {
   .Collection_object_lists_innerloop_innerboxs_new a {
     padding: 10px 20px;
   }
-
-  .Collection_descriptions_main_new {
-    margin: 40px 0;
-  }
+  
   .Collection_descriptions_infos_new h3 {
     margin: 0 0 20px;
     font-size: 22px;
@@ -8683,9 +8634,6 @@ div[data-widget-style] div.stamped-container {
   .Collection_object_lists_innerloop_innerboxs_new a {
     padding: 10px 20px;
   }
-  .Collection_descriptions_main_new {
-    margin: 40px 0;
-  }  
   /* Collection */
 
   /* BRIDAL-COLLECTION */
