@@ -725,6 +725,7 @@ span.wizzy-autocomplete-label {
     display: flex;
     border-bottom: none;
     padding-bottom: 0px;
+    align-items: center;
   }
   .wizzy-autocomplete-wrapper
     .wizzy-autocomplete-top-products
