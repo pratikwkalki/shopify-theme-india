@@ -6770,32 +6770,6 @@ div[data-widget-style] div.stamped-container {
   border: 1px solid #d9d9d9;
 }
 
-.collection_luxe_banners_main_new .page-width {
-  max-width: 100%;
-}
-.collection_luxe_banners_inner_new {
-  text-align: center;
-  padding: 15px 0;
-}
-.collection_luxe_banners_innerboxs_icons_new {
-  max-width: 18%;
-  margin: auto;
-}
-.collection_luxe_banners_innerboxs_icons_new img {
-  width: 100%;
-  display: flex;
-}
-.collection_luxe_banners_innerboxs_infos_new {
-  color: #000;
-  font-size: 26px;
-  text-align: center;
-  word-spacing: 3px;
-  padding-top: 20px;
-  line-height: 140%;
-}
-.collection_luxe_banners_innerboxs_infos_new p:last-child {
-  margin: 0;
-}
 .template--luxe-collection-new
   .Collection_product_grid_rightside_innertop_1_detail_subtitle_new
   h2 {
@@ -8002,14 +7976,7 @@ div[data-widget-style] div.stamped-container {
     margin-top: 15px;
     margin-bottom: 40px;
   }
-  .collection_luxe_banners_innerboxs_icons_new {
-    max-width: 170px;
-  }
-  .collection_luxe_banners_innerboxs_infos_new {
-    font-size: 15px;
-    padding-top: 15px;
-    line-height: 150%;
-  }
+  
   /* LUXE-COLLECTION (min-width:0px) and (max-width:749px)*/
   
   /* Bridal Page (min-width:0px) and (max-width:749px)*/
@@ -8373,14 +8340,7 @@ div[data-widget-style] div.stamped-container {
     min-width: 219px !important;
   }
 
-  .collection_luxe_banners_innerboxs_icons_new {
-    max-width: 170px;
-  }
-  .collection_luxe_banners_innerboxs_infos_new {
-    font-size: 19px;
-    padding-top: 15px;
-    line-height: 150%;
-  }
+  
   /* LUXE-COLLECTION */
 
   /* Bridal Page (min-width:750px) and (max-width:989px)*/
@@ -8603,11 +8563,6 @@ div[data-widget-style] div.stamped-container {
   }
   .Collection_luxe_product_toppart_1_new {
     padding: 30px 0 0 !important;
-  }
-
-  .collection_luxe_banners_innerboxs_infos_new {
-    font-size: 22px;
-    line-height: 160%;
   }
   /* LUXE-COLLECTION */
 
