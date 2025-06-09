@@ -53,8 +53,8 @@
       ],
       "name": "Index Side By Side Banner",
       "settings": {
-        "main_background_color": "#FFFFFF",
-        "main_heading_text": "Editor's Picks"
+        "main_background_color": "#ffffff",
+        "main_heading_text": ""
       }
     },
     "index_icon_text_info_list_new_x9NgeH": {
@@ -87,7 +87,7 @@
       ],
       "name": "Index Icon Text Info List",
       "settings": {
-        "main_background_color": "#EFEFEF",
+        "main_background_color": "#efefef",
         "main_desktop_full_image": "shopify://shop_images/Bridal_Banner-min.jpg",
         "main_mobile_full_image": "shopify://shop_images/Bridal_Banner_1_-min.jpg"
       }
@@ -166,7 +166,7 @@
       ],
       "name": "Page Weaves Collections",
       "settings": {
-        "main_background_color": "#FFFFFF",
+        "main_background_color": "#ffffff",
         "main_heading_text": "<p>Shop By Occasion</p>",
         "main_button_text": "Shop Now",
         "main_button_link": "/"
