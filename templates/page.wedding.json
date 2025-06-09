@@ -98,31 +98,59 @@
         "information_8JmDkw": {
           "type": "information",
           "settings": {
-            "title": "<p>Heading</p>",
+            "main_desktop_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "title": "<p>Haldi | Mehendi</p>",
             "inner_button_text": "Shop Now",
             "inner_button_link": "/"
           }
         },
-        "information_fDpcni": {
+        "information_7fkB3p": {
           "type": "information",
           "settings": {
-            "title": "<p>Heading</p>",
+            "main_desktop_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "title": "<p>Haldi | Mehendi</p>",
             "inner_button_text": "Shop Now",
             "inner_button_link": "/"
           }
         },
-        "information_KTe8pP": {
+        "information_cwgpKi": {
           "type": "information",
           "settings": {
-            "title": "<p>Heading</p>",
+            "main_desktop_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "title": "<p>Haldi | Mehendi</p>",
             "inner_button_text": "Shop Now",
             "inner_button_link": "/"
           }
         },
-        "information_rR7yFr": {
+        "information_X9dRtV": {
           "type": "information",
           "settings": {
-            "title": "<p>Heading</p>",
+            "main_desktop_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "title": "<p>Haldi | Mehendi</p>",
+            "inner_button_text": "Shop Now",
+            "inner_button_link": "/"
+          }
+        },
+        "information_Dhk6Nm": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "title": "<p>Haldi | Mehendi</p>",
+            "inner_button_text": "Shop Now",
+            "inner_button_link": "/"
+          }
+        },
+        "information_TKeeVf": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "title": "<p>Haldi | Mehendi</p>",
             "inner_button_text": "Shop Now",
             "inner_button_link": "/"
           }
@@ -130,9 +158,11 @@
       },
       "block_order": [
         "information_8JmDkw",
-        "information_fDpcni",
-        "information_KTe8pP",
-        "information_rR7yFr"
+        "information_7fkB3p",
+        "information_cwgpKi",
+        "information_X9dRtV",
+        "information_Dhk6Nm",
+        "information_TKeeVf"
       ],
       "name": "Page Weaves Collections",
       "settings": {
