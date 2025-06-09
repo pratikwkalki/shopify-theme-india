@@ -5424,25 +5424,6 @@ div[data-widget-style] div.stamped-container {
 /* Product */
 
 /* Collection */
-.Collection_meta_banner_main_new {
-  padding: 16px 0 0 0;
-}
-.Collection_meta_banner_detail_videoimage_new img {
-  width: 100%;
-  display: flex;
-}
-.Collection_meta_banner_detail_videoimage_new video {
-  width: 100%;
-  display: flex;
-}
-
-.Collection_meta_banner_desktop_new {
-  display: block;
-}
-.Collection_meta_banner_mobile_new {
-  display: none;
-}
-
 .Collection_product_grid_main_new {
   margin: 18px 0 50px 0 !important;
 }
@@ -6685,9 +6666,6 @@ div[data-widget-style] div.stamped-container {
   font-weight: normal;
   text-align: center;
 }
-.Luxe_collection_meta_banner_new {
-  padding-top: 0;
-}
 .Luxe_collection_main_template_new .breadcrumbs {
   padding: 20px 0 0 0;
 }
@@ -7150,19 +7128,12 @@ div[data-widget-style] div.stamped-container {
 }
 /* Login Dropdown */
 
-/* Mens LP */
-.container_width_new .Collection_meta_banner_inner_new {
-  max-width: 1424px;
-  padding: 0 40px !important;
-  margin: auto;
-}
 .button_square {
   border-radius: 0;
 }
 .button_black:hover {
   text-decoration: underline;
 }
-/* Mens LP */
 
 .card__heading .plp-delivery-message {
   display: none;
@@ -7645,19 +7616,12 @@ div[data-widget-style] div.stamped-container {
   .Collection_product_grid_leftside_2_new {
     display: none;
   }
-  .Collection_meta_banner_desktop_new {
-    display: none;
-  }
-  .Collection_meta_banner_mobile_new {
-    display: block;
-  }
   .facets-vertical .product-grid-container {
     width: 100% !important;
   }
   .Collection_product_grid_rightside_innertop_2_new {
     display: none;
   }
-
   .mobile-facets__open .mobile-facets__open-label h2 {
     padding: 0 12px;
     position: relative;
@@ -7966,9 +7930,6 @@ div[data-widget-style] div.stamped-container {
   /* BRIDAL-COLLECTION */
 
   /* LUXE-COLLECTION (min-width:0px) and (max-width:749px)*/
-  .Luxe_collection_meta_banner_new {
-    padding-top: 20px;
-  }
   .Luxe_collection_main_template_new .breadcrumbs {
     padding: 15px 0 0;
   }
@@ -8148,22 +8109,6 @@ div[data-widget-style] div.stamped-container {
   }
   
   /* Bridal Page */
-
-  /* Mens LP (min-width:0px) and (max-width:749px)*/
-  .container_width_new .Collection_meta_banner_inner_new {
-    padding: 0 16px !important;
-  }
-  .Collection_custom_category_slider {
-    padding: 0 16px;
-  }
-  .Collection_category_lists_innerloop_mainboxs_new {
-    width: 138px;
-  }
-  .Collection_category_lists_innerloop_innerboxs_2_titletextboth_new h3 p {
-    font-size: 16px;
-  }
-  /* Mens LP */
-
   .Collection_luxe_product_bottompart_new .plp-delivery-message {
     display: none;
   }
@@ -8393,9 +8338,6 @@ div[data-widget-style] div.stamped-container {
   /* BRIDAL-COLLECTION */
 
   /* LUXE-COLLECTION (min-width:750px) and (max-width:989px)*/
-  .Luxe_collection_meta_banner_new {
-    padding-top: 20px;
-  }
   .Collection_luxe_product_main_new {
     margin: 25px 0 40px !important;
   }
@@ -8455,22 +8397,6 @@ div[data-widget-style] div.stamped-container {
   }
 
   /* Bridal Page */
-
-  /* Mens LP (min-width:750px) and (max-width:989px)*/
-  .container_width_new .Collection_meta_banner_inner_new {
-    padding: 0 16px !important;
-  }
-  .Collection_custom_category_slider {
-    padding: 0 16px;
-  }
-  .Collection_category_lists_innerloop_mainboxs_new {
-    width: 138px;
-  }
-  .Collection_category_lists_innerloop_innerboxs_2_titletextboth_new h3 p {
-    font-size: 16px;
-  }
-  /* Mens LP */
-
   .popup_manufacturing_open
     .Index_icon_with_text_list_allloop_popup_desc_main_new {
     padding: 24px;
@@ -8692,18 +8618,6 @@ div[data-widget-style] div.stamped-container {
   }
 
   /* Bridal Page */
-
-  /* Mens LP */
-  .container_width_new .Collection_meta_banner_inner_new {
-    padding: 0 16px !important;
-  }
-  .Collection_category_lists_innerloop_mainboxs_new {
-    width: 114px;
-  }
-  .Collection_category_lists_innerloop_innerboxs_2_titletextboth_new h3 p {
-    font-size: 16px;
-  }
-  /* Mens LP */
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -9698,9 +9612,7 @@ wishlist-link-floating {
   .template--luxe-collection-new .header_top_new wishlist-link .wk-button {
     --icon-stroke: white !important;
   }
-  .Luxe_collection_meta_banner_new {
-    padding-top: 0px !important;
-  }
+  
 }
 @media only screen and (min-width: 768px) and (max-width: 989px) {
   .template--luxe-collection-new
@@ -10835,13 +10747,7 @@ body
   }
   .template--mens-detail-new .Page_weaves_banner_slider_main_new .page-width {
     padding: 0 16px !important;
-  }
-  .template--mens-detail-new
-    .Collection_category_lists_innerloop_mainboxs_new
-    a {
-    margin-right: -10px;
-  }
-  
+  }  
   .about-us_page_new .Common_title_new h2,
   .template--video-appointment-new .Common_title_new h2 {
     text-align: center;
@@ -10940,12 +10846,6 @@ body
     .swiper-pagination
     .swiper-pagination-bullet {
     margin: 20px;
-  }
-  .template--mens-detail-new
-    .Collection_category_lists_new
-    .Collection_category_lists_title_new
-    h2 {
-    text-align: center;
   }
   .additional-options-wrapper label {
     font-size: 13px;
