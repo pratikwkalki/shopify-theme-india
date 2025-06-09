@@ -48,6 +48,12 @@
 .wedding_custom_category_innerloop_innerboxs_2_titletextboth_new h2 {
     margin: 0;
     font-family: var(--font-noto-serif-display);
+  color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 91.667%;
+    letter-spacing: .72px;
 }
 @media screen and (max-width: 749px) {
   .wedding_custom_collections_allloop_mainboxs_new
