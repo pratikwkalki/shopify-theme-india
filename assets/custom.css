@@ -7761,9 +7761,6 @@ div[data-widget-style] div.stamped-container {
   .Collection_product_grid_leftside_2_bottom_title_new h2 {
     font-size: 22px;
   }
-  .collection__pagination_custom {
-    display: none;
-  }
   /* Collection */
 
   /* BRIDAL-COLLECTION (min-width:750px) and (max-width:989px)*/
@@ -8669,38 +8666,7 @@ div[data-widget-style] div.stamped-container {
 .facets__custom-filter .facets-summary svg {
   margin-top: 2px;
 }
-.collection__pagination {
-  display: flex;
-  align-items: center;
-  grid-gap: 15px;
-}
-.collection__pagination .pagination__label {
-  font-size: 13px;
-  font-weight: 500;
-  color: #756f6f;
-}
-.collection__pagination .pagination__grid {
-  display: flex;
-  align-items: center;
-  grid-gap: 8px;
-}
-.collection__pagination .pagination_item {
-  min-width: 28px;
-  height: 28px;
-  border: 1px dotted #d9d7d7;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 13px;
-  font-weight: 500;
-  color: #000;
-  cursor: pointer;
-  padding: 6px;
-}
-.collection__pagination .pagination_item.active {
-  border: 1px solid #000;
-}
+
 .price-filter-list {
   margin-bottom: 18px;
 }
