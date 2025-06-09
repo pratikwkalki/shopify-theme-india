@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ 'wedding-page.css' | asset_url }}">
+
 {%- if section.blocks.size > 0 or section.settings.main_heading_text != blank -%}
   <link rel="preload" href="{{ 'index-custom-category.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{ 'index-custom-category.css' | asset_url }}"></noscript>
