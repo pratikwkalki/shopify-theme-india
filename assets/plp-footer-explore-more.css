@@ -51,3 +51,32 @@
     width: calc(100%);
   }
 }
+@media (min-width: 750px) and (max-width: 989px) {
+  .Collection_object_banners_main_new {
+    margin: 40px 0;
+  }
+  .Collection_object_banners_innerloop_new {
+    grid-gap: 10px;
+  }
+  .Collection_object_banners_innerloop_mainbox_new {
+    width: calc(50% - 5px);
+  }
+}
+@media (min-width: 0px) and (max-width: 749px) {
+  .Collection_object_banners_main_new {
+    margin: 30px 0;
+  }
+  .Collection_object_banners_innerloop_new {
+    display: block;
+  }
+  .Collection_object_banners_innerloop_mainbox_new {
+    width: 100%;
+    margin-bottom: 11px;
+  }
+  .Collection_object_banners_innerloop_mainbox_new:last-child {
+    margin-bottom: 0;
+  }
+  .men_collection_banner_new .Collection_object_banners_mainloop_new {
+    padding: 0;
+  }
+}
