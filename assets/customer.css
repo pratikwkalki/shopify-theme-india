@@ -910,441 +910,6 @@ li[data-address] > h2 {
   }
 }
 
-/* Register & Login */
-.Customer_register_template_inner_new {
-  display: flex;
-  max-width: 1400px;
-  margin: auto;
-  align-items: center;
-}
-.Customer_register_template_mainleft_new {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  position: relative;
-  padding: 25px;
-  min-height: 900px;
-}
-.Customer_register_template_innerleft_new {
-  width: 100%;
-  margin: auto;
-}
-.Customer_register_template_innerleft_title_new h2 {
-  margin: 0;
-}
-/* .Customer_register_template_innerleft_title_new h2 p{ margin:0; color:#223330; font-size:28px; font-weight:400; line-height:142.857%; letter-spacing:0.28px; text-transform: capitalize; } */
-.Customer_register_template_innerleft_texts_new {
-  padding-top: 13px;
-}
-.Customer_register_template_innerleft_texts_new h3 {
-  margin: 0;
-  color: #223330;
-  font-size: 23px;
-  font-weight: 400;
-  line-height: 108.696%;
-  letter-spacing: 0.23px;
-  text-transform: capitalize;
-}
-.Customer_register_template_innerleft_infos_new {
-  padding-top: 23px;
-}
-.Customer_register_template_innerleft_infos_new h4 {
-  margin: 0;
-  color: #223330;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 100%;
-  border: 1px dashed #b688af;
-  background: #fff;
-  padding: 12px 16px;
-  min-width: 205px;
-  display: inline-block;
-}
-.Customer_register_template_innerleft_apply_new {
-  color: #223330;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 120%;
-  padding: 26px 29px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: right;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 0px 0px,
-    rgba(255, 255, 255, 0.5) 0.540302px 0.841471px 0px,
-    rgba(255, 255, 255, 0.5) -0.416147px 0.909297px 0px,
-    rgba(255, 255, 255, 0.5) -0.989992px 0.14112px 0px,
-    rgba(255, 255, 255, 0.5) -0.653644px -0.756802px 0px,
-    rgba(255, 255, 255, 0.5) 0.283662px -0.958924px 0px,
-    rgba(255, 255, 255, 0.5) 0.96017px -0.279415px 0px;
-}
-.Customer_register_template_inner_new .customer .registerbtn {
-  width: 50%;
-}
-.Customer_register_template_mainright_new {
-  width: 60%;
-  padding: 60px 50px;
-  min-height: 650px;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
-}
-.Customer_register_template_innerright_new {
-  max-width: 100% !important;
-  padding: 0 !important;
-  width: 100%;
-}
-.Customer_register_template_innerright_titleinfos_title_new .h1 {
-  margin: 0;
-  color: #000;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 125%;
-  font-family: var(--font-body-family);
-}
-.Customer_register_template_innerright_titleinfos_title_new .h2 {
-  margin: 0;
-  color: #000;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 125%;
-  font-family: var(--font-body-family);
-}
-.Customer_register_template_innerright_titleinfos_infos_new {
-  padding-top: 11px;
-}
-.Customer_register_template_innerright_titleinfos_infos_new p {
-  margin: 0;
-  color: #262433;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 128.571%;
-  opacity: 0.8;
-}
-.Customer_register_template_innerright_mainform_new {
-  padding-top: 30px;
-}
-.Customer_register_template_innerright_innerform_new {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.Customer_register_template_innerright_mainform_new form {
-  margin-top: 0 !important;
-}
-.customer .field input {
-  border-radius: 6px !important;
-  border: 1px solid #d9d9d9 !important;
-  margin: 0 !important;
-  padding: 25px 12px 9px 12px !important;
-  height: 52px;
-  color: #0f0d1a;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.15px;
-}
-.customer .field label {
-  color: #0f0d1a;
-  left: 13px;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.15px;
-  top: 18px;
-}
-/* .customer .field{ margin-top:16px !important; } */
-.customer .field {
-  margin: 0 !important;
-}
-[for^="register"] {
-  position: absolute !important;
-  right: 0;
-  top: 0 !important;
-  z-index: 9999999;
-  width: 46px !important;
-  left: auto !important;
-  cursor: pointer;
-  pointer-events: visible !important;
-  height: 52px;
-}
-[for^="register"] input {
-  display: none;
-}
-.show_password_text_new {
-  font-size: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  background: url(show_password.svg) no-repeat center center;
-  position: relative;
-}
-[for^="register"] input:checked + .show_password_text_new:before {
-  content: "";
-  position: absolute;
-  left: 22px;
-  top: 12px;
-  width: 2px;
-  height: 28px;
-  background: #747380;
-  transform: rotate(45deg);
-}
-.submit_btn_new {
-  margin: 16px 0 12px !important;
-  border-radius: 6px !important;
-  background: #223330 !important;
-  width: 100%;
-  font-size: 14px !important;
-  font-style: normal !important;
-  font-weight: 500 !important;
-  line-height: 17px !important;
-  letter-spacing: 0.56px !important;
-  text-transform: uppercase;
-}
-.submit_btn_new:after {
-  display: none;
-}
-.ssw-accept-wrapper {
-  display: none !important;
-}
-.ssw-social-login-widget {
-  margin-bottom: 30px !important;
-}
-.ssw-socialconnect > div {
-  margin: 0 20px !important;
-}
-.ssw-socialconnect > div.ssw-social-btn {
-  width: auto !important;
-}
-.ssw-socialconnect > div > a {
-  border-radius: 40px !important;
-  border: 1px solid #e1e1e5 !important;
-  width: 50px !important;
-  line-height: 48px !important;
-}
-.ssw-socialconnect > .ssw-gconnect > a {
-  box-shadow: 0 0 0 !important;
-}
-.Customer_register_template_innerright_bottominfos_infos_1_new {
-  padding-bottom: 30px;
-  width: 100%;
-}
-.Customer_register_template_innerright_bottominfos_infos_1_new p {
-  margin: 0;
-  color: #000;
-  text-align: center;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 133.333%;
-}
-.Customer_register_template_innerright_bottominfos_infos_1_new p a {
-  color: #223330;
-  text-decoration: none;
-  font-size: inherit;
-}
-.Customer_register_template_innerright_bottominfos_infos_2_new {
-  padding-top: 20px;
-  border-top: 1px solid #e1e1e5;
-}
-.Customer_register_template_innerright_bottominfos_infos_2_new p {
-  margin: 0 !important;
-  color: #223330;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 128.571%;
-}
-.Customer_register_template_innerright_bottominfos_infos_2_new p a {
-  color: #0f3d99;
-  text-decoration: none;
-  display: inline-block;
-}
-.template-customers-register .Index_newsletter_form_new {
-  display: none;
-}
-.Customer_login_template_innerright_titleinfos_infos_new {
-  margin: 20px auto 0 auto;
-  max-width: 322px;
-}
-.Customer_login_template_innerright_titleinfos_infos_new p {
-  margin: 0 !important;
-  color: #0f0d1a;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 128.571%;
-}
-.customer .field:first-of-type {
-  margin-top: 0 !important;
-}
-.forgot_password {
-  display: block;
-  text-decoration: underline;
-  cursor: pointer;
-  margin: 12px 0 0 !important;
-  color: #000 !important;
-  text-align: center;
-  font-size: 12px !important;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 133.333%;
-  width: 100% !important;
-}
-.login_submit_btn_new {
-  margin-bottom: 30px !important;
-}
-.login_back {
-  display: block;
-  text-decoration: underline;
-  cursor: pointer;
-  margin: 0px 0 0 !important;
-  color: #000 !important;
-  text-align: center;
-  font-size: 16px !important;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 133.333%;
-  width: 100% !important;
-  text-transform: capitalize;
-}
-.customer form {
-  margin-top: 0 !important;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-}
-.guest_login_new {
-  padding-top: 30px;
-  margin-top: 20px;
-  border-top: 1px solid #e1e1e5;
-}
-.template-customers-login .Index_newsletter_form_new {
-  display: none;
-}
-
-.login h3.form__message {
-  order: 1;
-  margin-top: 0;
-}
-.customer .errors ul {
-  margin-bottom: 10px;
-  color: #f00;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
-.customer .errors ul li {
-  list-style-type: none;
-}
-.customer .errors ul a {
-  color: #f00;
-  font-size: inherit;
-}
-.customer h2.form__message {
-  margin-top: 0;
-}
-[for^="register"] {
-  z-index: 1;
-}
-#customer_login {
-  display: block !important;
-}
-.customer .field.FirstName,
-.customer .field.LastName,
-.customer .field.gender,
-.customer .field.Dateofbirth {
-  width: calc(50% - 8px);
-}
-.customer .field.LastName {
-  margin-top: 0rem;
-  margin-top: 0px !important;
-}
-.customer .field.email,
-.customer .field.Phonenumber,
-.customer .field.password {
-  width: 100%;
-}
-.customer input[type="date"]::-webkit-calendar-picker-indicator {
-  background: url(https://img.icons8.com/cotton/64/000000/calendar.png)
-    no-repeat;
-  background-size: 25px 25px;
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-
-/* custom select */
-/* The container must be positioned relative: */
-.custom-select {
-  position: relative;
-  font-family: Arial;
-}
-
-.custom-select select {
-  display: none; /*hide original SELECT element: */
-}
-.select-selected {
-  background-color: #ffffff;
-}
-
-/* Style the arrow inside the select element: */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #000 transparent transparent transparent;
-}
-
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #000 transparent;
-  top: 35%;
-}
-
-/* style the items (options), including the selected item: */
-.select-items div,
-.select-selected {
-  color: #000000;
-  padding: 8px 16px;
-  border: 1px solid #d9d9d9 !important;
-  border-radius: 6px !important;
-  cursor: pointer;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-/* Style items (options): */
-.select-items {
-  position: absolute;
-  background-color: #fff;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover,
-.same-as-selected {
-  background-color: #fff;
-}
-/* Register & Login */
-
 .template-customers-account {
   background: #f7f7f7;
 }
@@ -2034,6 +1599,440 @@ label[for="AddressProvinceNew"] {
 .template-product.scrolled-past-header-body #fc_frame.fc-widget-normal {
   bottom: 124px !important;
 }
+/* Register & Login */
+.Customer_register_template_inner_new {
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+  align-items: center;
+}
+.Customer_register_template_mainleft_new {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 25px;
+  min-height: 900px;
+}
+.Customer_register_template_innerleft_new {
+  width: 100%;
+  margin: auto;
+}
+.Customer_register_template_innerleft_title_new h2 {
+  margin: 0;
+}
+/* .Customer_register_template_innerleft_title_new h2 p{ margin:0; color:#223330; font-size:28px; font-weight:400; line-height:142.857%; letter-spacing:0.28px; text-transform: capitalize; } */
+.Customer_register_template_innerleft_texts_new {
+  padding-top: 13px;
+}
+.Customer_register_template_innerleft_texts_new h3 {
+  margin: 0;
+  color: #223330;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 108.696%;
+  letter-spacing: 0.23px;
+  text-transform: capitalize;
+}
+.Customer_register_template_innerleft_infos_new {
+  padding-top: 23px;
+}
+.Customer_register_template_innerleft_infos_new h4 {
+  margin: 0;
+  color: #223330;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  border: 1px dashed #b688af;
+  background: #fff;
+  padding: 12px 16px;
+  min-width: 205px;
+  display: inline-block;
+}
+.Customer_register_template_innerleft_apply_new {
+  color: #223330;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 120%;
+  padding: 26px 29px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 0px 0px,
+    rgba(255, 255, 255, 0.5) 0.540302px 0.841471px 0px,
+    rgba(255, 255, 255, 0.5) -0.416147px 0.909297px 0px,
+    rgba(255, 255, 255, 0.5) -0.989992px 0.14112px 0px,
+    rgba(255, 255, 255, 0.5) -0.653644px -0.756802px 0px,
+    rgba(255, 255, 255, 0.5) 0.283662px -0.958924px 0px,
+    rgba(255, 255, 255, 0.5) 0.96017px -0.279415px 0px;
+}
+.Customer_register_template_inner_new .customer .registerbtn {
+  width: 50%;
+}
+.Customer_register_template_mainright_new {
+  width: 60%;
+  padding: 60px 50px;
+  min-height: 650px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.Customer_register_template_innerright_new {
+  max-width: 100% !important;
+  padding: 0 !important;
+  width: 100%;
+}
+.Customer_register_template_innerright_titleinfos_title_new .h1 {
+  margin: 0;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 125%;
+  font-family: var(--font-body-family);
+}
+.Customer_register_template_innerright_titleinfos_title_new .h2 {
+  margin: 0;
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 125%;
+  font-family: var(--font-body-family);
+}
+.Customer_register_template_innerright_titleinfos_infos_new {
+  padding-top: 11px;
+}
+.Customer_register_template_innerright_titleinfos_infos_new p {
+  margin: 0;
+  color: #262433;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 128.571%;
+  opacity: 0.8;
+}
+.Customer_register_template_innerright_mainform_new {
+  padding-top: 30px;
+}
+.Customer_register_template_innerright_innerform_new {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.Customer_register_template_innerright_mainform_new form {
+  margin-top: 0 !important;
+}
+.customer .field input {
+  border-radius: 6px !important;
+  border: 1px solid #d9d9d9 !important;
+  margin: 0 !important;
+  padding: 25px 12px 9px 12px !important;
+  height: 52px;
+  color: #0f0d1a;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.15px;
+}
+.customer .field label {
+  color: #0f0d1a;
+  left: 13px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.15px;
+  top: 18px;
+}
+/* .customer .field{ margin-top:16px !important; } */
+.customer .field {
+  margin: 0 !important;
+}
+[for^="register"] {
+  position: absolute !important;
+  right: 0;
+  top: 0 !important;
+  z-index: 9999999;
+  width: 46px !important;
+  left: auto !important;
+  cursor: pointer;
+  pointer-events: visible !important;
+  height: 52px;
+}
+[for^="register"] input {
+  display: none;
+}
+.show_password_text_new {
+  font-size: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(show_password.svg) no-repeat center center;
+  position: relative;
+}
+[for^="register"] input:checked + .show_password_text_new:before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 12px;
+  width: 2px;
+  height: 28px;
+  background: #747380;
+  transform: rotate(45deg);
+}
+.submit_btn_new {
+  margin: 16px 0 12px !important;
+  border-radius: 6px !important;
+  background: #223330 !important;
+  width: 100%;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 17px !important;
+  letter-spacing: 0.56px !important;
+  text-transform: uppercase;
+}
+.submit_btn_new:after {
+  display: none;
+}
+.ssw-accept-wrapper {
+  display: none !important;
+}
+.ssw-social-login-widget {
+  margin-bottom: 30px !important;
+}
+.ssw-socialconnect > div {
+  margin: 0 20px !important;
+}
+.ssw-socialconnect > div.ssw-social-btn {
+  width: auto !important;
+}
+.ssw-socialconnect > div > a {
+  border-radius: 40px !important;
+  border: 1px solid #e1e1e5 !important;
+  width: 50px !important;
+  line-height: 48px !important;
+}
+.ssw-socialconnect > .ssw-gconnect > a {
+  box-shadow: 0 0 0 !important;
+}
+.Customer_register_template_innerright_bottominfos_infos_1_new {
+  padding-bottom: 30px;
+  width: 100%;
+}
+.Customer_register_template_innerright_bottominfos_infos_1_new p {
+  margin: 0;
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 133.333%;
+}
+.Customer_register_template_innerright_bottominfos_infos_1_new p a {
+  color: #223330;
+  text-decoration: none;
+  font-size: inherit;
+}
+.Customer_register_template_innerright_bottominfos_infos_2_new {
+  padding-top: 20px;
+  border-top: 1px solid #e1e1e5;
+}
+.Customer_register_template_innerright_bottominfos_infos_2_new p {
+  margin: 0 !important;
+  color: #223330;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 128.571%;
+}
+.Customer_register_template_innerright_bottominfos_infos_2_new p a {
+  color: #0f3d99;
+  text-decoration: none;
+  display: inline-block;
+}
+.template-customers-register .Index_newsletter_form_new {
+  display: none;
+}
+.Customer_login_template_innerright_titleinfos_infos_new {
+  margin: 20px auto 0 auto;
+  max-width: 322px;
+}
+.Customer_login_template_innerright_titleinfos_infos_new p {
+  margin: 0 !important;
+  color: #0f0d1a;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 128.571%;
+}
+.customer .field:first-of-type {
+  margin-top: 0 !important;
+}
+.forgot_password {
+  display: block;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 12px 0 0 !important;
+  color: #000 !important;
+  text-align: center;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133.333%;
+  width: 100% !important;
+}
+.login_submit_btn_new {
+  margin-bottom: 30px !important;
+}
+.login_back {
+  display: block;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 0px 0 0 !important;
+  color: #000 !important;
+  text-align: center;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133.333%;
+  width: 100% !important;
+  text-transform: capitalize;
+}
+.customer form {
+  margin-top: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.guest_login_new {
+  padding-top: 30px;
+  margin-top: 20px;
+  border-top: 1px solid #e1e1e5;
+}
+.template-customers-login .Index_newsletter_form_new {
+  display: none;
+}
+
+.login h3.form__message {
+  order: 1;
+  margin-top: 0;
+}
+.customer .errors ul {
+  margin-bottom: 10px;
+  color: #f00;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.customer .errors ul li {
+  list-style-type: none;
+}
+.customer .errors ul a {
+  color: #f00;
+  font-size: inherit;
+}
+.customer h2.form__message {
+  margin-top: 0;
+}
+[for^="register"] {
+  z-index: 1;
+}
+#customer_login {
+  display: block !important;
+}
+.customer .field.FirstName,
+.customer .field.LastName,
+.customer .field.gender,
+.customer .field.Dateofbirth {
+  width: calc(50% - 8px);
+}
+.customer .field.LastName {
+  margin-top: 0rem;
+  margin-top: 0px !important;
+}
+.customer .field.email,
+.customer .field.Phonenumber,
+.customer .field.password {
+  width: 100%;
+}
+.customer input[type="date"]::-webkit-calendar-picker-indicator {
+  background: url(https://img.icons8.com/cotton/64/000000/calendar.png)
+    no-repeat;
+  background-size: 25px 25px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* custom select */
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+.select-selected {
+  background-color: #ffffff;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #000 transparent;
+  top: 35%;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  color: #000000;
+  padding: 8px 16px;
+  border: 1px solid #d9d9d9 !important;
+  border-radius: 6px !important;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: #fff;
+}
+/* Register & Login */
 
 @media (min-width: 990px) and (max-width: 1424px) {
   #AddAddress {
@@ -2041,18 +2040,6 @@ label[for="AddressProvinceNew"] {
   }
 }
 @media (min-width: 750px) and (max-width: 989px) {
-  /* Register & Login (min-width:750px) and (max-width:989px)*/
-  /* .Customer_register_template_innerleft_title_new h2 p{ font-size:24px; } */
-  .Customer_register_template_innerleft_texts_new h3 {
-    font-size: 20px;
-  }
-  .Customer_register_template_innerleft_infos_new h4 {
-    font-size: 18px;
-  }
-  .Customer_register_template_mainright_new {
-    padding: 40px 20px;
-  }
-  /* Register & Login */
   .template-customers-account {
     background: #fff;
   }
@@ -2080,83 +2067,21 @@ label[for="AddressProvinceNew"] {
   #AddAddress {
     margin-top: 30px;
   }
-}
-@media (min-width: 0px) and (max-width: 749px) {
-   /* Register & Login (min-width:0px) and (max-width:749px)*/
-  .Customer_register_template_main_new {
-    padding-top: 15px;
-  }
-  .Customer_register_template_inner_new {
-    display: block;
-  }
-  .Customer_register_template_mainleft_new {
-    width: 100%;
-    padding: 28px 16px;
-  }
-  .Customer_register_template_innerleft_new {
-    max-width: 271px;
-    margin: auto;
-  }
-  /* .Customer_register_template_innerleft_title_new h2 p{font-size:15px; line-height:133.333%; letter-spacing:0.15px;} */
+  
+  /* Register & Login (min-width:750px) and (max-width:989px)*/
+  /* .Customer_register_template_innerleft_title_new h2 p{ font-size:24px; } */
   .Customer_register_template_innerleft_texts_new h3 {
     font-size: 20px;
-    line-height: 125%;
-    letter-spacing: 0.2px;
-  }
-  .Customer_register_template_innerleft_infos_new {
-    padding-top: 13px;
   }
   .Customer_register_template_innerleft_infos_new h4 {
-    font-size: 10px;
-    line-height: 160%;
-    padding: 1px;
-    min-width: 119px;
+    font-size: 18px;
   }
-  .Customer_register_template_innerleft_apply_new {
-    font-size: 8px;
-    padding: 28px 16px;
-  }
-
   .Customer_register_template_mainright_new {
-    width: 100%;
-    padding: 33px 0 33px 0;
-    min-height: auto;
-  }
-  .Customer_register_template_innerright_titleinfos_title_new .h1 {
-    font-size: 20px;
-    line-height: 150%;
-  }
-  .Customer_register_template_innerright_titleinfos_title_new .h2 {
-    font-size: 20px;
-    line-height: 150%;
-  }
-  .Customer_register_template_innerright_titleinfos_infos_new {
-    padding-top: 5px;
-  }
-  .Customer_register_template_innerright_titleinfos_infos_new p {
-    font-size: 12px;
-    line-height: 150%;
-  }
-  .Customer_register_template_innerright_mainform_new {
-    padding-top: 10px;
-  }
-  .Customer_register_template_innerright_bottominfos_infos_1_new {
-    padding-bottom: 25px;
-  }
-  .ssw-social-login-widget {
-    margin-bottom: 25px !important;
-  }
-
-  .Customer_login_template_innerright_titleinfos_infos_new {
-    margin: 5px auto;
-    max-width: 290px;
-  }
-  .Customer_register_template_innerright_new {
-    max-width: 380px !important;
-    width: 100%;
-    padding: 0 20px !important;
+    padding: 40px 20px;
   }
   /* Register & Login */
+}
+@media (min-width: 0px) and (max-width: 749px) {
   .template-customers-account {
     background: #fff;
   }
@@ -2275,5 +2200,80 @@ label[for="AddressProvinceNew"] {
   #AddAddress {
     margin-top: 20px;
   }
- 
+
+  /* Register & Login (min-width:0px) and (max-width:749px)*/
+  .Customer_register_template_main_new {
+    padding-top: 15px;
+  }
+  .Customer_register_template_inner_new {
+    display: block;
+  }
+  .Customer_register_template_mainleft_new {
+    width: 100%;
+    padding: 28px 16px;
+  }
+  .Customer_register_template_innerleft_new {
+    max-width: 271px;
+    margin: auto;
+  }
+  /* .Customer_register_template_innerleft_title_new h2 p{font-size:15px; line-height:133.333%; letter-spacing:0.15px;} */
+  .Customer_register_template_innerleft_texts_new h3 {
+    font-size: 20px;
+    line-height: 125%;
+    letter-spacing: 0.2px;
+  }
+  .Customer_register_template_innerleft_infos_new {
+    padding-top: 13px;
+  }
+  .Customer_register_template_innerleft_infos_new h4 {
+    font-size: 10px;
+    line-height: 160%;
+    padding: 1px;
+    min-width: 119px;
+  }
+  .Customer_register_template_innerleft_apply_new {
+    font-size: 8px;
+    padding: 28px 16px;
+  }
+
+  .Customer_register_template_mainright_new {
+    width: 100%;
+    padding: 33px 0 33px 0;
+    min-height: auto;
+  }
+  .Customer_register_template_innerright_titleinfos_title_new .h1 {
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .Customer_register_template_innerright_titleinfos_title_new .h2 {
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .Customer_register_template_innerright_titleinfos_infos_new {
+    padding-top: 5px;
+  }
+  .Customer_register_template_innerright_titleinfos_infos_new p {
+    font-size: 12px;
+    line-height: 150%;
+  }
+  .Customer_register_template_innerright_mainform_new {
+    padding-top: 10px;
+  }
+  .Customer_register_template_innerright_bottominfos_infos_1_new {
+    padding-bottom: 25px;
+  }
+  .ssw-social-login-widget {
+    margin-bottom: 25px !important;
+  }
+
+  .Customer_login_template_innerright_titleinfos_infos_new {
+    margin: 5px auto;
+    max-width: 290px;
+  }
+  .Customer_register_template_innerright_new {
+    max-width: 380px !important;
+    width: 100%;
+    padding: 0 20px !important;
+  }
+  /* Register & Login */
 }
