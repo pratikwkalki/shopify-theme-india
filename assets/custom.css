@@ -6792,62 +6792,6 @@ div[data-widget-style] div.stamped-container {
   min-width: auto;
   letter-spacing: 0;
 }
-
-.Page_bridal_texts_video_main_new {
-  margin: 48px 0;
-}
-.Page_bridal_texts_video_detail_new {
-  display: flex;
-  align-items: center;
-}
-.Page_bridal_texts_video_detail_1_new {
-  width: 50%;
-  padding: 22px;
-}
-.Page_bridal_texts_video_detail_1_title_new p {
-  margin: 0;
-  font-size: 18px;
-  color: #000;
-  line-height: 28px;
-  letter-spacing: 2px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 500;
-}
-.Page_bridal_texts_video_detail_1_links_new {
-  text-align: center;
-}
-.Page_bridal_texts_video_detail_2_new {
-  width: 50%;
-}
-.Page_bridal_texts_video_detail_2_videoimage_new iframe {
-  width: 100%;
-  display: flex;
-  border: 0;
-}
-.Page_bridal_texts_video_detail_2_videoimage_new video {
-  width: 100%;
-}
-.Page_bridal_texts_video_detail_2_videoimage_new img {
-  width: 100%;
-}
-.videowrapper {
-  float: none;
-  clear: both;
-  width: 100%;
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0;
-}
-.videowrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 .template--bridal .header_second_menu_new {
   display: none;
 }
@@ -7722,34 +7666,12 @@ div[data-widget-style] div.stamped-container {
   .template--bridal-wedding-dress-new .Bridal_coll_round_column_list_new {
     min-height: auto !important;
   }
-
-  .Page_bridal_texts_video_main_new {
-    margin: 32px 0;
-  }
-  .Page_bridal_texts_video_detail_new {
-    flex-direction: column-reverse;
-  }
-  .Page_bridal_texts_video_detail_1_new {
-    width: 100%;
-    padding: 16px 16px 0 16px;
-  }
-  .Page_bridal_texts_video_detail_2_new {
-    width: 100%;
-  }
-  .Page_bridal_texts_video_detail_1_title_new p {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 3px;
-  }
-
   .Page_bridal_detail_objects_faqs_main_new {
     margin: 32px 0;
     padding: 0;
     background: none !important;
   }
-  
   /* Bridal Page */
-  
 }
 
 @media (max-width: 586px) {
