@@ -19,7 +19,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<style>\n.Common_title_new.Page_template_title_new{\ndisplay:none}\n    #shopify-section-template--24619495522667__index_side_by_side_banner_new_pGtxYz .Index_side_by_side_banner_main_new {\n        margin-top: 0!important;\n    }\n</style>",
+        "custom_liquid": "<style>\n.Common_title_new.Page_template_title_new{\ndisplay:none}\n    #shopify-section-template--24619495522667__index_side_by_side_banner_new_pGtxYz .Index_side_by_side_banner_main_new {\n        margin-top: 0!important;\n    }\n.Page_weaves_collections_innerleft_links_new a{\n    color: #fff;\n    border: 1px solid #000;\nbackground-color:#000 !important\n}\n</style>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
