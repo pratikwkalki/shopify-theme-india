@@ -1,4 +1,23 @@
 {%- if section.settings.main_desktop_mp4_video != blank or section.settings.main_mobile_mp4_video != blank or section.settings.main_desktop_full_image != blank or section.settings.main_mobile_full_image != blank -%}
+  {% style %}
+    .Page_bridal_banner_button_main_new {
+      position: relative;
+    }
+    .Page_bridal_banner_button_detail_innervideoimage_videoimage_new img {
+      width: 100%;
+    }
+    .Page_bridal_banner_button_detail_innervideoimage_videoimage_new video {
+      width: 100%;
+    }
+    .Page_bridal_banner_button_detail_mainbutton_new {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding: 46px;
+    }
+  {% endstyle %}
   <div class="Page_bridal_banner_button_main_new" style="background: {{ section.settings.main_full_background_color }};">
     <div class="Page_bridal_banner_button_inner_new">
       {%- if section.settings.main_banner_redirect_link != blank -%}
