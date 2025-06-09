@@ -144,6 +144,7 @@
     "imagekitShopifyCdnUrl": "//in.kalkifashion.com",
     "enableGumlet": true,
     "gumletUrl": "https://kalki.gumlet.io",
+    "gumletShopifyCdnUrl": "//in.kalkifashion.com",
     "wizzy_is_lazy_init": "true",
     "wizzy_is_lazy_init_enabled": "true",
     "wizzy_beta_frontend_js": "",
