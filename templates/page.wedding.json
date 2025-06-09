@@ -171,6 +171,13 @@
         "main_button_text": "Shop Now",
         "main_button_link": "/"
       }
+    },
+    "tagalys_section_3VhgmT": {
+      "type": "tagalys-section",
+      "name": "Tagalys Embed Section",
+      "settings": {
+        "playlist_id": "1530e3743fd689c4d848"
+      }
     }
   },
   "order": [
@@ -178,6 +185,7 @@
     "custom_liquid_RFHjaK",
     "index_side_by_side_banner_new_pGtxYz",
     "index_icon_text_info_list_new_x9NgeH",
-    "page_weaves_collections_new_gjeJMn"
+    "page_weaves_collections_new_gjeJMn",
+    "tagalys_section_3VhgmT"
   ]
 }
