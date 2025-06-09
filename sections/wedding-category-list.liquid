@@ -22,15 +22,15 @@
                         {%- endif -%}  
                         
                           {%- if block.settings.main_mp4_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank -%}
-                            <div class="Index_custom_collections_allloop_innerboxs_1_new">
-                              <div class="Index_custom_collections_allloop_innerboxs_1_videoimageboth_new">
+                            <div class="wedding_custom_collections_allloop_innerboxs_1_new">
+                              <div class="wedding_custom_collections_allloop_innerboxs_1_videoimageboth_new">
                                 {%- if block.settings.main_mp4_video != blank -%}
-                                  <div class="Index_custom_collections_allloop_innerboxs_1_videoimage_new">
+                                  <div class="wedding_custom_collections_allloop_innerboxs_1_videoimage_new">
                                     {{ block.settings.main_mp4_video | video_tag: controls: false, autoplay: true, loop: true }}
                                   </div>
                                 {% else %}  
                                   {%- if block.settings.main_desktop_image != blank and block.settings.main_mobile_image != blank -%}
-                                    <div class="Index_custom_collections_allloop_innerboxs_1_videoimage_new">
+                                    <div class="wedding_custom_collections_allloop_innerboxs_1_videoimage_new">
                                       {% assign main_desktop_image = block.settings.main_desktop_image  | image_url %}
                                       {% assign main_mobile_image = block.settings.main_mobile_image  | image_url %}
                                       <picture>
@@ -46,20 +46,20 @@
                             </div>
                           {%- endif -%}
                           {%- if block.settings.title != blank or block.settings.sub_head_text != blank or block.settings.main_button_link != blank -%}
-                            <div class="Index_custom_collections_allloop_innerboxs_3_new">
-                              <div class="Index_custom_collections_allloop_innerboxs_3_titlebuttonboth_new">
+                            <div class="wedding_custom_collections_allloop_innerboxs_3_new">
+                              <div class="wedding_custom_collections_allloop_innerboxs_3_titlebuttonboth_new">
                                 {%- if block.settings.title != blank -%}
-                                  <div class="Index_custom_collections_allloop_innerboxs_3_title_new">
+                                  <div class="wedding_custom_collections_allloop_innerboxs_3_title_new">
                                     <h2>{{ block.settings.title }}</h2>
                                   </div>  
                                 {%- endif -%}
                                 {%- if block.settings.sub_head_text != blank -%}
-                                   <div class="Index_custom_collections_allloop_innerboxs_3_subtitle_new">
+                                   <div class="wedding_custom_collections_allloop_innerboxs_3_subtitle_new">
                                       <p>{{ block.settings.sub_head_text }}</p>
                                   </div>
                                 {%- endif -%}
                                 {%- if block.settings.main_button_text != blank and block.settings.main_button_link != blank -%}
-                                  <div class="Index_custom_collections_allloop_innerboxs_3_button_new">
+                                  <div class="wedding_custom_collections_allloop_innerboxs_3_button_new">
                                     <a href="{{ block.settings.main_button_link }}" class="button button_white">
                                       {{ block.settings.main_button_text }}
                                     </a>
