@@ -46,6 +46,9 @@
   padding: 0;
   margin: auto;
 }
+.collection_full_width_new .Collection_object_banners_new .page-width {
+  max-width: 100%;
+}
 @media (max-width: 750px) {
   .plp-explore-more-section a {
     width: calc(100%);
