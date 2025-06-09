@@ -423,39 +423,37 @@ class MenuDrawer extends HTMLElement {
       : this.closeSubmenu(openDetailsElement);
   }
 
-  function onSummaryClick(event) {
+  onSummaryClick(event) {
     const summaryElement = event.currentTarget;
     const detailsElement = summaryElement.parentNode;
     const parentMenuElement = detailsElement.closest('.has-submenu');
     const isOpen = detailsElement.hasAttribute('open');
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  
+
     function addTrapFocus() {
       trapFocus(summaryElement.nextElementSibling, detailsElement.querySelector('button'));
       summaryElement.nextElementSibling.removeEventListener('transitionend', addTrapFocus);
     }
-  
+
     if (detailsElement === this.mainDetailsToggle) {
       if (isOpen) event.preventDefault();
       isOpen ? this.closeMenuDrawer(event, summaryElement) : this.openMenuDrawer(summaryElement);
-  
+
       if (window.matchMedia('(max-width: 990px)')) {
         document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
       }
     } else {
-      detailsElement.classList.add('menu-opening');
-      summaryElement.setAttribute('aria-expanded', true);
-      parentMenuElement && parentMenuElement.classList.add('submenu-open');
-  
-      if (!reducedMotion || reducedMotion.matches) {
-        // Defer focus trap
-        setTimeout(addTrapFocus, 0);
-      } else {
-        const nextSibling = summaryElement.nextElementSibling;
-        if (nextSibling) {
-          nextSibling.addEventListener('transitionend', addTrapFocus);
+        detailsElement.classList.add('menu-opening');
+        summaryElement.setAttribute('aria-expanded', true);
+        parentMenuElement && parentMenuElement.classList.add('submenu-open');
+        if (!reducedMotion || reducedMotion.matches) {
+          addTrapFocus();
+        } else {
+          const nextSibling = summaryElement.nextElementSibling;
+          if (nextSibling) {
+            nextSibling.addEventListener('transitionend', addTrapFocus);
+          }
         }
-      }
     }
   }
 
