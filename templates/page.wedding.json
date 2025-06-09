@@ -236,6 +236,17 @@
             "main_button_text": "Shop Now",
             "main_button_link": "/"
           }
+        },
+        "information_VqdUKe": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
+            "title": "",
+            "sub_head_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "/"
+          }
         }
       },
       "block_order": [
@@ -243,11 +254,12 @@
         "information_TihwRf",
         "information_4rndc7",
         "information_KHjWYi",
-        "information_PGrptt"
+        "information_PGrptt",
+        "information_VqdUKe"
       ],
       "name": "Wedding Collection Lists",
       "settings": {
-        "main_background_color": "#FFFFFF",
+        "main_background_color": "#ffffff",
         "main_heading_text": "Shop by Collection"
       }
     }
