@@ -18,6 +18,8 @@
 .wedding_custom_collections_allloop_innerboxs_1_videoimageboth_new {
     padding-bottom: 133.335%;
     position: relative;
+      border-radius: 8px;
+    overflow: hidden;
 }
 .wedding_custom_collections_allloop_innerboxs_1_videoimage_new img{
       width: 100%;
