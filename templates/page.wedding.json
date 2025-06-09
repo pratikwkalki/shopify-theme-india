@@ -56,11 +56,47 @@
         "main_background_color": "#FFFFFF",
         "main_heading_text": "Editor's Picks"
       }
+    },
+    "index_icon_text_info_list_new_x9NgeH": {
+      "type": "Index-icon-text-info-list-new",
+      "blocks": {
+        "information_ytExcM": {
+          "type": "information",
+          "settings": {
+            "main_icon_image": "shopify://shop_images/Video_Call.svg",
+            "title": "Shop via video call",
+            "main_information_text": "<p>Get a free virtual styling session</p>",
+            "main_button_text": "Book an appointment",
+            "main_button_link": "shopify://pages/video-call-appointment"
+          }
+        },
+        "information_dFwkiB": {
+          "type": "information",
+          "settings": {
+            "main_icon_image": "shopify://shop_images/Stiching_99ee44af-74c2-4a7a-93b2-d1d211885aa1.svg",
+            "title": "The bridal stylist",
+            "main_information_text": "<p>Book your personal bridal consultation and buy the perfect wedding dress</p>",
+            "main_button_text": "Book an appointment",
+            "main_button_link": "shopify://pages/offline-appointment"
+          }
+        }
+      },
+      "block_order": [
+        "information_ytExcM",
+        "information_dFwkiB"
+      ],
+      "name": "Index Icon Text Info List",
+      "settings": {
+        "main_background_color": "#EFEFEF",
+        "main_desktop_full_image": "shopify://shop_images/Bridal_Banner-min.jpg",
+        "main_mobile_full_image": "shopify://shop_images/Bridal_Banner_1_-min.jpg"
+      }
     }
   },
   "order": [
     "main",
     "custom_liquid_RFHjaK",
-    "index_side_by_side_banner_new_pGtxYz"
+    "index_side_by_side_banner_new_pGtxYz",
+    "index_icon_text_info_list_new_x9NgeH"
   ]
 }
