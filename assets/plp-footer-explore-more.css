@@ -16,6 +16,10 @@
 .men_collection_banner_new .Collection_object_banners_mainloop_new {
   padding: 0 70px;
 }
+.template--mens-detail-new .Collection_object_banners_mainloop_new {
+  padding: 0;
+  margin: auto;
+}
 @media (max-width: 750px) {
   .plp-explore-more-section a {
     width: calc(100%);
