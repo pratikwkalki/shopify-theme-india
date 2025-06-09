@@ -110,7 +110,7 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/Sangeet_08-06-25.jpg",
             "main_mobile_image": "shopify://shop_images/Sangeet_08-06-25.jpg",
-            "title": "<p>Haldi | Mehendi</p>",
+            "title": "<p>Sangeet</p>",
             "inner_button_text": "Shop Now",
             "inner_button_link": "/"
           }
@@ -120,7 +120,7 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/Engagment_08-06-25.jpg",
             "main_mobile_image": "shopify://shop_images/Engagment_08-06-25.jpg",
-            "title": "<p>Haldi | Mehendi</p>",
+            "title": "<p>Engagement Cocktail</p>",
             "inner_button_text": "Shop Now",
             "inner_button_link": "/"
           }
@@ -130,7 +130,7 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/Reception_08-06-25.jpg",
             "main_mobile_image": "shopify://shop_images/Reception_08-06-25.jpg",
-            "title": "<p>Haldi | Mehendi</p>",
+            "title": "<p>Reception</p>",
             "inner_button_text": "Shop Now",
             "inner_button_link": "/"
           }
