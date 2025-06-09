@@ -251,44 +251,44 @@
         "information_PGrptt": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "",
+            "main_desktop_image": "shopify://shop_images/Tuxedo_08-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/Tuxedo_08-06-25.jpg",
+            "title": "Tuxedos",
             "sub_head_text": "",
-            "main_button_text": "Shop Now",
+            "main_button_text": "Shop All",
             "main_button_link": "/"
           }
         },
         "information_VqdUKe": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "",
+            "main_desktop_image": "shopify://shop_images/Jodhpuri_08-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/Jodhpuri_08-06-25.jpg",
+            "title": "Jodhpuris",
             "sub_head_text": "",
-            "main_button_text": "Shop Now",
+            "main_button_text": "Shop All",
             "main_button_link": "/"
           }
         },
         "information_BjzX4F": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "",
+            "main_desktop_image": "shopify://shop_images/Kurta_set_08-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/Kurta_set_08-06-25.jpg",
+            "title": "Kurta Sets",
             "sub_head_text": "",
-            "main_button_text": "Shop Now",
+            "main_button_text": "Shop All",
             "main_button_link": "/"
           }
         },
         "information_44xhHw": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "",
+            "main_desktop_image": "shopify://shop_images/Kurta_jacket_set_08-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/Kurta_jacket_set_08-06-25.jpg",
+            "title": "Kurta Jacket Set",
             "sub_head_text": "",
-            "main_button_text": "Shop Now",
+            "main_button_text": "Shop All",
             "main_button_link": "/"
           }
         }
