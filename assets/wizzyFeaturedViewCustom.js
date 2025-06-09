@@ -126,9 +126,3 @@ window.featuredViewConfig.events.registerEvent(
       return data;
     }
    );
-
-
-
-
-
-
