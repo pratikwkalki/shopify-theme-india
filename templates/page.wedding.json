@@ -19,7 +19,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<style>\n.Common_title_new.Page_template_title_new{\ndisplay:none}\n    #shopify-section-template--24619495522667__index_side_by_side_banner_new_pGtxYz .Index_side_by_side_banner_main_new {\n        margin-top: 0!important;\n    }\n.Page_weaves_collections_innerleft_links_new a{\n    color: #fff;\n    border: 1px solid #000 !important;\nbackground-color:#000 !important\n}\n</style>",
+        "custom_liquid": "<style>\n.Common_title_new.Page_template_title_new{\ndisplay:none}\n    #shopify-section-template--24619495522667__index_side_by_side_banner_new_pGtxYz .Index_side_by_side_banner_main_new {\n        margin-top: 0!important;\n    }\n.Page_weaves_collections_innerleft_links_new a{\n    color: #fff !important;\n    border: 1px solid #000 !important;\nbackground-color:#000 !important\n}\n</style>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
@@ -207,44 +207,44 @@
         "information_RFxBwP": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "",
+            "main_desktop_image": "shopify://shop_images/Saree_08-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/Saree_08-06-25.jpg",
+            "title": "Sarees",
             "sub_head_text": "",
-            "main_button_text": "Shop Now",
+            "main_button_text": "Shop All",
             "main_button_link": "/"
           }
         },
         "information_TihwRf": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "",
+            "main_desktop_image": "shopify://shop_images/Suit_08-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/Suit_08-06-25.jpg",
+            "title": "Suits",
             "sub_head_text": "",
-            "main_button_text": "Shop Now",
+            "main_button_text": "Shop All",
             "main_button_link": "/"
           }
         },
         "information_4rndc7": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "",
+            "main_desktop_image": "shopify://shop_images/Lehengas_08-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/Lehengas_08-06-25.jpg",
+            "title": "Lehengas",
             "sub_head_text": "",
-            "main_button_text": "Shop Now",
+            "main_button_text": "Shop All",
             "main_button_link": "/"
           }
         },
         "information_KHjWYi": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-luxe-india-400x533-20-05-25.jpg",
-            "title": "",
+            "main_desktop_image": "shopify://shop_images/Indo_western_08-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/Indo_western_08-06-25.jpg",
+            "title": "Indo-Western",
             "sub_head_text": "",
-            "main_button_text": "Shop Now",
+            "main_button_text": "Shop All",
             "main_button_link": "/"
           }
         },
