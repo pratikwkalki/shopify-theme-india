@@ -91,12 +91,63 @@
         "main_desktop_full_image": "shopify://shop_images/Bridal_Banner-min.jpg",
         "main_mobile_full_image": "shopify://shop_images/Bridal_Banner_1_-min.jpg"
       }
+    },
+    "page_weaves_collections_new_gjeJMn": {
+      "type": "Page-weaves-collections-new",
+      "blocks": {
+        "information_8JmDkw": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Heading</p>",
+            "inner_button_text": "Shop Now",
+            "inner_button_link": "/"
+          }
+        },
+        "information_fDpcni": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Heading</p>",
+            "inner_button_text": "Shop Now",
+            "inner_button_link": "/"
+          }
+        },
+        "information_KTe8pP": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Heading</p>",
+            "inner_button_text": "Shop Now",
+            "inner_button_link": "/"
+          }
+        },
+        "information_rR7yFr": {
+          "type": "information",
+          "settings": {
+            "title": "<p>Heading</p>",
+            "inner_button_text": "Shop Now",
+            "inner_button_link": "/"
+          }
+        }
+      },
+      "block_order": [
+        "information_8JmDkw",
+        "information_fDpcni",
+        "information_KTe8pP",
+        "information_rR7yFr"
+      ],
+      "name": "Page Weaves Collections",
+      "settings": {
+        "main_background_color": "#FFFFFF",
+        "main_heading_text": "<p>Shop By Occasion</p>",
+        "main_button_text": "Shop Now",
+        "main_button_link": "/"
+      }
     }
   },
   "order": [
     "main",
     "custom_liquid_RFHjaK",
     "index_side_by_side_banner_new_pGtxYz",
-    "index_icon_text_info_list_new_x9NgeH"
+    "index_icon_text_info_list_new_x9NgeH",
+    "page_weaves_collections_new_gjeJMn"
   ]
 }
