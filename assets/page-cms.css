@@ -112,6 +112,36 @@
   padding-top: 20px;
   text-align: center;
 }
+.buying-guide-inner-ul {
+  max-width: 1200px;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1.33%;
+  row-gap: 20px;
+  margin-bottom: 40px;
+}
+.buying-guide-inner-ul li {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+}
+.buying-guide-inner-ul li img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.buying-guide-inner-ul li h2 {
+  color: #bd8b54;
+  font-weight: normal;
+  font-size: 1.8rem;
+}
+.buying-guide-inner-ul li .metafield-multi_line_text_field {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
 @media (min-width: 750px) and (max-width: 989px) {
   .Page_template_breadcrumb_new .breadcrumbs {
     padding-top: 30px !important;
