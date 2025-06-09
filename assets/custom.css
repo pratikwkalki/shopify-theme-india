@@ -8313,7 +8313,7 @@ div[data-widget-style] div.stamped-container {
   }
   .SquareBanner_mobile_image_new {
     display: flex !important;
-  }
+  } 
 }
 @media (min-width: 750px) and (max-width: 989px) {
   .page-width {
