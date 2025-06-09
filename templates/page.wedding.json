@@ -344,6 +344,9 @@
         "information_8kMGqg",
         "information_rXmP3j"
       ],
+      "custom_css": [
+        ".Index_side_by_side_banner_main_new {margin: 40px 0 20px 0 !important;}"
+      ],
       "name": "Index Side By Side Banner",
       "settings": {
         "main_background_color": "#ffffff",
