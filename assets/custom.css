@@ -6506,108 +6506,6 @@ div[data-widget-style] div.stamped-container {
 }
 /* contact */
 
-/* Testimonial */
-.Page_testimonial_template_main_new {
-  padding: 70px 0;
-}
-.Page_testimonial_template_inner_new {
-  max-width: 672px;
-  margin: auto;
-}
-.Page_testimonial_template_innertitle_new p {
-  margin: 0;
-  color: #fff;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 125%;
-}
-.Page_testimonial_template_maindetail_new {
-  padding-top: 20px;
-}
-.Page_testimonial_template_innerdetail_1_loop_innerboxs_quote_new {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  margin: auto;
-}
-.Page_testimonial_template_innerdetail_1_loop_innerboxs_quote_new svg {
-  width: 100%;
-  display: flex;
-  height: auto;
-}
-.Page_testimonial_template_innerdetail_1_loop_innerboxs_infos_new {
-  padding-top: 20px;
-}
-.Page_testimonial_template_innerdetail_1_loop_innerboxs_infos_new p {
-  margin: 0;
-  color: #8e8d99;
-  text-align: center;
-  font-size: 24px;
-  font-style: italic;
-  font-weight: 300;
-  line-height: 145.833%;
-  letter-spacing: -0.96px;
-}
-.Page_testimonial_template_innerdetail_1_loop_innerboxs_lines_new {
-  padding-top: 40px;
-  text-align: center;
-}
-.Page_testimonial_template_innerdetail_1_loop_innerboxs_lines_new svg {
-  max-width: 100%;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-}
-.Page_testimonial_template_innerdetail_1_loop_innerboxs_author_new {
-  padding-top: 14px;
-}
-.Page_testimonial_template_innerdetail_1_loop_innerboxs_author_new h5 {
-  font-family: var(--font-body-family);
-  color: #a9a8b2;
-  text-align: center;
-  font-size: 16px;
-  line-height: 131.25%;
-  margin: 0;
-}
-.Page_testimonial_template_innerdetail_2_new {
-  padding-top: 34px;
-}
-.Page_testimonial_template_innerdetail_2_loop_new {
-  max-width: 572px;
-  margin: auto;
-}
-.Page_testimonial_template_innerdetail_2_loop_mainboxs_new {
-  width: 71px;
-}
-.Page_testimonial_template_innerdetail_2_loop_innerboxs_new {
-  padding-bottom: 100%;
-  position: relative;
-  cursor: pointer;
-}
-.Page_testimonial_template_innerdetail_2_loop_innerboxs_new img {
-  width: 100%;
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100% !important;
-  border-radius: 70px;
-}
-.Page_testimonial_template_innerdetail_2_loop_mainboxs_new.swiper-slide-thumb-active
-  img {
-  border: 3px solid #fff;
-  transform: scale(1.15);
-}
-.Page_testimonial_template_innerdetail_2_loop_mainboxs_new {
-  margin-top: 7px;
-  margin-bottom: 7px;
-}
-
-/* Testimonial */
-
 /* BRIDAL-COLLECTION */
 .Bridal_collection_main_template_new .breadcrumbs {
   padding: 18px 0 0 0;
@@ -9672,61 +9570,6 @@ label[for="AddressProvinceNew"] {
   }
   /* Collection */
 
-  /* Testimonial (min-width:0px) and (max-width:749px)*/
-  .Page_testimonial_template_main_new {
-    padding: 42px 0;
-  }
-  .Page_testimonial_template_inner_new {
-    max-width: 100%;
-  }
-  .Page_testimonial_template_innertitle_new {
-    max-width: 236px;
-    margin: auto;
-  }
-  .Page_testimonial_template_innertitle_new p {
-    font-size: 18px;
-    line-height: 126.206%;
-  }
-  .Page_testimonial_template_innerdetail_1_loop_innerboxs_quote_new {
-    width: 37.862px;
-    height: 37.862px;
-  }
-  .Page_testimonial_template_innerdetail_1_loop_innerboxs_infos_new {
-    padding: 20px 18px 0 18px;
-  }
-  .Page_testimonial_template_innerdetail_1_loop_innerboxs_infos_new p {
-    font-size: 18px;
-    line-height: 161.111%;
-    letter-spacing: -0.72px;
-  }
-  .Page_testimonial_template_innerdetail_1_loop_innerboxs_lines_new {
-    padding-top: 20px;
-  }
-  .Page_testimonial_template_innerdetail_1_loop_innerboxs_lines_new svg {
-    width: 114px;
-  }
-  .Page_testimonial_template_innerdetail_1_loop_innerboxs_author_new {
-    padding-top: 12px;
-  }
-  .Page_testimonial_template_innerdetail_1_loop_innerboxs_author_new h5 {
-    font-size: 15.145px;
-  }
-  .Page_testimonial_template_innerdetail_2_new {
-    padding-top: 24px;
-    max-width: 100%;
-  }
-  .Page_testimonial_template_innerdetail_2_loop_new {
-    max-width: 343px;
-  }
-  .Page_testimonial_template_innerdetail_2_loop_mainboxs_new {
-    width: 41px;
-  }
-  .Page_testimonial_template_innerdetail_2_loop_mainboxs_new.swiper-slide-thumb-active
-    img {
-    border: 2px solid #fff;
-  }
-  /* Testimonial */
-
   /* BRIDAL-COLLECTION (min-width:0px) and (max-width:749px)*/
   .Collection_bridal_product_main_new {
     margin: 10px 0 0 !important;
@@ -10517,15 +10360,6 @@ label[for="AddressProvinceNew"] {
     display: none;
   }
   /* Collection */
-
-  /* Testimonial (min-width:750px) and (max-width:989px)*/
-  .Page_testimonial_template_main_new {
-    padding: 50px 0;
-  }
-  .Page_testimonial_template_innertitle_new p {
-    font-size: 30px;
-  }
-  /* Testimonial */
 
   /* BRIDAL-COLLECTION (min-width:750px) and (max-width:989px)*/
   .Collection_bridal_product_toppart_1_new {
