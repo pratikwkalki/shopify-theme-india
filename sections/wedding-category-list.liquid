@@ -12,11 +12,11 @@
         {%- if section.blocks.size > 0 -%}
           <div class="Index_collection_lists_mainloop_new">
             <div class="Index_collection_lists_innerloop_new">
-              <div class="swiper-container Index_collection_list_slider">
+              <div class="Index_collection_list_slider">
                 
                   {%- for block in section.blocks -%}
                     {%- if block.settings.main_mp4_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank or block.settings.title != blank or block.settings.main_button_link != blank -%}
-                      <div class="swiper-slide Index_custom_collections_allloop_mainboxs_new">
+                      <div class="Index_custom_collections_allloop_mainboxs_new">
                         {%- if block.settings.main_button_link != blank -%}
                           <a href="{{ block.settings.main_button_link }}" aria-label="Shop Now {{ block.settings.title }}" title="{{ block.settings.title }}"></a>
                         {%- endif -%}  
