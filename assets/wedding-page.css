@@ -55,6 +55,14 @@
     line-height: 91.667%;
     letter-spacing: .72px;
 }
+.wedding_custom_collections_allloop_innerboxs_3_subtitle_new p {
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    line-height: 1;
+    padding-top: 5px;
+}
 @media screen and (max-width: 749px) {
   .wedding_custom_collections_allloop_mainboxs_new
  {
