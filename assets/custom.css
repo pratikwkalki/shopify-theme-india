@@ -5309,59 +5309,6 @@ summary .icon-caret {
   max-width: 1004px;
   margin: auto;
 }
-.Common_faqs_accordion_new .accordion {
-  border: none;
-}
-.Common_faqs_accordion_new .accordion > ul {
-  border-top: 1px solid #dedede;
-}
-.Common_faqs_accordion_new .accordion > ul > li {
-  border-bottom: 1px solid #dedede;
-}
-.Common_faqs_accordion_new .accordion > ul li .question h2 {
-  background: no-repeat center right;
-  background-size: 20px;
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="%23000000" height="800px" width="800px" version="1.1" id="Layer_1" viewBox="0 0 455 455" xml:space="preserve" data-google-analytics-opt-out=""><polygon points="455,212.5 242.5,212.5 242.5,0 212.5,0 212.5,212.5 0,212.5 0,242.5 212.5,242.5 212.5,455 242.5,455 242.5,242.5 455,242.5 "/></svg>');
-  color: #0f0d1a;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 140%;
-  padding: 17px 50px 17px 0;
-  margin: 0;
-}
-.Common_faqs_accordion_new .accordion > ul li.open .question h2 {
-  background-size: 26px;
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 17 17" version="1.1" data-google-analytics-opt-out=""><path d="M15 8v1h-13v-1h13z" fill="%23000000"/></svg>');
-  background-position: calc(100% + 3px) 50%;
-}
-.Common_faqs_accordion_new .accordion > ul li .answer {
-  padding: 0px 0px 20px 0;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 140%;
-}
-.Common_faqs_accordion_new .accordion > ul li .answer strong {
-  font-weight: 900;
-}
-.Common_faqs_accordion_new .accordion > ul li .answer p {
-  margin: 0 0 15px 0;
-}
-.Common_faqs_accordion_new .accordion > ul li .answer p:last-child {
-  margin: 0;
-}
-.Common_faqs_accordion_new .accordion > ul li .answer ul {
-  margin: 0 0 15px 0;
-}
-.Common_faqs_accordion_new .accordion > ul li .answer ul:last-child {
-  margin: 0;
-}
-.Common_faqs_accordion_new .accordion > ul li .answer ol {
-  margin: 0 0 15px 0;
-}
-.Common_faqs_accordion_new .accordion > ul li .answer ol:last-child {
-  margin: 0;
-}
-
 .Product_related_new {
   padding: 20px 0;
 }
@@ -7304,13 +7251,6 @@ div[data-widget-style] div.stamped-container {
 }
 /* Bridal Page */
 
-/* Weaves Page */
-.Common_faqs_accordion_new .accordion > ul li .answer a {
-  color: #c79d6f;
-  text-decoration: none;
-}
-/* Weaves Page */
-
 /* Login Dropdown */
 .header__icon--account {
   position: relative;
@@ -7605,17 +7545,6 @@ div[data-widget-style] div.stamped-container {
 }
 .only-for-mobile-delivery-days {
   display: none;
-}
-
-.template--bridal-wedding-dress-new
-  .Common_faqs_accordion_new
-  .accordion
-  > ul
-  li
-  .answer
-  p {
-  font-size: 14px;
-  line-height: 18px;
 }
 .template--bridal-wedding-dress-new .Index_title_main_new {
   margin-bottom: 0;
@@ -8016,18 +7945,6 @@ div[data-widget-style] div.stamped-container {
   .Product_object_faqs_main_new {
     padding: 50px 0;
   }
-  .Common_faqs_accordion_new .accordion {
-    margin-top: 12px;
-  }
-  .Common_faqs_accordion_new .accordion > ul li .question h2 {
-    font-size: 18px;
-    padding: 16px 32px 16px 0;
-    line-height: 130%;
-  }
-  .Common_faqs_accordion_new .accordion > ul li .answer {
-    padding: 0px 0px 16px 0;
-  }
-
   .Product_related_new {
     padding: 25px 0;
   }
