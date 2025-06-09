@@ -1,4 +1,11 @@
 .wedding_collection_list_slider{
  display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
   
+}
+.wedding_custom_collections_allloop_mainboxs_new{
+  width: calc(25% - 15px);
+    position: relative;
 }
