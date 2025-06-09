@@ -345,7 +345,7 @@
         "information_rXmP3j"
       ],
       "custom_css": [
-        ".Index_side_by_side_banner_main_new {margin: 40px 0 20px 0 !important;}"
+        ".Index_side_by_side_banner_main_new {margin: 60px 0 20px 0 !important;}"
       ],
       "name": "Index Side By Side Banner",
       "settings": {
@@ -378,6 +378,9 @@
       "block_order": [
         "information_6GygaM",
         "information_dD8i6g"
+      ],
+      "custom_css": [
+        ".Index_side_by_side_banner_main_new {margin: 20px 0 60px 0 !important;}"
       ],
       "name": "Index Side By Side Banner",
       "settings": {
