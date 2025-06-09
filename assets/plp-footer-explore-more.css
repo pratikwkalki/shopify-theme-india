@@ -16,6 +16,32 @@
 .men_collection_banner_new .Collection_object_banners_mainloop_new {
   padding: 0 70px;
 }
+.Collection_object_banners_main_new {
+  margin: 50px 0;
+}
+.Collection_object_banners_title_new {
+  text-align: left;
+}
+.Collection_object_banners_innerloop_new {
+  display: flex;
+  flex-wrap: Wrap;
+  grid-gap: 20px;
+}
+.Collection_object_banners_innerloop_mainbox_new {
+  width: calc(50% - 10px);
+}
+.Collection_object_banners_innerloop_innerbox_videoimageboth_new {
+  width: 100%;
+  position: relative;
+}
+.Collection_object_banners_innerloop_innerbox_videoimage_new video {
+  width: 100%;
+  display: flex;
+}
+.Collection_object_banners_innerloop_innerbox_videoimage_new img {
+  width: 100%;
+  display: flex;
+}
 .template--mens-detail-new .Collection_object_banners_mainloop_new {
   padding: 0;
   margin: auto;
