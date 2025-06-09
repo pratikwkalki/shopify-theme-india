@@ -50,6 +50,14 @@
   .plp-explore-more-section a {
     width: calc(100%);
   }
+  .men_collection_banner_new .Collection_object_banners_mainloop_new {
+    padding: 0;
+  }
+}
+@media (min-width: 990px) and (max-width: 1424px) {
+   .Collection_object_banners_main_new {
+    margin: 40px 0;
+  }
 }
 @media (min-width: 750px) and (max-width: 989px) {
   .Collection_object_banners_main_new {
@@ -60,6 +68,9 @@
   }
   .Collection_object_banners_innerloop_mainbox_new {
     width: calc(50% - 5px);
+  }
+  .men_collection_banner_new .Collection_object_banners_mainloop_new {
+    padding: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 749px) {
