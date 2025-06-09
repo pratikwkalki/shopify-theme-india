@@ -1618,10 +1618,6 @@ label[for="AddressProvinceNew"] {
   width: 100%;
   margin: auto;
 }
-.Customer_register_template_innerleft_title_new h2 {
-  margin: 0;
-}
-/* .Customer_register_template_innerleft_title_new h2 p{ margin:0; color:#223330; font-size:28px; font-weight:400; line-height:142.857%; letter-spacing:0.28px; text-transform: capitalize; } */
 .Customer_register_template_innerleft_texts_new {
   padding-top: 13px;
 }
@@ -1746,7 +1742,6 @@ label[for="AddressProvinceNew"] {
   letter-spacing: 0.15px;
   top: 18px;
 }
-/* .customer .field{ margin-top:16px !important; } */
 .customer .field {
   margin: 0 !important;
 }
@@ -2069,7 +2064,6 @@ label[for="AddressProvinceNew"] {
   }
   
   /* Register & Login (min-width:750px) and (max-width:989px)*/
-  /* .Customer_register_template_innerleft_title_new h2 p{ font-size:24px; } */
   .Customer_register_template_innerleft_texts_new h3 {
     font-size: 20px;
   }
@@ -2216,7 +2210,6 @@ label[for="AddressProvinceNew"] {
     max-width: 271px;
     margin: auto;
   }
-  /* .Customer_register_template_innerleft_title_new h2 p{font-size:15px; line-height:133.333%; letter-spacing:0.15px;} */
   .Customer_register_template_innerleft_texts_new h3 {
     font-size: 20px;
     line-height: 125%;
