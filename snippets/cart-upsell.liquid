@@ -2,7 +2,7 @@
 
 {% if upsellCollection != blank and upsellCollection.products.size > 0 %}
   <script src="{{ "cart-upsell.js" | asset_url }}" defer></script>
-
+  {{ 'cart-upsell.css' | asset_url | stylesheet_tag }}
   <cart-upsell class="cart-upsell">
     {% if settings.upsell_title != blank %}
       <h2 class="upsell-title">{{ settings.upsell_title }}</h2>
