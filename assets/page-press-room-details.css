@@ -29,7 +29,7 @@
   justify-content: center;
   padding: 20px;
 }
-.Page_press_room_template_innerboxs_2_title_new h2 {
+.Page_press_room_template_innerboxs_2_title_new h2,.Page_press_room_template_innerboxs_2_title_new h1 {
   color: #fff;
   font-size: 36px;
   font-weight: 500;
@@ -235,7 +235,7 @@
   .Page_press_room_template_mainloop_new {
     margin: 40px 0 50px;
   }
-  .Page_press_room_template_innerboxs_2_title_new h2 {
+  .Page_press_room_template_innerboxs_2_title_new h2,.Page_press_room_template_innerboxs_2_title_new h1 {
     font-size: 32px;
   }
   .Page_press_room_template_innerloop_mainboxs_main_new {
@@ -265,7 +265,7 @@
   .Page_press_room_template_mainboxs_new {
     padding-top: 10px;
   }
-  .Page_press_room_template_innerboxs_2_title_new h2 {
+  .Page_press_room_template_innerboxs_2_title_new h2,.Page_press_room_template_innerboxs_2_title_new h1 {
     font-size: 24px;
   }
   .Page_press_room_template_mainloop_new {
@@ -326,7 +326,7 @@
   .Page_press_room_template_mainboxs_new {
     padding-top: 10px;
   }
-  .Page_press_room_template_innerboxs_2_title_new h2 {
+  .Page_press_room_template_innerboxs_2_title_new h2,.Page_press_room_template_innerboxs_2_title_new h1 {
     font-size: 24px;
   }
   .Page_press_room_template_mainloop_new {
