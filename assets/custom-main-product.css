@@ -2540,6 +2540,31 @@ body.template-product:has(.is-only-wishlist) .sticky-addtocart-button {
 .product-custom .Inclusive {
   font-size: 12px !important;
 }
+.visitors_counter {
+  margin: 12px 0 10px !important;
+  display: flex;
+  justify-content: center;
+}
+.visitors_counter .shopper-view {
+  background: url(eye_icon.svg) no-repeat left center !important;
+  margin: 0 !important;
+  font-family: var(--font-body-family) !important;
+  line-height: 16px;
+  padding: 9px 0 9px 35px !important;
+}
+@media (min-width: 990px) and (max-width: 1424px) {
+  .visitors_counter .shopper-view {
+    font-size: 14px !important;
+  }
+}
+@media (min-width: 750px) and (max-width: 989px) {
+  .visitors_counter {
+    margin: 0 0 15px !important;
+  }
+  .visitors_counter .shopper-view {
+    font-size: 14px !important;
+  }
+}
 @media screen and (max-width: 989px) {
   .tagalys-similar-products
     #tagalys-namespace.tagalys-namespace
@@ -2794,5 +2819,11 @@ body.template-product:has(.is-only-wishlist) .sticky-addtocart-button {
     .product-prices
     .product-price-regular {
     font-size: 14px;
+  }
+  .visitors_counter {
+    margin: 0 0 10px !important;
+  }
+  .visitors_counter .shopper-view {
+    font-size: 12px !important;
   }
 }
