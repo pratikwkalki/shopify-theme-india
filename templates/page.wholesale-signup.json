@@ -20,7 +20,7 @@
       "type": "Index-title-new",
       "name": "Index Title",
       "settings": {
-        "main_background_color": "#FFFFFF",
+        "main_background_color": "#ffffff",
         "main_heading_text": "Wholesale Application Form"
       }
     },
@@ -49,16 +49,27 @@
         "forms_inline_TDAydy"
       ],
       "custom_css": [
-        "._formHeader_1nihh_19 ._textHeading_2aowh_35{display:none !important}"
+        "#app-embed h2._textHeading_2aowh_35 {display: none !important;}"
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "custom_liquid_bMCHtQ": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\n#app-embed h2._textHeading_2aowh_35 {\n  display: none !important;\n}\n</style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "main",
     "index_title_new_weArLA",
-    "17225830965689c5d1"
+    "17225830965689c5d1",
+    "custom_liquid_bMCHtQ"
   ]
 }
