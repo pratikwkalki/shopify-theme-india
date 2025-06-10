@@ -10,7 +10,7 @@
   assign pant_length    = product.metafields.custom.pant_length
   assign padding_options = product.metafields.custom.padding_options
 %}
-
+{{ 'cs-option-drop.css' | asset_url | stylesheet_tag }}
 <div class="options-dropdown-list" {% if templateName == 'khadi-product-template' %} js-khadi-options-list-container {%  endif %}>
   <div class="options-wrapper">
     <div class="options">

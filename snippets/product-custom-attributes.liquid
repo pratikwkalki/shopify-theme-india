@@ -1,6 +1,7 @@
 {% liquid assign product_attributes_group = product.metafields.custom.select_attributes_group.value %}
 {% liquid assign select_single_attributes = product.metafields.custom.select_single_attributes.value %}
 {% if product_attributes_group %}
+  {{ 'cs-option-drop.css' | asset_url | stylesheet_tag }}
   <div class="{% if stitche_selected_option == 'Unstitched' or confSizeOption_selected_option == 'Made to Order' %}hide{% endif %} options-dropdown-list" {{ confSizeOption_attribute }} {{ stitche_attribute }} {{ templateName }} {% if templateName=='khadi-product-template' %}
     js-khadi-options-list-container {% endif %}>
     <div class="options-wrapper">
