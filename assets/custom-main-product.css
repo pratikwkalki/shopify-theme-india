@@ -2520,7 +2520,26 @@ body.template-product:has(.is-only-wishlist) .sticky-addtocart-button {
   visibility: visible;
   opacity: 1;
 }
-
+.product-form__error-message-wrapper {
+  display: flex;
+  margin-bottom: 15px;
+}
+.product-form__error-message-wrapper[hidden] {
+  display: none;
+}
+.product-form__error-message-wrapper .icon {
+  width: 15px;
+  margin-top: 2px;
+}
+.product-form__error-message-wrapper .product-form__error-message {
+  width: calc(100% - 15px);
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 140%;
+}
+.product-custom .Inclusive {
+  font-size: 12px !important;
+}
 @media screen and (max-width: 989px) {
   .tagalys-similar-products
     #tagalys-namespace.tagalys-namespace
