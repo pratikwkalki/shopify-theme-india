@@ -393,7 +393,9 @@
       "name": "Index Form App Detail",
       "settings": {
         "main_background_color": "#FFFFFF",
-        "main_heading_text": "<p>The Ultimate In-Store Experience via 24x7 Video Shopping</p>",
+        "main_desktop_full_image": "shopify://shop_images/video-shopping-banner.jpg",
+        "main_mobile_full_image": "shopify://shop_images/Group_121-min.jpg",
+        "main_heading_text": "<p>The Ultimate In-Store Experience <br/>via 24x7 Video Shopping</p>",
         "main_information_text": "<p>Our Stylists On Call Can Speak: English, Hindi, Gujarati & Marathi</p>"
       }
     }
