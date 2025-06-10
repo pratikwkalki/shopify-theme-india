@@ -60,6 +60,38 @@
     </div>
     </template>
   </div>
+  {%- if page.handle contains 'bridal-wedding-dresses' -%}
+    {% style %}
+      .Bridal_coll_round_column_list_new {
+        margin: 0;
+        background: rgba(0, 0, 0, 0.47) !important;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+      }
+      .Bridal_coll_round_column_list_new .Index_round_column_list_2_new {
+        display: none;
+      }
+      .Bridal_coll_round_column_list_new
+        .Index_round_column_list_1_allloop_innerboxs_new
+        a {
+        padding: 14px;
+        color: #f6f6f9;
+      }
+      .Bridal_coll_round_column_list_new
+        .Index_round_column_list_1_allloop_mainboxs_new {
+        border-bottom: 2px solid transparent;
+      }
+      .Bridal_coll_round_column_list_new
+        .Index_round_column_list_1_allloop_mainboxs_new.active {
+        border-bottom: 2px solid #fff;
+        background: none;
+      }
+      .template--bridal-wedding-dress-new .Bridal_coll_round_column_list_new {
+        min-height: auto !important;
+      }
+    {% endstyle %}  
+  {% endif %}
 {%- endif -%}   
 
 {% schema %}
