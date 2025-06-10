@@ -167,6 +167,26 @@
 .collection__pagination .pagination_item.active {
   border: 1px solid #000;
 }
+.Bridal_collection_desktop_only_new.hide {
+  visibility: visible;
+  opacity: 1;
+}
+.Bridal_collection_desktop_only_new {
+  justify-content: flex-start !important;
+}
+@media (min-width: 750px) and (max-width: 9999px) {
+  .Bridal_collection_desktop_only_new {
+    display: flex !important;
+  }
+  .Collection_bridal_product_main_new .active-facets__button-remove {
+    padding: 0 !important;
+  }
+}
+.Bridal_collection_desktop_only_new a span {
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+}
 @media (min-width: 750px) and (max-width: 989px) {
   .Index_featured_collection_main_new {
     margin: 40px 0;

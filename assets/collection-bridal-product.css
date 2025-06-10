@@ -1,0 +1,354 @@
+.Collection_bridal_product_toppart_new .mobile-facets__header {
+  padding-bottom: 6px !important;
+}
+.Bridal_collection_main_template_new .breadcrumbs {
+  padding: 18px 0 0 0;
+}
+.Bridal_collection_main_template_new .breadcrumbs .breadcrumbs__item,
+.Bridal_collection_main_template_new .breadcrumbs a {
+  font-size: 14px;
+  font-weight: normal;
+}
+.Collection_bridal_product_main_new {
+  margin: 17px 0 0 0 !important;
+}
+.Collection_bridal_product_toppart_new {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Collection_bridal_product_toppart_1_new {
+  width: 320px;
+  max-width: initial !important;
+  padding: 0px !important;
+  margin: 0;
+}
+.Collection_bridal_product_toppart_1_new .facets-container {
+  display: flex !important;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.Collection_bridal_product_toppart_1_new .mobile-facets__wrapper {
+  margin-right: 0 !important;
+}
+.Collection_bridal_product_toppart_1_new .mobile-facets__open {
+  padding: 0 11px 0 0;
+}
+.Collection_bridal_product_toppart_1_new .mobile-facets__open svg {
+  display: none;
+}
+.Collection_bridal_product_toppart_1_new .mobile-facets__open-label {
+  margin-left: 0;
+  color: #0f0d1a;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.15px;
+  padding: 7px 12px;
+  border-radius: 1px;
+  border: 1px solid #2e2e33;
+  display: inline-block;
+  min-width: 62px;
+  text-align: center;
+  text-decoration: none !important;
+  text-wrap: nowrap;
+}
+.Collection_bridal_product_toppart_1_new .facets__form {
+  margin: 0;
+}
+.Collection_bridal_product_toppart_1_new .facet-filters {
+  padding: 1px 22px 1px 22px;
+}
+.Collection_bridal_product_toppart_1_new .facet-filters__field {
+  border: none;
+  border-radius: 0px;
+  padding: 0;
+}
+.Collection_bridal_product_toppart_1_new .product-count {
+  display: none;
+}
+.Collection_bridal_product_toppart_3_new {
+  width: 320px;
+}
+.Collection_bridal_product_toppart_2_new
+  .Collection_product_grid_rightside_innertop_1_detail_title_new
+  h1,
+.Collection_bridal_product_toppart_2_new
+  .Collection_product_grid_rightside_innertop_1_detail_title_new
+  h3 {
+  font-size: 24px;
+  color: #0f0d1a;
+  line-height: 118.75%;
+}
+.template--bridal-collection-new .Collection_bridal_product_toppart_2_new {
+  margin-bottom: 50px;
+}
+.template--bridal-collection-new .Collection_bridal_product_toppart_1_new {
+  margin-top: 45px;
+}
+.template--bridal-collection-new .Collection_bridal_product_toppart_3_new {
+  margin-top: 42px;
+}
+.template--bridal-collection-new .facet-filters__field .select select {
+  height: 34px;
+  padding: 0 32px 0 12px !important;
+}
+.template--bridal-collection-new
+  .Collection_bridal_product_toppart_1_new
+  .mobile-facets__open-label {
+  font-size: 18px;
+  padding: 6px 12px;
+  letter-spacing: 0;
+}
+.template--bridal-collection-new .collection_pagination_new {
+  margin-top: 0px !important;
+}
+.Collection_bridal_product_bottompart_new {
+  margin: 30px 0 64px;
+}
+.Collection_bridal_product_bottompart_new .product-grid {
+  margin: 0 0 50px 0 !important;
+  justify-content: center;
+  grid-gap: 70px 18px;
+}
+.Collection_bridal_product_bottompart_new .grid__item.Product_top_1_new {
+  max-width: 485px !important;
+  width: calc(50% - 9px) !important;
+  margin: 0;
+}
+.Collection_bridal_product_bottompart_new .grid__item.Product_middle_1_new {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+.Collection_bridal_product_bottompart_new
+  .grid__item.Product_middle_1_new
+  .card-wrapper {
+  max-width: 610px;
+  margin: auto;
+  width: 100%;
+}
+.Collection_bridal_product_bottompart_new .grid__item.Product_middle_3_new {
+  width: calc(33.33% - 12px) !important;
+  max-width: calc(33.33% - 12px) !important;
+}
+.Collection_bridal_product_bottompart_new .grid__item.Product_bottom_2_new {
+  max-width: 485px !important;
+  width: calc(50% - 9px) !important;
+  margin: 0;
+}
+
+.Collection_bridal_product_bottompart_new
+  .card--media
+  .card__inner
+  .card__content {
+  padding: 12px 12px 12px 0 !important;
+}
+.Collection_bridal_product_bottompart_new .product-card-wrapper .badge {
+  color: #781710;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 4px 6px;
+}
+.Collection_bridal_product_bottompart_new .card__information {
+  padding: 15px 0 0 !important;
+}
+.Collection_bridal_product_bottompart_new .card_review_new .stamped-badge {
+  margin-bottom: 7px;
+}
+.Collection_bridal_product_bottompart_new .Product_price_save_new {
+  padding: 5px 6px;
+}
+
+.Collection_bridal_product_bottompart_new .card_review_new {
+  display: none;
+}
+@media (min-width: 990px) and (max-width: 1424px) {
+  .Collection_bridal_product_toppart_1_new {
+    padding: 0 !important;
+    width: 280px;
+  }
+  .Collection_bridal_product_toppart_3_new {
+    width: 280px;
+  }
+  .Collection_bridal_product_toppart_1_new .mobile-facets__open {
+    padding: 0;
+  }
+  .Collection_bridal_product_toppart_1_new .facet-filters {
+    padding: 1px 0 1px 15px;
+  }
+  .Collection_bridal_product_main_new {
+    margin: 10px 0 0 !important;
+  }
+  .Collection_bridal_product_toppart_new .mobile-facets__inner {
+    width: 100% !important;
+    max-width: 382px !important;
+    padding: 58px 25px 35px 35px;
+  }
+  .Collection_bridal_product_toppart_new .mobile-facets__close {
+    left: 24px !important;
+    top: 45px !important;
+  }
+  .Collection_bridal_product_toppart_new .mobile-facets__header {
+    padding: 0 0 12px 0px !important;
+  }
+  .Collection_bridal_product_toppart_new .mobile-facets__header-inner {
+    padding-left: 44px;
+  }
+
+  .Collection_bridal_product_bottompart_new {
+    margin: 40px 0 80px;
+  }
+  .Collection_bridal_product_bottompart_new .product-grid {
+    margin: 0 0 50px !important;
+    grid-gap: 50px 18px;
+  }
+  .Collection_bridal_product_bottompart_new
+    #product-grid
+    .grid__item.Product_top_1_new {
+    max-width: 400px !important;
+    width: calc(50% - 9px) !important;
+    margin: 0;
+  }
+  .Collection_bridal_product_bottompart_new
+    #product-grid
+    .grid__item.Product_middle_1_new {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .Collection_bridal_product_bottompart_new
+    #product-grid
+    .grid__item.Product_middle_3_new {
+    width: calc(33.33% - 12px) !important;
+    max-width: calc(33.33% - 12px) !important;
+  }
+  .Collection_bridal_product_bottompart_new
+    .grid__item.Product_middle_1_new
+    .card-wrapper {
+    max-width: 500px;
+  }
+  .Collection_bridal_product_bottompart_new
+    #product-grid
+    .grid__item.Product_bottom_2_new {
+    max-width: 400px !important;
+    width: calc(50% - 9px) !important;
+    margin: 0;
+  }
+}
+@media (min-width: 750px) and (max-width: 989px) {
+  .Collection_bridal_product_toppart_1_new {
+    width: 100%;
+    padding: 10px 0 0 0 !important;
+  }
+  .Collection_bridal_product_toppart_1_new .mobile-facets__open {
+    padding: 0;
+  }
+  .Collection_bridal_product_toppart_1_new .facet-filters {
+    padding: 1px 0px;
+  }
+  .Collection_bridal_product_main_new {
+    margin: 10px 0 0 !important;
+  }
+  .Collection_bridal_product_toppart_new {
+    flex-direction: column-reverse;
+  }
+
+  .Collection_bridal_product_toppart_new .mobile-facets__inner {
+    width: 100% !important;
+    max-width: 382px !important;
+    padding: 58px 25px 35px 35px;
+  }
+  .Collection_bridal_product_toppart_new .mobile-facets__close {
+    left: 24px !important;
+    top: 45px !important;
+  }
+  .Collection_bridal_product_toppart_new .mobile-facets__header {
+    padding: 0 0 12px 0px !important;
+  }
+
+  .Collection_bridal_product_bottompart_new {
+    margin: 0 0 80px;
+  }
+  .Collection_bridal_product_bottompart_new .product-grid {
+    margin: 0 0 40px !important;
+    justify-content: center;
+    grid-gap: 40px 18px;
+  }
+  .Collection_bridal_product_bottompart_new
+    .grid__item.Product_middle_1_new
+    .card-wrapper {
+    max-width: 440px;
+  }
+}
+@media (min-width: 0px) and (max-width: 749px) {
+  .Collection_bridal_product_main_new {
+    margin: 10px 0 0 !important;
+  }
+  .Collection_bridal_product_toppart_new {
+    display: block;
+  }
+  .Collection_bridal_product_toppart_1_new {
+    width: 100%;
+  }
+  .Collection_bridal_product_toppart_2_new
+    .Collection_product_grid_rightside_innertop_1_detail_title_new
+    h1,
+  .Collection_bridal_product_toppart_2_new
+    .Collection_product_grid_rightside_innertop_1_detail_title_new
+    h3 {
+    font-size: 16px;
+    line-height: 125%;
+  }
+  .template--bridal-collection-new
+    .Collection_product_grid_rightside_innertop_1_detail_new {
+    justify-content: center;
+  }
+  .Collection_bridal_product_bottompart_new {
+    margin: 28px 0 60px;
+  }
+  .Collection_bridal_product_bottompart_new .product-grid {
+    margin: 0px 0 60px !important;
+    justify-content: center;
+    grid-gap: 32px 16px;
+  }
+  .Collection_bridal_product_toppart_1_new .mobile-facets__open-label {
+    padding: 0;
+    border: 0;
+    color: #fff;
+  }
+
+  .Collection_bridal_product_bottompart_new
+    .grid__item.mobile_Product_part_2_new {
+    max-width: calc(50% - 8px) !important;
+    width: calc(50% - 8px) !important;
+  }
+  .Collection_bridal_product_bottompart_new
+    .grid__item.mobile_Product_part_1_new {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .Collection_bridal_product_bottompart_new
+    .grid__item.mobile_Product_part_1_new
+    .card-wrapper {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  .Collection_bridal_product_bottompart_new .card__information {
+    padding: 12px 0 0 !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .template--bridal-collection-new .Collection_bridal_product_toppart_2_new {
+    margin-bottom: 40px;
+  }
+  .template--bridal-collection-new .Collection_bridal_product_toppart_1_new {
+    margin-top: 0;
+  }
+  .template--bridal-collection-new
+    .Collection_bridal_product_toppart_1_new
+    .mobile-facets__open-label {
+    padding: 0;
+  }
+}
