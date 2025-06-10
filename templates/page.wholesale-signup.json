@@ -16,25 +16,6 @@
         "main_background_color": "#ffffff"
       }
     },
-    "index_title_new_weArLA": {
-      "type": "Index-title-new",
-      "disabled": true,
-      "name": "Index Title",
-      "settings": {
-        "main_background_color": "#ffffff",
-        "main_heading_text": "Wholesale Application Form"
-      }
-    },
-    "custom_liquid_bMCHtQ": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<script>\nwindow.addEventListener(\"load\", () => {\necho(\"sdfsdf\");\n  setTimeout(() => {\n    document.querySelectorAll('._textHeading_2aowh_35').forEach(el => {\n      if (el.textContent.trim() === \"Wholesale Application Form\") {\n        el.style.display = 'none';\n      }\n    });\n  }, 1000); // Adjust delay as needed (in milliseconds)\n});\n</script>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "17225830965689c5d1": {
       "type": "apps",
       "blocks": {
@@ -67,8 +48,6 @@
   },
   "order": [
     "main",
-    "index_title_new_weArLA",
-    "custom_liquid_bMCHtQ",
     "17225830965689c5d1"
   ]
 }
