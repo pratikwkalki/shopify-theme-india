@@ -1842,7 +1842,7 @@ input.mobile-facets__checkbox {
 }
 .facets__price .field-currency {
   align-self: center;
-  margin-right: 4px;
+  margin-right: .6rem;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
