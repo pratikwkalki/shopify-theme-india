@@ -25,7 +25,12 @@
 </div>
 
 
-
+{% style %}
+  .account_recover_password_form {
+    margin-top: 20px;
+    max-width: 420px;
+  }
+{% endstyle %}
 <div js-recover-form class="account_recover_password_form{% unless recover_from_success %} hidden{% endunless %}">
  <div class="customer_account_title_new">
     <h2>Reset Your Password</h2>
