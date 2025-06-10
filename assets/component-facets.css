@@ -442,10 +442,6 @@ details.mobile-facets__disclosure:not([open]) .mobile-facets__close {
   padding: 2rem;
 }
 
-.facets__price .field+.field-currency {
-  margin-left: 2rem;
-}
-
 .facets__price .field {
   align-items: center;
 }
@@ -1922,10 +1918,6 @@ input.mobile-facets__checkbox {
   .active-facets-vertical-filter
   .active-facets__button-wrapper_cancel_all {
   padding-bottom: 15px !important;
-}
-.facets__price .field + .field-currency {
-  margin-left: 1rem !important;
-  margin-right: 0 !important;
 }
 .facet-checkbox--disabled,
 .mobile-facets__label--disabled {
