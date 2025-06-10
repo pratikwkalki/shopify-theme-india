@@ -209,3 +209,48 @@
     display: flex;
   }
 }
+
+/* sticky left filter menu PLP */
+@media (max-width: 1025px) {
+  #custom-active-facets {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .collection_left_new1 {
+    padding-left: 10px !important;
+  }
+  .collection_left_new {
+    overflow: auto;
+    direction: rtl;
+    padding-right: 40px !important;
+    padding-left: 19px;
+  }
+  .scrolling-element-inside {
+    direction: ltr;
+  }
+
+  .navScrolled {
+    position: fixed;
+    top: 0px;
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .filtertitle {
+    padding-left: 19px !important;
+  }
+  .blokmargin {
+    margin-left: 260px;
+  }
+  #custom-active-facets {
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+  .collection_left_new::-webkit-scrollbar-thumb {
+    background: #a6a4a4;
+  }
+}
+/* sticky left filter menu PLP close */
