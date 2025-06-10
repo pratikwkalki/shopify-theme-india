@@ -50,7 +50,7 @@
         "custom_liquid": "<style>\n  .container-head{\n    text-align: center;\n  }\n  .container-head h1{\n    margin: 0;\n  }\n  .container-head h2{\n    margin: 2rem 0 0 0;\n  }\n</style>\n<div class=\"container-head\"><h1>\n                KALKI Fashion Show Updates\n              </h1>\n              \n                <h2>Lakme Fashion Week - Mushk 2024</h2>\n</div>",
         "color_scheme": "",
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 40
       }
     },
     "single_image_Ye3g78": {
