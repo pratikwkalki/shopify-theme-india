@@ -76,7 +76,7 @@
   height: 50px;
   max-width: 100%;
 }
-.FAQs_detail_page_template_innerright_1_detail_title_new h3 {
+.FAQs_detail_page_template_innerright_1_detail_title_new h3,.FAQs_detail_page_template_innerright_1_detail_title_new h1 {
   font-family: var(--font-body-family);
   margin: 0;
   padding-top: 10px;
