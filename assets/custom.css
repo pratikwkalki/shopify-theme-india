@@ -7651,44 +7651,20 @@ body.template-customers-activate_account .customer .field {
   stroke: white;
 }
 /* lucent OTP */
-body
-  #sotp
-  .sotp-popup-wrapper
-  .sotp-popup-inner
-  .sotp-popup-content
-  .sotp-popup-close-btn {
+body #sotp .sotp-popup-wrapper .sotp-popup-inner .sotp-popup-content .sotp-popup-close-btn {
   top: 4px;
   right: 4px;
 }
-body
-  #sotp
-  .sotp-popup-wrapper
-  .sotp-popup-inner
-  .sotp-popup-content
-  .sotp-popup-close-btn
-  path {
+body #sotp .sotp-popup-wrapper .sotp-popup-inner .sotp-popup-content .sotp-popup-close-btn path {
   fill: black;
 }
-#sotp
-  .sotp-popup-wrapper
-  .sotp-popup-inner
-  .sotp-popup-content
-  .sotp-popup-container
-  .sotp-popup-img-section
-  .img-container
-  img {
+#sotp .sotp-popup-wrapper .sotp-popup-inner .sotp-popup-content .sotp-popup-container .sotp-popup-img-section .img-container img {
   height: 100% !important;
 }
-body
-  #sotp-new-popup.olWrapper
-  .ol
-  .update-user-box
-  .update-checkbox-wrapper
-  .checkbox-main-label {
+body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .checkbox-main-label {
   display: flex;
   align-items: center;
 }
-
 
 @media screen and (max-width: 1024px) {
   body
