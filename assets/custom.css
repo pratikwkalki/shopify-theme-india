@@ -1754,6 +1754,19 @@ cart-drawer.is-empty .drawer__header {
 .header__icon--account {
   position: relative;
 }
+.desktop_image_new {
+  display: flex !important;
+}
+.mobile_image_new {
+  display: none !important;
+}
+
+.desktop_divshow {
+  display: block !important;
+}
+.mobile_divhide {
+  display: none !important;
+}
 @media (min-width: 0px) and (max-width: 749px) {
   .desktop_image_new,
   .header__icon.header__icon--videocall {
@@ -3172,20 +3185,6 @@ button,
   -ms-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.desktop_image_new {
-  display: flex !important;
-}
-.mobile_image_new {
-  display: none !important;
-}
-
-.desktop_divshow {
-  display: block !important;
-}
-.mobile_divhide {
-  display: none !important;
-}
-
 .SquareBanner_image_new {
   display: flex !important;
 }
