@@ -24,6 +24,29 @@
 .Index_top_banner_slider_allloop_innerboxs_videoimage_new video {
   width: 100%; /*position:absolute; object-fit:cover; top:0; left:0; bottom:0; right:0; height:100% !important;*/
 }
+@media only screen and (max-width: 1024px) {
+  .template-index .Index_top_banner_slider_inner_new .swiper-pagination {
+    padding-top: 0;
+  }
+  .Index_top_banner_slider_new
+    .swiper-container-horizontal
+    > .swiper-pagination-bullets
+    .swiper-pagination-bullet {
+    margin: 20px;
+  }
+}
+.template--mens-detail-new
+  .Index_top_banner_slider_inner_new
+  .swiper-pagination {
+  padding-top: 12px;
+}
+@media screen and (max-width: 767px) {
+  .Index_top_banner_slider_inner_new
+    .swiper-pagination
+    .swiper-pagination-bullet {
+    margin: 20px;
+  }
+}
 @media (min-width: 750px) and (max-width: 989px) {
   .Index_top_banner_slider_main_new {
     margin: 20px auto;

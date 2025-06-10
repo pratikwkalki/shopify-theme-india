@@ -5603,17 +5603,6 @@ div[data-widget-style] div.stamped-container {
     width: 50%;
   }
 }
-@media only screen and (max-width: 1024px) {
-  .template-index .Index_top_banner_slider_inner_new .swiper-pagination {
-    padding-top: 0;
-  }
-  .Index_top_banner_slider_new
-    .swiper-container-horizontal
-    > .swiper-pagination-bullets
-    .swiper-pagination-bullet {
-    margin: 20px;
-  }
-}
 @media only screen and (max-width: 990px) {
   .float1 {
     position: fixed;
@@ -6965,11 +6954,6 @@ body.template-customers-activate_account .customer .field {
 }
 
 .template--mens-detail-new
-  .Index_top_banner_slider_inner_new
-  .swiper-pagination {
-  padding-top: 12px;
-}
-.template--mens-detail-new
   #tagalys-namespace.tagalys-namespace
   .widget
   .widget-heading {
@@ -7170,11 +7154,6 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
   }
   .card-information > .price {
     margin-top: 8px !important;
-  }
-  .Index_top_banner_slider_inner_new
-    .swiper-pagination
-    .swiper-pagination-bullet {
-    margin: 20px;
   }
   .additional-options-wrapper label {
     font-size: 13px;
