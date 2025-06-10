@@ -58,7 +58,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<style> h2._textHeading_2aowh_35 {\n  display: none !important;\n}\n</style>\n<script>\ndocument.querySelectorAll('._textHeading_2aowh_35').forEach(el => {\n  el.remove();\n});\n</script>",
+        "custom_liquid": "<style> h2._textHeading_2aowh_35 {\n  display: none !important;\n}\n</style>\n<script>\nsetTimeout(() => {\n  document.querySelectorAll('._textHeading_2aowh_35').forEach(el => {\n    el.remove();\n  });\n}, 3000);\n</script>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
