@@ -1,7 +1,7 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {%- if page.handle contains 'kalki-fashion-show' -%}
-  {{ 'page-kalki-fashion-show.css' | asset_url | stylesheet_tag }}
+  {{ 'page-kalki-fashion-show.css' | asset_url | stylesheet_tag: preload: true }}
 {% endif %}
 {%- style -%}
    .section-{{ section.id }}-padding {
