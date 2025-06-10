@@ -7032,11 +7032,6 @@ wishlist-link-floating {
   padding: 8px 20px !important;
   min-width: fit-content !important;
 }
-@media screen and (max-width: 750px) {
-  .MagicToolboxContainer {
-    position: relative;
-  }
-}
 
 #paypal-button-container .paypal-buttons {
   visibility: visible;
