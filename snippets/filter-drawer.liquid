@@ -1,3 +1,4 @@
+{{ 'component-facets.css' | asset_url | stylesheet_tag }}
 <menu-drawer
     class="mobile-facets__wrapper{% if filter_type == 'horizontal' or filter_type == 'vertical' %} medium-hide large-up-hide{% endif %}"
     data-breakpoint="mobile"
