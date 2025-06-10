@@ -387,6 +387,15 @@
         "main_background_color": "#ffffff",
         "main_heading_text": ""
       }
+    },
+    "index_form_app_detail_new_rjpYJw": {
+      "type": "Index-form-app-detail-new",
+      "name": "Index Form App Detail",
+      "settings": {
+        "main_background_color": "#FFFFFF",
+        "main_heading_text": "<p>The Ultimate In-Store Experience via 24x7 Video Shopping</p>",
+        "main_information_text": "<p>Our Stylists On Call Can Speak: English, Hindi, Gujarati & Marathi</p>"
+      }
     }
   },
   "order": [
@@ -399,6 +408,7 @@
     "wedding_category_list_3DPkC7",
     "fireworks_section_H6KUEb",
     "index_side_by_side_banner_new_i7fVEx",
-    "index_side_by_side_banner_new_k6VCHq"
+    "index_side_by_side_banner_new_k6VCHq",
+    "index_form_app_detail_new_rjpYJw"
   ]
 }
