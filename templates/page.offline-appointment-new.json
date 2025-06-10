@@ -15,7 +15,7 @@
         "main_background_color": "#ffffff",
         "main_desktop_full_image": "shopify://shop_images/Rectangle_290-min.jpg",
         "main_mobile_full_image": "shopify://shop_images/Rectangle_290-min.jpg",
-        "main_information_text": "<p>Book Your Appointment <br/>at Santacruz Store.</p>"
+        "main_information_text": "<h1>Book Your Appointment<br/>at Santacruz Store.</h1>"
       }
     },
     "page_offline_icons_with_texts_new_ztPyc7": {
@@ -103,7 +103,7 @@
     "visit_our_store_WVPGR8": {
       "type": "Visit-Our-Store",
       "settings": {
-        "main_background_color": "#FFFFFF",
+        "main_background_color": "#ffffff",
         "main_heading_text": "Visit our Store",
         "meta_object_handle_name_text": "index_visit_our_stores"
       }
