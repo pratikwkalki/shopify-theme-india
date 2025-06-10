@@ -58,7 +58,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<style> h2._textHeading_2aowh_35 {\n  display: none !important;\n}\n</style>\n<script>\nwindow.addEventListener(\"load\", () => {\n  setTimeout(() => {\n    document.querySelectorAll('._textHeading_2aowh_35').forEach(el => {\n      el.style.display = 'none';\n    });\n  }, 3000); // 3 seconds delay\n})\n</script>",
+        "custom_liquid": "<style> h2._textHeading_2aowh_35 {\n  display: none !important;\n}\n</style>\n<script>\nwindow.addEventListener(\"load\", () => {\n  setTimeout(() => {\n    document.querySelectorAll('._textHeading_2aowh_35').forEach(el => {\n      if (el.textContent.trim() === \"Wholesale Application Form\") {\n        el.style.display = 'none';\n      }\n    });\n  }, 1000); // Adjust delay as needed (in milliseconds)\n});\n</script>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
@@ -68,7 +68,7 @@
   "order": [
     "main",
     "index_title_new_weArLA",
-    "17225830965689c5d1",
-    "custom_liquid_bMCHtQ"
+    "custom_liquid_bMCHtQ",
+    "17225830965689c5d1"
   ]
 }
