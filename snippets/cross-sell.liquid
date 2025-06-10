@@ -1,5 +1,6 @@
 {% if product.metafields.custom.cross_sell != blank %}
     {{ "cross-sell.css" | asset_url | stylesheet_tag }}
+  {{ 'cs-option-drop.css' | asset_url | stylesheet_tag }}
     <script src="{{ "cross-sell.js" | asset_url }}" defer></script>
 
     <cross-sell class="cross-sell">
