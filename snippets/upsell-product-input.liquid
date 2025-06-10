@@ -1,5 +1,6 @@
 {% assign stitct_note = stitch_return_note %}
 {% if product_ != blank %}
+  {{ 'cs-option-drop.css' | asset_url | stylesheet_tag }}
   <upsell-product class="upsell-product-wrapper"
     {% if snippet_name != blank  %} data-upsell-petticoat-container="{{ snippet_name }}" {% endif %} data-upsell-product-price="{{ product_.price | money_without_currency }}">
     {% if has_image %}
