@@ -8711,58 +8711,7 @@ div[data-widget-style] div.stamped-container {
 }
 
 /* ------------- Customization Charges ---------------- */
-.customization-charges .Page_template_breadcrumb_new .breadcrumbs {
-  padding-top: 16px;
-}
-.customization-charges.Page_template_main_new {
-  padding: 0 0 46px;
-}
-.customization-tailoring {
-  background-color: #fff6f2;
-  max-width: 768px;
-  margin: 0 auto;
-  padding: 28px;
-}
-.pagebuilder-column-group {
-  width: 100%;
-  border: 1px solid rgb(225 225 229);
-  padding: 25px;
-}
-.customization__main-heading {
-  font-family: Noto Serif Display;
-  font-size: 36px;
-  font-weight: 600;
-  text-transform: capitalize;
-  line-height: 1.2;
-  text-align: center;
-  --tw-text-opacity: 1;
-  color: rgba(102, 37, 5, var(--tw-text-opacity));
-  margin: 0 0 30px;
-}
-.customization__subheading {
-  margin: 0 0 16px;
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-  letter-spacing: 2px;
-}
-.customization-list {
-  margin: 0 0 32px;
-  padding: 0;
-}
-.customization-list li {
-  list-style: none;
-  text-align: center;
-  margin-bottom: 8px;
-  font-size: 16px;
-  line-height: 1.375;
-}
-.customization-tailoring img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
+
 @media screen and (max-width: 990px) {
   .page_scroll_up_new.collection_header_transparent_new
     .shopify-section-header-sticky
@@ -8773,25 +8722,6 @@ div[data-widget-style] div.stamped-container {
   }
 }
 @media screen and (max-width: 767px) {
-  .customization__main-heading {
-    font-size: 30px;
-    font-weight: 500;
-  }
-  .customization__subheading {
-    font-weight: 500;
-    font-size: 18px;
-  }
-  .pagebuilder-column-group {
-    padding: 20px;
-  }
-  .customization-tailoring {
-    padding: 20px;
-  }
-  .customization-list {
-    margin: 0 0 16px;
-    padding: 0;
-  }
-
   .template-product.template--bridal .header_top_new wishlist-link .wk-button {
     --icon-stroke: white !important;
   }
@@ -9300,45 +9230,6 @@ body.template-customers-activate_account .customer .field {
   height: 100% !important;
 }
 
-/* customization-charges */
-.customization-tailoring {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  padding: 28px;
-  text-align: center;
-}
-.customization-tailoring .pagebuilder-column-group {
-  width: 100%;
-  border-width: 1px;
-  border-color: #e1e1e5;
-  padding: 20px;
-}
-.customization-tailoring h1 {
-  font-family: var(--font-noto-serif-display);
-  color: #662505;
-  margin: 0 0 30px;
-  font-size: 36px;
-  line-height: 40px;
-}
-.customization-tailoring h2 {
-  letter-spacing: 2.4px;
-  margin: 0 0 16px;
-}
-.customization-tailoring ul {
-  padding: 0 0 32px;
-  list-style-type: none;
-  margin: 0;
-}
-.customization-tailoring ul li {
-  font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 8px;
-}
-.customization-tailoring ul li:last-child {
-  margin-bottom: 0;
-}
-/* customization-charges */
 .template--maternity-size-guide .Page_template_title_new h1 {
   font-size: 40px;
   margin-top: 44px;
@@ -9761,20 +9652,6 @@ body
   }
   .template--kalki-fashion-show main .grid--3-col-desktop {
     padding: 0;
-  }
-  .customization-tailoring {
-    padding: 20px;
-  }
-  .customization-tailoring h1 {
-    font-size: 30px;
-    line-height: 36px;
-  }
-  .customization-tailoring h2 {
-    letter-spacing: 1.8px;
-    font-size: 18px;
-  }
-  .customization-tailoring ul {
-    padding-bottom: 16px;
   }
   .page_size_chart_tabs_inner_new {
     padding-bottom: 40px;
