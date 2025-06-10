@@ -62,7 +62,7 @@
 .Page_offline_template_parts_2_detail_new {
   padding: 15px;
 }
-.Page_offline_template_parts_2_detail_new p {
+.Page_offline_template_parts_2_detail_new p,.Page_offline_template_parts_2_detail_new h1,.Page_offline_template_parts_2_detail_new h2 {
   color: #fff;
   text-align: center;
   font-size: 36px;
@@ -190,7 +190,7 @@
   .Page_offline_template_parts_1_detail_videoimage_new {
     height: 300px;
   }
-  .Page_offline_template_parts_2_detail_new p {
+  .Page_offline_template_parts_2_detail_new p,.Page_offline_template_parts_2_detail_new h1,.Page_offline_template_parts_2_detail_new h2 {
     font-size: 30px;
   }
 
@@ -208,7 +208,7 @@
   .Page_offline_template_parts_1_detail_videoimage_new {
     height: 270px;
   }
-  .Page_offline_template_parts_2_detail_new p {
+  .Page_offline_template_parts_2_detail_new p,.Page_offline_template_parts_2_detail_new h1,.Page_offline_template_parts_2_detail_new h2 {
     font-size: 26px;
   }
 
@@ -242,7 +242,7 @@
   .Page_offline_template_parts_1_detail_videoimage_new {
     height: 250px;
   }
-  .Page_offline_template_parts_2_detail_new p {
+  .Page_offline_template_parts_2_detail_new p,.Page_offline_template_parts_2_detail_new h1,.Page_offline_template_parts_2_detail_new h2 {
     font-size: 26px;
   }
 
