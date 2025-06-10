@@ -1,0 +1,43 @@
+.kalki-fashion-show_page_new  .multicolumn-list__item  .media--adapt  .multicolumn-card__image {
+  width: 100%;
+}
+.kalki-fashion-show_page_new  .background-none  .multicolumn-card__image-wrapper  + .multicolumn-card__info:empty {
+  display: none;
+}
+.kalki-fashion-show_page_new .multicolumn [class*="_multi_video_collection"] {
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.2);
+}
+.kalki-fashion-show_page_new  .shopify-section:last-child  .multicolumn  [class*="_multi_video_collection"] {
+  border-bottom: 0;
+}
+.template--kalki-fashion-show main .page-width {
+  max-width: 912px;
+}
+.template--kalki-fashion-show main .Product_breadcrumb_new .page-width {
+  max-width: 1470px;
+}
+.template--kalki-fashion-show [id*="multi_video_collection"] .page-width > div {
+  border-bottom: 1px solid #d9d9d9;
+}
+.template--kalki-fashion-show .multicolumn-card__info:empty {
+  display: none;
+}
+.template--kalki-fashion-show  main  .grid--3-col-desktop  .multicolumn-card-spacing {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.template--kalki-fashion-show main .grid--3-col-desktop img {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media screen and (min-width: 990px) {
+  .template--kalki-fashion-show main .grid--3-col-desktop {
+    --grid-desktop-horizontal-spacing: 40px;
+  }
+}
+@media screen and (max-width: 749px) {
+  .template--kalki-fashion-show main .grid--3-col-desktop {
+    padding: 0;
+  }
+}

@@ -2283,8 +2283,138 @@ div.ymq-option-title {
   background: url(option_down_arrow.svg) no-repeat right 12px center;
   font-family: Futura, sans-serif;
 }
-
-
+.tagalys-similar-products #tagalys-namespace {
+  margin: 0 -8px;
+}
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .products-and-navigation {
+  padding-right: 0;
+}
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .carousel-actions-container
+  .carousel-btn:first-child {
+  transform: rotate(-0deg);
+}
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .carousel-actions-container {
+  position: static;
+}
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .carousel-btn
+  svg,
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .carousel-btn.btn-disabled {
+  display: none;
+}
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .carousel-btn {
+  background: #fffffff2 url("right_arrow_slider.svg") no-repeat center center;
+  width: 52px;
+  height: 50px;
+  right: 8px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .carousel-btn:first-child {
+  left: 7px;
+  right: auto;
+  transform: rotate(-180deg);
+}
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .product
+  .product-link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .widget-header {
+  margin: 0;
+}
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .widget-heading {
+  font-family: var(--font-body-family) !important;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 118.75%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .product
+  .product-name,
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .product
+  .product-prices {
+  text-align: left;
+}
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .product
+  .product-name {
+  font-family: var(--font-body-family);
+  line-height: 128.571%;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .product
+  .product-prices {
+  margin-top: 8px;
+  line-height: 100%;
+}
+.tagalys-similar-products
+  #tagalys-namespace.tagalys-namespace
+  .widget
+  .product
+  .product-prices
+  .product-price-regular {
+  font-weight: 500;
+  line-height: 100%;
+}
+@media screen and (max-width: 989px) {
+  .tagalys-similar-products
+    #tagalys-namespace.tagalys-namespace
+    .widget
+    .carousel-btn {
+    width: 42px;
+    height: 40px;
+    background-size: 12px;
+  }
+}
 @media screen and (min-width: 768px) {
   body.template-product {
       padding-bottom: 110px;
@@ -2497,5 +2627,37 @@ div.ymq-option-title {
   .variable-popup-open .sticky-addtocart-button .atc-wishlist-counter,
   .variable-popup-open .atc-wishlist-wrap > p {
     display: none !important;
+  }
+}
+@media screen and (max-width: 749px) {
+  .tagalys-similar-products
+    #tagalys-namespace.tagalys-namespace
+    .widget
+    .widget-heading {
+    font-size: 22px;
+  }
+  .tagalys-similar-products
+    #tagalys-namespace.tagalys-namespace
+    .widget
+    .carousel-btn {
+    width: 36px;
+    height: 34px;
+    background-size: 10px;
+  }
+  .tagalys-similar-products
+    #tagalys-namespace.tagalys-namespace
+    .widget
+    .product
+    .product-name {
+    font-size: 13px;
+    line-height: 130%;
+  }
+  .tagalys-similar-products
+    #tagalys-namespace.tagalys-namespace
+    .widget
+    .product
+    .product-prices
+    .product-price-regular {
+    font-size: 14px;
   }
 }
