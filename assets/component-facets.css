@@ -446,11 +446,6 @@ details.mobile-facets__disclosure:not([open]) .mobile-facets__close {
   align-items: center;
 }
 
-.facets__price .field-currency {
-  align-self: center;
-  margin-right: 0.6rem;
-}
-
 .facets__price .field__label {
   left: 1.5rem;
 }
@@ -1846,6 +1841,7 @@ input.mobile-facets__checkbox {
   max-width: 200px;
 }
 .facets__price .field-currency {
+  align-self: center;
   margin-right: 4px;
   font-size: 14px;
   font-style: normal;
