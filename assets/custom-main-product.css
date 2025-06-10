@@ -2445,6 +2445,11 @@ wishlist-button-block button.wk-button.wk-selected {
   padding-right: 63px;
   padding-left: 100px;
 }
+@media screen and (max-width: 750px) {
+  .MagicToolboxContainer {
+    position: relative;
+  }
+}
 @media only screen and (min-width: 990px) and (max-width: 1424px) {
   .product_details.is-only-wishlist
     #shopify-block-wishlist_king_wishlist_button_block_8denaR
