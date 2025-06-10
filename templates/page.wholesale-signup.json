@@ -18,6 +18,7 @@
     },
     "index_title_new_weArLA": {
       "type": "Index-title-new",
+      "disabled": true,
       "name": "Index Title",
       "settings": {
         "main_background_color": "#ffffff",
@@ -48,9 +49,7 @@
       "block_order": [
         "forms_inline_TDAydy"
       ],
-      "custom_css": [
-        "#app-embed h2._textHeading_2aowh_35 {display: none !important;}"
-      ],
+      "custom_css": [],
       "settings": {
         "include_margins": true
       }
@@ -59,7 +58,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<style>\n#app-embed h2._textHeading_2aowh_35 {\n  display: none !important;\n}\n</style>",
+        "custom_liquid": "<style> h2._textHeading_2aowh_35 {\n  display: none !important;\n}\n</style>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
