@@ -29,7 +29,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<style> h2._textHeading_2aowh_35 {\n  display: none !important;\n}\n</style>\n<script>\nwindow.addEventListener(\"load\", () => {\nconsole.log{\"sdfsdf\"};\n  setTimeout(() => {\n    document.querySelectorAll('._textHeading_2aowh_35').forEach(el => {\n      if (el.textContent.trim() === \"Wholesale Application Form\") {\n        el.style.display = 'none';\n      }\n    });\n  }, 1000); // Adjust delay as needed (in milliseconds)\n});\n</script>",
+        "custom_liquid": "<style> h2._textHeading_2aowh_35 {\n  display: none !important;\n}\n</style>\n<script>\nwindow.addEventListener(\"load\", () => {\necho{\"sdfsdf\"};\n  setTimeout(() => {\n    document.querySelectorAll('._textHeading_2aowh_35').forEach(el => {\n      if (el.textContent.trim() === \"Wholesale Application Form\") {\n        el.style.display = 'none';\n      }\n    });\n  }, 1000); // Adjust delay as needed (in milliseconds)\n});\n</script>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
