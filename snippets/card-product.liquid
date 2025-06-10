@@ -125,7 +125,7 @@
                 {% elsif template contains 'luxe-collection-new' %}
                   <img
                     srcset="
-                      {%- if card_product.featured_media.width >= 400 -%}{%- render 'gumlet', src: featured_media w: 485 %} 610w,{%- endif -%}
+                      {%- if card_product.featured_media.width >= 400 -%}{%- render 'gumlet', src: featured_media w: 600 %} 610w,{%- endif -%}
                       {%- if card_product.featured_media.width >= 350 -%}{%- render 'gumlet', src: featured_media w: 350 %} 1066w,{%- endif -%}
                       {%- render 'gumlet', src: featured_media w: 600 %} {{ card_product.featured_media.width }}w
                     "
@@ -145,7 +145,7 @@
                   {%- if card_product.media[1] != null and show_secondary_image -%}
                     <img
                       srcset="
-                        {%- if card_product.media[1].width >= 400 -%}{%- render 'gumlet', src: featured_media_hover w: 485 %} 610w,{%- endif -%}
+                        {%- if card_product.media[1].width >= 400 -%}{%- render 'gumlet', src: featured_media_hover w: 600 %} 610w,{%- endif -%}
                         {%- if card_product.media[1].width >= 350 -%}{%- render 'gumlet', src: featured_media_hover w: 350 %} 1066w,{%- endif -%}
                         {%- render 'gumlet', src: featured_media_hover w: 600 %} {{ card_product.media[1].width }}w
                       "
