@@ -6841,14 +6841,14 @@ body.template-customers-activate_account .customer .field {
   margin: auto;
 }
 
-.tagalys-namespace  .widget  .product  .product-prices.discounted  .product-price-regular,
-#tagalys-namespace  .widget  .product  .product-prices.discounted  .product-price-regular,
+.tagalys-namespace .widget .product .product-prices.discounted .product-price-regular,
+#tagalys-namespace .widget .product .product-prices.discounted .product-price-regular,
 #tagalys-namespace.tagalys-namespace  .widget  .product  .product-prices.discounted  .product-price-regular {
   color: #8e8d99;
   text-decoration: line-through;
   font-weight: normal;
 }
-#sotp  .sotp-popup-wrapper  .sotp-popup-inner  .sotp-popup-content  .sotp-popup-container  .sotp-popup-img-section  .img-container  img {
+#sotp .sotp-popup-wrapper .sotp-popup-inner .sotp-popup-content .sotp-popup-container .sotp-popup-img-section .img-container img {
   max-height: 100%;
 }
 .select:before {
@@ -6874,14 +6874,7 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
   align-items: center;
 }
 @media screen and (max-width: 1024px) {
-  body
-    #sotp
-    .sotp-popup-wrapper
-    .sotp-popup-inner
-    .sotp-popup-content
-    .sotp-popup-container
-    .sotp-widget
-    #sotp-new-popup.olWrapper {
+  body #sotp .sotp-popup-wrapper .sotp-popup-inner .sotp-popup-content .sotp-popup-container .sotp-widget #sotp-new-popup.olWrapper {
     height: 430px;
   }
 }
