@@ -8833,7 +8833,7 @@ body.template-customers-activate_account .customer .field {
   .widget-heading {
   margin-bottom: 8px;
 }
-.our-stores_page_new .Common_title_new h2 {
+.our-stores_page_new .Common_title_new h2,.our-stores_page_new .Common_title_new h1 {
   font-size: 36px;
 }
 .our-stores_page_new .Index_title_main_new {
@@ -9263,7 +9263,7 @@ body
   .our-stores_page_new .Index_title_main_new {
     margin-top: 20px;
   }
-  .our-stores_page_new .Common_title_new h2 {
+  .our-stores_page_new .Common_title_new h2,.our-stores_page_new .Common_title_new h1 {
     font-size: 26px;
     text-align: center;
   }
