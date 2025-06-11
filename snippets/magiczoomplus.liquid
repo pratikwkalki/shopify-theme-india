@@ -270,22 +270,14 @@ a[data-slide-id].mz-thumb-selected img {
                {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'gumlet', src: gm_featured_image w: 1400 %}" {% endif %}
                >
               <link rel="preload" as="image" href="{%- render 'gumlet', src: gm_featured_image w: 1000 %}" type="image/avif" fetchpriority="high">
-              <picture>
-                <source srcset="{%- render 'gumlet', src: gm_featured_image w: 380 %}" media="(max-width: 380px)" />
-                <source srcset="{%- render 'gumlet', src: gm_featured_image w: 500 %}" media="(max-width: 500px)" />
-                <source srcset="{%- render 'gumlet', src: gm_featured_image w: 748 %}" media="(max-width: 748px)" />
-                <source srcset="{%- render 'gumlet', src: gm_featured_image w: 513 %}" media="(max-width: 1024px)" />
-                <source srcset="{%- render 'gumlet', src: gm_featured_image w: 600 %}" media="(max-width: 1200px)" />
-                <source srcset="{%- render 'gumlet', src: gm_featured_image w: 675 %}" media="(max-width: 1350px)" />
-                <img  
-                    style="max-width:100%; aspect-ratio:auto {{ mt_featured_image.width }} / {{ mt_featured_image.height }}; height:auto;"
-                    width="{{ mt_featured_image.width }}"
-                    height="{{ mt_featured_image.height }}"
-                    itemprop="image" 
-                    class="image_first_slide" 
-                    src="{%- render 'gumlet', src: gm_featured_image w: 1920 %}" 
-                    alt="{{ mt_featured_image.alt | escape | default: product.title }}" />
-              </picture>
+                    <img  
+                        style="max-width:100%; aspect-ratio:auto {{ mt_featured_image.width }} / {{ mt_featured_image.height }}; height:auto;"
+                        width="{{ mt_featured_image.width }}"
+                        height="{{ mt_featured_image.height }}"
+                        itemprop="image" 
+                        class="image_first_slide" 
+                        src="{%- render 'gumlet', src: gm_featured_image w: 1000 %}" 
+                        alt="{{ mt_featured_image.alt | escape | default: product.title }}" />
             </a>
             
             {% if MagicToolboxShowMessage == 'Yes' %}
