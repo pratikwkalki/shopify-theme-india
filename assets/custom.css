@@ -2832,55 +2832,7 @@ summary.list-menu__item {
     max-width: 47.8rem;
   }
 }
-.customer form {
-  margin-top: 4rem;
-}
-.customer button {
-  margin: 4rem 0 1.5rem;
-}
-.customer .field {
-  margin: 2rem 0 0;
-}
-.customer .field:first-of-type {
-  margin-top: 0;
-}
-.login a {
-  display: block;
-  margin: 0 auto;
-  width: fit-content;
-}
-.login p {
-  margin: 1.5rem 0;
-}
-#login,
-#recover {
-  scroll-margin-top: 20rem;
-}
-.customer .field[js-phone-field-wrapper] label {
-  padding-left: 90px;
-}
-.customer-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  opacity: 0;
-  z-index: 99999;
-}
-.customer-popup .close-btn svg {
-  height: 100%;
-  width: 100%;
-}
-.Customer_register_template_mainright_new .info-message {
-  font-size: 12px;
-  margin: 10px 0 0;
-  line-height: 1.4;
-}
+
 @media screen and (max-width: 767px) {
   .float1 {
     position: fixed;
@@ -2932,12 +2884,6 @@ summary.list-menu__item {
   .cart-upsell .upsell-slider,
   .cart-upsell .upsell-title {
     padding: 0 16px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .Customer_register_template_mainleft_new_sections--22093156450584__customer_popup {
-    background: url("https://uk.kalkifashion.com/cdn/shop/files/Frame_1482-min.jpg?v=1711190823")
-      center center/cover no-repeat !important;
   }
 }
 :root {
