@@ -200,9 +200,9 @@ a[data-slide-id].mz-thumb-selected img {
                    class="js-no-transition {{ class }} video-slide"
                    data-slide-id="zoom" 
                    data-zoom-id="zoom{{ product.id }}" 
-                   href="{%- render 'gumlet', src: gm_vide_preview_image w: 1920 %}"
+                   href="{%- render 'gumlet', src: gm_vide_preview_image w: 1400 %}"
                    >
-                   <img src="{%- render 'gumlet', src: gm_vide_preview_image w: 1920 %}"
+                   <img src="{%- render 'gumlet', src: gm_vide_preview_image w: 1400 %}"
                      alt="custom video"
                     >
                  </a>
@@ -211,10 +211,10 @@ a[data-slide-id].mz-thumb-selected img {
                  <a data-variants="{{ product_variants }}"                
                    class="js-no-transition {{ class }}"
                    data-slide-id="zoom" 
-                   href="{%- render 'gumlet', src: gm_preview_image w: 1920 %}" 
+                   href="{%- render 'gumlet', src: gm_preview_image w: 1400 %}" 
                    {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{%- render 'gumlet', src: gm_preview_image w: 1400 %}"{% endif %}
                    data-zoom-id="zoom{{ product.id }}" 
-                   data-image="{%- render 'gumlet', src: gm_preview_image w: 1920 %}" 
+                   data-image="{%- render 'gumlet', src: gm_preview_image w: 1400 %}" 
               {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'gumlet', src: gm_preview_image w: 1400 %}" {% endif %}
                    title="{{ image.alt | escape }}">
                         <img  
@@ -279,11 +279,11 @@ a[data-slide-id].mz-thumb-selected img {
           <div {% if forloop.index > 1 %}js-remove-on-mobile{% endif %} data-slide-num="{{ forloop.index0 }}" data-slide-id="zoom" class="MagicToolboxSlide {% if first_image_is_video != true %}active-magic-slide{% endif %}">
               {% assign gm_featured_image = image.preview_image  | image_url %}
               <a 
-               href="{%- render 'gumlet', src: gm_featured_image w: 1920 %}"
+               href="{%- render 'gumlet', src: gm_featured_image w: 1400 %}"
                {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{%- render 'gumlet', src: gm_featured_image w: 1400 %}"{% endif %}
                class="js-no-transition MagicZoomPlus" id="zoom{{ product.id }}" 
                title="{{ image.alt | escape }}"
-               data-image="{%- render 'gumlet', src: gm_featured_image w: 1920 %}" 
+               data-image="{%- render 'gumlet', src: gm_featured_image w: 1400 %}" 
                {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'gumlet', src: gm_featured_image w: 1400 %}" {% endif %}
                >
                 <picture>
