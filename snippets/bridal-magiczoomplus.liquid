@@ -297,6 +297,7 @@ a[data-slide-id].mz-thumb-selected img {
                     style="max-width:100%; aspect-ratio:auto {{ image.width }} / {{ image.height }}; height:auto;"
                     width="{{ image.width }}"
                     height="{{ image.height }}"
+                    testing
                     itemprop="image" 
                     src="{%- render 'gumlet', src: gm_featured_image w: 1920 %}" 
                     alt="{{ image.alt | escape | default: product.title }}" 
