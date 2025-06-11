@@ -6701,30 +6701,6 @@ wishlist-link-floating {
   + .product-option[data-property-first="Estimated delivery"] {
   font-size: 0;
 }
-.order-btn-wrap button:after,
-.order-btn-wrap button:before {
-  display: none;
-}
-.order_details_title_new .order-btn-wrap button {
-  margin: 0;
-  border: 1px solid #223330;
-  background: no-repeat;
-  color: #223330;
-  border-radius: 5px;
-  width: auto;
-  padding: 10px 20px;
-  min-height: auto;
-  transition: 0.3s;
-  min-width: auto;
-}
-.order_details_title_new .order-btn-wrap button:hover {
-  background-color: #223330;
-  color: #fff;
-}
-#mobileOTPLoginSection .g-recaptcha {
-  margin-top: 15px;
-}
-
 .shopby-btn-next,
 .shopby-btn-prev {
   background-color: transparent !important;
@@ -6818,15 +6794,6 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
   }
 }
 @media screen and (max-width: 749px) {
-  .order_details_title_new #reorder-all-btn {
-    padding: 10px 12px;
-    font-size: 14px;
-  }
-  #mobileOTPLoginSection .g-recaptcha {
-    transform: scale(0.9);
-    transform-origin: top left;
-    margin-bottom: -10px;
-  }
   .video-call-appointment_page_new .Index_custom_category_slider {
     padding: 0;
   }
