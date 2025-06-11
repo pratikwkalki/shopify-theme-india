@@ -352,6 +352,14 @@
 #product-grid {
   margin-top: 24px;
 }
+#product-grid.grid {
+  margin-top: 20px;
+  --grid-desktop-horizontal-spacing: 20px;
+  --grid-desktop-vertical-spacing: 48px;
+  --grid-mobile-horizontal-spacing: 8px;
+  position: relative;
+  z-index: 0;
+}
 @media (min-width: 990px) and (max-width: 1424px) {
   .collection_left_new {
     width: 260px;
