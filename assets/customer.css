@@ -2029,6 +2029,19 @@ label[for="AddressProvinceNew"] {
 }
 /* Register & Login */
 
+body.template-customers-reset_password .section-header,
+body.template-customers-reset_password .shopify-section-group-header-group,
+body.template-customers-reset_password .shopify-section-group-footer-group,
+body.template-customers-activate_account .section-header,
+body.template-customers-activate_account .shopify-section-group-header-group,
+body.template-customers-activate_account .shopify-section-group-footer-group {
+  display: none;
+}
+body.template-customers-reset_password .customer .field,
+body.template-customers-activate_account .customer .field {
+  flex-wrap: wrap;
+}
+
 @media (min-width: 990px) and (max-width: 1424px) {
   #AddAddress {
     margin-top: 30px;

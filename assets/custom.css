@@ -6653,7 +6653,6 @@ div[data-widget-style] div.stamped-container {
 .gw-widget-placeholder-RC-wrapper {
   display: none !important;
 }
-
 .unavailable-variant span.kalki-atc-dot,
 .unavailable-variant [js-pdp-original-price] {
   display: none;
@@ -6799,20 +6798,6 @@ wishlist-link-floating {
 body.popup-active {
   overflow: hidden;
 }
-
-body.template-customers-reset_password .section-header,
-body.template-customers-reset_password .shopify-section-group-header-group,
-body.template-customers-reset_password .shopify-section-group-footer-group,
-body.template-customers-activate_account .section-header,
-body.template-customers-activate_account .shopify-section-group-header-group,
-body.template-customers-activate_account .shopify-section-group-footer-group {
-  display: none;
-}
-body.template-customers-reset_password .customer .field,
-body.template-customers-activate_account .customer .field {
-  flex-wrap: wrap;
-}
-
 .template--mens-detail-new
   #tagalys-namespace.tagalys-namespace
   .widget
