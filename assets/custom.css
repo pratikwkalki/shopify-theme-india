@@ -5965,13 +5965,6 @@ div[data-widget-style] div.stamped-container {
     margin-bottom: 0;
   }
   /* Header */
-
-  /* Product */
-  .bridal-links .collection-button {
-    min-width: 300px;
-    padding: 13px 16px;
-  }
-  /* Product */
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
