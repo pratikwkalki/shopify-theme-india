@@ -3464,48 +3464,6 @@ summary .icon-caret {
   width: 38px;
   height: 40px;
 }
-.template-search .template-search__search .field {
-  height: 50px;
-  border: 1px solid #d9d9d9;
-  border-radius: 6px;
-}
-.template-search__search input {
-  height: 100% !important;
-  border-bottom: 0 !important;
-}
-.template-search .search__input.field__input {
-  margin: 0 0 0 45px;
-  border-radius: 6px;
-}
-.template-search .template-search__search button {
-  height: 100%;
-  left: 10px;
-}
-.template-search .template-search__search .field__label {
-  top: 12px;
-  left: 44px;
-}
-.template-search .template-search__search .field__input:not(:placeholder-shown) ~ .field__label,
-.template-search .template-search__search .field__input:focus ~ .field__label {
-  top: -7px;
-  left: 26px;
-  background-color: #fff;
-  z-index: 2;
-  padding: 0px 8px;
-  display: block;
-}
-.template-search .search__input.field__input::-webkit-input-placeholder {
-  opacity: 0 !important;
-}
-.template-search .search__input.field__input::-moz-placeholder {
-  opacity: 0 !important;
-}
-.template-search .search__input.field__input:-ms-input-placeholder {
-  opacity: 0 !important;
-}
-.template-search .search__input.field__input:-moz-placeholder {
-  opacity: 0 !important;
-}
 .Header_desktop_left_menu_inner_new .select_first_element > a {
   padding-left: 20px !important;
   padding-right: 20px !important;
@@ -6379,9 +6337,7 @@ div[data-widget-style] div.stamped-container {
     transform: rotate(360deg);
   }
 }
-.template-search .template-search__search {
-  display: none;
-}
+
 @media only screen and (min-width: 989px) {
   .template--bridal .Header_announcement_bar_new {
     display: none;
@@ -6552,15 +6508,6 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
 @media screen and (max-width: 1024px) {
   body #sotp .sotp-popup-wrapper .sotp-popup-inner .sotp-popup-content .sotp-popup-container .sotp-widget #sotp-new-popup.olWrapper {
     height: 430px;
-  }
-}
-
-@media screen and (min-width: 990px) {
-  .template-search .collection_pagination_new {
-    justify-content: flex-start;
-  }
-  .template-search .collection_pagination_new > div {
-    width: 33.33%;
   }
 }
 @media screen and (max-width: 767px) {
