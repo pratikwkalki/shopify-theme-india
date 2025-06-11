@@ -6743,12 +6743,6 @@ body.popup-active {
   .widget-heading {
   margin-bottom: 8px;
 }
-.our-stores_page_new .Common_title_new h2,.our-stores_page_new .Common_title_new h1 {
-  font-size: 36px;
-}
-.our-stores_page_new .Index_title_main_new {
-  margin-bottom: 0;
-}
 .tagalys-namespace .widget .product .product-prices.discounted .product-price-regular,
 #tagalys-namespace .widget .product .product-prices.discounted .product-price-regular,
 #tagalys-namespace.tagalys-namespace  .widget  .product  .product-prices.discounted  .product-price-regular {
@@ -6846,26 +6840,12 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
   .template--video-appointment-new .Common_title_new h2 {
     text-align: center;
   }
-  .about-us_page_new .Index_title_main_new,
-  .our-stores_page_new .Index_title_main_new {
+  .about-us_page_new .Index_title_main_new {
     margin-top: 20px;
-  }
-  .our-stores_page_new .Common_title_new h2,.our-stores_page_new .Common_title_new h1 {
-    font-size: 26px;
-    text-align: center;
   }
   .contact-us_page_new .page_store_detail_slider_new .Common_title_new h2 {
     text-align: center;
     margin: 35px 0 20px;
-  }
-  .page_size_chart_tabs_inner_new {
-    padding-bottom: 40px;
-  }
-  .page_size_chart_tabs_inner_new .page_store_detail_tabs_innerdetail_new {
-    margin: 0;
-  }
-  .page_size_chart_tabs_inner_new.page_store_detail_tabs_inner_new .tablinks {
-    font-size: 16px;
   }
 }
 @media screen and (max-width: 767px) {
