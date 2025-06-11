@@ -811,4 +811,13 @@
   .template--rooted-by-kalki .page_photo_video_tabs_image_inner_new span.button_white {
     font-size: 14px;
   }
+  .page_size_chart_tabs_inner_new {
+    padding-bottom: 40px;
+  }
+  .page_size_chart_tabs_inner_new .page_store_detail_tabs_innerdetail_new {
+    margin: 0;
+  }
+  .page_size_chart_tabs_inner_new.page_store_detail_tabs_inner_new .tablinks {
+    font-size: 16px;
+  }
 }
