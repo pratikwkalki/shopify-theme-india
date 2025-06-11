@@ -549,4 +549,7 @@
   .template--video-appointment-new .Common_title_new h2 {
     text-align: center;
   }
+  .video-call-appointment_page_new .Index_custom_category_slider {
+    padding: 0;
+  }
 }
