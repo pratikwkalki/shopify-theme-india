@@ -276,7 +276,7 @@ a[data-slide-id].mz-thumb-selected img {
             {%- endif -%}
           
           {% if image.media_type == 'image' %}
-          <div {% if forloop.index > 1 %}js-remove-on-mobile{% endif %} data-slide-num="{{ forloop.index0 }}" data-slide-id="zoom" class="MagicToolboxSlide {% if first_image_is_video != true %}active-magic-slide{% endif %}">
+          <div {% if forloop.index > 1 %}data-remove-on-mobile="true"{% endif %} data-slide-num="{{ forloop.index0 }}" data-slide-id="zoom" class="MagicToolboxSlide {% if first_image_is_video != true %}active-magic-slide{% endif %}">
               {% assign gm_featured_image = image.preview_image  | image_url %}
               <a 
                href="{%- render 'gumlet', src: gm_featured_image w: 1400 %}"
@@ -377,7 +377,15 @@ a[data-slide-id].mz-thumb-selected img {
                 <div data-slide-num="{{ forloop.index0 }}" class="MagicToolboxSlide magic_tool_video {% if first_image_is_video and forloop.index0 ==  0 %}active-magic-slide{% endif %}" data-slide-id="video-{{ image.id }}" data-video-url="{{ image.alt }}"></div>
           {% endif %}
         {% endfor %}
-      
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth <= 768) { // or use 767 if you want <768 only
+    document.querySelectorAll('[data-remove-on-mobile="true"]').forEach(function (el) {
+      el.remove();
+    });
+  }
+});
+      </script>
         {% if MagicToolboxSirvID != '' %}
             <div class="MagicToolboxSlide" data-slide-id="spin">
               <div class="Sirv" id="sirv-spin" data-options="autostart:off">
