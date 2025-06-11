@@ -6836,9 +6836,6 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
   .template--mens-detail-new .Page_weaves_banner_slider_main_new .page-width {
     padding: 0 16px !important;
   }
-  .template--video-appointment-new .Common_title_new h2 {
-    text-align: center;
-  }
 }
 @media screen and (max-width: 767px) {
   body.template-index {

@@ -546,4 +546,7 @@
   .Page_video_call_video_banner_title_new {
     margin-bottom: 20px;
   }
+  .template--video-appointment-new .Common_title_new h2 {
+    text-align: center;
+  }
 }
