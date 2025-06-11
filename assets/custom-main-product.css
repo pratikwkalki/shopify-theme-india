@@ -2827,6 +2827,9 @@ body.template-product:has(.is-only-wishlist) .sticky-addtocart-button {
   .additional-options-wrapper label {
     font-size: 13px;
   }
+  .template-product.template--bridal .header_top_new wishlist-link .wk-button {
+    --icon-stroke: white !important;
+  }
 }
 @media screen and (max-width: 749px) {
   .tagalys-similar-products
