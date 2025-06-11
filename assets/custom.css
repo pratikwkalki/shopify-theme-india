@@ -6563,15 +6563,6 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
     width: 33.33%;
   }
 }
-
-@media screen and (max-width: 749px) {
-  .template--mens-detail-new .Index_round_column_list_1_allloop_mainboxs_new {
-    border-top: 1px solid #f5f0f0;
-  }
-  .template--mens-detail-new .Page_weaves_banner_slider_main_new .page-width {
-    padding: 0 16px !important;
-  }
-}
 @media screen and (max-width: 767px) {
   body.template-index {
     padding-bottom: 80px;
