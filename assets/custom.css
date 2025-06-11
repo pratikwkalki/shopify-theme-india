@@ -5454,27 +5454,7 @@ div[data-widget-style] div.stamped-container {
 .card__heading .plp-delivery-message {
   display: none;
 }
-.popup_manufacturing_click {
-  color: #662505;
-  cursor: pointer;
-  display: inline-block;
-  vertical-align: top;
-}
-.popup_manufacturing_click:hover {
-  text-decoration: underline;
-}
-.popup_manufacturing_close {
-  position: absolute;
-  right: 25px;
-  top: 25px;
-}
-.popup_manufacturing_open {
-  max-width: 824px;
-}
-.popup_manufacturing_open
-  .Index_icon_with_text_list_allloop_popup_desc_main_new {
-  padding: 40px;
-}
+
 #insta-feed {
   position: relative;
   z-index: 1;
@@ -5920,10 +5900,6 @@ div[data-widget-style] div.stamped-container {
     font-size: 14px;
   }
   /* Index */
-  .popup_manufacturing_open
-    .Index_icon_with_text_list_allloop_popup_desc_main_new {
-    padding: 24px;
-  }
 }
 
 @media (min-width: 990px) and (max-width: 1424px) {
