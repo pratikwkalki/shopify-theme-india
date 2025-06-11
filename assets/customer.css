@@ -2076,6 +2076,12 @@ body.template-customers-activate_account .customer .field {
     margin-top: 30px;
   }
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .Customer_register_template_mainleft_new_sections--22093156450584__customer_popup {
+    background: url("https://uk.kalkifashion.com/cdn/shop/files/Frame_1482-min.jpg?v=1711190823")
+      center center/cover no-repeat !important;
+  }
+}
 @media (min-width: 750px) and (max-width: 989px) {
   .template-customers-account {
     background: #fff;
