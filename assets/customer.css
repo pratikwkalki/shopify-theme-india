@@ -1,3 +1,6 @@
+.customer .field[js-phone-field-wrapper] label {
+  padding-left: 90px;
+}
 .customer:not(.account):not(.order) {
   margin: 0 auto;
   max-width: 33.4rem;
@@ -2064,6 +2067,11 @@ body.template-customers-activate_account .customer .field {
 }
 #mobileOTPLoginSection .g-recaptcha {
   margin-top: 15px;
+}
+.Customer_register_template_mainright_new .info-message {
+  font-size: 12px;
+  margin: 10px 0 0;
+  line-height: 1.4;
 }
 @media (min-width: 0px) and (max-width: 1024px) {
   .editaddress .editaddressbox {
