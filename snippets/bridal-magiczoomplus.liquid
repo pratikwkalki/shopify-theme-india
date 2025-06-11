@@ -96,7 +96,6 @@ a[data-slide-id].mz-thumb-selected img {
 
 {% assign SirvMaxHeight = MagicToolboxThumbnailImageSize %}
 {% assign SelectorvMaxHeight = MagicToolboxSelectorImageSize %}
-
 <div class="MagicToolboxContainer layout-{{ MagicToolboxThumbnailsLayout }} thumbnail-size-{{ MagicToolboxSelectorImageSize_Text }}{% if product.images.size < 2 %} no-thumbnails{% endif %}">
 
     {% assign mt_current_variant = product.selected_variant | default: product.selected_or_first_available_variant %}
