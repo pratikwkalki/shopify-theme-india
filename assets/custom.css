@@ -6567,13 +6567,6 @@ div[data-widget-style] div.stamped-container {
 .gw-widget-placeholder-RC-wrapper {
   display: none !important;
 }
-.unavailable-variant span.kalki-atc-dot,
-.unavailable-variant [js-pdp-original-price] {
-  display: none;
-}
-.product-custom .product_details .cta_button_new.unavailable-variant {
-  opacity: 1;
-}
 .float1 {
   display: none;
 }

@@ -2573,6 +2573,14 @@ body.template-product:has(.is-only-wishlist) .sticky-addtocart-button {
   .Index_icon_with_text_list_allloop_popup_desc_main_new {
   padding: 40px;
 }
+.unavailable-variant span.kalki-atc-dot,
+.unavailable-variant [js-pdp-original-price] {
+  display: none;
+}
+.product-custom .product_details .cta_button_new.unavailable-variant {
+  opacity: 1;
+}
+
 @media (min-width: 990px) and (max-width: 1424px) {
   .visitors_counter .shopper-view {
     font-size: 14px !important;
