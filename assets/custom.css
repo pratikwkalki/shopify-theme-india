@@ -2828,9 +2828,6 @@ summary.list-menu__item {
   .no-js .menu-drawer {
     height: auto;
   }
-  .customer:not(.account):not(.order) {
-    max-width: 47.8rem;
-  }
 }
 
 @media screen and (max-width: 767px) {
