@@ -6804,12 +6804,7 @@ body.popup-active {
   .widget-heading {
   margin-bottom: 8px;
 }
-.our-stores_page_new .Common_title_new h2,.our-stores_page_new .Common_title_new h1 {
-  font-size: 36px;
-}
-.our-stores_page_new .Index_title_main_new {
-  margin-bottom: 0;
-}
+
 .template--maternity-size-guide .Page_template_title_new h1 {
   font-size: 40px;
   margin-top: 44px;
@@ -6923,13 +6918,8 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
   .template--video-appointment-new .Common_title_new h2 {
     text-align: center;
   }
-  .about-us_page_new .Index_title_main_new,
-  .our-stores_page_new .Index_title_main_new {
+  .about-us_page_new .Index_title_main_new {
     margin-top: 20px;
-  }
-  .our-stores_page_new .Common_title_new h2,.our-stores_page_new .Common_title_new h1 {
-    font-size: 26px;
-    text-align: center;
   }
   .contact-us_page_new .page_store_detail_slider_new .Common_title_new h2 {
     text-align: center;

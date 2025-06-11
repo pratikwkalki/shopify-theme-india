@@ -178,6 +178,13 @@
   border-radius: 4px;
   overflow: hidden;
 }
+.our-stores_page_new .Common_title_new h2,.our-stores_page_new .Common_title_new h1 {
+  font-size: 36px;
+}
+.our-stores_page_new .Index_title_main_new {
+  margin-bottom: 0;
+}
+
 @media (min-width: 990px) and (max-width: 1424px) {
   .Page_our_stores_objects_detail_mainleft_new {
     padding-right: 40px;
@@ -257,6 +264,13 @@
   .Page_our_stores_objects_detail_innerleft_innerboxs_bothbutton_new {
     margin-top: 16px;
     flex-wrap: wrap;
+  }
+  .our-stores_page_new .Index_title_main_new {
+    margin-top: 20px;
+  }
+  .our-stores_page_new .Common_title_new h2,.our-stores_page_new .Common_title_new h1 {
+    font-size: 26px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 1024px) {
