@@ -349,6 +349,23 @@
 .Bridal_collection_desktop_only_new {
   justify-content: flex-start !important;
 }
+#product-grid {
+  margin-top: 24px;
+}
+@media (min-width: 990px) and (max-width: 1424px) {
+  .collection_left_new {
+    width: 260px;
+    padding-right: 60px;
+  }
+  #product-grid.grid--4-col-desktop .grid__item {
+    width: calc(
+      33.34% - var(--grid-desktop-horizontal-spacing) * 3 / 4
+    ) !important;
+    max-width: calc(
+      33.34% - var(--grid-desktop-horizontal-spacing) * 3 / 4
+    ) !important;
+  }
+}
 @media (min-width: 750px) and (max-width: 9999px) {
   .Bridal_collection_desktop_only_new {
     display: flex !important;
@@ -486,6 +503,8 @@
 .collection-mobile-middle-banner {
   display: none;
 }
+
+
 @media screen  and (max-width: 767px) {
   .collection-mobile-middle-banner {
     display: block;
