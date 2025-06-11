@@ -2580,6 +2580,9 @@ body.template-product:has(.is-only-wishlist) .sticky-addtocart-button {
 .product-custom .product_details .cta_button_new.unavailable-variant {
   opacity: 1;
 }
+.product-custom media-gallery {
+  flex: 1;
+}
 
 @media (min-width: 990px) and (max-width: 1424px) {
   .visitors_counter .shopper-view {

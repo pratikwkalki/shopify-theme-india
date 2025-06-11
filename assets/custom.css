@@ -6570,10 +6570,6 @@ div[data-widget-style] div.stamped-container {
 .float1 {
   display: none;
 }
-
-.product-custom media-gallery {
-  flex: 1;
-}
 .header .wk-icon svg {
   width: 22px !important;
   height: 22px !important;
