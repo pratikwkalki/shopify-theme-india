@@ -55,6 +55,12 @@
   background-color: #fff;
   color: #000;
 }
+.shopby-btn-next,
+.shopby-btn-prev {
+  background-color: transparent !important;
+  height: 47px;
+  margin: auto;
+}
 @media (min-width: 990px) and (max-width: 1424px) {
   .Collection_object_lists_main_new {
     margin: 40px 0;

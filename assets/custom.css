@@ -6446,12 +6446,6 @@ wishlist-link-floating {
   + .product-option[data-property-first="Estimated delivery"] {
   font-size: 0;
 }
-.shopby-btn-next,
-.shopby-btn-prev {
-  background-color: transparent !important;
-  height: 47px;
-  margin: auto;
-}
 #fc_frame.fc-widget-normal {
   z-index: 999;
 }
