@@ -6005,13 +6005,6 @@ div[data-widget-style] div.stamped-container {
   .header__icons {
     grid-gap: 12px;
   }
-  .template--inara-collection .grid--5-col-desktop .grid__item,
-  .template--rumi-collection .grid--5-col-desktop .grid__item,
-  .template--alanna-panday-collection .grid--5-col-desktop .grid__item,
-  .template--deme-collection .grid--5-col-desktop .grid__item {
-    width: calc(25% - 12px);
-    max-width: calc(25% - 12px);
-  }
 }
 
 @media (min-width: 1200px) and (max-width: 1424px) {
@@ -6766,33 +6759,6 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .template--inara-collection .grid--5-col-desktop .grid__item,
-  .template--rumi-collection .grid--5-col-desktop .grid__item,
-  .template--alanna-panday-collection .grid--5-col-desktop .grid__item,
-  .template--deme-collection .grid--5-col-desktop .grid__item {
-    width: calc(33.33% - 12px);
-    max-width: calc(33.33% - 12px);
-  }
-}
-@media screen and (min-width: 640px) and (max-width: 767px) {
-  .template--inara-collection .grid--5-col-desktop .grid__item,
-  .template--rumi-collection .grid--5-col-desktop .grid__item,
-  .template--alanna-panday-collection .grid--5-col-desktop .grid__item,
-  .template--deme-collection .grid--5-col-desktop .grid__item {
-    width: calc(50% - 12px);
-    max-width: calc(50% - 12px);
-  }
-}
-@media screen and (max-width: 639px) {
-  .template--inara-collection .grid--5-col-desktop .grid__item,
-  .template--rumi-collection .grid--5-col-desktop .grid__item,
-  .template--alanna-panday-collection .grid--5-col-desktop .grid__item,
-  .template--deme-collection .grid--5-col-desktop .grid__item {
-    width: 100%;
-    max-width: 100%;
-  }
-}
 @media screen and (max-width: 749px) {
   .video-call-appointment_page_new .Index_custom_category_slider {
     padding: 0;
