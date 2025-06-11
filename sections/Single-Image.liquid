@@ -4,8 +4,31 @@
     justify-content:center
   }
   .desktop_image_new,.mobile_image_new{width:100%}
+  {%- if page.handle contains 'maternity-size-guide' -%}
+    .template--maternity-size-guide .Page_template_title_new h1 {
+      font-size: 40px;
+      margin-top: 44px;
+    }
+    .template--maternity-size-guide .Page_template_main_new {
+      padding-bottom: 24px;
+    }
+    .template--maternity-size-guide .single-page-align {
+      display: block;
+    }
+    .template--maternity-size-guide .single-page-align img {
+      width: revert-layer;
+      max-width: 100%;
+      margin: auto;
+    }
+    @media screen and (max-width: 749px) {
+      .template--maternity-size-guide .Page_template_title_new h1 {
+        font-size: 28px;
+        margin-top: 20px;
+        text-align: center;
+      }
+    }
+  {%- endif -%}
 {%- endstyle -%}
-
 <div class="multicolumn">
   <div class="page-width">
     <div class="image-wrap">

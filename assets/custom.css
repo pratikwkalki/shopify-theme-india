@@ -6749,22 +6749,6 @@ body.popup-active {
 .our-stores_page_new .Index_title_main_new {
   margin-bottom: 0;
 }
-.template--maternity-size-guide .Page_template_title_new h1 {
-  font-size: 40px;
-  margin-top: 44px;
-}
-.template--maternity-size-guide .Page_template_main_new {
-  padding-bottom: 24px;
-}
-.template--maternity-size-guide .single-page-align {
-  display: block;
-}
-.template--maternity-size-guide .single-page-align img {
-  width: revert-layer;
-  max-width: 100%;
-  margin: auto;
-}
-
 .tagalys-namespace .widget .product .product-prices.discounted .product-price-regular,
 #tagalys-namespace .widget .product .product-prices.discounted .product-price-regular,
 #tagalys-namespace.tagalys-namespace  .widget  .product  .product-prices.discounted  .product-price-regular {
@@ -6883,11 +6867,6 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
   .page_size_chart_tabs_inner_new.page_store_detail_tabs_inner_new .tablinks {
     font-size: 16px;
   }
-  .template--maternity-size-guide .Page_template_title_new h1 {
-    font-size: 28px;
-    margin-top: 20px;
-    text-align: center;
-  }
 }
 @media screen and (max-width: 767px) {
   body.template-index {
@@ -6931,8 +6910,5 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
   }
   .card-information > .price {
     margin-top: 8px !important;
-  }
-  .additional-options-wrapper label {
-    font-size: 13px;
   }
 }
