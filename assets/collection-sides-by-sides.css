@@ -129,6 +129,20 @@
   margin-top: 20px;
   padding: 12px 20px;
 }
+.SquareBanner_image_new {
+  display: flex !important;
+}
+.SquareBanner_mobile_image_new {
+  display: none !important;
+}
+@media (max-width: 586px) {
+  .SquareBanner_image_new {
+    display: none !important;
+  }
+  .SquareBanner_mobile_image_new {
+    display: flex !important;
+  } 
+}
 @media (min-width: 990px) and (max-width: 1424px) {
   .Collection_sides_by_sides_innerleft_1_videoimageboth_new {
     height: 430px;
