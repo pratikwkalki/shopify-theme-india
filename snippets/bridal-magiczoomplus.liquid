@@ -286,13 +286,6 @@ a[data-slide-id].mz-thumb-selected img {
                data-image="{%- render 'gumlet', src: gm_featured_image w: 1400 %}" 
                {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'gumlet', src: gm_featured_image w: 1400 %}" {% endif %}
                >
-                <picture>
-                  <source srcset="{%- render 'gumlet', src: gm_featured_image w: 380 %}" media="(max-width: 380px)" />
-                  <source srcset="{%- render 'gumlet', src: gm_featured_image w: 500 %}" media="(max-width: 500px)" />
-                  <source srcset="{%- render 'gumlet', src: gm_featured_image w: 748 %}" media="(max-width: 748px)" />
-                  <source srcset="{%- render 'gumlet', src: gm_featured_image w: 513 %}" media="(max-width: 1024px)" />
-                  <source srcset="{%- render 'gumlet', src: gm_featured_image w: 600 %}" media="(max-width: 1200px)" />
-                  <source srcset="{%- render 'gumlet', src: gm_featured_image w: 675 %}" media="(max-width: 1350px)" />
                   <img  
                     style="max-width:100%; aspect-ratio:auto {{ image.width }} / {{ image.height }}; height:auto;"
                     width="{{ image.width }}"
@@ -302,7 +295,6 @@ a[data-slide-id].mz-thumb-selected img {
                     src="{%- render 'gumlet', src: gm_featured_image w: 1400 %}" 
                     alt="{{ image.alt | escape | default: product.title }}" 
                   />
-                </picture>  
             </a>
               
               {% if MagicToolboxShowMessage == 'Yes' %}
