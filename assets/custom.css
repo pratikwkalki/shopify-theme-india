@@ -5483,17 +5483,6 @@ div[data-widget-style] div.stamped-container {
   display: none;
 }
 
-@media (min-width: 0px) and (max-width: 597px) {
-  .address_buttons_new .button_login_new {
-    width: 100%;
-  }
-  .addresses ul.address-edit-box li {
-    padding: 10px 10px 115px;
-  }
-  .address_button .button_login_new {
-    width: 50%;
-  }
-}
 @media only screen and (max-width: 990px) {
   .float1 {
     position: fixed;
