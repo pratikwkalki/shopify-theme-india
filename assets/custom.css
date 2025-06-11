@@ -6019,11 +6019,6 @@ div[data-widget-style] div.stamped-container {
 }
 
 @media (min-width: 0px) and (max-width: 1024px) {
-  .editaddress .editaddressbox {
-    width: 80%;
-    height: 50%;
-  }
-
   /* Header */
   header-drawer {
     display: block !important;

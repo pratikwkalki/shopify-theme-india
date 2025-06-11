@@ -2065,7 +2065,12 @@ body.template-customers-activate_account .customer .field {
 #mobileOTPLoginSection .g-recaptcha {
   margin-top: 15px;
 }
-
+@media (min-width: 0px) and (max-width: 1024px) {
+  .editaddress .editaddressbox {
+    width: 80%;
+    height: 50%;
+  }
+}
 @media (min-width: 990px) and (max-width: 1424px) {
   #AddAddress {
     margin-top: 30px;
