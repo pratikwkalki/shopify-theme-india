@@ -2813,6 +2813,9 @@ body.template-product:has(.is-only-wishlist) .sticky-addtocart-button {
   .variable-popup-open .atc-wishlist-wrap > p {
     display: none !important;
   }
+  .additional-options-wrapper label {
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 749px) {
   .tagalys-similar-products
