@@ -1,6 +1,48 @@
 .customer .field[js-phone-field-wrapper] label {
   padding-left: 90px;
 }
+.customer form {
+  margin-top: 4rem;
+}
+.customer button {
+  margin: 4rem 0 1.5rem;
+}
+.customer .field {
+  margin: 2rem 0 0;
+}
+.customer .field:first-of-type {
+  margin-top: 0;
+}
+.login a {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+.login p {
+  margin: 1.5rem 0;
+}
+#login,
+#recover {
+  scroll-margin-top: 20rem;
+}
+.customer-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  opacity: 0;
+  z-index: 99999;
+}
+.customer-popup .close-btn svg {
+  height: 100%;
+  width: 100%;
+}
+
 .customer:not(.account):not(.order) {
   margin: 0 auto;
   max-width: 33.4rem;
