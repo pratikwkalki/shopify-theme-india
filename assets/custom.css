@@ -6835,17 +6835,9 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
   }
   .template--mens-detail-new .Page_weaves_banner_slider_main_new .page-width {
     padding: 0 16px !important;
-  }  
-  .about-us_page_new .Common_title_new h2,
+  }
   .template--video-appointment-new .Common_title_new h2 {
     text-align: center;
-  }
-  .about-us_page_new .Index_title_main_new {
-    margin-top: 20px;
-  }
-  .contact-us_page_new .page_store_detail_slider_new .Common_title_new h2 {
-    text-align: center;
-    margin: 35px 0 20px;
   }
 }
 @media screen and (max-width: 767px) {

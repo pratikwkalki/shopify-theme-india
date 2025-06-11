@@ -765,6 +765,12 @@
     line-height: 128.571%;
     letter-spacing: 0.98px;
   }
+  .about-us_page_new .Common_title_new h2 {
+    text-align: center;
+  }
+  .about-us_page_new .Index_title_main_new {
+    margin-top: 20px;
+  }
 }
 @media screen and (max-width: 767px) {
   .template--style-deck .rich-text .rich-text__blocks {
