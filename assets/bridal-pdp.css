@@ -318,6 +318,10 @@
 @media(min-width:990px) and (max-width:1424px){
   .bridal-pdp.product-custom .product_details {  max-width: 50%; flex: 50%; padding-right: 16px; padding-left: 35px; }
   .bridal-pdp .product_review_new {  padding: 20px 0 20px; }
+  .bridal-links .collection-button {
+    min-width: 300px;
+    padding: 13px 16px;
+  }
 }
 
 
