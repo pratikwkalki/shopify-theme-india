@@ -2042,6 +2042,27 @@ body.template-customers-activate_account .customer .field {
   flex-wrap: wrap;
 }
 
+.order-btn-wrap button:after,
+.order-btn-wrap button:before {
+  display: none;
+}
+.order_details_title_new .order-btn-wrap button {
+  margin: 0;
+  border: 1px solid #223330;
+  background: no-repeat;
+  color: #223330;
+  border-radius: 5px;
+  width: auto;
+  padding: 10px 20px;
+  min-height: auto;
+  transition: 0.3s;
+  min-width: auto;
+}
+.order_details_title_new .order-btn-wrap button:hover {
+  background-color: #223330;
+  color: #fff;
+}
+
 @media (min-width: 990px) and (max-width: 1424px) {
   #AddAddress {
     margin-top: 30px;
@@ -2282,6 +2303,10 @@ body.template-customers-activate_account .customer .field {
     padding: 0 20px !important;
   }
   /* Register & Login */
+  .order_details_title_new #reorder-all-btn {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
 }
 @media (min-width: 0px) and (max-width: 597px) {
   .address_buttons_new .button_login_new {
