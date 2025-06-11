@@ -1,3 +1,10 @@
+.hometestimonials {
+  font-family: var(--font-body-family) !important;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 118.75%;
+  margin: 0;
+}
 .Index_custom_testimonials_slider .swiper-button-next,
 .Index_custom_testimonials_slider .swiper-button-prev {
   top: 42%;
