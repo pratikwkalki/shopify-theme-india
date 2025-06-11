@@ -6338,15 +6338,6 @@ div[data-widget-style] div.stamped-container {
   }
 }
 
-@media only screen and (min-width: 989px) {
-  .template--bridal .Header_announcement_bar_new {
-    display: none;
-  }
-}
-.template--bridal .shopify-section-header-sticky {
-  top: 0 !important;
-}
-
 /* ------------- Customization Charges ---------------- */
 
 @media screen and (max-width: 990px) {
