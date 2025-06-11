@@ -3148,51 +3148,6 @@ select {
   --tw-bg-opacity: 1;
   background-color: #000;
 }
-/* bride and barat form header footer hide start*/
-
-.template--bride-barat-form #MainContent,
-.template--measurement #MainContent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 1400px;
-  margin: auto;
-  width: 70%;
-}
-.template--bride-barat-form .shopify-section.block,
-.template--bride-barat-form .shopify-section.section,
-.template--measurement .shopify-section.block,
-.template--measurement .shopify-section.section {
-  width: 50%;
-}
-
-.template--bride-barat-form .test-demo.header-wrapper,
-.template--bride-barat-form .Footer_main_new,
-.template--measurement .test-demo.header-wrapper,
-.template--measurement .Footer_main_new {
-  display: none;
-}
-.template--measurement {
-  display: grid;
-  grid-template-rows: auto;
-}
-.template--bride-barat-form {
-  display: grid;
-  grid-template-rows: auto;
-}
-@media (max-width: 750px) {
-  .template--bride-barat-form #MainContent,
-  .template--measurement #MainContent {
-    flex-direction: column;
-  }
-  .template--bride-barat-form .shopify-section.block,
-  .template--bride-barat-form .shopify-section.section,
-  .template--measurement .shopify-section.block,
-  .template--measurement .shopify-section.section {
-    width: 100%;
-  }
-}
-/* bride and barat form header footer hide close  */
 .mobile_title_new {
   display: none;
 }
