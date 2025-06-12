@@ -2885,4 +2885,20 @@ body.template-product:has(.is-only-wishlist) .sticky-addtocart-button {
   .visitors_counter .shopper-view {
     font-size: 12px !important;
   }
+  .Product_object_faqs_main_new {
+    padding: 50px 0;
+  }
+  .Product_related_new {
+    padding: 25px 0;
+  }
+  #stamped-main-widget {
+    margin: 20px -16px !important;
+  }
+  .product_whishlist_new
+    #widget-fave-html
+    .ssw-wishlist-btn
+    .ssw-fave-btn-content
+    i {
+    display: flex;
+  }
 }
