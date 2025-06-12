@@ -106,7 +106,9 @@ ul.ul-menu-list li a:nth-child(1){
   height: 8px;
   background-color: transparent;
 }
-
+.megamenu_leftright_new::-webkit-scrollbar-thumb {
+  background: #000;
+}
 /* New design start*/
 .mega-menu__list {
   display: grid;

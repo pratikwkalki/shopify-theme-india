@@ -1461,35 +1461,6 @@ select {
 cart-drawer.is-empty .drawer__header {
   display: none;
 }
-.mega-menu__content {
-  padding: 0 !important;
-  box-shadow: 0 0;
-  border: 0;
-  background: 0 0 !important;
-}
-.megamenu_leftright_main_new {
-  max-width: 1344px;
-  width: 100%;
-  margin: auto;
-}
-.megamenu_leftright_new {
-  display: flex;
-  background: #fff;
-  border: 1px solid #f0f0f2;
-  padding: 40px 40px 0 !important;
-  width: 100%;
-  overflow-y: scroll;
-  border-top: 0;
-  margin: 0;
-}
-.megamenu_leftright_new::-webkit-scrollbar {
-  width: 3px;
-  height: 8px;
-  background-color: transparent;
-}
-.megamenu_leftright_new::-webkit-scrollbar-thumb {
-  background: #000;
-}
 .megamenu_left_new {
   flex: 1;
 }
