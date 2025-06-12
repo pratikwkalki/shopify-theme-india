@@ -482,9 +482,6 @@
     width: 12px;
     height: 20px;
   }
-  .collection .card-information .plp-delivery-message {
-    display: none;
-  }
   .only-for-mobile-delivery-days {
     display: block;
     margin-bottom: 10px;
