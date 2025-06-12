@@ -77,7 +77,9 @@
             </div>
           </div>
           <script defer>
+            document.addEventListener("DOMContentLoaded", function () {
             new Swiper('.collection-slider-{{ section.id }}',{loop:!1,grabCursor:!1,spaceBetween:26,slidesPerGroup:1,slidesPerView:7,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},breakpoints:{0:{slidesPerView:"auto",spaceBetween:26,},749:{slidesPerView:"auto",spaceBetween:20,},990:{slidesPerView:7,spaceBetween:26,},1200:{slidesPerView:7,spaceBetween:26,},1440:{slidesPerView:7,spaceBetween:26,}}})
+            });
           </script>
         {%- endif -%}
       </div>
