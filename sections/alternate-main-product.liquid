@@ -103,7 +103,7 @@
           <div class="product-stamps-wrap">
             {% if product.metafields.custom.online_stamps != blank %}
               <div class="product_online_stamps">
-                  {{ product.metafields.custom.online_stamps }}
+                  {{ product.metafields.custom.online_stamps.value }}
               </div>
             {% endif %}
             {% if product.metafields.custom.festival_stamp != blank %}
