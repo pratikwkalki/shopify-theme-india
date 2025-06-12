@@ -820,4 +820,9 @@
   .page_size_chart_tabs_inner_new.page_store_detail_tabs_inner_new .tablinks {
     font-size: 16px;
   }
+  .Page_bridal_detail_objects_faqs_main_new {
+    margin: 32px 0;
+    padding: 0;
+    background: none !important;
+  }
 }
