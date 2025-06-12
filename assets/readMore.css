@@ -27,3 +27,9 @@
     .hidden {
       display: none;
     }
+
+@media screen and (max-width: 749px) {
+  .read-more-button {
+      font-size: .8em;;
+    }
+}
