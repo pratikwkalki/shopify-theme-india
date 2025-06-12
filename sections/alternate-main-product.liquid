@@ -1,5 +1,3 @@
-
-
 {{ "custom-main-product.css" | asset_url | stylesheet_tag: preload: true }}
 {{ "blouse-style-popup.css" |  asset_url |  stylesheet_tag }}
 {{ "khadi-product.css" |  asset_url |  stylesheet_tag }}
@@ -103,9 +101,9 @@
             </div>
           {% endif %}
           <div class="product-stamps-wrap">
-            {% if product.metafields.magento.online_stamps != blank %}
+            {% if product.metafields.custom.online_stamps != blank %}
               <div class="product_online_stamps">
-                  {{ product.metafields.magento.online_stamps }}
+                  {{ product.metafields.custom.online_stamps }}
               </div>
             {% endif %}
             {% if product.metafields.custom.festival_stamp != blank %}
