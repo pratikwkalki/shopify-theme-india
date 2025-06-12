@@ -154,10 +154,6 @@
      {{ metaobject.page_hreflang.value }} 
   {%- endif -%}
     
-  
-
-
-    
     {%- if page.handle contains 'bridal-wedding-dresses' -%}
       <link rel="alternate" hreflang="en-us" href="https://www.kalkifashion.com/bridal-wedding-dresses" />
       <link rel="alternate" hreflang="en-gb" href="https://uk.kalkifashion.com/pages/bridal-wedding-dresses" />
@@ -518,14 +514,6 @@
       {% if template contains 'bridal-collection-new' %} header-init-state-enable {% endif %}{% if customer != null %} customer-loggedin {% endif %}"
     js-product-template
   >
-
-
-
-    
-    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
-      {{ 'accessibility.skip_to_text' | t }}
-    </a>
-
     {%- if settings.cart_type == 'drawer' -%}
       {%- render 'cart-drawer' -%}
     {%- endif -%}
