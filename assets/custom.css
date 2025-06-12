@@ -5581,30 +5581,11 @@ div[data-widget-style] div.stamped-container {
   #tagalys-namespace.tagalys-namespace .widget-body {
     margin: 0 -8px;
   }
-  /* Index */
-
-  /* Product (min-width:0px) and (max-width:749px)*/
-  .Product_object_faqs_main_new {
-    padding: 50px 0;
-  }
-  .Product_related_new {
-    padding: 25px 0;
-  }
-  #stamped-main-widget {
-    margin: 20px -16px !important;
-  }
-  .product_whishlist_new
-    #widget-fave-html
-    .ssw-wishlist-btn
-    .ssw-fave-btn-content
-    i {
-    display: flex;
-  }
-  .product_tag_new {
+  .Index_tag_new {
     font-size: 14px;
     text-align: left;
   }
-  /* Product */
+  /* Index */
 }
 
 @media (min-width: 750px) and (max-width: 989px) {
