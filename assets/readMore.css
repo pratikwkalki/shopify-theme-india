@@ -15,7 +15,7 @@
     .read-more-button {
       display: inline-block;
       margin-top: 10px;
-      color: #007BFF;
+      color: rgba(var(--color-foreground));
       cursor: pointer;
       text-decoration: underline;
       background: none;
