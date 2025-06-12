@@ -233,10 +233,24 @@
                   </div>
                   {% if collection.metafields.custom.collection_custom_title_description_new.value != blank %}
                     <div class="collection_custom_title_description_new" >
-                    <div class="read-more-container">
+                    <!-- <div class="read-more-container">
                       <p class="read-more-content">{{ collection.metafields.custom.collection_custom_title_description_new }}</p>
                       <button class="read-more-button">Read more</button>
-                    </div>
+                    </div> -->
+                    <div class="read-more-container">
+                        {% assign description = collection.metafields.custom.collection_custom_title_description_new %}
+                        {% assign words = description | split: ' ' %}
+                    
+                        {% if words.size > 40 %}
+                          <p class="read-more-content" data-full-text="{{ description | escape }}">
+                            {{ words | slice: 0, 40 | join: ' ' }}...
+                          </p>
+                          <button class="read-more-button">Read more</button>
+                        {% else %}
+                          <p class="read-more-content">{{ description }}</p>
+                          <button class="read-more-button hidden">Read more</button>
+                        {% endif %}
+                      </div>
                     </div>
                     
                   {% endif %}
