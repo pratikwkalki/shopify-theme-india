@@ -53,7 +53,7 @@
       {%- endif -%}
       {%- if current_product.metafields.custom.festival_stamp != blank -%}
         <div class="card_badge_festival_stamp">
-          {{ current_product.metafields.custom.festival_stamp[0] }}
+          {{ current_product.metafields.custom.festival_stamp.value }}
         </div>
       {%- endif -%}
     </div>
