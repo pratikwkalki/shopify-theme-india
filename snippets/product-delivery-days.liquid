@@ -56,6 +56,7 @@
           {{ current_product.metafields.custom.festival_stamp }}
         </div>
         {% for stamp in current_product.metafields.custom.festival_stamp %}
+          {{ stamp.value }}
         {% endfor %}
       {%- endif -%}
     </div>
