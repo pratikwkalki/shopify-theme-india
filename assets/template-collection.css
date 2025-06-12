@@ -360,6 +360,21 @@
   position: relative;
   z-index: 0;
 }
+
+.collection_pagination_new {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px !important;
+  position: relative;
+}
+.collection_pagination_new .pagination-wrapper {
+  margin-top: 0px !important;
+}
+.collection_pagination_new .facet-filters {
+  padding-left: 0 !important;
+}
+
 @media (min-width: 990px) and (max-width: 1424px) {
   .collection_left_new {
     width: 260px;

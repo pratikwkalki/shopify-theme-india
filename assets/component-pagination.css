@@ -80,6 +80,62 @@ a.pagination__item:hover::after {
 .pagination__item-arrow:hover::after {
   display: none;
 }
+
+.pagination-wrapper {
+  margin-top: 60px !important;
+}
+.pagination__item--prev {
+  width: 28px !important;
+  border: 1px solid #000;
+  border-radius: 100%;
+  margin-left: 6px;
+}
+.pagination__item--prev .icon {
+  margin: 0 !important;
+  transform: none !important;
+  height: 12px !important;
+  display: flex !important;
+}
+.pagination__item--next {
+  width: 28px !important;
+  border: 1px solid #000;
+  border-radius: 100%;
+  margin-right: 6px;
+}
+.pagination__item--next .icon {
+  margin: 0 !important;
+  transform: rotate(180deg) !important;
+  height: 12px !important;
+  display: flex !important;
+}
+.pagination__item {
+  height: 28px !important;
+}
+.pagination__list > li {
+  flex: 1 !important;
+  max-width: max-content !important;
+}
+.pagination__list > li:not(:last-child) {
+  margin-right: 12px !important;
+}
+.pagination__item {
+  color: #756f6f !important;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  min-width: 10px;
+  text-align: center;
+}
+.pagination__item--current:after,
+.pagination__item:hover:after {
+  display: none !important;
+}
+.pagination__item--current {
+  color: #000 !important;
+  opacity: 1 !important;
+}
+
 @media (min-width: 0px) and (max-width: 749px) {
   .pagination-wrapper {
     margin-top: 40px !important;
