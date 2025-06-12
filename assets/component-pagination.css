@@ -80,4 +80,8 @@ a.pagination__item:hover::after {
 .pagination__item-arrow:hover::after {
   display: none;
 }
-
+@media (min-width: 0px) and (max-width: 749px) {
+  .pagination-wrapper {
+    margin-top: 40px !important;
+  }
+}

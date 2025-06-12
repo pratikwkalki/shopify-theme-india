@@ -5605,12 +5605,6 @@ div[data-widget-style] div.stamped-container {
     text-align: left;
   }
   /* Product */
-
-  /* Collection (min-width:0px) and (max-width:749px)*/
-  .pagination-wrapper {
-    margin-top: 40px !important;
-  }
-  /* Collection */
   
   /* Bridal Page (min-width:0px) and (max-width:749px)*/
   .Page_bridal_detail_objects_faqs_main_new {
