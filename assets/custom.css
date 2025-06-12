@@ -4744,28 +4744,6 @@ summary .icon-caret {
   }
 }
 
-/* PLP footer explore more section */
-.plp-explore-more-section {
-  display: flex;
-  flex-wrap: Wrap;
-  grid-gap: 20px;
-}
-.plp-explore-more-section a {
-  width: calc(50% - 10px);
-}
-.plp-explore-more-section a img.Hover_image_new {
-  max-width: 100%;
-  width: 100%;
-}
-.plp-explore-more-section_title {
-  text-align: left;
-}
-@media (max-width: 750px) {
-  .plp-explore-more-section a {
-    width: calc(100%);
-  }
-}
-
 .collection_hide_announcement_bar_new .Header_announcement_bar_new {
   display: none;
 }
