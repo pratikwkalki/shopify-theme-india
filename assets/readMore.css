@@ -4,7 +4,6 @@
 
 .read-more-content {
       overflow: hidden;
-      max-height: 50px;
       transition: max-height 0.3s ease;
       margin: 0px 0;
     }
