@@ -22,7 +22,7 @@
   {%- endif -%}
   {%- comment -%} Collection Page Delivery Message {%- endcomment -%}
   {%- if template.name == 'collection' -%}
-    {%- if current_product.metafields.custom.filter_delivery != blank or current_product.metafields.magento.festival_stamp != blank -%}
+    {%- if current_product.metafields.custom.filter_delivery != blank or current_product.metafields.custom.festival_stamp != blank -%}
     {%- assign stamp = current_product.metafields.custom.filter_delivery | downcase -%}
     <div class="plp-delivery-message">
       {%- if current_product.metafields.custom.filter_delivery != blank -%}
@@ -51,9 +51,9 @@
           </span>
         </span>
       {%- endif -%}
-      {%- if current_product.metafields.magento.festival_stamp != blank -%}
+      {%- if current_product.metafields.custom.festival_stamp != blank -%}
         <div class="card_badge_festival_stamp">
-            {{ current_product.metafields.magento.festival_stamp }}
+            {{ current_product.metafields.custom.festival_stamp }}
         </div>
       {%- endif -%}
     </div>
