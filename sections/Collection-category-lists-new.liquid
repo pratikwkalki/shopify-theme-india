@@ -11,7 +11,7 @@
         {%- if section.blocks.size > 0 -%}
           <div class="Collection_category_lists_mainloop_new">
             <div class="Collection_category_lists_innerloop_new">
-              <div class="swiper-container Collection_custom_category_slider">
+              <div class="swiper-container Collection_custom_category_slider collection-slider-{{ section.id }}">
                 <div class="swiper-wrapper">
                   {%- for block in section.blocks -%}
                     {%- if block.settings.main_mp4_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank or block.settings.title != blank -%}
@@ -76,6 +76,9 @@
               </div>
             </div>
           </div>
+          <script>
+            new Swiper('.collection-slider-{{ section.id }}',{loop:!1,grabCursor:!1,spaceBetween:26,slidesPerGroup:1,slidesPerView:7,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},breakpoints:{0:{slidesPerView:"auto",spaceBetween:26,},749:{slidesPerView:"auto",spaceBetween:20,},990:{slidesPerView:7,spaceBetween:26,},1200:{slidesPerView:7,spaceBetween:26,},1440:{slidesPerView:7,spaceBetween:26,}}})
+          </script>
         {%- endif -%}
       </div>
     </div>
