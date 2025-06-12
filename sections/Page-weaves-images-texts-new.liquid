@@ -75,6 +75,11 @@
       </div>
     </div>
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Swiper('.Page_weaves_images_slider',{loop:!1,grabCursor:!1,spaceBetween:20,slidesPerGroup:1,slidesPerView:1,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},pagination:{el:".swiper-pagination",clickable:!0}})
+    });
+  </script>
 {%- endif -%}  
 
 {% schema %}
