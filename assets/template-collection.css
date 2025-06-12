@@ -278,6 +278,46 @@
 .collection_pagination_new .facet-filters {
   padding-left: 0 !important;
 }
+.collection .loading-overlay {
+  position: fixed;
+  z-index: 1;
+  width: 1.8rem;
+}
+.collection .loading-overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  padding: 0 1.5rem;
+  opacity: 0.7;
+}
+.collection.loading .loading-overlay {
+  display: block;
+}
+
+.collection--empty .title-wrapper {
+  margin-top: 10rem;
+  margin-bottom: 15rem;
+}
+.Bridal_collection_desktop_only_new a span {
+  font-size: 14px;
+  line-height: 18px;
+  display: block;
+}
+.Collection_product_grid_rightside_maintop_new {
+  z-index: 1;
+  position: relative;
+}
+.Collection_product_grid_main_new input[type="checkbox"] {
+  display: none;
+}
+/* sticky left filter menu PLP close */
+
+.collection-mobile-middle-banner {
+  display: none;
+}
 
 @media screen and (max-width: 749px) {
   .collection .grid__item:only-child {
@@ -292,11 +332,7 @@
   }
 }
 
-.collection .loading-overlay {
-  position: fixed;
-  z-index: 1;
-  width: 1.8rem;
-}
+
 
 @media screen and (max-width: 749px) {
   .collection .loading-overlay {
@@ -311,16 +347,7 @@
   }
 }
 
-.collection .loading-overlay {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: none;
-  width: 100%;
-  padding: 0 1.5rem;
-  opacity: 0.7;
-}
+
 
 @media screen and (min-width: 750px) {
   .collection .loading-overlay {
@@ -329,14 +356,7 @@
   }
 }
 
-.collection.loading .loading-overlay {
-  display: block;
-}
 
-.collection--empty .title-wrapper {
-  margin-top: 10rem;
-  margin-bottom: 15rem;
-}
 
 @media screen and (max-width: 989px) {
   .collection .slider--tablet.product-grid {
@@ -402,11 +422,7 @@
     padding: 0 !important;
   }
 }
-.Bridal_collection_desktop_only_new a span {
-  font-size: 14px;
-  line-height: 18px;
-  display: block;
-}
+
 @media (min-width: 750px) and (max-width: 989px) {
   .collection_left_new {
     width: 220px;
@@ -495,13 +511,7 @@
     display: flex;
   }
 }
-.Collection_product_grid_rightside_maintop_new {
-  z-index: 1;
-  position: relative;
-}
-.Collection_product_grid_main_new input[type="checkbox"] {
-  display: none;
-}
+
 /* sticky left filter menu PLP */
 @media (max-width: 1025px) {
   #custom-active-facets {
@@ -545,11 +555,7 @@
     background: #a6a4a4;
   }
 }
-/* sticky left filter menu PLP close */
 
-.collection-mobile-middle-banner {
-  display: none;
-}
 
 
 @media screen  and (max-width: 767px) {
