@@ -52,12 +52,9 @@
         </span>
       {%- endif -%}
       {%- if current_product.metafields.custom.festival_stamp != blank -%}
-        <div class="card_badge_festival_stamp">
-          {{ current_product.metafields.custom.festival_stamp }}
-        </div>
         {% for stamp in current_product.metafields.custom.festival_stamp %}
-          {{ stamp.value }}
-        {% endfor %}
+  <div class="card_badge_festival_stamp">{{ stamp }}</div>
+{% endfor %}
       {%- endif -%}
     </div>
     {%- endif -%}
