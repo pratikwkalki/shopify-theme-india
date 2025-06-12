@@ -1,7 +1,9 @@
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'readMore.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'sticky-filter.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'readMore.js' | asset_url }}" defer="defer"> </script>
 
 {% if section.settings.image_shape == 'blob' %}
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
@@ -230,7 +232,8 @@
                     </h1>
                   </div>
                   {% if collection.metafields.custom.collection_custom_title_description_new.value != blank %}
-                    <div class="collection_custom_title_description_new"><p>{{ collection.metafields.custom.collection_custom_title_description_new }}</p></div>
+                    <div class="collection_custom_title_description_new read-more-container" ><p class="read-more-content">{{ collection.metafields.custom.collection_custom_title_description_new }}</p></div>
+                    <button class="read-more-button">Read more</button>
                   {% endif %}
                   <div class="Collection_product_grid_rightside_innertop_1_detail_count_new">
                     <div class="product-count-vertical light" role="status">
