@@ -1,0 +1,25 @@
+.read-more-content {
+      overflow: hidden;
+      max-height: 80px;
+      transition: max-height 0.3s ease;
+    }
+
+    .read-more-content.expanded {
+      max-height: 1000px;
+    }
+
+    .read-more-button {
+      display: inline-block;
+      margin-top: 10px;
+      color: #007BFF;
+      cursor: pointer;
+      text-decoration: underline;
+      background: none;
+      border: none;
+      font-size: 1em;
+      padding: 0;
+    }
+
+    .hidden {
+      display: none;
+    }
