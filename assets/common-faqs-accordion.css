@@ -70,4 +70,9 @@
   .Common_faqs_accordion_new .accordion > ul li .answer {
     padding: 0px 0px 16px 0;
   }
+  .Page_bridal_detail_objects_faqs_main_new {
+    margin: 32px 0;
+    padding: 0;
+    background: none !important;
+  }
 }
