@@ -1,5 +1,9 @@
 .read-more-container{
   margin: 16px 0;
+  display: none;
+}
+.read-more-container.visible {
+  display: block; /* Show when ready */
 }
 .read-more-content {
       overflow: hidden;
