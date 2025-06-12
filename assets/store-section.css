@@ -12,7 +12,7 @@
   margin: 16px 0;
 }
 .Page_Store_google_reviews_mainloop_new .swiper-pagination-bullet {
-  background: #000;
+  background: #000 !important;
 }
 .Page_Store_google_reviews_mainloop_new {
   padding-top: 40px;
