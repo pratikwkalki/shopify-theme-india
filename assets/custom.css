@@ -6151,11 +6151,6 @@ summary .icon-caret {
 .grecaptcha-badge {
   display: none !important;
 }
-@media (min-width: 0px) and (max-width: 749px) {
-  .collection .card-information .plp-delivery-message {
-    display: flex;
-  }
-}
 wishlist-link-floating {
   display: none;
 }

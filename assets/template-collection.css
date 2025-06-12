@@ -486,6 +486,9 @@
     display: block;
     margin-bottom: 10px;
   }
+  .collection .card-information .plp-delivery-message {
+    display: flex;
+  }
 }
 .Collection_product_grid_rightside_maintop_new {
   z-index: 1;
