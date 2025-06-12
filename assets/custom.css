@@ -1461,7 +1461,6 @@ select {
 cart-drawer.is-empty .drawer__header {
   display: none;
 }
-@media only screen and (min-width: 1024px) {
 .mega-menu__content {
   padding: 0 !important;
   box-shadow: 0 0;
@@ -1556,7 +1555,6 @@ cart-drawer.is-empty .drawer__header {
   max-width: 1344px;
   margin: auto;
 }
-  }
 .menu_1_new {
   width: 280px;
 }
@@ -1617,7 +1615,6 @@ cart-drawer.is-empty .drawer__header {
   padding-bottom: 23px;
   margin: -24px 0;
 }
-
 .header-wrapper--border-bottom {
   border-bottom: 0;
 }
@@ -1630,7 +1627,6 @@ cart-drawer.is-empty .drawer__header {
   height: 1px;
   width: 100%;
 }
-
 .Header_announcement_bar_new {
   position: sticky;
   top: 0;
