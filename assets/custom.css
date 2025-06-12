@@ -4889,41 +4889,6 @@ summary .icon-caret {
   position: absolute;
   border-radius: 100%;
 }
-
-.gw-wl-add-to-wishlist-product-page-widget .gw-btn {
-  box-shadow: 0 0 0 !important;
-  padding: 0 !important;
-}
-.gw-wl-add-to-wishlist-btn__inner span {
-  display: none !important;
-}
-.gw-wl-add-to-wishlist-btn__inner svg {
-  display: none !important;
-}
-[data-in-wishlist="false"] .gw-wl-add-to-wishlist-btn__inner {
-  background: url(Wishlist.svg) no-repeat center center;
-  width: 24px;
-  height: 24px;
-}
-[data-in-wishlist="true"] .gw-wl-add-to-wishlist-btn__inner {
-  background: url(Wishlist_full.svg) no-repeat center center;
-  width: 24px;
-  height: 24px;
-}
-
-[data-in-wishlist="false"].gw-toggle-wishlist-product-card-button {
-  background: url(Wishlist.svg) no-repeat center center;
-  width: 24px;
-  height: 24px;
-}
-[data-in-wishlist="true"].gw-toggle-wishlist-product-card-button {
-  background: url(Wishlist_full.svg) no-repeat center center;
-  width: 24px;
-  height: 24px;
-}
-.gw-add-to-wishlist-product-card-placeholder {
-  z-index: 3 !important;
-}
 /* Collection */
 
 /* contact */
@@ -6195,9 +6160,6 @@ summary .icon-caret {
 .section-template--22346782114072__offer_banner_8qMFJG-padding,
 .section-template--22093155827992__offer_banner_8qMFJG-padding {
   padding-bottom: 10px !important;
-}
-.gw-widget-placeholder-RC-wrapper {
-  display: none !important;
 }
 .float1 {
   display: none;
