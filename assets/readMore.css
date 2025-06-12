@@ -1,15 +1,11 @@
-.read-more-container{
-  margin: 16px 0;
-}
+.read-more-container {
+      margin: 16px 0;
+    }
 
-.read-more-content {
+    .read-more-content {
       overflow: hidden;
       transition: max-height 0.3s ease;
       margin: 0px 0;
-    }
-
-    .read-more-content.expanded {
-      max-height: 1000px;
     }
 
     .read-more-button {
@@ -24,12 +20,6 @@
       padding: 0;
     }
 
-    .hidden {
+    .read-more-button.hidden {
       display: none;
     }
-
-@media screen and (max-width: 749px) {
-  .read-more-button {
-      font-size: .8em;;
-    }
-}
