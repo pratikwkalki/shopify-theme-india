@@ -5221,27 +5221,7 @@ summary .icon-caret {
     background: #fff;
     color: #000;
   }
-
-  .collection .card__heading {
-    display: flex;
-    grid-gap: 6px;
-  }
-  .only-for-mobile-delivery-days {
-    display: block;
-    margin-bottom: 10px;
-  }
-  .collection .card__heading .plp-delivery-message {
-    display: block;
-    margin-top: 4px !important;
-  }
-  .collection .plp-delivery-message .cs_delivery_wrapper-icon {
-    width: 12px;
-    height: 20px;
-  }
-  .collection .card-information .plp-delivery-message {
-    display: none;
-  }
-
+  
   /* Index (min-width:0px) and (max-width:749px)*/
   .swiper-button-prev, .swiper-button-next {
     width: 36px;

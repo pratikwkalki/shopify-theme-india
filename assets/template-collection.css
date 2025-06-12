@@ -470,6 +470,25 @@
   .Index_featured_collection_main_new .swiper-pagination {
     display: flex;
   }
+  .collection .card__heading {
+    display: flex;
+    grid-gap: 6px;
+  }
+  .collection .card__heading .plp-delivery-message {
+    display: block;
+    margin-top: 4px !important;
+  }
+  .collection .plp-delivery-message .cs_delivery_wrapper-icon {
+    width: 12px;
+    height: 20px;
+  }
+  .collection .card-information .plp-delivery-message {
+    display: none;
+  }
+  .only-for-mobile-delivery-days {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
 .Collection_product_grid_rightside_maintop_new {
   z-index: 1;
