@@ -232,8 +232,12 @@
                     </h1>
                   </div>
                   {% if collection.metafields.custom.collection_custom_title_description_new.value != blank %}
-                    <div class="collection_custom_title_description_new read-more-container" ><p class="read-more-content">{{ collection.metafields.custom.collection_custom_title_description_new }}</p></div>
+                    <div class="collection_custom_title_description_new read-more-container" >
+                    
+                    <p class="read-more-content">{{ collection.metafields.custom.collection_custom_title_description_new }}</p>
                     <button class="read-more-button">Read more</button>
+                    </div>
+                    
                   {% endif %}
                   <div class="Collection_product_grid_rightside_innertop_1_detail_count_new">
                     <div class="product-count-vertical light" role="status">
