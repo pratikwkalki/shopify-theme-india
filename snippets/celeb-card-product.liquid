@@ -51,9 +51,9 @@
       "
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
-      {% if celeb_card_product.metafields.magento.online_stamps != blank %}
+      {% if celeb_card_product.metafields.custom.online_stamps != blank %}
         <div class="card_badge_online_stamps">
-            {{ celeb_card_product.metafields.magento.online_stamps }}
+            {{ celeb_card_product.metafields.custom.online_stamps }}
         </div>
       {% endif %}
       <div class="card_wishlist_new">
