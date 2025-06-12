@@ -2601,6 +2601,45 @@ body.template-product:has(.is-only-wishlist) .sticky-addtocart-button {
   font-size: 14px;
 }
 /* gift card page close*/
+
+.Product_object_faqs_main_new {
+  padding: 30px 0;
+}
+.Product_object_faqs_inner_new {
+  max-width: 1004px;
+  margin: auto;
+}
+.Product_related_new {
+  padding: 20px 0;
+}
+.Product_related_title_new {
+  margin-bottom: 25px;
+}
+.Product_review_main_new {
+  margin: 40px 0;
+}
+#stamped-main-widget {
+  margin: 0px 0 !important;
+  background: #f7f7f7;
+  position: relative;
+  overflow: hidden;
+  margin-left: calc(-100vw / 2 + 1446px / 2) !important;
+  margin-right: calc(-100vw / 2 + 1446px / 2) !important;
+}
+div.stamped-container[data-widget-style],
+div[data-widget-style] div.stamped-container {
+  margin: 0 auto !important;
+  padding: 40px 16px !important;
+}
+.product_tag_new {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 88.889%;
+  color: #aa6437;
+  padding-bottom: 16px;
+}
+
 @media (min-width: 990px) and (max-width: 1424px) {
   .visitors_counter .shopper-view {
     font-size: 14px !important;

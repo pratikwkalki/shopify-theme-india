@@ -4704,41 +4704,7 @@ summary .icon-caret {
   text-decoration: none;
   color: rgb(117, 111, 111);
 }
-/* Index */
-
-/* Product */
-.Product_object_faqs_main_new {
-  padding: 30px 0;
-}
-.Product_object_faqs_inner_new {
-  max-width: 1004px;
-  margin: auto;
-}
-.Product_related_new {
-  padding: 20px 0;
-}
-.Product_related_title_new {
-  margin-bottom: 25px;
-}
-.Product_review_main_new {
-  margin: 40px 0;
-}
-#stamped-main-widget {
-  margin: 0px 0 !important;
-  background: #f7f7f7;
-  position: relative;
-  overflow: hidden;
-  margin-left: calc(-100vw / 2 + 1446px / 2) !important;
-  margin-right: calc(-100vw / 2 + 1446px / 2) !important;
-}
-/* #stamped-main-widget:before{ content:''; position:absolute; top:0; width:1000%; left:-1000%; height:100%; background:#f7f7f7;  } */
-/* #stamped-main-widget:after{ content:''; position:absolute; top:0; width:1000%; right:-1000%; height:100%; background:#f7f7f7;  } */
-div.stamped-container[data-widget-style],
-div[data-widget-style] div.stamped-container {
-  margin: 0 auto !important;
-  padding: 40px 16px !important;
-}
-.product_tag_new {
+.Index_tag_new {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
@@ -4749,8 +4715,7 @@ div[data-widget-style] div.stamped-container {
 .Product_insta_title_new {
   margin-top: 60px;
 }
-
-/* Product */
+/* Index */
 
 /* Collection */
 .underlined-link:hover,
