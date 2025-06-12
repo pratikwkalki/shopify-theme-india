@@ -13,26 +13,30 @@
 //     });
 
 
-document.querySelectorAll('.read-more-container').forEach(container => {
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.read-more-container').forEach(container => {
       const contentEl = container.querySelector('.read-more-content');
       const button = container.querySelector('.read-more-button');
       const fullText = contentEl.textContent.trim();
       const words = fullText.split(/\s+/);
-      const wordLimit = 40;
+      const wordLimit = 150;
 
       if (words.length <= wordLimit) {
         button.style.display = 'none';
-        return;
+      } else {
+        const shortText = words.slice(0, wordLimit).join(' ') + '...';
+        let isExpanded = false;
+
+        contentEl.textContent = shortText;
+
+        button.addEventListener('click', () => {
+          isExpanded = !isExpanded;
+          contentEl.textContent = isExpanded ? fullText : shortText;
+          button.textContent = isExpanded ? 'Read less' : 'Read more';
+        });
       }
 
-      const shortText = words.slice(0, wordLimit).join(' ') + '...';
-      let isExpanded = false;
-
-      contentEl.textContent = shortText;
-
-      button.addEventListener('click', () => {
-        isExpanded = !isExpanded;
-        contentEl.textContent = isExpanded ? fullText : shortText;
-        button.textContent = isExpanded ? 'Read less' : 'Read more';
-      });
+      // ✅ Show container after processing
+      container.classList.add('visible');
     });
+  });
