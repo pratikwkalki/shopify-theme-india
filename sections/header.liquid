@@ -347,9 +347,14 @@
                   <div class="account_dropdown_inner_new">
                     <a href="{{ routes.account_logout_url }}" class="signout_new">Sign Out</a>
                   </div>
-              
                 </div>
               </div>
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  $(".account_dropdown_open_new").click(function(){if($(this).hasClass("active")==!1){$(".account_dropdown_new").css("display","block");$(this).addClass("active")}else{$(".account_dropdown_new").css("display","none");$(this).removeClass("active")}})
+                  $(document).mouseup(function(e){var container=$(".account_dropdown_open_new");if(!container.is(e.target)&&container.has(e.target).length===0){$(".account_dropdown_open_new").removeClass("active");$(".account_dropdown_new").css("display","none")}});$(".main_menu_click_open_new").click(function(){$(".Header_drawer_mobile_bottom_main_new").css("display","none")})
+                });
+              </script>       
             {% else %}
               <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
                 {% render 'icon-account' %}
