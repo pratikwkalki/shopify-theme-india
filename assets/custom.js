@@ -1,7 +1,3 @@
-window.onload = function () {
-  const tabPhotos = document.getElementById('tab_photos');
-  if(tabPhotos){document.getElementById('tab_photos').classList.add('active');}
-};
 $(function(){var lastScrollTop=0,delta=5;$(window).scroll(function(){var nowScrollTop=$(this).scrollTop();if(Math.abs(lastScrollTop-nowScrollTop)>=delta){if(nowScrollTop>lastScrollTop){$('body').removeClass("page_scroll_up_new")}else{$('body').addClass("page_scroll_up_new")}
 lastScrollTop=nowScrollTop}
 if(nowScrollTop<30){$('body').addClass("header-init-state-enable")

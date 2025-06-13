@@ -83,6 +83,8 @@
   </div>  
   <script>
     document.addEventListener("DOMContentLoaded", function () {
+      const tabPhotos = document.getElementById('tab_photos');
+      if(tabPhotos){document.getElementById('tab_photos').classList.add('active');}
       new Swiper('.page_store_detail_tabs_slider',{loop:!1,grabCursor:!1,spaceBetween:18,slidesPerGroup:5,slidesPerView:5,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},observer:!0,observeParents:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},breakpoints:{0:{slidesPerGroup:2,slidesPerView:"auto",spaceBetween:8,},749:{slidesPerGroup:4,slidesPerView:4,spaceBetween:10,},990:{slidesPerGroup:4,slidesPerView:4,spaceBetween:10,},1200:{slidesPerGroup:5,slidesPerView:5,spaceBetween:15,},1440:{slidesPerGroup:5,slidesPerView:5,spaceBetween:15,}}})
     });
   </script>
