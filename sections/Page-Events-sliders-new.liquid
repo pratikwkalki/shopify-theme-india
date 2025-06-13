@@ -556,14 +556,18 @@
           <script>
             document.addEventListener("DOMContentLoaded", function () {
               new Swiper('.slider-{{ section.id }}',{loop:!0,grabCursor:!1,spaceBetween:0,slidesPerView:1,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},pagination:{el:".swiper-pagination",clickable:!0},direction:"vertical"})
-              $(".open_event_slider").click(function(){var slider_id=$(this).attr("slider_id");$(".Page_Events_sliders_mainloop_new").removeClass("active");$("."+slider_id+"_open").addClass("active")})
-              $(".close_slider_new").click(function(){$(".Page_Events_sliders_mainloop_new").removeClass("active")})
             });
           </script>
         </div>
       {%- endif -%}  
     </div>
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      $(".open_event_slider").click(function(){var slider_id=$(this).attr("slider_id");$(".Page_Events_sliders_mainloop_new").removeClass("active");$("."+slider_id+"_open").addClass("active")})
+      $(".close_slider_new").click(function(){$(".Page_Events_sliders_mainloop_new").removeClass("active")})
+    });
+  </script>
 {%- endif -%}
 
 {% schema %}
