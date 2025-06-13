@@ -53,7 +53,7 @@ new Swiper('.Index_round_column_slider',{loop:!1,grabCursor:!1,spaceBetween:12,s
 new Swiper('.Collection_meta_columns_slider',{loop:!1,grabCursor:!1,spaceBetween:40,slidesPerGroup:3,slidesPerView:3,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},breakpoints:{0:{spaceBetween:8,slidesPerGroup:3,slidesPerView:3,},749:{spaceBetween:28,slidesPerGroup:3,slidesPerView:3,},1024:{spaceBetween:40,}}})
 new Swiper('.list_collection_slider',{loop:!0,grabCursor:!1,spaceBetween:20,slidesPerGroup:1,slidesPerView:"auto",watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},autoplay:{delay:3000,disableOnInteraction:!1,},breakpoints:{0:{spaceBetween:16},749:{spaceBetween:12,freeMode:!0,},1024:{spaceBetween:28,}}})
 new Swiper('.Index_collection_detail_curated_slider',{loop:!1,grabCursor:!1,spaceBetween:20,slidesPerGroup:1,slidesPerView:"auto",watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},breakpoints:{0:{spaceBetween:12,freeMode:!1,},749:{spaceBetween:20,freeMode:!0,},990:{spaceBetween:20,}}})
-new Swiper('.Page_collection_detail_columns_slider',{loop:!1,grabCursor:!1,spaceBetween:30,slidesPerGroup:3,slidesPerView:3,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},breakpoints:{0:{spaceBetween:12,slidesPerView:"auto",centeredSlides:!0,loop:!0,freeMode:!1,slidesPerGroup:1,},749:{spaceBetween:20,freeMode:!0,slidesPerGroup:3,},990:{spaceBetween:30,}}})
+
 
   
 const footerCartDrawerButton=document.querySelector('[js-footer-cart-drawer-btn]')

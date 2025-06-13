@@ -71,6 +71,11 @@
               </div>
             </div>
           </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              new Swiper('.Page_collection_detail_columns_slider',{loop:!1,grabCursor:!1,spaceBetween:30,slidesPerGroup:3,slidesPerView:3,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},breakpoints:{0:{spaceBetween:12,slidesPerView:"auto",centeredSlides:!0,loop:!0,freeMode:!1,slidesPerGroup:1,},749:{spaceBetween:20,freeMode:!0,slidesPerGroup:3,},990:{spaceBetween:30,}}})
+            });
+          </script>
         {%- endif -%}
         {%- if section.settings.main_information_text != blank -%}
           <div class="Page_collection_detail_columns_infos_new">
