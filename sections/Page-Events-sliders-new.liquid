@@ -90,7 +90,7 @@
             </div>  
           {%- endif -%}
           <div class="Page_Events_sliders_innerloop_new">
-            <div class="swiper-container Page_event_slider">
+            <div class="swiper-container Page_event_slider slider-{{ section.id }}">
               <div class="swiper-wrapper">
                 {%- for block in section.blocks -%}
                   {%- case block.type -%}
@@ -553,6 +553,11 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              new Swiper('.slider-{{ section.id }}',{loop:!0,grabCursor:!1,spaceBetween:0,slidesPerView:1,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},pagination:{el:".swiper-pagination",clickable:!0},direction:"vertical"})
+            });
+          </script>
         </div>
       {%- endif -%}  
     </div>
