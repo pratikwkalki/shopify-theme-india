@@ -133,16 +133,4 @@ const VpnLocationScript=document.querySelector('script[src*="content/location/lo
 document.addEventListener("DOMContentLoaded",function(){if(window.innerWidth>=768){document.querySelectorAll('.card-wrapper [data-no-blank]').forEach(function(link){if(link.hasAttribute('data-no-blank')){link.setAttribute('target','_blank')}})}})
 
 // this is for desktop menu below image text center
-function handleImgError(img) {
-  const a = img.closest('a');
-  if (a) {
-    a.classList.add('hide');
-    const next = a.nextElementSibling;
-    if (next) {
-      next.classList.add('title-left-align');
-    }
-  }
-}
-
-
-
+function handleImgError(l){let t=l.closest("a");if(t){t.classList.add("hide");let e=t.nextElementSibling;e&&e.classList.add("title-left-align")}}
