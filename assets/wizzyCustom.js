@@ -397,6 +397,7 @@ window.onWizzyScriptLoaded = function () {
           parsedUrl.searchParams.delete("variant");
           console.log(parsedUrl);
           product.url = parsedUrl.toString();
+           console.log(product.url);
           let attr = product.attributes.filter(attr => attr.id === "product_handle");
           console.log(product.url.searchParams);
           console.log(attr);
