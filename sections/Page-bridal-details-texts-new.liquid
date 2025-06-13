@@ -17,6 +17,11 @@
       </div>
     </div>
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      $(".read_more_new").click(function(){if($(this).hasClass("open")==!1){$(this).addClass("open");$(this).html("Read Less");$(".Collection_descriptions_infos_new").addClass("active")}else{$(this).removeClass("open");$(this).html("Read More");$(".Collection_descriptions_infos_new").removeClass("active")}})
+    });
+  </script>
 {%- endif -%}
 
 {% schema %}
