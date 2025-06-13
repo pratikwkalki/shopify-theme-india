@@ -393,6 +393,7 @@ window.onWizzyScriptLoaded = function () {
         products.forEach((product) => {
           product.url = product.url.searchParams.delete("variant").toString();
           let attr = product.attributes.filter(attr => attr.id === "product_handle");
+          console.log(product.url);
           console.log(attr);
           product.productHandle = attr[0].values[0].value[0];
           let product_sellingprice = product.sellingPrice;
