@@ -48,6 +48,11 @@
               </div>
             </div>
           </div>
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              new Swiper('.Product_bridal_list_new',{loop:!1,grabCursor:!1,spaceBetween:15,slidesPerGroup:1,slidesPerView:5,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},pagination:{el:".swiper-pagination",clickable:!0},breakpoints:{0:{slidesPerGroup:1,slidesPerView:"auto",spaceBetween:8},749:{slidesPerGroup:1,slidesPerView:5,spaceBetween:15,},990:{},1200:{},1440:{}}})
+            });
+          </script>
         {%- endif -%}
       </div>
     </div>
