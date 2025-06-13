@@ -52,6 +52,11 @@
       </div>
     </div>
   </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Swiper('.Collection_meta_columns_slider',{loop:!1,grabCursor:!1,spaceBetween:40,slidesPerGroup:3,slidesPerView:3,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},breakpoints:{0:{spaceBetween:8,slidesPerGroup:3,slidesPerView:3,},749:{spaceBetween:28,slidesPerGroup:3,slidesPerView:3,},1024:{spaceBetween:40,}}})
+    });
+  </script>
 {%- endif -%}  
 
 {% schema %}
