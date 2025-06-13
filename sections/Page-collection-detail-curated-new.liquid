@@ -80,6 +80,11 @@
           </div>
         </div>      
       </div>
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          new Swiper('.Index_collection_detail_curated_slider',{loop:!1,grabCursor:!1,spaceBetween:20,slidesPerGroup:1,slidesPerView:"auto",watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},breakpoints:{0:{spaceBetween:12,freeMode:!1,},749:{spaceBetween:20,freeMode:!0,},990:{spaceBetween:20,}}})
+        });
+      </script>
     {%- endif -%}
   </div>
 {%- endif -%} 
