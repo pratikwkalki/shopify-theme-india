@@ -241,6 +241,11 @@
                   Don’t have an account? <span class="sign-up-btn">Sign Up</span>
                 </div>
               </div>
+              <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                  $(".sign-up-btn").click(function(){$("#sign-up").css("display","block");$("#login").css("display","none");$("#recover").css("display","none")})
+                });
+              </script>
             </div>
 
             {%- if shop.checkout.guest_login -%}
@@ -419,6 +424,11 @@
                 <span class="login_back">
                   sign in
                 </span>
+               <script>
+                  document.addEventListener("DOMContentLoaded", function () {
+                    $(".login_back").click(function(){$("#login").css("display","block");$("#sign-up").css("display","none");$("#recover").css("display","none")})
+                  });
+                </script>     
               </div>
             </div>
           </div>
