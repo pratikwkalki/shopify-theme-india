@@ -57,6 +57,12 @@
     </div>
   </div>
   <div class="index-popup-overlay"></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      $(".Index_icon_with_text_list_allloop_innerboxs_new").click(function(){var popup_id=$(this).attr("popup_id");$(".index-popup-overlay").css("display","block");$("."+popup_id+"_open").css("display","block")})
+      $(".Index_icon_with_text_list_allloop_popup_title_right_new, .index-popup-overlay").click(function(){$(".index-popup-overlay").css("display","none");$(".Index_icon_with_text_list_allloop_popup_new").css("display","none")})
+    });
+  </script> 
 {%- endif -%} 
 
 {% schema %}
