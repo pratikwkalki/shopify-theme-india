@@ -121,7 +121,11 @@
       </div>
     </div>
   </div>
-
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      $(".Page_our_stores_objects_detail_innerleft_innerboxs_direction_new a").click(function(){var tab_id=$(this).attr("tab_id");$(".Page_our_stores_objects_detail_innerright_mainboxs_new").css("display","none");$("."+tab_id+"_open").css("display","block");var width=$(document).width();var header=$(".header").height();if(width<750){$('html, body').animate({scrollTop:$("html, body").offset().top},500)}})
+    });
+  </script>
 
 {% schema %}
   {
