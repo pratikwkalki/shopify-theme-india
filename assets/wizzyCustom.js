@@ -392,7 +392,7 @@ window.onWizzyScriptLoaded = function () {
       try {
         console.log("after products transformed");
         products.forEach((product) => {
-          product.url = product.url.searchParams.delete("variant").toString();
+          // product.url = product.url.searchParams.delete("variant").toString();
           let attr = product.attributes.filter(attr => attr.id === "product_handle");
           console.log(product.url);
           console.log(attr);
