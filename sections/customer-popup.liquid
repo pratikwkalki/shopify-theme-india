@@ -214,6 +214,12 @@
                       <span class="forgot_password">
                         {{ 'customer.login_page.forgot_password' | t }}
                       </span>
+                      <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                          $(".forgot_password").click(function(){$("#login").css("display","none");$("#sign-up").css("display","none");$("#recover").css("display","block")});
+                          $(".Customer_register_template_innerright_mainform_new .forgot_password").click(function(){$('[js-customer-popup-btn]').click()})
+                        });
+                      </script>
                     {%- endif -%}
 
                     <p class="info-message info-message-login" style="display:none;">We have recently migrated to another platform, kindly reset your password now to continue enjoying KALKI perks!</p>
