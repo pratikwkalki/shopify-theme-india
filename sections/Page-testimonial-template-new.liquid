@@ -71,6 +71,11 @@
                     </div>
                   </div>
                 </div>
+                <script>
+                  document.addEventListener("DOMContentLoaded", function () {
+                    var Page_testimonial_slider_Thumbs=new Swiper(".Page_testimonial_slider_Thumbs",{grabCursor:!1,spaceBetween:12,slidesPerView:7,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},centeredSlides:!0,allowTouchMove:!1,a11y:!1,loop:!0,breakpoints:{0:{spaceBetween:9,},749:{spaceBetween:12,}}});var Page_testimonial_slider=new Swiper('.Page_testimonial_slider',{loop:!0,grabCursor:!1,spaceBetween:0,slidesPerView:1,watchSlidesProgress:!0,draggable:!0,autoHeight:!0,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},thumbs:{swiper:Page_testimonial_slider_Thumbs,},a11y:!1,})
+                  });
+                </script>
               {%- endif -%}
             </div>
           </div>
