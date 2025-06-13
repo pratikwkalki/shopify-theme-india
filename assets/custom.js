@@ -30,7 +30,6 @@ $(".popup_manufacturing_click").click(function(){var popup_id=$(this).attr("popu
 $(".short_des .desc_more").click(function(){$(".short_des").css("display","none");$(".long_des").css("display","block")})
 $(".long_des .desc_more").click(function(){$(".short_des").css("display","block");$(".long_des").css("display","none")})
 $('[js-accordion-header]').click(function(){if($(this).parents(".js-accordion-item").hasClass("active")==!1){$(this).parents(".product-faq-wrapper_main-wrap").find('[js-accordion-body]').slideUp();$(this).parents(".product-faq-wrapper_main-wrap").find(".js-accordion-item").removeClass("active");$(this).next('[js-accordion-body]').slideDown();$(this).parents(".js-accordion-item").addClass("active")}else{$(this).parents(".product-faq-wrapper_main-wrap").find('[js-accordion-body]').slideUp();$(this).parents(".product-faq-wrapper_main-wrap").find(".js-accordion-item").removeClass("active")}})
-$(".main_menu_click_close_new").click(function(){$(".Header_drawer_mobile_bottom_main_new").css("display","block")})
 
 
 /** Swiper 11.2.6 */
