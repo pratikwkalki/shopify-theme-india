@@ -44,11 +44,6 @@ var Swiper=function(){"use strict";function e(e){return null!==e&&"object"==type
 new Swiper('.Index_announcement_slider',{loop:!0,grabCursor:!1,spaceBetween:0,slidesPerView:1,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0, speed: 1000,threshold:10,mousewheel:{forceToAxis:!0},autoplay:{delay:3000,disableOnInteraction:!1,}})
 new Swiper('.Index_top_banner_slider',{loop:!0,grabCursor:!1,spaceBetween:0,slidesPerView:1,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},pagination:{el:".swiper-pagination",clickable:"true"},autoplay:{delay:5000,disableOnInteraction:!1,}})
 new Swiper('.Index_custom_category_slider',{loop:!1,grabCursor:!1,spaceBetween:18,slidesPerGroup:1,slidesPerView:4,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},breakpoints:{0:{slidesPerView:"auto",spaceBetween:10,},749:{slidesPerView:3,spaceBetween:10,},990:{slidesPerView:4,spaceBetween:10,},1200:{slidesPerView:4,spaceBetween:18,},1440:{slidesPerView:4,spaceBetween:18,}}})
-new Swiper('.visit-our-Store-slider',{loop:!1,grabCursor:!1,spaceBetween:20,slidesPerView:2,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},grid:{rows:2,},breakpoints:{0:{slidesPerView:2,spaceBetween:20,},768:{slidesPerView:4,spaceBetween:18,grid:{rows:1,}}}})
-
-
-
-
 
   
 const footerCartDrawerButton=document.querySelector('[js-footer-cart-drawer-btn]')
