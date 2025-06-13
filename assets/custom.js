@@ -42,7 +42,6 @@ var Swiper=function(){"use strict";function e(e){return null!==e&&"object"==type
 //# sourceMappingURL=swiper-bundle.min.js.map
 
 new Swiper('.Index_announcement_slider',{loop:!0,grabCursor:!1,spaceBetween:0,slidesPerView:1,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0, speed: 1000,threshold:10,mousewheel:{forceToAxis:!0},autoplay:{delay:3000,disableOnInteraction:!1,}})
-new Swiper('.Index_top_banner_slider',{loop:!0,grabCursor:!1,spaceBetween:0,slidesPerView:1,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},pagination:{el:".swiper-pagination",clickable:"true"},autoplay:{delay:5000,disableOnInteraction:!1,}})
 
 
   
