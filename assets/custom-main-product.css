@@ -1335,6 +1335,9 @@ div[data-tooltip]:hover::after {
   justify-content: space-between;
   flex-wrap: nowrap !important;
 }
+.product-custom .MagicToolboxContainer.layout-left img {
+  max-width: 100%;
+}
 @media screen and (max-width: 749px) {
   .product-custom .selectors img {
     max-height: 73px;
@@ -1471,6 +1474,7 @@ div[data-tooltip]:hover::after {
   .product-custom .MagicToolboxContainer.layout-left {
     top: 160px;
     position: sticky;
+    max-width: 63.5%;
   }
   .product-custom .mz-thumb:hover:not(.active-magic-selector) img, 
   .product-custom .mz-thumb:hover:not(.mz-thumb-selected) img, 
