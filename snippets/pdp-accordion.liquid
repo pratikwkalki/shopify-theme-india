@@ -114,6 +114,12 @@
                       </div>
                     </div>
                   </div>
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                      $(".short_des .desc_more").click(function(){$(".short_des").css("display","none");$(".long_des").css("display","block")})
+                      $(".long_des .desc_more").click(function(){$(".short_des").css("display","block");$(".long_des").css("display","none")})
+                    });
+                  </script>
                 {% endif %}
                 <div class="product-details-meta">
                   {% if product.metafields.custom.care_instructions != blank %}
