@@ -1858,7 +1858,9 @@ cart-drawer.is-empty .drawer__header {
     display: none;
   }
   header-drawer {
-    display: block !important;
+    display: flex !important;
+    align-items: center;
+    height: 32px;
   }
   .header_top_new {
     padding: 11px 0;
@@ -5589,9 +5591,6 @@ summary .icon-caret {
 
 @media (min-width: 0px) and (max-width: 1024px) {
   /* Header */
-  header-drawer {
-    display: block !important;
-  }
   .header-wrapper--border-bottom {
     border-bottom: 0px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
