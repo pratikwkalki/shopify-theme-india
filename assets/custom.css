@@ -1730,12 +1730,15 @@ cart-drawer.is-empty .drawer__header {
 .mobile_divhide {
   display: none !important;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
   body:not(.page_white_header_transparent_new):not(.collection_header_transparent_new):not(.template--bridal-collection-new):not(.template--bridal-collection-new) sticky-header {
     min-height: 136.94px;
   }
+  .header__icons {
+    height: 42px;
+  }
 }
-@media (min-width: 767px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1023px) {
   body:not(.page_white_header_transparent_new):not(.collection_header_transparent_new) sticky-header {
     min-height: 133.96px;
   }
