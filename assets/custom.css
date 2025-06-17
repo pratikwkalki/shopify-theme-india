@@ -5563,7 +5563,8 @@ summary .icon-caret {
 
 @media (min-width: 1024px) and (max-width: 1280px) {
   .header__menu-item {
-    font-size: 11.2px;
+    font-size: 11px;
+    padding: 17px 4px !important;
   }
   .Header_desktop_left_menu_inner_new .header__menu-item,
   .Header_desktop_left_menu_inner_new .header__menu-item[aria-current="page"],
