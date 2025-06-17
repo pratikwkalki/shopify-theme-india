@@ -1606,6 +1606,7 @@ cart-drawer.is-empty .drawer__header {
   padding: 10px 0;
   position: relative;
   z-index: 999;
+  min-height: 32px;
 }
 .Header_announcement_bar_main_new .page-width {
   padding: 0 5px !important;
