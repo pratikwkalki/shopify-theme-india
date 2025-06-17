@@ -1730,6 +1730,12 @@ cart-drawer.is-empty .drawer__header {
 .mobile_divhide {
   display: none !important;
 }
+
+@media (min-width: 0px) and (max-width: 766px) {
+  body:not(.page_white_header_transparent_new):not(.collection_header_transparent_new) sticky-header {
+    min-height: 122.05px;
+  }
+}
 @media (min-width: 0px) and (max-width: 749px) {
   .desktop_image_new,
   .header__icon.header__icon--videocall {
