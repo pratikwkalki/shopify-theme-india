@@ -5702,7 +5702,7 @@ summary .icon-caret {
     padding: 0 16px !important;
   }
   .search-modal__content_drawer_new {
-    height: auto;
+    height: 40px;
     background: #f7f7f7;
     border-radius: 5px;
     margin-bottom: 0;
