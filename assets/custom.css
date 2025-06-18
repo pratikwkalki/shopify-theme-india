@@ -1723,6 +1723,9 @@ cart-drawer.is-empty .drawer__header {
   transform: rotate(90deg);
   width: 12px;
 }
+.template-product.scrolled-past-header-body .back_to_top_new {
+    bottom: 287px;
+}
 .header__icon--account {
   position: relative;
 }
