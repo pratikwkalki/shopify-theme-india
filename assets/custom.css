@@ -6232,7 +6232,7 @@ wishlist-link-floating {
   font-size: 0;
 }
 #fc_frame.fc-widget-normal {
-  z-index: 999;
+  z-index: 998;
 }
 body.popup-active {
   overflow: hidden;
