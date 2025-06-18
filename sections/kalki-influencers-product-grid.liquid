@@ -334,12 +334,16 @@
               "
             >
               {% assign ifCollectionSecondBanner = false %}
+              {%- assign visible_index = 0 -%}
               {%- for product in collection.products -%}
+                {%- if product.available or product.variants.first.inventory_policy == 'continue' -%}
+                  {%- assign visible_index = visible_index | plus: 1 -%}
+                {%- endif -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                {%- if forloop.index == 9 -%}
+                {%- if visible_index == 9 -%}
                   {% if collection.metafields.custom.collection_product_tile_banners.value %}
                     {% for banner in collection.metafields.custom.collection_product_tile_banners.value %}
                       {% if forloop.first %}
@@ -353,7 +357,7 @@
                     {% render 'collection-product-tile-banner', banner_image: section.settings.colletion_banner_1, banner_url: section.settings.colletion_banner_1_url %}
                   {% endif %}
                 {%- endif -%}
-                {%- if forloop.index == 27 -%}
+                {%- if visible_index == 27 -%}
                   {% if ifCollectionSecondBanner == true %}
                     {% for banner in collection.metafields.custom.collection_product_tile_banners.value %}
                       {% if forloop.index == 2 %}
@@ -389,7 +393,7 @@
                   {% endif %}
                 {%- endif -%}
                 {% endcomment %}
-                {%- if forloop.index == 16 -%}
+                {%- if visible_index == 16 -%}
                    {%- if settings.mobile_middle_banner != blank -%}
                       <div class="collection-mobile-middle-banner">
                         <a href="{{  settings.mobile_middle_banner_url }}" aria-label="Live Video Shopping">
