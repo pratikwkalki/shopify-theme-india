@@ -355,6 +355,7 @@
               "
             >
               {% assign ifCollectionSecondBanner = false %}
+              {%- assign visible_index = 0 -%}
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
@@ -426,7 +427,8 @@
                     {%- endif -%} 
                 {%- endif -%}
                 {%- if product.available or product.variants.first.inventory_policy == 'continue' -%}
-                  <li {{ forloop.index }}
+                  {%- assign visible_index = visible_index | plus: 1 -%}
+                  <li {{ visible_index }}
                     class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                     {% if settings.animations_reveal_on_scroll %}
                       data-cascade
