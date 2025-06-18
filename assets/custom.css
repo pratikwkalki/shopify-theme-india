@@ -6391,6 +6391,9 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
 .template-product.scrolled-past-header-body .popin {
   bottom: 128px;
 }
+.template-product.scrolled-past-header-body #fc_frame.fc-widget-normal {
+    bottom: 126px !important;
+}
 @media only screen and (max-width: 749px) {
   .template-product .popin {
       bottom: 158px !important;
