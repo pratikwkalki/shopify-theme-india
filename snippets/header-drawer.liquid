@@ -247,7 +247,7 @@
     const menuDrawer = document.querySelector("#menu-drawer");
     if (!menuButton || !drawerContainer || !menuDrawer) return;
     menuButton.addEventListener("click", function (e) {
-      e.stopPropagation(); // Prevent it from triggering document click
+      e.stopPropagation();
       drawerContainer.classList.toggle("menu-opening");
     });
   });
