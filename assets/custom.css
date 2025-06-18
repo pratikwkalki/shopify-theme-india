@@ -5166,7 +5166,10 @@ summary .icon-caret {
     line-height: 36px;
   }
   .template-product .back_to_top_new {
-    bottom: 292px !important;
+    bottom: 178px !important;
+  }
+  .template-product.scrolled-past-header-body .back_to_top_new {
+    bottom: 287px !important;
   }
   .template-product .float1 {
     bottom: 134px;
@@ -6407,5 +6410,9 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
     width: 45px;
     height: 45px;
     padding: 9px;
+  }
+  .template-product .back_to_top_new,
+  .template-product.scrolled-past-header-body .back_to_top_new  {
+      bottom: 292px !important;
   }
 } 
