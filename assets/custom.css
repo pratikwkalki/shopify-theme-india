@@ -1701,6 +1701,15 @@ cart-drawer.is-empty .drawer__header {
   border: 1px solid #e1e1e5;
   z-index: 1;
 }
+.back_to_top_new span {
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  border-radius: 0;
+  align-items: center;
+  justify-content: center;
+}
 .back_to_top_new a {
   display: flex;
   width: 100%;
