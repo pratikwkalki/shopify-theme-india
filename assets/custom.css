@@ -6393,7 +6393,7 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
       bottom: 125px !important;
   }
 }
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 767px) {
   .popin {
     bottom: 95px;
   }
