@@ -6394,7 +6394,7 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
   }
 }
 @media only screen and (max-width: 767px) {
-  .popin {
+  .template-index .popin {
     bottom: 95px;
   }
   .popin-icon {
