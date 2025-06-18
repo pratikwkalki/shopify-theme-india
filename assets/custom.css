@@ -6390,7 +6390,7 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
 }
 @media only screen and (max-width: 749px) {
   .template-product .popin {
-      bottom: 125px !important;
+      bottom: 158px !important;
   }
 }
 @media only screen and (max-width: 767px) {
