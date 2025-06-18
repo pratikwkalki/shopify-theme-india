@@ -6402,7 +6402,20 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
       bottom: 158px !important;
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 749px) {
+  .template-product .popin {
+      bottom: 158px !important;
+  }
+  .template-product.template--bridal .popin {
+    bottom: 110px !important;
+  }
+  .template-product .back_to_top_new,
+  .template-product.scrolled-past-header-body .back_to_top_new  {
+      bottom: 292px !important;
+  }
+  .template-product.template--bridal .back_to_top_new {
+    bottom: 245px !important;
+  }
   .template-index .popin {
     bottom: 95px;
   }
@@ -6411,8 +6424,4 @@ body #sotp-new-popup.olWrapper .ol .update-user-box .update-checkbox-wrapper .ch
     height: 45px;
     padding: 9px;
   }
-  .template-product .back_to_top_new,
-  .template-product.scrolled-past-header-body .back_to_top_new  {
-      bottom: 292px !important;
-  }
-} 
+}
