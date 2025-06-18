@@ -154,8 +154,11 @@
               </div>
             {% endif %}
           {% endfor %}
-
-                        
+          {%- if product.metafields.magento.product_sale_html_banner.value != blank -%}
+            <div class="banner_last_chance">
+              {{ product.metafields.magento.product_sale_html_banner.value }}
+            </div>
+          {%- endif -%}
           <product-form
             class="product-form khadi-product-form"
             data-hide-errors="{{ gift_card_recipient_feature_active }}"
