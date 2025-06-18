@@ -240,4 +240,30 @@
       </div>
     </div>
   </div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector(".header__icon--menu");
+    const drawerContainer = document.querySelector("#Details-menu-drawer-container");
+    const menuDrawer = document.querySelector("#menu-drawer");
+  
+    if (!menuButton || !drawerContainer || !menuDrawer) return;
+  
+    // Toggle menu-opening class on button click
+    menuButton.addEventListener("click", function (e) {
+      e.stopPropagation(); // Prevent it from triggering document click
+      drawerContainer.classList.toggle("menu-opening");
+    });
+  
+    // Remove class if clicking outside menu drawer
+    document.addEventListener("click", function (e) {
+      if (
+        drawerContainer.classList.contains("menu-opening") &&
+        !menuDrawer.contains(e.target) &&
+        !menuButton.contains(e.target)
+      ) {
+        drawerContainer.classList.remove("menu-opening");
+      }
+    });
+  });
+</script>
 </header-drawer>
