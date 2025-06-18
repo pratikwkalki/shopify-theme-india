@@ -1790,7 +1790,7 @@ cart-drawer.is-empty .drawer__header {
   }
   .back_to_top_new {
     right: 15px;
-    bottom: 152px;
+    bottom: 58px;
     width: 36px;
     height: 36px;
     line-height: 36px;
@@ -5157,7 +5157,7 @@ summary .icon-caret {
   }
   .back_to_top_new {
     right: 15px;
-    bottom: 70px;
+    bottom: 152px;
     width: 36px;
     height: 36px;
     line-height: 36px;
