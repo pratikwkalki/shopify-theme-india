@@ -211,6 +211,12 @@ window.onWizzyScriptLoaded = function () {
         desktop: 5e3,
         mobile: 5e3,
       };
+      window.wizzyConfig.search.configs.facets.configs.forEach((facet) => {
+        if(facet.key === "discountPercentage")
+        {
+          facet.configs.interval = 10;
+        }
+      })
       data.filters.configs.keepOpenedInMobileAfterApply = true;
       try {
         window.wizzyConfig.search.view.templates.facets.rangeListItem =
