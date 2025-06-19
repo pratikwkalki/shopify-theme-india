@@ -464,7 +464,7 @@ window.onWizzyScriptLoaded = function () {
      data.facets.forEach((facet) => {
         if(facet.key === "discountPercentage")
         {
-          facet.configs = {
+          facet.config = {
             interval: 10,
             limit:50
           }
