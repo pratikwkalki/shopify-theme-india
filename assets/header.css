@@ -163,11 +163,17 @@ menu-drawer > details[open] > summary::before {
   height: 100vh;
 }
 
+.js details.menu-opening > .menu-drawer,
+.js details.menu-opening > .menu-drawer__submenu,
 .js .menu-drawer-container.menu-opening > .menu-drawer,
 .js .menu-drawer-container.menu-opening > .menu-drawer__submenu {
   transition: transform var(--duration-default) ease, visibility var(--duration-default) ease;
 }
 
+.no-js details.menu-opening > .menu-drawer,
+.js details.menu-opening > .menu-drawer,
+.js details.menu-opening > .menu-drawer,
+details.menu-opening > .menu-drawer__submenu,
 .no-js .menu-drawer-container.menu-opening > .menu-drawer,
 .js .menu-drawer-container.menu-opening > .menu-drawer,
 .js .menu-drawer-container.menu-opening > .menu-drawer,
