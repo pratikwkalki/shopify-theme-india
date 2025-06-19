@@ -158,12 +158,12 @@ window.onWizzyScriptLoaded = function () {
         desktop: 5e3,
         mobile: 5e3,
       };
-      window.wizzyConfig.search.configs.facets.configs.forEach((facet) => {
-        if(facet.key === "discountPercentage")
-        {
-          facet.configs.interval = 10;
-        }
-      })
+      // window.wizzyConfig.search.configs.facets.configs.forEach((facet) => {
+      //   if(facet.key === "discountPercentage")
+      //   {
+      //     facet.configs.interval = 10;
+      //   }
+      // })
       try {
         window.wizzyConfig.search.view.templates.facets.rangeListItem =
           "#wizzy-facet-range-list-item";
@@ -460,7 +460,7 @@ window.onWizzyScriptLoaded = function () {
     window.wizzyConfig.events.allowedEvents.BEFORE_SEARCH_EXECUTED,
     function (data) {
       console.log("BEFORE_SEARCH_EXECUTED=========>",data);
-      window.wizzyConfig?.search?.configs?.facets?.configs?.forEach((facet) => {
+     data.facets.forEach((facet) => {
         if(facet.key === "discountPercentage")
         {
           facet.configs = {
