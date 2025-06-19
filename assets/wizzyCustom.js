@@ -294,15 +294,15 @@ window.onWizzyScriptLoaded = function () {
     window.wizzyConfig.events.allowedEvents.BEFORE_RENDER_RESULTS,
     function (payload) {
       console.log("BEFORE_RENDER_RESULTS", payload);
-      // window.wizzyConfig?.search?.configs?.facets?.configs?.forEach((facet) => {
-      //   if(facet.key === "discountPercentage")
-      //   {
-      //     facet.configs = {
-      //       interval: 10,
-      //       limit:50
-      //     }
-      //   }
-      // })
+      payload.response.payload.facets.forEach((facet) => {
+        if(facet.key === "discountPercentage")
+        {
+          facet.configs = {
+            interval: 10,
+            limit:50
+          }
+        }
+      })
       if (payload.api === "search" || payload.api === "filter") {
         var facets = payload.response.payload.facets;
         facets.forEach((facet) => {
