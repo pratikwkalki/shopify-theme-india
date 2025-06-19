@@ -214,7 +214,9 @@ window.onWizzyScriptLoaded = function () {
       window.wizzyConfig?.search?.configs?.facets?.configs?.forEach((facet) => {
         if(facet.key === "discountPercentage")
         {
-          facet.configs.interval = 10;
+          facet.configs = {
+            interval: 10
+          }
         }
       })
       data.filters.configs.keepOpenedInMobileAfterApply = true;
