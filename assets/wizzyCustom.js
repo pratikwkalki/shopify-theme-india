@@ -216,7 +216,7 @@ window.onWizzyScriptLoaded = function () {
         {
           facet.configs = {
             interval: 10,
-            limit:5
+            limit:50
           }
         }
       })
