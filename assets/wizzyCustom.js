@@ -158,7 +158,7 @@ window.onWizzyScriptLoaded = function () {
         desktop: 5e3,
         mobile: 5e3,
       };
-      window.wizzyConfig.pageStore.searchedResponse.facets.forEach((facet) => {
+      window.wizzyConfig.search.configs.facets.configs.forEach((facet) => {
         if(facet.key === "discountPercentage")
         {
           facet.configs.interval = 10;
