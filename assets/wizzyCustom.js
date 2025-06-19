@@ -293,16 +293,8 @@ window.onWizzyScriptLoaded = function () {
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.BEFORE_RENDER_RESULTS,
     function (payload) {
-      console.log("BEFORE_RENDER_RESULTS", payload);
-      payload.response.payload.facets.forEach((facet) => {
-        if(facet.key === "discountPercentage")
-        {
-          facet.configs = {
-            interval: 10,
-            limit:50
-          }
-        }
-      })
+      // console.log("BEFORE_RENDER_RESULTS", payload);
+      
       if (payload.api === "search" || payload.api === "filter") {
         var facets = payload.response.payload.facets;
         facets.forEach((facet) => {
@@ -469,15 +461,15 @@ window.onWizzyScriptLoaded = function () {
     window.wizzyConfig.events.allowedEvents.BEFORE_SEARCH_EXECUTED,
     function (data) {
       console.log("BEFORE_SEARCH_EXECUTED=========>",data);
-     // data.facets.forEach((facet) => {
-     //    if(facet.key === "discountPercentage")
-     //    {
-     //      facet.configs = {
-     //        interval: 10,
-     //        limit:50
-     //      }
-     //    }
-     //  })
+     data.facets.forEach((facet) => {
+        if(facet.key === "discountPercentage")
+        {
+          facet.configs = {
+            interval: 10,
+            limit:50
+          }
+        }
+      })
       let body = document.body;
       if (body.classList.contains("collection_header_transparent_new")) {
         body.classList.remove("collection_header_transparent_new");
