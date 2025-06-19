@@ -211,15 +211,15 @@ window.onWizzyScriptLoaded = function () {
         desktop: 5e3,
         mobile: 5e3,
       };
-      window.wizzyConfig?.search?.configs?.facets?.configs?.forEach((facet) => {
-        if(facet.key === "discountPercentage")
-        {
-          facet.configs = {
-            interval: 10,
-            limit:50
-          }
-        }
-      })
+      // window.wizzyConfig?.search?.configs?.facets?.configs?.forEach((facet) => {
+      //   if(facet.key === "discountPercentage")
+      //   {
+      //     facet.configs = {
+      //       interval: 10,
+      //       limit:50
+      //     }
+      //   }
+      // })
       data.filters.configs.keepOpenedInMobileAfterApply = true;
       try {
         window.wizzyConfig.search.view.templates.facets.rangeListItem =
@@ -459,6 +459,7 @@ window.onWizzyScriptLoaded = function () {
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.BEFORE_SEARCH_EXECUTED,
     function (data) {
+      console.log(data);
       let body = document.body;
       if (body.classList.contains("collection_header_transparent_new")) {
         body.classList.remove("collection_header_transparent_new");
