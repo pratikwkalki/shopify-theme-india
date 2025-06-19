@@ -215,7 +215,8 @@ window.onWizzyScriptLoaded = function () {
         if(facet.key === "discountPercentage")
         {
           facet.configs = {
-            interval: 10
+            interval: 10,
+            limit:50
           }
         }
       })
