@@ -460,15 +460,15 @@ window.onWizzyScriptLoaded = function () {
     window.wizzyConfig.events.allowedEvents.BEFORE_SEARCH_EXECUTED,
     function (data) {
       console.log("BEFORE_SEARCH_EXECUTED=========>",data);
-     data.facets.forEach((facet) => {
-        if(facet.key === "discountPercentage")
-        {
-          facet.configs = {
-            interval: 10,
-            limit:50
-          }
-        }
-      })
+     // data.facets.forEach((facet) => {
+     //    if(facet.key === "discountPercentage")
+     //    {
+     //      facet.configs = {
+     //        interval: 10,
+     //        limit:50
+     //      }
+     //    }
+     //  })
       let body = document.body;
       if (body.classList.contains("collection_header_transparent_new")) {
         body.classList.remove("collection_header_transparent_new");
