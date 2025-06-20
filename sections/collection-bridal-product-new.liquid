@@ -243,7 +243,8 @@
                   {%- for variant in product.variants -%}
                     {%- for size in selected_sizes -%}
                       {%- if variant.option1 == size -%}
-                        {%- if variant.available or variant.first.inventory_policy == 'continue' -%}
+                        {{ variant | json }}
+                        {%- if variant.available or variant.inventory_policy == 'continue' -%}
                           {%- assign show_product = true -%}
                           {%- break -%}
                         {%- endif -%}
