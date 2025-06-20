@@ -288,6 +288,16 @@
                 grid--{{ section.settings.columns_desktop }}-col-desktop
               "
             >
+              {%- assign selected_sizes_string = '' -%}
+    
+              {%- for filter in collection.filters -%}
+                {%- if filter.label == 'Size' -%}
+                  {%- for value in filter.active_values -%}
+                    {%- assign selected_sizes_string = selected_sizes_string | append: value.label | append: ',' -%}
+                  {%- endfor -%}
+                {%- endif -%}
+              {%- endfor -%}
+          
               {%- for product in collection.products -%}
                 {%- assign lazy_load = false -%}
                 {%- if forloop.index > 2 -%}
@@ -321,25 +331,63 @@
                       </div>
                     {%- endif -%} 
                 {%- endif -%}
-                <li
-                  class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                  {% if settings.animations_reveal_on_scroll %}
-                    data-cascade
-                    style="--animation-order: {{ forloop.index }};"
-                  {% endif %}
-                >
-                  {% render 'card-product',
-                    card_product: product,
-                    media_aspect_ratio: section.settings.image_ratio,
-                    image_shape: section.settings.image_shape,
-                    show_secondary_image: section.settings.show_secondary_image,
-                    show_vendor: section.settings.show_vendor,
-                    show_rating: section.settings.show_rating,
-                    lazy_load: lazy_load,
-                    show_quick_add: section.settings.enable_quick_add,
-                    section_id: section.id
-                  %}
-                </li>
+                {%- assign selected_sizes = selected_sizes_string | split: ',' -%}
+                {%- assign show_product = false -%}
+                
+                {%- if selected_sizes_string != '' -%}
+                  {%- for variant in product.variants -%}
+                    {%- for size in selected_sizes -%}
+                      {%- if variant.option1 == size and variant.available -%}
+                        {%- assign show_product = true -%}
+                        {%- break -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                    {%- if show_product -%}
+                      {%- break -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                  {%- if show_product -%}
+                    <li
+                      class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                      {% if settings.animations_reveal_on_scroll %}
+                        data-cascade
+                        style="--animation-order: {{ forloop.index }};"
+                      {% endif %}
+                    >
+                      {% render 'card-product',
+                        card_product: product,
+                        media_aspect_ratio: section.settings.image_ratio,
+                        image_shape: section.settings.image_shape,
+                        show_secondary_image: section.settings.show_secondary_image,
+                        show_vendor: section.settings.show_vendor,
+                        show_rating: section.settings.show_rating,
+                        lazy_load: lazy_load,
+                        show_quick_add: section.settings.enable_quick_add,
+                        section_id: section.id
+                      %}
+                    </li>
+                  {%- endif -%}
+                {%- else -%}
+                  <li
+                      class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                      {% if settings.animations_reveal_on_scroll %}
+                        data-cascade
+                        style="--animation-order: {{ forloop.index }};"
+                      {% endif %}
+                    >
+                      {% render 'card-product',
+                        card_product: product,
+                        media_aspect_ratio: section.settings.image_ratio,
+                        image_shape: section.settings.image_shape,
+                        show_secondary_image: section.settings.show_secondary_image,
+                        show_vendor: section.settings.show_vendor,
+                        show_rating: section.settings.show_rating,
+                        lazy_load: lazy_load,
+                        show_quick_add: section.settings.enable_quick_add,
+                        section_id: section.id
+                      %}
+                    </li>
+                {%- endif -%}
               {%- endfor -%}
             </ul>
 
