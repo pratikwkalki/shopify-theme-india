@@ -355,15 +355,14 @@
               "
             >
 
-              {%- assign selected_sizes = '' | split: ',' -%}
-
-{%- for filter in collection.filters -%}
-  {%- if filter.label == 'Size' -%}
-    {%- for value in filter.active_values -%}
-      {%- assign selected_sizes = selected_sizes | push: value.label -%}
-    {%- endfor -%}
-  {%- endif -%}
-{%- endfor -%}
+              {%- assign selected_size = '' -%}
+              {%- for filter in collection.filters -%}
+                {%- if filter.label == 'Size' -%}
+                  {%- for value in filter.active_values -%}
+                    {%- assign selected_size = value.label -%}
+                  {%- endfor -%}
+                {%- endif -%}
+              {%- endfor -%}
 
           
               {% assign ifCollectionSecondBanner = false %}
@@ -417,24 +416,16 @@
                       </div>
                     {%- endif -%} 
                 {%- endif -%}
-                {%- assign show_product = false -%}
-
-{%- if selected_sizes.size > 0 -%}
-  test
-  {%- for variant in product.variants -%}
-    {%- for size in selected_sizes -%}
-        {{ variant.option1 }} {{ size }} {{ variant.available }}<br>
-      {%- if variant.option1 == size and variant.available -%}
-        {%- assign show_product = true -%}
-        {%- break -%}
-      {%- endif -%}
-    {%- endfor -%}
-    {%- if show_product -%}
-      {%- break -%}
-    {%- endif -%}
-  {%- endfor -%}
-  {%- if show_product -%}
-    {%- if product.available or product.variants.first.inventory_policy == 'continue' -%}
+                {% if selected_size != '' %}
+                {% for variant in product.variants %}
+                  {{ variant.option1 }}
+                  {{ selected_size }}<br>
+                  {% if variant.option1 contains selected_size and variant.available %}
+                    {% assign size_in_stock = true %}
+                  {% endif %}
+                {% endfor %}
+                {% if size_in_stock %}
+                  {%- if product.available or product.variants.first.inventory_policy == 'continue' -%}
                   <li
                     class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                     {% if settings.animations_reveal_on_scroll %}
@@ -455,7 +446,7 @@
                     %}
                   </li>
                 {%- endif -%}
-  {%- endif -%}
+                {% endif %}
               {% else %}
                 {%- if product.available or product.variants.first.inventory_policy == 'continue' -%}
                   <li
