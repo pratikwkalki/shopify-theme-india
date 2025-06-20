@@ -355,16 +355,17 @@
               "
             >
 
-          {%- assign selected_sizes = '' | split: ',' -%}
+          {%- assign selected_sizes_string = '' -%}
 
-          {%- for filter in collection.filters -%}
-            {%- if filter.label == 'Size' -%}
-              {%- for value in filter.active_values -%}
-                {%- assign selected_sizes = selected_sizes | push: value.label -%}
-              {%- endfor -%}
-            {%- endif -%}
-          {%- endfor -%}
-          {{ selected_sizes }} new <br>
+{%- for filter in collection.filters -%}
+  {%- if filter.label == 'Size' -%}
+    {%- for value in filter.active_values -%}
+      {%- assign selected_sizes_string = selected_sizes_string | append: value.label | append: ',' -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+          {{ selected_sizes_string }} new <br>
+              
 
               {%- assign selected_size = '' -%}
               {%- for filter in collection.filters -%}
