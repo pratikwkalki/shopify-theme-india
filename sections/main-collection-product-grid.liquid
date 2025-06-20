@@ -428,6 +428,9 @@
                       {%- if variant.option1 == size and variant.available -%}
                         {%- assign show_product = true -%}
                         {%- break -%}
+                      {%- elsif product.options[0] == 'Made to Order' and variant.title == 'Made to order to create' -%}
+                        {%- assign show_product = true -%}
+                        {%- break -%}
                       {%- endif -%}
                     {%- endfor -%}
                     {%- if show_product -%}
