@@ -197,44 +197,46 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                {%- if visible_index == 9 -%}
-                  {% if collection.metafields.custom.collection_product_tile_banners.value %}
-                    {% for banner in collection.metafields.custom.collection_product_tile_banners.value %}
-                      {% if forloop.first %}
-                        {% render 'collection-product-tile-banner', banner_image: banner.banner_image, banner_url: banner.banner_url  %}
-                      {% endif %} 
-                      {% if forloop.index == 2 %}
-                        {% assign ifCollectionSecondBanner = true %}
-                      {% endif %}
-                    {% endfor %}
-                  {% elsif section.settings.colletion_banner_1 != blank %}
-                    {% render 'collection-product-tile-banner', banner_image: section.settings.colletion_banner_1, banner_url: section.settings.colletion_banner_1_url %}
-                  {% endif %}
-                {%- endif -%}
-                {%- if visible_index == 27 -%}
-                  {% if ifCollectionSecondBanner == true %}
-                    {% for banner in collection.metafields.custom.collection_product_tile_banners.value %}
-                      {% if forloop.index == 2 %}
-                        {% render 'collection-product-tile-banner', banner_image: banner.banner_image, banner_url: banner.banner_url  %}
-                      {% endif %}
-                    {% endfor %}
-                  {% elsif section.settings.colletion_banner_2 != blank %}
-                    {% render 'collection-product-tile-banner', banner_image: section.settings.colletion_banner_2, banner_url: section.settings.colletion_banner_2_url %}
-                  {% endif %}
-                {%- endif -%}
-                {%- if visible_index == 15 -%}
-                   {%- if settings.mobile_middle_banner != blank -%}
-                      <div class="collection-mobile-middle-banner">
-                        <a href="{{  settings.mobile_middle_banner_url }}">
-                          {{
-                            settings.mobile_middle_banner | 
-                            image_url: width: settings.mobile_middle_banner.width | 
-                            image_tag: widths: '180, 360, 540, 767', 
-                            fetchpriority: 'auto'
-                          }}
-                        </a>
-                      </div>
-                    {%- endif -%} 
+                {%- if selected_sizes_string == '' -%}
+                  {%- if visible_index == 9 -%}
+                    {% if collection.metafields.custom.collection_product_tile_banners.value %}
+                      {% for banner in collection.metafields.custom.collection_product_tile_banners.value %}
+                        {% if forloop.first %}
+                          {% render 'collection-product-tile-banner', banner_image: banner.banner_image, banner_url: banner.banner_url  %}
+                        {% endif %} 
+                        {% if forloop.index == 2 %}
+                          {% assign ifCollectionSecondBanner = true %}
+                        {% endif %}
+                      {% endfor %}
+                    {% elsif section.settings.colletion_banner_1 != blank %}
+                      {% render 'collection-product-tile-banner', banner_image: section.settings.colletion_banner_1, banner_url: section.settings.colletion_banner_1_url %}
+                    {% endif %}
+                  {%- endif -%}
+                  {%- if visible_index == 27 -%}
+                    {% if ifCollectionSecondBanner == true %}
+                      {% for banner in collection.metafields.custom.collection_product_tile_banners.value %}
+                        {% if forloop.index == 2 %}
+                          {% render 'collection-product-tile-banner', banner_image: banner.banner_image, banner_url: banner.banner_url  %}
+                        {% endif %}
+                      {% endfor %}
+                    {% elsif section.settings.colletion_banner_2 != blank %}
+                      {% render 'collection-product-tile-banner', banner_image: section.settings.colletion_banner_2, banner_url: section.settings.colletion_banner_2_url %}
+                    {% endif %}
+                  {%- endif -%}
+                  {%- if visible_index == 15 -%}
+                     {%- if settings.mobile_middle_banner != blank -%}
+                        <div class="collection-mobile-middle-banner">
+                          <a href="{{  settings.mobile_middle_banner_url }}">
+                            {{
+                              settings.mobile_middle_banner | 
+                              image_url: width: settings.mobile_middle_banner.width | 
+                              image_tag: widths: '180, 360, 540, 767', 
+                              fetchpriority: 'auto'
+                            }}
+                          </a>
+                        </div>
+                      {%- endif -%} 
+                  {%- endif -%}
                 {%- endif -%}
                 {%- assign selected_sizes = selected_sizes_string | split: ',' -%}
                 {%- assign show_product = false -%}
