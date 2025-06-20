@@ -364,19 +364,18 @@
               {%- endfor -%}
             {%- endif -%}
           {%- endfor -%}
-          {{ selected_sizes }} new
+          {{ selected_sizes }} new <br>
 
               {%- assign selected_size = '' -%}
               {%- for filter in collection.filters -%}
                 {%- if filter.label == 'Size' -%}
                   {%- for value in filter.active_values -%}
                     {%- assign selected_size_old = value.label -%}
-                    {{ selected_size_old }} test <br>
                   {%- endfor -%}
                 {%- endif -%}
               {%- endfor -%}
 
-              {{ selected_size_old }} old
+              {{ selected_size_old }} old <br>
 
           
               {% assign ifCollectionSecondBanner = false %}
