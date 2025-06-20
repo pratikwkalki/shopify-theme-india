@@ -426,7 +426,7 @@
                   {%- for variant in product.variants -%}
                     {%- for size in selected_sizes -%}
                       {%- if variant.option1 == size and variant.available -%}
-                        {% unless variant.title == 'Made to order to create' %}
+                        {% unless variant.option1 == 'Made to order' %}
                           
                         {%- assign show_product = true -%}
                         {%- break -%}
