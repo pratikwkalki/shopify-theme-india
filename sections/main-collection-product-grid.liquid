@@ -426,7 +426,7 @@
                   {%- for variant in product.variants -%}
                     {%- for size in selected_sizes -%}
                         {{ variant.option1 }} / {{ size }}<br>
-                      {%- if variant.option1 == size and variant.available -%}
+                      {%- if variant.option1 contains size and variant.available -%}
                         {%- assign show_product = true -%}
                         {%- break -%}
                       {%- endif -%}
