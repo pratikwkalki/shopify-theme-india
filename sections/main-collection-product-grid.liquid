@@ -425,10 +425,11 @@
                 {%- if selected_sizes_string != '' -%}
                   {%- for variant in product.variants -%}
                     {%- for size in selected_sizes -%}
-                      {{ size }}<br>
+                      {% if size != 'Made to order to create' %}
                       {%- if variant.option1 == size and variant.available -%}
                         {%- assign show_product = true -%}
                         {%- break -%}
+                      {%- endif -%}
                       {%- endif -%}
                     {%- endfor -%}
                     {%- if show_product -%}
