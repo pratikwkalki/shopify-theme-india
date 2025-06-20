@@ -359,8 +359,8 @@
               {%- for filter in collection.filters -%}
                 {%- if filter.label == 'Size' -%}
                   {%- for value in filter.active_values -%}
-                    {{ selected_size }} test
                     {%- assign selected_size = value.label -%}
+                    {{ selected_size }} test
                   {%- endfor -%}
                 {%- endif -%}
               {%- endfor -%}
