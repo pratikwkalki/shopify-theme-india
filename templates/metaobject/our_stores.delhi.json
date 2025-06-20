@@ -100,6 +100,35 @@
         "main_heading_text": "Our Services"
       }
     },
+    "featured_collection_LKAHAV": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Delhi collection",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "delhi-south-ex-store",
+        "products_to_show": 25,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "page_store_detail_collection_new_AqYqqM": {
       "type": "Page-Store-detail-collection-new",
       "settings": {
@@ -356,6 +385,7 @@
     "page_store_detail_objects_new_8zxkVP",
     "single_image_c9E6CF",
     "page_store_detail_service_new_A4aGdc",
+    "featured_collection_LKAHAV",
     "page_store_detail_collection_new_AqYqqM",
     "page_store_detail_tabs_new_AfAkcL",
     "page_store_google_reviews_new_nmDckY",
