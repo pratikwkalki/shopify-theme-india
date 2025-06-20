@@ -425,12 +425,10 @@
                 {%- if selected_sizes_string != '' -%}
                   {%- for variant in product.variants -%}
                     {%- for size in selected_sizes -%}
-                      {% unless size contains 'Made to order to create' %}
                       {%- if variant.option1 == size and variant.available -%}
                         {%- assign show_product = true -%}
                         {%- break -%}
                       {%- endif -%}
-                        {% endunless %}
                     {%- endfor -%}
                     {%- if show_product -%}
                       {%- break -%}
