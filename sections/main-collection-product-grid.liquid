@@ -368,7 +368,6 @@
               {% assign ifCollectionSecondBanner = false %}
               {%- assign visible_index = 0 -%}
               {%- for product in collection.products -%}
-                 {%- assign size_in_stock = false -%}
                 {%- if product.available or product.variants.first.inventory_policy == 'continue' -%}
                   {%- assign visible_index = visible_index | plus: 1 -%}
                 {%- endif -%}
