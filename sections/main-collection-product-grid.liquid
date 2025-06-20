@@ -355,15 +355,28 @@
               "
             >
 
+          {%- assign selected_sizes = '' | split: ',' -%}
+
+          {%- for filter in collection.filters -%}
+            {%- if filter.label == 'Size' -%}
+              {%- for value in filter.active_values -%}
+                {%- assign selected_sizes = selected_sizes | push: value.label -%}
+              {%- endfor -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {{ selected_sizes }} new
+
               {%- assign selected_size = '' -%}
               {%- for filter in collection.filters -%}
                 {%- if filter.label == 'Size' -%}
                   {%- for value in filter.active_values -%}
-                    {%- assign selected_size = value.label -%}
-                    {{ selected_size }} test <br>
+                    {%- assign selected_size_old = value.label -%}
+                    {{ selected_size_old }} test <br>
                   {%- endfor -%}
                 {%- endif -%}
               {%- endfor -%}
+
+              {{ selected_size_old }} old
 
           
               {% assign ifCollectionSecondBanner = false %}
