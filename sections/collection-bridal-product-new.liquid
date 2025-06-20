@@ -180,7 +180,7 @@
               {%- assign selected_sizes_string = '' -%}
     
               {%- for filter in collection.filters -%}
-                {%- if filter.label == 'Size' -%}
+                {%- if filter.label == 'Size' or filter.label == 'Size Options' -%}
                   {%- for value in filter.active_values -%}
                     {%- assign selected_sizes_string = selected_sizes_string | append: value.label | append: ',' -%}
                   {%- endfor -%}
