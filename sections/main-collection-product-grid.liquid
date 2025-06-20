@@ -418,7 +418,7 @@
                 {%- endif -%}
                 {% if selected_size != '' %}
                 {% for variant in product.variants %}
-                  {% if variant.option1 == selected_size and variant.available %}
+                  {% if variant.option1 contains selected_size and variant.available %}
                     {% assign size_in_stock = true %}
                   {% endif %}
                 {% endfor %}
