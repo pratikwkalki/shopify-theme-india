@@ -355,14 +355,14 @@
               "
             >
 
-              {%- assign selected_size = '' -%}
-              {%- for filter in collection.filters -%}
-                {%- if filter.label == 'Size' -%}
-                  {%- for value in filter.active_values -%}
-                    {%- assign selected_size = value.label -%}
-                  {%- endfor -%}
-                {%- endif -%}
-              {%- endfor -%}
+              {% assign selected_sizes = '' | split: ',' %}
+{% for filter in collection.filters %}
+  {% if filter.label == 'Size' %}
+    {% for value in filter.active_values %}
+      {% assign selected_sizes = selected_sizes | push: value.label %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
 
           
               {% assign ifCollectionSecondBanner = false %}
