@@ -420,6 +420,7 @@
                 {%- assign show_product = false -%}
 
 {%- if selected_sizes.size > 0 -%}
+  test
   {%- for variant in product.variants -%}
     {%- for size in selected_sizes -%}
         {{ variant.option1 }} {{ size }} {{ variant.available }}<br>
