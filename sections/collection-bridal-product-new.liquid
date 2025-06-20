@@ -242,9 +242,11 @@
                 {%- if selected_sizes_string != '' -%}
                   {%- for variant in product.variants -%}
                     {%- for size in selected_sizes -%}
-                      {%- if variant.option1 == size and variant.available -%} 
-                        {%- assign show_product = true -%}
-                        {%- break -%}
+                      {%- if variant.option1 == size -%}
+                        {%- if variant.available or variant.inventory_policy == 'continue' -%}
+                          {%- assign show_product = true -%}
+                          {%- break -%}
+                        {%- endif -%}
                       {%- endif -%}
                     {%- endfor -%}
                     {%- if show_product -%}
