@@ -531,18 +531,19 @@ window.onWizzyScriptLoaded = function () {
       );
       selectedPrice.forEach((p) => {
         if (p) {
-          // let price = p.textContent.replace(/\.0/g, "");
-          // let [minPrice, maxPrice] = price.split("-");
-          //  minPrice = minPrice.trim();
-          //   maxPrice = maxPrice.trim();
+          let price = p.textContent.replace(/\.0/g, "");
+          price = price.replace(".00", "");
+          let [minPrice, maxPrice] = price.split("-");
+           minPrice = minPrice.trim();
+            maxPrice = maxPrice.trim();
         
-          //   if (!minPrice.startsWith("₹")) {
-          //     minPrice = `₹${minPrice}`;
-          //   }
+            if (!minPrice.startsWith("₹")) {
+              minPrice = `₹${minPrice}`;
+            }
         
-          //   if (!maxPrice.startsWith("₹")) {
-          //     maxPrice = `₹${maxPrice}`;
-          //   }
+            if (!maxPrice.startsWith("₹")) {
+              maxPrice = `₹${maxPrice}`;
+            }
           // Split the price range by '-'
           // let [minRaw, maxRaw] = priceText.split("-").map((val) =>
           //   val.replace(/[^\d]/g, "") // remove ₹, commas, dots, etc.
