@@ -352,7 +352,9 @@ function updateCartEstimatedDelivery() {
     });
 }
 
-updateCartEstimatedDelivery();
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(updateCartEstimatedDelivery, 300);
+});
 
 // document.addEventListener('disCountAppliedEvent', function(d){
 // if (d.detail.is_from_cookie===false)
