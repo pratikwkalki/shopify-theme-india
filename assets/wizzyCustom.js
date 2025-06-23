@@ -544,31 +544,31 @@ window.onWizzyScriptLoaded = function () {
           //     maxPrice = `₹${maxPrice}`;
           //   }
           // Split the price range by '-'
-          let [minRaw, maxRaw] = priceText.split("-").map((val) =>
-            val.replace(/[^\d]/g, "") // remove ₹, commas, dots, etc.
-          );
+          // let [minRaw, maxRaw] = priceText.split("-").map((val) =>
+          //   val.replace(/[^\d]/g, "") // remove ₹, commas, dots, etc.
+          // );
       
-          // Convert to integer numbers
-          let min = Number(minRaw);
-          let max = Number(maxRaw);
+          // // Convert to integer numbers
+          // let min = Number(minRaw);
+          // let max = Number(maxRaw);
       
-          // Format prices with ₹ and comma separator
-          let formattedMin = `₹${minPrice.toLocaleString("en-IN", {
-            minimumFractionDigits: 0,
-            maximumFractionDigits: 0,
-          })}`;
+          // // Format prices with ₹ and comma separator
+          // let formattedMin = `₹${minPrice.toLocaleString("en-IN", {
+          //   minimumFractionDigits: 0,
+          //   maximumFractionDigits: 0,
+          // })}`;
       
-          let formattedMax = `₹${maxPrice.toLocaleString("en-IN", {
-            minimumFractionDigits: 0,
-            maximumFractionDigits: 0,
-          })}`;
-          const formatINR = (num) =>
-          `₹${num.toLocaleString("en-IN", {
-            maximumFractionDigits: 0,
-          })}`;
+          // let formattedMax = `₹${maxPrice.toLocaleString("en-IN", {
+          //   minimumFractionDigits: 0,
+          //   maximumFractionDigits: 0,
+          // })}`;
+          // const formatINR = (num) =>
+          // `₹${num.toLocaleString("en-IN", {
+          //   maximumFractionDigits: 0,
+          // })}`;
 
         
-            p.textContent = `${minPrice} - ${maxPrice}`;
+          //   p.textContent = `${minPrice} - ${maxPrice}`;
         }
       });
 
