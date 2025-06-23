@@ -461,6 +461,10 @@ span.wizzy-autocomplete-label {
   display: none !important;
 }
 @media screen and (min-width: 750px) {
+  .wizzy-search-wrapper .breadcrumbs
+  {
+    display: block !important;
+  }
   .wizzy-search-results-list {
     column-gap: var(--grid-desktop-horizontal-spacing) !important;
     row-gap: var(--grid-desktop-vertical-spacing) !important;
