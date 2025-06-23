@@ -127,11 +127,75 @@
         "main_background_color": "#FFFFFF",
         "main_heading_text": "Shop by Category"
       }
+    },
+    "index_custom_collections_new_VRzT7c": {
+      "type": "Index-custom-collections-new",
+      "blocks": {
+        "information_GK9bkp": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/Mehendi_23-06-25.png",
+            "main_mobile_image": "shopify://shop_images/Mehendi_23-06-25.png",
+            "title": "Wedding",
+            "sub_head_text": "",
+            "main_tags_detail_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "/"
+          }
+        },
+        "information_M7hH3d": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/Sangeet_23-06-2025.png",
+            "main_mobile_image": "shopify://shop_images/Sangeet_23-06-2025.png",
+            "title": "Sangeet",
+            "sub_head_text": "",
+            "main_tags_detail_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "/"
+          }
+        },
+        "information_jLD3Ek": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/Engagement_23-06-2025.png",
+            "main_mobile_image": "shopify://shop_images/Engagement_23-06-2025.png",
+            "title": "Haldi",
+            "sub_head_text": "",
+            "main_tags_detail_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "/"
+          }
+        },
+        "information_McCk7z": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/Reception_23-06-2025.png",
+            "main_mobile_image": "shopify://shop_images/Reception_23-06-2025.png",
+            "title": "Reception",
+            "sub_head_text": "",
+            "main_tags_detail_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "/"
+          }
+        }
+      },
+      "block_order": [
+        "information_GK9bkp",
+        "information_M7hH3d",
+        "information_jLD3Ek",
+        "information_McCk7z"
+      ],
+      "name": "Index Custom Collections",
+      "settings": {
+        "main_background_color": "#FFFFFF"
+      }
     }
   },
   "order": [
     "main",
     "index_top_banner_slider_new_rPemAU",
-    "mens_collection_category_lists_new_yHF3DE"
+    "mens_collection_category_lists_new_yHF3DE",
+    "index_custom_collections_new_VRzT7c"
   ]
 }
