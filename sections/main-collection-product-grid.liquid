@@ -375,7 +375,6 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                {{ selected_sizes_string }}
                 {%- if selected_sizes_string == '' -%}
                   {%- if visible_index == 9 -%}
                     {% if collection.metafields.custom.collection_product_tile_banners.value %}
