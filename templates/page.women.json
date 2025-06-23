@@ -187,12 +187,71 @@
         "main_background_color": "#FFFFFF",
         "main_heading_text": "Shop by Category"
       }
+    },
+    "tagalys_section_WBCzDt": {
+      "type": "tagalys-section",
+      "name": "Tagalys Embed Section",
+      "settings": {
+        "playlist_id": "1530e3743fd689c4d848"
+      }
+    },
+    "index_side_by_side_banner_new_zXQ9Gn": {
+      "type": "Index-side-by-side-banner-new",
+      "blocks": {
+        "information_7W3gLD": {
+          "type": "information",
+          "settings": {
+            "main_desktop_full_image": "shopify://shop_images/Bridesmaid_23-06-2025.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1_editors_picks_bridesmaid_all_country_800x586_mobile_27_05_25.jpg",
+            "alt_text": "",
+            "main_banner_redirect_link": ""
+          }
+        },
+        "information_gxrNj3": {
+          "type": "information",
+          "settings": {
+            "main_desktop_full_image": "shopify://shop_images/Greens_23-06-2025.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1_editors_picks_bridesmaid_all_country_800x586_mobile_27_05_25.jpg",
+            "alt_text": "",
+            "main_banner_redirect_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "information_7W3gLD",
+        "information_gxrNj3"
+      ],
+      "name": "Index Side By Side Banner",
+      "settings": {
+        "main_background_color": "#FFFFFF",
+        "main_heading_text": "Editor's Picks"
+      }
+    },
+    "tagalys_section_NYrNL8": {
+      "type": "tagalys-section",
+      "name": "Tagalys Embed Section",
+      "settings": {
+        "playlist_id": "1530e3743fd689c4d848"
+      }
+    },
+    "index_object_testimonials_new_Tq8QPM": {
+      "type": "Index-object-testimonials-new",
+      "name": "Index Object Testimonials",
+      "settings": {
+        "main_background_color": "#FFFFFF",
+        "main_heading_text": "Customer Stories",
+        "meta_object_handle_name_text": "index_customer_stories"
+      }
     }
   },
   "order": [
     "main",
     "index_top_banner_slider_new_rPemAU",
     "mens_collection_category_lists_new_yHF3DE",
-    "index_custom_category_new_xdXLW8"
+    "index_custom_category_new_xdXLW8",
+    "tagalys_section_WBCzDt",
+    "index_side_by_side_banner_new_zXQ9Gn",
+    "tagalys_section_NYrNL8",
+    "index_object_testimonials_new_Tq8QPM"
   ]
 }
