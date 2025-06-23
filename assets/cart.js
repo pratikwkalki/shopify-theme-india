@@ -266,7 +266,44 @@ class CartItems extends HTMLElement {
     cartDrawerItemElements.forEach((overlay) => overlay.classList.add('hidden'));
   }
 
-  
+  // ✅ New Method: Automatically Remove Upsell Without Main Product
+  checkAndRemoveOrphanUpsells() {
+    console.log('testing')
+    const cartItems = this.querySelectorAll('[js-cart-item-details]');
+    const mainProductRefIds = new Set();
+
+    // Collect _ref_id from all main products
+    cartItems.forEach(item => {
+      const isMain = item.querySelector('[js-main-product]');
+      const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
+      if (isMain && refEl) {
+        mainProductRefIds.add(refEl.getAttribute('data-property-last'));
+      }
+    });
+
+    // Remove upsell items if their main product is missing
+    cartItems.forEach(item => {
+      const isMain = item.querySelector('[js-main-product]');
+      const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
+
+      if (!isMain && refEl) {
+        const refId = refEl.getAttribute('data-property-last');
+        const lineItemKey = item.dataset.lineItemKey;
+
+        if (!mainProductRefIds.has(refId)) {
+          const formData = new FormData();
+          formData.append(`updates[${lineItemKey}]`, 0);
+          formData.append('sections_url', window.location.pathname);
+
+          fetch(`${routes.cart_update_url}`, {
+            method: 'POST',
+            body: formData,
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+          }).then(() => this.onCartUpdate());
+        }
+      }
+    });
+  }
 }
 
 customElements.define('cart-items', CartItems);
@@ -350,62 +387,15 @@ function updateCartEstimatedDelivery() {
   fetch(`/cart.js?timestamp=${new Date().getTime()}`)
     .then(response => response.json())
     .then(cart => {
-      return updateCartEstimatedDeliverySequentially(cart.items), checkAndRemoveOrphanUpsells(cart.items);
+      return updateCartEstimatedDeliverySequentially(cart.items);
     })
     .catch(error => {
       console.error("Error fetching cart:", error);
     });
 }
 
-// ✅ New Method: Automatically Remove Upsell Without Main Product
-function checkAndRemoveOrphanUpsells(cartItems) {
-  if (!Array.isArray(cartItems)) {
-    console.warn('checkAndRemoveOrphanUpsells: cartItems is not an array', cartItems);
-    return;
-  }
-
-  const mainProductRefIds = new Set();
-
-  // Step 1: Collect ref_ids from main products (those that contain [js-main-product] in DOM)
-  cartItems.forEach(item => {
-    const domItem = document.querySelector(`[js-cart-item-details][data-line-item-key="${item.key}"]`);
-    const isMain = domItem?.querySelector('[js-main-product]');
-    const refId = item.properties?._ref_id;
-
-    if (isMain && refId) {
-      mainProductRefIds.add(refId);
-    }
-  });
-
-  // Step 2: Remove upsells whose ref_id is not in mainProductRefIds
-  cartItems.forEach(item => {
-    const refId = item.properties?._ref_id;
-    const lineItemKey = item.key;
-
-    const domItem = document.querySelector(`[js-cart-item-details][data-line-item-key="${lineItemKey}"]`);
-    const isMain = domItem?.querySelector('[js-main-product]');
-
-    if (refId && !isMain && !mainProductRefIds.has(refId)) {
-      const formData = new FormData();
-      formData.append(`updates[${lineItemKey}]`, 0);
-      formData.append('sections_url', window.location.pathname);
-
-      fetch(`${routes.cart_update_url}`, {
-        method: 'POST',
-        body: formData,
-        headers: { 'X-Requested-With': 'XMLHttpRequest' }
-      }).then(() => {
-        // Optional: refresh cart UI
-        // updateCartEstimatedDelivery(); 
-      });
-    }
-  });
-}
-
-
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(updateCartEstimatedDelivery, 300);
-  checkAndRemoveOrphanUpsells();
 });
 
 // document.addEventListener('disCountAppliedEvent', function(d){
