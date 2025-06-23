@@ -576,7 +576,7 @@ window.onWizzyScriptLoaded = function () {
           // })}`;
 
         
-          //   p.textContent = `${minPrice} - ${maxPrice}`;
+            p.textContent = `${minPrice} - ${maxPrice}`;
         }
       });
 
