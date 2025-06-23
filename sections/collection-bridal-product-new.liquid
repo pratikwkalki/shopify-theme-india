@@ -246,8 +246,7 @@
                       {%- if variant.option1 == size and variant.available -%} 
                         {%- assign show_product = true -%}
                         {%- break -%}
-                      {%- endif -%}
-                      {%- if variant.option2 == size and variant.available -%} 
+                      {%- elsif variant.option2 == size and variant.available -%} 
                         {%- assign show_product = true -%}
                         {%- break -%}
                       {%- endif -%}
