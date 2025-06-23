@@ -1,0 +1,31 @@
+.slider-buttons-new{
+      position: absolute;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+  width: 100%;
+}
+.slider-buttons-new .slider-button{
+  background: #fff;
+}
+
+.slider-buttons-new .slider-button--prev{
+      left: 0 !important;
+    position: absolute;
+}
+
+.slider-buttons-new .slider-button--next{
+  right: 0 !important;
+    position: absolute;
+}
+
+.slider-buttons-new .slider-button .icon{
+  height: auto;
+    width: 100%;
+}
+.display-none {
+  display: none;
+}
+.title.inline-richtext.h2{
+  text-align: center
+}
