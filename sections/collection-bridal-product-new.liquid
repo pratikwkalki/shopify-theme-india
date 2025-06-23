@@ -169,7 +169,6 @@
             <div class="loading-overlay gradient">
               {% render "loader-spinner" %}
             </div>
-            testing is going on
             <ul
               id="product-grid"
               data-id="{{ section.id }}"
@@ -198,6 +197,7 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
+                {{ selected_sizes_string }}
                 {%- if selected_sizes_string == '' -%}
                   {%- if visible_index == 9 -%}
                     {% if collection.metafields.custom.collection_product_tile_banners.value %}
