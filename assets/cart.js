@@ -266,6 +266,7 @@ class CartItems extends HTMLElement {
 
   // ✅ New Method: Automatically Remove Upsell Without Main Product
   checkAndRemoveOrphanUpsells() {
+    console.log('testing is going on')
     const cartItems = this.querySelectorAll('[js-cart-item-details]');
     const mainProductRefIds = new Set();
 
