@@ -1743,7 +1743,7 @@ cart-drawer.is-empty .drawer__header {
   display: none !important;
 }
 @media only screen and (min-width: 1024px) {
-  body:not(.page_white_header_transparent_new):not(.collection_header_transparent_new):not(.template--bridal-collection-new):not(.template--bridal-collection-new) sticky-header {
+  body:not(.page_white_header_transparent_new):not(.collection_header_transparent_new):not(.template--bridal-collection-new):not(.template--bridal-collection-new):not(.template-cart) sticky-header {
     min-height: 136.94px;
   }
   .header__icons {
