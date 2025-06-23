@@ -337,7 +337,10 @@
                 {%- if selected_sizes_string != '' -%}
                   {%- for variant in product.variants -%}
                     {%- for size in selected_sizes -%}
-                      {%- if variant.option1 == size and variant.available -%}
+                      {%- if variant.option1 == size and variant.available -%} 
+                        {%- assign show_product = true -%}
+                        {%- break -%}
+                      {%- elsif variant.option2 == size and variant.available -%} 
                         {%- assign show_product = true -%}
                         {%- break -%}
                       {%- endif -%}
