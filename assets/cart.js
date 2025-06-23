@@ -350,7 +350,7 @@ function updateCartEstimatedDelivery() {
   fetch(`/cart.js?timestamp=${new Date().getTime()}`)
     .then(response => response.json())
     .then(cart => {
-      return updateCartEstimatedDeliverySequentially(cart.items), updateCartEstimatedDelivery(cart.items);
+      return updateCartEstimatedDeliverySequentially(cart.items), checkAndRemoveOrphanUpsells(cart.items);
     })
     .catch(error => {
       console.error("Error fetching cart:", error);
