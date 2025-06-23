@@ -544,13 +544,13 @@ window.onWizzyScriptLoaded = function () {
           //     maxPrice = `₹${maxPrice}`;
           //   }
           // Split the price range by '-'
-          let [minPriceRaw, maxPriceRaw] = priceText.split("-").map((val) =>
-            val.replace(/[^\d.]/g, "") // Remove ₹ and commas
+          let [minRaw, maxRaw] = priceText.split("-").map((val) =>
+            val.replace(/[^\d]/g, "") // remove ₹, commas, dots, etc.
           );
       
-          // Convert to numbers
-          let minPrice = parseFloat(minPriceRaw);
-          let maxPrice = parseFloat(maxPriceRaw);
+          // Convert to integer numbers
+          let min = Number(minRaw);
+          let max = Number(maxRaw);
       
           // Format prices with ₹ and comma separator
           let formattedMin = `₹${minPrice.toLocaleString("en-IN", {
