@@ -23,6 +23,7 @@ class CartItems extends HTMLElement {
     }, ON_CHANGE_DEBOUNCE_TIMER);
 
     this.addEventListener('change', debouncedOnChange.bind(this));
+    this.checkAndRemoveOrphanUpsells();
   }
 
   cartUpdateUnsubscriber = undefined;
@@ -77,7 +78,6 @@ class CartItems extends HTMLElement {
           console.error(e);
         });
     }
-    this.checkAndRemoveOrphanUpsells();
   }
 
   getSectionsToRender() {
@@ -217,7 +217,6 @@ class CartItems extends HTMLElement {
       .finally(() => {
         this.disableLoading(line);
       });
-    this.checkAndRemoveOrphanUpsells();
 }
  
   updateLiveRegions(line, message) {
@@ -267,7 +266,6 @@ class CartItems extends HTMLElement {
 
   // ✅ New Method: Automatically Remove Upsell Without Main Product
   checkAndRemoveOrphanUpsells() {
-    console.log('testing is going on')
     const cartItems = this.querySelectorAll('[js-cart-item-details]');
     const mainProductRefIds = new Set();
 
