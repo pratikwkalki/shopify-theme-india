@@ -562,6 +562,10 @@ window.onWizzyScriptLoaded = function () {
             minimumFractionDigits: 0,
             maximumFractionDigits: 0,
           })}`;
+          const formatINR = (num) =>
+          `₹${num.toLocaleString("en-IN", {
+            maximumFractionDigits: 0,
+          })}`;
 
         
             p.textContent = `${minPrice} - ${maxPrice}`;
