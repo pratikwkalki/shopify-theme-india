@@ -217,6 +217,7 @@ class CartItems extends HTMLElement {
       .finally(() => {
         this.disableLoading(line);
       });
+    this.checkAndRemoveOrphanUpsells();
 }
  
   updateLiveRegions(line, message) {
