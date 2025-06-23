@@ -101,6 +101,9 @@
     },
     "featured_collection_bhBKwD": {
       "type": "featured-collection",
+      "custom_css": [
+        ".slider-counter-box {display: none;}"
+      ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "Ahmedabad collection",
