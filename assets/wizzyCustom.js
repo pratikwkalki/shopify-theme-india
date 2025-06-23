@@ -535,11 +535,13 @@ window.onWizzyScriptLoaded = function () {
           price = p.textContent.replace(/\.0/g, "");
           
           let [minPrice, maxPrice] = price.split("-");
-          console.log( [minPrice, maxPrice]);
-           // minPrice = minPrice.trim();
+          console.log("PRICE===========>";)
+           minPrice = minPrice.trim();
+          console.log(minPrice);
           minPrice.replace(".00", "");
         
-            // maxPrice = maxPrice.trim();
+            maxPrice = maxPrice.trim();
+           console.log(maxPrice);
           maxPrice.replace(".00", "");
         
             if (!minPrice.startsWith("₹")) {
