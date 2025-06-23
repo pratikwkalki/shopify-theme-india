@@ -361,6 +361,7 @@ function updateCartEstimatedDelivery() {
     // Collect _ref_id from all main products
     cartItems.forEach(item => {
       const isMain = item.querySelector('[js-main-product]');
+      console.log('isMain 1')
       const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
       if (isMain && refEl) {
         mainProductRefIds.add(refEl.getAttribute('data-property-last'));
@@ -370,6 +371,7 @@ function updateCartEstimatedDelivery() {
     // Remove upsell items if their main product is missing
     cartItems.forEach(item => {
       const isMain = item.querySelector('[js-main-product]');
+      console.log('isMain 2')
       const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
 
       if (!isMain && refEl) {
