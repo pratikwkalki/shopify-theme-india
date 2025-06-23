@@ -359,41 +359,43 @@ function updateCartEstimatedDelivery() {
 
 // ✅ New Method: Automatically Remove Upsell Without Main Product
 function checkAndRemoveOrphanUpsells(cartItems) {
-    console.log('testing',cartItems)
-    const mainProductRefIds = new Set();
+  const mainProductRefIds = new Set();
 
-    // Collect _ref_id from all main products
-    cartItems.forEach(item => {
-      const isMain = item.querySelector('[js-main-product]');
-      const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
-      if (isMain && refEl) {
-        mainProductRefIds.add(refEl.getAttribute('data-property-last'));
-      }
-    });
+  // Step 1: Collect ref_ids from main products (those that contain [js-main-product] in DOM)
+  cartItems.forEach(item => {
+    const domItem = document.querySelector(`[js-cart-item-details][data-line-item-key="${item.key}"]`);
+    const isMain = domItem?.querySelector('[js-main-product]');
+    const refId = item.properties?._ref_id;
 
-    // Remove upsell items if their main product is missing
-    cartItems.forEach(item => {
-      const isMain = item.querySelector('[js-main-product]');
-      const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
+    if (isMain && refId) {
+      mainProductRefIds.add(refId);
+    }
+  });
 
-      if (!isMain && refEl) {
-        const refId = refEl.getAttribute('data-property-last');
-        const lineItemKey = item.dataset.lineItemKey;
+  // Step 2: Remove upsells whose ref_id is not in mainProductRefIds
+  cartItems.forEach(item => {
+    const refId = item.properties?._ref_id;
+    const lineItemKey = item.key;
 
-        if (!mainProductRefIds.has(refId)) {
-          const formData = new FormData();
-          formData.append(`updates[${lineItemKey}]`, 0);
-          formData.append('sections_url', window.location.pathname);
+    const domItem = document.querySelector(`[js-cart-item-details][data-line-item-key="${lineItemKey}"]`);
+    const isMain = domItem?.querySelector('[js-main-product]');
 
-          fetch(`${routes.cart_update_url}`, {
-            method: 'POST',
-            body: formData,
-            headers: { 'X-Requested-With': 'XMLHttpRequest' }
-          }).then(() => this.onCartUpdate());
-        }
-      }
-    });
-  }
+    if (refId && !isMain && !mainProductRefIds.has(refId)) {
+      const formData = new FormData();
+      formData.append(`updates[${lineItemKey}]`, 0);
+      formData.append('sections_url', window.location.pathname);
+
+      fetch(`${routes.cart_update_url}`, {
+        method: 'POST',
+        body: formData,
+        headers: { 'X-Requested-With': 'XMLHttpRequest' }
+      }).then(() => {
+        // Optional: refresh cart UI
+        // updateCartEstimatedDelivery(); 
+      });
+    }
+  });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(updateCartEstimatedDelivery, 300);
