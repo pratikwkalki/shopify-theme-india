@@ -532,9 +532,9 @@ window.onWizzyScriptLoaded = function () {
       selectedPrice.forEach((p) => {
         if (p) {
           // let price = p.replace(".00", "");
-          let price = p.textContent.replace(/\.0/g, "");
+          // let price = p.textContent.replace(/\.0/g, "");
           
-          let [minPrice, maxPrice] = price.split("-");
+          let [minPrice, maxPrice] = p.split("-");
           console.log("PRICE===========>");
            minPrice = minPrice.trim();
           console.log(minPrice);
