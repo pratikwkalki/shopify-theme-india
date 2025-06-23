@@ -21,6 +21,8 @@
         "information_NMX4Ut": {
           "type": "information",
           "settings": {
+            "main_desktop_full_image": "shopify://shop_images/women-Banner_1.jpg",
+            "main_mobile_full_image": "shopify://shop_images/women-Banner_1.jpg",
             "alt_text": "",
             "main_banner_redirect_link": ""
           }
@@ -28,6 +30,8 @@
         "information_hwGJiC": {
           "type": "information",
           "settings": {
+            "main_desktop_full_image": "shopify://shop_images/women-Banner_1.jpg",
+            "main_mobile_full_image": "shopify://shop_images/women-Banner_1.jpg",
             "alt_text": "",
             "main_banner_redirect_link": ""
           }
@@ -41,10 +45,93 @@
       "settings": {
         "main_background_color": "#FFFFFF"
       }
+    },
+    "mens_collection_category_lists_new_yHF3DE": {
+      "type": "Mens-collection-category-lists-new",
+      "blocks": {
+        "information_AU6er6": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/women-banner-1-23-06-2025.jpg",
+            "main_mobile_image": "shopify://shop_images/women-banner-1-23-06-2025.jpg",
+            "title": "<p>Heading</p>",
+            "main_redirect_link": "/"
+          }
+        },
+        "information_RP6QVk": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/women-banner-2-23-06-2025.jpg",
+            "main_mobile_image": "shopify://shop_images/women-banner-2-23-06-2025.jpg",
+            "title": "<p>Heading</p>",
+            "main_redirect_link": "/"
+          }
+        },
+        "information_E3nFmx": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/women-banner-3-23-06-2025.jpg",
+            "main_mobile_image": "shopify://shop_images/women-banner-3-23-06-2025.jpg",
+            "title": "<p>Heading</p>",
+            "main_redirect_link": "/"
+          }
+        },
+        "information_WncwTD": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/women-banner-4-23-06-2025.jpg",
+            "main_mobile_image": "shopify://shop_images/women-banner-4-23-06-2025.jpg",
+            "title": "<p>Heading</p>",
+            "main_redirect_link": "/"
+          }
+        },
+        "information_JK9bKp": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/women-banner-5-23-06-2025.jpg",
+            "main_mobile_image": "shopify://shop_images/women-banner-5-23-06-2025.jpg",
+            "title": "<p>Heading</p>",
+            "main_redirect_link": "/"
+          }
+        },
+        "information_RdwD6U": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/women-banner-6-23-06-2025.jpg",
+            "main_mobile_image": "shopify://shop_images/women-banner-6-23-06-2025.jpg",
+            "title": "<p>Heading</p>",
+            "main_redirect_link": "/"
+          }
+        },
+        "information_tyBbVb": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/women-banner-7-23-06-2025.jpg",
+            "main_mobile_image": "shopify://shop_images/women-banner-7-23-06-2025.jpg",
+            "title": "<p>Heading</p>",
+            "main_redirect_link": "/"
+          }
+        }
+      },
+      "block_order": [
+        "information_AU6er6",
+        "information_RP6QVk",
+        "information_E3nFmx",
+        "information_WncwTD",
+        "information_JK9bKp",
+        "information_RdwD6U",
+        "information_tyBbVb"
+      ],
+      "name": "Mens Collection Category",
+      "settings": {
+        "main_background_color": "#FFFFFF",
+        "main_heading_text": "Shop by Category"
+      }
     }
   },
   "order": [
     "main",
-    "index_top_banner_slider_new_rPemAU"
+    "index_top_banner_slider_new_rPemAU",
+    "mens_collection_category_lists_new_yHF3DE"
   ]
 }
