@@ -531,18 +531,34 @@ window.onWizzyScriptLoaded = function () {
       );
       selectedPrice.forEach((p) => {
         if (p) {
-          let price = p.textContent.replace(/\.0/g, "");
-          let [minPrice, maxPrice] = price.split("-");
-           minPrice = minPrice.trim();
-            maxPrice = maxPrice.trim();
+          // let price = p.textContent.replace(/\.0/g, "");
+          // let [minPrice, maxPrice] = price.split("-");
+          //  minPrice = minPrice.trim();
+          //   maxPrice = maxPrice.trim();
         
-            if (!minPrice.startsWith("₹")) {
-              minPrice = `₹${minPrice}`;
-            }
+          //   if (!minPrice.startsWith("₹")) {
+          //     minPrice = `₹${minPrice}`;
+          //   }
         
-            if (!maxPrice.startsWith("₹")) {
-              maxPrice = `₹${maxPrice}`;
-            }
+          //   if (!maxPrice.startsWith("₹")) {
+          //     maxPrice = `₹${maxPrice}`;
+          //   }
+          // Split the price range by '-'
+          let [minPrice, maxPrice] = price.split("-").map((part) =>
+            parseFloat(part.replace(/[^0-9.]/g, "")) // Remove commas and currency symbols
+          );
+      
+          // Format prices with ₹ and comma separator
+          let formattedMin = `₹${minPrice.toLocaleString("en-IN", {
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0,
+          })}`;
+      
+          let formattedMax = `₹${maxPrice.toLocaleString("en-IN", {
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0,
+          })}`;
+
         
             p.textContent = `${minPrice} - ${maxPrice}`;
         }
