@@ -359,7 +359,7 @@ function updateCartEstimatedDelivery() {
 
 // ✅ New Method: Automatically Remove Upsell Without Main Product
 function checkAndRemoveOrphanUpsells(cartItems) {
-    console.log('testing')
+    console.log('testing',cartItems)
     const mainProductRefIds = new Set();
 
     // Collect _ref_id from all main products
