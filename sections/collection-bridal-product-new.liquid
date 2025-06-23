@@ -197,7 +197,6 @@
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
-                {{ selected_sizes_string }}
                 {%- if selected_sizes_string == '' -%}
                   {%- if visible_index == 9 -%}
                     {% if collection.metafields.custom.collection_product_tile_banners.value %}
@@ -241,7 +240,7 @@
                 {%- endif -%}
                 {%- assign selected_sizes = selected_sizes_string | split: ',' -%}
                 {%- assign show_product = false -%}
-                
+                {{ selected_sizes }}
                 {%- if selected_sizes_string != '' -%}
                   {%- for variant in product.variants -%}
                     {%- for size in selected_sizes -%}
