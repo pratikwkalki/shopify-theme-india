@@ -406,17 +406,17 @@ window.onWizzyScriptLoaded = function () {
     window.wizzyConfig.events.allowedEvents.AFTER_PRODUCTS_TRANSFORMED,
     function (products) {
       try {
-        console.log("after products transformed");
+        // console.log("after products transformed");
         products.forEach((product) => {
           // product.url = product.url.searchParams.delete("variant").toString();
           const parsedUrl = new URL(product.url);
           parsedUrl.searchParams.delete("variant");
-          console.log(parsedUrl);
+          // console.log(parsedUrl);
           product.url = parsedUrl.toString();
-           console.log(product.url);
+           // console.log(product.url);
           let attr = product.attributes.filter(attr => attr.id === "product_handle");
-          console.log(product.url.searchParams);
-          console.log(attr);
+          // console.log(product.url.searchParams);
+          // console.log(attr);
           product.productHandle = attr[0].values[0].value[0];
           let product_sellingprice = product.sellingPrice;
           product_sellingprice = product_sellingprice.replace(".00", "");
