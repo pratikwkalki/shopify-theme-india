@@ -359,6 +359,11 @@ function updateCartEstimatedDelivery() {
 
 // ✅ New Method: Automatically Remove Upsell Without Main Product
 function checkAndRemoveOrphanUpsells(cartItems) {
+  if (!Array.isArray(cartItems)) {
+    console.warn('checkAndRemoveOrphanUpsells: cartItems is not an array', cartItems);
+    return;
+  }
+
   const mainProductRefIds = new Set();
 
   // Step 1: Collect ref_ids from main products (those that contain [js-main-product] in DOM)
@@ -396,6 +401,7 @@ function checkAndRemoveOrphanUpsells(cartItems) {
     }
   });
 }
+
 
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(updateCartEstimatedDelivery, 300);
