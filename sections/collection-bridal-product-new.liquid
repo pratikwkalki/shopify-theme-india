@@ -240,10 +240,11 @@
                 {%- endif -%}
                 {%- assign selected_sizes = selected_sizes_string | split: ',' -%}
                 {%- assign show_product = false -%}
-                {{ selected_sizes }}
                 {%- if selected_sizes_string != '' -%}
                   {%- for variant in product.variants -%}
+                    {{ variant }}
                     {%- for size in selected_sizes -%}
+                      {{ size }}
                       {%- if variant.option1 == size and variant.available -%} 
                         {{ variant.option1 }} {{ size }} <br>
                         {%- assign show_product = true -%}
