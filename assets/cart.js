@@ -23,7 +23,9 @@ class CartItems extends HTMLElement {
     }, ON_CHANGE_DEBOUNCE_TIMER);
 
     this.addEventListener('change', debouncedOnChange.bind(this));
-    // this.checkAndRemoveOrphanUpsells();
+    document.addEventListener("DOMContentLoaded", () => {
+    this.checkAndRemoveOrphanUpsells();
+    });
   }
 
   cartUpdateUnsubscriber = undefined;
