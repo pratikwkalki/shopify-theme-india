@@ -11,10 +11,40 @@
   "sections": {
     "main": {
       "type": "Page-template-new",
-      "settings": {}
+      "settings": {
+        "main_background_color": "#ffffff"
+      }
+    },
+    "index_top_banner_slider_new_rPemAU": {
+      "type": "Index-top-banner-slider-new",
+      "blocks": {
+        "information_NMX4Ut": {
+          "type": "information",
+          "settings": {
+            "alt_text": "",
+            "main_banner_redirect_link": ""
+          }
+        },
+        "information_hwGJiC": {
+          "type": "information",
+          "settings": {
+            "alt_text": "",
+            "main_banner_redirect_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "information_NMX4Ut",
+        "information_hwGJiC"
+      ],
+      "name": "Index Top Banner Slider",
+      "settings": {
+        "main_background_color": "#FFFFFF"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "index_top_banner_slider_new_rPemAU"
   ]
 }
