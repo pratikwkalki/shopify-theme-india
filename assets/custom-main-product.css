@@ -2010,7 +2010,7 @@ div.ymq-option-title {
 .product-custom div[class="stitch-note-wrapper"]:not(.hide) + .options-dropdown-list.options-dropdown-list-pre-drap {
     display: block !important;
 }
-.product-custom .options-dropdown-list.options-dropdown-list-pre-drap {
+.product-custom div[class="stitch-note-wrapper"] + .options-dropdown-list.options-dropdown-list-pre-drap {
     display: none !important;
 }
 .sticky-addtocart-button .button[js-pdp-stick-addtocart-btn-stitched] {
