@@ -2007,7 +2007,7 @@ div.ymq-option-title {
 .card_review_new {
   display: none;
 }
-.product-custom div[class=stitch-note-wrapper]:not(.hide)+.options-dropdown-list.options-dropdown-list-pre-drap {
+.product-custom .stitch-note-wrapper:not(.hide)+.options-dropdown-list.options-dropdown-list-pre-drap {
     display: block !important;
 }
 .product-custom .stitch-note-wrapper + .options-dropdown-list.options-dropdown-list-pre-drap.hide {
