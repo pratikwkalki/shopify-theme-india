@@ -587,7 +587,8 @@ cart-remove-button .icon-remove {
     color: red;
     font-size: 14px;
     display: block;
-    margin-top: 5px;
+    margin-top: 10px;
+    line-height: normal;
 }
 
 @media only screen and (min-width:768px) {
