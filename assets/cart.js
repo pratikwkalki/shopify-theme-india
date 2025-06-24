@@ -397,12 +397,3 @@ function updateCartEstimatedDelivery() {
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(updateCartEstimatedDelivery, 500);
 });
-
-// document.addEventListener('disCountAppliedEvent', function(d){
-// if (d.detail.is_from_cookie===false)
-// {
-// console.log('clickin draw', d.detail)
-// // $('#CartDrawer').addClass('drawer--is-open');
-// console.log('show draw')
-// }
-// });
