@@ -2007,10 +2007,10 @@ div.ymq-option-title {
 .card_review_new {
   display: none;
 }
-.product-custom .non-returnable-pre-drap div[class="stitch-note-wrapper"] + .options-dropdown-list.options-dropdown-list-pre-drap {
+.product-custom div[class="stitch-note-wrapper"]:not(.hide) + .options-dropdown-list.options-dropdown-list-pre-drap {
     display: block !important;
 }
-.product-custom .non-returnable-pre-drap .options-dropdown-list.options-dropdown-list-pre-drap {
+.product-custom div[class="stitch-note-wrapper"] + .options-dropdown-list.options-dropdown-list-pre-drap {
     display: none !important;
 }
 .sticky-addtocart-button .button[js-pdp-stick-addtocart-btn-stitched] {
