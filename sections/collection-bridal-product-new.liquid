@@ -256,7 +256,31 @@
                     {%- endif -%}
                   {%- endfor -%}
                   {%- if show_product -%}
-                    <li
+                    {%- if product.available or product.variants.first.inventory_policy == 'continue' -%}
+                      <li
+                        class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}{% cycle ' Product_top_1_new mobile_Product_part_2_new', ' Product_top_1_new mobile_Product_part_2_new', ' Product_middle_1_new mobile_Product_part_1_new', ' Product_middle_3_new mobile_Product_part_2_new', ' Product_middle_3_new mobile_Product_part_2_new', ' Product_middle_3_new mobile_Product_part_1_new', ' Product_bottom_2_new mobile_Product_part_2_new', ' Product_bottom_2_new mobile_Product_part_2_new' %}"
+                        {% if settings.animations_reveal_on_scroll %}
+                          data-cascade
+                          style="--animation-order: {{ forloop.index }};"
+                        {% endif %}
+                      >
+                        {% render 'card-product',
+                          card_product: product,
+                          media_aspect_ratio: section.settings.image_ratio,
+                          image_shape: section.settings.image_shape,
+                          show_secondary_image: section.settings.show_secondary_image,
+                          show_vendor: section.settings.show_vendor,
+                          show_rating: section.settings.show_rating,
+                          lazy_load: lazy_load,
+                          show_quick_add: section.settings.enable_quick_add,
+                          section_id: section.id
+                        %}
+                      </li>
+                    {%- endif -%}
+                  {%- endif -%}
+                  {% else %}
+                    {%- if product.available or product.variants.first.inventory_policy == 'continue' -%}
+                     <li
                       class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}{% cycle ' Product_top_1_new mobile_Product_part_2_new', ' Product_top_1_new mobile_Product_part_2_new', ' Product_middle_1_new mobile_Product_part_1_new', ' Product_middle_3_new mobile_Product_part_2_new', ' Product_middle_3_new mobile_Product_part_2_new', ' Product_middle_3_new mobile_Product_part_1_new', ' Product_bottom_2_new mobile_Product_part_2_new', ' Product_bottom_2_new mobile_Product_part_2_new' %}"
                       {% if settings.animations_reveal_on_scroll %}
                         data-cascade
@@ -276,26 +300,6 @@
                       %}
                     </li>
                   {%- endif -%}
-                  {% else %}
-                   <li
-                    class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}{% cycle ' Product_top_1_new mobile_Product_part_2_new', ' Product_top_1_new mobile_Product_part_2_new', ' Product_middle_1_new mobile_Product_part_1_new', ' Product_middle_3_new mobile_Product_part_2_new', ' Product_middle_3_new mobile_Product_part_2_new', ' Product_middle_3_new mobile_Product_part_1_new', ' Product_bottom_2_new mobile_Product_part_2_new', ' Product_bottom_2_new mobile_Product_part_2_new' %}"
-                    {% if settings.animations_reveal_on_scroll %}
-                      data-cascade
-                      style="--animation-order: {{ forloop.index }};"
-                    {% endif %}
-                  >
-                    {% render 'card-product',
-                      card_product: product,
-                      media_aspect_ratio: section.settings.image_ratio,
-                      image_shape: section.settings.image_shape,
-                      show_secondary_image: section.settings.show_secondary_image,
-                      show_vendor: section.settings.show_vendor,
-                      show_rating: section.settings.show_rating,
-                      lazy_load: lazy_load,
-                      show_quick_add: section.settings.enable_quick_add,
-                      section_id: section.id
-                    %}
-                  </li>
                 {%- endif -%}
               {%- endfor -%}
             </ul>
