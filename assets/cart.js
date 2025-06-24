@@ -273,21 +273,21 @@ class CartItems extends HTMLElement {
 
     // Collect _ref_id from all main products
     cartItems.forEach(item => {
-      console.log('testing 1')
       const isMain = item.querySelector('[js-main-product]');
       const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
       if (isMain && refEl) {
+        console.log('testing 1')
         mainProductRefIds.add(refEl.getAttribute('data-property-last'));
       }
     });
 
     // Remove upsell items if their main product is missing
     cartItems.forEach(item => {
-      console.log('testing 2')
       const isMain = item.querySelector('[js-main-product]');
       const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
 
       if (!isMain && refEl) {
+        console.log('testing 2')
         const refId = refEl.getAttribute('data-property-last');
         const lineItemKey = item.dataset.lineItemKey;
 
