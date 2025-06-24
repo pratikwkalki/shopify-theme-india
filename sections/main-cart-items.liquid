@@ -674,6 +674,9 @@
               disabled
             {% endif %}
             form="cart"
+            {% if is_sold_out_product %}
+              disabled
+            {% endif %}
           >
             Proceed to Checkout
           </button>
@@ -682,6 +685,9 @@
             id="checkout"
             class="cart__checkout-button button cart__checkout-button-mobile"
             name="checkout"
+            {% if is_sold_out_product %}
+              disabled
+            {% endif %}
             {% if cart == empty %}
               disabled
             {% endif %}
