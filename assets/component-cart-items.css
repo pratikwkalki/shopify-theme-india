@@ -583,6 +583,12 @@ cart-remove-button .icon-remove {
     flex-wrap: wrap;
     gap: 5px;
 }
+.sold-out-error {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
 
 @media only screen and (min-width:768px) {
   .cart-wrapper .saving-percentage {
