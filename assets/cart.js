@@ -395,7 +395,7 @@ function updateCartEstimatedDelivery() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(updateCartEstimatedDelivery, 300);
+  setTimeout(updateCartEstimatedDelivery, 500);
 });
 
 // document.addEventListener('disCountAppliedEvent', function(d){
