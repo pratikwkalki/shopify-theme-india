@@ -23,9 +23,9 @@ class CartItems extends HTMLElement {
     }, ON_CHANGE_DEBOUNCE_TIMER);
 
     this.addEventListener('change', debouncedOnChange.bind(this));
-    // document.addEventListener("DOMContentLoaded", () => {
-    // this.checkAndRemoveOrphanUpsells();
-    // });
+    document.addEventListener("DOMContentLoaded", () => {
+    this.checkAndRemoveOrphanUpsells();
+    });
   }
 
   cartUpdateUnsubscriber = undefined;
@@ -267,44 +267,44 @@ class CartItems extends HTMLElement {
   }
 
   // ✅ New Method: Automatically Remove Upsell Without Main Product
-  // checkAndRemoveOrphanUpsells() {
-  //   const cartItems = this.querySelectorAll('[js-cart-item-details]');
-  //   const mainProductRefIds = new Set();
+  checkAndRemoveOrphanUpsells() {
+    const cartItems = this.querySelectorAll('[js-cart-item-details]');
+    const mainProductRefIds = new Set();
 
-  //   // Collect _ref_id from all main products
-  //   cartItems.forEach(item => {
-  //     const isMain = item.querySelector('[js-main-product]');
-  //     const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
-  //     if (isMain && refEl) {
-  //       console.log('testing 1')
-  //       mainProductRefIds.add(refEl.getAttribute('data-property-last'));
-  //     }
-  //   });
+    // Collect _ref_id from all main products
+    cartItems.forEach(item => {
+      const isMain = item.querySelector('[js-main-product]');
+      const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
+      if (isMain && refEl) {
+        console.log('testing 1')
+        mainProductRefIds.add(refEl.getAttribute('data-property-last'));
+      }
+    });
 
-  //   // Remove upsell items if their main product is missing
-  //   cartItems.forEach(item => {
-  //     const isMain = item.querySelector('[js-main-product]');
-  //     const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
+    // Remove upsell items if their main product is missing
+    cartItems.forEach(item => {
+      const isMain = item.querySelector('[js-main-product]');
+      const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
 
-  //     if (!isMain && refEl) {
-  //       console.log('testing 2')
-  //       const refId = refEl.getAttribute('data-property-last');
-  //       const lineItemKey = item.dataset.lineItemKey;
+      if (!isMain && refEl) {
+        console.log('testing 2')
+        const refId = refEl.getAttribute('data-property-last');
+        const lineItemKey = item.dataset.lineItemKey;
 
-  //       if (!mainProductRefIds.has(refId)) {
-  //         const formData = new FormData();
-  //         formData.append(`updates[${lineItemKey}]`, 0);
-  //         formData.append('sections_url', window.location.pathname);
+        if (!mainProductRefIds.has(refId)) {
+          const formData = new FormData();
+          formData.append(`updates[${lineItemKey}]`, 0);
+          formData.append('sections_url', window.location.pathname);
 
-  //         fetch(`${routes.cart_update_url}`, {
-  //           method: 'POST',
-  //           body: formData,
-  //           headers: { 'X-Requested-With': 'XMLHttpRequest' }
-  //         }).then(() => this.onCartUpdate());
-  //       }
-  //     }
-  //   });
-  // }
+          fetch(`${routes.cart_update_url}`, {
+            method: 'POST',
+            body: formData,
+            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+          }).then(() => this.onCartUpdate());
+        }
+      }
+    });
+  }
 }
 
 customElements.define('cart-items', CartItems);
