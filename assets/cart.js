@@ -268,12 +268,12 @@ class CartItems extends HTMLElement {
 
   // ✅ New Method: Automatically Remove Upsell Without Main Product
   checkAndRemoveOrphanUpsells() {
-    console.log('testing')
     const cartItems = this.querySelectorAll('[js-cart-item-details]');
     const mainProductRefIds = new Set();
 
     // Collect _ref_id from all main products
     cartItems.forEach(item => {
+      console.log('testing 1')
       const isMain = item.querySelector('[js-main-product]');
       const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
       if (isMain && refEl) {
@@ -283,6 +283,7 @@ class CartItems extends HTMLElement {
 
     // Remove upsell items if their main product is missing
     cartItems.forEach(item => {
+      console.log('testing 2')
       const isMain = item.querySelector('[js-main-product]');
       const refEl = item.querySelector('.product-option[data-property-first="_ref_id"]');
 
