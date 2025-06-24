@@ -691,7 +691,7 @@
             Secure Checkout
           </button>
         </div>
-        {% if is_sold_out_product %}<div class="sold-out-error">This item is out of stock</div>{% endif %}
+        {% if is_sold_out_product %}<div class="sold-out-error">One or more products in your cart are out of stock. Please remove them to proceed to checkout.</div>{% endif %}
   
         {%- if additional_checkout_buttons -%}
           <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
