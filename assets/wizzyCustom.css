@@ -17,6 +17,7 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
   font-size: 14px !important;
   font-family: sans-serif !important;
 }
+
 @media screen and (max-width: 400px) {
   .wizzy__featuredview__button__rlA6a {
     font-size: 13px !important;
@@ -1813,6 +1814,11 @@ span.wizzy-facet-list-item-checkbox {
 }
 
 @media (max-width: 768px) {
+  .wizzy-search-filters-top .wizzy-facet-list-item.active
+  {
+    background: black;
+    color: white;
+  }
   .wizzy-search-results-rendered .breadcrumbs {
     display: block !important;
   }
