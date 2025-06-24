@@ -1899,7 +1899,7 @@ span.wizzy-facet-list-item-checkbox {
   .wizzy-search-filters-top .wizzy-facet-list-item.active
   {
     background: black;
-    color: white;
+    color: white !important;
   }
   #init-wizzy-featured-view-button {
     color: black;
