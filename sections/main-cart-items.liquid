@@ -345,6 +345,15 @@
                                   </div>
                                 </quantity-popover>
                               </div>
+                              {% assign variant = item.variant %}
+
+{% assign is_sold_out = false %}
+{% if variant.inventory_management and variant.inventory_quantity <= 0 and variant.available == false %}
+  {% assign is_sold_out = true %}
+{% endif %}
+
+<div class="sold-out-error">{% if is_sold_out %} is-sold-out{% endif %}</div>
+  
                               {%- if item.product.has_only_default_variant == false
                                 or item.properties.size != 0
                                 or item.selling_plan_allocation != null
