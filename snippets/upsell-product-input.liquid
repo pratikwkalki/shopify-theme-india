@@ -44,34 +44,36 @@
           {% render 'stitch-return-note' , stitch_return_note: stitch_return_note %}
         {% endif %}
     {% endif %}
-    {% liquid assign product_attributes_group = product.metafields.custom.attributes_select_pre_drape_attributes_group.value %}
-    {% if product_attributes_group %}
-      {% assign required_option = false %}
-      <div class="{% if stitche_selected_option == 'Unstitched' or confSizeOption_selected_option == 'Made to Order' %}hide{% endif %} options-dropdown-list options-dropdown-list-pre-drap hide" {{ confSizeOption_attribute }} {{ stitche_attribute }} {{ templateName }} {% if templateName=='khadi-product-template' %}
-        js-khadi-options-list-container {% endif %}>
-        <div class="options-wrapper">
-          <div class="options">
-            {% for attriutes_ in product_attributes_group.select_attributes.value %}
-              {% assign required = attriutes_.required %}
-              {% assign required_option = true %}
-              <div class="option">
-                <div class="option-title">
-                  <span>{{ attriutes_.title }}</span>
-                  {% if required %}<span class="required-sterik">*</span>{% endif %}
+    {% if product_.handle contains 'stitched-blouse' %}
+      {% liquid assign product_attributes_group = product.metafields.custom.attributes_select_pre_drape_attributes_group.value %}
+      {% if product_attributes_group %}
+        {% assign required_option = false %}
+        <div class="{% if stitche_selected_option == 'Unstitched' or confSizeOption_selected_option == 'Made to Order' %}hide{% endif %} options-dropdown-list options-dropdown-list-pre-drap hide" {{ confSizeOption_attribute }} {{ stitche_attribute }} {{ templateName }} {% if templateName=='khadi-product-template' %}
+          js-khadi-options-list-container {% endif %}>
+          <div class="options-wrapper">
+            <div class="options">
+              {% for attriutes_ in product_attributes_group.select_attributes.value %}
+                {% assign required = attriutes_.required %}
+                {% assign required_option = true %}
+                <div class="option">
+                  <div class="option-title">
+                    <span>{{ attriutes_.title }}</span>
+                    {% if required %}<span class="required-sterik">*</span>{% endif %}
+                  </div>
+                  <div class="option-drop cs-option-drop" js-option-drop-1>
+                    <select name="items[0][properties][{{attriutes_.title}}]" js-custom-option-select {% if
+                      required %} js-required-property-field {% unless templateName=='bridal-template' %} required {% endunless %}
+                      js-pdp-bridal-size-option-required js-pdp-bridal-size-option-required {% endif %}
+                      data-option-name="{{ attriutes_.title }}">
+                      {% render 'custom-product-options', options: attriutes_.values, layout: "dropdown" %}
+                    </select>
+                  </div>
                 </div>
-                <div class="option-drop cs-option-drop" js-option-drop-1>
-                  <select name="items[0][properties][{{attriutes_.title}}]" js-custom-option-select {% if
-                    required %} js-required-property-field {% unless templateName=='bridal-template' %} required {% endunless %}
-                    js-pdp-bridal-size-option-required js-pdp-bridal-size-option-required {% endif %}
-                    data-option-name="{{ attriutes_.title }}">
-                    {% render 'custom-product-options', options: attriutes_.values, layout: "dropdown" %}
-                  </select>
-                </div>
-              </div>
-            {% endfor %}
+              {% endfor %}
+            </div>
           </div>
         </div>
-      </div>
+      {% endif %}
     {% endif %}
   </upsell-product>
 {% endif %}
