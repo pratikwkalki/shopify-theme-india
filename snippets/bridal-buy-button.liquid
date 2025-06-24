@@ -89,7 +89,9 @@
                 {{ 'products.product.add_to_cart' | t }}
               {%- endif -%}
             </span>
-            {%- render 'loading-spinner' -%}
+             {%- render 'loading-spinner' -%}
+            <span class="kalki-atc-dot"></span> 
+            <span js-pdp-original-price id="aditional_costtotal" data-price="{{ product.selected_or_first_available_variant.price | money }}"> {{ product.selected_or_first_available_variant.price | money }} </span>
           </button>
           {%- if show_dynamic_checkout -%}
             {{ form | payment_button }}
