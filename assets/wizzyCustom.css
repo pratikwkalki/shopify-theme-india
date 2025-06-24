@@ -1901,6 +1901,10 @@ span.wizzy-facet-list-item-checkbox {
     background: black;
     color: white !important;
   }
+  .wizzy-search-filters-top .wizzy-facet-list-item.active .facet-item-label-value:before
+  {
+    display: none !important;
+  }
   #init-wizzy-featured-view-button {
     color: black;
   }
