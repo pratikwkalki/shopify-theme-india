@@ -156,16 +156,6 @@
                             <div class="cart-item__details">
                               <div class="cart-item-header">
                                 <a href="{{ item.url }}{% if miniItem %}&miniSize=true{% endif %}" class="cart-item__name h4 break">{{ item.quantity }} x {{ item.product.title | escape }}</a>
-                                {% comment %} <div class="ssw-faveiticon sswfaveicon{{ item.product.id }} wishlist-icon">
-                                  <i data-product-id="{{ item.product.id }}" data-count="0" class="ssw-fave-icon ssw-wishlist-element ssw-synchronized ssw-icon-heart-o" title="Add to Wishlist" data-params="{&quot;product_id&quot;:&quot;{{ item.product.id }}&quot;,&quot;event&quot;:&quot;fave_button&quot;,&quot;page&quot;:&quot;product_profile&quot;,&quot;title&quot;:&quot;{{ item.product.title }}&quot;,&quot;handle&quot;:&quot;{{ item.product.handle }}&quot;,&quot;first_variant_id&quot;:{{ item.variant.id }}}" tabindex="0" role="button" aria-label="Add to wishlist" data-variant-id="{{ item.variant.id }}"></i>
-                                  <span class="faves-count" data-user-faves="{&quot;{{ item.variant.id }}&quot;:1}"></span>
-                                  <script>
-                                    if(typeof isGwHelperLoaded !== "undefined") {
-                                        const initIcon = new CustomEvent("ssw.faveicon.init");
-                                        window.dispatchEvent(initIcon);
-                                    }
-                                  </script>
-                                </div> {% endcomment %}
                               </div>
                               {%- if settings.show_vendor -%}
                                 <p class="caption-with-letter-spacing light">{{ item.product.vendor }}</p>
@@ -476,6 +466,14 @@
                                   </svg>
                                 </div>
                               </quantity-popover>
+                      
+                              {% assign variant = item.variant %}
+                              {% assign is_sold_out = false %}
+                              {% if variant.inventory_management and variant.inventory_quantity <= 0 and variant.available == false %}
+                                {% assign is_sold_out = true %}
+                              {% endif %}
+                              {% if is_sold_out %}<div class="sold-out-error">This item is out of stock</div>{% endif %}
+                      
                               {%- if item.product.has_only_default_variant == false
                                 or item.properties.size != 0
                                 or item.selling_plan_allocation != null
@@ -561,7 +559,16 @@
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
         {%- render 'cart-upsell' -%}
-      </cart-drawer-items>                      
+      </cart-drawer-items>
+      {%- if cart != empty -%}
+        {% assign is_sold_out_product = false %}
+        {%- for item in cart.items -%}
+          {% assign variant = item.variant %}
+          {% if variant.inventory_management and variant.inventory_quantity <= 0 and variant.available == false %}
+            {% assign is_sold_out_product = true %}
+          {% endif %}
+        {%- endfor -%}
+      {%- endif -%}
       <div class="drawer__footer">
         {%- if settings.show_cart_note -%}
           <details id="Details-CartDrawer">
@@ -664,8 +671,6 @@
             Secure Checkout
           </button>
 
-              
-                  
           <div class="Header_drawer_mobile_bottom_2_new Header_drawer_mobile_bottom_cart_new">
             <a href="{{ routes.all_products_collection_url }}" class="button">
               Shop all products
@@ -673,10 +678,11 @@
           </div>
         </div>
 
+        <a href="{{ routes.cart_url }}" class="button cart-drawer-view-cart">
+          {{ 'general.cart.view_cart' | t }}
+        </a>  
 
-            <a href="{{ routes.cart_url }}" class="button cart-drawer-view-cart">
-              {{ 'general.cart.view_cart' | t }}
-            </a>  
+        {% if is_sold_out_product %}<div class="sold-out-error">One or more products in your cart are out of stock. Please remove them to proceed to checkout.</div>{% endif %}
                   
         <small class="tax-note caption-large rte">
             Enjoy Free Shipping across the India* • 5 Days Easy Returns*
