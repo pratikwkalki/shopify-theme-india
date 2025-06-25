@@ -456,7 +456,6 @@ document.addEventListener('DOMContentLoaded', function() {
 })
 
 document.addEventListener('DOMContentLoaded', function() {
-  //console.log("onreload---");
   const container_ = document.querySelector('[js-product-details]')
 
   const upsellProducts_ = container_.querySelectorAll('upsell-product input')
