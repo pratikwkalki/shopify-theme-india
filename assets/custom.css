@@ -744,6 +744,7 @@ input[type="checkbox"] {
   height: auto;
   max-width: 100%;
   width: 187px;
+  max-height: 55px;
 }
 .header__heading-logo-wrapper {
   width: 100%;
