@@ -1,5 +1,5 @@
 {{ 'custom-bridal-card.css' |  asset_url |  stylesheet_tag }}
-<div class="custom-bridal-card {{ product.available }}">
+<div class="custom-bridal-card {% unless product.available %}product-outofstock{% endunless %}">
     <div class="page-width">
        <div class="wrapper">
         <div class="content">
