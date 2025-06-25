@@ -26,7 +26,15 @@
   {% endif %}
   {% assign total_discount = total_discount | plus: item_discount %}
 {% endfor %}
-
+{%- if cart != empty -%}
+  {% assign is_sold_out_product = false %}
+  {%- for item in cart.items -%}
+    {% assign variant = item.variant %}
+    {% if variant.inventory_management and variant.inventory_quantity <= 0 and variant.available == false %}
+      {% assign is_sold_out_product = true %}
+    {% endif %}
+  {%- endfor -%}
+{%- endif -%}
 <div
   class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
   id="main-cart-footer"
@@ -59,12 +67,16 @@
                   {% if cart == empty %}
                     disabled
                   {% endif %}
+                  {% if is_sold_out_product %}
+                    disabled
+                  {% endif %}
                   form="cart"
                 >
                   <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9.50039 4.9V3.5C9.50039 1.54 7.96039 0 6.00039 0C4.04039 0 2.50039 1.54 2.50039 3.5V4.9C1.31039 4.9 0.400391 5.81 0.400391 7V11.9C0.400391 13.09 1.31039 14 2.50039 14H9.50039C10.6904 14 11.6004 13.09 11.6004 11.9V7C11.6004 5.81 10.6904 4.9 9.50039 4.9ZM3.90039 3.5C3.90039 2.31 4.81039 1.4 6.00039 1.4C7.19039 1.4 8.10039 2.31 8.10039 3.5V4.9H3.90039V3.5ZM6.70039 10.5C6.70039 10.92 6.42039 11.2 6.00039 11.2C5.58039 11.2 5.30039 10.92 5.30039 10.5V8.4C5.30039 7.98 5.58039 7.7 6.00039 7.7C6.42039 7.7 6.70039 7.98 6.70039 8.4V10.5Z" fill="white"></path> </svg>
                   Secure Checkout
                 </button>
               </div>
+              {% if is_sold_out_product %}<div class="sold-out-error">Some of the products are out of stock. Please remove them to proceed to checkout.</div>{% endif %}
           {%- endcase -%}
         {% endfor %}
       </div>
