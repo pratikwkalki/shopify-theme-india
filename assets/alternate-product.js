@@ -443,6 +443,14 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  const preDrapeSelect = container_.querySelectorAll('.options-dropdown-list-pre-drap select')
+  if (preDrapeSelect) {
+    preDrapeSelect.forEach(selectBox => {
+      selectBox.selectedIndex = 0;
+      selectBox.removeAttribute('required');
+    })
+  }
 })
 
 document.addEventListener('DOMContentLoaded', function() {
