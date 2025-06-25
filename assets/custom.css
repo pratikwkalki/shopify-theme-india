@@ -738,6 +738,7 @@ input[type="checkbox"] {
   display: inline-block;
   text-decoration: none;
   word-break: break-word;
+  vertical-align: top;
 }
 .header__heading-logo {
   height: auto;
