@@ -462,6 +462,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const stickyATCPrice = document.querySelectorAll('[js-pdp-sticky-addtocart-wrapper] form [js-pdp-original-price]')
 
         const allCheckedUpsellProducts = container_.querySelectorAll('upsell-product input:checked')
+        const preDrapeChecked = container_.querySelectorAll('upsell-product input[value="pre_drape"]:checked')
         const preDrapeSelect = container_.querySelectorAll('.options-dropdown-list-pre-drap select')
           
         let totalUpsellProductPrice = 0
@@ -474,7 +475,7 @@ document.addEventListener('DOMContentLoaded', function() {
           })
             //Add class on non returnable product
             document.querySelector('[js-product-details]').classList.add('non-returnable-pre-drap')
-            if (preDrapeSelect) {
+            if (preDrapeChecked && preDrapeSelect) {
               preDrapeSelect.forEach(selectBox => {
                 if (selectBox.hasAttribute("js-required-property-field")) {
                   selectBox.setAttribute('required', 'true');
@@ -484,7 +485,7 @@ document.addEventListener('DOMContentLoaded', function() {
           } else {
             //Remove class on non returnable product
             document.querySelector('[js-product-details]').classList.remove('non-returnable-pre-drap')
-            if (preDrapeSelect) {
+            if (preDrapeChecked && preDrapeSelect) {
               preDrapeSelect.forEach(selectBox => {
                 selectBox.selectedIndex = 0;
                 selectBox.removeAttribute('required');
