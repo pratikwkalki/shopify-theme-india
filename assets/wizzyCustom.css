@@ -1814,7 +1814,10 @@ span.wizzy-facet-list-item-checkbox {
 }
 
 @media (max-width: 768px) {
-  
+  .wizzy-search-wrapper .wizzy-search-results-wrapper .wizzy-search-filters-left .wizzy-facet-body .wizzy-facet-list .wizzy-facet-list-item .wizzy-facet-list-item-label .wizzy-facet-item-swatch-wrapper.facet-visual-swatch
+  {
+    padding-bottom: 1px;
+  }
   .wizzy-search-results-rendered .breadcrumbs {
     display: block !important;
   }
