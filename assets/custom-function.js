@@ -186,6 +186,5 @@ function ToggleReturnNote(templateContainer) {
   const upsellSelected = stitchUpsell?.querySelector('[upsell-product] #stitched-blouse:checked')
   if(upsellSelected) {
     stitchUpsell?.querySelector('[js-stitch-return-note]')?.classList.remove('hide')
-    console.log('upsellSelected')
   }
 }
