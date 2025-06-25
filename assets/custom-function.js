@@ -173,31 +173,19 @@ function clearCustomMeasurementEntries() {
 }
 
 function ToggleUpsellReturnNote(templateContainer) {
-
   if(templateContainer?.querySelector('[js-stitch-return-note]')) {
     templateContainer?.querySelector('[js-stitch-return-note]').classList.add('hide')
   }
-  // hide return note on unstitched
-
-  const stitchUpsell = templateContainer.querySelector('[js-stitch-upsell-wrap]')
-  const upsellSelected = stitchUpsell?.querySelector('input:checked')
-  // if(upsellSelected) {
-  //   stitchUpsell.querySelector('[js-stitch-return-note]')?.classList.remove('hide')
-  // }
 }
 function ToggleReturnNote(templateContainer) {
   if(templateContainer?.querySelector('[js-stitch-return-note]')) {
     templateContainer?.querySelector('[js-stitch-return-note]').classList.remove('hide')
   }
   // show stitch return note
-
   const stitchUpsell = templateContainer.querySelector('[js-stitch-upsell-wrap]')
-
   const upsellSelected = stitchUpsell?.querySelector('[upsell-product] #stitched-blouse:checked')
   if(upsellSelected) {
     stitchUpsell?.querySelector('[js-stitch-return-note]')?.classList.remove('hide')
-  } 
-  // else {
-  //   stitchUpsell?.querySelector('[js-stitch-return-note]')?.classList.add('hide')
-  // }
+    console.log('upsellSelected')
+  }
 }
