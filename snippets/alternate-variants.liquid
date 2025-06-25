@@ -21,8 +21,7 @@
     colletion_rts_days="{{ colletion_rts_days }}"
   >
     {%- for option in product.options_with_values -%}
-      {% if option.name == "Size"  %}true{% else %}false{% endif %}
-      {{ stitche_selected_option }}
+      
         <div class="{% if option.name == "Size" and stitche_selected_option == 'Unstitched' or confSizeOption_selected_option == 'Made to Order' %}hide{% endif %} options-header form__label {{ option.name }}" {% if option.name == "Size"%} {{ confSizeOption_attribute }} {{ stitche_attribute }} js-option-size-title {% endif %} >
           <div class="options-title {%  if tooltip_text != blank %} have_tooltip {% endif %}">
             <div class="title_text">
