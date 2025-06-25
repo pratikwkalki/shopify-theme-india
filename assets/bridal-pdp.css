@@ -258,6 +258,25 @@
   .bridal-pdp .product_details .button .kalki-atc-dot, .bridal-pdp .product_details .button [js-pdp-original-price] {
     display: none;
   }
+  .product-outofstock.custom-bridal-card .content-flexer {
+    position: static;
+    display: block;
+    padding: 0;
+    box-shadow: none;
+  }
+  .product-outofstock.custom-bridal-card .content-flexer .custom-bridal-card-flexer {
+    display: block;
+  }
+  .product-outofstock.custom-bridal-card .content-flexer .whatsapp-button {
+    max-width: 100%;
+    margin: 0;
+  }
+  .product-outofstock.custom-bridal-card .content-flexer .bridal-cart-button {
+    max-width: 100%;
+  }
+  .product-outofstock.custom-bridal-card .content {
+    padding: 0;
+  }
 }
 @media only screen and (max-width:989px){
   .bridal-pdp .MagicToolboxSelectorsContainer.no-magic-scroll:not(.mobile-view-thumbnails) a:before {
