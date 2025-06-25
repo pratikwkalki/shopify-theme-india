@@ -472,7 +472,7 @@
                               {% if variant.inventory_management and variant.inventory_quantity <= 0 and variant.available == false %}
                                 {% assign is_sold_out = true %}
                               {% endif %}
-                              {% if is_sold_out %}<div class="sold-out-error">This item is out of stock</div>{% endif %}
+                              {% if is_sold_out %}<div class="sold-out-error">This product is out of stock.</div>{% endif %}
                       
                               {%- if item.product.has_only_default_variant == false
                                 or item.properties.size != 0
