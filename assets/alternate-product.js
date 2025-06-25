@@ -444,6 +444,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  const container_ = document.querySelector('[js-product-details]')
   const preDrapeSelect = container_.querySelectorAll('.options-dropdown-list-pre-drap select')
   if (preDrapeSelect) {
     preDrapeSelect.forEach(selectBox => {
