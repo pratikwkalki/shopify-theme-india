@@ -33,6 +33,7 @@ class UpsellProduct extends HTMLElement {
             this.form.setAttribute('upsell', true)
             // if(!stitched_) {
             stitchReturnNote?.classList.remove('hide')
+          console.log('stitchReturnNote')
             // } 
         }else {
             this.form.getAttribute('upsell') ? this.form.removeAttribute('upsell') : '' 
