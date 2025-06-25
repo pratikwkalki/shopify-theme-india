@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const preDrapeSelect = container_.querySelectorAll('.options-dropdown-list-pre-drap select')
           
         let totalUpsellProductPrice = 0
-      
+      console.log('preDrapeChecked',preDrapeChecked)
         if(allCheckedUpsellProducts.length) {
           allCheckedUpsellProducts.forEach(upsellItem => {
             const parent_ = upsellItem.closest('upsell-product')
