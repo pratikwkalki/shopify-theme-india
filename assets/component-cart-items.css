@@ -661,4 +661,11 @@ cart-remove-button .icon-remove {
   .cart-wrapper .product-option[data-property-first="Estimated delivery"] dd {
     font-weight: 700;
   }
+  .cart__blocks-totals .sold-out-error {
+    display: none;
+  }
+  .sold-out-error.hide {
+    display: block;
+    margin-top:0; 
+  }
 }
