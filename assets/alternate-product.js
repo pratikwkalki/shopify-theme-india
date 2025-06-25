@@ -449,6 +449,7 @@ document.addEventListener('DOMContentLoaded', function() {
     preDrapeSelect.forEach(selectBox => {
       selectBox.selectedIndex = 0;
       selectBox.removeAttribute('required');
+      console.log('selectBox', selectBox)
     })
   }
 })
