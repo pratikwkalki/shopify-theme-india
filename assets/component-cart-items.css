@@ -592,6 +592,8 @@ cart-remove-button .icon-remove {
 }
 .sold-out-error.hide {
     display: none;
+    opacity: 1;
+    visibility: visible;
 }
 
 @media only screen and (min-width:768px) {
@@ -667,5 +669,6 @@ cart-remove-button .icon-remove {
   .sold-out-error.hide {
     display: block;
     margin-top:0; 
+    margin-bottom: 15px;
   }
 }
