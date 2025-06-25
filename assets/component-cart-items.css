@@ -590,6 +590,9 @@ cart-remove-button .icon-remove {
     margin-top: 10px;
     line-height: normal;
 }
+.sold-out-error.hide {
+    display: none;
+}
 
 @media only screen and (min-width:768px) {
   .cart-wrapper .saving-percentage {
