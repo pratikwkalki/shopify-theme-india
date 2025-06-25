@@ -466,7 +466,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const preDrapeSelect = container_.querySelectorAll('.options-dropdown-list-pre-drap select')
           
         let totalUpsellProductPrice = 0
-      console.log('preDrapeChecked',preDrapeChecked)
         if(allCheckedUpsellProducts.length) {
           allCheckedUpsellProducts.forEach(upsellItem => {
             const parent_ = upsellItem.closest('upsell-product')
@@ -475,7 +474,7 @@ document.addEventListener('DOMContentLoaded', function() {
           })
             //Add class on non returnable product
             document.querySelector('[js-product-details]').classList.add('non-returnable-pre-drap')
-            if (preDrapeChecked && preDrapeSelect) {
+            if (preDrapeChecked.length && preDrapeSelect) {
               preDrapeSelect.forEach(selectBox => {
                 if (selectBox.hasAttribute("js-required-property-field")) {
                   selectBox.setAttribute('required', 'true');
@@ -485,7 +484,7 @@ document.addEventListener('DOMContentLoaded', function() {
           } else {
             //Remove class on non returnable product
             document.querySelector('[js-product-details]').classList.remove('non-returnable-pre-drap')
-            if (preDrapeChecked && preDrapeSelect) {
+            if (preDrapeChecked.length && preDrapeSelect) {
               preDrapeSelect.forEach(selectBox => {
                 selectBox.selectedIndex = 0;
                 selectBox.removeAttribute('required');
