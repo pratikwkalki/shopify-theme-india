@@ -95,8 +95,8 @@ class CartItems extends HTMLElement {
         selector: '.cart__blocks-totals',
       },
       {
-        id: 'main-cart-items',
-        section: document.getElementById('main-cart-items').dataset.id,
+        id: 'main-cart-footer-inner',
+        section: document.getElementById('main-cart-footer-inner').dataset.id,
         selector: '.cart__footer',
       },
       {
