@@ -484,7 +484,7 @@ document.addEventListener('DOMContentLoaded', function() {
           } else {
             //Remove class on non returnable product
             document.querySelector('[js-product-details]').classList.remove('non-returnable-pre-drap')
-            if (preDrapeChecked.length && preDrapeSelect) {
+            if (preDrapeChecked && preDrapeSelect) {
               preDrapeSelect.forEach(selectBox => {
                 selectBox.selectedIndex = 0;
                 selectBox.removeAttribute('required');
