@@ -671,4 +671,7 @@ cart-remove-button .icon-remove {
     margin-top:0; 
     margin-bottom: 15px;
   }
+  .template-cart .popin {
+    bottom: 95px;
+  }
 }
