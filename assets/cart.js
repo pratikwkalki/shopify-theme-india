@@ -101,7 +101,7 @@ class CartItems extends HTMLElement {
       },
       {
         id: 'cart-title',
-        section: document.getElementById('main-cart-items').dataset.id,
+        section: 'shopify-section-template--24341383414123__cart-items',
         selector: '.cart-title-wrap'
       },
       {
