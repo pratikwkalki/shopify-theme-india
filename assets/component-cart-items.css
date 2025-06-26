@@ -595,6 +595,9 @@ cart-remove-button .icon-remove {
     opacity: 1;
     visibility: visible;
 }
+.cart-wrapper:not(:has(div[data-sold-out])) .sold-out-error.hide {
+    display: none;
+}
 
 @media only screen and (min-width:768px) {
   .cart-wrapper .saving-percentage {
