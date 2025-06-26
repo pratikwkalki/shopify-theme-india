@@ -95,14 +95,14 @@ class CartItems extends HTMLElement {
         selector: '.cart__blocks-totals',
       },
       {
-        id: 'main-cart-footer-inner',
-        section: document.getElementById('main-cart-footer').dataset.id,
-        selector: '.cart__footer'
-      },
-      {
         id: 'cart-title-wrap',
         section: 'cart-title',
         selector: '.cart-title-wrap',
+      },
+      {
+        id: 'main-cart-footer-inner',
+        section: document.getElementById('main-cart-footer').dataset.id,
+        selector: '.cart__footer'
       },
       {
         id: 'cart-icon-bubble',
