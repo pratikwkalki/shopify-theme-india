@@ -194,7 +194,7 @@ class CartItems extends HTMLElement {
         
         // Toggle out-of-stock message visibility
         const soldOutEl = document.querySelector('.sold-out-error');
-        const isAnyItemSoldOut = !!document.querySelector('.cart-item[data-sold-out="true"]');
+        const isAnyItemSoldOut = !!document.querySelector('[data-sold-out="true"]');
         
         if (soldOutEl) {
           soldOutEl.classList.toggle('hidden', !isAnyItemSoldOut);
