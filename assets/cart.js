@@ -199,10 +199,10 @@ class CartItems extends HTMLElement {
           soldOutEl.classList.toggle('hide', !anySoldOut);
         }
 
-        const titleCount = document.querySelector('.cart-wrapper .title--primary b');
-        if (titleCount && parsedState.item_count !== undefined) {
-          titleCount.textContent = `(${parsedState.item_count})`;
-        }
+        // const titleCount = document.querySelector('.cart-wrapper .title--primary b');
+        // if (titleCount && parsedState.item_count !== undefined) {
+        //   titleCount.textContent = `(${parsedState.item_count})`;
+        // }
         
         const updatedValue = parsedState.items[line - 1] ? parsedState.items[line - 1].quantity : undefined;
         let message = '';
