@@ -100,8 +100,8 @@ class CartItems extends HTMLElement {
         selector: '.cart__footer'
       },
       {
-        id: 'cart-title',
-        section: document.getElementById('shopify-section-template--24341383414123__cart-items').dataset.id,
+        id: 'cart-title-wrap',
+        section: document.getElementById('cart-title').dataset.id,
         selector: '.cart-title-wrap'
       },
       {
