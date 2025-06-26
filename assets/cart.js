@@ -99,11 +99,11 @@ class CartItems extends HTMLElement {
         section: document.getElementById('main-cart-footer').dataset.id,
         selector: '.cart__footer'
       },
-      {
-        id: 'cart-title-wrap',
-        section: document.getElementById('cart-title-wrap').dataset.id,
-        selector: '.cart-title-wrap',
-      },
+      // {
+      //   id: 'cart-title-wrap',
+      //   section: document.getElementById('cart-title-wrap').dataset.id,
+      //   selector: '.cart-title-wrap',
+      // },
       {
         id: 'cart-icon-bubble',
         section: 'cart-icon-bubble',
