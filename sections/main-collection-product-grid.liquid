@@ -462,7 +462,7 @@
               {% else %}
                 {%- if product.available or product.variants.first.inventory_policy == 'continue' -%}
                   {{ product.metafields.seo.hidden }}
-                  {% if product.metafields.seo.hidden != 1 or product.metafields.seo.hidden != '1' %}true
+                  {% if product.metafields.seo.hidden != '1' %}true
                     {% else %}false
                     {% endif %}
                   <li
