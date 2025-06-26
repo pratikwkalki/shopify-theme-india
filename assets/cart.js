@@ -101,7 +101,7 @@ class CartItems extends HTMLElement {
       },
       {
         id: 'cart-title-wrap',
-        section: 'cart-title', // Static name, since it's not nested
+        section: 'cart-title',
         selector: '.cart-title-wrap',
       },
       {
