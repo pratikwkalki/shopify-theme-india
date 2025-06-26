@@ -105,6 +105,7 @@
         const variantSelects = document.querySelector("variant-selects");
         if(ctabtnwrapper) {
           if (window.innerWidth < 767) {
+              console.log('width')
             ctabtnwrapper.addEventListener('click', () => {
               console.log('click test')
               setTimeout(() => // this changes the scrolling behavior to "smooth"
