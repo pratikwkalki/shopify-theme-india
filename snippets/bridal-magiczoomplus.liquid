@@ -179,9 +179,11 @@ a[data-slide-id].mz-thumb-selected img {
 
                 {% assign class = '' %}
                 {% if image.id == mt_current_variant.featured_media.id and addActiveClass %}
+                  {% assign class = 'active-magic-selector' %}
                   {% assign addActiveClass = false %}
                 {% endif %}        
                 {% if mt_current_variant.featured_media == blank and mt_featured_image_ == '' %}
+                  {% assign class = 'active-magic-selector' %}
                   {% assign addActiveClass = false %}
                   {% assign mt_featured_image = image %}
                 {% endif %}
