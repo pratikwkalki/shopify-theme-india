@@ -32,23 +32,17 @@
 <script src="{{ 'quantity-popover.js' | asset_url }}" defer="defer"></script>
 
 <div class="page-width cart-wrapper gradient color-{{ section.settings.color_scheme }} isolate{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
-  <div id="cart-title" data-id="cart-title">
-    <div id="cart-title-wrap">
-      <div class="cart-title-wrap">
-        {%- if cart != empty -%}
-          {% assign is_sold_out_product = false %}
-          {%- for item in cart.items -%}
-            {% assign variant = item.variant %}
-            {% if variant.inventory_management and variant.inventory_quantity <= 0 and variant.available == false %}
-              {% assign is_sold_out_product = true %}
-            {% endif %}
-          {%- endfor -%}
-        {%- endif -%}
-        {% if is_sold_out_product %}<div class="sold-out-error hide">Some of the products are out of stock. Please remove them to proceed to checkout.</div>{% endif %}
-        <h1 class="title title--primary">{{ 'sections.cart.title' | t }} <b>({{ cart.items | size }})</b></h1>
-      </div>
-    </div>
-  </div>
+  {%- if cart != empty -%}
+    {% assign is_sold_out_product = false %}
+    {%- for item in cart.items -%}
+      {% assign variant = item.variant %}
+      {% if variant.inventory_management and variant.inventory_quantity <= 0 and variant.available == false %}
+        {% assign is_sold_out_product = true %}
+      {% endif %}
+    {%- endfor -%}
+  {%- endif -%}
+  {% if is_sold_out_product %}<div class="sold-out-error hide">Some of the products are out of stock. Please remove them to proceed to checkout.</div>{% endif %}
+  <h1 class="title title--primary">{{ 'sections.cart.title' | t }} <b>({{ cart.items | size }})</b></h1>
   <div class="cart-left">
     <cart-items class="gradient color-{{ section.settings.color_scheme }}">
     
