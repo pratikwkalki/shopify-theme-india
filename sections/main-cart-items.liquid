@@ -41,12 +41,14 @@
       {% endif %}
     {%- endfor -%}
   {%- endif -%}
-  <div id="cart-title" data-id="{{ section.id }}-test">
-    <div id="cart-title-wrap">
-      <div class="cart-title-wrap">
-        {% if is_sold_out_product %}<div class="sold-out-error hide">Some of the products are out of stock. Please remove them to proceed to checkout.</div>{% endif %}
-        <h1 class="title title--primary"> <b>({{ cart.items | size }})</b></h1>
-      </div>
+  <div id="cart-title-wrap" data-id="cart-title">
+    <div class="cart-title-wrap">
+      {% if is_sold_out_product %}
+        <div class="sold-out-error">Some of the products are out of stock. Please remove them to proceed to checkout.</div>
+      {% endif %}
+      <h1 class="title title--primary">
+        Your cart <b>({{ cart.item_count }})</b>
+      </h1>
     </div>
   </div>
   <div class="cart-left">
