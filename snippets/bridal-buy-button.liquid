@@ -97,6 +97,29 @@
             {{ form | payment_button }}
           {%- endif -%}
         </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const ctabtnwrapper = document.querySelector('.product_details .product-form__submit');
+        const announcementBar = document.querySelector(".Header_announcement_bar_main_new");
+        const Header = document.querySelector(".header-wrapper");
+        const variantSelects = document.querySelector("variant-selects");
+        if(ctabtnwrapper) {
+          if (window.innerWidth < 767) {
+            ctabtnwrapper.addEventListener('click', () => {
+              console.log('click test')
+              setTimeout(() => // this changes the scrolling behavior to "smooth"
+              {
+                  const headerGroupHeight = ((announcementBar?.clientHeight || 0) + Header.clientHeight);
+                  const scrollVal = (window.scrollY + variantSelects.getBoundingClientRect().top) - headerGroupHeight;
+                  console.log('scrollVal', scrollVal)
+                  window.scrollTo({ top: scrollVal, behavior: 'smooth' })
+              }
+              , 500)
+            });
+          }
+        }
+      }
+    </script>
   {%- else -%}
     <div class="product-form">
       <div class="product-form__buttons form">
