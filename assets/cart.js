@@ -100,7 +100,7 @@ class CartItems extends HTMLElement {
         selector: '.cart__footer'
       },
       {
-        id: 'cart-title-wrap',
+        id: 'cart-title',
         section: document.getElementById('main-cart-items').dataset.id,
         selector: '.cart-title-wrap'
       },
