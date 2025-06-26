@@ -438,7 +438,7 @@
                   {%- endfor -%}
                   {%- if show_product -%}
                     {%- assign seo_hidden = product.metafields.custom.seo_hidden -%}
-                    {%- if seo_hidden != '1' and product.available or product.variants.first.inventory_policy == 'continue' -%}
+                    {%- if seo_hidden != 1 and product.available or product.variants.first.inventory_policy == 'continue' -%}
                       <li
                         class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                         {% if settings.animations_reveal_on_scroll %}
