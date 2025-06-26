@@ -196,13 +196,13 @@ class CartItems extends HTMLElement {
         const anySoldOut = parsedState.items.some(item => item.available === false);
         const soldOutEl = document.querySelector('.sold-out-error');
         if (soldOutEl) {
-          soldOutEl.classList.toggle('hide', !anySoldOut);
+          soldOutEl.classList.toggle('hidden', !anySoldOut);
         }
-
-        // const titleCount = document.querySelector('.cart-wrapper .title--primary b');
-        // if (titleCount && parsedState.item_count !== undefined) {
-        //   titleCount.textContent = `(${parsedState.item_count})`;
-        // }
+        // update cart title number
+        const titleCount = document.querySelector('.cart-wrapper .title--primary b');
+        if (titleCount && parsedState.item_count !== undefined) {
+          titleCount.textContent = `(${parsedState.item_count})`;
+        }
         
         const updatedValue = parsedState.items[line - 1] ? parsedState.items[line - 1].quantity : undefined;
         let message = '';
