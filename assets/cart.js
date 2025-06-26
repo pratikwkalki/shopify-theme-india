@@ -83,6 +83,12 @@ class CartItems extends HTMLElement {
   }
 
   getSectionsToRender() {
+    // ✅ Toggle out-of-stock message visibility
+    const anySoldOut = parsedState.items.some(item => item.available === false);
+    const soldOutEl = document.querySelector('.sold-out-error');
+    if (soldOutEl) {
+      soldOutEl.classList.toggle('hide', !anySoldOut);
+    }
     return [
       {
         id: 'main-cart-items',
@@ -100,11 +106,6 @@ class CartItems extends HTMLElement {
         selector: '.cart__footer'
       },
       {
-        id: 'cart-title-wrap',
-        section: document.getElementById('cart-title').dataset.id,
-        selector: '.cart-title-wrap'
-      },
-      {
         id: 'cart-icon-bubble',
         section: 'cart-icon-bubble',
         selector: '.shopify-section',
@@ -113,7 +114,7 @@ class CartItems extends HTMLElement {
         id: 'cart-live-region-text',
         section: 'cart-live-region-text',
         selector: '.shopify-section',
-      }
+      },
     ];
   }
 
