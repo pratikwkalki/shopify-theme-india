@@ -101,8 +101,8 @@ class CartItems extends HTMLElement {
       },
       {
         id: 'cart-title-wrap',
-        section: document.getElementById('cart-title').dataset.id,
-        selector: '.cart-title-wrap'
+        section: 'cart-title',
+        selector: '.cart-title-wrap',
       },
       {
         id: 'cart-icon-bubble',
