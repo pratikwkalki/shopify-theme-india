@@ -103,7 +103,7 @@ class CartItems extends HTMLElement {
         id: 'cart-title-wrap',
         section: 'cart-title', // Static name, since it's not nested
         selector: '.cart-title-wrap',
-      }
+      },
       {
         id: 'cart-icon-bubble',
         section: 'cart-icon-bubble',
