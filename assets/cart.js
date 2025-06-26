@@ -113,7 +113,7 @@ class CartItems extends HTMLElement {
         id: 'cart-live-region-text',
         section: 'cart-live-region-text',
         selector: '.shopify-section',
-      },
+      }
     ];
   }
 
