@@ -33,6 +33,7 @@ if(ctabtnwrapper) {
           {
               const headerGroupHeight = ((announcementBar?.clientHeight || 0) + Header.clientHeight);
               const scrollVal = (window.scrollY + variantSelects.getBoundingClientRect().top) - headerGroupHeight;
+              console.log('scrollVal', scrollVal)
               window.scrollTo({ top: scrollVal, behavior: 'smooth' })
           }
           , 500)
