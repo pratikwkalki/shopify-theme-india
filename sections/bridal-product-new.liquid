@@ -188,7 +188,6 @@
 
               {% for option in product.options_with_values %}
                 {% if option.name == 'Size Options'  %}
-                  test
                   {%- render 'customize-outfit', section: section  -%}
                 {% endif %}
               {% endfor %}
