@@ -460,7 +460,7 @@
                     {%- endif -%}
                   {%- endif -%}
               {% else %}
-                {%- if product.available or product.variants.first.inventory_policy == 'continue' or product.metafields.seo.hidden != '1' -%}
+                {%- if product.metafields.seo.hidden != '1' and product.available or product.variants.first.inventory_policy == 'continue' -%}
                   <li
                     class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                     {% if settings.animations_reveal_on_scroll %}
