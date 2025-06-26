@@ -650,6 +650,9 @@ cart-remove-button .icon-remove {
     gap: 6px;
     margin-top: 6px;
   }
+  .option-quantity-wrap quantity-popover {
+    width: 100%;
+  }
   .cart-wrapper .product-option[data-property-first="Estimated delivery"] {
     margin-left: -80px;
     max-width: none;
