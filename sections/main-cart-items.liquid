@@ -61,7 +61,7 @@
         </div>
     
         <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
-          <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}" data-sold-out="{{ item.available | json }}">
+          <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
             <div class="js-contents">
               {%- if cart != empty -%}
                 <table class="cart-items">
@@ -72,7 +72,7 @@
                   <tbody class="cart_wrapper" data-csapp_line_wrapper>
                     {% assign total_discount = 0 %}
                     {%- for item in cart.items -%}
-                      <tr class="cart-item{% if item.product.title contains 'Pre Drape This Saree' or item.product.title contains 'Satin Petticoat' or item.product.id == 14625967440235 %} cart-hide-option{% endif %} cart_index" id="CartItem-{{ item.index | plus: 1 }}" data-csapp_line_index>
+                      <tr data-sold-out="{{ item.available | json }}" class="cart-item{% if item.product.title contains 'Pre Drape This Saree' or item.product.title contains 'Satin Petticoat' or item.product.id == 14625967440235 %} cart-hide-option{% endif %} cart_index" id="CartItem-{{ item.index | plus: 1 }}" data-csapp_line_index>
                         {%- for option in item.product.options_with_values -%}
                           {%- for value in option.values -%}
                             {% if option.name == 'Size' or option.name == 'Confi size' or option.name == 'Confi Size' %}
