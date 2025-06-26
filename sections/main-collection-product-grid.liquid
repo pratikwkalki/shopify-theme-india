@@ -437,7 +437,7 @@
                     {%- endif -%}
                   {%- endfor -%}
                   {%- if show_product -%}
-                    {%- if product.available or product.variants.first.inventory_policy == 'continue' -%}
+                    {%- if product.available or product.variants.first.inventory_policy == 'continue' or product.metafields.custom.seo_hidden != 1 -%}
                       <li
                         class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                         {% if settings.animations_reveal_on_scroll %}
