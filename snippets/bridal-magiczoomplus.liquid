@@ -596,15 +596,17 @@ if (SirvProductSKU == '') {
 
 {% if MagicToolboxThumbnailsLayout == 'left' or MagicToolboxThumbnailsLayout == 'right' %}
   if (window.matchMedia("(max-width: 989px)").matches) {
+    console.log('testing 1')
     $scroll = document.getElementById('msc-selectors-container');
     if ($scroll && typeof $scroll != 'undefined') {
+      console.log('testing 2')
       $attr = $scroll.getAttribute('data-options');
       if ($attr !== null) {
         $scroll.setAttribute('data-options',$attr.replace(/orientation *\: *[a-zA-Z]{1,}/gm,'orientation:horizontal;items:auto;'));
       }
     }
     {% if MagicToolboxMobileThumbnais == 'bullets' %}
-      console.log('testing')
+      console.log('testing 3')
       document.querySelectorAll('[js-remove-on-mobile]')?.forEach(removeImage => {
         if(removeImage) {
           removeImage.remove();
