@@ -146,13 +146,11 @@ function videoSlideUpdate() {
       
     }
     else {
-        console.log('remove video');
         mainElementContainer.classList.remove('hide-image');
         if(mainElementContainer.querySelector('.custom-video-player')) {
           mainElementContainer.querySelectorAll('.custom-video-player').forEach((customVideo)=> {
             customVideo.remove();
           });
-          // mainElementContainer.querySelector('.custom-video-player').remove();
         }
     }
     
