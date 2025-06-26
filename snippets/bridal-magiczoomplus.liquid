@@ -602,13 +602,14 @@ if (SirvProductSKU == '') {
       if ($attr !== null) {
         $scroll.setAttribute('data-options',$attr.replace(/orientation *\: *[a-zA-Z]{1,}/gm,'orientation:horizontal;items:auto;'));
       }
-      
-      const thumbs = $scroll.querySelectorAll('.mz-thumb');
-      thumbs.forEach((thumb, index) => {
-        thumb.classList.remove('mz-thumb-selected', 'active-magic-selector');
-        if (index === 0) {
-          thumb.classList.add('mz-thumb-selected', 'active-magic-selector');
-        }
+      document.addEventListener('DOMContentLoaded', function () {
+        const thumbs = $scroll.querySelectorAll('.mz-thumb');
+        thumbs.forEach((thumb, index) => {
+          thumb.classList.remove('mz-thumb-selected', 'active-magic-selector');
+          if (index === 0) {
+            thumb.classList.add('mz-thumb-selected', 'active-magic-selector');
+          }
+        });
       });
     }
     {% if MagicToolboxMobileThumbnais == 'bullets' %}
