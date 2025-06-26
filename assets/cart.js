@@ -101,7 +101,7 @@ class CartItems extends HTMLElement {
       },
       {
         id: 'cart-title-wrap',
-        section: document.getElementById('cart-title').dataset.id,
+        section: document.getElementById('main-cart-items').dataset.id,
         selector: '.cart-title-wrap'
       },
       {
