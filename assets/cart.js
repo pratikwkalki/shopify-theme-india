@@ -192,13 +192,6 @@ class CartItems extends HTMLElement {
           );
         });
         
-        // Toggle out-of-stock message visibility
-        const soldOutEl = document.querySelector('.sold-out-error');
-        const isAnyItemSoldOut = !!document.querySelector('[data-sold-out="true"]');
-        
-        if (soldOutEl) {
-          soldOutEl.classList.toggle('hidden', !isAnyItemSoldOut);
-        }
         // update cart title number
         const titleCount = document.querySelector('.cart-wrapper .title--primary b');
         if (titleCount && parsedState.item_count !== undefined) {
