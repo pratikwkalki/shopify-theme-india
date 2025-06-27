@@ -162,8 +162,21 @@
                                         MRP <span data-ymq-item-key="{{ item.key }}" class='ymq_item_original_price'>{{ item.original_price | money }}</span>
                                       {% endif %}
                                     </s>
-                                    {% if item.properties.saving_price %}
-                                       <div class="saving-percentage append-main-save test">{{ item.properties.saving_price }}</div>
+                                     {%- if item.variant.compare_at_price > item.discounted_price -%}
+                                      {% assign saving_price = item.variant.compare_at_price | minus: item.discounted_price %}
+                                      {% assign raw_discount = saving_price | times: 1000.0 | divided_by: item.variant.compare_at_price %}
+                                      {% assign rounded_discount = raw_discount | round %}
+                                      {% assign final_discount = rounded_discount | divided_by: 10.0 %}
+                                      {% assign check_decimal = final_discount | modulo: 1 %}
+                                      <div class="saving-percentage append-main-save">
+                                        {{ final_discount | round }}{% unless check_decimal == 0 %}.{{ final_discount | times: 10 | modulo: 10 | round }}{% endunless %}% OFF
+                                      </div>
+                                    {%- elsif item.original_price > item.discounted_price -%}
+                                       {% assign savingprice = item.original_price | minus: item.discounted_price %}
+                                       {% assign finalsave = savingprice | times: 100.0 | divided_by: item.original_price | round %}
+                                      <div class="saving-percentage append-main-save">{{ finalsave }}% OFF</div>
+                                    {%- elsif item.properties.saving_price -%}
+                                       <div class="saving-percentage append-main-save">{{ item.properties.saving_price }}</div>
                                      {% endif %}
                                   </div>
                                 {% elsif item.variant.compare_at_price > item.variant.price %}
