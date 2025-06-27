@@ -394,10 +394,12 @@ cart-items {
     color: #000;
 }
 .cart-wrapper .discounts .discounts__discount {
-    justify-content: space-between;
-    padding: 10px 0;
+    margin-top: 12px;
     margin-bottom: 0;
     line-height: 14px;
+    display: inline-flex;
+    vertical-align: top;
+    align-items: center;
 }
 .cart-wrapper .discounts .discounts__discount span:last-child,
 .cart-wrapper .totals.discount-total .totals__total-value {
