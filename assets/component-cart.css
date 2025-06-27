@@ -527,9 +527,6 @@ div.af_tag span.af_coupon_wrapper svg {
 #af_kd_discount_container0 #af_kd_custom_apply_coupon_trigger:not(.af_kd_df_apply_coupon_btn) {
     cursor: pointer;
 }
-.cart-item__details-wrap .discounts {
-    display: none;
-}
 
 @media screen and (min-width: 768px) {
   .cart-note {
