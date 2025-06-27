@@ -14,6 +14,14 @@
       {% case filter.type %}
         {% when 'boolean', 'list' %}
           {% if filter.label contains "Occasion" or filter.label contains "Delivery" or filter.label contains "Select Size" or filter.label contains "Size" %}
+            {%- assign has_visible_option = false -%}
+            {%- for value in filter.values -%}
+              {%- if value.count > 0 or value.active -%}
+                {%- assign has_visible_option = true -%}
+                {%- break -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {% if has_visible_option %}
             <details
               id="Details-{{ filter.param_name | escape }}-{{ section.id }}"
               class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
@@ -43,7 +51,7 @@
               </summary>
               <div
                 id="Facet-{{ forloop.index }}-{{ section.id }}"
-                class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical test{% endif %}"
+                class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
               >
                 <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
                   <legend class="visually-hidden">{{ filter.label | escape }}</legend>
@@ -140,6 +148,7 @@
               </div>
             </details>
           {% endif %}
+          {% endif %}
       {% endcase %}
     {%- endfor -%}
   </form>
@@ -190,7 +199,7 @@
                   </summary>
                   <div
                     id="Facet-{{ forloop.index }}-{{ section.id }}"
-                    class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical test2{% endif %}"
+                    class="parent-display {% if filter_type == 'horizontal' %}facets__display{% else %}facets__display-vertical{% endif %}"
                   >
                     <fieldset class="facets-wrap parent-wrap {% if filter_type == 'vertical' %} facets-wrap-vertical{% endif %}">
                       <legend class="visually-hidden">{{ filter.label | escape }}</legend>
