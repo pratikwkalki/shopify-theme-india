@@ -397,7 +397,6 @@ cart-items {
     justify-content: space-between;
     padding: 10px 0;
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(225, 225, 229, .8);
     line-height: 14px;
 }
 .cart-wrapper .discounts .discounts__discount span:last-child,
