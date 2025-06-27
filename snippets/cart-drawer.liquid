@@ -216,7 +216,7 @@
                                       {% assign rounded_discount = raw_discount | round %}
                                       {% assign final_discount = rounded_discount | divided_by: 10.0 %}
                                       {% assign check_decimal = final_discount | modulo: 1 %}
-                                      <div class="saving-percentage append-main-save tst">
+                                      <div class="saving-percentage append-main-save">
                                         {{ final_discount | round }}{% unless check_decimal == 0 %}.{{ final_discount | times: 10 | modulo: 10 | round }}{% endunless %}% OFF
                                       </div>
                                     {%- elsif item.original_price > item.discounted_price -%}
