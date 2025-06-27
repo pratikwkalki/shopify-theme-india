@@ -2376,33 +2376,6 @@ cart-items {
 .cart-wrapper:has(cart-items.is-empty) .cart-left {
     width: 100%;
 }
-.event-btn {
-    display: inline-block;
-    padding: 7px 10px;
-    background-color: rgba(249, 235, 224, 0.6);
-    font-size: 14px;
-    color: #0f3d99;
-    margin-top: 8px;
-    cursor: pointer;
-}
-.event-date-picker-wrap {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    font-size: 14px;
-    margin-top: 7px;
-    gap: 0 12px;
-}
-.event-date-picker-wrap input {
-    border: 1px solid #ddd;
-    height: 34px;
-    padding: 0 8px;
-    border-radius: 6px;
-}
-.cart-drawer__form .event-btn, .cart-drawer__form .event-date-picker-wrap {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
 .pdp-log-strip-inner {
     margin-top: 60px;
     width: 100%;
