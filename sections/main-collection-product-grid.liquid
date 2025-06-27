@@ -461,9 +461,7 @@
                   {%- endif -%}
               {% else %}
                 {%- if product.available or product.variants.first.inventory_policy == 'continue' -%}
-                  {% if product.metafields.seo.hidden != 1 %}true
-                    {% else %}false
-                    {% endif %}
+                  {% if product.metafields.seo.hidden != 1 %}
                   <li
                     class="grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                     {% if settings.animations_reveal_on_scroll %}
@@ -483,6 +481,7 @@
                       section_id: section.id
                     %}
                   </li>
+                {%- endif -%}
                 {%- endif -%}
               {% endif %}
                 
