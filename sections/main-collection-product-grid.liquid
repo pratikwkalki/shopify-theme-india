@@ -461,7 +461,7 @@
                   {%- endif -%}
               {% else %}
                 {%- if product.available or product.variants.first.inventory_policy == 'continue' -%}
-                  {% if product.metafields.seo.hidden == '1' %}true
+                  {% if product.metafields.seo.hidden == 1 %}true
                     {% else %}false
                     {% endif %}
                   {{ product.metafields.seo.hidden | json }}
