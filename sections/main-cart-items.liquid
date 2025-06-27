@@ -125,7 +125,14 @@
                               {%- endif -%}
         
                               <a href="{{ item.url }}{% if miniItem %}&miniSize=true{% endif %}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
-    
+                              <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
+                                {%- for discount in item.line_level_discount_allocations -%}
+                                  <li class="discounts__discount">
+                                    {%- render 'icon-discount' -%}
+                                    {{ discount.discount_application.title }}
+                                  </li>
+                                {%- endfor -%}
+                              </ul>
                               <div class="medium-hide large-up-hide">
                                 {%- if item.original_line_price != item.final_line_price -%}
                                   {% if item.variant.compare_at_price > item.variant.price %}
@@ -427,15 +434,6 @@
         
                                 <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
                               {%- endif -%}
-        
-                              <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
-                                {%- for discount in item.line_level_discount_allocations -%}
-                                  <li class="discounts__discount">
-                                    {%- render 'icon-discount' -%}
-                                    {{ discount.discount_application.title }}
-                                  </li>
-                                {%- endfor -%}
-                              </ul>
                               {% unless item.product.id == 8223122063514 or item.product.id == 8221267263642 or item.product.id == 14625967440235 %}
                                 <div class="{% unless estimated_delivery_value %}no_delivery_date{% endunless %}">
                                 <cart-remove-button
