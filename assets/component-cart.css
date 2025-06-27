@@ -678,4 +678,8 @@ div.af_tag span.af_coupon_wrapper svg {
   .cart-wrapper #main-cart-items .view-details-btn ~ dl {
     width: calc(100% - 60px);
   }
+  .cart-wrapper .discounts .discounts__discount {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
 }
