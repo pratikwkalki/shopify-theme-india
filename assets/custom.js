@@ -131,8 +131,5 @@ document.addEventListener("DOMContentLoaded",function(){if(window.innerWidth>=76
 function handleImgError(l){let t=l.closest("a");if(t){t.classList.add("hide");let e=t.nextElementSibling;e&&e.classList.add("title-left-align")}}
 
 
-document.addEventListener("DOMContentLoaded", function () {
-new Swiper('.raja_kumari_3video_slider',{loop:!1,grabCursor:!1,spaceBetween:18,slidesPerGroup:6,slidesPerView:6,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},breakpoints:{0:{slidesPerGroup:1,slidesPerView:"auto",spaceBetween:40,},425:{slidesPerGroup:2,slidesPerView:2,spaceBetween:40,},749:{slidesPerGroup:3,slidesPerView:3,spaceBetween:10,},990:{slidesPerGroup:3,slidesPerView:3,spaceBetween:10,},1200:{slidesPerGroup:3,slidesPerView:3,spaceBetween:18,},1440:{slidesPerGroup:3,slidesPerView:3,spaceBetween:18,}}})
-new Swiper('.raja_kumari_taptoplay_slider',{loop:!1,grabCursor:!1,spaceBetween:18,slidesPerGroup:6,slidesPerView:6,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},breakpoints:{0:{slidesPerGroup:1,slidesPerView:"auto",spaceBetween:40,},425:{slidesPerGroup:2,slidesPerView:2,spaceBetween:40,},749:{slidesPerGroup:3,slidesPerView:3,spaceBetween:10,},990:{slidesPerGroup:3,slidesPerView:3,spaceBetween:10,},1200:{slidesPerGroup:3,slidesPerView:3,spaceBetween:18,},1440:{slidesPerGroup:3,slidesPerView:3,spaceBetween:18,}}})
 
-});
+
