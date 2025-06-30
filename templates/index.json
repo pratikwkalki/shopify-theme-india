@@ -634,10 +634,10 @@
       "settings": {
         "main_background_color": "#ffffff",
         "main_heading_text": "Bridal World",
-        "main_desktop_full_image": "shopify://shop_images/main-bridal-banner-7-3-25-us-uk-global.jpg",
-        "main_mobile_full_image": "shopify://shop_images/main-bridal-mobile-7-3-25-us-uk-global.jpg",
+        "main_desktop_full_image": "shopify://shop_images/bridal-banner-desk-30-06-25.jpg",
+        "main_mobile_full_image": "shopify://shop_images/bridal-banner-mobile-30-06-25.jpg",
         "alt_tag_text": "Bridal",
-        "main_banner_redirect_link": "https://in.kalkifashion.com/collections/bridal"
+        "main_banner_redirect_link": "shopify://pages/bridal-wedding-dresses"
       }
     },
     "index_collection_lists_new_JNfDX7": {
