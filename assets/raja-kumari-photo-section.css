@@ -1,0 +1,50 @@
+
+
+.photo-section{
+  padding: 80px 0 0;
+}
+.photo-section-main-img{width: 60%;margin:30px auto 0 auto; display: block;}
+.photo-title-section-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  font-size:30px;
+      margin: 0 0 30px 0;font-family: "Forum", serif;text-align: center;letter-spacing: 8px;
+}
+.photo-section .photo-title-section-box .small-star {
+  width: 4%
+}
+.photo-title-section-box .text-div{
+      margin: 0 30px;
+}
+.photo-sub-title-section-box{
+  font-size: 25px;color:#fff; font-family: "Charm", cursive; font-weight: 400;  font-style: normal;text-align: center
+}
+@media screen and (max-width: 1024px) { 
+.photo-section{ padding: 40px 0 0;}
+}
+@media screen and (max-width: 749px) {
+  .photo-section-main-img{width: 80%;}
+  .photo-title-section-box{
+        font-size: 22px;
+  }
+ .photo-section .photo-title-section-box .small-star{
+        width: 11%;
+  }
+  .photo-sub-title-section-box{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 425px) {
+  .photo-title-section-box{
+        font-size: 20px;
+  }
+  .photo-title-section-box .text-div{
+      margin: 0 ;
+}
+  .photo-section .photo-title-section-box .small-star{
+        width: 20%;
+  }
+}
