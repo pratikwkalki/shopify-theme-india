@@ -16,7 +16,8 @@
   width: 4%
 }
 .photo-title-section-box .text-div{
-      margin: 0 30px;
+  margin: 0 30px;
+  width: 50%;
 }
 .photo-sub-title-section-box{
   font-size: 25px;color:#fff; font-family: "Charm", cursive; font-weight: 400;  font-style: normal;text-align: center
@@ -25,6 +26,9 @@
 .photo-section{ padding: 40px 0 0;}
 }
 @media screen and (max-width: 749px) {
+  .photo-title-section-box .text-div{
+  width: 70%;
+}
   .photo-section-main-img{width: 80%;}
   .photo-title-section-box{
         font-size: 22px;
@@ -43,6 +47,7 @@
   }
   .photo-title-section-box .text-div{
       margin: 0 ;
+    width: 100%;
 }
   .photo-section .photo-title-section-box .small-star{
         width: 20%;
