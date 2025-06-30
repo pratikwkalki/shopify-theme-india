@@ -575,45 +575,45 @@
         "information_Gq9Tez": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/01-exclusive-edit-blouses-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/01-exclusive-edit-blouses-400x533-20-05-25.jpg",
-            "title": "Must-Have",
-            "sub_head_text": "New Aged Blouses",
+            "main_desktop_image": "shopify://shop_images/01-styles-under-budget-suits-400x533-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/01-styles-under-budget-suits-400x533-30-06-25.jpg",
+            "title": "Salwar Suits",
+            "sub_head_text": "Under ₹11,999",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/blouse"
+            "main_button_link": "shopify://collections/suits-under-inr-11999"
           }
         },
         "information_fc8yQa": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/02-exclusive-edit-co-ords-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/02-exclusive-edit-co-ords-400x533-20-05-25.jpg",
-            "title": "The Co-Ords",
-            "sub_head_text": "",
+            "main_desktop_image": "shopify://shop_images/02-styles-under-budget-sarees-400x533-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/02-styles-under-budget-sarees-400x533-30-06-25.jpg",
+            "title": "Saree Edit",
+            "sub_head_text": "Under ₹11,999",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/co-ord-sets"
+            "main_button_link": "shopify://collections/sarees-under-inr-11999"
           }
         },
         "information_XEBcff": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/03-exclusive-edit-jewellery-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/03-exclusive-edit-jewellery-400x533-20-05-25.jpg",
-            "title": "Jewellery Edit",
-            "sub_head_text": "",
+            "main_desktop_image": "shopify://shop_images/03-styles-under-budget-mens-400x533-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/03-styles-under-budget-mens-400x533-30-06-25.jpg",
+            "title": "Menswear Fits",
+            "sub_head_text": "Under ₹11,999",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/jewellery"
+            "main_button_link": "shopify://collections/menswear-under-inr-11999"
           }
         },
         "information_wtnLpP": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/04-exclusive-edit-kids-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/04-exclusive-edit-kids-400x533-20-05-25.jpg",
-            "title": "Kids Edition",
-            "sub_head_text": "Mini Meet Cutes",
+            "main_desktop_image": "shopify://shop_images/04-styles-under-budget-lehengas-400x533-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/04-styles-under-budget-lehengas-400x533-30-06-25.jpg",
+            "title": "Lehenga Twirls",
+            "sub_head_text": "Under ₹23,999",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/kids"
+            "main_button_link": "shopify://collections/lehengas-under-inr-23999"
           }
         }
       },
