@@ -24,11 +24,15 @@
 }
 @media screen and (max-width: 1024px) { 
 .photo-section{ padding: 40px 0 0;}
-}
-@media screen and (max-width: 749px) {
   .photo-title-section-box .text-div{
   width: 70%;
 }
+  .photo-sub-title-section-box{
+    font-size: 16px;width:70%;
+  }
+}
+@media screen and (max-width: 749px) {
+  
   .photo-section-main-img{width: 80%;}
   .photo-title-section-box{
         font-size: 22px;
@@ -36,9 +40,7 @@
  .photo-section .photo-title-section-box .small-star{
         width: 11%;
   }
-  .photo-sub-title-section-box{
-    font-size: 16px;width:70%;
-  }
+  
 }
 
 @media (min-width: 0px) and (max-width: 425px) {
