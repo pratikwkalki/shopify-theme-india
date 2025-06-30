@@ -5,13 +5,13 @@ ul.RK-Product-grid li{list-style: none; background-image: url("https://cdn.shopi
 ul.RK-Product-grid li img{ width: 100%; }
 
 .RK-Product-grid li:nth-child(5n+2) {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 .RK-Product-grid li:nth-child(5n+3) {
-  margin-top: 120px;
+  margin-top: 60px;
 }
 .RK-Product-grid li:nth-child(5n+4) {
-  margin-top: 60px;
+  margin-top: 30px;
 }
 ul.RK-Product-grid li a{color:#000; }
 
