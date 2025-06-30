@@ -1,0 +1,69 @@
+.photonote-section{ padding: 80px 0 0;}
+.photonote-section .photonote-title-section-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  font-size:30px;
+      margin: 0 0 30px 0;font-family: "Forum", serif;letter-spacing: 8px;
+}
+.photonote-section .photonote-title-section-box img{margin: 0 8%; width: 14%;}
+.photonote-section .photonote-title-section-box img.small-star{width: 5%;}
+.raja-kumari-photonote .left-section{width: 40%}
+.raja-kumari-photonote .right-section{width: 60%}
+.raja-kumari-photonote .right-section img,.raja-kumari-photonote .left-section img{max-width: 100%; height: auto; display: block;}
+.raja-kumari-photonote .left-section img{ width: 80%; margin: auto;}   
+.raja-kumari-photonote .right-section .right-sec-mid-content-box{ background-image: url(https://cdn.shopify.com/s/files/1/0636/0134/4666/files/testi-bg-2.png?v=1750753525);background-repeat: repeat-y;background-position: top right; background-size: contain; min-height: 352px;}
+.raja-kumari-photonote .right-section .right-sec-mid-content-box h2,.raja-kumari-photonote .right-section .right-sec-mid-content-box p{width: 50%; margin: auto;}
+.raja-kumari-photonote .right-section .right-sec-mid-content-box h2{font-size: 40px;font-family: "Forum", serif;}
+.raja-kumari-photonote .right-section .right-sec-mid-content-box p{font-size: 25px;color:#39082C; font-family: "Charm", cursive; font-weight: 400;  font-style: normal;}
+
+
+@media screen and (max-width: 1300px) {
+ .raja-kumari-photonote .right-section .right-sec-mid-content-box h2{font-size: 30px;}
+  .raja-kumari-photonote .right-section .right-sec-mid-content-box p{font-size: 23px;}
+  .raja-kumari-photonote .right-section { width: 55%;}
+  .raja-kumari-photonote .right-section .right-sec-mid-content-box{min-height: 284px;}
+  .photonote-section .photonote-title-section-box{ margin: 0 0 30px;}
+}
+
+@media screen and (max-width: 1100px) {
+   .raja-kumari-photonote .right-section .right-sec-mid-content-box h2, .raja-kumari-photonote .right-section .right-sec-mid-content-box p{width: 70%;margin: auto 20px auto auto;}
+      .raja-kumari-photonote .right-section .right-sec-mid-content-box {min-height: 226px; }
+  .raja-kumari-photonote .right-section .right-sec-mid-content-box p { font-size: 20px;  }
+}
+
+
+@media screen and (max-width: 1024px) {
+.photonote-section{ padding: 40px 0 0;}
+ .raja-kumari-photonote .right-section .right-sec-mid-content-box h2, .raja-kumari-photonote .right-section .right-sec-mid-content-box p{width: 70%;margin: auto 20px auto auto;}
+  .raja-kumari-photonote .right-section .right-sec-mid-content-box{min-height: 222px;}
+  .raja-kumari-photonote .right-section .right-sec-mid-content-box p{font-size: 20px;}
+}
+
+  @media screen and (max-width: 749px) {  
+    .raja-kumari-photonote .right-section .right-sec-mid-content-box{min-height: 187px;}
+    .raja-kumari-photonote .right-section .right-sec-mid-content-box h2, .raja-kumari-photonote .right-section .right-sec-mid-content-box p{width: 60%;margin: auto 20px auto auto;}
+    .raja-kumari-photonote .right-section .right-sec-mid-content-box h2{font-size: 22px;}
+    .raja-kumari-photonote .right-section .right-sec-mid-content-box p{font-size: 18px;}
+    .photonote-section .photonote-title-section-box img.small-star{width: 9%;}
+    .photonote-section .photonote-title-section-box img.big-star{width: 20%;}
+    .photonote-section .photonote-title-section-box{font-size: 22px}
+  }
+@media  screen and (max-width: 600px) {
+  .raja-kumari-photonote{ flex-direction: column;}
+      .raja-kumari-photonote .right-section { width:100%;  }
+      .raja-kumari-photonote .right-section .right-sec-mid-content-box {  min-height: 197px; }
+  .raja-kumari-photonote .left-section { width: 70%;}
+  .raja-kumari-photonote .right-section .right-sec-mid-content-box h2, .raja-kumari-photonote .right-section .right-sec-mid-content-box p{width: 70%;}
+}
+@media screen and (max-width: 425px) {
+   .raja-kumari-photonote .left-section { width: 80%;}
+  .raja-kumari-photonote{ flex-direction: column;}
+  .photonote-section .photonote-title-section-box {
+        font-size: 20px;
+    flex-direction: column;
+    }
+.photonote-section .photonote-title-section-box img.big-star{width: 20%;margin: 0 1%;}
+  .raja-kumari-photonote .right-section .right-sec-mid-content-box p{font-size: 16px;}
+}
