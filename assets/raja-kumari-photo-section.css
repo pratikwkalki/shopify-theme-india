@@ -36,7 +36,12 @@
   
 }
 @media screen and (max-width: 749px) {
-  
+   .photo-title-section-box .text-div{
+  width: 90%;
+}
+  .photo-sub-title-section-box{
+   width:90%;
+  }
   .photo-section-main-img{width: 80%;}
   .photo-title-section-box{
         font-size: 22px;
