@@ -88,12 +88,58 @@
       ],
       "name": "Rajakumari-Tpa-to-play",
       "settings": {}
+    },
+    "raja_kumari_photo_section_byfyBD": {
+      "type": "raja-kumari-photo-section",
+      "name": "raj kumari photo section",
+      "settings": {}
+    },
+    "raja_kumari_video_2_9VqKmm": {
+      "type": "raja-kumari-video-2",
+      "name": "Raja kumari video2",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "enable_video_autoplay": false,
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/Video_Banner2.jpg",
+        "description": "",
+        "full_width": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "single_image_MFDftr": {
+      "type": "Single-Image",
+      "blocks": {
+        "information_mBgtRX": {
+          "type": "information",
+          "settings": {
+            "video_or_image_on_right": false,
+            "main_mobile_heading_text": "",
+            "main_desktop_image": "shopify://shop_images/caset-bg.png",
+            "main_mobile_image": "shopify://shop_images/caset-bg.png"
+          }
+        }
+      },
+      "block_order": [
+        "information_mBgtRX"
+      ],
+      "name": "Single-Image",
+      "settings": {
+        "main_background_color": "#FFFFFF",
+        "main_top_heading_text": "Heading"
+      }
     }
   },
   "order": [
     "main",
     "raja_kumari_first_video_tTtnRw",
     "raja_kumari_photo_note_iR3ACn",
-    "raja_kumari_taptoplay_TaTd46"
+    "raja_kumari_taptoplay_TaTd46",
+    "raja_kumari_photo_section_byfyBD",
+    "raja_kumari_video_2_9VqKmm",
+    "single_image_MFDftr"
   ]
 }
