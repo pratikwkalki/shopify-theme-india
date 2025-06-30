@@ -405,67 +405,78 @@
         "information_hxURPn": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-curated-collections-boho-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-curated-collections-boho-400x533-20-05-25.jpg",
-            "title": "Boho Vibes",
+            "main_desktop_image": "shopify://shop_images/1-curated-collections-gen-z-400x533-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-curated-collections-gen-z-400x533-30-06-25.jpg",
+            "title": "The Gen Z Store",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/boho-style"
+            "main_button_link": "shopify://collections/gen-z-fashion-trend"
           }
         },
         "information_NQxDrp": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/4-curated-collections-printed-collection-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/4-curated-collections-printed-collection-400x533-20-05-25.jpg",
-            "title": "Print Paradise",
-            "sub_head_text": "The Muse Collection",
+            "main_desktop_image": "shopify://shop_images/2-curated-collections-boho-styles-400x533-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2-curated-collections-boho-styles-400x533-30-06-25.jpg",
+            "title": "Boho Chic",
+            "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/printed-collection"
+            "main_button_link": "shopify://collections/boho-style"
           }
         },
         "information_MBGFwT": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/5-curated-collections-trending-color-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/5-curated-collections-trending-color-400x533-20-05-25.jpg",
-            "title": "The Greens",
+            "main_desktop_image": "shopify://shop_images/3-curated-collections-sequin-collection-400x533-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-curated-collections-sequin-collection-400x533-30-06-25.jpg",
+            "title": "Sequin Soirée",
             "sub_head_text": "Season's Trendiest Colour",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/green-collection"
+            "main_button_link": "shopify://collections/the-shimmers"
           }
         },
         "information_Ud6yrw": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/6-curated-collections-pastels-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/6-curated-collections-pastels-400x533-20-05-25.jpg",
-            "title": "Spring Pastel Edit",
+            "main_desktop_image": "shopify://shop_images/4-curated-collections-cape-styles-400x533-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/4-curated-collections-cape-styles-400x533-30-06-25.jpg",
+            "title": "Cape Styles",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/pastels"
+            "main_button_link": "shopify://collections/cape-style"
           }
         },
         "information_Bxxdri": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-curated-collections-chikankari-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-curated-collections-chikankari-400x533-20-05-25.jpg",
-            "title": "Chikankari Couture",
+            "main_desktop_image": "shopify://shop_images/5-curated-collections-heavy-embriodered-400x533-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/5-curated-collections-heavy-embriodered-400x533-30-06-25.jpg",
+            "title": "Embroidered Edit",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/chikankari-collection"
+            "main_button_link": "shopify://collections/heavy-embriodered"
           }
         },
         "information_8nwx8x": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/3-curated-collections-minimal-styles-400x533-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/3-curated-collections-minimal-styles-400x533-20-05-25.jpg",
-            "title": "The Minimalists",
+            "main_desktop_image": "shopify://shop_images/6-curated-collections-printed-collection-400x533-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/6-curated-collections-printed-collection-400x533-30-06-25.jpg",
+            "title": "Printed Pret",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/minimal-styles"
+            "main_button_link": "shopify://collections/printed-collection"
+          }
+        },
+        "information_VdQj6D": {
+          "type": "information",
+          "settings": {
+            "main_desktop_image": "shopify://shop_images/7-curated-collections-classic-styles-400x533-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/7-curated-collections-classic-styles-400x533-30-06-25.jpg",
+            "title": "Classic Couture",
+            "sub_head_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "shopify://collections/classic-styles"
           }
         }
       },
@@ -475,7 +486,8 @@
         "information_MBGFwT",
         "information_Ud6yrw",
         "information_Bxxdri",
-        "information_8nwx8x"
+        "information_8nwx8x",
+        "information_VdQj6D"
       ],
       "custom_css": [],
       "settings": {
