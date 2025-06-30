@@ -131,6 +131,60 @@
         "main_background_color": "#FFFFFF",
         "main_top_heading_text": "Heading"
       }
+    },
+    "raja_kumari_product_grid_gnhUgL": {
+      "type": "raja-kumari-product-grid",
+      "name": "Raja Kumari Product Grid",
+      "settings": {
+        "collection_product_name": "green-saree"
+      }
+    },
+    "raja_kumari_3_video_drqeHB": {
+      "type": "raja-kumari-3-video",
+      "blocks": {
+        "information_FcCFbh": {
+          "type": "information",
+          "settings": {
+            "main_mp4_video": "shopify://files/videos/720x1440-app-banner (1)_913cf6c5-4544-4162-8fed-7bf06556ec9e.mp4",
+            "title": "",
+            "sub_head_text": "",
+            "main_tags_detail_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "/"
+          }
+        },
+        "information_RmWAkL": {
+          "type": "information",
+          "settings": {
+            "main_mp4_video": "shopify://files/videos/SG278821.mp4",
+            "title": "",
+            "sub_head_text": "",
+            "main_tags_detail_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "/"
+          }
+        },
+        "information_7mTi8g": {
+          "type": "information",
+          "settings": {
+            "main_mp4_video": "shopify://files/videos/400x545-desk--saree-drape-banner.mp4",
+            "title": "",
+            "sub_head_text": "",
+            "main_tags_detail_text": "",
+            "main_button_text": "Shop Now",
+            "main_button_link": "/"
+          }
+        }
+      },
+      "block_order": [
+        "information_FcCFbh",
+        "information_RmWAkL",
+        "information_7mTi8g"
+      ],
+      "name": "RK3 video section",
+      "settings": {
+        "title": ""
+      }
     }
   },
   "order": [
@@ -140,6 +194,8 @@
     "raja_kumari_taptoplay_TaTd46",
     "raja_kumari_photo_section_byfyBD",
     "raja_kumari_video_2_9VqKmm",
-    "single_image_MFDftr"
+    "single_image_MFDftr",
+    "raja_kumari_product_grid_gnhUgL",
+    "raja_kumari_3_video_drqeHB"
   ]
 }
