@@ -20,7 +20,7 @@
   width: 50%;
 }
 .photo-sub-title-section-box{
-  font-size: 25px;color:#fff; font-family: "Charm", cursive; font-weight: 400;  font-style: normal;text-align: center
+  font-size: 25px;color:#fff; font-family: "Charm", cursive; font-weight: 400;  font-style: normal;text-align: center; width: 50%; margin: auto;
 }
 @media screen and (max-width: 1024px) { 
 .photo-section{ padding: 40px 0 0;}
@@ -37,11 +37,14 @@
         width: 11%;
   }
   .photo-sub-title-section-box{
-    font-size: 16px;
+    font-size: 16px;width:70%;
   }
 }
 
 @media (min-width: 0px) and (max-width: 425px) {
+   .photo-sub-title-section-box{
+    width:100%;
+  }
   .photo-title-section-box{
         font-size: 20px;
   }
