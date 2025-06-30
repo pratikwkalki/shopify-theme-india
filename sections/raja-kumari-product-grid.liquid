@@ -1,6 +1,40 @@
+{{ 'raja-kumari-product-grid.css' | asset_url | stylesheet_tag }}
+<div class="RK-Product-grid-section">
+  <ul class="RK-Product-grid">
+      {% capture value %}{{ section.settings.collection_product_name }}{% endcapture %}
+      {% assign selected_collection = collections[value] %}
+  
+      {% if selected_collection %}
+       
+          {% for product in selected_collection.products %}
+            <li>
+              <a href="{{ product.url | split: "?" | first }}"  data-open-in-new-tab="true" >
+              <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}" height="" width="">
+              <p>{{ product.title | truncate: 40, '...' }}</p>
+              </a>
+            </li>
+          {% endfor %}
+        
+      {% endif %}
+  </ul>
+</div>
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Raja Kumari Product Grid",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "collection_product_name",
+        "label": "Add Meta Object Handle Name Text",
+        "info": "For EX: index_visit_our_stores Etc..."
+      }
+    ],
+    "presets": [
+    {
+      "name": "Raja Kumari Product Grid"
+    }
+  ]
   }
 {% endschema %}
