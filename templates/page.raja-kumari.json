@@ -11,7 +11,12 @@
   "sections": {
     "main": {
       "type": "Page-template-new",
-      "settings": {}
+      "custom_css": [
+        ".raja-kumari .breadcrumbs__item a,.raja-kumari .breadcrumbs__item span {color: #fff;}"
+      ],
+      "settings": {
+        "main_background_color": "#ffffff"
+      }
     }
   },
   "order": [

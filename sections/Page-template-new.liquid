@@ -1,4 +1,79 @@
-{%- if page.title != blank or page.content != blank -%}
+
+
+{%- style -%}
+  .off--HideTextBox{display: none !important;}
+  .marginhide{padding: 0 !important;}
+{%- endstyle -%}
+{%- if page.title != blank or page.content != blank or section.settings.title != blank -%}
+  {{ 'page-cms.css' | asset_url | stylesheet_tag }}
+  <div class="Page_template_main_new  {{ page.title | handleize }} {% if section.settings.HideTextBox == 'HideTextBox' %}marginhide{% endif %}" style="background: {{ section.settings.main_background_color }};">
+    <div class="page-width">
+      <div class="Page_template_inner_new">
+        <div class="Page_template_breadcrumb_new">
+          {% render 'Breadcrumb-navigation-new' %}
+        </div>
+        {%- if page.title != blank and page.title != "Customization Charges" or section.settings.title != blank -%}
+          <div class="Common_title_new Page_template_title_new off--{% if section.settings.HideTextBox == 'HideTextBox' %}HideTextBox{% endif %}">
+            <h1>
+           {%- if section.settings.title != blank -%}                 
+                   {{ section.settings.title }}
+            {% else page.title != blank %}
+               {{ page.title }}
+            {%- endif -%}
+          
+            </h1>
+          </div>
+        {%- endif -%}
+        {%- if page.content != blank -%}
+          <div class="Page_template_maincontent_new">
+            <div class="rte Page_template_innercontent_new">
+              {{ page.content }}
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}   
+
+{% schema %}
+  {
+    "name": "Page Template New",
+    "class": "Page_template_new",
+    "settings": [
+      {
+        "type": "color",
+        "id": "main_background_color",
+        "label": "Add Main Background Color",
+        "default": "#FFFFFF"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Add Main Heading Text"
+      },
+      {
+            "type": "select",
+            "id": "HideTextBox",
+            "options": [
+              {
+                "value": "ShowTextBox",
+                "label": "Show all Text box"
+              },
+              {
+                "value": "HideTextBox",
+                "label": "Hide all Text box"
+              }
+            ],
+            "default": "ShowTextBox",
+            "label": "Hide Title"
+          },
+    ]
+  }
+{% endschema %}
+
+{%- comment -%}
+  {%- if page.title != blank or page.content != blank -%}
   {{ 'page-cms.css' | asset_url | stylesheet_tag }}
   <div class="Page_template_main_new  {{ page.title | handleize }}" style="background: {{ section.settings.main_background_color }};">
     <div class="page-width">
@@ -37,3 +112,4 @@
     ]
   }
 {% endschema %}
+{%- endcomment -%}}
