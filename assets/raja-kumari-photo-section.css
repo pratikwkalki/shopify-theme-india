@@ -29,6 +29,7 @@
   .photo-sub-title-section-box{
    width:70%;
   }
+   .photo-section-main-img{width: 70%;}
 }
 @media screen and (max-width: 1024px) { 
 .photo-section{ padding: 40px 0 0;}
