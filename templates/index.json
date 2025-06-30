@@ -646,8 +646,8 @@
         "information_rVmqny": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-20-05-25.jpg",
+            "main_desktop_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-all-country-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-all-country-30-06-25.jpg",
             "title": "Haldi | Mehendi",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -657,9 +657,9 @@
         "information_dBLnzc": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-bridal-world-cocoktail-sangeet-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-bridal-world-cocoktail-sangeet-20-05-25.jpg",
-            "title": "Cocktail | Sangeet",
+            "main_desktop_image": "shopify://shop_images/2-bridal-sangeet-all-country-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2-bridal-sangeet-all-country-30-06-25.jpg",
+            "title": "Sangeet Saga",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "shopify://collections/bridal-sangeet-collection"
@@ -668,8 +668,8 @@
         "information_E83nqK": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/3-bridal-world-reception-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/3-bridal-world-reception-20-05-25.jpg",
+            "main_desktop_image": "shopify://shop_images/3-bridal-reception-all-country-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-bridal-reception-all-country-30-06-25.jpg",
             "title": "Reception Royalty",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -679,9 +679,9 @@
         "information_mKbaME": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/4-bridal-world-trousseau-20-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/4-bridal-world-trousseau-20-05-25.jpg",
-            "title": "Trousseau Trunk",
+            "main_desktop_image": "shopify://shop_images/4-bridal-trousseau-all-country-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/4-bridal-trousseau-all-country-30-06-25.jpg",
+            "title": "Trousseau Trend",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "shopify://collections/trousseau-collection"
