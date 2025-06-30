@@ -1,0 +1,54 @@
+.video1-section{ padding: 80px 0 0;}
+.tophead-starimg{
+  width: 15%;
+}
+.tophead-textimg1  {width: 8%;}
+.tophead-textimg3  {width: 10%;}
+.raja-kumari-bg-box{
+  background-color: #270520;
+}
+.title-section-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.raja-kumari-video {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding:0;
+    margin-top: 40px;
+}
+.raja-kumari-main-bg{
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-position: top left;
+}
+.raja-kumari.marginhide,.video-section__media{ background-color: transparent !important}
+.video-section{padding:0 !important}
+.raja-kumari-photonote{
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) { 
+.video1-section{ padding: 40px 0 0;}
+}
+
+  @media (min-width: 0px) and (max-width: 749px) {
+   .tophead-textimg1  {width: 11%;}
+.tophead-textimg3  {width: 14%;} 
+
+  }
+@media (min-width: 0px) and (max-width: 425px) {
+  .tophead-textimg1  {width: 15%;}
+.tophead-textimg3  {width: 18%;} 
+  .tophead-starimg { width: 28%;}
+  
+}
+
