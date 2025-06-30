@@ -10,7 +10,7 @@
             <li>
               <a href="{{ product.url | split: "?" | first }}"  data-open-in-new-tab="true" >
               <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}" height="" width="">
-              <p>{{ product.title | truncate: 40, '...' }}</p>
+              <p>{{ product.title | truncate: 30, '...' }}</p>
               </a>
             </li>
           {% endfor %}
