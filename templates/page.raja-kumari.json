@@ -24,11 +24,12 @@
       "type": "raja-kumari-first-video",
       "name": "Raja kumari first video",
       "settings": {
-        "heading": "Video",
+        "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
         "enable_video_autoplay": false,
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/Web_Banner_24-06-25.jpg",
         "description": "",
         "full_width": false,
         "padding_top": 36,
