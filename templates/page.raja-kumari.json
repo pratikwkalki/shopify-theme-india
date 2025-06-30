@@ -128,7 +128,7 @@
       ],
       "name": "Single-Image",
       "settings": {
-        "main_background_color": "#FFFFFF",
+        "main_background_color": "#ffffff",
         "main_top_heading_text": "Heading"
       }
     },
@@ -185,6 +185,11 @@
       "settings": {
         "title": "LOOK LIKE"
       }
+    },
+    "raja_kumari_photocollage_4AYHLg": {
+      "type": "raja-kumari-photocollage",
+      "name": "raja-kumari photocollage",
+      "settings": {}
     }
   },
   "order": [
@@ -196,6 +201,7 @@
     "raja_kumari_video_2_9VqKmm",
     "single_image_MFDftr",
     "raja_kumari_product_grid_gnhUgL",
-    "raja_kumari_3_video_drqeHB"
+    "raja_kumari_3_video_drqeHB",
+    "raja_kumari_photocollage_4AYHLg"
   ]
 }
