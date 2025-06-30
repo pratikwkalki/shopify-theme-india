@@ -1,6 +1,175 @@
+<style>
+  .no-content::after {
+    display: none;
+  }
+</style>
+{{ 'raja-kumari-3-video.css' | asset_url | stylesheet_tag }}
+
+{%- if section.blocks.size > 0 -%}
+
+   
+    <div class="video-3-section">
+      {%- if section.settings.title != blank-%}
+        <h2 class="video-3-title">
+          {{ section.settings.title }}
+        </h2>
+      <div>
+       <img class="big-star" src="https://cdn.shopify.com/s/files/1/0636/0134/4666/files/Design-center-sp24-06-25.png?v=1750745131" width="" height="" alt="">
+    </div>
+     {%- endif -%}
+        <div class="swiper-container raja_kumari_3video_slider rajakumari3video_allloop_new">
+            <div class="swiper-wrapper">
+              {%- for block in section.blocks -%}
+                {%- if block.settings.main_mp4_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank or block.settings.main_tags_detail_text != blank or block.settings.sub_head_text != blank or block.settings.title != blank or block.settings.main_button_link != blank -%}
+                  <div class="swiper-slide rajakumari3video_allloop_mainboxs_new skeleton {% if block.settings.title == blank and block.settings.sub_head_text == blank %}no-content{% endif %}">
+                    {%- if block.settings.main_button_link != blank -%}
+                      <a href="{{ block.settings.main_button_link }}" aria-label="Shop Now {{ block.settings.title }}" title="{{ block.settings.title }}"></a>
+                    {%- endif -%}  
+                    <div class="rajakumari3video_allloop_innerboxs_new {% if block.settings.title == blank and block.settings.sub_head_text == blank %}no-content{% endif %}">
+                      {%- if block.settings.main_mp4_video != blank or block.settings.main_desktop_image != blank or block.settings.main_mobile_image != blank -%}
+                        <div class="rajakumari3video_allloop_innerboxs_1_new">
+                          <div class="rajakumari3video_allloop_innerboxs_1_videoimageboth_new">
+                            {%- if block.settings.main_mp4_video != blank -%}
+                              <div class="rajakumari3video_allloop_innerboxs_1_videoimage_new">
+                                {{ block.settings.main_mp4_video | video_tag: controls: false, autoplay: true, loop: true }}
+                              </div>
+                            {% else %}  
+                              {%- if block.settings.main_desktop_image != blank and block.settings.main_mobile_image != blank -%}
+                                <div class="rajakumari3video_allloop_innerboxs_1_videoimage_new">
+                                  {% assign main_desktop_image = block.settings.main_desktop_image  | image_url %}
+                                  {% assign main_mobile_image = block.settings.main_mobile_image  | image_url %}
+                                  <picture>
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 380 %}" media="(max-width: 380px)" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 412 %}" media="(max-width: 412px)" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 500 %}" media="(max-width: 500px)" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 749 %}" media="(max-width: 749px)" />
+                                    <img src="{%- render 'gumlet', src: main_desktop_image w: 350 %}" alt="{{ block.settings.title }}" title="{{ block.settings.title }}" loading="lazy" width="346" height="461" />
+                                  </picture>
+                                </div>
+                              {%- endif -%}
+                            {%- endif -%}
+                          </div>
+                        </div>
+                      {%- endif -%}
+                      {%- if block.settings.main_tags_detail_text != blank -%}
+                        <div class="rajakumari3video_allloop_innerboxs_2_tagstextsboth_new">
+                          {{ block.settings.main_tags_detail_text }}
+                        </div>
+                      {%- endif -%}
+                      {%- if block.settings.title != blank or block.settings.main_button_link != blank -%}
+                        <div class="rajakumari3video_allloop_innerboxs_3_new">
+                          <div class="rajakumari3video_allloop_innerboxs_3_titlebuttonboth_new">
+                            {%- if block.settings.title != blank -%}
+                              <div class="rajakumari3video_allloop_innerboxs_3_title_new">
+                                <h2>{{ block.settings.title }}</h2>
+                              </div>  
+                            {%- endif -%}
+                           {%- if block.settings.sub_head_text != blank -%}
+                               <div class="rajakumari3video_allloop_innerboxs_3_subtitle_new">
+                                  <p>{{ block.settings.sub_head_text }}</p>
+                              </div>
+                            {%- endif -%}
+                           
+                            {%- if block.settings.main_button_text != blank and block.settings.main_button_link != blank -%}
+                              <div class="rajakumari3video_allloop_innerboxs_3_button_new">
+                                <a href="{{ block.settings.main_button_link }}" class="button button_white">
+                                  {{ block.settings.main_button_text }}
+                                </a>
+                              </div>  
+                            {%- endif -%}
+                          </div>
+                        </div>  
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+ 
+{%- endif -%} 
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "RK3 video section",
+    "class": "rajakumari3video_new",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Add Main Heading Text"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "information",
+        "name": "Information",
+        "limit": 4,
+        "settings": [
+          {
+            "type": "video",
+            "id": "main_mp4_video",
+            "label": "Add Main MP4 Video"
+          },
+          {
+            "type": "image_picker",
+            "id": "main_desktop_image",
+            "label": "Add Main Desktop Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "main_mobile_image",
+            "label": "Add Main Mobile Image"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Add Main Heading Text"
+          },
+          {
+            "type": "text",
+            "id": "sub_head_text",
+            "label": "Add Sub Heading Text"
+          },
+          {
+            "type": "richtext",
+            "id": "main_tags_detail_text",
+            "label": "Add Main Tags Detail Text",
+            "info": "EX: <p>New <br>style <br>added.</p>"
+          },
+          {
+            "type": "text",
+            "id": "main_button_text",
+            "label": "Add Main Button Text",
+            "default": "Shop Now"
+          },
+          {
+            "type": "url",
+            "id": "main_button_link",
+            "label": "Add Main Button Link",
+            "default": "/"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "RK3 video section",
+        "blocks": [
+          {
+            "type": "information"
+          },
+          {
+            "type": "information"
+          },
+          {
+            "type": "information"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
