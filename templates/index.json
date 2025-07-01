@@ -212,7 +212,7 @@
           "type": "information",
           "settings": {
             "main_desktop_full_image": "shopify://shop_images/2-slider-banner-all-new-arrival-country-desktop-2800x1050-30-06-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/2-mobile-banner-new-arrival-all-country-30-06-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/2-mobile-banner-new-arrival-all-country-1-7-25.jpg",
             "alt_text": "Drape Dynasty",
             "main_banner_redirect_link": "shopify://collections/new-arrivals"
           }
