@@ -443,45 +443,45 @@
         "information_rVmqny": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-shop-by-collection-mehendi-mastery-23-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-shop-by-collection-mehendi-mastery-23-05-25.jpg",
-            "title": "Mehendi Magic",
+            "main_desktop_image": "shopify://shop_images/1-mehendi-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mehendi-30-06-25.jpg",
+            "title": "Mehendi Mastery",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/mens-mehendi-wear"
+            "main_button_link": "shopify://collections/mens-mehendi-wear"
           }
         },
         "information_dBLnzc": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-shop-by-collection-sangeet-soiree-23-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-shop-by-collection-sangeet-soiree-23-05-25.jpg",
+            "main_desktop_image": "shopify://shop_images/2-sangeet-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2-sangeet-30-06-25.jpg",
             "title": "Sangeet Soirée",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/mens-sangeet-wear"
+            "main_button_link": "shopify://collections/mens-sangeet-wear"
           }
         },
         "information_E83nqK": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/3-shop-by-collection-wedding_-wonders-25-04-25-1.jpg",
-            "main_mobile_image": "shopify://shop_images/3-shop-by-collection-wedding_-wonders-25-04-25-1.jpg",
-            "title": "Wedding Wonders",
+            "main_desktop_image": "shopify://shop_images/3-wedding-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-wedding-30-06-25.jpg",
+            "title": "Shaadi Styles",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/mens-wedding-wear"
+            "main_button_link": "shopify://collections/mens-wedding-wear"
           }
         },
         "information_mKbaME": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/4-shop-by-collection-reception-royalty-23-05-25.jpg",
-            "main_mobile_image": "shopify://shop_images/4-shop-by-collection-reception-royalty-23-05-25.jpg",
+            "main_desktop_image": "shopify://shop_images/4-reception-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/4-reception-30-06-25.jpg",
             "title": "Reception Royalty",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "https://in.kalkifashion.com/collections/mens-reception-wear"
+            "main_button_link": "shopify://collections/mens-reception-wear"
           }
         }
       },
