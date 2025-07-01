@@ -67,6 +67,7 @@
     },
     "offer_banner_new_dynamic_DpBCKJ": {
       "type": "offer-banner-new-dynamic",
+      "disabled": true,
       "settings": {}
     },
     "html_category_highlighted_banners_7YdPPY": {
