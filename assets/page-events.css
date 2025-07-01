@@ -1,3 +1,6 @@
+.Page_event_slider .swiper-wrapper {
+  display: block;
+}
 .Page_Events_sliders_main_new {
   position: relative;
 }
