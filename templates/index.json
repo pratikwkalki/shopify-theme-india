@@ -220,8 +220,8 @@
         "information_Vw93j8": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/3-slider-banner-mens-wear-all-country-desktop-2800x1050-30-06-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/3-mobile-banner-mens-wear-all-country-500x707-30-06-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/3_slider_banner_mens_wear_all_country_desktop_2800x1050_30_06_25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/3-mobile-banner-mens-wear-all-country-500x707-30-06-25_d609912f-97c9-4c5d-96b0-96fc8d5baf47.jpg",
             "alt_text": "Kurta Chronicles",
             "main_banner_redirect_link": "shopify://collections/see-all-menswear"
           }
