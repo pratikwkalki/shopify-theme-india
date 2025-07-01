@@ -101,25 +101,25 @@
         "image_UjyipC": {
           "type": "image",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mens-highlight-desk-new-arrivals-all-countries-05-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mens-highlight-mobile-new-arrivals-all-countries-05-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/1-mens-highlight-desk-new-arrivals-all-countries-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mens-highlight-mobile-new-arrivals-all-countries-30-06-25.jpg",
             "main_button_link": "shopify://collections/new-arrival-menswear"
           }
         },
         "image_mQKTgR": {
           "type": "image",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-mens-highlight-desk-wedding-collection-all-countries-05-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-mens-highlight-mobile-wedding-collection-all-countries-05-06-25.jpg",
-            "main_button_link": "shopify://collections/mens-wedding-wear"
+            "main_desktop_image": "shopify://shop_images/2-mens-highlight-desk-ready-to-ship-all-countries-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2-mens-highlight-mobile-24-hour-dispatch-all-countries-30-06-25.jpg",
+            "main_button_link": "shopify://collections/ready-to-ship-menswear"
           }
         },
         "image_iCR9qQ": {
           "type": "image",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/03-mens-highlight-desk-ready_to-ship-all-countries-05-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/03-mens-highlight-mobile-ready_to-ship-all-countries-05-06-25.jpg",
-            "main_button_link": "shopify://collections/ready-to-ship-menswear"
+            "main_desktop_image": "shopify://shop_images/03-mens-highlight-desk-festive-collection-all-countries-30-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/03-mens-highlight-mobile-festive-collection-all-countries-30-06-25.jpg",
+            "main_button_link": "shopify://collections/mens-festive-wear"
           }
         }
       },
