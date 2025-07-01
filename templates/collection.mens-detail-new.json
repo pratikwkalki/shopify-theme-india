@@ -298,17 +298,17 @@
         "information_yTG78t": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/1-mens-slider-banner-see-all-mens-wear-all-country-desktop-1440x540-05-06-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/1-men-mobile-banner-see-all-mens-wear-all-country-500x707-05-06-25.jpg",
-            "main_banner_redirect_link": "shopify://collections/see-all-menswear"
+            "main_desktop_full_image": "shopify://shop_images/1-mens-slider-banner--wedding-collection-all-country-desktop-1440x540-30-06-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1-men-mobile-banner-wedding-collection-all-country-500x707-30-06-25.jpg",
+            "main_banner_redirect_link": "shopify://collections/mens-wedding-wear"
           }
         },
         "information_PBqbzG": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/2-mens-slider-banner-printed-collection-all-country-desktop-1440x540-05-06-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/2-men-mobile-banner-printed-collection-all-country-500x707-05-06-25.jpg",
-            "main_banner_redirect_link": "shopify://collections/printed-menswear"
+            "main_desktop_full_image": "shopify://shop_images/2-mens-slider-banner-see-all-mens-all-country-desktop-1440x540-30-06-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/2-men-mobile-banner-see-all-mens-all-country-500x707-30-06-25.jpg",
+            "main_banner_redirect_link": "shopify://collections/see-all-menswear"
           }
         }
       },
