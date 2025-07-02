@@ -72,7 +72,10 @@
                   <p><b>Manufactured / Packed by:</b> <span class="popup_manufacturing_click" popup_id="popup_manufacturing">KALKI Fashion Pvt ltd</span></p>
                   <script>
                     document.addEventListener("DOMContentLoaded", function () {
-                      $(".popup_manufacturing_click").click(function(){var popup_id=$(this).attr("popup_id");$(".index-popup-overlay").css("display","block");$("."+popup_id+"_open").css("display","block")})
+                      $(".popup_manufacturing_click").click(function(){var popup_id=$(this).attr("popup_id");
+                      $(".index-popup-overlay").css("display","block");
+                      $(".popup_manufacturing_close").css("display","none");
+                      $("."+popup_id+"_open").css("display","block")})
                     });
                   </script> 
                 </div>
