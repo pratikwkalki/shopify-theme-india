@@ -12,7 +12,7 @@ h2.video-3-title{ color:#fff; font-size: 40px;font-family: "Forum", serif; text-
 .taptoplay-40{width: 40%; display: flex; flex-direction: column; justify-content: space-between;}
 .taptoplay-section-block .taptoplay-60 .text-div{ color:#fff;  font-size:30px; margin:0 0 10px 0;font-family: "Forum", serif;text-align: left;letter-spacing: 8px;line-height: 1;width: 80%;}
 .taptoplay-section-block .taptoplay-60 .photo-sub-title-section-box{
-  font-size: 18px;color:#fff; font-family: "Charm", cursive; font-weight: 400;  font-style: normal;text-align: left;margin-bottom:30px;width: 60%;
+  font-size: 18px;color:#fff; font-family: "Charm", cursive; font-weight: 400;  font-style: normal;text-align: left;margin: 0 0 20px 0;width: 60%;
 }
 .taptoplay-section-block .taptoplay-40 .text-div{ color:#fff;  font-size:30px; margin: 0 0 10px 0;font-family: "Forum", serif;text-align: center;letter-spacing: 8px;line-height: 1;width: 100%;}
 .taptoplay-card{
