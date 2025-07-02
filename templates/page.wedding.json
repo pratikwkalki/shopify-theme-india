@@ -317,19 +317,19 @@
         "information_6GygaM": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/Barati_08-06-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/1_editors_picks_bridesmaid_all_country_800x586_mobile_27_05_25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/Editor-choice-3-709x520-19-06-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/editor-choice-3-194x269-19-06-25-mobile.jpg",
             "alt_text": "",
-            "main_banner_redirect_link": ""
+            "main_banner_redirect_link": "shopify://collections/wedding-collection"
           }
         },
         "information_dD8i6g": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/Trousseau_08-06-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/2-editors-picks-groomsman-all-country-800x586-mobile-27-5-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/Editor-choice-4-709x520-19-06-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/editor-choice-4-194x269-19-06-25-mobile.jpg",
             "alt_text": "",
-            "main_banner_redirect_link": ""
+            "main_banner_redirect_link": "shopify://collections/trousseau-collection"
           }
         }
       },
