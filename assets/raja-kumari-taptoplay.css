@@ -43,7 +43,7 @@ h2.video-3-title{ color:#fff; font-size: 40px;font-family: "Forum", serif; text-
   margin: auto;
 }
 .taptoplay_allloop_mainboxs_new {
-   max-height: 416px;
+   
   position: relative;
   padding: 15px 10px 60px 10px;
   background-image: url("https://cdn.shopify.com/s/files/1/0636/0134/4666/files/OjUDQC-bg.png?v=1750833324");
@@ -71,6 +71,7 @@ h2.video-3-title{ color:#fff; font-size: 40px;font-family: "Forum", serif; text-
   padding-bottom: 133.335%;
   position: relative;
 }
+.taptoplay_allloop_innerboxs_1_videoimageboth_new img{max-height: 416px;}
 
 .taptoplay_allloop_innerboxs_1_videoimage_new img,
 .taptoplay_allloop_innerboxs_1_videoimage_new video {
