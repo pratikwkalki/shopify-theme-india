@@ -100,81 +100,41 @@
         "information_8JmDkw": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/Haldi_08-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/Haldi_08-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/shop-by-occasion-1-279x444-19-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/shop-by-occasion-1-279x444-19-06-25.jpg",
             "title": "<p>Haldi | Mehendi</p>",
             "inner_button_text": "Shop Now",
-            "inner_button_link": "/"
+            "inner_button_link": "shopify://collections/haldi-and-mehendi-edit"
           }
         },
         "information_7fkB3p": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/Sangeet_08-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/Sangeet_08-06-25.jpg",
-            "title": "<p>Sangeet</p>",
+            "main_desktop_image": "shopify://shop_images/shop-by-occasion-2-279x444-19-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/shop-by-occasion-2-279x444-19-06-25.jpg",
+            "title": "<p>Sangeet | Cocktail</p>",
             "inner_button_text": "Shop Now",
-            "inner_button_link": "/"
+            "inner_button_link": "shopify://collections/cocktail-and-sangeet-edit"
           }
         },
         "information_cwgpKi": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/Engagment_08-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/Engagment_08-06-25.jpg",
-            "title": "<p>Engagement Cocktail</p>",
+            "main_desktop_image": "shopify://shop_images/shop-by-occasion-3-279x444-19-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/shop-by-occasion-3-279x444-19-06-25.jpg",
+            "title": "<p>Engagement Edit</p>",
             "inner_button_text": "Shop Now",
-            "inner_button_link": "/"
+            "inner_button_link": "shopify://collections/engagement-collection"
           }
         },
         "information_X9dRtV": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/Reception_08-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/Reception_08-06-25.jpg",
-            "title": "<p>Reception</p>",
+            "main_desktop_image": "shopify://shop_images/shop-by-occasion-4-279x444-19-06-25.jpg",
+            "main_mobile_image": "shopify://shop_images/shop-by-occasion-4-279x444-19-06-25.jpg",
+            "title": "<p>Reception Royalty</p>",
             "inner_button_text": "Shop Now",
-            "inner_button_link": "/"
-          }
-        },
-        "information_gti7M9": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/Haldi_08-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/Haldi_08-06-25.jpg",
-            "title": "<p>Haldi | Mehendi</p>",
-            "inner_button_text": "Shop Now",
-            "inner_button_link": "/"
-          }
-        },
-        "information_fmDTbb": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/Sangeet_08-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/Sangeet_08-06-25.jpg",
-            "title": "<p>Haldi | Mehendi</p>",
-            "inner_button_text": "Shop Now",
-            "inner_button_link": "/"
-          }
-        },
-        "information_FkKQHX": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/Engagment_08-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/Engagment_08-06-25.jpg",
-            "title": "<p>Haldi | Mehendi</p>",
-            "inner_button_text": "Shop Now",
-            "inner_button_link": "/"
-          }
-        },
-        "information_8Fh3Vi": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/Reception_08-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/Reception_08-06-25.jpg",
-            "title": "<p>Haldi | Mehendi</p>",
-            "inner_button_text": "Shop Now",
-            "inner_button_link": "/"
+            "inner_button_link": "shopify://collections/reception-collection"
           }
         }
       },
@@ -182,11 +142,7 @@
         "information_8JmDkw",
         "information_7fkB3p",
         "information_cwgpKi",
-        "information_X9dRtV",
-        "information_gti7M9",
-        "information_fmDTbb",
-        "information_FkKQHX",
-        "information_8Fh3Vi"
+        "information_X9dRtV"
       ],
       "name": "Page Weaves Collections",
       "settings": {
