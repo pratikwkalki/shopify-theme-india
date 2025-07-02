@@ -28,8 +28,6 @@ if(ctabtnwrapper) {
     });
     if (window.innerWidth > 767) {
       stickAddToCartBtn.addEventListener('click', () => {
-          console.log('click', scrollVal)
-        
           ctabtnwrapper.click();
           setTimeout(() => // this changes the scrolling behavior to "smooth"
           {
