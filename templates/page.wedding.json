@@ -284,7 +284,7 @@
           "settings": {
             "main_desktop_full_image": "shopify://shop_images/Editor-choice-1-709x520-19-06-25.jpg",
             "main_mobile_full_image": "shopify://shop_images/editor-choice-1-194x269-19-06-25-mobile.jpg",
-            "alt_text": "",
+            "alt_text": "Bridesmaid Collection",
             "main_banner_redirect_link": "shopify://collections/bridesmaid-collection"
           }
         },
@@ -293,7 +293,7 @@
           "settings": {
             "main_desktop_full_image": "shopify://shop_images/Editor-choice-2-709x520-19-06-25.jpg",
             "main_mobile_full_image": "shopify://shop_images/editor-choice-2-194x269-19-06-25-mobile.jpg",
-            "alt_text": "",
+            "alt_text": "Groomsman",
             "main_banner_redirect_link": "shopify://collections/groomsman"
           }
         }
@@ -319,7 +319,7 @@
           "settings": {
             "main_desktop_full_image": "shopify://shop_images/Editor-choice-3-709x520-19-06-25.jpg",
             "main_mobile_full_image": "shopify://shop_images/editor-choice-3-194x269-19-06-25-mobile.jpg",
-            "alt_text": "",
+            "alt_text": "Wedding Collection",
             "main_banner_redirect_link": "shopify://collections/wedding-collection"
           }
         },
@@ -328,7 +328,7 @@
           "settings": {
             "main_desktop_full_image": "shopify://shop_images/Editor-choice-4-709x520-19-06-25.jpg",
             "main_mobile_full_image": "shopify://shop_images/editor-choice-4-194x269-19-06-25-mobile.jpg",
-            "alt_text": "",
+            "alt_text": "Trousseau Collection",
             "main_banner_redirect_link": "shopify://collections/trousseau-collection"
           }
         }
