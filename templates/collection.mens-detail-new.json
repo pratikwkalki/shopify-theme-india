@@ -101,24 +101,24 @@
         "image_UjyipC": {
           "type": "image",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mens-highlight-desk-new-arrivals-all-countries-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mens-highlight-mobile-new-arrivals-all-countries-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/1-mens-highlight-desk-new-arrivals-all-countries-2-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mens-highlight-desk-new-arrivals-all-countries-2-07-25.jpg",
             "main_button_link": "shopify://collections/new-arrival-menswear"
           }
         },
         "image_mQKTgR": {
           "type": "image",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-mens-highlight-desk-ready-to-ship-all-countries-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-mens-highlight-mobile-24-hour-dispatch-all-countries-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/2-mens-highlight-desk-ready-to-ship-all-countries-02-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2_mens_highlight_mobile_24_hour_dispatch_all_countries_02_07_25.jpg",
             "main_button_link": "shopify://collections/ready-to-ship-menswear"
           }
         },
         "image_iCR9qQ": {
           "type": "image",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/03-mens-highlight-desk-festive-collection-all-countries-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/03-mens-highlight-mobile-festive-collection-all-countries-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/03_mens_highlight_desk_festive_collection_all_countries_02_07_25.jpg",
+            "main_mobile_image": "shopify://shop_images/03_mens_highlight_mobile_festive_collection_all_countries_02_07.jpg",
             "main_button_link": "shopify://collections/mens-festive-wear"
           }
         }
