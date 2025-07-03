@@ -184,6 +184,9 @@
         "information_cwgpKi",
         "information_X9dRtV"
       ],
+      "custom_css": [
+        ".Index_custom_collections_allloop_innerboxs_1_videoimageboth_new {padding-bottom: 159%; position: relative;}"
+      ],
       "name": "Page Weaves Collections",
       "settings": {
         "main_background_color": "#ffffff",
