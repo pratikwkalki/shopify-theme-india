@@ -170,7 +170,7 @@
             "title": "Saree Edit",
             "sub_head_text": "",
             "main_button_text": "Shop All",
-            "main_button_link": "/"
+            "main_button_link": "shopify://collections/wedding-saree"
           }
         },
         "information_TihwRf": {
