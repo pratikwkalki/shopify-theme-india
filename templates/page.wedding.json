@@ -55,6 +55,8 @@
       ],
       "custom_css": [
         ".Index_top_banner_slider_main_new {display: none;}",
+        ".Index_top_banner_slider_inner_new .swiper-pagination {position: static !important; padding-top: 10px;}",
+        ".Index_top_banner_slider_inner_new .swiper-pagination .swiper-pagination-bullet {margin: 5px; }",
         "@media only screen and (max-width: 749px) {.Index_top_banner_slider_main_new {display: block; }}"
       ],
       "name": "Index Top Banner Slider",
