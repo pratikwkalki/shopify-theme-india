@@ -53,6 +53,10 @@
         "information_MnRWfk",
         "information_gHYmtF"
       ],
+      "custom_css": [
+        ".Index_top_banner_slider_main_new {display: none;}",
+        "@media only screen and (max-width: 749px) {.Index_top_banner_slider_main_new {display: block;}}"
+      ],
       "name": "Index Top Banner Slider",
       "settings": {
         "main_background_color": "#FFFFFF"
