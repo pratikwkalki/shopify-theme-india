@@ -55,7 +55,7 @@
       ],
       "custom_css": [
         ".Index_top_banner_slider_main_new {display: none;}",
-        "@media only screen and (max-width: 749px) {.Index_top_banner_slider_main_new {display: block;}}"
+        "@media only screen and (max-width: 749px) {.Index_top_banner_slider_main_new {display: block; }}"
       ],
       "name": "Index Top Banner Slider",
       "settings": {
@@ -87,6 +87,9 @@
       "block_order": [
         "information_H9VDcD",
         "information_4UAkkC"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 749px) {.Index_side_by_side_banner_main_new {display: none; }}"
       ],
       "name": "Index Side By Side Banner",
       "settings": {
