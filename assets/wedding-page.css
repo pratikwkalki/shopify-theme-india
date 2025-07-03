@@ -66,7 +66,9 @@
 .Page_template_main_new.wedding {
     padding-bottom: 16px;
 }
-
+.Page_template_breadcrumb_new .breadcrumbs {
+    padding-top: 16px !important;
+}
 @media only screen and (min-width: 750px) and (max-width: 1024px) {
   .wedding_custom_collections_allloop_innerboxs_3_titlebuttonboth_new h2 {
     font-size: 16px;
