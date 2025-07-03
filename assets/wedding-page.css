@@ -64,15 +64,24 @@
     padding-top: 5px;
 }
 @media screen and (max-width: 749px) {
-  .wedding_custom_collections_allloop_mainboxs_new
- {
+  .wedding_custom_collections_allloop_mainboxs_new {
     width: calc(50% - 15px);
     position: relative;
-}
+  }
   .wedding_custom_collections_allloop_innerboxs_3_new{
     padding: 20px 10px;
   }
   .wedding_collection_lists_inner_new {
     margin: 40px 0 0;
+  }
+  .wedding_custom_collections_allloop_innerboxs_3_titlebuttonboth_new h2 {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .wedding_custom_collections_allloop_innerboxs_3_button_new .button_white {
+    width: auto;
+    min-width: auto !important;
+    padding: 8px 15px 6px;
+    border-radius: 2px;
   }
 }
