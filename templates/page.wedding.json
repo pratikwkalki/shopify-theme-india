@@ -181,7 +181,7 @@
             "title": "Salwar Suit",
             "sub_head_text": "",
             "main_button_text": "Shop All",
-            "main_button_link": "/"
+            "main_button_link": "shopify://collections/wedding-suits"
           }
         },
         "information_4rndc7": {
@@ -192,7 +192,7 @@
             "title": "Lehenga Edit",
             "sub_head_text": "",
             "main_button_text": "Shop All",
-            "main_button_link": "/"
+            "main_button_link": "shopify://collections/lehenga"
           }
         },
         "information_KHjWYi": {
@@ -203,7 +203,7 @@
             "title": "Indo-Western",
             "sub_head_text": "",
             "main_button_text": "Shop All",
-            "main_button_link": "/"
+            "main_button_link": "shopify://collections/indo-western"
           }
         },
         "information_PGrptt": {
@@ -214,7 +214,7 @@
             "title": "Tuxedo Suit",
             "sub_head_text": "",
             "main_button_text": "Shop All",
-            "main_button_link": "/"
+            "main_button_link": "shopify://collections/tuxedo"
           }
         },
         "information_VqdUKe": {
@@ -225,7 +225,7 @@
             "title": "Jodhpuri Fits",
             "sub_head_text": "",
             "main_button_text": "Shop All",
-            "main_button_link": "/"
+            "main_button_link": "shopify://collections/jodhpuris"
           }
         },
         "information_BjzX4F": {
@@ -236,7 +236,7 @@
             "title": "Kurta Sets",
             "sub_head_text": "",
             "main_button_text": "Shop All",
-            "main_button_link": "/"
+            "main_button_link": "shopify://collections/mens-kurta"
           }
         },
         "information_44xhHw": {
@@ -247,7 +247,7 @@
             "title": "Kurta Jacket",
             "sub_head_text": "",
             "main_button_text": "Shop All",
-            "main_button_link": "/"
+            "main_button_link": "shopify://collections/kurta-jacket-sets"
           }
         }
       },
