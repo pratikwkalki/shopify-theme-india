@@ -29,7 +29,7 @@
   {% endif %}
   {% if product.metafields.custom.shoulder_strap !=blank %}
     <div class="additional-options-wrapper">
-      <label for="embroidery-title">{{ product.metafields.custom.shoulder_strap[0] }}</label>
+      <label for="embroidery-title">{{ product.metafields.custom.shoulder_strap.key }}</label>
       <div class="embroidery-cost aditional-cost">
         <select id="main_embroidery">
           <option value="" selected disabled hidden>Please Select</option>
