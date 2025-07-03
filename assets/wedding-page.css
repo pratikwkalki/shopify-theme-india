@@ -77,7 +77,7 @@
 }
 @media screen and (max-width: 749px) {
   .wedding_custom_collections_allloop_mainboxs_new {
-    width: calc(50% - 15px);
+    width: calc(50% - 7px);
     position: relative;
   }
   .wedding_custom_collections_allloop_innerboxs_3_new{
@@ -97,6 +97,6 @@
     border-radius: 2px;
   }
   .wedding_collection_list_slider {
-    gap: 15px;
+    gap: 14px;
   }
 }
