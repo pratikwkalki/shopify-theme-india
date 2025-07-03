@@ -61,7 +61,7 @@
       ],
       "name": "Index Top Banner Slider",
       "settings": {
-        "main_background_color": "#FFFFFF"
+        "main_background_color": "#ffffff"
       }
     },
     "index_side_by_side_banner_new_pGtxYz": {
@@ -185,7 +185,7 @@
         "information_X9dRtV"
       ],
       "custom_css": [
-        ".Index_custom_collections_allloop_innerboxs_1_videoimageboth_new {padding-bottom: 159%; position: relative;}"
+        ".Index_custom_collections_allloop_innerboxs_1_videoimageboth_new {padding-bottom: 159%;}"
       ],
       "name": "Page Weaves Collections",
       "settings": {
