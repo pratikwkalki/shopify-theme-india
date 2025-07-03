@@ -63,6 +63,12 @@
     line-height: 1;
     padding-top: 5px;
 }
+@media only screen and (min-width: 750px) and (max-width: 1024px) {
+  .wedding_custom_collections_allloop_innerboxs_3_titlebuttonboth_new h2 {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+}
 @media screen and (max-width: 749px) {
   .wedding_custom_collections_allloop_mainboxs_new {
     width: calc(50% - 15px);
