@@ -39,6 +39,10 @@
     padding: 37px 15px;
     width: 100%;
     z-index: 3;
+      pointer-events: none;
+}
+.wedding_custom_collections_allloop_innerboxs_3_new .button_white {
+  pointer-events: auto;
 }
 .wedding_custom_collections_allloop_innerboxs_3_button_new{
   padding-top: 13px;
@@ -68,6 +72,11 @@
 }
 .wedding .Page_template_breadcrumb_new .breadcrumbs {
     padding-top: 16px !important;
+}
+.wedding_custom_collections_allloop_mainboxs_new > a {
+    position: absolute;
+    inset: 0;
+    z-index: 9;
 }
 @media only screen and (min-width: 750px) and (max-width: 1024px) {
   .wedding_custom_collections_allloop_innerboxs_3_titlebuttonboth_new h2 {
