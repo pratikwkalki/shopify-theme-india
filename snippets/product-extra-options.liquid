@@ -34,8 +34,8 @@
         <select id="main_embroidery">
           <option value="" selected disabled hidden>Please Select</option>
           {% for item in product.metafields.custom.shoulder_strap.value %}
-            {% assign split_embroidery = item | split: ":" %}
-            <option value="{{ split_embroidery[1] | strip | remove: "₹" }}" data-embroidery="{{ split_embroidery[1] | strip | remove: "₹" }}"> {{ split_embroidery[0] | strip }} : {{ split_embroidery[1] | strip }}</option>
+            {% assign split_item = item | split: ":" %}
+            <option value="{{ split_item[1] | strip | remove: "₹" }}" data-embroidery="{{ split_item[1] | strip | remove: "₹" }}"> {{ split_item[0] | strip }} : {{ split_item[1] | strip }}</option>
           {% endfor %}
         </select>
       </div>

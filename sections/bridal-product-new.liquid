@@ -216,37 +216,7 @@
                 {% render 'blouse-style', blouse_style_: product.metafields.custom.blouse_styles.value %}
                 
                 {% comment %}Additional cost code{% endcomment %}
-                  <div class=" options-dropdown-list">
-                {% if product.metafields.custom.additionalwork_extop !=blank %}
-                  <div class="additional-options-wrapper">
-                    <label for="additional-title">Additionalwork Cost:</label>
-                    <div class="aditional-cost">
-                      <select id="main_aditional">
-                        <option value="" selected disabled hidden>Please Select</option>
-                        {% for additional in product.metafields.custom.additionalwork_extop.value %}
-                          {% assign split_additional = additional | split: ":" %}
-                          <option value="{{ split_additional[1] | strip | remove: "₹" }}" data-aditionals="{{ split_additional[1] | strip | remove: "₹"  }}">{{ split_additional[0] | strip }} : {{ split_additional[1] | strip }}</option>
-                        {% endfor %}
-                      </select>
-                    </div>
-                  </div>
-                {% endif %}
-               {% if product.metafields.custom.embroidery_extop !=blank %}
-                  <div class="additional-options-wrapper">
-                    <label for="embroidery-title">Embroidery Cost:</label>
-                    <div class="embroidery-cost aditional-cost">
-                      <select id="main_embroidery">
-                        <option value="" selected disabled hidden>Please Select</option>
-                        {% for embroidery in product.metafields.custom.embroidery_extop.value %}
-                          {% assign split_embroidery = embroidery | split: ":" %}
-                          <option value="{{ split_embroidery[1] | strip | remove: "₹" }}" data-embroidery="{{ split_embroidery[1] | strip | remove: "₹" }}"> {{ split_embroidery[0] | strip }} : {{ split_embroidery[1] | strip }}</option>
-                        {% endfor %}
-                      </select>
-                    </div>
-                  </div>
-                {% endif %}
-                  </div>
-             
+                  {%- render 'product-extra-options' -%}
                 {% comment %}Additional cost code end {% endcomment %}
                 
                 <div class="form-error-wrapper" js-pdp-form-error>
