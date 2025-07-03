@@ -29,10 +29,7 @@
   {% endif %}
   {% if product.metafields.custom.shoulder_strap !=blank %}
     <div class="additional-options-wrapper">
-      <label for="embroidery-title">
-         {% for key in product.metafields.custom.shoulder_strap %}
-  <p><strong>{{ key[0] }}:</strong> {{ key[1].value }}</p>
-{% endfor %}   </label>
+      <label for="embroidery-title">{{ metafield_key | replace: '_', ' ' | capitalize }}{{ product.metafields.custom.shoulder_strap }}</label>
       <div class="embroidery-cost aditional-cost">
         <select id="main_embroidery">
           <option value="" selected disabled hidden>Please Select</option>
