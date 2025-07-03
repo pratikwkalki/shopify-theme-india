@@ -96,4 +96,7 @@
     padding: 8px 15px 6px;
     border-radius: 2px;
   }
+  .wedding_collection_list_slider {
+    gap: 15px;
+  }
 }
