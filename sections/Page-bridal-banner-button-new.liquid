@@ -36,8 +36,10 @@
                       </video>
                     {%- endif -%}
                     {%- if section.settings.main_mobile_mp4_video != blank -%}
-                      {{ section.settings.main_mobile_mp4_video | video_tag: image_size: 'master', controls: false, autoplay: true, loop: true, class: 'mobile_image_new' }}
-                      <!-- <video playsinline="playsinline" autoplay="autoplay" loop="loop" class="mobile_image_new" muted="muted" preload="metadata" poster="//in.kalkifashion.com/cdn/shop/files/preview_images/faf580ef1503476a9a00cc7890e74a28.thumbnail.0000000000.jpg?v=1742213326"><source src="//in.kalkifashion.com/cdn/shop/videos/c/vp/faf580ef1503476a9a00cc7890e74a28/faf580ef1503476a9a00cc7890e74a28.HD-1080p-4.8Mbps-44309739.mp4?v=0" type="video/mp4"><img src="//in.kalkifashion.com/cdn/shop/files/preview_images/faf580ef1503476a9a00cc7890e74a28.thumbnail.0000000000.jpg?v=1742213326" loading="lazy"></video> -->
+                      <video test playsinline="playsinline" autoplay="autoplay" loop="loop" class="desktop_image_new" muted="muted" preload="metadata" poster="{%- render 'imagekit', src: section.settings.main_mobile_mp4_video.preview_image width: 1920 %}">
+                        <source src="{%- render 'imagekit', src: section.settings.main_mobile_mp4_video.sources[1].url %}" type="video/mp4">
+                        <img src="{%- render 'imagekit', src: section.settings.main_mobile_mp4_video.preview_image width: 1920 %}" loading="lazy">
+                      </video>
                     {%- endif -%}
                   </div>
                 {% else %}  
