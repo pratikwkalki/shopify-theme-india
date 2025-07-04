@@ -5,7 +5,7 @@
     <div class="page-width">
       {% assign main_desktop_full_image = section.settings.main_desktop_full_image  | image_url %}
       {% assign main_mobile_full_image = section.settings.main_mobile_full_image  | image_url %}
-      <div class="Index_icon_text_info_list_inner_new Index_icon_text_info_list_main_new_{{ section.id }}" style="{% if section.settings.main_desktop_full_image != blank %}background: url('{%- render 'gumlet', src: main_desktop_full_image w: 1440 %}') no-repeat center center; background-size: cover;{% else %}background: {{ section.settings.main_background_color }};{% endif %}">
+      <div class="Index_icon_text_info_list_inner_new Index_icon_text_info_list_main_new_{{ section.id }}" style="{% if section.settings.main_desktop_full_image != blank %}background: url('{%- render 'imagekit', src: main_desktop_full_image width: 1440 %}') no-repeat center center; background-size: cover;{% else %}background: {{ section.settings.main_background_color }};{% endif %}">
         {%- if section.settings.main_mobile_full_image != blank -%}
           <style>
             @media(min-width:0px) and (max-width:749px){
