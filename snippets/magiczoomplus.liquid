@@ -138,7 +138,7 @@ a[data-slide-id].mz-thumb-selected img {
             {% endif %}
         
             <a class="js-no-transition" data-processed="1" data-slide-id="video-{{ image.id }}" href="#">
-                  <img  src="{%- render 'gumlet', src: gm_preview_image w: 100 %}" alt="{{ image.alt | escape | default: product.title }}" />
+                  <img  src="{%- render 'imagekit', src: gm_preview_image w: 100 %}" alt="{{ image.alt | escape | default: product.title }}" />
             </a>
         
           {% elsif image.media_type == 'external_video' %}
@@ -147,7 +147,7 @@ a[data-slide-id].mz-thumb-selected img {
             {% endif %}
         
             <a class="js-no-transition" data-processed="1" data-slide-id="video-{{ image.id }}" href="#">
-                  <img  src="{%- render 'gumlet', src: gm_preview_image w: 100 %}" alt="{{ image.alt | escape | default: product.title }}" />
+                  <img  src="{%- render 'imagekit', src: gm_preview_image w: 100 %}" alt="{{ image.alt | escape | default: product.title }}" />
             </a>
 
           {% elsif image.media_type == 'model' %}
@@ -161,7 +161,7 @@ a[data-slide-id].mz-thumb-selected img {
                  <path d="m516.25 153.71-140-80.836c-16.254-9.3398-36.246-9.3398-52.5 0l-140 80.836c-16.223 9.3945-26.219 26.711-26.25 45.457v161.67c0.03125 18.746 10.027 36.062 26.25 45.457l140 80.836c16.254 9.3398 36.246 9.3398 52.5 0l140-80.836c16.223-9.3945 26.219-26.711 26.25-45.457v-161.67c-0.03125-18.746-10.027-36.062-26.25-45.457zm-145.83 4.8086 74.582 43.055h-0.003906c4.9102 2.957 9.1328 6.9258 12.387 11.641l-107.38 61.918-107.38-61.918c3.2539-4.7148 7.4766-8.6836 12.387-11.641l74.578-43.055c12.641-7.2773 28.195-7.2773 40.836 0zm92.426 65.031c1.6094 4.2852 2.4805 8.8164 2.5664 13.398v86.102c-0.03125 14.582-7.8047 28.055-20.418 35.375l-74.574 43.062c-4.5156 2.4844-9.4688 4.0781-14.586 4.6953v-120.93zm-118.68 61.699v120.93c-5.1172-0.61719-10.07-2.2109-14.586-4.6953l-74.578-43.055c-12.613-7.3203-20.391-20.789-20.418-35.375v-86.102c0.085937-4.5781 0.95312-9.1094 2.5664-13.398zm-171.79 90.535v-0.003906c-2.0156-4.7266-3.1055-9.7969-3.2109-14.934v-161.68c0.027343-14.582 7.8008-28.047 20.414-35.363l140-80.832v-0.003906c4.5195-2.4766 9.4688-4.0703 14.586-4.6875v63.875c-7.168 0.64844-14.121 2.7812-20.418 6.2656l-74.582 43.059c-16.219 9.4023-26.215 26.719-26.25 45.469v86.102c0.14062 7.25 1.793 14.395 4.8633 20.969zm338.04 20.418-140 80.832v0.003906c-12.648 7.2461-28.188 7.2461-40.836 0l-140-80.832v-0.003906c-4.418-2.6797-8.2812-6.1836-11.379-10.32l55.449-31.773c4.1289 5.8203 9.4102 10.73 15.516 14.418l74.582 43.059c16.25 9.3555 36.25 9.3555 52.5 0l74.582-43.059c6.1055-3.6875 11.387-8.5977 15.516-14.418l55.453 31.773h-0.003906c-3.0977 4.1367-6.9609 7.6406-11.379 10.32zm20.418-35.363h-0.003907c-0.10547 5.1367-1.1953 10.207-3.2109 14.934l-55.402-31.734c3.0703-6.5742 4.7227-13.719 4.8633-20.973v-86.102 0.003906c-0.035156-18.75-10.031-36.066-26.25-45.469l-74.582-43.078c-6.2969-3.4805-13.25-5.6133-20.418-6.2617v-63.879c5.1172 0.61719 10.066 2.2109 14.586 4.6875l140 80.832v0.003906c12.613 7.3164 20.387 20.781 20.414 35.363z"/>
                 </svg>
               </b>
-              <img  src="{%- render 'gumlet', src: gm_preview_image w: 100 %}" alt="{{ image.alt | escape | default: product.title }}" />
+              <img  src="{%- render 'imagekit', src: gm_preview_image w: 100 %}" alt="{{ image.alt | escape | default: product.title }}" />
             </a>
 
           {% elsif image.alt contains 'youtube' or image.alt contains 'vimeo' or image.alt contains 'youtu.be' or image.alt contains 'sproutvide' or image.alt contains 'vids.io' %}
@@ -201,9 +201,9 @@ a[data-slide-id].mz-thumb-selected img {
                    class="js-no-transition {{ class }} video-slide"
                    data-slide-id="zoom" 
                    data-zoom-id="zoom{{ product.id }}" 
-                   href="{%- render 'gumlet', src: gm_vide_preview_image w: 1000 %}"
+                   href="{%- render 'imagekit', src: gm_vide_preview_image w: 1000 %}"
                    >
-                   <img src="{%- render 'gumlet', src: gm_vide_preview_image w: 1000 %}"
+                   <img src="{%- render 'imagekit', src: gm_vide_preview_image w: 1000 %}"
                      alt="custom video"
                     >
                  </a>
@@ -213,14 +213,14 @@ a[data-slide-id].mz-thumb-selected img {
                 <a data-variants="{{ product_variants }}"                
                    class="js-no-transition {{ class }}"
                    data-slide-id="zoom" 
-                   href="{%- render 'gumlet', src: gm_preview_image w: 1000 %}" 
-                   {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{%- render 'gumlet', src: gm_preview_image w: 1000 %}"{% endif %}
+                   href="{%- render 'imagekit', src: gm_preview_image w: 1000 %}" 
+                   {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{%- render 'imagekit', src: gm_preview_image w: 1000 %}"{% endif %}
                    data-zoom-id="zoom{{ product.id }}" 
-                   data-image="{%- render 'gumlet', src: gm_preview_image w: 1000 %}" 
-              {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'gumlet', src: gm_preview_image w: 1000 %}" {% endif %}
+                   data-image="{%- render 'imagekit', src: gm_preview_image w: 1000 %}" 
+              {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'imagekit', src: gm_preview_image w: 1000 %}" {% endif %}
                    title="{{ image.alt | escape }}">
                         <img  
-                             src="{%- render 'gumlet', src: gm_preview_image w: 1000 %}" 
+                             src="{%- render 'imagekit', src: gm_preview_image w: 1000 %}" 
                              alt="{{ image.alt | escape | default: product.title }}" 
                         />
                 </a>
@@ -262,21 +262,21 @@ a[data-slide-id].mz-thumb-selected img {
         <div data-slide-num="{{ forloop.index0 }}" data-slide-id="zoom" class="MagicToolboxSlide  {% if first_image_is_video != true %}active-magic-slide{% endif %}">
             {% assign gm_featured_image = mt_featured_image.preview_image  | image_url %}
             <a 
-               href="{%- render 'gumlet', src: gm_featured_image w: 1000 %}"
-               {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{%- render 'gumlet', src: gm_featured_image w: 1000 %}"{% endif %}
+               href="{%- render 'imagekit', src: gm_featured_image w: 1000 %}"
+               {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{%- render 'imagekit', src: gm_featured_image w: 1000 %}"{% endif %}
                class="js-no-transition MagicZoomPlus" id="zoom{{ product.id }}" 
                title="{{ mt_featured_image.alt | escape }}"
-               data-image="{%- render 'gumlet', src: gm_featured_image w: 1000 %}" 
-               {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'gumlet', src: gm_featured_image w: 1000 %}" {% endif %}
+               data-image="{%- render 'imagekit', src: gm_featured_image w: 1000 %}" 
+               {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'imagekit', src: gm_featured_image w: 1000 %}" {% endif %}
                >
-              <link rel="preload" as="image" href="{%- render 'gumlet', src: gm_featured_image w: 1000 %}" type="image/avif" fetchpriority="high">
+              <link rel="preload" as="image" href="{%- render 'imagekit', src: gm_featured_image w: 1000 %}" type="image/avif" fetchpriority="high">
                     <img  
                         style="max-width:100%; aspect-ratio:auto {{ mt_featured_image.width }} / {{ mt_featured_image.height }}; height:auto;"
                         width="{{ mt_featured_image.width }}"
                         height="{{ mt_featured_image.height }}"
                         itemprop="image" 
                         class="image_first_slide" 
-                        src="{%- render 'gumlet', src: gm_featured_image w: 1000 %}" 
+                        src="{%- render 'imagekit', src: gm_featured_image w: 1000 %}" 
                         alt="{{ mt_featured_image.alt | escape | default: product.title }}" />
             </a>
             
