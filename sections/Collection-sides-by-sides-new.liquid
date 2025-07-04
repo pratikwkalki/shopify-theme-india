@@ -20,14 +20,15 @@
                           {% else %}  
                             {%- if section.settings.main_desktop_image_1 != blank and section.settings.main_mobile_image_1 != blank -%}
                               <div class="Collection_sides_by_sides_innerleft_1_videoimage_new">
-                                {% assign main_desktop_image = section.settings.main_desktop_image_1  | image_url %}
-                                {% assign main_mobile_image = section.settings.main_mobile_image_1  | image_url %}
+                                {% assign main_desktop_image_1 = section.settings.main_desktop_image_1  | image_url %}
+                                {% assign main_mobile_image_1 = section.settings.main_mobile_image_1  | image_url %}
                                 <picture>
-                                  <source srcset="{%- render 'imagekit', src: main_mobile_image width: 380 %}" media="(max-width: 380px)" />
-                                  <source srcset="{%- render 'imagekit', src: main_mobile_image width: 412 %}" media="(max-width: 412px)" />
-                                  <source srcset="{%- render 'imagekit', src: main_mobile_image width: 500 %}" media="(max-width: 500px)" />
-                                  <source srcset="{%- render 'imagekit', src: main_mobile_image width: 750 %}" media="(max-width: 748px)" />
-                                  <img class="SquareBanner_image_new" src="{%- render 'imagekit', src: main_desktop_image width: 1020 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="1020" height="501" />
+                                  <source srcset="{%- render 'imagekit', src: main_mobile_image_1 width: 380 %}" media="(max-width: 380px)" />
+                                  <source srcset="{%- render 'imagekit', src: main_mobile_image_1 width: 412 %}" media="(max-width: 412px)" />
+                                  <source srcset="{%- render 'imagekit', src: main_mobile_image_1 width: 500 %}" media="(max-width: 500px)" />
+                                  <source srcset="{%- render 'imagekit', src: main_mobile_image_1 width: 750 %}" media="(max-width: 748px)" />
+                                  <source srcset="{%- render 'imagekit', src: main_desktop_image_1 width: 890 %}" media="(max-width: 1350px)" />
+                                  <img class="SquareBanner_image_new" src="{%- render 'imagekit', src: main_desktop_image_1 width: 1020 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="1020" height="501" />
                                 </picture>
                               </div>
                             {%- endif -%}
@@ -78,24 +79,16 @@
                           {% else %}  
                             {%- if section.settings.main_desktop_image_2 != blank and section.settings.main_mobile_image_2 != blank -%}
                               <div class="Collection_sides_by_sides_innerright_1_videoimage_new">
-                                {%- if section.settings.main_desktop_image_2 != blank -%}
-                                  {{
-                                    section.settings.main_desktop_image_2 | 
-                                    image_url: width: img.width | 
-                                    image_tag: widths: '540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                    fetchpriority: 'auto', 
-                                    class:'SquareBanner_image_new'
-                                  }}
-                                {%- endif -%}
-                                {%- if section.settings.main_mobile_image_2 != blank -%}
-                                  {{
-                                    section.settings.main_mobile_image_2 | 
-                                    image_url: width: img.width | 
-                                    image_tag: widths: '540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                    fetchpriority: 'auto', 
-                                    class:'SquareBanner_mobile_image_new'
-                                  }}
-                                {%- endif -%}
+                                {% assign main_desktop_image_2 = section.settings.main_desktop_image_2  | image_url %}
+                                {% assign main_mobile_image_2 = section.settings.main_mobile_image_2  | image_url %}
+                                <picture>
+                                  <source srcset="{%- render 'imagekit', src: main_mobile_image_2 width: 380 %}" media="(max-width: 380px)" />
+                                  <source srcset="{%- render 'imagekit', src: main_mobile_image_2 width: 412 %}" media="(max-width: 412px)" />
+                                  <source srcset="{%- render 'imagekit', src: main_mobile_image_2 width: 500 %}" media="(max-width: 500px)" />
+                                  <source srcset="{%- render 'imagekit', src: main_mobile_image_2 width: 750 %}" media="(max-width: 748px)" />
+                                  <source srcset="{%- render 'imagekit', src: main_desktop_image_2 width: 890 %}" media="(max-width: 1350px)" />
+                                  <img class="SquareBanner_image_new" src="{%- render 'imagekit', src: main_desktop_image_2 width: 1020 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="1020" height="501" />
+                                </picture>
                               </div>
                             {%- endif -%}
                           {%- endif -%}
