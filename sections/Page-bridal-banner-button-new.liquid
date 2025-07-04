@@ -30,15 +30,17 @@
                 {%- if section.settings.main_desktop_mp4_video != blank and section.settings.main_mobile_mp4_video != blank -%}
                   <div class="Page_bridal_banner_button_detail_innervideoimage_videoimage_new">
                     {%- if section.settings.main_desktop_mp4_video != blank -%}
+                      {% assign main_desktop_mp4_video_image = section.settings.main_desktop_mp4_video.preview_image | image_url %}
                       <video test playsinline="playsinline" autoplay="autoplay" loop="loop" class="desktop_image_new" muted="muted" preload="metadata" poster="{%- render 'imagekit', src: section.settings.main_desktop_mp4_video.preview_image width: 1920 %}">
                         <source src="{%- render 'imagekit', src: section.settings.main_desktop_mp4_video.sources[1].url %}" type="video/mp4">
-                        <img src="{%- render 'imagekit', src: section.settings.main_desktop_mp4_video.preview_image width: 1920 %}" loading="lazy">
+                        <img src="{%- render 'imagekit', src: main_desktop_mp4_video_image width: 1920 %}" loading="lazy">
                       </video>
                     {%- endif -%}
                     {%- if section.settings.main_mobile_mp4_video != blank -%}
+                      {% assign main_mobile_mp4_video_image = section.settings.main_desktop_mp4_video.preview_image | image_url %}
                       <video test playsinline="playsinline" autoplay="autoplay" loop="loop" class="desktop_image_new" muted="muted" preload="metadata" poster="{%- render 'imagekit', src: section.settings.main_mobile_mp4_video.preview_image width: 1920 %}">
                         <source src="{%- render 'imagekit', src: section.settings.main_mobile_mp4_video.sources[1].url %}" type="video/mp4">
-                        <img src="{%- render 'imagekit', src: section.settings.main_mobile_mp4_video.preview_image width: 1920 %}" loading="lazy">
+                        <img src="{%- render 'imagekit', src: main_mobile_mp4_video_image width: 1920 %}" loading="lazy">
                       </video>
                     {%- endif -%}
                   </div>
