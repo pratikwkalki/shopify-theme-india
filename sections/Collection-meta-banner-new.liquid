@@ -11,7 +11,7 @@
               <div class="Collection_meta_banner_detail_videoimage_new">
                 {{ collection.metafields.custom.collection_banner_video_or_image.value | video_tag: controls: false, autoplay: true, loop: true }}
                 {% assign collection_banner_video_or_image_image = collection.metafields.custom.collection_banner_video_or_image.preview_image | image_url %}
-                {{ collection_banner_video_or_image_image }}
+                {{ collection.metafields.custom.collection_banner_video_or_image }}
                 <!-- <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" preload="metadata" poster="{%- render 'imagekit', src: collection_banner_video_or_image_image width: 1920 %}">
                   <source src="{%- render 'imagekit', src: collection.metafields.custom.collection_banner_video_or_image.sources[1].url %}" type="video/mp4">
                   <img src="{%- render 'imagekit', src: collection_banner_video_or_image_image width: 1920 %}" loading="lazy">
