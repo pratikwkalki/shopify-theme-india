@@ -10,6 +10,11 @@
                 {%- if section.settings.main_mp4_video != blank -%}
                   <div class="Page_bridal_video_texts_detail_1_videoimage_new">
                     {{ section.settings.main_mp4_video | video_tag: controls: false, autoplay: true, loop: true }}
+                    {% assign main_mp4_video_image = section.settings.main_mp4_video.preview_image | image_url %}
+                    <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" preload="metadata" poster="{%- render 'imagekit', src: main_mp4_video_image width: 500 %}">
+                      <source src="{%- render 'imagekit', src: section.settings.main_mp4_video.sources[1].url %}" type="video/mp4">
+                      <img src="{%- render 'imagekit', src: main_mp4_video_image width: 500 %}" loading="lazy">
+                    </video>
                   </div>
                 {% else %}  
                   {%- if section.settings.main_desktop_image != blank and section.settings.main_mobile_image != blank -%}
