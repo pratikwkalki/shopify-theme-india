@@ -30,7 +30,7 @@
                 {%- if section.settings.main_desktop_mp4_video != blank and section.settings.main_mobile_mp4_video != blank -%}
                   <div class="Page_bridal_banner_button_detail_innervideoimage_videoimage_new">
                     {%- if section.settings.main_desktop_mp4_video != blank -%}
-                      {{ section.settings.main_desktop_mp4_video.sources[1].url }}
+                      <!-- {{ section.settings.main_desktop_mp4_video.sources[1].url }} -->
                       <!-- <video playsinline="playsinline" autoplay="autoplay" loop="loop" class="desktop_image_new" muted="muted" preload="metadata" poster="//in.kalkifashion.com/cdn/shop/files/preview_images/580eac5649444b2f9695fede7a457fa0.thumbnail.0000000000.jpg?v=1742213148"><source src="//in.kalkifashion.com/cdn/shop/videos/c/vp/580eac5649444b2f9695fede7a457fa0/580eac5649444b2f9695fede7a457fa0.HD-1080p-7.2Mbps-44309600.mp4?v=0" type="video/mp4"><img src="//in.kalkifashion.com/cdn/shop/files/preview_images/580eac5649444b2f9695fede7a457fa0.thumbnail.0000000000.jpg?v=1742213148" loading="lazy"></video>
                       {{ section.settings.main_desktop_mp4_video | video_tag: image_size: 'master', controls: false, autoplay: true, loop: true, class: 'desktop_image_new' }} -->
                     {%- endif -%}
