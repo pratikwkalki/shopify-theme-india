@@ -22,12 +22,12 @@
                                   {%- if rows.visit_our_store_section_image.value != blank or rows.title.value != blank or rows.visit_our_store_detail.value != blank-%}
                                     {%- if rows.visit_our_store_section_image.value != blank -%}
                                         {%- if rows.visit_our_store_section_image.value.sources[1].url contains '.mp4' or rows.visit_our_store_section_image.value.sources[1].url contains '.MP4' -%}
-                                                
+                                                 {% assign visit_our_store_section_video = rows.visit_our_store_section_image.value.sources[1].url %}
                                                   <video
                                                     id="Mp4Video-{{ forloop.index0 }}-inner"
                                                     class="video-div"
                                                     data-type="mp4"
-                                                    src="{{ rows.visit_our_store_section_image.value.sources[1].url }}"
+                                                    src="{%- render 'imagekit', src: visit_our_store_section_video %}"
                                                     loop muted playsinline autoplay>
                                                   </video>
                                                 
