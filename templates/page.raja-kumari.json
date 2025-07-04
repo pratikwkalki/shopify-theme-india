@@ -25,12 +25,12 @@
       "name": "Raja kumari first video",
       "settings": {
         "heading": "",
-        "background_image": "shopify://shop_images/Web_Banner_24-06-25.jpg",
         "heading_size": "h1",
         "enable_video_looping": false,
         "enable_video_autoplay": false,
         "video": "shopify://files/videos/LA-INDIA-RAJA-x-KALKI-4k-firstvideo.mp4",
         "video_url": "",
+        "cover_image": "shopify://shop_images/Web_Banner_24-06-25.jpg",
         "description": "",
         "full_width": false,
         "padding_top": 36,
