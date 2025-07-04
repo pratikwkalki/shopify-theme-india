@@ -102,7 +102,7 @@
           "type": "image",
           "settings": {
             "main_desktop_image": "shopify://shop_images/1-mens-highlight-desk-new-arrivals-all-countries-2-07-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mens-highlight-desk-new-arrivals-all-countries-2-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mens-highlight-mobile-new-arrivals-all-countries-02-07-25.jpg",
             "main_button_link": "shopify://collections/new-arrival-menswear"
           }
         },

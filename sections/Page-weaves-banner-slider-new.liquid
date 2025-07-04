@@ -27,25 +27,32 @@
                             {% else %}  
                               {%- if block.settings.main_desktop_full_image != blank and block.settings.main_mobile_full_image != blank -%}
                                 <div class="Index_top_banner_slider_allloop_innerboxs_videoimage_new">
-                                  {%- if block.settings.main_desktop_full_image != blank -%}
-                                    {{
-                                      block.settings.main_desktop_full_image | 
-                                      image_url: width: img.width | 
-                                      image_tag: widths: '1512, 1728, 1944, 2048', 
-                                      fetchpriority: 'auto', 
-                                      class:'desktop_image_new'
-                                    }}
-                                  {%- endif -%}
-                                  {%- if block.settings.main_mobile_full_image != blank -%}
-                                    {{
-                                      block.settings.main_mobile_full_image | 
-                                      image_url: width: img.width | 
-                                      image_tag: widths: '1080, 1296, 1512, 1728, 1944, 2048', 
-                                      fetchpriority: 'auto', 
-                                      class:'mobile_image_new'
-                                    }}
-                                  {%- endif -%}
-                                </div>
+                                {% assign main_desktop_image = block.settings.main_desktop_full_image  | image_url %}
+                                {% assign main_mobile_image = block.settings.main_mobile_full_image  | image_url %}
+                                {%- if forloop.first %}
+                                  <picture>
+                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 380 %}" media="(max-width: 380px)" type="image/avif" />
+                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 412 %}" media="(max-width: 412px)" type="image/avif" />
+                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 500 %}" media="(max-width: 500px)" type="image/avif" />
+                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 750 %}" media="(max-width: 748px)" type="image/avif" />
+                                    <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1024 %}" media="(max-width: 1024px)" type="image/avif" />
+                                    <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1200 %}" media="(max-width: 1200px)" type="image/avif" />
+                                    <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1350 %}" media="(max-width: 1350px)" type="image/avif" />
+                                    <img class="image_first_slide" src="{%- render 'imagekit', src: main_desktop_image width: 1480 %}" alt="{{ block.settings.alt_text }}" loading="eager" width="1438" height="539" fetchpriority="high" decoding="async" />
+                                  </picture>
+                                {%- else -%}
+                                  <picture>
+                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 380 %}" media="(max-width: 380px)" type="image/avif" />
+                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 412 %}" media="(max-width: 412px)" type="image/avif" />
+                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 500 %}" media="(max-width: 500px)" type="image/avif" />
+                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 750 %}" media="(max-width: 748px)" type="image/avif" />
+                                    <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1024 %}" media="(max-width: 1024px)" type="image/avif" />
+                                    <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1200 %}" media="(max-width: 1200px)" type="image/avif" />
+                                    <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1350 %}" media="(max-width: 1350px)" type="image/avif" />
+                                    <img src="{%- render 'imagekit', src: main_desktop_image width: 1480 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="1438" height="539" fetchpriority="low" decoding="async" />
+                                  </picture>
+                                {%- endif -%}
+                              </div>
                               {%- endif -%}
                             {%- endif -%}
                           </div>
