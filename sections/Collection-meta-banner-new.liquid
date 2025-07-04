@@ -13,8 +13,7 @@
                 <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" preload="metadata" poster="{%- render 'imagekit', src: collection_banner_video_or_image_image width: 1920 %}">
                   {% for source in collection.metafields.custom.collection_banner_video_or_image.value %}
                   <source src="{{ source.url }}" type="{{ source.mime_type }}">
-                {% endfor %}
-                  <source src="{%- render 'imagekit', src:  %}" type="video/mp4">
+                  {% endfor %}
                   <img src="{%- render 'imagekit', src: collection_banner_video_or_image_image width: 1920 %}" loading="lazy">
                 </video>
               </div>
