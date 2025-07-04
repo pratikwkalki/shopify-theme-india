@@ -38,7 +38,15 @@
                                   fetchpriority: 'auto', 
                                   class:'Hover_image_new'
                                 }}
-                              </div>
+                                {% assign video_or_image = section.settings.video_or_image  | image_url %}
+                                <picture>
+                                  <source srcset="{%- render 'imagekit', src: video_or_image width: 380 %}" media="(max-width: 380px)" />
+                                  <source srcset="{%- render 'imagekit', src: video_or_image width: 412 %}" media="(max-width: 412px)" />
+                                  <source srcset="{%- render 'imagekit', src: video_or_image width: 500 %}" media="(max-width: 500px)" />
+                                  <source srcset="{%- render 'imagekit', src: video_or_image width: 750 %}" media="(max-width: 748px)" />
+                                  <source srcset="{%- render 'imagekit', src: video_or_image width: 650 %}" media="(max-width: 1350px)" />
+                                  <img src="{%- render 'imagekit', src: video_or_image width: 709 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="709" height="342" />
+                                </picture>                              </div>
                             {%- endif -%}  
                           </div>
                       {%- if columns.redirect_link.value != blank -%}
