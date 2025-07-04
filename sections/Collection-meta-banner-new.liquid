@@ -14,7 +14,6 @@
                   <source src="{%- render 'imagekit', src: collection.metafields.custom.collection_banner_video_or_image.value %}" type="video/mp4">
                   <img src="{%- render 'imagekit', src: collection_banner_video_or_image_image width: 1920 %}" loading="lazy">
                 </video>
-                {{ collection.metafields.custom.collection_banner_video_or_image.value }}
               </div>
             {%- else -%}
               <div class="Collection_meta_banner_detail_videoimage_new">
