@@ -34,28 +34,8 @@
                                       {% assign main_mobile_image = block.settings.main_mobile_image  | image_url %}
                                         <picture>
                                           <source srcset="{%- render 'imagekit', src: main_mobile_image width: 180 %}" media="(max-width: 749px)" type="image/avif" />
-                                          <img class="image_first_slide" src="{%- render 'imagekit', src: main_desktop_image width: 180 %}" alt="{{ block.settings.alt_text }}" loading="eager" width="1438" height="539" fetchpriority="high" decoding="async" />
+                                          <img class="image_first_slide" src="{%- render 'imagekit', src: main_desktop_image width: 180 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="180" height="180" />
                                         </picture>
-                                      {%- if block.settings.main_desktop_image != blank -%}
-                                        {{
-                                          block.settings.main_desktop_image | 
-                                          image_url: width: img.width | 
-                                          image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                          fetchpriority: 'auto', 
-                                          class:'desktop_image_new',
-                                          alt: block.settings.main_desktop_image.alt
-                                        }}
-                                      {%- endif -%}
-                                      {%- if block.settings.main_mobile_image != blank -%}
-                                        {{
-                                          block.settings.main_mobile_image | 
-                                          image_url: width: img.width | 
-                                          image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                          fetchpriority: 'auto', 
-                                          class:'mobile_image_new',
-                                          alt: block.settings.main_mobile_image.alt
-                                        }}
-                                      {%- endif -%}
                                     </div>
                                   {%- endif -%}
                                 {%- endif -%}
