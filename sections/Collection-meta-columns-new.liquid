@@ -26,10 +26,10 @@
                             <div class="Collection_meta_columns_loops_1_boxs_videoimage_new">
                               {% assign ImagesMain = Images  | image_url %}
                               <picture>
-                                <source srcset="{%- render 'gumlet', src: ImagesMain w: 320 %}" media="(max-width: 380px)" />
-                                <source srcset="{%- render 'gumlet', src: ImagesMain w: 360 %}" media="(max-width: 500px)" />
-                                <source srcset="{%- render 'gumlet', src: ImagesMain w: 440 %}" media="(max-width: 749px)" />
-                                <img class="Collection_column_image_new" src="{%- render 'gumlet', src: ImagesMain w: 468 %}" alt="{{ Images.alt }}" loading="eager" width="468" height="402" />
+                                <source srcset="{%- render 'imagekit', src: ImagesMain width: 320 %}" media="(max-width: 380px)" />
+                                <source srcset="{%- render 'imagekit', src: ImagesMain width: 360 %}" media="(max-width: 500px)" />
+                                <source srcset="{%- render 'imagekit', src: ImagesMain width: 440 %}" media="(max-width: 749px)" />
+                                <img class="Collection_column_image_new" src="{%- render 'imagekit', src: ImagesMain width: 468 %}" alt="{{ Images.alt }}" loading="eager" width="468" height="402" />
                               </picture>
                             </div>
                           {%- endif -%}
