@@ -161,7 +161,7 @@
         {%- if link.current -%} aria-current="page" {%- endif -%}
       >
         {% assign store_image = 'Find-a-store-icon-black.svg'  | file_url %}
-        <img src="{%- render 'gumlet', src: store_image w: 30 %}" width="30" height="25" alt="">
+        <img src="{%- render 'imagekit', src: store_image width: 30 %}" width="30" height="25" alt="">
         Find Store
       </a>
     </li>
