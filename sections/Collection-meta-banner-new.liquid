@@ -9,12 +9,11 @@
             {% assign mediatype = collection.metafields.custom.collection_banner_video_or_image | split: '/' %}
             {%- if mediatype contains "Video" -%}
               <div class="Collection_meta_banner_detail_videoimage_new">
-                {{ collection.metafields.custom.collection_banner_video_or_image.value | video_tag: controls: false, autoplay: true, loop: true }}
                 {% assign collection_banner_video_or_image_image = collection.metafields.custom.collection_banner_video_or_image | image_url %}
-                <!-- <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" preload="metadata" poster="{%- render 'imagekit', src: collection_banner_video_or_image_image width: 1920 %}">
-                  <source src="{%- render 'imagekit', src: collection.metafields.custom.collection_banner_video_or_image %}" type="video/mp4">
+                <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" preload="metadata" poster="{%- render 'imagekit', src: collection_banner_video_or_image_image width: 1920 %}">
+                  <source src="{%- render 'imagekit', src: collection.metafields.custom.collection_banner_video_or_image.value %}" type="video/mp4">
                   <img src="{%- render 'imagekit', src: collection_banner_video_or_image_image width: 1920 %}" loading="lazy">
-                </video> -->
+                </video>
               </div>
             {%- else -%}
               <div class="Collection_meta_banner_detail_videoimage_new">
