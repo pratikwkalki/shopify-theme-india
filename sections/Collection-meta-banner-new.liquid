@@ -9,12 +9,11 @@
             {% assign mediatype = collection.metafields.custom.collection_banner_video_or_image | split: '/' %}
             {%- if mediatype contains "Video" -%}
               <div class="Collection_meta_banner_detail_videoimage_new">
-                  {% assign collection_banner_video_or_image_image = section.settings.collection_banner_video_or_image.preview_image | image_url %}
-                  <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" preload="metadata" poster="{%- render 'imagekit', src: collection_banner_video_or_image_image width: 1920 %}">
-                    <source src="{%- render 'imagekit', src: section.settings.collection_banner_video_or_image.sources[1].url %}" type="video/mp4">
-                    <img src="{%- render 'imagekit', src: collection_banner_video_or_image_image width: 1920 %}" loading="lazy">
-                  </video>
-                {{ collection.metafields.custom.collection_banner_video_or_image.value | video_tag: controls: false, autoplay: true, loop: true }}
+                {% assign collection_banner_video_or_image_image = section.settings.collection_banner_video_or_image.preview_image | image_url %}
+                <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" preload="metadata" poster="{%- render 'imagekit', src: collection_banner_video_or_image_image width: 1920 %}">
+                  <source src="{%- render 'imagekit', src: section.settings.collection_banner_video_or_image.sources[1].url %}" type="video/mp4">
+                  <img src="{%- render 'imagekit', src: collection_banner_video_or_image_image width: 1920 %}" loading="lazy">
+                </video>
               </div>
             {%- else -%}
               <div class="Collection_meta_banner_detail_videoimage_new">
