@@ -66,6 +66,7 @@ h2.video-3-title{ color:#fff; font-size: 40px;font-family: "Forum", serif; text-
   left: 0;
   bottom: 0;
   right: 0;
+  height: 100% !important;
   object-position: top;
 }
 .rajakumari3video_allloop_innerboxs_2_new {
