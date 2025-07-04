@@ -31,7 +31,7 @@
                               </div>
                             {%- else -%}
                               <div class="Collection_object_banners_innerloop_innerbox_videoimage_new">
-                                {% assign video_or_image = section.settings.video_or_image  | image_url %}
+                                {% assign video_or_image = columns.video_or_image.value  | image_url %}
                                 <picture>
                                   <source srcset="{%- render 'imagekit', src: video_or_image width: 380 %}" media="(max-width: 380px)" />
                                   <source srcset="{%- render 'imagekit', src: video_or_image width: 412 %}" media="(max-width: 412px)" />
