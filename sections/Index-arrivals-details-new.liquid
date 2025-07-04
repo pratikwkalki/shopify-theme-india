@@ -20,9 +20,11 @@
                           <div class="Index_arrivals_details_innerleft_1_leftside_videoimageboth_new">
                             {%- if section.settings.main_mp4_video_1 != blank -%}
                               <div class="Index_arrivals_details_innerleft_1_leftside_videoimage_new lazy-load-section">
-                                <template>
-                                  <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" preload="metadata" poster="{{ section.settings.main_mp4_video_1.preview_image.src | img_url: '700x' }}" alt="{{ section.settings.main_desktop_image_1.alt }}">
-                                    <source src="{{ section.settings.main_mp4_video_1.sources[1].url }}" type="video/mp4">
+                              {% assign main_desktop_video_image = section.settings.main_mp4_video_1.preview_image.src  | image_url %} 
+                              {% assign main_desktop_url = section.settings.main_mp4_video_1.sources[1].url %} 
+                              <template>
+                                  <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" preload="metadata" poster="{%- render 'imagekit', src: main_desktop_video_image width: 500 %}" alt="{{ section.settings.main_desktop_image_1.alt }}">
+                                    <source src="{%- render 'imagekit', src: main_desktop_url %}" type="video/mp4">
                                   </video>
                                 </template>
                               </div>
