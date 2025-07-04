@@ -34,9 +34,9 @@
                                               {%- else -%}
                                                 {% assign visit_our_store_section_image = rows.visit_our_store_section_image.value  | image_url %}
                                                 <picture>
-                                                  <source srcset="{%- render 'gumlet', src: visit_our_store_section_image w: 170 %}" media="(max-width: 380px)" />
-                                                  <source srcset="{%- render 'gumlet', src: visit_our_store_section_image w: 230 %}" media="(max-width: 500px)" />
-                                                  <img class="Hover_image_new" src="{%- render 'gumlet', src: visit_our_store_section_image w: 360 %}" alt="KALKI {{ rows.title.value }}" loading="lazy" width="345" height="365" />
+                                                  <source srcset="{%- render 'imagekit', src: visit_our_store_section_image width: 170 %}" media="(max-width: 380px)" />
+                                                  <source srcset="{%- render 'imagekit', src: visit_our_store_section_image width: 230 %}" media="(max-width: 500px)" />
+                                                  <img class="Hover_image_new" src="{%- render 'imagekit', src: visit_our_store_section_image width: 360 %}" alt="KALKI {{ rows.title.value }}" loading="lazy" width="345" height="365" />
                                                 </picture>
                                               {%- endif -%}
                                       {%- endif -%}
