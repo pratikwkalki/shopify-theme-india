@@ -25,12 +25,8 @@
                     {%- for photos_list_tabs in photos_list_tabs -%}
                       <div class="swiper-slide page_store_detail_tabs_image_new">
                         <div class="page_store_detail_tabs_image_inner_new">
-                          {{
-                            photos_list_tabs | 
-                            image_url: width: img.width | 
-                            image_tag: widths: '1080, 1296, 1512, 1728, 1944, 2048', 
-                            fetchpriority: 'auto'
-                          }}
+                          {% assign photos_list_tabs_img = photos_list_tabs | image_url %}
+                          <img src="{%- render 'imagekit', src: photos_list_tabs_img width: 276 %}" loading="lazy" width="276" height="490" />
                         </div>
                       </div>
                     {%- endfor -%}
