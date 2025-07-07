@@ -206,15 +206,7 @@
                                   {%- if main_icon_image != blank -%}
                                     <div class="Footer_icons_with_texts_innerdetail_icons_new">
                                       {% assign main_icon_image_bottom = main_icon_image | image_url %}
-                                      <img class="Icon_app_image_new" src="{%- render 'imagekit', src: main_icon_image_bottom width: 104 %}" alt="App Store" loading="lazy" width="104" height="33" />
-                                      {{
-                                        main_icon_image | 
-                                        image_url: width: img.width | 
-                                        image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                        fetchpriority: 'auto', 
-                                        class:'Icon_image_new',
-                                        loading: 'lazy'
-                                      }}
+                                      <img class="Icon_image_new" src="{%- render 'imagekit', src: main_icon_image_bottom width: 24 %}" alt="" loading="lazy" width="24" height="24" />
                                     </div>
                                   {%- endif -%}
                                   {%- if main_information_text != blank -%}
