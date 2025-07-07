@@ -534,24 +534,24 @@
         {% if page.handle == 'raja-kumari' %}
           <div class="raja-kumari-bg-box">
               <div class="page-width">
-                <div class="raja-kumari-main-bg" style="background-image: url('{{ "rajakumari-backimage-new.svg" | asset_url }}');">
-                  <audio id="audioPlayer" src="{{ 'La_India_ReProdFull_Kulki.mp3' | file_url }}"></audio>
+                <div class="raja-kumari-main-bg" style="background-image: url('{{ "rajakumari-backimage-new.svg" | asset_url }}');">                  
+                  <audio id="backgroundAudio" src="{{ 'La_India_ReProdFull_Kulki.mp3' | file_url }}" loop></audio>
                   <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                      const audio = document.getElementById("audioPlayer");
-                      // Try to play the audio
-                      audio.play().catch(function(error) {
-                        console.warn("Autoplay blocked. Waiting for user interaction.");
+                      document.addEventListener("DOMContentLoaded", function() {
+                        const audio = document.getElementById("backgroundAudio");
+                    
+                        // Try to play immediately
+                        audio.play().catch(function(error) {
+                          // If blocked, wait for user interaction
+                          console.warn("Autoplay blocked. Waiting for user interaction.");
+                          document.addEventListener("click", function() {
+                            if (audio.paused) {
+                              audio.play();
+                            }
+                          }, { once: true });
+                        });
                       });
-                  
-                      // Optional: Enable after first user click
-                      document.addEventListener("click", function() {
-                        if (audio.paused) {
-                          audio.play();
-                        }
-                      });
-                    });
-                  </script>
+                    </script>
                   {{ content_for_layout }}
                 </div>
               </div>
