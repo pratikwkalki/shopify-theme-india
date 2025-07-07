@@ -38,13 +38,8 @@
                                     </div>                                                                  
                                   {%- else -%}
                                     <div class="Page_lookbook_template_innerloop_innerboxs_1_videoimage_new">
-                                      {{
-                                        custom.grid_video_or_image.value | 
-                                        image_url: width: img.width | 
-                                        image_tag: widths: '1296, 1512, 1728, 1944, 2048', 
-                                        fetchpriority: 'auto', 
-                                        class:'Full_image_new'
-                                      }}
+                                      {% assign grid_video_or_image = custom.grid_video_or_image.value | image_url %}
+                                      <img class="Full_image_new" src="{%- render 'imagekit', src: grid_video_or_image width: 500 %}" alt="" loading="lazy" width="466" height="333" />
                                     </div>
                                   {%- endif -%}  
                                 </div>
