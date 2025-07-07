@@ -535,7 +535,7 @@
           <div class="raja-kumari-bg-box">
               <div class="page-width">
                 <div class="raja-kumari-main-bg" style="background-image: url('{{ "rajakumari-backimage-new.svg" | asset_url }}');">                  
-                  <audio id="backgroundAudio" src="https://cdn.shopify.com/s/files/1/0636/0134/4666/files/La_India_ReProdFull_Kulki.mp3?v=1751870647" loop></audio>
+                  <audio id="backgroundAudio" src="{{ 'La_India_ReProdFull_Kulki.mp3' | file_url }}" loop></audio>
                   <script>
                       document.addEventListener("DOMContentLoaded", function() {
                         const audio = document.getElementById("backgroundAudio");
