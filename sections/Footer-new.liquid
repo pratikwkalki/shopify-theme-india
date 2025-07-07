@@ -52,7 +52,7 @@
                                 {%- if block.settings.main_payment_icon_image_1 != blank -%}
                                   <div class="Footer_details_columns_lists_1_detail_infos_new Footer_common_infos_new">
                                     {% assign main_payment_icon_image = block.settings.main_payment_icon_image_1 | image_url %}
-                                    <img class="Payment_icon_image_new" src="{%- render 'imagekit', src: main_desktop_image width: 370 %}" alt="" loading="lazy" width="168" height="72" />
+                                    <img class="Payment_icon_image_new" src="{%- render 'imagekit', src: main_payment_icon_image width: 370 %}" alt="" loading="lazy" width="168" height="72" />
                                   </div>
                                 {%- endif -%}
                               </div>
