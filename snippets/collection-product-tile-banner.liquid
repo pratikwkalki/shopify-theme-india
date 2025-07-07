@@ -2,10 +2,10 @@
   {%- if banner_url != blank -%}<a href="{{ banner_url }}" aria-label="Promotion banner">{%- endif -%} 
     {% assign mainImage = banner_image | image_url %}
     <picture>
-      <source srcset="{%- render 'gumlet', src: mainImage w: 180 %}" media="(max-width: 380px)" />
-      <source srcset="{%- render 'gumlet', src: mainImage w: 250 %}" media="(max-width: 500px)" />
-      <source srcset="{%- render 'gumlet', src: mainImage w: 360 %}" media="(max-width: 749px)" />
-      <img src="{%- render 'gumlet', src: mainImage w: 400 %}" alt="Promotion banner" loading="lazy" width="280" height="507" />
+      <source srcset="{%- render 'imagekit', src: mainImage width: 180 %}" media="(max-width: 380px)" />
+      <source srcset="{%- render 'imagekit', src: mainImage width: 250 %}" media="(max-width: 500px)" />
+      <source srcset="{%- render 'imagekit', src: mainImage width: 360 %}" media="(max-width: 749px)" />
+      <img src="{%- render 'imagekit', src: mainImage width: 400 %}" alt="Promotion banner" loading="lazy" width="280" height="507" />
     </picture>    
   {%- if banner_url != blank -%}</a>{%- endif -%} 
 </li>
