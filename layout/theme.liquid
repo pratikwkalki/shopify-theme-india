@@ -537,21 +537,20 @@
                 <div class="raja-kumari-main-bg" style="background-image: url('{{ "rajakumari-backimage-new.svg" | asset_url }}');">                  
                   <audio id="backgroundAudio" src="{{ 'La_India_ReProdFull_Kulki.mp3' | file_url }}" loop autoplay></audio>
                   <script>
-                      document.addEventListener("DOMContentLoaded", function() {
-                        const audio = document.getElementById("backgroundAudio");
-                    
-                        // Try to play immediately
-                        audio.play().catch(function(error) {
-                          // If blocked, wait for user interaction
-                          console.warn("Autoplay blocked. Waiting for user interaction.");
-                          document.addEventListener("click", function() {
-                            if (audio.paused) {
-                              audio.play();
-                            }
-                          }, { once: true });
-                        });
-                      });
-                    </script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("backgroundAudio");
+    
+    // Attempt autoplay
+    audio.play().catch(() => {
+      // If blocked by browser, enable on first user interaction
+      document.addEventListener("click", () => {
+        if (audio.paused) {
+          audio.play();
+        }
+      }, { once: true });
+    });
+  });
+</script>
                   {{ content_for_layout }}
                 </div>
               </div>
