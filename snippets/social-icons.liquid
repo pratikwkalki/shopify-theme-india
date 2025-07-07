@@ -13,7 +13,8 @@
   {%- if settings.social_instagram_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_instagram_link }}" class="link list-social__link">
-        <img src="{{ 'Instagram.png' | asset_img_url: 'master' }}" alt="Instagram" loading="lazy" />
+        {% assign instagram = 'Instagram.png' | asset_img_url: 'master' %}
+        <img src="{%- render 'imagekit', src: instagram width: 24 %}" alt="Instagram" loading="lazy" width="24" height="24" />
         {%- comment -%}
           {%- render 'icon-instagram' -%}
           <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
@@ -24,7 +25,8 @@
   {%- if settings.social_facebook_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_facebook_link }}" class="link list-social__link">
-        <img src="{{ 'Facebook.png' | asset_img_url: 'master' }}" alt="Facebook" loading="lazy" />
+        {% assign facebook = 'Facebook.png' | asset_img_url: 'master' %}
+        <img src="{%- render 'imagekit', src: facebook width: 24 %}" alt="Facebook" loading="lazy" width="24" height="24" />
         {%- comment -%}
           {%- render 'icon-facebook' -%}
           <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
@@ -35,14 +37,16 @@
   {%- if settings.social_whatsapp_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_whatsapp_link }}" class="link list-social__link">
-        <img src="{{ 'WhatsApp.png' | asset_img_url: 'master' }}" alt="WhatsApp" loading="lazy" />
+        {% assign whatsApp = 'WhatsApp.png' | asset_img_url: 'master' %}
+        <img src="{%- render 'imagekit', src: whatsApp width: 24 %}" alt="WhatsApp" loading="lazy" width="24" height="24" />
       </a>
     </li>
   {%- endif -%}
   {%- if settings.social_youtube_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_youtube_link }}" class="link list-social__link">
-        <img src="{{ 'YouTube.png' | asset_img_url: 'master' }}" alt="YouTube" loading="lazy" />
+        {% assign youtube = 'YouTube.png' | asset_img_url: 'master' %}
+        <img src="{%- render 'imagekit', src: youtube width: 24 %}" alt="YouTube" loading="lazy" width="24" height="24" />
         {%- comment -%}
           {%- render 'icon-youtube' -%}
           <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
@@ -53,7 +57,8 @@
   {%- if settings.social_pinterest_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_pinterest_link }}" class="link list-social__link">
-        <img src="{{ 'Pinterest.png' | asset_img_url: 'master' }}" alt="Pinterest" loading="lazy" />
+        {% assign pinterest = 'Pinterest.png' | asset_img_url: 'master' %}
+        <img src="{%- render 'imagekit', src: pinterest width: 24 %}" alt="Pinterest" loading="lazy" width="24" height="24" />
         {%- comment -%}
           {%- render 'icon-pinterest' -%}
           <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
@@ -64,7 +69,8 @@
   {%- if settings.social_twitter_link != blank -%}
     <li class="list-social__item">
       <a href="{{ settings.social_twitter_link }}" class="link list-social__link">
-        <img src="{{ 'Twitter.png' | asset_img_url: 'master' }}" alt="Twitter" loading="lazy" />
+        {% assign twitter = 'Twitter.png' | asset_img_url: 'master' %}
+        <img src="{%- render 'imagekit', src: twitter width: 24 %}" alt="Twitter" loading="lazy" width="24" height="24" />
         {%- comment -%}
           {%- render 'icon-twitter' -%}
           <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
