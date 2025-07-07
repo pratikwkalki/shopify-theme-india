@@ -27,43 +27,6 @@
         "padding_bottom": 0
       }
     },
-    "index_top_banner_slider_new_gpigVk": {
-      "type": "Index-top-banner-slider-new",
-      "blocks": {
-        "information_MnRWfk": {
-          "type": "information",
-          "settings": {
-            "main_desktop_full_image": "shopify://shop_images/wedding-page-1-500x707-19-06-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/wedding-page-1-500x707-19-06-25.jpg",
-            "alt_text": "",
-            "main_banner_redirect_link": "shopify://collections/bridal"
-          }
-        },
-        "information_gHYmtF": {
-          "type": "information",
-          "settings": {
-            "main_desktop_full_image": "shopify://shop_images/wedding-page-2-500x707-19-06-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/wedding-page-2-500x707-19-06-25.jpg",
-            "alt_text": "",
-            "main_banner_redirect_link": "shopify://collections/groom"
-          }
-        }
-      },
-      "block_order": [
-        "information_MnRWfk",
-        "information_gHYmtF"
-      ],
-      "custom_css": [
-        ".Index_top_banner_slider_main_new {display: none;}",
-        ".Index_top_banner_slider_inner_new .swiper-pagination {position: static !important; padding-top: 10px;}",
-        ".Index_top_banner_slider_inner_new .swiper-pagination .swiper-pagination-bullet {margin: 5px;}",
-        "@media only screen and (max-width: 749px) {.Index_top_banner_slider_main_new {display: block; margin-top: 0; }}"
-      ],
-      "name": "Index Top Banner Slider",
-      "settings": {
-        "main_background_color": "#ffffff"
-      }
-    },
     "index_side_by_side_banner_new_pGtxYz": {
       "type": "Index-side-by-side-banner-new",
       "blocks": {
@@ -404,7 +367,6 @@
   "order": [
     "main",
     "custom_liquid_RFHjaK",
-    "index_top_banner_slider_new_gpigVk",
     "index_side_by_side_banner_new_pGtxYz",
     "index_icon_text_info_list_new_x9NgeH",
     "page_weaves_collections_new_gjeJMn",
