@@ -17,13 +17,8 @@
                     <div class="Page_store_detail_service_innerloop_innerboxs_new">
                       {%- if block.settings.main_icon_image != blank -%}
                         <div class="Page_store_detail_service_innerloop_innerboxs_icons_new">
-                          {{
-                            block.settings.main_icon_image | 
-                            image_url: width: img.width | 
-                            image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                            fetchpriority: 'auto', 
-                            class:'Icon_image_new'
-                          }}
+                          {% assign main_icon_image = block.settings.main_icon_image | image_url %}
+                          <img src="{%- render 'imagekit', src: main_icon_image width: 50 %}" loading="lazy" width="50" height="50" />
                         </div>
                       {%- endif -%}
                       {%- if block.settings.title != blank -%}
