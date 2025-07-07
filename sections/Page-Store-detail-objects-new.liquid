@@ -19,21 +19,18 @@
                   </div>
                 {%- else -%}
                   <div class="temp_Page_store_detail_objects_detail_1_video_OR_image_new">
-                    {{
-                      metaobject.banner_video_or_image.value | 
-                      image_url: width: img.width | 
-                      image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                      fetchpriority: 'auto', 
-                      class:'Hover_image_new_desk'
-                    }}
-                    {{
-                      metaobject.banner_image_for_mobile.value | 
-                      image_url: width: img.width | 
-                      image_tag: widths: '400, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                      fetchpriority: 'auto', 
-                      class:'Hover_image_new_mob'
-                    }}
-                    
+                    {% assign main_desktop_image =  metaobject.banner_video_or_image.value | image_url %}
+                    {% assign main_mobile_image = metaobject.banner_image_for_mobile.value | image_url %}
+                    <picture>
+                      <source srcset="{%- render 'imagekit', src: main_mobile_image width: 380 %}" media="(max-width: 380px)" type="image/avif" />
+                      <source srcset="{%- render 'imagekit', src: main_mobile_image width: 412 %}" media="(max-width: 412px)" type="image/avif" />
+                      <source srcset="{%- render 'imagekit', src: main_mobile_image width: 500 %}" media="(max-width: 500px)" type="image/avif" />
+                      <source srcset="{%- render 'imagekit', src: main_mobile_image width: 750 %}" media="(max-width: 748px)" type="image/avif" />
+                      <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1024 %}" media="(max-width: 1024px)" type="image/avif" />
+                      <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1200 %}" media="(max-width: 1200px)" type="image/avif" />
+                      <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1350 %}" media="(max-width: 1350px)" type="image/avif" />
+                      <img src="{%- render 'imagekit', src: main_desktop_image width: 1480 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="1438" height="539" fetchpriority="low" decoding="async" />
+                    </picture>
                   </div>
                 {%- endif -%}
               </div>
