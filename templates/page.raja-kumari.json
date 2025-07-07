@@ -26,8 +26,8 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "enable_video_looping": true,
-        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_video_autoplay": false,
         "video": "shopify://files/videos/LA-INDIA-RAJA-x-KALKI-4k-firstvideo.mp4",
         "video_url": "",
         "cover_image": "shopify://shop_images/Web_Banner_24-06-25.jpg",
@@ -101,8 +101,8 @@
       "settings": {
         "heading": "",
         "heading_size": "h1",
-        "enable_video_looping": true,
-        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_video_autoplay": false,
         "video": "shopify://files/videos/Kalki-x-Rajakumari-BTS-2video.mp4",
         "video_url": "",
         "cover_image": "shopify://shop_images/Video_Banner2.jpg",
