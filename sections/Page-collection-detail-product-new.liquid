@@ -22,13 +22,8 @@
                     <div class="Page_collection_detail_product_innerloop_innerboxs_new">
                       <a href="{{ current_variant.url }}">
                         <div class="Page_collection_detail_product_innerloop_innerboxs_image_new">
-                          {{
-                            featured_image | 
-                            image_url: width: img.width | 
-                            image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                            fetchpriority: 'auto', 
-                            class:'Product_image_new'
-                          }}
+                          {% assign main_featured_image = featured_image | image_url %}
+                          <img src="{%- render 'imagekit', src: main_featured_image width: 430 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="430" height="602" />
                         </div>
                       </a>
                     </div>
