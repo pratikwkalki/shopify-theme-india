@@ -23,7 +23,7 @@
 {%- for block in section.blocks -%}
       {%- if block.settings.image != blank or block.settings.image_behavior != blank or block.settings.page_width != blank or block.settings.text != blank or block.settings.textsub != blank or block.settings.textsub2 != blank -%}
               <div class="rumi-testimonial-box">
-                  <div class="rumi-testimonial-box-image">
+                  <div class="rumi-testimonial-box-image test">
                            
                           {%- if block.settings.image != blank -%}
                             {%- if block.settings.image_behavior == 'ambient' or block.settings.image_behavior == 'zoom-in' -%}
