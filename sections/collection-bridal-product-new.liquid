@@ -227,12 +227,13 @@
                      {%- if settings.mobile_middle_banner != blank -%}
                         <div class="collection-mobile-middle-banner">
                           <a href="{{  settings.mobile_middle_banner_url }}">
-                            {{
-                              settings.mobile_middle_banner | 
-                              image_url: width: settings.mobile_middle_banner.width | 
-                              image_tag: widths: '180, 360, 540, 767', 
-                              fetchpriority: 'auto'
-                            }}
+                            {% assign mainImage = settings.mobile_middle_banner | image_url %}
+                            <picture>
+                              <source srcset="{%- render 'imagekit', src: mainImage width: 380 %}" media="(max-width: 380px)" />
+                              <source srcset="{%- render 'imagekit', src: mainImage width: 412 %}" media="(max-width: 412px)" />
+                              <source srcset="{%- render 'imagekit', src: mainImage width: 500 %}" media="(max-width: 500px)" />
+                              <img src="{%- render 'imagekit', src: mainImage width: 749 %}" alt="Live Video Shopping" loading="lazy" width="381" height="175" />
+                            </picture>
                           </a>
                         </div>
                       {%- endif -%} 
