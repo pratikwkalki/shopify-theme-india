@@ -51,14 +51,8 @@
                                 {%- endif -%}
                                 {%- if block.settings.main_payment_icon_image_1 != blank -%}
                                   <div class="Footer_details_columns_lists_1_detail_infos_new Footer_common_infos_new">
-                                    {{
-                                      block.settings.main_payment_icon_image_1 | 
-                                      image_url: width: img.width | 
-                                      image_tag: widths: '180, 360, 540, 750, 900, 1080, 1296, 1512, 1728, 1944, 2048', 
-                                      fetchpriority: 'auto', 
-                                      class:'Payment_icon_image_new',
-                                      loading: 'lazy'
-                                    }}
+                                    {% assign main_payment_icon_image = block.settings.main_payment_icon_image_1 | image_url %}
+                                    <img class="Payment_icon_image_new" src="{%- render 'imagekit', src: main_desktop_image width: 370 %}" alt="" loading="lazy" width="168" height="72" />
                                   </div>
                                 {%- endif -%}
                               </div>
