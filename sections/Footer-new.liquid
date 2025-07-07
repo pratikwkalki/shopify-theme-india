@@ -74,8 +74,8 @@
                                           {%- if block.settings.main_app_icon_url_1 != blank -%}
                                             <a href="{{ block.settings.main_app_icon_url_1 }}" target="_blank">
                                           {%- endif -%}
-                                            {% assign main_payment_icon_image = block.settings.main_payment_icon_image_1 | image_url %}
-                                            <img class="Icon_app_image_new" src="{%- render 'imagekit', src: main_payment_icon_image width: 104 %}" alt="Google Play" loading="lazy" width="104" height="33" />
+                                            {% assign main_app_icon_image_1 = block.settings.main_app_icon_image_1 | image_url %}
+                                            <img class="Icon_app_image_new" src="{%- render 'imagekit', src: main_app_icon_image_1 width: 104 %}" alt="Google Play" loading="lazy" width="104" height="33" />
                                           {%- if block.settings.main_app_icon_url_1 != blank -%}
                                             </a>
                                           {%- endif -%}
