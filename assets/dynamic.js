@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Get elements
     const additionalSelect = document.getElementById("main_aditional");
       const embroiderySelect = document.getElementById("main_embroidery");
+  const shoulderSelect = document.getElementById("main_shoulder");
       const additionalInput = document.getElementById("additional_cost_input");
       const embroideryInput = document.getElementById("embroidery_cost_input");
       const totalCostInput = document.getElementById("total_cost_input");
@@ -109,6 +110,41 @@ document.addEventListener("DOMContentLoaded", function () {
       if(embroiderySelect){
             embroiderySelect.addEventListener("change", function () {
             embroideryInput.value = this.value;
+            updateTotalCost();
+        
+            const orderMsgElement = document.querySelector(".Shipping_orders.order_msg");
+            if (orderMsgElement) {
+                orderMsgElement.style.display = "none";
+            }
+        
+            const additionalMessageElement = document.querySelector(".Shipping_orders.additional_message");
+            if (additionalMessageElement) {
+                additionalMessageElement.style.display = "block";
+            }
+        
+            document.querySelectorAll(".metafield-rich_text_field.details_feilds").forEach(element => {
+                element.style.display = "none";
+            });
+        
+            document.querySelectorAll(".metafield-rich_text_field.additional").forEach(element => {
+                element.style.display = "block";
+            });
+
+          // Reference the elements
+        
+            document.querySelectorAll(".bottom_text.regular-text").forEach(element => {
+                element.style.display = "none";
+            });
+        
+            document.querySelectorAll(".bottom_text.return-text-none").forEach(element => {
+                element.style.display = "block";
+            });
+        });
+      }
+
+  if(shoulderSelect){
+            shoulderSelect.addEventListener("change", function () {
+            shoulderSelectInput.value = this.value;
             updateTotalCost();
         
             const orderMsgElement = document.querySelector(".Shipping_orders.order_msg");
