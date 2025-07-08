@@ -140,7 +140,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
       }
-
-  
+});
 
 
