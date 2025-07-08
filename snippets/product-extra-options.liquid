@@ -83,4 +83,18 @@
       </div>
     </div>
   {% endif %}
+  {% if product.metafields.custom.length_waist_to_floor_including_heels !=blank %}
+    <div class="additional-options-wrapper">
+      <label for="embroidery-title">Length (Waist to Floor including heels):</label>
+      <div class="embroidery-cost aditional-cost">
+        <select id="main_embroidery">
+          <option value="" selected disabled hidden>Please Select</option>
+          {% for embroidery in product.metafields.custom.length_waist_to_floor_including_heels.value %}
+            {% assign split_embroidery = embroidery | split: ":" %}
+            <option value="{{ split_embroidery[1] | strip | remove: "₹" }}" data-embroidery="{{ split_embroidery[1] | strip | remove: "₹" }}"> {{ split_embroidery[0] | strip }} : {{ split_embroidery[1] | strip }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+  {% endif %}
 </div>
