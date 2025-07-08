@@ -4,10 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Get elements
     const additionalSelect = document.getElementById("main_aditional");
       const embroiderySelect = document.getElementById("main_embroidery");
-  const shoulderSelect = document.getElementById("main_shoulder");
       const additionalInput = document.getElementById("additional_cost_input");
       const embroideryInput = document.getElementById("embroidery_cost_input");
-      const shoulderInput = document.getElementById("embroidery_cost_input");
       const totalCostInput = document.getElementById("total_cost_input");
       
       
@@ -26,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Extract numeric value from additionalInput and embroideryInput
         const additionalPrice = parseFloat(additionalInput.value) || 0; // Default to 0 if no value
         const embroideryPrice = parseFloat(embroideryInput.value) || 0; // Default to 0 if no value
-        const shoulderPrice = parseFloat(shoulderInput.value) || 0; // Default to 0 if no value
       
         const totalPrice = additionalPrice + embroideryPrice; // Sum the prices
         console.log("totalPrice", totalPrice);
@@ -62,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
          // Dynamically add/remove the name attribute
         updateInputAttributes(additionalInput, "items[0][properties[Additional Cost]]");
         updateInputAttributes(embroideryInput, "items[0][properties[Embroidery Cost]]");
-        updateInputAttributes(shoulderInput, "items[0][properties[Shoulder Cost]]");
         updateInputAttributes(totalCostInput, "items[0][properties[_extra_total]]");
       }
        // Function to add/remove the name attribute dynamically
@@ -145,40 +141,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
 
-  if(shoulderSelect){
-            shoulderSelect.addEventListener("change", function () {
-            shoulderSelectInput.value = this.value;
-            updateTotalCost();
-        
-            const orderMsgElement = document.querySelector(".Shipping_orders.order_msg");
-            if (orderMsgElement) {
-                orderMsgElement.style.display = "none";
-            }
-        
-            const additionalMessageElement = document.querySelector(".Shipping_orders.additional_message");
-            if (additionalMessageElement) {
-                additionalMessageElement.style.display = "block";
-            }
-        
-            document.querySelectorAll(".metafield-rich_text_field.details_feilds").forEach(element => {
-                element.style.display = "none";
-            });
-        
-            document.querySelectorAll(".metafield-rich_text_field.additional").forEach(element => {
-                element.style.display = "block";
-            });
-
-          // Reference the elements
-        
-            document.querySelectorAll(".bottom_text.regular-text").forEach(element => {
-                element.style.display = "none";
-            });
-        
-            document.querySelectorAll(".bottom_text.return-text-none").forEach(element => {
-                element.style.display = "block";
-            });
-        });
-      }
-});
+  
 
 
