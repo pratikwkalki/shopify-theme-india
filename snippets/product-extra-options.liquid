@@ -29,13 +29,13 @@
   {% endif %}
   {% if product.metafields.custom.shoulder_strap !=blank %}
     <div class="additional-options-wrapper">
-      <label for="embroidery-title">Shoulder Strap:</label>
+      <label for="shoulder-title">Shoulder Strap:</label>
       <div class="embroidery-cost aditional-cost">
-        <select id="main_embroidery">
+        <select id="main_shoulder">
           <option value="" selected disabled hidden>Please Select</option>
-          {% for embroidery in product.metafields.custom.shoulder_strap.value %}
-            {% assign split_embroidery = embroidery | split: ":" %}
-            <option value="{{ split_embroidery[1] | strip | remove: "₹" }}" data-embroidery="{{ split_embroidery[1] | strip | remove: "₹" }}"> {{ split_embroidery[0] | strip }} : {{ split_embroidery[1] | strip }}</option>
+          {% for shoulder in product.metafields.custom.shoulder_strap.value %}
+            {% assign split_shoulder = shoulder | split: ":" %}
+            <option value="{{ split_shoulder[1] | strip | remove: "₹" }}" data-shoulder="{{ split_shoulder[1] | strip | remove: "₹" }}"> {{ split_shoulder[0] | strip }} : {{ split_shoulder[1] | strip }}</option>
           {% endfor %}
         </select>
       </div>
