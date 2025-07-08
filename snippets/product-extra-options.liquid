@@ -55,4 +55,18 @@
       </div>
     </div>
   {% endif %}
+  {% if product.metafields.custom.blouse_length !=blank %}
+    <div class="additional-options-wrapper">
+      <label for="embroidery-title">Blouse Length:</label>
+      <div class="embroidery-cost aditional-cost">
+        <select id="main_embroidery">
+          <option value="" selected disabled hidden>Please Select</option>
+          {% for embroidery in product.metafields.custom.blouse_length.value %}
+            {% assign split_embroidery = embroidery | split: ":" %}
+            <option value="{{ split_embroidery[1] | strip | remove: "₹" }}" data-embroidery="{{ split_embroidery[1] | strip | remove: "₹" }}"> {{ split_embroidery[0] | strip }} : {{ split_embroidery[1] | strip }}</option>
+          {% endfor %}
+        </select>
+      </div>
+    </div>
+  {% endif %}
 </div>
