@@ -1,3 +1,12 @@
+{% if page.handle == 'raja-kumari' %}
+.Common_faqs_accordion_new .accordion>ul li .question h2{
+  background: url(plus-white.svg) no-repeat center right;
+}
+.Common_faqs_accordion_new .accordion>ul li.open .question h2 {
+    background: url(minus_white.svg) no-repeat center right;
+}
+{%- endif -%}
+
 .Common_faqs_accordion_new .accordion>ul li .question h2{
       font-family: var(--font-body-family);
     background: url(plus.svg) no-repeat center right;
