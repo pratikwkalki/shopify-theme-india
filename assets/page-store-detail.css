@@ -1,9 +1,9 @@
 {% if page.handle == 'raja-kumari' %}
 .Common_faqs_accordion_new .accordion>ul li .question h2{
-  background: url(plus-white.svg) no-repeat center right;
+  background: url(plus-white.svg) no-repeat center right !important;
 }
 .Common_faqs_accordion_new .accordion>ul li.open .question h2 {
-    background: url(minus_white.svg) no-repeat center right;
+    background: url(minus_white.svg) no-repeat center right !important;
 }
 {%- endif -%}
 
