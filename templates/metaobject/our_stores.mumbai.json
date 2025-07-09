@@ -131,6 +131,7 @@
     },
     "page_store_detail_collection_new_AqYqqM": {
       "type": "Page-Store-detail-collection-new",
+      "disabled": true,
       "settings": {
         "main_back_color": "#ffffff",
         "main_heading_text": "Collections",
