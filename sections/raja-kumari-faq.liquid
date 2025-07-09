@@ -1,4 +1,4 @@
-
+{{ metaobject.faqs_questions_accordion | json }}
 {%- if metaobject.faqs_questions_accordion.value != blank -%}
   {{ 'page-store-detail.css' | asset_url | stylesheet_tag }}
   <div class="Page_Store_detail_objects_faqs_main_new" style="background: {{ section.settings.main_background_color }};">
