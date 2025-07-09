@@ -352,13 +352,13 @@
         "information_kdHhKc": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/3-mini-desk-luxe-2089-all-country-400x533-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/3-mini-desk-luxe-2089-all-country-400x533-30-06-25.jpg",
-            "title": "Celebratory Luxe",
-            "sub_head_text": "Custom-Made For You",
+            "main_desktop_image": "shopify://shop_images/3-mini-desk-new-this-week-all-country-400x533-09-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-mini-desk-new-this-week-all-country-400x533-09-07-25.jpg",
+            "title": "New Wedding-Ready Sarees",
+            "sub_head_text": "",
             "main_tags_detail_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/luxe"
+            "main_button_link": "shopify://collections/new-in-this-week"
           }
         },
         "information_txEVLa": {
