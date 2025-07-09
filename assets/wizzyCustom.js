@@ -262,6 +262,8 @@ window.onWizzyScriptLoaded = function () {
           const transformedName = product.name
             .toLowerCase()
             .replace(/\s+/g, "-");
+          const parsedUrl = new URL(product.url);
+          parsedUrl.searchParams.delete("variant");
           product.productHandle = transformedName;
           let product_sellingprice = product.sellingPrice;
           product_sellingprice = product_sellingprice.replace(".00", "");
