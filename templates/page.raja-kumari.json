@@ -195,6 +195,7 @@
     },
     "page_bridal_objects_faqs_new_ezeFw3": {
       "type": "Page-bridal-objects-faqs-new",
+      "custom_css": [],
       "name": "Page Bridal Objects FAQs",
       "settings": {
         "main_background_color": "rgba(0,0,0,0)",
