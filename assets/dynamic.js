@@ -227,8 +227,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  embroiderySelects.forEach((select, index) => {
-    select.addEventListener("change", function () {
+ embroiderySelects.forEach((select, index) => {
+  select.addEventListener("change", function () {
+    const embroideryInput = embroideryInputs[index];
+    const totalCostInput = totalCostInputs[index];
+    const additionalInput = additionalInputs[index];
+
+    if (!embroideryInput || !totalCostInput || !additionalInput) {
+      console.warn(`Missing inputs for index ${index}`);
+      return;
+    }
       embroideryInputs[index].value = this.value;
       updateTotalCost(index);
 
