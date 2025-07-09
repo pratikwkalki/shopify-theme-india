@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
     console.log("loaded.....");
 
     // Get elements
-    const additionalSelect = document.getElementById("main_aditional");
+     const additionalSelect = document.getElementById("main_aditional");
       const embroiderySelect = document.getElementById("main_embroidery");
+
       const additionalInput = document.getElementById("additional_cost_input");
       const embroideryInput = document.getElementById("embroidery_cost_input");
       const totalCostInput = document.getElementById("total_cost_input");
@@ -143,3 +144,115 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+ */
+
+document.addEventListener("DOMContentLoaded", function () {
+  const additionalSelects = document.querySelectorAll("#main_aditional");
+  const embroiderySelects = document.querySelectorAll("#main_embroidery");
+
+  const additionalInputs = document.querySelectorAll("#additional_cost_input");
+  const embroideryInputs = document.querySelectorAll("#embroidery_cost_input");
+  const totalCostInputs = document.querySelectorAll("#total_cost_input");
+
+  function formatPriceIndia(price) {
+    return new Intl.NumberFormat("en-IN", {
+      style: "currency",
+      currency: "INR",
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    }).format(price);
+  }
+
+  function updateTotalCost(index) {
+    const additionalInput = additionalInputs[index];
+    const embroideryInput = embroideryInputs[index];
+    const totalCostInput = totalCostInputs[index];
+
+    const additionalPrice = parseFloat(additionalInput.value) || 0;
+    const embroideryPrice = parseFloat(embroideryInput.value) || 0;
+    const totalPrice = additionalPrice + embroideryPrice;
+
+    totalCostInput.value = totalPrice.toFixed(2);
+
+    const cartPrices = document.querySelectorAll("#aditional_costtotal");
+    cartPrices.forEach((cartprice) => {
+      const carttotalprice = cartprice.getAttribute("data-price");
+      const cartTotalPriceNum = parseFloat(
+        carttotalprice.replace(/[^0-9.-]+/g, "")
+      );
+      const finalPrice = cartTotalPriceNum + totalPrice;
+      const formattedFinalPrice = formatPriceIndia(finalPrice);
+      cartprice.textContent = formattedFinalPrice;
+    });
+
+    updateInputAttributes(additionalInput, "items[0][properties[Additional Cost]]");
+    updateInputAttributes(embroideryInput, "items[0][properties[Embroidery Cost]]");
+    updateInputAttributes(totalCostInput, "items[0][properties[_extra_total]]");
+  }
+
+  function updateInputAttributes(input, name) {
+    if (input.value.trim() !== "0") {
+      input.setAttribute("name", name);
+    } else {
+      input.removeAttribute("name");
+    }
+  }
+
+  additionalSelects.forEach((select, index) => {
+    select.addEventListener("change", function () {
+      additionalInputs[index].value = this.value;
+      updateTotalCost(index);
+
+      const orderMsg = document.querySelectorAll(".Shipping_orders.order_msg")[index];
+      if (orderMsg) orderMsg.style.display = "none";
+
+      const additionalMsg = document.querySelectorAll(".Shipping_orders.additional_message")[index];
+      if (additionalMsg) additionalMsg.style.display = "block";
+
+      document.querySelectorAll(".metafield-rich_text_field.details_feilds").forEach((el) => {
+        el.style.display = "none";
+      });
+
+      document.querySelectorAll(".metafield-rich_text_field.additional").forEach((el) => {
+        el.style.display = "block";
+      });
+
+      document.querySelectorAll(".bottom_text.regular-text").forEach((el) => {
+        el.style.display = "none";
+      });
+
+      document.querySelectorAll(".bottom_text.return-text-none").forEach((el) => {
+        el.style.display = "block";
+      });
+    });
+  });
+
+  embroiderySelects.forEach((select, index) => {
+    select.addEventListener("change", function () {
+      embroideryInputs[index].value = this.value;
+      updateTotalCost(index);
+
+      const orderMsg = document.querySelectorAll(".Shipping_orders.order_msg")[index];
+      if (orderMsg) orderMsg.style.display = "none";
+
+      const additionalMsg = document.querySelectorAll(".Shipping_orders.additional_message")[index];
+      if (additionalMsg) additionalMsg.style.display = "block";
+
+      document.querySelectorAll(".metafield-rich_text_field.details_feilds").forEach((el) => {
+        el.style.display = "none";
+      });
+
+      document.querySelectorAll(".metafield-rich_text_field.additional").forEach((el) => {
+        el.style.display = "block";
+      });
+
+      document.querySelectorAll(".bottom_text.regular-text").forEach((el) => {
+        el.style.display = "none";
+      });
+
+      document.querySelectorAll(".bottom_text.return-text-none").forEach((el) => {
+        el.style.display = "block";
+      });
+    });
+  });
+});
