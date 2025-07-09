@@ -216,7 +216,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<style>\n.Page_Store_detail_objects_faqs_innerloop_new .accordion>ul li .question h2,.Common_faqs_accordion_new .accordion>ul li .answer p,.Common_title_new h2{color:#fff}\n\n</style>",
+        "custom_liquid": "<style>\n.Page_Store_detail_objects_faqs_innerloop_new .accordion>ul li .question h2,.Common_faqs_accordion_new .accordion>ul li .answer p,.Common_title_new h2{color:#fff}\n.Page_Store_detail_objects_faqs_main_new {\n    margin: 0px 0;pading: 60px 0;\n}\n</style>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
