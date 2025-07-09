@@ -1,5 +1,5 @@
 
-{{ shop.metaobjects.product_fa_qs_accordions | json }}}
+{{ shop.metaobjects.product_fa_qs_accordions.value | json }}}
 
 {%- if shop.metaobjects.faqs_questions_accordion.value != blank -%}
   {{ 'page-store-detail.css' | asset_url | stylesheet_tag }}
