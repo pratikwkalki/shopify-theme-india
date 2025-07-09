@@ -27,42 +27,6 @@
         "padding_bottom": 0
       }
     },
-    "index_side_by_side_banner_new_pGtxYz": {
-      "type": "Index-side-by-side-banner-new",
-      "blocks": {
-        "information_H9VDcD": {
-          "type": "information",
-          "settings": {
-            "main_desktop_full_image": "shopify://shop_images/wedding-page-1-710x520-19-06-25-new.jpg",
-            "main_mobile_full_image": "shopify://shop_images/wedding-page-1-500x707-19-06-25.jpg",
-            "alt_text": "wer",
-            "main_banner_redirect_link": "shopify://collections/bride"
-          }
-        },
-        "information_4UAkkC": {
-          "type": "information",
-          "settings": {
-            "main_desktop_full_image": "shopify://shop_images/wedding-page-2710x520-19-06-25-new.jpg",
-            "main_mobile_full_image": "shopify://shop_images/wedding-page-2710x520-19-06-25_7743f5a5-e648-4749-9810-1b221b752bd6.jpg",
-            "alt_text": "werw",
-            "main_banner_redirect_link": "shopify://collections/groom"
-          }
-        }
-      },
-      "block_order": [
-        "information_H9VDcD",
-        "information_4UAkkC"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "@media only screen and (max-width: 749px) {.Index_side_by_side_banner_main_new {display: none; }}"
-      ],
-      "name": "Index Side By Side Banner",
-      "settings": {
-        "main_background_color": "#ffffff",
-        "main_heading_text": ""
-      }
-    },
     "wedding_side_by_side_banners_pWNqJW": {
       "type": "wedding-side-by-side-banners",
       "blocks": {
@@ -75,7 +39,7 @@
             "sub_head_text": "",
             "main_tags_detail_text": "",
             "main_button_text": "",
-            "main_button_link": "/"
+            "main_button_link": "shopify://collections/bride"
           }
         },
         "information_RPxGCb": {
@@ -87,7 +51,7 @@
             "sub_head_text": "",
             "main_tags_detail_text": "",
             "main_button_text": "",
-            "main_button_link": "/"
+            "main_button_link": "shopify://collections/groom"
           }
         }
       },
@@ -403,7 +367,6 @@
   "order": [
     "main",
     "custom_liquid_RFHjaK",
-    "index_side_by_side_banner_new_pGtxYz",
     "wedding_side_by_side_banners_pWNqJW",
     "index_icon_text_info_list_new_x9NgeH",
     "page_weaves_collections_new_gjeJMn",
