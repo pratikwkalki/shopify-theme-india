@@ -49,14 +49,14 @@
 
  document.addEventListener('DOMContentLoaded', function () {
     const button = document.querySelector('.read-more-button');
-    const preview = document.querySelector('.read-more-content');
-    const full = document.querySelector('.full-description');
+    const preview = document.querySelector('.read-more-content.preview');
+    const full = document.querySelector('.read-more-content.full');
 
-    if (button) {
+    if (button && preview && full) {
       button.addEventListener('click', function () {
         preview.classList.add('hidden');
         full.classList.remove('hidden');
-        button.classList.add('hidden'); // Optionally hide the button after expanding
+        button.style.display = 'none';
       });
     }
   });
