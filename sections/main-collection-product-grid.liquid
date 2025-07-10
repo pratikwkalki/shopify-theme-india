@@ -233,8 +233,8 @@
                   </div>
                   {% if collection.metafields.custom.collection_custom_title_description_new.value != blank %}
                     <div class="collection_custom_title_description_new" >
+                    {% assign description = collection.metafields.custom.collection_custom_title_description_new %}
                     
-                    <div class="read-more-container">
 
                     {% comment %}
                       
@@ -254,18 +254,18 @@
                       
                       {% endcomment %}
 
-{% assign description = collection.metafields.custom.collection_custom_title_description_new %}
-
-<div class="read-more-wrapper">
-  <div class="read-more-content preview">
-    {{ description }}
-  </div>
-  <div class="read-more-content full">
-    {{ description }}
-  </div>
-  <button class="read-more-button read-more">Read more</button>
-  <button class="read-more-button read-less">Read less</button>
-</div>
+                    
+                    
+                    <div class="read-more-wrapper">
+                      <div class="read-more-content preview">
+                        {{ description }}
+                      </div>
+                      <div class="read-more-content full">
+                        {{ description }}
+                      </div>
+                      <button class="read-more-button read-more">Read more</button>
+                      <button class="read-more-button read-less">Read less</button>
+                    </div>
 
 
 
