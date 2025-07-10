@@ -251,32 +251,29 @@
                           <p class="read-more-content">{{ description }}</p>
                           <button class="read-more-button hidden">Read more</button>
                         {% endif %}
-                      </div>
+                      
                       {% endcomment %}
 
 {% assign description = collection.metafields.custom.collection_custom_title_description_new %}
 {% assign words = description | strip_html | split: ' ' %}
-{% assign truncated_text = words | slice: 0, 40 | join: ' ' %}
 
-<div class="read-more-wrapper">
-  {% if words.size > 40 %}
-    <!-- Truncated preview -->
-    <div class="read-more-content">
-      {{ truncated_text }}...
+{% if words.size > 40 %}
+  <div class="read-more-wrapper">
+    <div class="read-more-content preview">
+      {{ words | slice: 0, 40 | join: ' ' }}...
     </div>
-
-    <!-- Full HTML content, already rendered -->
-    <div class="full-description hidden">
+    <div class="read-more-content full hidden">
       {{ description }}
     </div>
-
     <button class="read-more-button">Read more</button>
-  {% else %}
-    <!-- If 40 words or less, show full description directly -->
-    <div class="read-more-content">
-      {{ description }}
-    </div>
-  {% endif %}
+  </div>
+{% else %}
+  <div class="read-more-content">
+    {{ description }}
+  </div>
+{% endif %}
+                    
+                    </div
 </div>
 
 <style>
