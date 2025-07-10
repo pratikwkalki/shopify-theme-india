@@ -47,25 +47,67 @@
 //     });
 
 
-   document.addEventListener('DOMContentLoaded', function () {
-    const readMoreBtn = document.querySelector('.read-more-button.read-more');
-    const readLessBtn = document.querySelector('.read-more-button.read-less');
-    const preview = document.querySelector('.read-more-content.preview');
-    const full = document.querySelector('.read-more-content.full');
+  document.addEventListener('DOMContentLoaded', function () {
+    const wrapper = document.querySelector('.read-more-wrapper');
+    const preview = wrapper.querySelector('.read-more-content.preview');
+    const full = wrapper.querySelector('.read-more-content.full');
+    const readMoreBtn = wrapper.querySelector('.read-more-button.read-more');
+    const readLessBtn = wrapper.querySelector('.read-more-button.read-less');
 
-    if (readMoreBtn && readLessBtn && preview && full) {
-      readMoreBtn.addEventListener('click', function () {
-        preview.classList.add('hidden');
-        full.classList.remove('hidden');
-        readMoreBtn.classList.add('hidden');
-        readLessBtn.classList.remove('hidden');
-      });
+    // Limit preview to 40 HTML-formatted words
+    const fullHTML = preview.innerHTML;
+    const div = document.createElement('div');
+    div.innerHTML = fullHTML;
 
-      readLessBtn.addEventListener('click', function () {
-        full.classList.add('hidden');
-        preview.classList.remove('hidden');
-        readLessBtn.classList.add('hidden');
-        readMoreBtn.classList.remove('hidden');
-      });
+    let wordCount = 0;
+    const truncated = document.createElement('div');
+
+    function cloneWithLimit(node) {
+      if (wordCount >= 40) return null;
+
+      if (node.nodeType === Node.TEXT_NODE) {
+        const words = node.textContent.trim().split(/\s+/);
+        if (words.length === 0) return null;
+
+        const take = Math.min(40 - wordCount, words.length);
+        wordCount += take;
+
+        return document.createTextNode(words.slice(0, take).join(' ') + (wordCount >= 40 ? '...' : ''));
+      }
+
+      if (node.nodeType === Node.ELEMENT_NODE) {
+        const clone = node.cloneNode(false);
+        for (const child of node.childNodes) {
+          const limited = cloneWithLimit(child);
+          if (limited) clone.appendChild(limited);
+          if (wordCount >= 40) break;
+        }
+        return clone;
+      }
+
+      return null;
     }
+
+    for (const child of div.childNodes) {
+      const limited = cloneWithLimit(child);
+      if (limited) truncated.appendChild(limited);
+      if (wordCount >= 40) break;
+    }
+
+    preview.innerHTML = truncated.innerHTML;
+
+    // Button toggle behavior
+    readMoreBtn.addEventListener('click', function () {
+      preview.classList.add('hidden');
+      full.classList.remove('hidden');
+      readMoreBtn.classList.add('hidden');
+      readLessBtn.classList.remove('hidden');
+    });
+
+    readLessBtn.addEventListener('click', function () {
+      full.classList.add('hidden');
+      preview.classList.remove('hidden');
+      readLessBtn.classList.add('hidden');
+      readMoreBtn.classList.remove('hidden');
+    });
   });
