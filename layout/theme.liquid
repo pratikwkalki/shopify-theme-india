@@ -535,8 +535,8 @@
           <div class="raja-kumari-bg-box">
               <div class="page-width">
                 <div class="raja-kumari-main-bg" style="background-image: url('{{ "rajakumari-backimage-new.svg" | asset_url }}');">                  
-                 
-                  <audio id="bgAudio" src="{{ 'La_India_ReProdFull_Kulki.mp3' | file_url }}" autoplay loop style="display: none;"></audio>
+                 {% comment %}
+                   <audio id="bgAudio" src="{{ 'La_India_ReProdFull_Kulki.mp3' | file_url }}" autoplay loop style="display: none;"></audio>
                   <script>
                     document.addEventListener("DOMContentLoaded", function () {
                       const audio = document.getElementById("bgAudio");
@@ -552,6 +552,7 @@
                       });
                     });
                   </script>
+                  {% endcomment %}
                   {{ content_for_layout }}
                 </div>
               </div>
