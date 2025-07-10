@@ -535,24 +535,6 @@
           <div class="raja-kumari-bg-box">
               <div class="page-width">
                 <div class="raja-kumari-main-bg" style="background-image: url('{{ "rajakumari-backimage-new.svg" | asset_url }}');">                  
-                 {% comment %}
-                   <audio id="bgAudio" src="{{ 'La_India_ReProdFull_Kulki.mp3' | file_url }}" autoplay loop style="display: none;"></audio>
-                  <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                      const audio = document.getElementById("bgAudio");
-                  
-                      // Attempt to autoplay
-                      audio.play().catch(function (error) {
-                        // If autoplay is blocked, try to play after first user interaction
-                        document.addEventListener("click", function () {
-                          if (audio.paused) {
-                            audio.play();
-                          }
-                        }, { once: true });
-                      });
-                    });
-                  </script>
-                  {% endcomment %}
                   {{ content_for_layout }}
                 </div>
               </div>
