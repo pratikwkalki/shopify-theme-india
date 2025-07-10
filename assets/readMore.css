@@ -1,7 +1,7 @@
 .read-more-container {
       margin: 16px 0;
     }
-
+.read-more-container a{color: #c79d6f; text-decoration: none;}
     .read-more-content {
       overflow: hidden;
       transition: max-height 0.3s ease;
