@@ -198,9 +198,9 @@
     const readMoreBtn = wrapper.querySelector('.read-more-button.read-more');
     const readLessBtn = wrapper.querySelector('.read-more-button.read-less');
 
-    // Detect screen size: 20 for mobile, 40 for desktop
+    // Detect screen size: 10 for mobile, 40 for desktop
     const isMobile = window.innerWidth <= 768;
-    const wordLimit = isMobile ? 20 : 40;
+    const wordLimit = isMobile ? 10 : 40;
 
     // Clone full HTML and limit it to `wordLimit` words
     const fullHTML = preview.innerHTML;
