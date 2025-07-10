@@ -47,16 +47,25 @@
 //     });
 
 
- document.addEventListener('DOMContentLoaded', function () {
-    const button = document.querySelector('.read-more-button');
+   document.addEventListener('DOMContentLoaded', function () {
+    const readMoreBtn = document.querySelector('.read-more-button.read-more');
+    const readLessBtn = document.querySelector('.read-more-button.read-less');
     const preview = document.querySelector('.read-more-content.preview');
     const full = document.querySelector('.read-more-content.full');
 
-    if (button && preview && full) {
-      button.addEventListener('click', function () {
+    if (readMoreBtn && readLessBtn && preview && full) {
+      readMoreBtn.addEventListener('click', function () {
         preview.classList.add('hidden');
         full.classList.remove('hidden');
-        button.style.display = 'none';
+        readMoreBtn.classList.add('hidden');
+        readLessBtn.classList.remove('hidden');
+      });
+
+      readLessBtn.addEventListener('click', function () {
+        full.classList.add('hidden');
+        preview.classList.remove('hidden');
+        readLessBtn.classList.add('hidden');
+        readMoreBtn.classList.remove('hidden');
       });
     }
   });
