@@ -24,3 +24,27 @@
     .read-more-button.hidden {
       display: none;
     }
+
+
+  /* Hide full content and Read Less initially */
+  .read-more-content.full {
+    display: none;
+  }
+
+  .read-more-content.full.show {
+    display: block;
+  }
+
+  /* Hide whole block before JS is ready to prevent flicker */
+  .read-more-wrapper {
+    visibility: hidden;
+  }
+
+  body.js-ready .read-more-wrapper {
+    visibility: visible;
+  }
+
+  /* Optional: hide read less by default */
+  .read-more-button.read-less {
+    display: none;
+  }
