@@ -257,21 +257,22 @@
 {% assign description = collection.metafields.custom.collection_custom_title_description_new %}
 {% assign words = description | strip_html | split: ' ' %}
 
-{% if words.size > 40 %}
-  <div class="read-more-wrapper">
+<div class="read-more-wrapper">
+  {% if words.size > 40 %}
     <div class="read-more-content preview">
       {{ words | slice: 0, 40 | join: ' ' }}...
     </div>
     <div class="read-more-content full hidden">
       {{ description }}
     </div>
-    <button class="read-more-button">Read more</button>
-  </div>
-{% else %}
-  <div class="read-more-content">
-    {{ description }}
-  </div>
-{% endif %}
+    <button class="read-more-button read-more">Read more</button>
+    <button class="read-more-button read-less hidden">Read less</button>
+  {% else %}
+    <div class="read-more-content">
+      {{ description }}
+    </div>
+  {% endif %}
+</div>
                     
                     </div
 </div>
