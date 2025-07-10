@@ -259,10 +259,9 @@
 
 
                     {% assign description = collection.metafields.custom.collection_custom_title_description_new %}
-{% assign words = description | strip_html | split: ' ' %}
-{% assign truncated_text = words | slice: 0, 40 | join: ' ' %}
+  {% assign words = description | strip_html | split: ' ' %}
+  {% assign truncated_text = words | slice: 0, 40 | join: ' ' %}
 
-<div class="read-more-wrapper">
   {% if words.size > 40 %}
     <p class="read-more-content">
       {{ truncated_text }}...
