@@ -72,8 +72,8 @@
         "information_WiLKif": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/Most_loved.png",
-            "main_mobile_image": "shopify://shop_images/Most_loved.png",
+            "main_desktop_image": "shopify://shop_images/Most_loved-new.png",
+            "main_mobile_image": "shopify://shop_images/Most_loved-new.png",
             "title": "",
             "sub_head_text": "",
             "main_tags_detail_text": "",
