@@ -23,14 +23,3 @@
     .read-more-button.hidden {
       display: none;
     }
-.read-more-content.mobile {
-    display: none;
-  }
-@media (max-width: 768px) {
-    .read-more-content.desktop {
-      display: none;
-    }
-    .read-more-content.mobile {
-      display: block;
-    }
-  }
