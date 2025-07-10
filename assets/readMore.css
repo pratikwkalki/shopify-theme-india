@@ -25,9 +25,7 @@
       display: none;
     }
 
- .hidden {
-    display: none;
-  }
+ 
   /* Hide full content and Read Less initially */
   .read-more-content.full {
     display: none;
