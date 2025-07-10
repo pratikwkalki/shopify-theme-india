@@ -254,19 +254,29 @@
                       
                       {% endcomment %}
 
-                                    {% assign description = collection.metafields.custom.collection_custom_title_description_new %}
-                                    
-                                    <div class="read-more-wrapper">
-                                      <div class="read-more-content preview">
-                                        {{ description }}
-                                      </div>
-                                      <div class="read-more-content full hidden">
-                                        {{ description }}
-                                      </div>
-                                      <button class="read-more-button read-more">Read more</button>
-                                      <button class="read-more-button read-less hidden">Read less</button>
-                                    </div>
-                      </div>
+{% assign description = collection.metafields.custom.collection_custom_title_description_new %}
+
+<div class="read-more-wrapper">
+  <div class="read-more-content preview">
+    {{ description }}
+  </div>
+  <div class="read-more-content full hidden">
+    {{ description }}
+  </div>
+  <button class="read-more-button read-more">Read more</button>
+  <button class="read-more-button read-less hidden">Read less</button>
+</div>
+                    
+                    </div
+
+
+<style>
+ 
+</style>
+
+
+
+                    
                     </div>
                     
                   {% endif %}
