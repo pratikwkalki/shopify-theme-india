@@ -47,22 +47,16 @@
 //     });
 
 
-document.addEventListener('DOMContentLoaded', function () {
+ document.addEventListener('DOMContentLoaded', function () {
     const button = document.querySelector('.read-more-button');
     const truncated = document.querySelector('.read-more-content');
     const full = document.querySelector('.full-description');
 
     if (button) {
       button.addEventListener('click', function () {
-        if (full.classList.contains('hidden')) {
-          truncated.classList.add('hidden');
-          full.classList.remove('hidden');
-          button.textContent = 'Read less';
-        } else {
-          full.classList.add('hidden');
-          truncated.classList.remove('hidden');
-          button.textContent = 'Read more';
-        }
+        truncated.classList.toggle('hidden');
+        full.classList.toggle('hidden');
+        button.textContent = full.classList.contains('hidden') ? 'Read more' : 'Read less';
       });
     }
   });
