@@ -236,7 +236,7 @@
                     
                     <div class="read-more-container">
                         {% assign description = collection.metafields.custom.collection_custom_title_description_new %}
-                        {% assign words = description | strip_html | split: ' ' %}
+                        {% assign words = description | split: ' ' %}
                     
                         {% if words.size > 40 %}
                           <p class="read-more-content" data-full-text="{{ description | escape }}">
