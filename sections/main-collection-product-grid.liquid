@@ -239,12 +239,12 @@
                         {% assign words = description | strip_html | split: ' ' %}
                     
                         {% if words.size > 40 %}
-                          <p class="read-more-content" data-full-text="{{ description | escape }}">
+                          <p class="read-more-content" data-full-text="{{ description }}">
                             {{ words | slice: 0, 40 | join: ' ' }}...
                           </p>
                           <button class="read-more-button">Read more</button>
                         {% else %}
-                          <p class="read-more-content">{{ description | escape }}</p>
+                          <p class="read-more-content">{{ description }}</p>
                           <button class="read-more-button hidden">Read more</button>
                         {% endif %}
                       </div>
