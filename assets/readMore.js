@@ -47,6 +47,7 @@
 //     });
 
 
+
   document.addEventListener('DOMContentLoaded', function () {
     const wrapper = document.querySelector('.read-more-wrapper');
     const preview = wrapper.querySelector('.read-more-content.preview');
@@ -54,7 +55,6 @@
     const readMoreBtn = wrapper.querySelector('.read-more-button.read-more');
     const readLessBtn = wrapper.querySelector('.read-more-button.read-less');
 
-    // Limit preview to 40 HTML-formatted words
     const fullHTML = preview.innerHTML;
     const div = document.createElement('div');
     div.innerHTML = fullHTML;
@@ -66,13 +66,15 @@
       if (wordCount >= 40) return null;
 
       if (node.nodeType === Node.TEXT_NODE) {
-        const words = node.textContent.trim().split(/\s+/);
+        const words = node.textContent.trim().split(/\s+/).filter(Boolean);
         if (words.length === 0) return null;
 
         const take = Math.min(40 - wordCount, words.length);
         wordCount += take;
 
-        return document.createTextNode(words.slice(0, take).join(' ') + (wordCount >= 40 ? '...' : ''));
+        const text = words.slice(0, take).join(' ');
+        // Add a space after the text if it's not the last word
+        return document.createTextNode(text + (wordCount >= 40 ? '...' : ' '));
       }
 
       if (node.nodeType === Node.ELEMENT_NODE) {
@@ -96,7 +98,7 @@
 
     preview.innerHTML = truncated.innerHTML;
 
-    // Button toggle behavior
+    // Toggle logic
     readMoreBtn.addEventListener('click', function () {
       preview.classList.add('hidden');
       full.classList.remove('hidden');
@@ -111,3 +113,4 @@
       readMoreBtn.classList.remove('hidden');
     });
   });
+
