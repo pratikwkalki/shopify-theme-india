@@ -1,114 +1,45 @@
-<div class=" options-dropdown-list">
-    {% if product.metafields.custom.additionalwork_extop !=blank %}
+{% assign has_options = false %}
+<div class="options-dropdown-list">
+  {% assign metafield_options = 
+    "additionalwork_extop|Additionalwork Cost,
+     embroidery_extop|Embroidery Cost,
+     select_your_height_including_heels|Select Your Height (Including heels),
+     length_waist_to_floor_including_heels|Length (Waist to Floor including heels),
+     sleeve_length|Sleeve Length,
+     blouse_length|Blouse Length,
+     shoulder_strap|Shoulder Strap" | split: "," 
+  %}
+
+  {% for option_def in metafield_options %}
+    {% assign parts = option_def | strip | split: "|" %}
+    {% assign metafield_key = parts[0] | strip %}
+    {% assign label = parts[1] | strip %}
+    {% assign values = product.metafields.custom[metafield_key] %}
+
+    {% if values != blank %}
+      {% assign has_options = true %}
       <div class="additional-options-wrapper">
-        <label for="additional-title">Neckline Length:</label>
+        <label>{{ label }}:</label>
         <div class="aditional-cost">
-          <select id="main_aditional">
+          <select class="extra-cost-select" data-cost-name="{{ label }}">
             <option value="" selected disabled hidden>Please Select</option>
-            {% for additional in product.metafields.custom.additionalwork_extop.value %}
-              {% assign split_additional = additional | split: ":" %}
-              <option value="{{ split_additional[1] | strip | remove: "₹" }}" data-aditionals="{{ split_additional[1] | strip | remove: "₹"  }}">{{ split_additional[0] | strip }} : {{ split_additional[1] | strip }}</option>
+            {% for entry in values.value %}
+              {% assign split_entry = entry | split: ":" %}
+              {% assign option_label = split_entry[0] | strip %}
+              {% assign option_value = split_entry[1] | strip | remove: "₹" | default: option_label %}
+              <option value="{{ option_value }}">
+                {{ option_label }}{% if option_value != option_label %} : ₹{{ option_value }}{% endif %}
+              </option>
             {% endfor %}
           </select>
+          <input type="hidden" class="extra-cost-input" data-cost-name="{{ label }}">
         </div>
       </div>
     {% endif %}
-  {% if product.metafields.custom.embroidery_extop !=blank %}
-    <div class="additional-options-wrapper">
-      <label for="embroidery-title">Cover Slit:</label>
-      <div class="embroidery-cost aditional-cost">
-        <select id="main_embroidery">
-          <option value="" selected disabled hidden>Please Select</option>
-          {% for embroidery in product.metafields.custom.embroidery_extop.value %}
-            {% assign split_embroidery = embroidery | split: ":" %}
-            <option value="{{ split_embroidery[1] | strip | remove: "₹" }}" data-embroidery="{{ split_embroidery[1] | strip | remove: "₹" }}"> {{ split_embroidery[0] | strip }} : {{ split_embroidery[1] | strip }}</option>
-          {% endfor %}
-        </select>
-      </div>
-    </div>
-  {% endif %}
-  {% if product.metafields.custom.shoulder_strap !=blank %}
-    <div class="additional-options-wrapper">
-      <label for="shoulder-title">Shoulder Strap:</label>
-      <div class="embroidery-cost aditional-cost">
-        <select id="main_shoulder">
-          <option value="" selected disabled hidden>Please Select</option>
-          {% for shoulder in product.metafields.custom.shoulder_strap.value %}
-            {% assign split_shoulder = shoulder | split: ":" %}
-            <option value="{{ split_shoulder[1] | strip | remove: "₹" }}" data-shoulder="{{ split_shoulder[1] | strip | remove: "₹" }}"> {{ split_shoulder[0] | strip }} : {{ split_shoulder[1] | strip }}</option>
-          {% endfor %}
-        </select>
-      </div>
-    </div>
-  {% endif %}
-  {% if product.metafields.custom.dd_test !=blank %}
-    <div class="additional-options-wrapper">
-      <label for="embroidery-title">Cover Cut Out:</label>
-      <div class="embroidery-cost aditional-cost">
-        <select id="main_embroidery">
-          <option value="" selected disabled hidden>Please Select</option>
-          {% for embroidery in product.metafields.custom.dd_test.value %}
-            {% assign split_embroidery = embroidery | split: ":" %}
-            <option value="{{ split_embroidery[1] | strip | remove: "₹" }}" data-embroidery="{{ split_embroidery[1] | strip | remove: "₹" }}"> {{ split_embroidery[0] | strip }} : {{ split_embroidery[1] | strip }}</option>
-          {% endfor %}
-        </select>
-      </div>
-    </div>
-  {% endif %}
-  {% if product.metafields.custom.blouse_length !=blank %}
-    <div class="additional-options-wrapper">
-      <label for="embroidery-title">Blouse Length:</label>
-      <div class="embroidery-cost aditional-cost">
-        <select id="main_embroidery">
-          <option value="" selected disabled hidden>Please Select</option>
-          {% for embroidery in product.metafields.custom.blouse_length.value %}
-            {% assign split_embroidery = embroidery | split: ":" %}
-            <option value="{{ split_embroidery[1] | strip | remove: "₹" }}" data-embroidery="{{ split_embroidery[1] | strip | remove: "₹" }}"> {{ split_embroidery[0] | strip }} : {{ split_embroidery[1] | strip }}</option>
-          {% endfor %}
-        </select>
-      </div>
-    </div>
-  {% endif %}
-  {% if product.metafields.custom.sleeve_length !=blank %}
-    <div class="additional-options-wrapper">
-      <label for="embroidery-title">Sleeve Length:</label>
-      <div class="embroidery-cost aditional-cost">
-        <select id="main_embroidery">
-          <option value="" selected disabled hidden>Please Select</option>
-          {% for embroidery in product.metafields.custom.sleeve_length.value %}
-            {% assign split_embroidery = embroidery | split: ":" %}
-            <option value="{{ split_embroidery[1] | strip | remove: "₹" }}" data-embroidery="{{ split_embroidery[1] | strip | remove: "₹" }}"> {{ split_embroidery[0] | strip }} : {{ split_embroidery[1] | strip }}</option>
-          {% endfor %}
-        </select>
-      </div>
-    </div>
-  {% endif %}
-  {% if product.metafields.custom.length_waist_to_floor_including_heels !=blank %}
-    <div class="additional-options-wrapper">
-      <label for="embroidery-title">Length (Waist to Floor including heels):</label>
-      <div class="embroidery-cost aditional-cost">
-        <select id="main_embroidery">
-          <option value="" selected disabled hidden>Please Select</option>
-          {% for embroidery in product.metafields.custom.length_waist_to_floor_including_heels.value %}
-            {% assign split_embroidery = embroidery | split: ":" %}
-            <option value="{{ split_embroidery[1] | strip | remove: "₹" }}" data-embroidery="{{ split_embroidery[1] | strip | remove: "₹" }}"> {{ split_embroidery[0] | strip }} : {{ split_embroidery[1] | strip }}</option>
-          {% endfor %}
-        </select>
-      </div>
-    </div>
-  {% endif %}
-  {% if product.metafields.custom.select_your_height_including_heels !=blank %}
-    <div class="additional-options-wrapper">
-      <label for="embroidery-title">Select Your Height (Including heels):</label>
-      <div class="embroidery-cost aditional-cost">
-        <select id="main_embroidery">
-          <option value="" selected disabled hidden>Please Select</option>
-          {% for embroidery in product.metafields.custom.select_your_height_including_heels.value %}
-            {% assign split_embroidery = embroidery | split: ":" %}
-            <option value="{{ split_embroidery[1] | strip | remove: "₹" }}" data-embroidery="{{ split_embroidery[1] | strip | remove: "₹" }}"> {{ split_embroidery[0] | strip }} : {{ split_embroidery[1] | strip }}</option>
-          {% endfor %}
-        </select>
-      </div>
-    </div>
-  {% endif %}
+  {% endfor %}
 </div>
+{% if has_options %}
+  <script src="{{ 'dynamic.js' | asset_url }}" defer></script>
+{% endif %}
+<!-- Hidden total input -->
+<input type="hidden" id="total_cost_input" data-cost-name="_extra_total">
