@@ -2015,7 +2015,10 @@ label[for="AddressProvinceNew"] {
 }
 
 .custom-select select {
-  display: none; /*hide original SELECT element: */
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  height: 100%;
 }
 .select-selected {
   background-color: #ffffff;
