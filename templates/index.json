@@ -202,8 +202,8 @@
         "information_7ncwjR": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/1-slider-banner-all-country-desktop-2800x1050-11-7-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/3-mobile-banner-all-country-500x707-11-7-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/1-slider-banner-all-country-desktop-2800x1050-11-7-25-1.jpg",
+            "main_mobile_full_image": "shopify://shop_images/3-mobile-banner-all-country-500x707-11-7-25-1.jpg",
             "alt_text": "Bridal World",
             "main_banner_redirect_link": "shopify://pages/kalki-x-raja-kumari"
           }
