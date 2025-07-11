@@ -147,7 +147,8 @@
                 image_size: '1100x',
                 autoplay: section.settings.enable_video_autoplay,
                 loop: section.settings.enable_video_looping,
-                controls: true
+                controls: true,
+                muted: true
             }}
           {%- endif -%}
         </template>
@@ -182,7 +183,9 @@
             | video_tag:
               image_size: '1100x',
               autoplay: section.settings.enable_video_autoplay,
-              loop: section.settings.enable_video_looping
+              loop: section.settings.enable_video_looping,
+          controls: true,
+                muted: true
           }}
         {%- endif -%}
       {% endif %}
