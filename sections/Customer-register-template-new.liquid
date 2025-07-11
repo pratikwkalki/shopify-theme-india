@@ -224,8 +224,8 @@
                     </label>
                 </div>
                 <div class="field gender custom-select">
-                      <select id="gender" name="customer[note][Gender]" >
-                        <option disabled selected>Gender*</option>
+                      <select id="gender" name="customer[note][Gender]" required>
+                        <option disabled selected value="">Gender*</option>
                         <option>Male</option>
                         <option>Female</option>
                         <option>Other</option>
@@ -238,7 +238,6 @@
                       id="RegisterForm-wedding_date"
                       class="required date_picker__input"
                       name="customer[note][Anniversary Date]"
-                      required
                     />
                     <label for="Anniversary">
                       Anniversary Date*
