@@ -1,7 +1,7 @@
 {{ 'raja-kumari-video-2.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
-
+{% comment %}
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -38,7 +38,7 @@
     calc(100vw - 10rem), 100vw
   {%- endif %}
 {%- endcapture -%}
-
+{% endcomment %}
 
 
 <div class="video2-section">
@@ -48,7 +48,7 @@
     <img class="small-star" src="https://cdn.shopify.com/s/files/1/0636/0134/4666/files/star-small.png?v=1750756250" width="" height="" alt="">
   </div>
 
-
+{% comment %}
   <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
     <div class="raja-kumari-video" style="{% if section.settings.background_image != blank %}background-image:url({{ section.settings.background_image | image_url}}){% endif %}" >
     <div {% if section.settings.full_width %} class="page-width" {% endif %} >
@@ -192,7 +192,18 @@
     </deferred-media>
        </div>
   </div>
-
+{% endcomment %}
+<video  width="400" autoplay="autoplay" loop="loop" controls="true" muted  playsinline
+                src="{{ section.settings.video | video_tag:
+                image_size: '1100x',
+                autoplay: section.settings.enable_video_autoplay,
+                loop: section.settings.enable_video_looping,
+                controls: true,
+                muted: true
+            }}" type="video/mp4"
+                allow="accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; picture-in-picture">
+                Your browser does not support the video tag.
+            </video>
 
 
   <div class="photonote-title-section-box">
