@@ -12,10 +12,10 @@
     "main": {
       "type": "Page-template-new",
       "custom_css": [
-        ".raja-kumari .breadcrumbs__item a,.raja-kumari .breadcrumbs__item span {color: #fff;}"
+        ".kalki-x-raja-kumari .breadcrumbs__item a,.kalki-x-raja-kumari .breadcrumbs__item span {color: #fff;}"
       ],
       "settings": {
-        "main_background_color": "#ffffff",
+        "main_background_color": "rgba(0,0,0,0)",
         "title": "",
         "HideTextBox": "HideTextBox"
       }
