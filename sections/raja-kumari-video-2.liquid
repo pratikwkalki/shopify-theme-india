@@ -194,13 +194,7 @@
   </div>
 {% endcomment %}
 <video  width="400" autoplay="autoplay" loop="loop" controls="true" muted  playsinline
-                src="{{ section.settings.video | video_tag:
-                image_size: '1100x',
-                autoplay: section.settings.enable_video_autoplay,
-                loop: section.settings.enable_video_looping,
-                controls: true,
-                muted: true
-            }}" type="video/mp4"
+                src="{{ section.settings.video}}" type="video/mp4"
                 allow="accelerometer; autoplay; modestbranding; encrypted-media; gyroscope; picture-in-picture">
                 Your browser does not support the video tag.
             </video>
