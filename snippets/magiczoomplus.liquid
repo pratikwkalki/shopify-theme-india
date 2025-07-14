@@ -196,7 +196,7 @@ a[data-slide-id].mz-thumb-selected img {
                  <a 
                    js-custom-video-slide
                    data-video-id="{{ product.metafields.custom.gumlet_video_url | split: '/' | last }}"
-                   data-video-url="{{ product.metafields.custom.gumlet_video_url }}?autoplay=true&loop=true&mute=false"
+                   data-video-url="{{ product.metafields.custom.gumlet_video_url }}?autoplay=true&loop=true&mute=false&test=5"
                    data-variants="{{ product_variants }}" 
                    class="js-no-transition {{ class }} video-slide"
                    data-slide-id="zoom" 
@@ -287,9 +287,9 @@ a[data-slide-id].mz-thumb-selected img {
 
 
         {%- if product.metafields.custom.gumlet_video_url != blank -%}
-          <div data-main-video data-processed="1" data-slide-num="2" class="MagicToolboxSlide" data-slide-id="video-1" data-video-url="{{ product.metafields.custom.gumlet_video_url }}">
+          <div data-main-video data-processed="1" data-slide-num="2" class="MagicToolboxSlide" data-slide-id="video-1" data-video-url="{{ product.metafields.custom.gumlet_video_url }}?autoplay=true&mute=1&test=1&test=4">
                 <div class="magic-video-container" style="padding-bottom:100%">
-                 <iframe autoplay playsinline data-original-src="{{ product.metafields.custom.gumlet_video_url }}" data-video-options="autoplay=true&loop=true" class="product-main-video" src="{{ product.metafields.custom.gumlet_video_url }}" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                 <iframe autoplay playsinline data-original-src="{{ product.metafields.custom.gumlet_video_url }}" data-video-options="autoplay=true&loop=true&test=3" class="product-main-video" src="{{ product.metafields.custom.gumlet_video_url }}" width="100%" height="auto" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
           </div>
           {%- endif -%}            
