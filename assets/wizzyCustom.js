@@ -293,7 +293,7 @@ window.onWizzyScriptLoaded = function () {
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.BEFORE_RENDER_RESULTS,
     function (payload) {
-      // console.log("BEFORE_RENDER_RESULTS", payload);
+      console.log("BEFORE_RENDER_RESULTS", payload);
       
       if (payload.api === "search" || payload.api === "filter") {
         var facets = payload.response.payload.facets;
