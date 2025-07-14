@@ -294,7 +294,10 @@ window.onWizzyScriptLoaded = function () {
     window.wizzyConfig.events.allowedEvents.BEFORE_RENDER_RESULTS,
     function (payload) {
       console.log("BEFORE_RENDER_RESULTS", payload);
-      
+      if(payload.response.payload.hasToRedirect === true)
+      {
+        window.location.href = payload.response.payload.redirectTo;        
+      }
       if (payload.api === "search" || payload.api === "filter") {
         var facets = payload.response.payload.facets;
         facets.forEach((facet) => {
