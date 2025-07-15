@@ -421,7 +421,7 @@
                                         {% assign estimated_delivery_value = property.last %}
                                       {% else %}
                                         {% assign hideClass = '' %}
-                                        {% if  property.first == '_Product category' or property.first == '_Compare at price for the product' or property.first == '_Discount on product' or property.first == '__shopify_send_gift_card_to_recipient' or property.first == '__shopify_offset' or property.first == '_Delivery days' %} 
+                                        {% if  property.first == '_Product category' or property.first == '_Compare at price for the product' or property.first == '_Discount on product' or property.first == '__shopify_send_gift_card_to_recipient' or property.first == '__shopify_offset' or property.first == '_Delivery days' or property.first == '_Delivery days mto' %} 
                                            {% assign hideClass= 'hide' %}
                                         {% endif %}
                                         <div class="product-option {{ hideClass }} {% if property.first == '_ref_id' or property.first == 'saving_price' %} hide {% endif %}" data-property-first="{{ property.first }}" data-property-last="{{ property.last }}">
