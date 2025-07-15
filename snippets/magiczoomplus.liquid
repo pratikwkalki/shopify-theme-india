@@ -194,10 +194,9 @@ a[data-slide-id].mz-thumb-selected img {
                {%- if forloop.index == 3 and product.metafields.custom.gumlet_video_url != blank -%}
                  {% assign gm_vide_preview_image = product.media[0].preview_image | image_url %}
                  <a 
-                   {{ product.metafields.custom.gumlet_video_url }}
                    js-custom-video-slide
                    data-video-id="{{ product.metafields.custom.gumlet_video_url | split: '/' | last }}"
-                   data-video-url="{{ product.metafields.custom.gumlet_video_url }}?autoplay=true&loop=true&mute=false"
+                   data-video-url="{{ product.metafields.custom.gumlet_video_url }}"
                    data-variants="{{ product_variants }}" 
                    class="js-no-transition {{ class }} video-slide"
                    data-slide-id="zoom" 
