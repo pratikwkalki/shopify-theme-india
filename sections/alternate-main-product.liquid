@@ -187,6 +187,10 @@
                 <input type="hidden" id="discount-on-product" name="items[0][properties[_Discount on product]]" value="{{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}% OFF">
                 <input type="hidden" id="compare-at-price" name="items[0][properties[_Compare at price for the product]]" value="{{ product.compare_at_price | money }}">
               {% endif %}
+              {%- assign mto =  product.metafields.magento.mto | handleize -%}
+              {%- if mto == 'yes' -%}
+                <input type="hidden" js-estimated-delivery-days-mto name="items[0][properties][_Delivery days mto]" value="{{ product.metafields.magento.fast_shipping }}">
+              {% endif %}
               {% render "discount-code" section: section %}
 
               {% if custom_measurement %}
