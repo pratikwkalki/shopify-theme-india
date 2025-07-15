@@ -263,21 +263,21 @@ a[data-slide-id].mz-thumb-selected img {
             {% assign gm_featured_image = mt_featured_image.preview_image  | image_url %}
             <a 
                href="{%- render 'imagekit', src: gm_featured_image width: 1000 %}"
-               {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{%- render 'imagekit', src: gm_featured_image width: 1000 %}"{% endif %}
+               {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{%- render 'imagekit', src: gm_preview_image %}&width=1000"{% endif %}
                class="js-no-transition MagicZoomPlus" id="zoom{{ product.id }}" 
                title="{{ mt_featured_image.alt | escape }}"
-                data-test="{%- render 'imagekit', src: gm_preview_image %}" 
-               data-image="{{ mt_featured_image.preview_image | image_url: crop: false, width: MagicToolboxThumbnailImageSize, height: MagicToolboxThumbnailImageSize }}" 
-               {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{{ mt_featured_image.preview_image | image_url: crop: false, width: MagicToolboxThumbnailImageSize2x, height: MagicToolboxThumbnailImageSize2x }}" {% endif %}
+                data-test="{%- render 'imagekit', src: gm_preview_image %}&width=1000" 
+               data-image="{%- render 'imagekit', src: gm_preview_image %}&width=1000" 
+               {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'imagekit', src: gm_preview_image %}&width=1000" {% endif %}
                >
-              <link rel="preload" as="image" href="{%- render 'imagekit', src: gm_featured_image width: 1000 %}" type="image/avif" fetchpriority="high">
+              <link rel="preload" as="image" href="{%- render 'imagekit', src: gm_featured_image %}&width=1000" type="image/avif" fetchpriority="high">
                     <img  
                         style="max-width:100%; aspect-ratio:auto {{ mt_featured_image.width }} / {{ mt_featured_image.height }}; height:auto;"
                         width="{{ mt_featured_image.width }}"
                         height="{{ mt_featured_image.height }}"
                         itemprop="image" 
                         class="image_first_slide" 
-                        src="{%- render 'imagekit', src: gm_featured_image width: 1000 %}" 
+                        src="{%- render 'imagekit', src: gm_featured_image %}&width=1000" 
                         alt="{{ mt_featured_image.alt | escape | default: product.title }}" />
             </a>
             
