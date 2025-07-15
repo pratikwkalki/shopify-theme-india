@@ -79,6 +79,11 @@ body {
   visibility: hidden;
 }
 
+._formContainer_1q1d2_30._grid_1q1d2_148._noImage_1q1d2_161{max-width: 800px;
+    background: antiquewhite;
+    padding: 30px;
+    outline: 1px solid #000;}
+
 .Footer_menus_columns_lists_menus_new ul,
 .header-localization .localization-form:only-child {
   margin: 0;
