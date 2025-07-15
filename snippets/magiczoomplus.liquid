@@ -196,7 +196,7 @@ a[data-slide-id].mz-thumb-selected img {
                  <a 
                    js-custom-video-slide
                    data-video-id="{{ product.metafields.custom.gumlet_video_url | split: '/' | last }}"
-                   data-video-url="{% if product.metafields.custom.gumlet_video_url contains 'gumlet' %}{{ product.metafields.custom.gumlet_video_url }}?autoplay=true&loop=true&mute=false{% else %}{{ product.metafields.custom.gumlet_video_url }}{% endif %}"
+                   data-video-url="{% if product.metafields.custom.gumlet_video_url.value contains 'gumlet' %}{{ product.metafields.custom.gumlet_video_url }}?autoplay=true&loop=true&mute=false{% else %}{{ product.metafields.custom.gumlet_video_url }}{% endif %}"
                    data-variants="{{ product_variants }}" 
                    class="js-no-transition {{ class }} video-slide"
                    data-slide-id="zoom" 
