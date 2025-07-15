@@ -266,6 +266,7 @@ a[data-slide-id].mz-thumb-selected img {
                {% if MagicToolboxRetinaZoomImage == 'Yes' %}data-zoom-image-2x="{%- render 'imagekit', src: gm_featured_image width: 1000 %}"{% endif %}
                class="js-no-transition MagicZoomPlus" id="zoom{{ product.id }}" 
                title="{{ mt_featured_image.alt | escape }}"
+                data-test="{%- render 'imagekit', src: gm_preview_image width: 1000 %}" 
                data-image="{{ mt_featured_image.preview_image | image_url: crop: false, width: MagicToolboxThumbnailImageSize, height: MagicToolboxThumbnailImageSize }}" 
                {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{{ mt_featured_image.preview_image | image_url: crop: false, width: MagicToolboxThumbnailImageSize2x, height: MagicToolboxThumbnailImageSize2x }}" {% endif %}
                >
