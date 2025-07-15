@@ -1821,6 +1821,9 @@ div[data-tooltip]:hover::after {
     visibility: visible;
     opacity: 1;
 }
+.bottom_text.return-text-none[style*="display: block;"]+.bottom_text.return-text-none[style*="display: block;"] {
+    display: none !important;
+}
 .product-custom .product_details .variant_main_new input.disabled + label {
     text-decoration: none;
     pointer-events: none;
