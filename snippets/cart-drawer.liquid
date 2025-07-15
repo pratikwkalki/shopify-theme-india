@@ -151,7 +151,7 @@
                           {% endif %}
                         </td>
 
-                        <td class="cart-item-details-wrap">
+                        <td class="cart-item-details-wrap" data-variant-id="{{ item.id }}" data-line-item-key="{{ item.key }}" data-line-item-index="{{ item.index }}" data-variant-id="{{ item.variant.id }}" data-inventory="{{ item.variant.inventory_quantity }}">
                           <div class="cart-item__details" role="cell" headers="CartDrawer-ColumnProduct" data-variant-id="{{ item.id }}" data-line-item-key="{{ item.key }}" data-line-item-index="{{ item.index }}" js-cart-item-details>
                             <div class="cart-item__details">
                               <div class="cart-item-header">
