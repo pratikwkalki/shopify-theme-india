@@ -1462,7 +1462,15 @@ a[data-zoom-id] img,
     border: 0;
     pointer-events: none;
 }
-
+.mz-zoom-window>img[alt*="custom video"],
+.mz-expand .mz-figure.mz-active.mz-inner-zoom.hide-gallery-image .mz-lens {
+  opacity: 0;
+  visibility: hidden;
+}
+.mz-expand .mz-figure.mz-active.mz-inner-zoom.hide-gallery-image {
+    opacity: 1;
+    background-color: transparent;
+}
 .MagicToolboxSlides .MagicToolboxSlide.hide-image a img {
   opacity: 0 !important;
 }
