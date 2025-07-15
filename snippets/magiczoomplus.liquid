@@ -267,7 +267,7 @@ a[data-slide-id].mz-thumb-selected img {
                class="js-no-transition MagicZoomPlus" id="zoom{{ product.id }}" 
                title="{{ mt_featured_image.alt | escape }}"
                data-image="{%- render 'imagekit', src: gm_featured_image -%}&width=1000" 
-               {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'imagekit', src: gm_featured_image -%}&width=1000" {% endif %}
+               {% if MagicToolboxRetinaMainImage == 'Yes' %}data-image-2x="{%- render 'imagekit', src: gm_featured_image -%}&width=2000" {% endif %}
                >
               <link rel="preload" as="image" href="{%- render 'imagekit', src: gm_featured_image -%}&width=2000" type="image/avif" fetchpriority="high">
                     <img  
