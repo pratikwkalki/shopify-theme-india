@@ -117,7 +117,7 @@
                           {% endif %}
                         </td>
     
-                        <td class="cart-item__details" data-variant-id="{{ item.id }}" data-line-item-key="{{ item.key }}" data-line-item-index="{{ item.index }}" js-cart-item-details >
+                        <td class="cart-item__details" data-variant-id="{{ item.id }}" data-line-item-key="{{ item.key }}" data-line-item-index="{{ item.index }}" js-cart-item-details data-variant-id="{{ item.variant.id }}" data-inventory="{{ item.variant.inventory_quantity }}">
                           <div class="cart-item__details-wrap">
                             <div class="">
                               {%- if settings.show_vendor -%}
