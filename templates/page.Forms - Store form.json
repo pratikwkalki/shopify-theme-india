@@ -48,7 +48,7 @@
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
-        "custom_liquid": "<script>\n  const interval = setInterval(() => {\n    const formElement = document.querySelector('._formContainer_1q1d2_30');\n    \n    if (formElement) {\n      // Apply styles directly\n      formElement.style.backgroundColor = \"#f5f5f5\"; // Example CSS\n      formElement.style.padding = \"20px\";\n      \n      // Or add a custom class\n      formElement.classList.add(\"custom-form-style\");\n\n      clearInterval(interval); // Stop checking once found\n    }\n  }, 300); // Checks every 300ms\n</script>",
+        "custom_liquid": "<script>\n  const interval = setInterval(() => {\n    const formElement = document.querySelector('._formContainer_1q1d2_30');\n    \n    if (formElement) {\n      // Apply styles directly\n      formElement.style.backgroundColor = \"#f5f5f5\"; // Example CSS\n      formElement.style.padding = \"20px\";\n      \n      // Or add a custom class\n      formElement.classList.add(\"custom-form-style\");\n\n      clearInterval(interval); // Stop checking once found\n    }\n  }, 3000); // Checks every 300ms\n</script>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 0
