@@ -11,6 +11,7 @@
   "sections": {
     "5964fcf5-b427-4a5a-a189-5517ec36d2c2": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
