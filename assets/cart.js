@@ -343,32 +343,57 @@ if (!customElements.get('cart-note')) {
 function addBusinessDaysCart(originalDate, numDaysToAdd) {
   const Sunday = 0;
   let daysRemaining = numDaysToAdd;
-
   const newDate = originalDate.clone();
+
   while (daysRemaining > 0) {
     newDate.add(1, 'days');
     if (newDate.day() !== Sunday) {
       daysRemaining--;
     }
   }
+
   return newDate;
 }
 
-function updateCartEstimatedDeliverySequentially(items, index = 0) {
+function updateCartEstimatedDeliverySequentially(items, index = 0, deliveryUpdated = false) {
   if (index >= items.length) {
+    if (deliveryUpdated) {
+      window.location.reload(); // Refresh cart if any updates happened
+    }
     return Promise.resolve();
   }
 
   const item = items[index];
-  const deliveryDays = parseInt(item.properties["_Delivery days"]);
 
+  // Get inventory from DOM
+  const itemRows = document.querySelectorAll(`[data-line-item-key="${item.key}"]`);
+  const itemRow = [...itemRows].find(el => el.dataset.inventory !== undefined);
+  const rawInventory = itemRow?.dataset?.inventory ?? "0";
+  const inventoryQty = parseInt(rawInventory || "0", 10);
+
+  // Choose delivery days based on inventory
+  let deliveryDays;
+  if (inventoryQty !== null && inventoryQty <= 0) {
+    deliveryDays = parseInt(item.properties["_Delivery days mto"]);
+  } else {
+    deliveryDays = parseInt(item.properties["_Delivery days"]);
+  }
+  
   if (isNaN(deliveryDays)) {
-    return updateCartEstimatedDeliverySequentially(items, index + 1);
+    return updateCartEstimatedDeliverySequentially(items, index + 1, deliveryUpdated);
   }
 
   const originalDate = moment();
-  const testDate = originalDate.clone().add(10, 'days');
+  const testDate = originalDate.clone().add(4, 'days');
   const newEstimatedDelivery = addBusinessDaysCart(originalDate, deliveryDays).format("dddd, DD MMM YYYY");
+
+  // Only update if value actually changed
+  const currentEstimate = (item.properties["Estimated delivery"] || "").trim().toLowerCase();
+  const calculatedEstimate = newEstimatedDelivery.trim().toLowerCase();
+  
+  if (currentEstimate === calculatedEstimate) {
+    return updateCartEstimatedDeliverySequentially(items, index + 1, deliveryUpdated);
+  }
   const updatedProperties = {
     ...item.properties,
     "Estimated delivery": newEstimatedDelivery
@@ -376,37 +401,37 @@ function updateCartEstimatedDeliverySequentially(items, index = 0) {
 
   return fetch(`/cart/change.js?timestamp=${new Date().getTime()}`, {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       id: item.key,
       properties: updatedProperties
     })
   })
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`Response status: ${response.status}`);
-    }
-
-    return updateCartEstimatedDeliverySequentially(items, index + 1);
-  })
-  .catch(error => {
-    console.error("Error updating cart:", error);
-  });
+    .then(response => {
+      if (!response.ok) throw new Error(`Error ${response.status}`);
+      return response.json();
+    })
+    .then(() => {
+      // Re-fetch updated cart to get fresh keys
+      return fetch(`/cart.js?timestamp=${new Date().getTime()}`)
+        .then(res => res.json())
+        .then(refetchedCart => {
+          return updateCartEstimatedDeliverySequentially(refetchedCart.items, index + 1, true); // 🔁 Mark as updated
+        });
+    })
+    .catch(error => {
+      console.error("Error updating cart:", error);
+      return updateCartEstimatedDeliverySequentially(items, index + 1, deliveryUpdated); // Continue with next
+    });
 }
 
 function updateCartEstimatedDelivery() {
   fetch(`/cart.js?timestamp=${new Date().getTime()}`)
-    .then(response => response.json())
-    .then(cart => {
-      return updateCartEstimatedDeliverySequentially(cart.items);
-    })
-    .catch(error => {
-      console.error("Error fetching cart:", error);
-    });
+    .then(res => res.json())
+    .then(cart => updateCartEstimatedDeliverySequentially(cart.items))
+    .catch(err => console.error("Error fetching cart:", err));
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  setTimeout(updateCartEstimatedDelivery, 500);
-});
+// 🔁 Call once on page load
+updateCartEstimatedDelivery();
+
