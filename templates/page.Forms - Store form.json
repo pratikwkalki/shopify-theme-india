@@ -43,21 +43,10 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "custom_liquid_jgnLdJ": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<script>\n  const interval = setInterval(() => {\n    const formElement = document.querySelector('#form-container-ref');\n    \n    if (formElement) {\n      // Or add a custom class\n      formElement.classList.add(\"custom-form-style\");\n\n      clearInterval(interval); // Stop checking once found\n    }\n  }, 3000); // Checks every 300ms\n</script>",
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
     "5964fcf5-b427-4a5a-a189-5517ec36d2c2",
-    "forms",
-    "custom_liquid_jgnLdJ"
+    "forms"
   ]
 }
