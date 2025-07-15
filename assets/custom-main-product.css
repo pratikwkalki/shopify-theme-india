@@ -2237,6 +2237,7 @@ div.ymq-option-title {
     inset: 0 !important;
     transform: none !important;
     margin: auto !important;
+    pointer-events: none;
 }
 .customer-loggedin #appikon-bis-inline-form #email-address {
     margin: 0;
