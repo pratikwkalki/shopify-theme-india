@@ -22,21 +22,21 @@
                                   {%- if rows.visit_our_store_section_image.value != blank or rows.title.value != blank or rows.visit_our_store_detail.value != blank-%}
                                     {%- if rows.visit_our_store_section_image.value != blank -%}
                                         {%- if rows.visit_our_store_section_image.value.sources[1].url contains '.mp4' or rows.visit_our_store_section_image.value.sources[1].url contains '.MP4' -%}
-                                                 {% assign visit_our_store_section_video = rows.visit_our_store_section_image.value.sources[1].url %}
+                                                
                                                   <video
                                                     id="Mp4Video-{{ forloop.index0 }}-inner"
                                                     class="video-div"
                                                     data-type="mp4"
-                                                    src="{%- render 'imagekit', src: visit_our_store_section_video %}"
+                                                    src="{{ rows.visit_our_store_section_image.value.sources[1].url }}"
                                                     loop muted playsinline autoplay>
                                                   </video>
                                                 
                                               {%- else -%}
                                                 {% assign visit_our_store_section_image = rows.visit_our_store_section_image.value  | image_url %}
                                                 <picture>
-                                                  <source srcset="{%- render 'imagekit', src: visit_our_store_section_image width: 170 %}" media="(max-width: 380px)" />
-                                                  <source srcset="{%- render 'imagekit', src: visit_our_store_section_image width: 230 %}" media="(max-width: 500px)" />
-                                                  <img class="Hover_image_new" src="{%- render 'imagekit', src: visit_our_store_section_image width: 360 %}" alt="KALKI {{ rows.title.value }}" loading="lazy" width="345" height="365" />
+                                                  <source srcset="{%- render 'gumlet', src: visit_our_store_section_image w: 170 %}" media="(max-width: 380px)" />
+                                                  <source srcset="{%- render 'gumlet', src: visit_our_store_section_image w: 230 %}" media="(max-width: 500px)" />
+                                                  <img class="Hover_image_new" src="{%- render 'gumlet', src: visit_our_store_section_image w: 360 %}" alt="KALKI {{ rows.title.value }}" loading="lazy" width="345" height="365" />
                                                 </picture>
                                               {%- endif -%}
                                       {%- endif -%}
