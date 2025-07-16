@@ -34,9 +34,9 @@
                                 {%- if block.settings.main_desktop_mp4_video != blank -%}
                                   <div class="Page_collection_detail_columns_innerloop_innerboxs_videoimage_new">
                                     {% assign main_desktop_mp4_video_image = block.settings.main_desktop_mp4_video.preview_image | image_url %}
-                                    <video test playsinline="playsinline" autoplay="autoplay" loop="loop" class="desktop_image_new" muted="muted" preload="metadata" poster="{%- render 'imagekit', src: main_desktop_mp4_video_image width: 380 %}">
-                                      <source src="{%- render 'imagekit', src: section.settings.main_mp4_video.sources[1].url %}" type="video/mp4">
-                                      <img src="{%- render 'imagekit', src: main_desktop_mp4_video_image width: 380 %}" loading="lazy">
+                                    <video test playsinline="playsinline" autoplay="autoplay" loop="loop" class="desktop_image_new" muted="muted" preload="metadata" poster="{%- render 'gumlet', src: main_desktop_mp4_video_image w: 380 %}">
+                                      <source src="{%- render 'gumlet', src: block.settings.main_desktop_mp4_video.sources[1].url %}" type="video/mp4">
+                                      <img src="{%- render 'gumlet', src: main_desktop_mp4_video_image w: 380 %}" loading="lazy">
                                     </video>
                                   </div>
                                 {% else %}  
@@ -45,11 +45,11 @@
                                       {% assign main_desktop_image = block.settings.main_desktop_full_image | image_url %}
                                       {% assign main_mobile_image = block.settings.main_mobile_full_image | image_url %}
                                       <picture>
-                                        <source srcset="{%- render 'imagekit', src: main_mobile_image width: 380 %}" media="(max-width: 380px)" type="image/avif" />
-                                        <source srcset="{%- render 'imagekit', src: main_mobile_image width: 412 %}" media="(max-width: 412px)" type="image/avif" />
-                                        <source srcset="{%- render 'imagekit', src: main_mobile_image width: 500 %}" media="(max-width: 500px)" type="image/avif" />
-                                        <source srcset="{%- render 'imagekit', src: main_mobile_image width: 750 %}" media="(max-width: 748px)" type="image/avif" />
-                                        <img src="{%- render 'imagekit', src: main_desktop_image width: 400 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="380" height="675" />
+                                        <source srcset="{%- render 'gumlet', src: main_mobile_image w: 380 %}" media="(max-width: 380px)" type="image/avif" />
+                                        <source srcset="{%- render 'gumlet', src: main_mobile_image w: 412 %}" media="(max-width: 412px)" type="image/avif" />
+                                        <source srcset="{%- render 'gumlet', src: main_mobile_image w: 500 %}" media="(max-width: 500px)" type="image/avif" />
+                                        <source srcset="{%- render 'gumlet', src: main_mobile_image w: 750 %}" media="(max-width: 748px)" type="image/avif" />
+                                        <img src="{%- render 'gumlet', src: main_desktop_image w: 400 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="380" height="675" />
                                       </picture>
                                     </div>
                                   {%- endif -%}
