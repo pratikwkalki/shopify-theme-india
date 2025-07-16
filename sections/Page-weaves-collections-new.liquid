@@ -51,11 +51,11 @@
                                           {% assign main_desktop_image = block.settings.main_desktop_image  | image_url %}
                                           {% assign main_mobile_image = block.settings.main_mobile_image  | image_url %}
                                           <picture>
-                                            <source srcset="{%- render 'imagekit', src: main_mobile_image width: 380 %}" media="(max-width: 380px)" />
-                                            <source srcset="{%- render 'imagekit', src: main_mobile_image width: 412 %}" media="(max-width: 412px)" />
-                                            <source srcset="{%- render 'imagekit', src: main_mobile_image width: 500 %}" media="(max-width: 500px)" />
-                                            <source srcset="{%- render 'imagekit', src: main_mobile_image width: 749 %}" media="(max-width: 749px)" />
-                                            <img src="{%- render 'imagekit', src: main_desktop_image width: 350 %}" alt="{{ block.settings.title }}" title="{{ block.settings.title }}" loading="lazy" width="346" height="461" />
+                                            <source srcset="{%- render 'gumlet', src: main_mobile_image w: 380 %}" media="(max-width: 380px)" />
+                                            <source srcset="{%- render 'gumlet', src: main_mobile_image w: 412 %}" media="(max-width: 412px)" />
+                                            <source srcset="{%- render 'gumlet', src: main_mobile_image w: 500 %}" media="(max-width: 500px)" />
+                                            <source srcset="{%- render 'gumlet', src: main_mobile_image w: 749 %}" media="(max-width: 749px)" />
+                                            <img src="{%- render 'gumlet', src: main_desktop_image w: 350 %}" alt="{{ block.settings.title }}" title="{{ block.settings.title }}" loading="lazy" width="346" height="461" />
                                           </picture>
                                         </div>
                                       {%- endif -%}
