@@ -23,7 +23,7 @@
                       <a href="{{ current_variant.url }}">
                         <div class="Page_collection_detail_product_innerloop_innerboxs_image_new">
                           {% assign main_featured_image = featured_image | image_url %}
-                          <img src="{%- render 'imagekit', src: main_featured_image width: 500 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="430" height="602" />
+                          <img src="{%- render 'gumlet', src: main_featured_image w: 500 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="430" height="602" />
                         </div>
                       </a>
                     </div>
