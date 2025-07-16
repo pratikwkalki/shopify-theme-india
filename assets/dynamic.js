@@ -50,22 +50,29 @@ document.addEventListener("DOMContentLoaded", function () {
         const selectedOption = this.options[this.selectedIndex];
         const selectedText = selectedOption.textContent.trim();
         const selectedValue = this.value.trim();
-
+    
         if (input) {
-          if (selectedText.includes("₹")) {
+          if (selectedValue === "") {
+            // User reselected "Please Select"
+            input.value = "";
+            input.setAttribute("data-amount", "0");
+            input.removeAttribute("name");
+          } else if (selectedText.includes("₹")) {
             const match = selectedText.match(/₹\s?(\d+)/);
             const amount = match ? match[1] : "0";
             input.setAttribute("data-amount", amount);
-            input.value = this.value
+            input.value = selectedText; // Set to full option text like `10" : ₹300`
+            input.setAttribute("name", `items[0][properties][${label}]`);
           } else {
             input.setAttribute("data-amount", "0");
             input.value = selectedText;
+            input.setAttribute("name", `items[0][properties][${label}]`);
           }
         }
-
+    
         updateTotalCost();
         setTimeout(updateTotalCost, 1100);
-
+    
         // Optional UI toggles
         document.querySelectorAll(".Shipping_orders.order_msg").forEach(el => el.style.display = "none");
         document.querySelectorAll(".Shipping_orders.additional_message").forEach(el => el.style.display = "block");
