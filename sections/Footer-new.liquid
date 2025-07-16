@@ -52,7 +52,7 @@
                                 {%- if block.settings.main_payment_icon_image_1 != blank -%}
                                   <div class="Footer_details_columns_lists_1_detail_infos_new Footer_common_infos_new">
                                     {% assign main_payment_icon_image = block.settings.main_payment_icon_image_1 | image_url %}
-                                    <img class="Payment_icon_image_new" src="{%- render 'imagekit', src: main_payment_icon_image width: 370 %}" alt="Payment icon" loading="lazy" width="168" height="72" />
+                                    <img class="Payment_icon_image_new" src="{%- render 'gumlet', src: main_payment_icon_image w: 370 %}" alt="Payment icon" loading="lazy" width="168" height="72" />
                                   </div>
                                 {%- endif -%}
                               </div>
@@ -75,7 +75,7 @@
                                             <a href="{{ block.settings.main_app_icon_url_1 }}" target="_blank">
                                           {%- endif -%}
                                             {% assign main_app_icon_image_1 = block.settings.main_app_icon_image_1 | image_url %}
-                                            <img class="Icon_app_image_new" src="{%- render 'imagekit', src: main_app_icon_image_1 width: 104 %}" alt="Google Play" loading="lazy" width="104" height="33" />
+                                            <img class="Icon_app_image_new" src="{%- render 'gumlet', src: main_app_icon_image_1 w: 104 %}" alt="Google Play" loading="lazy" width="104" height="33" />
                                           {%- if block.settings.main_app_icon_url_1 != blank -%}
                                             </a>
                                           {%- endif -%}
@@ -87,7 +87,7 @@
                                             <a href="{{ block.settings.main_app_icon_url_2 }}" target="_blank">
                                           {%- endif -%}
                                             {% assign main_app_icon_image_2 = block.settings.main_app_icon_image_2 | image_url %}
-                                            <img class="Icon_app_image_new" src="{%- render 'imagekit', src: main_app_icon_image_2 width: 104 %}" alt="App Store" loading="lazy" width="104" height="33" />
+                                            <img class="Icon_app_image_new" src="{%- render 'gumlet', src: main_app_icon_image_2 w: 104 %}" alt="App Store" loading="lazy" width="104" height="33" />
                                           {%- if block.settings.main_app_icon_url_2 != blank -%}
                                             </a>
                                           {%- endif -%}
@@ -206,7 +206,7 @@
                                   {%- if main_icon_image != blank -%}
                                     <div class="Footer_icons_with_texts_innerdetail_icons_new">
                                       {% assign main_icon_image_bottom = main_icon_image | image_url %}
-                                      <img class="Icon_image_new" src="{%- render 'imagekit', src: main_icon_image_bottom width: 25 %}" alt="" loading="lazy" width="25" height="25" />
+                                      <img class="Icon_image_new" src="{%- render 'gumlet', src: main_icon_image_bottom w: 25 %}" alt="" loading="lazy" width="25" height="25" />
                                     </div>
                                   {%- endif -%}
                                   {%- if main_information_text != blank -%}
