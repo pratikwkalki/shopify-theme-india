@@ -189,10 +189,10 @@
                   <div class="header__heading-logo-wrapper">
                     {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
                     {% assign main_logo = settings.logo  | image_url %}
-                    <img class="header__heading-logo" src="{%- render 'imagekit', src: main_logo width: 180 %}" alt="{{ logo_alt }}" width="180" height="55" preload="preload" />
+                    <img class="header__heading-logo" src="{%- render 'gumlet', src: main_logo w: 180 %}" alt="{{ logo_alt }}" width="180" height="55" preload="preload" />
                     {% if settings.white_logo %}
                       {% assign white_logo = settings.white_logo  | image_url %}
-                      <img class="header__heading-logo motion-reduce white_logo_new" src="{%- render 'imagekit', src: white_logo width: 180 %}" alt="{{ logo_alt }}" width="180" height="55" preload="preload" />
+                      <img class="header__heading-logo motion-reduce white_logo_new" src="{%- render 'gumlet', src: white_logo w: 180 %}" alt="{{ logo_alt }}" width="180" height="55" preload="preload" />
                     {% endif %}
                   </div>
                 {%- else -%}
