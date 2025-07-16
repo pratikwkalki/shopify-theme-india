@@ -1,60 +1,98 @@
+window.onWizzyScriptLoaded = function () {
+
 $("body").on("change", ".wizzy-range-for-grid", function (event) {
   handleRangeInputValueChange(event.target.value);
 });
 function handleRangeInputValueChange(value) {
-  let x = document.querySelector(".wizzy-search-results");
-  typeof x < "u" &&
-    (x.classList.contains("wizzy-2-products-in-a-row") &&
-      x.classList.remove("wizzy-2-products-in-a-row"),
-    x.classList.contains("wizzy-3-products-in-a-row") &&
-      x.classList.remove("wizzy-3-products-in-a-row"),
-    x.classList.contains("wizzy-4-products-in-a-row") &&
-      x.classList.remove("wizzy-4-products-in-a-row"),
-    sessionStorage.setItem("wizzy-2-products-in-a-row", !1),
-    sessionStorage.setItem("wizzy-3-products-in-a-row", !1),
-    sessionStorage.setItem("wizzy-4-products-in-a-row", !1),
-    x.classList.add("wizzy-" + value + "-products-in-a-row"),
-    sessionStorage.setItem("wizzy-" + value + "-products-in-a-row", !0));
-}
-function toHandleComingBackFromProductPage() {
-  let waitForInputToLoad = setInterval(function () {
-    let CBrangeInputForGrid = document.querySelector(".wizzy-range-for-grid");
-    CBrangeInputForGrid != null &&
-      CBrangeInputForGrid != null &&
-      (sessionStorage.getItem("wizzy-2-products-in-a-row") === "true"
-        ? ((CBrangeInputForGrid.value = 2), handleRangeInputValueChange(2))
-        : sessionStorage.getItem("wizzy-3-products-in-a-row") === "true"
-        ? ((CBrangeInputForGrid.value = 3), handleRangeInputValueChange(3))
-        : sessionStorage.getItem("wizzy-4-products-in-a-row") === "true" &&
-          ((CBrangeInputForGrid.value = 4), handleRangeInputValueChange(4)),
-      clearInterval(waitForInputToLoad));
-  }, 1e3);
-  setTimeout(function () {
-    clearInterval(waitForInputToLoad);
-  }, 1e4);
-}
+    let x = document.querySelector(".wizzy-search-results");
+    if (typeof x != "undefined") {
+      if (x.classList.contains("wizzy-2-products-in-a-row")) {
+        x.classList.remove("wizzy-2-products-in-a-row");
+      }
 
-window.onWizzyScriptLoaded = function () {
+      if (x.classList.contains("wizzy-4-products-in-a-row")) {
+        x.classList.remove("wizzy-4-products-in-a-row");
+      }
+
+      if (x.classList.contains("wizzy-6-products-in-a-row")) {
+        x.classList.remove("wizzy-6-products-in-a-row");
+      }
+
+      sessionStorage.setItem("wizzy-2-products-in-a-row", false);
+      sessionStorage.setItem("wizzy-4-products-in-a-row", false);
+      sessionStorage.setItem("wizzy-6-products-in-a-row", false);
+      x.classList.add("wizzy-" + value + "-products-in-a-row");
+      sessionStorage.setItem("wizzy-" + value + "-products-in-a-row", true);
+    }
+  }
+function toHandleComingBackFromProductPage() {
+    let waitForInputToLoad = setInterval(function () {
+      let CBrangeInputForGrid = document.querySelector(".wizzy-range-for-grid");
+      if (CBrangeInputForGrid != null && CBrangeInputForGrid != undefined) {
+        if (sessionStorage.getItem("wizzy-2-products-in-a-row") === "true") {
+          CBrangeInputForGrid.value = 2;
+          handleRangeInputValueChange(2);
+        } else if (
+          sessionStorage.getItem("wizzy-4-products-in-a-row") === "true"
+        ) {
+          CBrangeInputForGrid.value = 4;
+          handleRangeInputValueChange(4);
+        } else if (
+          sessionStorage.getItem("wizzy-6-products-in-a-row") === "true"
+        ) {
+          CBrangeInputForGrid.value = 6;
+          handleRangeInputValueChange(6);
+        }
+        clearInterval(waitForInputToLoad);
+      }
+    }, 1000);
+
+    setTimeout(function () {
+      clearInterval(waitForInputToLoad);
+    }, 10000);
+  }
+
+toHandleComingBackFromProductPage();
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.PRODUCTS_RESULTS_RENDERED,
     function (payload) {
-      $("html").removeClass("filtersOpend");
-      const rangeInputForGrid = document.querySelector(".wizzy-range-for-grid");
-      return (
-        sessionStorage.getItem("wizzy-1-products-in-a-row") === "true" &&
+        let rangeInputForGrid;
+      if (window.innerWidth <= 768) {
+        rangeInputForGrid = document.querySelectorAll(
+          ".wizzy-range-for-grid"
+        )[1];
+      } else {
+        rangeInputForGrid = document.querySelectorAll(
+          ".wizzy-range-for-grid"
+        )[0];
+      }
+      if (
+        sessionStorage.getItem("wizzy-2-products-in-a-row") === "true" &&
         rangeInputForGrid != null &&
-        typeof rangeInputForGrid < "u"
-          ? ((rangeInputForGrid.value = 1), handleRangeInputValueChange(1))
-          : sessionStorage.getItem("wizzy-2-products-in-a-row") === "true" &&
-            rangeInputForGrid != null &&
-            typeof rangeInputForGrid < "u"
-          ? ((rangeInputForGrid.value = 2), handleRangeInputValueChange(2))
-          : sessionStorage.getItem("wizzy-3-products-in-a-row") === "true" &&
-            rangeInputForGrid != null &&
-            typeof rangeInputForGrid < "u" &&
-            ((rangeInputForGrid.value = 3), handleRangeInputValueChange(3)),
-        payload
-      );
+        typeof rangeInputForGrid != "undefined"
+      ) {
+        // console.log("2 products in a row");
+        rangeInputForGrid.value = 2;
+        handleRangeInputValueChange(2);
+      } else if (
+        sessionStorage.getItem("wizzy-4-products-in-a-row") === "true" &&
+        rangeInputForGrid != null &&
+        typeof rangeInputForGrid != "undefined"
+      ) {
+        // console.log("3 products in a row");
+        rangeInputForGrid.value = 4;
+        handleRangeInputValueChange(4);
+      } else if (
+        sessionStorage.getItem("wizzy-6-products-in-a-row") === "true" &&
+        rangeInputForGrid != null &&
+        typeof rangeInputForGrid != "undefined"
+      ) {
+        // console.log("4 products in a row");
+        rangeInputForGrid.value = 6;
+        handleRangeInputValueChange(6);
+      }
+
+      return payload;
     }
   );
   window.wizzyConfig.events.registerEvent(
@@ -336,6 +374,27 @@ window.onWizzyScriptLoaded = function () {
       let video = document.querySelector(".Collection_meta_banner_new");
       if (video) video.style.setProperty("display", "none", "important");
 
+      if (window.innerWidth <= 768) {
+        if (body.classList.contains("template-collection")) {
+          body.classList.remove("template-collection");
+        }
+        if (body.classList.contains("template--luxe-collection-new")) {
+          body.classList.remove("template--luxe-collection-new");
+        }
+
+        if (body.classList.contains("collection_hide_announcement_bar_new")) {
+          body.classList.remove("collection_hide_announcement_bar_new");
+        }
+
+        if (body.classList.contains("collection_header_transparent_new")) {
+          body.classList.remove("collection_header_transparent_new");
+        }
+
+        if (body.classList.contains("collection_full_width_new")) {
+          body.classList.remove("collection_full_width_new");
+        }
+      }
+
       return data;
     }
   );
@@ -505,6 +564,33 @@ window.onWizzyScriptLoaded = function () {
       const priceElements = document.querySelectorAll('.price-item--regular');
       priceElements.forEach((el) => {
         el.textContent = el.textContent.replace(/\.00\b/, '');
+      });
+
+      document.addEventListener("click", function (e) {
+        if (
+          !e.target.closest(
+            ".filters-list-top-values-wrapper .wizzy-facet-body"
+          ) &&
+          !e.target.closest(".wizzy-search-filters-list-top .wizzy-facet-head")
+        ) {
+          const wrapper = document.querySelector(
+            ".filters-list-top-values-wrapper"
+          );
+          let facets = document.querySelectorAll(
+            ".wizzy-search-filters-list-top .wizzy-filters-facet-block"
+          );
+
+          facets.forEach((facet) => {
+            let head = facet.querySelector(".wizzy-facet-head");
+            if (head && head.classList.contains("active")) {
+              head.classList.remove("active");
+              if (wrapper) {
+                const childDivs = wrapper.querySelectorAll("div");
+                childDivs.forEach((div) => div.remove());
+              }
+            }
+          });
+        }
       });
 
       return data;
@@ -689,7 +775,7 @@ window.wizzyConfig.events.registerEvent(
       return data;
     }
   );
-};
+}
 
 
 let searchbtn = document.querySelector(".search_main_new");
