@@ -7,36 +7,61 @@
 <script>
   if (window.innerWidth > 767) {
     document.querySelector('[data-buy-now]').addEventListener('click', () => {
-      let addToCartForm = document.querySelector('form[action$="/cart/add"]');
+      const addToCartForm = document.querySelector('form[action$="/cart/add"]');
+      if (!addToCartForm) return;
+    
       if (addToCartForm.checkValidity()) {
-        let formData = new FormData(addToCartForm);
-        if(addToCartForm.getAttribute('upsell')) {
-          // for upsell product reference
-          let refTimeStamp = Date.now()
-          // in case of upsell also add reference to main product
-          formData.append('items[0][properties][_ref_id]', refTimeStamp)
-
-          let upsellProducts = addToCartForm.querySelectorAll('[js-upsell-product] input:checked')
-          console.log('upsellProducts', upsellProducts)
-          upsellProducts.forEach((elm, index_) => {
-            if(elm.dataset.productId) {
-              formData.append(`items[${index_ + 1}][id]`, Number(elm.dataset.productId))
-              formData.append(`items[${index_ + 1}][quantity]`, 1)
-              formData.append(`items[${index_ + 1}][properties][_ref_id]`, refTimeStamp)
+        const refTimeStamp = Date.now();
+        const upsellProducts = addToCartForm.querySelectorAll('[js-upsell-product] input:checked');
+    
+        if (upsellProducts.length > 0) {
+          // 🟢 Add upsell products first
+          const upsellFormData = new FormData();
+          upsellProducts.forEach((elm, index) => {
+            const id = elm.dataset.productId;
+            if (id) {
+              upsellFormData.append(`items[${index}][id]`, Number(id));
+              upsellFormData.append(`items[${index}][quantity]`, 1);
+              upsellFormData.append(`items[${index}][properties][_ref_id]`, refTimeStamp);
             }
+          });
+    
+          fetch(window.Shopify.routes.root + 'cart/add.js', {
+            method: 'POST',
+            body: upsellFormData
           })
+            .then((res) => res.json())
+            .then(() => {
+              // 🟢 Add main product after upsells
+              setTimeout(() => {
+                const mainFormData = new FormData(addToCartForm);
+                mainFormData.append('items[0][properties][_ref_id]', refTimeStamp);
+    
+                fetch(window.Shopify.routes.root + 'cart/add.js', {
+                  method: 'POST',
+                  body: mainFormData
+                })
+                  .then((res) => res.json())
+                  .then(() => {
+                    window.location.href = '/checkout';
+                  })
+                  .catch((e) => console.error('❌ Error adding main product:', e));
+              }, 300);
+            })
+            .catch((e) => console.error('❌ Error adding upsells:', e));
+        } else {
+          // 🔵 No upsells, add main product directly
+          const mainFormData = new FormData(addToCartForm);
+          fetch(window.Shopify.routes.root + 'cart/add.js', {
+            method: 'POST',
+            body: mainFormData
+          })
+            .then((res) => res.json())
+            .then(() => {
+              window.location.href = '/checkout';
+            })
+            .catch((e) => console.error('❌ Error adding main product:', e));
         }
-        fetch(window.Shopify.routes.root + 'cart/add.js', {
-          method: 'POST',
-          body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-          window.location.href = '/checkout';
-        })
-        .catch((error) => {
-          console.error('Error:', error);
-        });
       } else {
         addToCartForm.reportValidity();
       }
