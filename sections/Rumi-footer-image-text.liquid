@@ -40,7 +40,7 @@
                               {%- endcapture -%}
                             {%- endif -%}
                             {% assign main_desktop_image = block.settings.image | image_url %}
-                            <img src="{%- render 'imagekit', src: main_desktop_image width: 200 %}" alt="" loading="lazy" width="150" height="150" />
+                            <img src="{%- render 'gumlet', src: main_desktop_image w: 200 %}" alt="" loading="lazy" width="150" height="150" />
                           {%- else -%}
                             {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
                           {%- endif -%}      
