@@ -139,24 +139,24 @@ function mobileStickyVar() {
     }
     function BuyNowBtn() {
       let addToCartForm = document.querySelector('form[action$="/cart/add"]');
-      if(addToCartForm.getAttribute('upsell')) {
-        // for upsell product reference
-        let refTimeStamp = Date.now()
-        // in case of upsell also add reference to main product
-        formData.append('items[0][properties][_ref_id]', refTimeStamp)
-
-        let upsellProducts = addToCartForm.querySelectorAll('[js-upsell-product] input:checked')
-        console.log('upsellProducts', upsellProducts)
-        upsellProducts.forEach((elm, index_) => {
-          if(elm.dataset.productId) {
-            formData.append(`items[${index_ + 1}][id]`, Number(elm.dataset.productId))
-            formData.append(`items[${index_ + 1}][quantity]`, 1)
-            formData.append(`items[${index_ + 1}][properties][_ref_id]`, refTimeStamp)
-          }
-        })
-      }
       if (addToCartForm.checkValidity()) {
         let formData = new FormData(addToCartForm);
+        if(addToCartForm.getAttribute('upsell')) {
+          // for upsell product reference
+          let refTimeStamp = Date.now()
+          // in case of upsell also add reference to main product
+          formData.append('items[0][properties][_ref_id]', refTimeStamp)
+
+          let upsellProducts = addToCartForm.querySelectorAll('[js-upsell-product] input:checked')
+          console.log('upsellProducts', upsellProducts)
+          upsellProducts.forEach((elm, index_) => {
+            if(elm.dataset.productId) {
+              formData.append(`items[${index_ + 1}][id]`, Number(elm.dataset.productId))
+              formData.append(`items[${index_ + 1}][quantity]`, 1)
+              formData.append(`items[${index_ + 1}][properties][_ref_id]`, refTimeStamp)
+            }
+          })
+        }
         fetch(window.Shopify.routes.root + 'cart/add.js', {
           method: 'POST',
           body: formData
