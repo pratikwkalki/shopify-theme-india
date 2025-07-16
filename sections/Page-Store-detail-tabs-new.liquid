@@ -26,7 +26,7 @@
                       <div class="swiper-slide page_store_detail_tabs_image_new">
                         <div class="page_store_detail_tabs_image_inner_new">
                           {% assign photos_list_tabs_img = photos_list_tabs | image_url %}
-                          <img src="{%- render 'imagekit', src: photos_list_tabs_img width: 276 %}" loading="lazy" width="276" height="490" />
+                          <img src="{%- render 'gumlet', src: photos_list_tabs_img w: 276 %}" loading="lazy" width="276" height="490" />
                         </div>
                       </div>
                     {%- endfor -%}
