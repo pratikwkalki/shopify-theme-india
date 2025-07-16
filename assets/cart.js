@@ -374,9 +374,12 @@ function updateCartEstimatedDeliverySequentially(items, index = 0, deliveryUpdat
   // Choose delivery days based on inventory
   let deliveryDays;
   if (inventoryQty !== null && inventoryQty <= 0) {
-    deliveryDays = parseInt(item.properties["_Delivery days mto"]);
+    deliveryDays = parseInt(item.properties["_Delivery days mto"], 10);
+    if (isNaN(deliveryDays)) {
+      deliveryDays = parseInt(item.properties["_Delivery days"], 10);
+    }
   } else {
-    deliveryDays = parseInt(item.properties["_Delivery days"]);
+    deliveryDays = parseInt(item.properties["_Delivery days"], 10);
   }
   
   if (isNaN(deliveryDays)) {
