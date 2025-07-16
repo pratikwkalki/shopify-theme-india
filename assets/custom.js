@@ -130,6 +130,70 @@ document.addEventListener("DOMContentLoaded",function(){if(window.innerWidth>=76
 // this is for desktop menu below image text center
 function handleImgError(l){let t=l.closest("a");if(t){t.classList.add("hide");let e=t.nextElementSibling;e&&e.classList.add("title-left-align")}}
 
+// script for https://in.kalkifashion.com/pages/store-form
+document.addEventListener("DOMContentLoaded", () => {
+  const interval = setInterval(() => {
+    const embed = document.querySelector('#app-embed');
+    if (!embed?.shadowRoot) return;
 
+    const container = embed.closest('[data-forms-id]');
+    const formId = container?.getAttribute('data-forms-id');
+    const form = embed.shadowRoot.querySelector('form');
+    if (!form) return;
+
+    // 🔄 Capture form data on submit
+    form.addEventListener('submit', () => {
+      const values = {};
+      const excluded = ['label-MM', 'label-DD', 'label-YYYY'];
+
+      form.querySelectorAll('input, select, textarea').forEach(input => {
+        let key =
+          input.name ||
+          input.getAttribute('data-testid')?.replace('field-', '') ||
+          input.id ||
+          input.getAttribute('aria-labelledby') ||
+          'unnamed';
+
+        if (key.startsWith('custom#')) key = key.replace('custom#', '');
+        if (excluded.includes(key)) return;
+
+        const val = input.value?.trim();
+        if (key && val) values[key] = val;
+      });
+
+      // 🗓️ Handle grouped date fields
+      embed.shadowRoot.querySelectorAll('[data-testid="date-birthday"]').forEach(block => {
+        const label = block.querySelector('._birthdayText_rzr7e_15')?.textContent?.trim();
+        const inputs = block.querySelectorAll('input');
+        if (inputs.length === 3) {
+          const mm = inputs[0].value?.padStart(2, '0') || '';
+          const dd = inputs[1].value?.padStart(2, '0') || '';
+          const yyyy = inputs[2].value || '';
+          if (mm && dd && yyyy) values[label.toLowerCase().replace(/\s+/g, '_')] = `${mm}/${dd}/${yyyy}`;
+        }
+      });
+
+      window._shopifyFormData = values;
+    });
+
+    // 👀 Watch for Thank You message
+    const observer = new MutationObserver(mutations => {
+      mutations.forEach(({ addedNodes }) => {
+        addedNodes.forEach(node => {
+          if (node.nodeType === 1 && node.textContent?.toLowerCase().includes('thank you')) {
+            const data = window._shopifyFormData || {};
+            const firstName = data.first_name || data.firstname || '(unknown)';
+            webengage.track("offline_lead", data);
+            console.log("✅ Shopify Form Submitted with Data:", data);
+            observer.disconnect();
+          }
+        });
+      });
+    });
+
+    observer.observe(embed.shadowRoot, { childList: true, subtree: true });
+    clearInterval(interval);
+  }, 300);
+});
 
 
