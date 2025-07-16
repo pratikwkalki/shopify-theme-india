@@ -34,10 +34,10 @@
                                   {% assign main_desktop_image = section.settings.main_desktop_image_1  | image_url %}
                                   {% assign main_mobile_image = section.settings.main_mobile_image_1  | image_url %}
                                   <picture>
-                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 160 %}" media="(max-width: 380px)" />
-                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 220 %}" media="(max-width: 500px)" />
-                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 350 %}" media="(max-width: 749px)" />
-                                    <img src="{%- render 'imagekit', src: main_desktop_image width: 400 %}" alt="{{ section.settings.main_heading_text }}" loading="lazy" width="1438" height="388" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 160 %}" media="(max-width: 380px)" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 220 %}" media="(max-width: 500px)" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 350 %}" media="(max-width: 749px)" />
+                                    <img src="{%- render 'gumlet', src: main_desktop_image w: 400 %}" alt="{{ section.settings.main_heading_text }}" loading="lazy" width="1438" height="388" />
                                   </picture>
                                 </div>
                               {%- endif -%}
