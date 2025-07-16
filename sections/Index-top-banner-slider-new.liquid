@@ -29,25 +29,25 @@
                                 {% assign main_mobile_image = block.settings.main_mobile_full_image  | image_url %}
                                 {%- if forloop.first %}
                                   <picture>
-                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 380 %}" media="(max-width: 380px)" type="image/avif" />
-                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 412 %}" media="(max-width: 412px)" type="image/avif" />
-                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 500 %}" media="(max-width: 500px)" type="image/avif" />
-                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 750 %}" media="(max-width: 748px)" type="image/avif" />
-                                    <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1024 %}" media="(max-width: 1024px)" type="image/avif" />
-                                    <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1200 %}" media="(max-width: 1200px)" type="image/avif" />
-                                    <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1350 %}" media="(max-width: 1350px)" type="image/avif" />
-                                    <img class="image_first_slide" src="{%- render 'imagekit', src: main_desktop_image width: 1480 %}" alt="{{ block.settings.alt_text }}" loading="eager" width="1438" height="539" fetchpriority="high" decoding="async" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 380 %}" media="(max-width: 380px)" type="image/avif" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 412 %}" media="(max-width: 412px)" type="image/avif" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 500 %}" media="(max-width: 500px)" type="image/avif" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 750 %}" media="(max-width: 748px)" type="image/avif" />
+                                    <source srcset="{%- render 'gumlet', src: main_desktop_image w: 1024 %}" media="(max-width: 1024px)" type="image/avif" />
+                                    <source srcset="{%- render 'gumlet', src: main_desktop_image w: 1200 %}" media="(max-width: 1200px)" type="image/avif" />
+                                    <source srcset="{%- render 'gumlet', src: main_desktop_image w: 1350 %}" media="(max-width: 1350px)" type="image/avif" />
+                                    <img class="image_first_slide" src="{%- render 'gumlet', src: main_desktop_image w: 1480 %}" alt="{{ block.settings.alt_text }}" loading="eager" width="1438" height="539" fetchpriority="high" decoding="async" />
                                   </picture>
                                 {%- else -%}
                                   <picture>
-                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 380 %}" media="(max-width: 380px)" type="image/avif" />
-                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 412 %}" media="(max-width: 412px)" type="image/avif" />
-                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 500 %}" media="(max-width: 500px)" type="image/avif" />
-                                    <source srcset="{%- render 'imagekit', src: main_mobile_image width: 750 %}" media="(max-width: 748px)" type="image/avif" />
-                                    <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1024 %}" media="(max-width: 1024px)" type="image/avif" />
-                                    <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1200 %}" media="(max-width: 1200px)" type="image/avif" />
-                                    <source srcset="{%- render 'imagekit', src: main_desktop_image width: 1350 %}" media="(max-width: 1350px)" type="image/avif" />
-                                    <img src="{%- render 'imagekit', src: main_desktop_image width: 1480 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="1438" height="539" fetchpriority="low" decoding="async" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 380 %}" media="(max-width: 380px)" type="image/avif" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 412 %}" media="(max-width: 412px)" type="image/avif" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 500 %}" media="(max-width: 500px)" type="image/avif" />
+                                    <source srcset="{%- render 'gumlet', src: main_mobile_image w: 750 %}" media="(max-width: 748px)" type="image/avif" />
+                                    <source srcset="{%- render 'gumlet', src: main_desktop_image w: 1024 %}" media="(max-width: 1024px)" type="image/avif" />
+                                    <source srcset="{%- render 'gumlet', src: main_desktop_image w: 1200 %}" media="(max-width: 1200px)" type="image/avif" />
+                                    <source srcset="{%- render 'gumlet', src: main_desktop_image w: 1350 %}" media="(max-width: 1350px)" type="image/avif" />
+                                    <img src="{%- render 'gumlet', src: main_desktop_image w: 1480 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="1438" height="539" fetchpriority="low" decoding="async" />
                                   </picture>
                                 {%- endif -%}
                               </div>
@@ -73,7 +73,7 @@
   </div>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      new Swiper('.Index_top_banner_slider',{loop:!0,grabCursor:!1,spaceBetween:0,slidesPerViewidth:1,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflowidth:!0,threshold:10,mousewheel:{forceToAxis:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},pagination:{el:".swiper-pagination",clickable:"true"},autoplay:{delay:5000,disableOnInteraction:!1,}})
+      new Swiper('.Index_top_banner_slider',{loop:!0,grabCursor:!1,spaceBetween:0,slidesPerView:1,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},pagination:{el:".swiper-pagination",clickable:"true"},autoplay:{delay:5000,disableOnInteraction:!1,}})
     });
   </script>
 {%- endif -%}  
