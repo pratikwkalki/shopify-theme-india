@@ -1,0 +1,53 @@
+<script type="text/template" id="wizzy-common-select" wizzy-override>
+  <div class="wizzy-common-select-wrapper">
+      <div class="wizzy-common-select-container">
+          <div class="wizzy-common-select-overlay"></div>
+          <span class="wizzy-common-select-label desktop">
+              [[#label]]
+              [[&label]]
+              [[/label]]
+          </span>
+          <div class="wizzy-common-select-selector">
+              <span class="wizzy-common-select-label mobile">
+                [[#label]]
+                [[&label]]
+                [[/label]]
+              </span>
+              <span class="wizzy-common-select-selectedItem">
+              [[&selectedItem]]
+          </span>
+          </div>
+
+
+          <div class="wizzy-common-select-options mobile">
+            <div class="wizzy-common-select-options inner">
+              <div class="mobile-facets__header-inner">
+                <h3 class="mobile-facets__heading small-hide">Sort</h3>
+                <div class="wizzy-mobile-facets__summary mobile-facets__summary_sort_new">
+                  <div class="wizzy-mobile-facets__sort">
+
+                        [[#items]]
+                        <div class="wizzy-common-select-option [[#isSelected]]selected[[/isSelected]]" title="[[&label]]">
+                            [[&label]]
+                        </div>
+                        [[/items]]
+
+                  </div>
+                </div>
+                <button type="button" class="no-js-hidden button button--primary" onclick="this.closest('.mobile-facets__wrapper').querySelector('summary').click()">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="wizzy-common-select-options desktop">
+                [[#items]]
+                <div class="wizzy-common-select-option [[#isSelected]]selected[[/isSelected]]" title="[[&label]]">
+                    [[&label]]
+                </div>
+                [[/items]]
+          </div>
+
+      </div>
+  </div>
+</script>
