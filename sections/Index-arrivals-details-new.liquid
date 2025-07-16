@@ -23,8 +23,8 @@
                               {% assign main_desktop_video_image = section.settings.main_mp4_video_1.preview_image.src  | image_url %} 
                               {% assign main_desktop_url = section.settings.main_mp4_video_1.sources[1].url %} 
                               <template>
-                                  <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" preload="metadata" poster="{%- render 'imagekit', src: main_desktop_video_image width: 500 %}" alt="{{ section.settings.main_desktop_image_1.alt }}">
-                                    <source src="{%- render 'imagekit', src: main_desktop_url %}" type="video/mp4">
+                                  <video playsinline="playsinline" autoplay="autoplay" loop="loop" muted="muted" preload="metadata" poster="{%- render 'gumlet', src: main_desktop_video_image w: 500 %}" alt="{{ section.settings.main_desktop_image_1.alt }}">
+                                    <source src="{%- render 'gumlet', src: main_desktop_url %}" type="video/mp4">
                                   </video>
                                 </template>
                               </div>
@@ -63,10 +63,10 @@
                                         {% assign main_desktop_image_2 = section.settings.main_desktop_image_2  | image_url %}
                                         {% assign main_mobile_image_2 = section.settings.main_mobile_image_2  | image_url %}
                                         <picture>
-                                          <source srcset="{%- render 'imagekit', src: main_mobile_image_2 width: 160 %}" media="(max-width: 380px)" />
-                                          <source srcset="{%- render 'imagekit', src: main_mobile_image_2 width: 220 %}" media="(max-width: 500px)" />
-                                          <source srcset="{%- render 'imagekit', src: main_mobile_image_2 width: 350 %}" media="(max-width: 749px)" />
-                                          <img src="{%- render 'imagekit', src: main_desktop_image_2 width: 400 %}" alt="{{ section.settings.main_heading_text }}" loading="lazy" width="1438" height="388" />
+                                          <source srcset="{%- render 'gumlet', src: main_mobile_image_2 w: 160 %}" media="(max-width: 380px)" />
+                                          <source srcset="{%- render 'gumlet', src: main_mobile_image_2 w: 220 %}" media="(max-width: 500px)" />
+                                          <source srcset="{%- render 'gumlet', src: main_mobile_image_2 w: 350 %}" media="(max-width: 749px)" />
+                                          <img src="{%- render 'gumlet', src: main_desktop_image_2 w: 400 %}" alt="{{ section.settings.main_heading_text }}" loading="lazy" width="1438" height="388" />
                                         </picture>
                                       </div>
                                     {%- endif -%}
@@ -92,10 +92,10 @@
                                               {% assign main_desktop_image_3 = section.settings.main_desktop_image_3  | image_url %}
                                               {% assign main_mobile_image_3 = section.settings.main_mobile_image_3  | image_url %}
                                               <picture>
-                                                <source srcset="{%- render 'imagekit', src: main_mobile_image_3 width: 80 %}" media="(max-width: 380px)" />
-                                                <source srcset="{%- render 'imagekit', src: main_mobile_image_3 width: 110 %}" media="(max-width: 500px)" />
-                                                <source srcset="{%- render 'imagekit', src: main_mobile_image_3 width: 180 %}" media="(max-width: 749px)" />
-                                                <img src="{%- render 'imagekit', src: main_desktop_image_3 width: 200 %}" alt="{{ section.settings.main_heading_text }}" loading="lazy" width="1438" height="388" />
+                                                <source srcset="{%- render 'gumlet', src: main_mobile_image_3 w: 80 %}" media="(max-width: 380px)" />
+                                                <source srcset="{%- render 'gumlet', src: main_mobile_image_3 w: 110 %}" media="(max-width: 500px)" />
+                                                <source srcset="{%- render 'gumlet', src: main_mobile_image_3 w: 180 %}" media="(max-width: 749px)" />
+                                                <img src="{%- render 'gumlet', src: main_desktop_image_3 w: 200 %}" alt="{{ section.settings.main_heading_text }}" loading="lazy" width="1438" height="388" />
                                               </picture>
                                             </div>
                                           {%- endif -%}
@@ -118,10 +118,10 @@
                                               {% assign main_desktop_image_4 = section.settings.main_desktop_image_4  | image_url %}
                                               {% assign main_mobile_image_4 = section.settings.main_mobile_image_4  | image_url %}
                                               <picture>
-                                                <source srcset="{%- render 'imagekit', src: main_mobile_image_4 width: 80 %}" media="(max-width: 380px)" />
-                                                <source srcset="{%- render 'imagekit', src: main_mobile_image_4 width: 110 %}" media="(max-width: 500px)" />
-                                                <source srcset="{%- render 'imagekit', src: main_mobile_image_4 width: 180 %}" media="(max-width: 749px)" />
-                                                <img src="{%- render 'imagekit', src: main_desktop_image_4 width: 200 %}" alt="{{ section.settings.main_heading_text }}" loading="lazy" width="1438" height="388" />
+                                                <source srcset="{%- render 'gumlet', src: main_mobile_image_4 w: 80 %}" media="(max-width: 380px)" />
+                                                <source srcset="{%- render 'gumlet', src: main_mobile_image_4 w: 110 %}" media="(max-width: 500px)" />
+                                                <source srcset="{%- render 'gumlet', src: main_mobile_image_4 w: 180 %}" media="(max-width: 749px)" />
+                                                <img src="{%- render 'gumlet', src: main_desktop_image_4 w: 200 %}" alt="{{ section.settings.main_heading_text }}" loading="lazy" width="1438" height="388" />
                                               </picture>
                                             </div>
                                           {%- endif -%}
