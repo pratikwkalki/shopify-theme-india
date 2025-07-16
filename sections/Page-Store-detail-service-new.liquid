@@ -18,7 +18,7 @@
                       {%- if block.settings.main_icon_image != blank -%}
                         <div class="Page_store_detail_service_innerloop_innerboxs_icons_new">
                           {% assign main_icon_image = block.settings.main_icon_image | image_url %}
-                          <img src="{%- render 'imagekit', src: main_icon_image width: 50 %}" loading="lazy" width="50" height="50" />
+                          <img src="{%- render 'gumlet', src: main_icon_image w: 50 %}" loading="lazy" width="50" height="50" />
                         </div>
                       {%- endif -%}
                       {%- if block.settings.title != blank -%}
