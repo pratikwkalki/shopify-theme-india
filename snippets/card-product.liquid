@@ -87,11 +87,11 @@
                 {% if template contains 'bridal-collection-new' or template contains 'luxe-collection-new' %}
                   <img
                     srcset="
-                      {%- if card_product.featured_media.width >= 400 -%}{%- render 'imagekit', src: featured_media width: 610 %} 610w,{%- endif -%}
-                      {%- if card_product.featured_media.width >= 350 -%}{%- render 'imagekit', src: featured_media width: 350 %} 1066w,{%- endif -%}
-                      {%- render 'imagekit', src: featured_media width: 610 %} {{ card_product.featured_media.width }}w
+                      {%- if card_product.featured_media.width >= 400 -%}{%- render 'gumlet', src: featured_media w: 610 %} 610w,{%- endif -%}
+                      {%- if card_product.featured_media.width >= 350 -%}{%- render 'gumlet', src: featured_media w: 350 %} 1066w,{%- endif -%}
+                      {%- render 'gumlet', src: featured_media w: 610 %} {{ card_product.featured_media.width }}w
                     "
-                    src="{%- render 'imagekit', src: featured_media width: 610 %}"
+                    src="{%- render 'gumlet', src: featured_media w: 610 %}"
                     sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                     alt="{{ card_product.featured_media.alt | escape | default: card_product.title }}"
                     title="{{ card_product.featured_media.alt | escape | default: card_product.title }}"
@@ -107,12 +107,12 @@
                   {%- if card_product.media[1] != null and show_secondary_image -%}
                     <img
                       srcset="
-                        {%- if card_product.media[1].width >= 400 -%}{%- render 'imagekit', src: featured_media_hover width: 610 %} 610w,{%- endif -%}
-                        {%- if card_product.media[1].width >= 350 -%}{%- render 'imagekit', src: featured_media_hover width: 350 %} 1066w,{%- endif -%}
-                        {%- render 'imagekit', src: featured_media_hover width: 610 %} {{ card_product.media[1].width }}w
+                        {%- if card_product.media[1].width >= 400 -%}{%- render 'gumlet', src: featured_media_hover w: 610 %} 610w,{%- endif -%}
+                        {%- if card_product.media[1].width >= 350 -%}{%- render 'gumlet', src: featured_media_hover w: 350 %} 1066w,{%- endif -%}
+                        {%- render 'gumlet', src: featured_media_hover w: 610 %} {{ card_product.media[1].width }}w
                       "
                       {% assign old_img_url_hover =  %}
-                      src="{%- render 'imagekit', src: featured_media_hover width: 610 %}"
+                      src="{%- render 'gumlet', src: featured_media_hover w: 610 %}"
                       sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                       alt="{{ card_product.featured_media.alt | escape | default: card_product.title }}"
                       title="{{ card_product.featured_media.alt | escape | default: card_product.title }}"
@@ -125,11 +125,11 @@
                 {% else %}
                   <img
                     srcset="
-                      {%- if card_product.featured_media.width >= 400 -%}{%- render 'imagekit', src: featured_media width: 370 %} 610w,{%- endif -%}
-                      {%- if card_product.featured_media.width >= 350 -%}{%- render 'imagekit', src: featured_media width: 350 %} 1066w,{%- endif -%}
-                      {%- render 'imagekit', src: featured_media width: 370 %} {{ card_product.featured_media.width }}w
+                      {%- if card_product.featured_media.width >= 400 -%}{%- render 'gumlet', src: featured_media w: 370 %} 610w,{%- endif -%}
+                      {%- if card_product.featured_media.width >= 350 -%}{%- render 'gumlet', src: featured_media w: 350 %} 1066w,{%- endif -%}
+                      {%- render 'gumlet', src: featured_media w: 370 %} {{ card_product.featured_media.width }}w
                     "
-                    src="{%- render 'imagekit', src: featured_media width: 370 %}"
+                    src="{%- render 'gumlet', src: featured_media w: 370 %}"
                     sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                     alt="{{ card_product.featured_media.alt | escape | default: card_product.title }}"
                     title="{{ card_product.featured_media.alt | escape | default: card_product.title }}"
@@ -145,12 +145,12 @@
                   {%- if card_product.media[1] != null and show_secondary_image -%}
                     <img
                       srcset="
-                        {%- if card_product.media[1].width >= 400 -%}{%- render 'imagekit', src: featured_media_hover width: 370 %} 610w,{%- endif -%}
-                        {%- if card_product.media[1].width >= 350 -%}{%- render 'imagekit', src: featured_media_hover width: 350 %} 1066w,{%- endif -%}
-                        {%- render 'imagekit', src: featured_media_hover width: 370 %} {{ card_product.media[1].width }}w
+                        {%- if card_product.media[1].width >= 400 -%}{%- render 'gumlet', src: featured_media_hover w: 370 %} 610w,{%- endif -%}
+                        {%- if card_product.media[1].width >= 350 -%}{%- render 'gumlet', src: featured_media_hover w: 350 %} 1066w,{%- endif -%}
+                        {%- render 'gumlet', src: featured_media_hover w: 370 %} {{ card_product.media[1].width }}w
                       "
                       {% assign old_img_url_hover =  %}
-                      src="{%- render 'imagekit', src: featured_media_hover width: 370 %}"
+                      src="{%- render 'gumlet', src: featured_media_hover w: 370 %}"
                       sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                       alt="{{ card_product.featured_media.alt | escape | default: card_product.title }}"
                       title="{{ card_product.featured_media.alt | escape | default: card_product.title }}"
