@@ -200,9 +200,19 @@
     },
     "page_store_detail_visits_new_AgkF3m": {
       "type": "Page-Store-detail-visits-new",
+      "disabled": true,
       "settings": {
         "main_background_color": "#ffffff",
         "inner_background_color": "#f7f7f7"
+      }
+    },
+    "visit_our_store_bJQy9r": {
+      "type": "Visit-Our-Store",
+      "name": "Visit our Store new1",
+      "settings": {
+        "main_background_color": "#FFFFFF",
+        "main_heading_text": "Visit our Store",
+        "meta_object_handle_name_text": "index_visit_our_stores"
       }
     }
   },
@@ -217,6 +227,7 @@
     "page_store_google_reviews_new_nmDckY",
     "page_store_detail_texts_new_M63Hn3",
     "page_store_detail_objects_faqs_new_PfMVnz",
-    "page_store_detail_visits_new_AgkF3m"
+    "page_store_detail_visits_new_AgkF3m",
+    "visit_our_store_bJQy9r"
   ]
 }
