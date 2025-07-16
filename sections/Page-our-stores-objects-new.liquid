@@ -36,7 +36,7 @@
                               {%- else -%}
                                 <div class="Page_our_stores_objects_detail_innerleft_innerboxs_video_OR_image_new">
                                   {% assign thumbnail_video_or_image = rows.thumbnail_video_or_image.value | image_url %}
-                                  <img src="{%- render 'imagekit', src: thumbnail_video_or_image width: 500 %}" loading="lazy" alt="" width="400" height="228">
+                                  <img src="{%- render 'gumlet', src: thumbnail_video_or_image w: 500 %}" loading="lazy" alt="" width="400" height="228">
                                 </div>
                               {%- endif -%}
                             </div>
