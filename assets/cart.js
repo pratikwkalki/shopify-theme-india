@@ -433,5 +433,8 @@ function updateCartEstimatedDelivery() {
 }
 
 // 🔁 Call once on page load
-updateCartEstimatedDelivery();
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(updateCartEstimatedDelivery, 500);
+});
+
 
