@@ -33,12 +33,12 @@
                               <div class="Collection_object_banners_innerloop_innerbox_videoimage_new">
                                 {% assign video_or_image = columns.video_or_image.value  | image_url %}
                                 <picture>
-                                  <source srcset="{%- render 'imagekit', src: video_or_image width: 380 %}" media="(max-width: 380px)" />
-                                  <source srcset="{%- render 'imagekit', src: video_or_image width: 412 %}" media="(max-width: 412px)" />
-                                  <source srcset="{%- render 'imagekit', src: video_or_image width: 500 %}" media="(max-width: 500px)" />
-                                  <source srcset="{%- render 'imagekit', src: video_or_image width: 750 %}" media="(max-width: 748px)" />
-                                  <source srcset="{%- render 'imagekit', src: video_or_image width: 650 %}" media="(max-width: 1350px)" />
-                                  <img class='Hover_image_new' src="{%- render 'imagekit', src: video_or_image width: 709 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="709" height="342" />
+                                  <source srcset="{%- render 'gumlet', src: video_or_image w: 380 %}" media="(max-width: 380px)" />
+                                  <source srcset="{%- render 'gumlet', src: video_or_image w: 412 %}" media="(max-width: 412px)" />
+                                  <source srcset="{%- render 'gumlet', src: video_or_image w: 500 %}" media="(max-width: 500px)" />
+                                  <source srcset="{%- render 'gumlet', src: video_or_image w: 750 %}" media="(max-width: 748px)" />
+                                  <source srcset="{%- render 'gumlet', src: video_or_image w: 650 %}" media="(max-width: 1350px)" />
+                                  <img class='Hover_image_new' src="{%- render 'gumlet', src: video_or_image w: 709 %}" alt="{{ block.settings.alt_text }}" loading="lazy" width="709" height="342" />
                                 </picture>
                               </div>
                             {%- endif -%}  
