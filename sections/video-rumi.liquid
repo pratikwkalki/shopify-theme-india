@@ -169,9 +169,9 @@
           {%- endif -%}
         {%- else -%}
           {% assign main_desktop_mp4_video_image = section.settings.video.preview_image | image_url %}
-          <video playsinline="playsinline" {% if section.settings.enable_video_autoplay %}autoplay="autoplay"{% endif %} {% if section.settings.enable_video_looping %}loop="loop"{% endif %} muted="muted" preload="metadata" poster="{%- render 'imagekit', src: main_desktop_mp4_video_image width: 1400 %}">
-            <source src="{%- render 'imagekit', src: section.settings.video.sources[1].url %}" type="video/mp4">
-            <img src="{%- render 'imagekit', src: main_desktop_mp4_video_image width: 1400 %}" loading="lazy">
+          <video playsinline="playsinline" {% if section.settings.enable_video_autoplay %}autoplay="autoplay"{% endif %} {% if section.settings.enable_video_looping %}loop="loop"{% endif %} muted="muted" preload="metadata" poster="{%- render 'gumlet', src: main_desktop_mp4_video_image w: 1400 %}">
+            <source src="{%- render 'gumlet', src: section.settings.video.sources[1].url %}" type="video/mp4">
+            <img src="{%- render 'gumlet', src: main_desktop_mp4_video_image w: 1400 %}" loading="lazy">
           </video>
         {%- endif -%}
       {% endif %}
