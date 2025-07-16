@@ -23,7 +23,7 @@
         <label>{{ label }}:</label>
         <div class="aditional-cost">
           <select class="extra-cost-select" data-cost-name="{{ label }}">
-            <option value="" selected disabled hidden>Please Select</option>
+            <option value="" selected>Please Select</option>
             {% for entry in values.value %}
               {% assign split_entry = entry | split: ":" %}
               {% assign option_label = split_entry[0] | strip %}
