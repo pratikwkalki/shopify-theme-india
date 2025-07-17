@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             let appLinks = '';
 
             if (isMobileAndroid || isAndroidTablet) {
-                appLinks = '<a href="{{ section.settings.playstore_link }}" target="_blank">{{ section.settings.playstore_link_label }}{% if section.settings.playstore_image %}<img src="{{ section.settings.playstore_image | image_url}}" width="{{ section.settings.playstore_image.width }}" height="{{ section.settings.playstore_image.height }}" alt="{{ section.settings.playstore_image.alt }}">{% endif %}</a>';
+                appLinks = '<a href="{{ section.settings.playstore_link }}">{{ section.settings.playstore_link_label }}{% if section.settings.playstore_image %}<img src="{{ section.settings.playstore_image | image_url}}" width="{{ section.settings.playstore_image.width }}" height="{{ section.settings.playstore_image.height }}" alt="{{ section.settings.playstore_image.alt }}">{% endif %}</a>';
             } else if (isIpad || isIphoneOrIpod) {
                 appLinks = '<a href="{{ section.settings.appstore_link }}">{{ section.settings.appstore_link_label }}{% if section.settings.appstore_image %}<img src="{{ section.settings.appstore_image | image_url}}" width="{{ section.settings.appstore_image.width }}" height="{{ section.settings.appstore_image.height }}" alt="{{ section.settings.appstore_image.alt }}">{% endif %}</a>';
             }
