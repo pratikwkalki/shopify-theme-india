@@ -202,7 +202,7 @@ document.querySelectorAll('.product-custom .main-grid input[name="Size"]').forEa
           );
           if (matchingIndiaSizeVariant) {
             const normalized = normalizeVariantName(matchingIndiaSizeVariant.value);
-            const allowedIndiaSizes = ['xs', 's', 'm', 'l', 'xl', '2xl', 'xxl', 'xxxl'];
+            const allowedIndiaSizes = ['xs', 's', 'm', 'l', 'xl', '2xl', 'xxl', '3xl', 'xxxl'];
             if (allowedIndiaSizes.includes(normalized)) {
               parentElement.classList.add('selected');
             } else {
