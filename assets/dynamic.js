@@ -73,7 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
         updateTotalCost();
         setTimeout(updateTotalCost, 1100);
         document.querySelectorAll(".Shipping_orders.order_msg").forEach(el => el.style.display = "none");
-        document.querySelectorAll(".Shipping_orders.additional_message").forEach(el => el.style.display = "block");
         document.querySelectorAll(".metafield-rich_text_field.details_feilds").forEach(el => el.style.display = "none");
         document.querySelectorAll(".metafield-rich_text_field.additional").forEach(el => el.style.display = "block");
         document.querySelectorAll(".bottom_text.regular-text").forEach(el => el.style.display = "none");
