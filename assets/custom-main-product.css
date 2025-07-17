@@ -2648,7 +2648,14 @@ div[data-widget-style] div.stamped-container {
   color: #aa6437;
   padding-bottom: 16px;
 }
-
+.additional_size_massage_text {
+  margin: -10px 0 24px;
+  font-size: 13px;
+  line-height: normal;
+  border: .5px solid rgba(73, 71, 86, .3);
+  border-radius: 24px;
+  padding: 9px 12px 7px;
+}
 @media (min-width: 990px) and (max-width: 1424px) {
   .visitors_counter .shopper-view {
     font-size: 14px !important;
