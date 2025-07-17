@@ -181,19 +181,14 @@
                   <span class="value-with-size">{{ sizeOptions }}</span>
                 {%- endfor -%}
               </div>
-
-              
-              
-
-              
               {% unless  value contains 'Months' or value contains 'Years' %}                
                   <p class="size-detail__text">*units in inches</p>              
               {% endunless  %}
-            
             </div>
           {%- endif -%}
         {%- endfor -%}
       {%- endif -%}
+      {%- if active_variant.metafields.custom.extra_size_content != blank -%}<b class="hide extra-size-content-text">{{ active_variant.metafields.custom.extra_size_content }}</b>{%- endif -%}
     </label>
   </div>
 {%- endfor -%}
