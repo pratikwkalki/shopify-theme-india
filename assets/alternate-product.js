@@ -441,6 +441,17 @@ document.addEventListener('DOMContentLoaded', function() {
           bisFormWrapper.classList.add('hidden')
         }
       }
+      if (selectedLabel) {
+        var extraContent = selectedLabel.querySelector('.extra-size-content-text');
+        var outputElement = document.querySelector('.additional_size_massage_text');
+        if (extraContent) {
+          outputElement.innerHTML = extraContent.innerHTML;
+          outputElement.classList.remove('hidden');
+        } else {
+          outputElement.innerHTML = '';
+          outputElement.classList.add('hidden');
+        }
+      }
     });
   });
 
