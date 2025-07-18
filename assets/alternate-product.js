@@ -372,7 +372,9 @@ document.addEventListener('DOMContentLoaded', function() {
         ToggleReturnNote(templateContainer)
 
         //Add class on non returnable product
-        document.querySelector('[js-product-details]').classList.add('non-returnable')
+        if (checkedOption != 'Standard Size') {
+          document.querySelector('[js-product-details]').classList.add('non-returnable')
+        }
         
         templateContainer.querySelectorAll('.o-Size .product-form__input_wrap input[type=radio]').forEach(elm => {
           elm.removeAttribute('disabled');
