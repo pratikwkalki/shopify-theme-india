@@ -278,6 +278,7 @@
             const totalUpsellCheckedItems = document.querySelectorAll('product-form upsell-product input:checked');
             const initialSelectedOption = initialSelectedCheckField?.value;
             const productDetails = document.querySelector('[js-product-details]');
+            
             let hasNonReturnable = false;
             initialSelectedCheckField.forEach((field) => {
               if (field.hasAttribute('non-returnable')) {
