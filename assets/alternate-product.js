@@ -346,7 +346,9 @@ document.addEventListener('DOMContentLoaded', function() {
         ToggleUpsellReturnNote(templateContainer)
 
         //Remove class on non returnable product
-        document.querySelector('[js-product-details]').classList.remove('non-returnable')
+        if (checkedOption != 'Standard Size') {
+          document.querySelector('[js-product-details]').classList.remove('non-returnable')
+        }
         
       } else {
 
