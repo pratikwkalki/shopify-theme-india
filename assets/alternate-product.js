@@ -381,15 +381,6 @@ document.addEventListener('DOMContentLoaded', function() {
         templateContainer.querySelectorAll('.o-Size .product-form__input_wrap input[type=radio]').forEach(elm => {
           elm.removeAttribute('disabled');
         })
-
-        // for move ymq app div
-        let ymq = document.getElementById("ymq-box");
-        let outerWrapper = document.getElementsByClassName("options-wrapper")[0];
-        
-        if (outerWrapper && outerWrapper.parentNode) {
-          outerWrapper.parentNode.insertBefore(ymq, outerWrapper);
-          outerWrapper.parentNode.appendChild(ymq);
-        }
         
       }
     }
