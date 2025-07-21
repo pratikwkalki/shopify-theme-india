@@ -245,7 +245,7 @@
           "type": "addlocation",
           "settings": {
             "location_image": "shopify://shop_images/deme-map-icon_1.png",
-            "button_link": "https://www.google.com/maps/place/KALKI+Delhi/@28.5681612,77.2187761,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce34131a8fdf5:0x8b99b391e32fbd45!8m2!3d28.5681612!4d77.2209648",
+            "button_link": "https://www.google.com/maps/place/KALKI+Ahmedabad/@23.0231764,72.4732663,13z/data=!4m6!3m5!1s0x395e9b09b87612cb:0xd951522fa7096c4e!8m2!3d23.0279161!4d72.5048518!16s%2Fg%2F11svk22w1c?hl=en&entry=ttu",
             "colorchange": "color_white",
             "store_name": "Ahmedabad Store"
           }
@@ -254,7 +254,7 @@
           "type": "addlocation",
           "settings": {
             "location_image": "shopify://shop_images/deme-map-icon_1.png",
-            "button_link": "https://www.google.com/maps/place/KALKI+Delhi/@28.5681612,77.2187761,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce34131a8fdf5:0x8b99b391e32fbd45!8m2!3d28.5681612!4d77.2209648",
+            "button_link": "https://www.google.com/maps/place/KALKI+Bangalore/@12.910502,77.608213,12z/data=!4m6!3m5!1s0x3bae15bdcf254825:0x46199d561f1e11e7!8m2!3d12.9105017!4d77.6082128!16s%2Fg%2F11l5vbtc2m?hl=en&entry=ttu",
             "colorchange": "color_white",
             "store_name": "Bengaluru Store"
           }
