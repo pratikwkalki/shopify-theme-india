@@ -232,10 +232,80 @@
             "colorchange": "color_white",
             "store_name": "Mumbai Store"
           }
+        },
+        "addlocation_t7qJYC": {
+          "type": "addlocation",
+          "settings": {
+            "location_image": "shopify://shop_images/deme-map-icon_1.png",
+            "button_link": "https://www.google.com/maps/place/KALKI+Delhi/@28.5681612,77.2187761,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce34131a8fdf5:0x8b99b391e32fbd45!8m2!3d28.5681612!4d77.2209648",
+            "colorchange": "color_white",
+            "store_name": "Delhi Store"
+          }
+        },
+        "addlocation_QJTynB": {
+          "type": "addlocation",
+          "settings": {
+            "location_image": "shopify://shop_images/deme-map-icon_1.png",
+            "button_link": "https://www.google.com/maps/place/KALKI+Hyderabad/@17.4161208,78.4431621,15z/data=!4m6!3m5!1s0x3bcb9730cd99c735:0x3c0f25460e31f1d!8m2!3d17.4161208!4d78.4431621!16s%2Fg%2F11vry2xqxb?hl=en-GB&entry=ttu",
+            "colorchange": "color_white",
+            "store_name": "Hyderabad Store"
+          }
+        },
+        "addlocation_8cfxap": {
+          "type": "addlocation",
+          "settings": {
+            "location_image": "shopify://shop_images/deme-map-icon_1.png",
+            "button_link": "https://www.google.com/maps/place/KALKI+Delhi/@28.5681612,77.2187761,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce34131a8fdf5:0x8b99b391e32fbd45!8m2!3d28.5681612!4d77.2209648",
+            "colorchange": "color_white",
+            "store_name": "Ahmedabad Store"
+          }
+        },
+        "addlocation_wqxkxr": {
+          "type": "addlocation",
+          "settings": {
+            "location_image": "shopify://shop_images/deme-map-icon_1.png",
+            "button_link": "https://www.google.com/maps/place/KALKI+Delhi/@28.5681612,77.2187761,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce34131a8fdf5:0x8b99b391e32fbd45!8m2!3d28.5681612!4d77.2209648",
+            "colorchange": "color_white",
+            "store_name": "Bengaluru Store"
+          }
+        },
+        "addlocation_yGWKha": {
+          "type": "addlocation",
+          "settings": {
+            "location_image": "shopify://shop_images/deme-map-icon_1.png",
+            "button_link": "https://www.google.com/maps/place/KALKI+Surat/@21.1779123,72.7985418,15z/data=!4m6!3m5!1s0x3be04d18d51fc471:0x3f3aae3ebcb5e2ee!8m2!3d21.1779123!4d72.7985418!16s%2Fg%2F11vkwmmljq?hl=en&entry=ttu",
+            "colorchange": "color_white",
+            "store_name": "Surat Store"
+          }
+        },
+        "addlocation_PwUxLg": {
+          "type": "addlocation",
+          "settings": {
+            "location_image": "shopify://shop_images/deme-map-icon_1.png",
+            "button_link": "https://www.google.com/maps/place/KALKI+Indore/@22.7605776,75.8975719,20z/data=!4m6!3m5!1s0x3963032e5ffb4c19:0xfb7bef2f3eae395c!8m2!3d22.7605957!4d75.8980017!16s%2Fg%2F11ltfsvy06?entry=ttu&g_ep=EgoyMDI0MTAwOC4wIKXMDSoASAFQAw%3D%3D",
+            "colorchange": "color_white",
+            "store_name": "Indore Store"
+          }
+        },
+        "addlocation_XYHViQ": {
+          "type": "addlocation",
+          "settings": {
+            "location_image": "shopify://shop_images/deme-map-icon_1.png",
+            "button_link": "https://www.google.com/maps/place/KALKI+Pitampura/@28.698599,77.1386864,17z/data=!3m1!4b1!4m6!3m5!1s0x390d030cf5b8480d:0xef391f2e039afcaf!8m2!3d28.698599!4d77.1386864!16s%2Fg%2F11vz2ltp76?entry=ttu",
+            "colorchange": "color_white",
+            "store_name": "Pitampura Store"
+          }
         }
       },
       "block_order": [
-        "addlocation_L9aUxA"
+        "addlocation_L9aUxA",
+        "addlocation_t7qJYC",
+        "addlocation_QJTynB",
+        "addlocation_8cfxap",
+        "addlocation_wqxkxr",
+        "addlocation_yGWKha",
+        "addlocation_PwUxLg",
+        "addlocation_XYHViQ"
       ],
       "custom_css": [
         ".rumi-footer--box {background-color: transparent; clear: both; padding: 20px 0;}",
