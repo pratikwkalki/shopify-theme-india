@@ -228,9 +228,9 @@
           "type": "addlocation",
           "settings": {
             "location_image": "shopify://shop_images/deme-map-icon_1.png",
-            "button_link": "",
-            "colorchange": "color_black",
-            "store_name": ""
+            "button_link": "https://www.google.com/maps/place/KALKI/@19.0833577,72.8377207,17z/data=!3m1!4b1!4m5!3m4!1s0x3be7c9a7b088554b:0xa9f6da98998bc12c!8m2!3d19.0833577!4d72.8377207",
+            "colorchange": "color_white",
+            "store_name": "Mumbai Store"
           }
         }
       },
