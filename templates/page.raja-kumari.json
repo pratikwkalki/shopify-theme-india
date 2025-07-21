@@ -310,7 +310,8 @@
       "custom_css": [
         ".rumi-footer--box {background-color: transparent; clear: both; padding: 20px 0;}",
         ".rumi-footer--textline {color: #fff; margin-top: 0;}",
-        ".gradient {background: transparent !important;}"
+        ".gradient {background: transparent !important;}",
+        ".rumi-footer-store-box{width: 800px; margin: auto;}"
       ],
       "name": "Rumi footer block",
       "settings": {
