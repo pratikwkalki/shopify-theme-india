@@ -239,7 +239,8 @@
       ],
       "custom_css": [
         ".rumi-footer--box {background-color: transparent; clear: both; padding: 20px 0;}",
-        ".rumi-footer--textline {color: #fff; margin-top: 0;}"
+        ".rumi-footer--textline {color: #fff; margin-top: 0;}",
+        ".section-template--24742524682603__rumi_footer_block_QeFyig-padding {background: transparent;}"
       ],
       "name": "Rumi footer block",
       "settings": {
