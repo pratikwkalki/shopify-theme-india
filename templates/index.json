@@ -202,8 +202,8 @@
         "information_7ncwjR": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/1_slider_banner_festive_collection_all_country_1640x615_16_07_25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/1_mobile_banner_festive_collection_all_country_500x707_16_07_25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/1-slider-banner-festive-collection-all-country-1640x615-21-07-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1-mobile-banner-festive-collection-all-country-500x707-21-07-25.jpg",
             "alt_text": "Bridal World",
             "main_banner_redirect_link": "shopify://collections/festive-collection"
           }
@@ -211,8 +211,8 @@
         "information_QJq4LK": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/2_slider_banner_all_new_arrival_country_desktop_2800x1050_16_07.jpg",
-            "main_mobile_full_image": "shopify://shop_images/2-mobile-banner-new-arrival-all-country-16-07-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/2-slider-banner-banner-new-arrival-all-country-1640x615-21-07-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/2-mobile-banner-new-arrival-all-country-500x707-21-07-25.jpg",
             "alt_text": "Drape Dynasty",
             "main_banner_redirect_link": "shopify://collections/new-arrivals"
           }
@@ -220,8 +220,8 @@
         "information_Vw93j8": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/3_slider_banner_mens_wear_all_country_desktop_2800x1050_16_07_25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/3-mobile-banner-mens-wear-all-country-500x707-16-07-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/3-slider-banner-mens-wear-all-country-desktop-2800x1050-21-07-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/3-mobile-banner-mens-wear-all-country-500x707-21-07-25.jpg",
             "alt_text": "Kurta Chronicles",
             "main_banner_redirect_link": "shopify://collections/see-all-menswear"
           }
@@ -229,10 +229,10 @@
         "information_tH6WDF": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/4_slider_banner_all_last_chance_country_desktop_2800x1050_16_07.jpg",
-            "main_mobile_full_image": "shopify://shop_images/4-mobile-banner-last-chance-all-country-500x707-16-07-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/4-slider-banner-bride-and-groom-all-country-desktop-2800x1050-21-07-25-01.jpg",
+            "main_mobile_full_image": "shopify://shop_images/4-mobile-banner-bride-and-groom-all-country-500x707-21-07-25.jpg",
             "alt_text": "Classic Summer Affair",
-            "main_banner_redirect_link": "shopify://collections/limited-edition"
+            "main_banner_redirect_link": "shopify://collections/bride-and-groom-collection"
           }
         }
       },
@@ -329,10 +329,10 @@
         "information_FAEPEb": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-mini-desk-ready-to-ship-all-country-400x533-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-mini-desk-ready-to-ship-all-country-400x533-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/1-mini-desk-festive-ready-to-ship-all-country-400x533-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-mini-desk-festive-ready-to-ship-all-country-400x533-21-07-25.jpg",
             "title": "24-Hr Dispatch",
-            "sub_head_text": "",
+            "sub_head_text": "Delivers Before Rakhi",
             "main_tags_detail_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "shopify://collections/ready-to-ship"
@@ -343,8 +343,8 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/2-mini-desk-wedding-styles-all-country-400x533-30-06-25.jpg",
             "main_mobile_image": "shopify://shop_images/2-mini-desk-wedding-styles-all-country-400x533-30-06-25.jpg",
-            "title": "Wedding Wardrobe",
-            "sub_head_text": "",
+            "title": "Wedding Wardrobe '25",
+            "sub_head_text": "Made For Everyone, Tailored For Love",
             "main_tags_detail_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "shopify://collections/wedding-collection"
@@ -367,11 +367,11 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/4-mini-desk-bride-and-groom-all-country-400x533-30-06-25.jpg",
             "main_mobile_image": "shopify://shop_images/4-mini-desk-bride-and-groom-all-country-400x533-30-06-25.jpg",
-            "title": "Forever Vows",
-            "sub_head_text": "Bride & Groom",
+            "title": "Teej Ready",
+            "sub_head_text": "",
             "main_tags_detail_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/bride-and-groom-collection"
+            "main_button_link": "shopify://collections/teej"
           }
         }
       },
@@ -397,7 +397,7 @@
     "tagalys_section_4dfQVU": {
       "type": "tagalys-section",
       "settings": {
-        "playlist_id": "006b0e04660d32aa7a90"
+        "playlist_id": "628385139c965d28cbe5"
       }
     },
     "index_custom_category_new_GgyAbi": {
@@ -406,8 +406,8 @@
         "information_hxURPn": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-curated-collections-gen-z-400x533-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-curated-collections-gen-z-400x533-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/1-curated-collections-gen-z-400x533-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-curated-collections-gen-z-400x533-21-07-25.jpg",
             "title": "The Gen Z Store",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -417,8 +417,8 @@
         "information_NQxDrp": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-curated-collections-boho-styles-400x533-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-curated-collections-boho-styles-400x533-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/2-curated-collections-boho-styles-400x533-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2-curated-collections-boho-styles-400x533-21-07-25.jpg",
             "title": "Boho Chic",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -428,8 +428,8 @@
         "information_MBGFwT": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/3-curated-collections-sequin-collection-400x533-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/3-curated-collections-sequin-collection-400x533-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/3-curated-collections-sequin-collection-400x533-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-curated-collections-sequin-collection-400x533-21-07-25.jpg",
             "title": "Sequin Soirée",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -439,30 +439,19 @@
         "information_Ud6yrw": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/4-curated-collections-cape-styles-400x533-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/4-curated-collections-cape-styles-400x533-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/4-curated-collections-cape-styles-400x533-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/4-curated-collections-cape-styles-400x533-21-07-25.jpg",
             "title": "Cape Styles",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
             "main_button_link": "shopify://collections/cape-style"
           }
         },
-        "information_Bxxdri": {
-          "type": "information",
-          "settings": {
-            "main_desktop_image": "shopify://shop_images/5-curated-collections-heavy-embriodered-400x533-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/5-curated-collections-heavy-embriodered-400x533-30-06-25.jpg",
-            "title": "Embroidered Edit",
-            "sub_head_text": "",
-            "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/heavy-embriodered"
-          }
-        },
         "information_8nwx8x": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/6-curated-collections-printed-collection-400x533-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/6-curated-collections-printed-collection-400x533-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/6-curated-collections-printed-collection-400x533-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/6-curated-collections-printed-collection-400x533-21-07-25.jpg",
             "title": "Printed Pret",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -472,8 +461,8 @@
         "information_VdQj6D": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/7-curated-collections-classic-styles-400x533-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/7-curated-collections-classic-styles-400x533-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/7-curated-collections-classic-styles-400x533-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/7-curated-collections-classic-styles-400x533-21-07-25.jpg",
             "title": "Classic Couture",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -486,7 +475,6 @@
         "information_NQxDrp",
         "information_MBGFwT",
         "information_Ud6yrw",
-        "information_Bxxdri",
         "information_8nwx8x",
         "information_VdQj6D"
       ],
@@ -519,8 +507,8 @@
         "information_tGVPXe": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/1-editors-picks-blouse-all-country-420x568-desk-30-06-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/1-editors-picks-bridesmaid-all-country-800x586-mobile-28-6-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/1-editors-picks-blouse-all-country-420x568-desk-21-07-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/1-editors-picks-blouse-all-country-800x586-mobile-21-07-25.jpg",
             "alt_text": "Styles under Budget",
             "main_banner_redirect_link": "shopify://collections/blouse"
           }
@@ -528,8 +516,8 @@
         "information_7fNJrm": {
           "type": "information",
           "settings": {
-            "main_desktop_full_image": "shopify://shop_images/2-editors-picks-indowestern-all-country-420x568-desk-30-06-25.jpg",
-            "main_mobile_full_image": "shopify://shop_images/2-editors-picks-indowestern-all-country-800x586-mobile-30-06-25.jpg",
+            "main_desktop_full_image": "shopify://shop_images/2-editors-picks-indowestern-all-country-420x568-desk-21-07-25.jpg",
+            "main_mobile_full_image": "shopify://shop_images/2-editors-picks-indowestern-all-country-800x586-mobile-21-07-25.jpg",
             "alt_text": "Mocha Mousse",
             "main_banner_redirect_link": "shopify://collections/indo-western"
           }
@@ -576,8 +564,8 @@
         "information_Gq9Tez": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/01-styles-under-budget-suits-400x533-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/01-styles-under-budget-suits-400x533-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/01-styles-under-budget-suits-400x533-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/01-styles-under-budget-suits-400x533-21-07-25.jpg",
             "title": "Salwar Suits",
             "sub_head_text": "Under ₹11,999",
             "main_button_text": "Shop Now",
@@ -587,8 +575,8 @@
         "information_fc8yQa": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/02-styles-under-budget-sarees-400x533-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/02-styles-under-budget-sarees-400x533-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/02-styles-under-budget-sarees-400x533-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/02-styles-under-budget-sarees-400x533-21-07-25.jpg",
             "title": "Saree Edit",
             "sub_head_text": "Under ₹11,999",
             "main_button_text": "Shop Now",
@@ -598,8 +586,8 @@
         "information_XEBcff": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/03-styles-under-budget-mens-400x533-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/03-styles-under-budget-mens-400x533-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/03-styles-under-budget-mens-400x533-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/03-styles-under-budget-mens-400x533-21-07-25.jpg",
             "title": "Menswear Fits",
             "sub_head_text": "Under ₹11,999",
             "main_button_text": "Shop Now",
@@ -609,8 +597,8 @@
         "information_wtnLpP": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/04-styles-under-budget-lehengas-400x533-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/04-styles-under-budget-lehengas-400x533-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/04-styles-under-budget-lehengas-400x533-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/04-styles-under-budget-lehengas-400x533-21-07-25.jpg",
             "title": "Lehenga Twirls",
             "sub_head_text": "Under ₹23,999",
             "main_button_text": "Shop Now",
@@ -647,8 +635,8 @@
         "information_rVmqny": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-all-country-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-all-country-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-all-country-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/1-bridal-world-haldi-mehendi-all-country-21-07-25.jpg",
             "title": "Haldi | Mehendi",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -658,8 +646,8 @@
         "information_dBLnzc": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/2-bridal-sangeet-all-country-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/2-bridal-sangeet-all-country-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/2-bridal-sangeet-all-country-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/2-bridal-sangeet-all-country-21-07-25.jpg",
             "title": "Sangeet Saga",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -669,8 +657,8 @@
         "information_E83nqK": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/3-bridal-reception-all-country-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/3-bridal-reception-all-country-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/3-bridal-reception-all-country-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/3-bridal-reception-all-country-21-07-25.jpg",
             "title": "Reception Royalty",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
@@ -680,8 +668,8 @@
         "information_mKbaME": {
           "type": "information",
           "settings": {
-            "main_desktop_image": "shopify://shop_images/4-bridal-trousseau-all-country-30-06-25.jpg",
-            "main_mobile_image": "shopify://shop_images/4-bridal-trousseau-all-country-30-06-25.jpg",
+            "main_desktop_image": "shopify://shop_images/4-bridal-trousseau-all-country-21-07-25.jpg",
+            "main_mobile_image": "shopify://shop_images/4-bridal-trousseau-all-country-21-07-25.jpg",
             "title": "Trousseau Trend",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
