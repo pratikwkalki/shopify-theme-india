@@ -85,26 +85,29 @@
     </div>
   </div>
   <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-      /* Page_weaves_collection_slider */
-      new Swiper('.Page_rumi_collection_slider', {
-         loop: true, 
-        slidesPerView: 1, 
-        spaceBetween: 20, 
-        autoplay: { 
-          delay: 2000, 
-          disableOnInteraction: false, 
-        },
-        breakpoints: { 
-          640: { 
-            slidesPerView: 2, 
-          }, 
-          768: { 
-            slidesPerView: 3, 
-          }, 
-        }
-      })
-    })
+    document.addEventListener("DOMContentLoaded", function () {
+              new Swiper('.Page_rumi_collection_slider',{loop:!1,grabCursor:!1,spaceBetween:20,slidesPerGroup:1,slidesPerView:3,watchSlidesProgress:!0,draggable:!0,autoHeight:!1,watchOverflow:!0,threshold:10,mousewheel:{forceToAxis:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev",},breakpoints:{0:{slidesPerView:"auto",spaceBetween:10,},640:{slidesPerView:2,spaceBetween:10,},749:{slidesPerView:3,spaceBetween:10,},1440:{slidesPerView:3,spaceBetween:20,}}})
+            });
+    // document.addEventListener("DOMContentLoaded", function(event) {
+    //   /* Page_weaves_collection_slider */
+    //   new Swiper('.Page_rumi_collection_slider', {
+    //     loop: true, 
+    //     slidesPerView: 1, 
+    //     spaceBetween: 20, 
+    //     autoplay: { 
+    //       delay: 2000, 
+    //       disableOnInteraction: false, 
+    //     },
+    //     breakpoints: { 
+    //       640: { 
+    //         slidesPerView: 2, 
+    //       }, 
+    //       768: { 
+    //         slidesPerView: 3, 
+    //       }, 
+    //     }
+    //   })
+    // })
   </script>
 {%- endif -%} 
 
