@@ -346,9 +346,8 @@ document.addEventListener('DOMContentLoaded', function() {
         ToggleUpsellReturnNote(templateContainer)
 
         //Remove class on non returnable product
-        if (checkedOption != 'Standard Size') {
           document.querySelector('[js-product-details]').classList.remove('non-returnable')
-        }
+        
         
       } else {
 
@@ -374,9 +373,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ToggleReturnNote(templateContainer)
 
         //Add class on non returnable product
-        if (checkedOption != 'Standard Size') {
           document.querySelector('[js-product-details]').classList.add('non-returnable')
-        }
         
         templateContainer.querySelectorAll('.o-Size .product-form__input_wrap input[type=radio]').forEach(elm => {
           elm.removeAttribute('disabled');
