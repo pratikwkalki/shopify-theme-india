@@ -136,6 +136,15 @@
               {{ product.metafields.magento.product_sale_html_banner.value }}
             </div>
           {%- endif -%}  
+
+          {%- if product.metafields.custom.product_visibility contains 'No' -%}
+            <div class="appikon-bis-inline-form-wrapper product-visibility" id="appikon-bis-inline-form-wrapper" style="display: block;">
+              <div class="appikon-bis-inline-form-title">
+                <h3>OUT OF STOCK</h3>
+              </div>
+              <div class="appikon-bis-inline-form-description">This product is temporarily out of stock because of high demand, we will replenish it as soon as possible </div>
+            </div>  
+          {%- endif -%}
           
           <product-form
             class="product-form khadi-product-form"
