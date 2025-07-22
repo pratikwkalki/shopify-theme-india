@@ -277,11 +277,11 @@
       
           function handleOptionChange() {
             const initialSelectedCheckField = templateContainer.querySelector(`${selectors.variantSelectSelector} input:checked`);
+            const initialSelectedCheckFieldSize = templateContainer.querySelector(`${selectors.optionValuesSelector} input:checked`);
             const totalUpsellCheckedItems = document.querySelectorAll('product-form upsell-product input:checked');
             const initialSelectedOption = initialSelectedCheckField?.value;
             const productDetails = document.querySelector('[js-product-details]');
-      
-            if (initialSelectedCheckField && initialSelectedCheckField.hasAttribute("non-returnable")) {
+            if ((initialSelectedCheckFieldSize && initialSelectedCheckFieldSize.hasAttribute("non-returnable")) ||(initialSelectedCheckField && initialSelectedCheckField.hasAttribute("non-returnable"))) {
               productDetails.classList.add('non-returnable-variant');
             } else {
               if (productDetails.classList.contains('non-returnable-variant')) {
