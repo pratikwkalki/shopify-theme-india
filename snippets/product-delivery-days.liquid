@@ -205,7 +205,7 @@
             option.addEventListener('click', () => {
               const quantity = parseInt(option.dataset.variantQuantity);
               const variantDeliveryDays = option.dataset.variantDeliveryDays;
-            console.log('variantDeliveryDays', variantDeliveryDays)
+            console.log('variantDeliveryDays', option.dataset)
               if (variantDeliveryDays) {
                 setDeliveryTime(variantDeliveryDays, form, deliveryTimeWrapper);
                 document.querySelector(".additional_delivery_massage_text").classList.remove("hidden");
