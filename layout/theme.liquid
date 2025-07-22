@@ -133,12 +133,13 @@
 
     <!-- For URL redirects -->
     <script>
-      window.validRoutes = {{ pages | map:'handle' | json}};
-      if (window.location.pathname.endsWith(".html")) {
-          let newUrl = window.location.pathname.replace(".html", "");
-          window.location.replace(newUrl);
-      }
-    </script>
+    window.validHandles = {
+      pages: {{ pages | map: 'handle' | json }},
+      products: {{ all_products | map: 'handle' | json }},
+      collections: {{ collections | map: 'handle' | json }},
+      blogs: {{ blogs | map: 'handle' | json }},
+    };
+  </script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" media="print" onload="this.media='all'" crossorigin="anonymous" />
 
