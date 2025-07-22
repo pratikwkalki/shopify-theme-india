@@ -130,4 +130,4 @@ document.addEventListener("DOMContentLoaded",function(){if(window.innerWidth>=76
 // this is for desktop menu below image text center
 function handleImgError(l){let t=l.closest("a");if(t){t.classList.add("hide");let e=t.nextElementSibling;e&&e.classList.add("title-left-align")}}
 // Product card image swiper
-function productCardSwiper(){document.querySelectorAll(".card__media .swiper").forEach(e=>{new Swiper(e,{loop:!0,slidesPerView:1,pagination:{el:e.querySelector(".swiper-pagination"),clickable:!0},navigation:{nextEl:e.querySelector(".swiper-button-next"),prevEl:e.querySelector(".swiper-button-prev")}})})}productCardSwiper();
+function productCardSwiper(){document.querySelectorAll(".card__media .swiper").forEach(e=>{e.swiper instanceof Swiper&&e.swiper.destroy(!0,!0),new Swiper(e,{loop:!0,slidesPerView:1,pagination:{el:e.querySelector(".swiper-pagination"),clickable:!0},navigation:{nextEl:e.querySelector(".swiper-button-next"),prevEl:e.querySelector(".swiper-button-prev")}})})}productCardSwiper();
