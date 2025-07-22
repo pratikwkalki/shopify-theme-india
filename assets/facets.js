@@ -98,6 +98,7 @@ class FacetFiltersForm extends HTMLElement {
 
     if (updateURLHash) FacetFiltersForm.updateURLHash(searchParams);
     stickyFilter ()
+    productCardSwiper ()
   }
 
   static renderSectionFromFetch(url, event) {
@@ -162,6 +163,7 @@ class FacetFiltersForm extends HTMLElement {
       document.body.classList.remove('overflow-hidden-mobile')
     }
     stickyFilter ()
+    productCardSwiper ()
   }
 
   static renderFilters(html, event) {
