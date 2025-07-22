@@ -539,6 +539,8 @@
     bottom: 10px !important;
     left: 0;
     right: 0;
+    flex-wrap: wrap;
+    padding: 0 5px;
 }
 .card__media .swiper .swiper-pagination .swiper-pagination-bullet {
     margin: 3px;
