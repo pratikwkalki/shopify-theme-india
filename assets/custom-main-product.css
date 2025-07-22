@@ -2610,6 +2610,12 @@ body.template-product:has(.is-only-wishlist) .sticky-addtocart-button {
   font-size: 14px;
 }
 /* gift card page close*/
+.product-custom.product-outofstock .product-form, .product-custom.product-outofstock .cs_delivery_wrapper {
+    display: none;
+}
+#appikon-bis-inline-form-wrapper.product-visibility .appikon-bis-inline-form-description {
+    margin-bottom: 0;
+}
 
 .Product_object_faqs_main_new {
   padding: 30px 0;
