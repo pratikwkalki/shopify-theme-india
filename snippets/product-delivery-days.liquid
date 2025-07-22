@@ -164,6 +164,7 @@
             const quantity = parseInt(option.dataset.variantQuantity);
             const deliveryWrapper = document.querySelector('[js-delivery-wrapper]');
             const extraDeliveryDays = deliveryWrapper.querySelector('[js-additional-delivery-day]');
+            console.log('extraDeliveryDays', extraDeliveryDays)
             const totalUpsellCheckedItems = document.querySelectorAll('product-form upsell-product input:checked');
             // class stock-item-icon
             if (variantDeliveryDays) {
