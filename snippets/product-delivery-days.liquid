@@ -165,7 +165,6 @@
             const deliveryWrapper = document.querySelector('[js-delivery-wrapper]');
             const extraDeliveryDays = deliveryWrapper.querySelector('[js-additional-delivery-day]');
             const totalUpsellCheckedItems = document.querySelectorAll('product-form upsell-product input:checked');
-            console.log('extraDeliveryDays', extraDeliveryDays)
             // class stock-item-icon
             if (variantDeliveryDays) {
                 option.setAttribute('del-day', variantDeliveryDays);
@@ -206,7 +205,7 @@
             option.addEventListener('click', () => {
               const quantity = parseInt(option.dataset.variantQuantity);
               const variantDeliveryDays = option.dataset.variantDeliveryDays;
-            
+            console.log('variantDeliveryDays', variantDeliveryDays)
               if (variantDeliveryDays) {
                 setDeliveryTime(variantDeliveryDays, form, deliveryTimeWrapper);
                 document.querySelector(".additional_delivery_massage_text").classList.remove("hidden");
