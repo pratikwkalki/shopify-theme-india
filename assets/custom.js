@@ -129,20 +129,5 @@ document.addEventListener("DOMContentLoaded",function(){if(window.innerWidth>=76
 
 // this is for desktop menu below image text center
 function handleImgError(l){let t=l.closest("a");if(t){t.classList.add("hide");let e=t.nextElementSibling;e&&e.classList.add("title-left-align")}}
-
-function productCardSwiper () {
-  document.querySelectorAll('.card__media .swiper').forEach((el) => {
-    new Swiper(el, {
-      loop: true,
-      slidesPerView: 1,
-      pagination: {
-        el: el.querySelector('.swiper-pagination'),
-        clickable: true,
-      },
-      navigation: {
-        nextEl: el.querySelector('.swiper-button-next'),
-        prevEl: el.querySelector('.swiper-button-prev'),
-      },
-    });
-  });
-}productCardSwiper ();
+// Product card image swiper
+function productCardSwiper(){document.querySelectorAll(".card__media .swiper").forEach(e=>{new Swiper(e,{loop:!0,slidesPerView:1,pagination:{el:e.querySelector(".swiper-pagination"),clickable:!0},navigation:{nextEl:e.querySelector(".swiper-button-next"),prevEl:e.querySelector(".swiper-button-prev")}})})}productCardSwiper();
