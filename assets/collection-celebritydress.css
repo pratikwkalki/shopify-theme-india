@@ -35,10 +35,10 @@
 }
 
 @media (min-width: 768px) {
-  /* .leftside-Big-img-box {
+  .leftside-Big-img-box {
     display: block;
     padding-left: 1.5%;
-  } */
+  }
   .Big-left-img-box {
     width: 49%;
     float: left;
