@@ -96,6 +96,7 @@
     
     <script>
       document.addEventListener('DOMContentLoaded', () => {
+        console.log('extraDeliveryDays')
         const deliveryTimeWrappers = document.querySelectorAll('[js-product-delivery-time]'); // Get all delivery time wrappers
         const productForms = document.querySelectorAll('form[data-type="add-to-cart-form"]'); // Get all product forms
       
@@ -165,7 +166,6 @@
             const deliveryWrapper = document.querySelector('[js-delivery-wrapper]');
             const extraDeliveryDays = deliveryWrapper.querySelector('[js-additional-delivery-day]');
             const totalUpsellCheckedItems = document.querySelectorAll('product-form upsell-product input:checked');
-            
             // class stock-item-icon
             if (variantDeliveryDays) {
                 option.setAttribute('del-day', variantDeliveryDays);
@@ -193,7 +193,6 @@
                     option.setAttribute('del-day', mtoDays);
                   }
                 }
-              )
             }
             
             const varDelDay = parseInt(option.getAttribute('del-day'));
