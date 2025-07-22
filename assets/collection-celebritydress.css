@@ -33,6 +33,7 @@
   width: 100%;
   margin-bottom: 2%;
 }
+.Collection_rumi_product_main_new .card__content{display:none}
 
 @media (min-width: 768px) {
   .leftside-Big-img-box {
