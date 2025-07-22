@@ -1525,3 +1525,20 @@ class ProductRecommendations extends HTMLElement {
 }
 
 customElements.define('product-recommendations', ProductRecommendations);
+
+function productCardSwiper () {
+  document.querySelectorAll('.card__media .swiper').forEach((el) => {
+    new Swiper(el, {
+      loop: true,
+      slidesPerView: 1,
+      pagination: {
+        el: el.querySelector('.swiper-pagination'),
+        clickable: true,
+      },
+      navigation: {
+        nextEl: el.querySelector('.swiper-button-next'),
+        prevEl: el.querySelector('.swiper-button-prev'),
+      },
+    });
+  });
+}productCardSwiper ();
