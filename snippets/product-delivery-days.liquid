@@ -276,21 +276,17 @@
           const optionValues = templateContainer.querySelectorAll(`${selectors.stitchedGroupSelector}${selectors.optionValuesSelector} label`);
       
           function handleOptionChange() {
-            const initialSelectedCheckField = templateContainer.querySelectorAll(`${selectors.variantSelectSelector} input:checked`);
+            const initialSelectedCheckField = templateContainer.querySelector(`${selectors.variantSelectSelector} input:checked`);
             const totalUpsellCheckedItems = document.querySelectorAll('product-form upsell-product input:checked');
             const initialSelectedOption = initialSelectedCheckField?.value;
             const productDetails = document.querySelector('[js-product-details]');
-            
-            let hasNonReturnable = false;
-            initialSelectedCheckField.forEach((field) => {
-              if (field.hasAttribute('non-returnable')) {
-                hasNonReturnable = true;
-              }
-            });
-            if (hasNonReturnable) {
+      
+            if (initialSelectedCheckField && initialSelectedCheckField.hasAttribute("non-returnable")) {
               productDetails.classList.add('non-returnable-variant');
             } else {
-              productDetails.classList.remove('non-returnable-variant');
+              if (productDetails.classList.contains('non-returnable-variant')) {
+                productDetails.classList.remove('non-returnable-variant');
+              }
             }
       
             if (initialSelectedOption && optionValues.length) {
