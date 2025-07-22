@@ -24,7 +24,7 @@
   {% endif %}
 {% endfor %} 
 
-<div class="product-custom product--left product--thumbnail_slider product--mobile-show product-images-new-layout" js-alternate-custom-pdp>
+<div class="product-custom product--left product--thumbnail_slider product--mobile-show product-images-new-layout {% if product.metafields.custom.product_visibility contains 'No' %}product-outofstock{% endif %}" js-alternate-custom-pdp>
   <div class="popup-overlay hide"></div>
   <div class="page-width">
     <div class="wrapper">

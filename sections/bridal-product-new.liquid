@@ -24,7 +24,7 @@
     {% assign stitche_selected_option = option.selected_value %}
   {% endif %}
 {% endfor %} 
-<div class="product-custom bridal-pdp" js-alternate-custom-pdp>
+<div class="product-custom bridal-pdp {% if product.metafields.custom.product_visibility contains 'No' %}product-outofstock{% endif %}" js-alternate-custom-pdp>
   <div class="popup-overlay hide"></div>
   {% assign isSalwarKameezCollection = '' %}
   {% for collection in product.collections %}
