@@ -158,7 +158,7 @@
           let mtoDays = parseInt({{ delivery_days }});
           const colletionRrtsDays = parseInt(form.querySelector('[colletion_rts_days]').getAttribute('colletion_rts_days'));
           const options = form.querySelectorAll('[js-variant-delivery-option]');
-          
+          console.log('mtoDays', mtoDays)
           options.forEach(option => {
             const variantDeliveryDays = option.dataset.variantDeliveryDays;
             const quantity = parseInt(option.dataset.variantQuantity);
