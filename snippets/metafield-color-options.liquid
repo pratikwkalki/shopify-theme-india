@@ -23,7 +23,13 @@
                 {% assign featured_image = similar_product.featured_image | image_url %}
                 <img src="{%- render 'gumlet', src: featured_image w: 100 %}" alt="{{ similar_product.title }}" width="" height="">
               </div>
-              <div class="text">{{ product.metafields.custom.color_name.value }}</div>
+              <div class="text">
+                {% if similar_product.metafields.custom.color_name.value %}
+                  {{ product.metafields.custom.color_name.value }}
+                {% else %}
+                  {{ similar_product.metafields.custom.filter_color.value }}
+                {% endif %}
+              </div>
             </a>
           {% endif %}
         {% endfor %}
