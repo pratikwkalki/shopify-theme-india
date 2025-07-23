@@ -1,50 +1,32 @@
-{% comment %} {% if product.metafields.custom.similar_color_products != blank %}
+{% assign has_available_similar = false %}
+
+{% if product.metafields.custom.similar_color_products.value %}
+  {% for similar_product in product.metafields.custom.similar_color_products.value %}
+    {% if similar_product.available %}
+      {% assign has_available_similar = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if has_available_similar or product.metafields.custom.color_image != blank or product.metafields.custom.color_name != blank %}
   <div class="similar_color_products">
     <div class="text_media">
       <span class="color_text">More Colors</span>
     </div>
-    {% if product.metafields.custom.similar_color_products %}
+    {% if has_available_similar %}
       <div class="text_with_image color-options">
         {% for similar_product in product.metafields.custom.similar_color_products.value %}
-          <!-- {{ similar_product.url | json }}
-          {{ similar_product.media[0] | json }}
-          {{ similar_product.title | json }} -->
-          {% if similar_product.metafields.custom.color_name != blank and similar_product.metafields.custom.color_image != blank %}
-          <a href="{{ similar_product.url }}" class="ancor {% if product.handle == similar_product.handle %}active{% endif %}">
-            <div class="image">
-              <img src="{{ product.metafields.custom.color_image | img_url: '100x' }}" alt="{{ similar_product.title }}" width="" height="">
-            </div>
-            <div class="text">{{ product.metafields.custom.color_name }}</div>
-          </a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    {% endif %}
-  </div>
-{% endif %} {% endcomment %}
-
-
-{% if product.metafields.custom.similar_color_products != blank or product.metafields.custom.color_image != blank or product.metafields.custom.color_name != blank %}
-  <div class="similar_color_products">
-    <div class="text_media">
-      <span class="color_text">More Colors</span>
-    </div>
-    {% if product.metafields.custom.similar_color_products %}
-      <div class="text_with_image color-options">
-        
-        {% if product.metafields.custom.similar_color_products.value %}
-          {% for similar_product in product.metafields.custom.similar_color_products.value %}
-            {% if similar_product.available %}
+          {% if similar_product.available %}
             <a href="{{ similar_product.url }}" class="ancor {% if product.handle == similar_product.handle %}active{% endif %}">
               <div class="image">
-                <img src="{{ similar_product.featured_image | img_url: '100x' }}" alt="{{ similar_product.title }}">
+                {% assign featured_image = similar_product.featured_image | image_url %}
+                <img src="{%- render 'gumlet', src: featured_image w: 100 %}" alt="{{ similar_product.title }}" width="" height="">
               </div>
               <div class="text">{{ product.metafields.custom.color_name.value }}</div>
             </a>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-        
+          {% endif %}
+        {% endfor %}
       </div>
     {% endif %}
   </div>
