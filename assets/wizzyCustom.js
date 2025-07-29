@@ -414,6 +414,7 @@ window.onWizzyScriptLoaded = function () {
           // product.url = product.url.searchParams.delete("variant").toString();
           const parsedUrl = new URL(product.url);
           parsedUrl.searchParams.delete("variant");
+          
           // console.log(parsedUrl);
           product.url = parsedUrl.toString();
            // console.log(product.url);
@@ -424,6 +425,7 @@ window.onWizzyScriptLoaded = function () {
           let product_sellingprice = product.sellingPrice;
           product_sellingprice = product_sellingprice.replace(".00", "");
           product.sellingPrice = product_sellingprice;
+          product.sellingPrice = Math.ceil(product.sellingPrice);
 
           const deliveryMeta = product.attributes.find(
             (item) => item.id === "product_filter_delivery_custom"
