@@ -426,10 +426,13 @@ window.onWizzyScriptLoaded = function () {
           product_sellingprice = product_sellingprice.replace(".00", "");
           product.sellingPrice = product_sellingprice;
           console.log(product.sellingPrice);
-          product.sellingPrice = parseFloat(product.sellingPrice);
           console.log(product.sellingPrice);
-          product.sellingPrice = Math.round(product.sellingPrice);
           console.log(product.sellingPrice);
+          let str = product.sellingPrice;
+          let cleaned = str.replace(/,/g, '');
+          let num = parseFloat(cleaned);
+          let rounded = Math.round(num);
+          console.log(rounded);
 
           const deliveryMeta = product.attributes.find(
             (item) => item.id === "product_filter_delivery_custom"
