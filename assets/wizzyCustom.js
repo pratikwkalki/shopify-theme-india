@@ -432,7 +432,8 @@ window.onWizzyScriptLoaded = function () {
           let cleaned = str.replace(/,/g, '');
           let num = parseFloat(cleaned);
           let rounded = Math.round(num);
-          product.sellingPrice = rounded;
+          let formatted = rounded.toLocaleString();
+          product.sellingPrice = formatted;
           console.log(rounded);
 
           const deliveryMeta = product.attributes.find(
