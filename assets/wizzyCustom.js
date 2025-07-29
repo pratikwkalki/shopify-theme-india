@@ -425,7 +425,7 @@ window.onWizzyScriptLoaded = function () {
           let product_sellingprice = product.sellingPrice;
           product_sellingprice = product_sellingprice.replace(".00", "");
           product.sellingPrice = product_sellingprice;
-          product.sellingPrice = Math.round(Number(str));;
+          product.sellingPrice = Math.ceil(Number(str));;
 
           const deliveryMeta = product.attributes.find(
             (item) => item.id === "product_filter_delivery_custom"
