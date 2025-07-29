@@ -425,8 +425,11 @@ window.onWizzyScriptLoaded = function () {
           let product_sellingprice = product.sellingPrice;
           product_sellingprice = product_sellingprice.replace(".00", "");
           product.sellingPrice = product_sellingprice;
+          console.log(product.sellingPrice);
           product.sellingPrice = parseFloat(product.sellingPrice);
+          console.log(product.sellingPrice);
           product.sellingPrice = Math.round(product.sellingPrice);
+          console.log(product.sellingPrice);
 
           const deliveryMeta = product.attributes.find(
             (item) => item.id === "product_filter_delivery_custom"
