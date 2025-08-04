@@ -293,7 +293,7 @@ window.onWizzyScriptLoaded = function () {
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.BEFORE_RENDER_RESULTS,
     function (payload) {
-      console.log("BEFORE_RENDER_RESULTS", payload);
+      // console.log("BEFORE_RENDER_RESULTS", payload);
       if(payload.response.payload.hasToRedirect === true)
       {
         window.location.href = payload.response.payload.redirectTo;        
@@ -425,16 +425,15 @@ window.onWizzyScriptLoaded = function () {
           let product_sellingprice = product.sellingPrice;
           product_sellingprice = product_sellingprice.replace(".00", "");
           product.sellingPrice = product_sellingprice;
-          console.log(product.sellingPrice);
-          console.log(product.sellingPrice);
-          console.log(product.sellingPrice);
           let str = product.sellingPrice;
           let cleaned = str.replace(/,/g, '');
           let num = parseFloat(cleaned);
           let rounded = Math.round(num);
           let formatted = rounded.toLocaleString();
           product.sellingPrice = formatted;
-          console.log(rounded);
+
+          
+
 
           const deliveryMeta = product.attributes.find(
             (item) => item.id === "product_filter_delivery_custom"
@@ -474,7 +473,7 @@ window.onWizzyScriptLoaded = function () {
   window.wizzyConfig.events.registerEvent(
     window.wizzyConfig.events.allowedEvents.BEFORE_SEARCH_EXECUTED,
     function (data) {
-      console.log("BEFORE_SEARCH_EXECUTED=========>",data);
+      // console.log("BEFORE_SEARCH_EXECUTED=========>",data);
      data.facets.forEach((facet) => {
         if(facet.key === "discountPercentage")
         {
@@ -548,15 +547,15 @@ window.onWizzyScriptLoaded = function () {
           // let price = p.replace(".00", "");
           // let price = p.textContent.replace(/\.0/g, "");
           let price = p.textContent.replace(/\.00/g, "");
-          console.log(price);
+          // console.log(price);
           let [minPrice, maxPrice] = price.split("-");
-          console.log("PRICE===========>");
+          // console.log("PRICE===========>");
            minPrice = minPrice.trim();
-          console.log(minPrice);
+          // console.log(minPrice);
           minPrice.replace(".00", "");
         
             maxPrice = maxPrice.trim();
-           console.log(maxPrice);
+          //  console.log(maxPrice);
           maxPrice.replace(".00", "");
         
             if (!minPrice.startsWith("₹")) {
