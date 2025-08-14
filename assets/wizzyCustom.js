@@ -546,7 +546,8 @@ window.onWizzyScriptLoaded = function () {
         if (p) {
           // let price = p.replace(".00", "");
           // let price = p.textContent.replace(/\.0/g, "");
-          let price = p.textContent.replace(/\.00/g, "");
+          // let price = p.textContent.replace(/\.00/g, "");
+          let price = p.textContent.replace(/\.0/g, "");
           // console.log(price);
           let [minPrice, maxPrice] = price.split("-");
           // console.log("PRICE===========>");
