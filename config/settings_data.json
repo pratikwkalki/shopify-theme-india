@@ -9,7 +9,6 @@
  */
 {
   "current": {
-    "wizzy_beta_common_js": "",
     "logo": "shopify://shop_images/kalki-logo.svg",
     "white_logo": "shopify://shop_images/white_logo.svg",
     "logo_width": 180,
@@ -145,6 +144,7 @@
     "imagekitShopifyCdnUrl": "//in.kalkifashion.com",
     "enableGumlet": true,
     "gumletUrl": "https://kalki.gumlet.io",
+    "wizzy_beta_common_js": "",
     "wizzy_is_lazy_init": "true",
     "wizzy_is_lazy_init_enabled": "true",
     "wizzy_beta_frontend_js": "",
@@ -317,7 +317,7 @@
       },
       "4862092811054642477": {
         "type": "shopify://apps/wizzy-search-filters/blocks/wizzy-featuredstoryview-assets/ae8fbc14-43c6-4ce2-b5bc-819d4b1052f6",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       }
     },
