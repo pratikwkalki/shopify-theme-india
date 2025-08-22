@@ -317,7 +317,7 @@
       },
       "4862092811054642477": {
         "type": "shopify://apps/wizzy-search-filters/blocks/wizzy-featuredstoryview-assets/ae8fbc14-43c6-4ce2-b5bc-819d4b1052f6",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     },
