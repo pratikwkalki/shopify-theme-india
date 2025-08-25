@@ -377,7 +377,7 @@ wizzy__featuredview__squaredImageBackdrop__lZfX1 {
 #wizzyFeaturedViewRoot .swiper-backface-hidden .swiper-slide {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transform: translateZ(0);
+  /* transform: translateZ(0); 25 Aug*/
 }
 
 #wizzyFeaturedViewRoot .swiper-3d.swiper-css-mode .swiper-wrapper {
