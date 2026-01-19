@@ -166,7 +166,7 @@
           "type": "texts_with_links",
           "settings": {
             "title": "Bridal",
-            "redirect": "shopify://pages/bridal-wedding-dresses",
+            "redirect": "shopify://pages/bridal-wedding-dresses-old",
             "activation": false,
             "title_color": ""
           }

@@ -43,7 +43,7 @@
           "type": "texts_with_links",
           "settings": {
             "title": "Bridal",
-            "redirect": "shopify://pages/bridal-wedding-dresses",
+            "redirect": "shopify://pages/bridal-wedding-dresses-old",
             "activation": false,
             "title_color": ""
           }
@@ -126,7 +126,7 @@
           "settings": {
             "image": "shopify://shop_images/round-banner-9-womens-mobile-bridal-all-countries-182x182-05-05-25.jpg",
             "title": "Bridal Edit",
-            "redirect": "shopify://pages/bridal-wedding-dresses"
+            "redirect": "shopify://pages/bridal-wedding-dresses-old"
           }
         },
         "image_with_text_column_EbeckA": {
@@ -626,7 +626,7 @@
         "main_desktop_full_image": "shopify://shop_images/bridal-banner-desk-30-06-25.jpg",
         "main_mobile_full_image": "shopify://shop_images/bridal-banner-mobile-30-06-25.jpg",
         "alt_tag_text": "Bridal",
-        "main_banner_redirect_link": "shopify://pages/bridal-wedding-dresses"
+        "main_banner_redirect_link": "shopify://pages/bridal-wedding-dresses-old"
       }
     },
     "index_collection_lists_new_JNfDX7": {
