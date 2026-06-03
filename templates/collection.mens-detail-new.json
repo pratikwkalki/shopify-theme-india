@@ -257,7 +257,7 @@
           "settings": {
             "image": "shopify://shop_images/round-banner-10-mens-mobile-sale-all-countries-182x182-05-05-25.jpg",
             "title": "Discounted Deals",
-            "redirect": "shopify://collections/menswear-on-sale"
+            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-menswear-on-sale"
           }
         },
         "image_with_text_column_7zFycy": {
@@ -514,7 +514,7 @@
             "main_desktop_image": "shopify://shop_images/01-shop-by-category-discounted-deals-250x250-23-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/01-shop-by-category-discounted-deals-250x250-23-05-25.jpg",
             "title": "<p>Discounted Deals</p>",
-            "main_redirect_link": "shopify://collections/menswear-on-sale"
+            "main_redirect_link": "shopify://collections/https-in-kalkifashion-com-collections-menswear-on-sale"
           }
         },
         "information_Ud6yrw": {
