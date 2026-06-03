@@ -233,7 +233,7 @@
           "settings": {
             "image": "shopify://shop_images/round-banner-7-mens-mobile-jodhpuri-all-countries-182x182-05-05-25.jpg",
             "title": "Jodhpuri",
-            "redirect": "shopify://collections/jodhpuris"
+            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-jodhpuris"
           }
         },
         "image_with_text_column_7CFzyg": {
@@ -369,7 +369,7 @@
             "main_desktop_image": "shopify://shop_images/5-mens-mini-desk-jodhpuri-jazz-all-countries-250x250-23-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/5-mens-mini-desk-jodhpuri-jazz-all-countries-250x250-23-05-25.jpg",
             "title": "<p>Jodhpuri Edit</p>",
-            "main_redirect_link": "shopify://collections/jodhpuris"
+            "main_redirect_link": "shopify://collections/https-in-kalkifashion-com-collections-jodhpuris"
           }
         },
         "information_jRJNfG": {
