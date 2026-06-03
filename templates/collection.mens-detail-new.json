@@ -201,7 +201,7 @@
           "settings": {
             "image": "shopify://shop_images/round-banner-3-mens-mobile-kurta-jacket-set-all-countries-182x182-05-05-25.jpg",
             "title": "Kurta Jacket",
-            "redirect": "shopify://collections/kurta-jacket-sets"
+            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-kurta-jacket-sets"
           }
         },
         "image_with_text_column_Mc96cd": {
@@ -342,7 +342,7 @@
             "main_desktop_image": "shopify://shop_images/2-mens-mini-desk-kurta-jackets-all-countries-250x250-23-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/2-mens-mini-desk-kurta-jackets-all-countries-250x250-23-05-25.jpg",
             "title": "<p>Kurta Jackets</p>",
-            "main_redirect_link": "shopify://collections/kurta-jacket-sets"
+            "main_redirect_link": "shopify://collections/https-in-kalkifashion-com-collections-kurta-jacket-sets"
           }
         },
         "information_n4HaWN": {
