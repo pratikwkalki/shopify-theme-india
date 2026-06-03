@@ -30,7 +30,7 @@
           "type": "texts_with_links",
           "settings": {
             "title": "Men",
-            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-men",
+            "redirect": "shopify://collections/men",
             "activation": false,
             "title_color": ""
           }
