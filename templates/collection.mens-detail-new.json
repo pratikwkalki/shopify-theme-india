@@ -119,7 +119,7 @@
           "settings": {
             "main_desktop_image": "shopify://shop_images/03_mens_highlight_desk_festive_collection_all_countries_02_07_25.jpg",
             "main_mobile_image": "shopify://shop_images/03_mens_highlight_mobile_festive_collection_all_countries_02_07.jpg",
-            "main_button_link": "shopify://collections/mens-festive-wear"
+            "main_button_link": "shopify://collections/https-in-kalkifashion-com-collections-mens-festive-wear"
           }
         }
       },
