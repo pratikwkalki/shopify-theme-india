@@ -481,7 +481,7 @@
             "title": "Reception Royalty",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/https-in-kalkifashion-com-collections-mens-reception-wear"
+            "main_button_link": "shopify://collections/mens-reception-wear"
           }
         }
       },
@@ -568,7 +568,7 @@
             "main_desktop_image": "shopify://shop_images/07-shop-by-category-groomsquad-250x250-23-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/07-shop-by-category-groomsquad-250x250-23-05-25.jpg",
             "title": "<p>Groomsquad</p>",
-            "main_redirect_link": "shopify://collections/groomsman"
+            "main_redirect_link": "shopify://collections/https-in-kalkifashion-com-collections-groomsman"
           }
         }
       },
