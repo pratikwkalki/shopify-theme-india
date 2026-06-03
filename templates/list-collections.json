@@ -35,7 +35,7 @@
           "type": "information",
           "settings": {
             "inner_background_color": "#e8f9e8",
-            "select_collection_display": "cape-style",
+            "select_collection_display": "https-in-kalkifashion-com-collections-cape-style",
             "select_product_display": 5,
             "main_desktop_image": "shopify://shop_images/cape-styles-banner-21-07-25.jpg",
             "main_mobile_image": "shopify://shop_images/cape-styles-banner-21-07-25.jpg",
