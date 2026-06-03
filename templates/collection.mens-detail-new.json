@@ -300,7 +300,7 @@
           "settings": {
             "main_desktop_full_image": "shopify://shop_images/1-mens-slider-banner--wedding-collection-all-country-desktop-1440x540-30-06-25.jpg",
             "main_mobile_full_image": "shopify://shop_images/1-men-mobile-banner-wedding-collection-all-country-500x707-30-06-25.jpg",
-            "main_banner_redirect_link": "shopify://collections/mens-wedding-wear"
+            "main_banner_redirect_link": "shopify://collections/https-in-kalkifashion-com-collections-mens-wedding-wear"
           }
         },
         "information_PBqbzG": {
@@ -470,7 +470,7 @@
             "title": "Shaadi Styles",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/mens-wedding-wear"
+            "main_button_link": "shopify://collections/https-in-kalkifashion-com-collections-mens-wedding-wear"
           }
         },
         "information_mKbaME": {
@@ -568,7 +568,7 @@
             "main_desktop_image": "shopify://shop_images/07-shop-by-category-groomsquad-250x250-23-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/07-shop-by-category-groomsquad-250x250-23-05-25.jpg",
             "title": "<p>Groomsquad</p>",
-            "main_redirect_link": "shopify://collections/https-in-kalkifashion-com-collections-groomsman"
+            "main_redirect_link": "shopify://collections/groomsman"
           }
         }
       },
