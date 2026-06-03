@@ -110,7 +110,7 @@
           "settings": {
             "image": "shopify://shop_images/round-banner-7-womens-mobile-men-all-countries-182x182-05-05-25.jpg",
             "title": "Menswear",
-            "redirect": "shopify://collections/see-all-menswear"
+            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-see-all-menswear"
           }
         },
         "image_with_text_column_JWeMgW": {
@@ -223,7 +223,7 @@
             "main_desktop_full_image": "shopify://shop_images/3-slider-banner-mens-wear-all-country-desktop-2800x1050-21-07-25.jpg",
             "main_mobile_full_image": "shopify://shop_images/3-mobile-banner-mens-wear-all-country-500x707-21-07-25.jpg",
             "alt_text": "Kurta Chronicles",
-            "main_banner_redirect_link": "shopify://collections/see-all-menswear"
+            "main_banner_redirect_link": "shopify://collections/https-in-kalkifashion-com-collections-see-all-menswear"
           }
         },
         "information_tH6WDF": {
