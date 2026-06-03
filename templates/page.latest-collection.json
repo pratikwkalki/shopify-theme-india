@@ -40,7 +40,7 @@
           "type": "information",
           "settings": {
             "inner_background_color": "#faebe1",
-            "select_collection_display": "https-in-kalkifashion-com-collections-bandhani-saree",
+            "select_collection_display": "bandhani-saree",
             "select_product_display": 4,
             "main_desktop_image": "shopify://shop_images/karwa-chauth.jpg",
             "main_mobile_image": "shopify://shop_images/karwa-chauth.jpg",
