@@ -57,7 +57,7 @@
           "type": "texts_with_links",
           "settings": {
             "title": "LUXE",
-            "redirect": "shopify://collections/luxe",
+            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-luxe",
             "activation": false,
             "title_color": "#aa6437"
           }
