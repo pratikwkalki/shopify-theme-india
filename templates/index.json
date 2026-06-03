@@ -150,7 +150,7 @@
           "settings": {
             "image": "shopify://shop_images/182x182-mobile-mens-uk-09-10-24.jpg",
             "title": "Men's",
-            "redirect": "shopify://collections/mens-instore-exclusive"
+            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-mens-instore-exclusive"
           }
         },
         "image_with_text_column_wL6bkV": {
