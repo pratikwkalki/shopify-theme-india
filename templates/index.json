@@ -102,7 +102,7 @@
           "settings": {
             "image": "shopify://shop_images/round-banner-6-womens-mobile-Blouse-all-countries-182x182-05-05-25.jpg",
             "title": "Blouses",
-            "redirect": "shopify://collections/blouse"
+            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-blouse"
           }
         },
         "image_with_text_column_3PgKWr": {
@@ -510,7 +510,7 @@
             "main_desktop_full_image": "shopify://shop_images/1-editors-picks-blouse-all-country-420x568-desk-21-07-25.jpg",
             "main_mobile_full_image": "shopify://shop_images/1-editors-picks-blouse-all-country-800x586-mobile-21-07-25.jpg",
             "alt_text": "Styles under Budget",
-            "main_banner_redirect_link": "shopify://collections/blouse"
+            "main_banner_redirect_link": "shopify://collections/https-in-kalkifashion-com-collections-blouse"
           }
         },
         "information_7fNJrm": {
@@ -662,7 +662,7 @@
             "title": "Reception Royalty",
             "sub_head_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/https-in-kalkifashion-com-collections-reception"
+            "main_button_link": "shopify://collections/reception"
           }
         },
         "information_mKbaME": {
