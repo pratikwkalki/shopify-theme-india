@@ -118,7 +118,7 @@
           "settings": {
             "image": "shopify://shop_images/182x182-mobile-blouse-09-10-24.jpg",
             "title": "Blouse",
-            "redirect": "shopify://collections/blouse"
+            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-blouse"
           }
         },
         "image_with_text_column_fAHTa6": {
