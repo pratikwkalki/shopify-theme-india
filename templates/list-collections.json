@@ -87,7 +87,7 @@
           "type": "information",
           "settings": {
             "inner_background_color": "#f1ebf5",
-            "select_collection_display": "https-in-kalkifashion-com-collections-mushk-wedding-couture-2024",
+            "select_collection_display": "mushk-wedding-couture-2024",
             "select_product_display": 5,
             "main_desktop_image": "shopify://shop_images/mushk-couture-24-banner-16-04-25.jpg",
             "main_mobile_image": "shopify://shop_images/mushk-couture-24-banner-16-04-25.jpg",
@@ -139,7 +139,7 @@
           "type": "information",
           "settings": {
             "inner_background_color": "#faebe1",
-            "select_collection_display": "lakme-fashion-week-collection",
+            "select_collection_display": "https-in-kalkifashion-com-collections-lakme-fashion-week-collection",
             "select_product_display": 5,
             "main_desktop_image": "shopify://shop_images/zayra-16-04-25.jpg",
             "main_mobile_image": "shopify://shop_images/zayra-16-04-25.jpg",
