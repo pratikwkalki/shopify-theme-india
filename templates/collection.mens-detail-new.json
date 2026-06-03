@@ -217,7 +217,7 @@
           "settings": {
             "image": "shopify://shop_images/round-banner-5-mens-mobile-indo-western-all-countries-182x182-05-05-25.jpg",
             "title": "Indowestern",
-            "redirect": "shopify://collections/indo-westerns-for-men"
+            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-indo-westerns-for-men"
           }
         },
         "image_with_text_column_UPgqan": {
@@ -225,7 +225,7 @@
           "settings": {
             "image": "shopify://shop_images/round-banner-6-mens-mobile-tuxedos-all-countries-182x182-05-05-25.jpg",
             "title": "Tuxedo",
-            "redirect": "shopify://collections/tuxedo"
+            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-tuxedo"
           }
         },
         "image_with_text_column_NwR3hT": {
@@ -351,7 +351,7 @@
             "main_desktop_image": "shopify://shop_images/3-mens-mini-desk-indo-fusion-all-countries-250x250-23-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/3-mens-mini-desk-indo-fusion-all-countries-250x250-23-05-25.jpg",
             "title": "<p>Indowestern For Him</p>",
-            "main_redirect_link": "shopify://collections/indo-westerns-for-men"
+            "main_redirect_link": "shopify://collections/https-in-kalkifashion-com-collections-indo-westerns-for-men"
           }
         },
         "information_NNxjiG": {
@@ -360,7 +360,7 @@
             "main_desktop_image": "shopify://shop_images/4-mens-mini-desk-tuxedo-affair-all-countries-250x250-23-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/4-mens-mini-desk-tuxedo-affair-all-countries-250x250-23-05-25.jpg",
             "title": "<p>Tuxedo Affair</p>",
-            "main_redirect_link": "shopify://collections/tuxedo"
+            "main_redirect_link": "shopify://collections/https-in-kalkifashion-com-collections-tuxedo"
           }
         },
         "information_6QyphN": {
