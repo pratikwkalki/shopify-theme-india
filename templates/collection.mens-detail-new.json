@@ -209,7 +209,7 @@
           "settings": {
             "image": "shopify://shop_images/round-banner-4-mens-mobile-kurta-set-all-countries-182x182-05-05-25.jpg",
             "title": "Kurta Set",
-            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-mens-kurta-set"
+            "redirect": "shopify://collections/mens-kurta-set"
           }
         },
         "image_with_text_column_JWeMgW": {
@@ -333,7 +333,7 @@
             "main_desktop_image": "shopify://shop_images/1-mens-mini-desk-kurta-set-all-countries-250x250-23-05-25.jpg",
             "main_mobile_image": "shopify://shop_images/1-mens-mini-desk-kurta-set-all-countries-250x250-23-05-25.jpg",
             "title": "<p>Men's Kurta Set</p>",
-            "main_redirect_link": "shopify://collections/https-in-kalkifashion-com-collections-mens-kurta-set"
+            "main_redirect_link": "shopify://collections/mens-kurta-set"
           }
         },
         "information_RyDRrF": {
@@ -427,7 +427,7 @@
         "main_heading_text_2": "",
         "main_sub_heading_text_2": "",
         "main_button_text_2": "",
-        "main_button_link_2": "shopify://collections/https-in-kalkifashion-com-collections-mens-kurta-set",
+        "main_button_link_2": "shopify://collections/mens-kurta-set",
         "main_button_color_2": "button_white"
       }
     },
