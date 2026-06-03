@@ -185,7 +185,7 @@
           "settings": {
             "image": "shopify://shop_images/round-banner-1-mens-mobile-see-all-all-countries-182x182-05-05-25.jpg",
             "title": "Menswear",
-            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-see-all-menswear"
+            "redirect": "shopify://collections/see-all-menswear"
           }
         },
         "image_with_text_column_7Fti99": {
@@ -308,7 +308,7 @@
           "settings": {
             "main_desktop_full_image": "shopify://shop_images/2-mens-slider-banner-see-all-mens-all-country-desktop-1440x540-30-06-25.jpg",
             "main_mobile_full_image": "shopify://shop_images/2-men-mobile-banner-see-all-mens-all-country-500x707-30-06-25.jpg",
-            "main_banner_redirect_link": "shopify://collections/https-in-kalkifashion-com-collections-see-all-menswear"
+            "main_banner_redirect_link": "shopify://collections/see-all-menswear"
           }
         }
       },
