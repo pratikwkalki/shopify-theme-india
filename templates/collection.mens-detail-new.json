@@ -249,7 +249,7 @@
           "settings": {
             "image": "shopify://shop_images/round-banner-9-mens-mobile-footwear-all-countries-182x182-05-05-25.jpg",
             "title": "Footwear",
-            "redirect": "shopify://collections/mens-footwear"
+            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-mens-footwear"
           }
         },
         "image_with_text_column_mFL7Bj": {
