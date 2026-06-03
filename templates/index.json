@@ -52,7 +52,7 @@
           "type": "texts_with_links",
           "settings": {
             "title": "luxe",
-            "redirect": "shopify://collections/luxe",
+            "redirect": "shopify://collections/https-in-kalkifashion-com-collections-luxe",
             "activation": false,
             "title_color": "#aa6437"
           }
@@ -359,7 +359,7 @@
             "sub_head_text": "Custom-Made For You",
             "main_tags_detail_text": "",
             "main_button_text": "Shop Now",
-            "main_button_link": "shopify://collections/luxe"
+            "main_button_link": "shopify://collections/https-in-kalkifashion-com-collections-luxe"
           }
         },
         "information_txEVLa": {
