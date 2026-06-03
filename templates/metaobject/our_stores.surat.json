@@ -109,7 +109,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "surat-store",
+        "collection": "https-in-kalkifashion-com-collections-surat-store",
         "products_to_show": 25,
         "columns_desktop": 5,
         "full_width": true,
