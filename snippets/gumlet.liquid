@@ -42,8 +42,8 @@
  {% endif %}
 
  {% for _filter in filters %}
- {% if [_filter] %}
- {% assign imgWithQuerystring = imgWithQuerystring | append:_filter | append:'=' | append:[_filter] | append:'&' %}
+ {% if self[_filter] %}
+ {% assign imgWithQuerystring = imgWithQuerystring | append: _filter | append: '=' | append: self[_filter] | append: '&' %}
  {% endif %}
  {% endfor %}
 
@@ -55,4 +55,18 @@
  {% else %}
  {{ src }}
  {% endif %}
-{% endcapture %}{{ GUMLET | strip | replace:'  ' | strip_newlines }}
+{% endcapture %}{{ GUMLET | strip | replace:'  ' | strip_newlines }}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% if [_filter] %}"
+  to: "{% if self[_filter] %}"
+  position: 1785..1807
+- from: "{% assign imgWithQuerystring = imgWithQuerystring | append:_filter | append:'='
+    | append:[_filter] | append:'&' %}"
+  to: "{% assign imgWithQuerystring = imgWithQuerystring | append: _filter | append:
+    '=' | append: self[_filter] | append: '&' %}"
+  position: 1809..1931
+{%- endcomment -%}
